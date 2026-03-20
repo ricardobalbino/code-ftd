@@ -190,7 +190,7 @@ dependencies:
 # MEMORIES - Persistent agent memories (loaded from memory file if exists)
 # ═══════════════════════════════════════════════════════════════════════════════
 memories:
-  memory_file: "tiago-dev.memory.md"
+  memory_file: "tiago-dev-memory.md"
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # PROMPTS - Custom prompts for action="#id" handlers
@@ -211,11 +211,55 @@ prompts:
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions (.NET 8 Isolated), Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera (Adobe Commerce)"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  d365_dev_rules:
+    plugin_pattern: "Plugin<T> → Service → Repository (DI Unity)"
+    plugin_stage: "Pre-Validation(10) | Pre-Operation(20) | Post-Operation(40)"
+    debounce_rule: "≤50 produtos → Plugin síncrono | >50 produtos → Azure Function async"
+    early_bound: "OBRIGATÓRIO — gerado via pac modelbuilder"
+    entity_prefix: "ftd_ em TODOS os componentes customizados"
+    namespace_plugin: "FTD.Plugins.{Entity}.{Action}"
+    namespace_js: "FTD.[Module].[Function] — namespace obrigatório"
+    namespace_pa: "FTD - [Módulo] - [Ação] - [Trigger]"
+    no_magic_strings: "NUNCA usar GUIDs ou nomes de campos hardcoded"
+    no_columnset_true: "NUNCA usar new ColumnSet(true)"
+    depth_check: "if (context.Depth > 1) return; — OBRIGATÓRIO em todos os plugins"
+    secrets: "Azure Key Vault APENAS — nunca em appsettings.json ou código"
+  testing_stack:
+    plugins: "FakeXrmEasy + MSTest — cobertura mínima 80%"
+    pcf: "Jest + React Testing Library — cobertura mínima 70%"
+    azure_functions: "xUnit + Moq — cobertura mínima 80%"
+    shift_left: "Testes escritos JUNTO com o código — nunca depois"
+  solution_mapping:
+    entities: "FTDCore"
+    forms_views: "FTDSales ou FTDService"
+    plugins: "FTDPlugins"
+    integrations: "FTDIntegration"
+    pcf: "FTDControls"
+    javascript: "FTDClientExtensions"
+  specialist_focus:
+    - "Plugin < 2 segundos — se ultrapassar, mover para Azure Function"
+    - "Power Automate: Scope Try-Catch-Finally OBRIGATÓRIO em TODOS"
+    - "Power Pages: cache-first, cálculos real-time JS, Entra ID auth"
+    - "Nunca editar solução Default — sempre solution segmentada correta"
+    - "Solution Checker: 0 Critical, 0 High ANTES de qualquer PR"
+    - "Plugin deploy para DEV é manual (PRT) — avisar no PR description"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler architecture_docs (especialmente padroes-desenvolvimento.md e d365-data-model.md) ANTES de implementar qualquer feature. Cada entidade, campo e padrão está documentado."

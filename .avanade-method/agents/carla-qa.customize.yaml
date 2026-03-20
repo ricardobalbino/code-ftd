@@ -56,18 +56,42 @@ dependencies:
     - test-plan-template.md
 
 memories:
-  memory_file: "carla-qa.memory.md"
+  memory_file: "carla-qa-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  d365_quality_checklists:
+    - ".avanade-method/checklists/d365-code-review-checklist.md"
+    - ".avanade-method/checklists/d365-solution-checklist.md"
+    - ".avanade-method/checklists/story-dod-checklist.md"
+  specialist_focus:
+    - "Solution Checker: max 0 Critical, max 0 High antes de qualquer deploy"
+    - "Plugin tests: FakeXrmEasy + MSTest, cobertura mínima 80%"
+    - "PCF tests: Jest + React Testing Library, cobertura mínima 70%"
+    - "Azure Functions: xUnit + Moq, cobertura mínima 80%"
+    - "Power Automate: Scope Try-Catch-Finally obrigatório, error handling validado"
+    - "Power Pages: Mobile First, cálculos real-time, cache strategy, auth Entra ID"
+    - "Naming: publisher ftd_, namespace FTD.Plugins.*, FTD.[Module].[Flow] para PA"
+    - "Early Bound obrigatório em plugins — validar uso de magic strings"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios, architecture_docs E d365_quality_checklists antes de code review. Cada tipo de artefato D365 tem checklist específico."

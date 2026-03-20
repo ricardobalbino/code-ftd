@@ -49,18 +49,40 @@ dependencies:
     - prd-template.yaml
 
 memories:
-  memory_file: "joao-pm.memory.md"
+  memory_file: "joao-pm-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+    - ".avanade-method/docs/ftd-resumo-completo.md"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  prd_context:
+    current_prd: ".avanade-method/docs/prd/prd-refinamento-processo.md"
+    roadmap: ".avanade-method/docs/roadmap/ftd-roadmap-sugestao.md"
+  specialist_focus:
+    - "PRDs devem sempre referenciar entidades D365 reais (ftd_proposta, Account, Opportunity)"
+    - "Roadmap 11 ondas definido — sempre alinhar features ao PBS-Transformacao-CX"
+    - "MVP 31/Mar/2026: adição individual de produtos (Power Pages etapas 1+2)"
+    - "Métricas de sucesso: 20 KPIs definidos (Growth, Cost Opt, Org. Effectiveness, Digital)"
+    - "Considerar 9 soluções D365 no escopo de implantação de features"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de criar qualquer PRD. Cada feature deve mapear para entidades D365 e ondas do roadmap."

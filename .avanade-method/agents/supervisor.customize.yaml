@@ -178,18 +178,58 @@ dependencies:
     - quick-dev.workflow.md
 
 memories:
-  memory_file: "supervisor.memory.md"
+  memory_file: "supervisor-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+    - ".avanade-method/docs/ftd-resumo-completo.md"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  environment_status:
+    dev: "✅ Ativo — deploy manual de plugins"
+    oat: "✅ Ativo — deploy automático (pipeline)"
+    prod: "✅ Ativo — requer GMUD via SMAX"
+    qa: "⚠️ Criado mas NÃO configurado"
+    rc: "⚠️ Criado mas NÃO configurado"
+  routing_knowledge:
+    discovery: "→ Maria Analyst (deep-elicitation, brief)"
+    prd: "→ João PM (create-prd, validate-prd)"
+    architecture: "→ Wilson Architect (create-architecture, ADR)"
+    ux: "→ Sofia UX (wireframe, user-flow, fluent-design)"
+    stories: "→ Paula PO (create-epics-stories, backlog)"
+    sprint: "→ Roberto SM (sprint-planning, retrospective)"
+    dev: "→ Tiago Dev (dev-story, code-review, debug)"
+    qa: "→ Carla QA (test-story, adversarial-review)"
+    docs: "→ Paige Tech Writer (create-doc, runbook, ADR)"
+  critical_blockers:
+    - "Dataverse storage CRÍTICO — bloqueia criação de novas tabelas"
+    - "QA e RC environments não configurados"
+    - "Plugin deploy manual para DEV (considerar no sprint)"
+    - "Regras de alçada ainda indefinidas (Mônica — area comercial)"
+  specialist_focus:
+    - "Rotear para persona correta baseado na fase do projeto (discovery→solutioning→implementation)"
+    - "Ao orquestrar: SEMPRE informar a persona do contexto FTD antes de delegar"
+    - "9 soluções D365: verificar se mudança está na solution correta antes de aprovar impl."
+    - "Pico sazonal Nov-Jan: sprints antes de nov devem focar em estabilidade, não features"
+    - "Vulcano e Pede Livreiro serão eliminados — não criar novas integrações com eles"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de orquestrar qualquer fluxo. Como Supervisor, conhecer o estado completo do projeto FTD é obrigatório para roteamento correto."

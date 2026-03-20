@@ -142,19 +142,21 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos da Oportunidade →
 - **Patrocínios**: investimentos em dinheiro na escola (laptops, fachada, jardim)
 - **Parcelamento na loja**: afeta nível de alçada
 
-### 3.9 Alçadas de Aprovação (4 níveis)
-| Nível | Aprovador |
-|-------|-----------|
-| 1 | Consultor (auto-aprovação) |
-| 2 | Coordenador + Gerente |
-| 3 | + Diretor Adjunto |
-| 4 | + Diretor Comercial (Quintela) |
+### 3.9 Alçadas de Aprovação (7 níveis - Refinamento 16/Mar)
+| Nível | Aprovador | Critério (Cumulativo) |
+|-------|-----------|-----------------------|
+| 1 | Consultor | Auto-aprovação (dentro da política) |
+| 2 | Coordenador | Descontos nível 1 |
+| 3 | Gerente Filial | Descontos nível 2 / Estornos |
+| 4 | Gerente Regional | Descontos nível 3 |
+| 5 | Diretor Adjunto (DG) | Patrocínios / Adiantamentos altos |
+| 6 | Diretor Superintendente | Casos críticos / Royalties |
+| 7 | Presidente | Alçadas máximas (Grupo Marista) |
 
-- Regras baseadas em: % royalty, % adiantamento, % patrocínio, taxa admin, adiantamento bruto, royalty bruto, parcelamento
-- **PROBLEMA**: Regras atuais mal definidas → tudo cai para nível 4 (Quintela)
-- Regras sendo revistas pela equipe comercial (junto com projeto pricing + rentabilidade)
-- **Vulcano**: ferramenta externa usada para segunda aprovação → SERÁ ELIMINADA
-- Processo atual: comercial aprova no CRM → admin monta PDF (print CRM + TOTVS) → sobe no Vulcano → aprova de novo
+- **Motor de Aprovação**: Independente das regras de alçada (pode ser entregue antes).
+- **Regras de alçada**: Sendo revistas pela Mônica (Comercial).
+- **Lógica de resubmissão**: Se totalizadores de preço não mudaram, pula níveis e vai direto para quem recusou.
+- **Vulcano**: Será totalmente eliminado (aprovação 100% interna D365).
 
 ### 3.10 Contratos e Adobe Sign
 - Proposta aprovada → contrato gerado
@@ -239,28 +241,31 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos da Oportunidade →
 - Escola visualiza proposta, faz comentários, recusa com motivo
 - Histórico de versões da proposta
 
-### Consumo de Integrações
-- Time de integração (Thiago Veiga) constrói endpoints
-- Squad CRM apenas CONSOME (recebe endpoint, faz chamada)
-- Sem API Management padrão
-- Decisão: Power Automate (simples) ou Azure Function (complexo)
-- Externo consulta CRM via OData ou FetchXML (sem custom Actions expostas)
-- **Actions no Dynamics**: existem, disparam Power Automates internamente, mas NÃO são expostas para consumo externo
-- **Tabelas de suporte reutilizáveis**:
-  - `Tabela de logs de integração`: genérica, qualquer integração pode usar para registrar execuções
-  - `Tabela de fluxos gerenciais`: URLs de child flows para matriz de serviços (específica, não reutilizável)
-- **Atenção**: limite de conexões por usuário de serviço (FTDMaxFlow) para child flows — risco identificado, a verificar
+### 5.1 Detalhamento Lumisfera (E-commerce)
+Adobe Commerce com 4 frentes:
+1. **Lumisfera Aberto**: Venda B2C pura (Amazon model). Não passa pelo CRM.
+2. **Lumisfera Vende Escola**: Venda B2C vinculada a escola. Alinhada com Proposta CRM (modelo "FTD com Você").
+3. **Lumisfera B2B – Funcionário/Representante**: Venda interna.
+4. **Lumisfera B2B – Livreiros**: NOVO. Substituirá o "Pede Livreiro". Livreiros terão Conta e Proposta no CRM.
+
+### 5.2 Modelo de Venda: Livreiro (Parceiro)
+- Migração do sistema legado para CRM.
+- 3 cenários: Independente, Parceiro de 1 Escola, Parceiro de Múltiplas Escolas.
+- Objetivo: Eliminar o gap de visibilidade comercial dos livreiros.
 
 ---
 
 ## 6. PROBLEMAS CONHECIDOS / DÉBITOS TÉCNICOS
 
 ### Críticos
-- ⚠️ **Dataverse em nível crítico de armazenamento** (já passou do limite)
-- ⚠️ **Tabela de produtos poluída** (1.283 retornados onde deveria ser 15)
-- ⚠️ **12+ tabelas de preço** (workaround para visibilidade, não pricing)
-- ⚠️ **Campos duplicados** Oportunidade ↔ Proposta (dados desatualizados)
-- ⚠️ **50+ templates Word** para contratos (manutenção insustentável)
+- ⚠️ **Dataverse em nível crítico** (já passou do limite de storage)
+- ⚠️ **Tabela de produtos poluída** (1.283 registros vs 15 esperados) — falta flag de Produto Prateleira vs Customizado
+- ⚠️ **Desalinhamento Taxonômico**: ISA (Família SKU) ≠ TOTVS (Família Comercial) ≠ CRM (Linha Negócio)
+- ⚠️ **Categorização de Contas**: campo `tipo_instituicao` mistura conceitos (Confessional, KA, Rede S)
+- ⚠️ **Higienização**: 101.000 contas precisam de limpeza (recorte 2025-2026)
+- ⚠️ **Oportunidades desvinculadas**: dados históricos sem vínculo com Proposta, impede BI
+- ⚠️ **Contrato manual**: ~50 templates Word/PDF sem modularização
+- ⚠️ **Alçadas**: Atualmente muitas propostas travam no Nível 4 por regras mal parametrizadas
 
 ### Importantes
 - Security roles não equalizadas entre ambientes (roadmap de consolidação)
