@@ -48,9 +48,9 @@ O processo de aprovação de propostas comerciais da FTD Educação é hoje frag
 
 ### 1.2 Solução Proposta
 
-Automatizar 100% do fluxo de aprovações dentro do CRM D365 CE, implementando:
+Automatizar 100% do fluxo de aprovações dentro do CRM D365 CE, aprimorando o sistema existente:
 
-1. **Motor de alçadas dinâmico** — 7 níveis, 5 grupos de gatilho, parametrizável sem deploy
+1. **Motor de alçadas dinâmico** — Extensão do fluxo atual (níveis 1-5) para 7 níveis, 5 grupos de gatilho, parametrizável sem deploy
 2. **Fluxo de aprovação sequencial** — com avanço automático, atalho inteligente em reenvios e notificações Email+Teams
 3. **Cadeia de propostas** — versionamento com vínculo anterior/posterior, incluindo cross ano-safra
 4. **Interface de aprovação** — Big numbers na Etapa 6 do Simulador com Aprovar/Recusar em 1 clique
@@ -73,7 +73,7 @@ Automatizar 100% do fluxo de aprovações dentro do CRM D365 CE, implementando:
 |------|-----------|--------|
 | Configuration (OOB) | 15% | Views, formulários, optionsets, business rules simples, dashboards |
 | Low-code (Power Automate) | 20% | Notificações Email+Teams, Adaptive Cards, orquestração de alertas |
-| Pro-code (Plugins/Azure Functions/TS) | 65% | Motor de alçadas, fluxo sequencial, comparação de totalizadores, cadeia de propostas, form scripts, integração DocuSign |
+| Pro-code (Plugins/Azure Functions/TS) | 65% | Extensão motor de alçadas (adicionar níveis 6-7), fluxo sequencial, comparação de totalizadores, cadeia de propostas, form scripts, integração DocuSign |
 
 ---
 
@@ -189,7 +189,7 @@ Automatizar 100% do fluxo de aprovações dentro do CRM D365 CE, implementando:
 | Campo | Nome Lógico | Tipo | Obrigatório | Descrição |
 |-------|-------------|------|:-----------:|-----------|
 | Estágio da Proposta | `ftd_estagio_proposta` | Choice (8 valores) | ✅ | Rascunho, Em Negociação, Avaliação Cliente, Em Aprovação, Recusada, Aprovada não assinada, Assinatura recusada, Aprovada e assinada |
-| Nível Alçada Calculado | `ftd_nivel_alcada_calculado` | Whole Number | ❌ | Resultado final do motor de alçadas |
+| Nível Alçada Calculado | `ftd_nivel_alcada_calculado` | Whole Number (1-7) | ❌ | Resultado final do motor de alçadas (estendido para 7 níveis) |
 | Nível Percentual | `ftd_nivel_percentual` | Whole Number | ❌ | Resultado do grupo Regras Percentuais |
 | Nível Valor Bruto | `ftd_nivel_valor_bruto` | Whole Number | ❌ | Resultado do grupo Valores Brutos |
 | Nível Pagamento | `ftd_nivel_pagamento` | Whole Number | ❌ | Resultado do grupo Pagamento |

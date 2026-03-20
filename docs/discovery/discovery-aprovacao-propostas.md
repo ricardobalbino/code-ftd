@@ -9,7 +9,9 @@
 
 ## 1. Visão Geral
 
-A funcionalidade **Aprovação de Propostas** implementa um motor de alçadas dinâmico dentro do CRM (D365 CE) para automatizar 100% do fluxo de aprovações comerciais, **eliminando o sistema Vulcano** do processo.
+A funcionalidade **Aprovação de Propostas** estende o motor de alçadas dinâmico existente no CRM (D365 CE) de 5 para 7 níveis, para automatizar 100% do fluxo de aprovações comerciais, **eliminando o sistema Vulcano** do processo.
+
+**Contexto técnico**: O CRM já possui fluxo de aprovação funcional nos níveis 1-5. Esta entrega adiciona níveis 6 (Superintendência) e 7 (Presidência) ao fluxo existente, sem refatoração do motor atual.
 
 **Pain points centrais**:
 - Dupla aprovação (CRM + Vulcano) gerando retrabalho
@@ -42,7 +44,7 @@ O processo de aprovação é atualmente difuso e carente de governança sistêmi
 
 ---
 
-## 3. Alçadas de Aprovação (7 Níveis)
+## 3. Alçadas de Aprovação (Extensão 1-5 para 7 Níveis)
 
 | Nível | Aprovadores (cumulativo) | Status CRM |
 |-------|-------------------------|------------|
@@ -53,6 +55,13 @@ O processo de aprovação é atualmente difuso e carente de governança sistêmi
 | **5** | Nível 4 + Diretor-Geral (Alisson) | **NOVO** — precisa criar |
 | **6** | Nível 5 + Superintendência | **NOVO** — precisa criar |
 | **7** | Nível 6 + Presidência | **NOVO** — precisa criar |
+
+**📌 IMPORTANTE - Escopo de Implementação:**
+- **Níveis 1-4**: Já existem e funcionam no CRM atual
+- **Nível 5**: Existe no modelo de dados mas pode não estar sendo utilizado (validar)
+- **Níveis 6-7**: **NOVOS** — precisam ser criados (dados mestres + aprovadores + ajustes no código)
+- **Motor de cálculo**: Já funciona, apenas remover limitador se houver (validar código)
+- **Fluxos Power Automate**: Já existem, validar se contemplam até nível 7
 
 **Observações:**
 - Coordenador/Gerente definidos pela **região da conta** (varia por filial)

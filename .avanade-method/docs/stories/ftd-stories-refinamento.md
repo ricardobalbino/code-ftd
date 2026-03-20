@@ -19,7 +19,9 @@
 ---
 
 # Épico 1: Aprovação de Propostas — Motor de Alçadas e Fluxo
-> Automatizar 100% do fluxo de aprovações comerciais dentro do CRM (D365 CE), implementando motor de alçadas dinâmico que avalie o impacto da proposta e direcione para os aprovadores corretos. Eliminar completamente o Vulcano do processo de aprovação de propostas.
+> Automatizar 100% do fluxo de aprovações comerciais dentro do CRM (D365 CE), estendendo o motor de alçadas existente (níveis 1-5) para 7 níveis, adicionando Superintendência (nível 6) e Presidência (nível 7). Eliminar completamente o Vulcano do processo de aprovação de propostas.
+>
+> **Contexto técnico**: O fluxo de aprovação já funciona nos níveis 1-5. Esta entrega adiciona níveis 6-7 ao sistema existente, **sem refatoração** do motor atual. Ajustes são apenas extensões: dados mestres, aprovadores, validação de código para remover limitadores (se houver), e testes.
 >
 > **Fonte**: `especificacao-aprovacao-notion.md` (spec completa)
 > **Prioridade**: 🔴 MUST — Próxima Sprint
@@ -29,11 +31,15 @@
 
 ---
 
-## Story 1.1: Configurar Estrutura de Alçadas de Aprovação (7 Níveis)
-**Como** administrador do CRM, **quero** configurar os 7 níveis de alçada de aprovação no D365 CE, **para que** o motor de aprovação saiba quem deve aprovar cada proposta conforme o nível de risco.
+## Story 1.1: Estender Estrutura de Alçadas de Aprovação (Adicionar Níveis 6-7)
+**Como** administrador do CRM, **quero** adicionar os níveis 6 (Superintendência) e 7 (Presidência) à estrutura de alçadas existente (1-5), **para que** o motor de aprovação contemple todas as alçadas necessárias pela política comercial.
+
+**Contexto**: Níveis 1-5 já existem e funcionam. Esta story adiciona apenas níveis 6-7 aos dados mestres e configurações.
 
 **Acceptance Criteria:**
-- [ ] 7 níveis de alçada configurados no CRM: Consultor, Coordenador+Gerente, Dir. Adjunto, Dir. Comercial, Dir. Geral, Superintendência, Presidência
+- [ ] Níveis 6 (Superintendência) e 7 (Presidência) adicionados à tabela `ftd_alcada_aprovacao` existente
+- [ ] Níveis 1-5 mantidos conforme estão (sem alterações)
+- [ ] Estrutura completa: 7 níveis (Consultor, Coordenador+Gerente, Dir. Adjunto, Dir. Comercial, Dir. Geral, [NOVO] Superintendência, [NOVO] Presidência)
 - [ ] Cada nível possui campo de cargo/role vinculado ao usuário do sistema
 - [ ] Hierarquia de alçadas é cumulativa (Nível 3 = aprovação do Nível 2 + Dir. Adjunto)
 - [ ] Alçadas são parametrizáveis sem necessidade de deploy de código
@@ -42,6 +48,9 @@
 **Tasks:**
 
 **T1.1.1 — Criar entidade `ftd_alcada_aprovacao`**
+
+**⚠️ IMPORTANTE**: Entidade `ftd_alcada_aprovacao` **JÁ EXISTE** no CRM com níveis 1-5. Esta task adiciona apenas registros para níveis 6-7. **NÃO recriar a entidade!**
+
 - **Onde**: make.powerapps.com → Customization Master → Entities → New
 - **Campos**:
   - `ftd_nivel` (Whole Number, 1-7, business required) — nível da alçada
@@ -99,7 +108,17 @@
 **Passo 1 — Criar o arquivo CSV no repositório:**
 - **Caminho**: `src/Data/ConfigData/ftd_alcada_aprovacao.csv`
 - **Formato CSV**: separador `|` (pipe), encoding UTF-8, primeira linha = header com nomes lógicos dos campos
-- **Exemplo de conteúdo do CSV `ftd_alcada_aprovacao.csv`**:
+
+**⚠️ IMPORTANTE**: CSV contém APENAS os níveis 6-7 (novos). Níveis 1-5 já existem no sistema e não devem ser reimportados/alterados.
+
+- **Exemplo de conteúdo do CSV `ftd_alcada_aprovacao.csv`** (APENAS NOVOS NÍVEIS):
+  ```csv
+  ftd_nome|ftd_descricao|ftd_nivel|ftd_ativo|ftd_requer_justificativa|ftd_permite_pulo
+  Superintendente|Aprovação da superintendência (NOVO nível 6)|6|Sim|Sim|Sim
+  Presidência|Aprovação final — presidente (NOVO nível 7)|7|Sim|Sim|Não
+  ```
+
+**Referência completa** (para documentação apenas - níveis 1-5 já estão no CRM):
   ```csv
   ftd_nome|ftd_descricao|ftd_nivel|ftd_ativo|ftd_requer_justificativa|ftd_permite_pulo
   Consultor|Auto-aprovação — consultor valida própria proposta|1|Sim|Não|Não
@@ -107,8 +126,8 @@
   Gerente de Filial|Aprovação gerencial da filial|3|Sim|Não|Sim
   Gerente Regional (Quintela)|Aprovação regional consolidada|4|Sim|Sim|Sim
   Diretor Comercial (Alisson)|Aprovação da diretoria comercial|5|Sim|Sim|Sim
-  Superintendente|Aprovação da superintendência|6|Sim|Sim|Sim
-  Presidência|Aprovação final — presidente|7|Sim|Sim|Não
+  Superintendente|Aprovação da superintendência (NOVO)|6|Sim|Sim|Sim
+  Presidência|Aprovação final — presidente (NOVO)|7|Sim|Sim|Não
   ```
 
 **Passo 2 — Criar o CSV de aprovadores:**
@@ -175,20 +194,23 @@
 
 ---
 
-## Story 1.2: Implementar Motor de Cálculo de Alçadas (5 Grupos de Gatilho)
-**Como** sistema CRM, **quero** calcular automaticamente qual nível de alçada uma proposta exige com base nas condições comerciais negociadas, **para que** a proposta seja direcionada ao aprovador correto sem intervenção manual.
+## Story 1.2: Validar e Estender Motor de Cálculo de Alçadas para Níveis 6-7
+**Como** sistema CRM, **quero** garantir que o motor de cálculo de alçadas existente (níveis 1-5) contemple os novos níveis 6-7 corretamente, **para que** propostas com altos valores de royalties sejam direcionadas aos aprovadores de Superintendência e Presidência.
+
+**Contexto**: Motor de cálculo JÁ EXISTE e funciona para níveis 1-5. Esta story valida e ajusta o motor para contemplar níveis 6-7 sem refatoração completa.
 
 **Acceptance Criteria:**
-- [ ] Motor avalia 5 grupos de critérios: Regras Percentuais, Valores Brutos, Formas de Pagamento, Desconto de Produto (existente), Contrato (existente)
+- [ ] Motor valida 5 grupos de critérios: Regras Percentuais, Valores Brutos, Formas de Pagamento, Desconto de Produto (existente), Contrato (existente)
 - [ ] Regras Percentuais: Royalties (≤50%→N2, >50%≤70%→N3, >70%→N4), Adiantamento (<50%→N4, ≥50%→N4), Patrocínio (0→N1, ≤3%→N2, >3%→N3), Taxa Admin (<5%→N4, ≥5%≤20%→N1, >20%→N2)
-- [ ] Regras Valores Brutos: Adiantamento (0→N1, ≤100K→N4, ≥100K→N5), Royalties (0→N1, <50K→N2, ≥50K→N4, ≥250K→N5, ≥500K→N6, ≥1M→N7)
+- [ ] Regras Valores Brutos: Adiantamento (0→N1, ≤100K→N4, ≥100K→N5), Royalties (0→N1, <50K→N2, ≥50K→N4, ≥250K→N5, ≥500K→**N6**, ≥1M→**N7**)
 - [ ] Regras Pagamento: Parcelamento (≤6→N1, ≥7→N4)
-- [ ] Resultado final = nível MAIS ALTO entre todos os grupos
+- [ ] Código do plugin VALIDADO para não ter limitador hardcoded (max=5)
+- [ ] Resultado final = nível MAIS ALTO entre todos os grupos (contemplando até 7)
 - [ ] Motor é executado via plugin síncrono no Update da Proposta (quando Estágio muda para "Em Aprovação")
 - [ ] Resultados do cálculo são persistidos em campos da proposta para auditoria
 - [ ] Regras são parametrizáveis em entidade de configuração (sem hardcode)
 
-> **NOTA IMPORTANTE**: Existe um plugin de cálculo de alçadas no CRM (níveis 1-4). Antes de desenvolver, fazer sessão técnica com Julio/Fernando para: (a) validar se regras estão hardcoded ou em tabela, (b) avaliar se o plugin existente pode ser estendido ou precisa ser reescrito no padrão BCA. Se for reescrita, o antigo deve ser desativado, não deletado.
+> **NOTA CRÍTICA**: Existe um plugin de cálculo de alçadas no CRM (níveis 1-4 ou 1-5). **OBRIGATÓRIO** fazer sessão técnica com Julio/Fernando para: (a) validar se há limitador hardcoded que precisa ser removido, (b) confirmar se regras estão em tabela ou hardcoded, (c) verificar se contempla níveis até 7 ou precisa ajuste. **Não reescrever do zero** - apenas estender/ajustar o existente.
 
 **Tasks:**
 
@@ -320,19 +342,21 @@ src/Backend/
 
 ---
 
-## Story 1.3: Implementar Fluxo de Aprovação Sequencial com Avanço Automático
-**Como** sistema CRM, **quero** orquestrar o fluxo de aprovação sequencial passando por cada alçada necessária, **para que** a proposta percorra automaticamente todos os aprovadores na ordem correta, da menor para a maior alçada.
+## Story 1.3: Validar e Estender Fluxo de Aprovação Sequencial para Níveis 6-7
+**Como** sistema CRM, **quero** garantir que o fluxo de aprovação sequencial existente (níveis 1-5) contemple os novos níveis 6-7 corretamente, **para que** propostas percorram automaticamente todos os aprovadores na ordem correta, incluindo Superintendência e Presidência.
+
+**Contexto**: Fluxo de aprovação JÁ EXISTE (Power Automate + plugins) para níveis 1-4/5. Esta story valida e estende o fluxo para contemplar níveis 6-7.
 
 **Acceptance Criteria:**
 - [ ] Fluxo inicia quando cliente aprova a proposta (Estágio → "Em Aprovação")
-- [ ] CRM identifica primeiro aprovador com base no nível calculado e filial do consultor
-- [ ] Após aprovação de uma alçada, sistema avança automaticamente para a próxima
-- [ ] Se aprovador é o último, Estágio da Proposta → "Aprovada não assinada"
-- [ ] Registra cada aprovação com `usuário`, `timestamp` e `nível`
+- [ ] CRM identifica primeiro aprovador com base no nível calculado (1-7) e filial do consultor
+- [ ] Após aprovação de uma alçada, sistema avança automaticamente para a próxima (contemplando até nível 7)
+- [ ] Se aprovador é o último (até nível 7), Estágio da Proposta → "Aprovada não assinada"
+- [ ] Registra cada aprovação com `usuário`, `timestamp` e `nível` (até 7)
 - [ ] Cria registros de histórico de aprovação na entidade `ftd_aprovacao_historico`
 - [ ] Status e Estágio da Oportunidade acompanham o da Proposta
 
-> **NOTA**: O Power Automate Flow atual orquestra aprovações até nível 4. Avaliar se é melhor estender o Flow existente ou substituí-lo por plugin+service (recomendado se complexidade de pulo e herança for alta). A recomendação é manter a orquestração de notificações em Flow e a lógica de estado em plugins.
+> **NOTA CRÍTICA**: Power Automate Flow atual orquestra aprovações até nível 4 ou 5. **OBRIGATÓRIO** validar com Julio/Fernando: (a) Flow contempla níveis até 7 ou precisa ajuste, (b) Queries de aprovadores contemplam níveis 6-7, (c) Se há limitadores hardcoded no Flow. Manter a orquestração de notificações em Flow e lógica de estado em plugins.
 
 **Tasks:**
 

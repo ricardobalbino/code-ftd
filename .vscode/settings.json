@@ -5,5 +5,11 @@
 
   // Localizações dos arquivos instrução e prompts
   "chat.instructionsFilesLocations": {".github/instructions": true},
-  "chat.promptFilesLocations": {".github/prompts": true}
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+  "chat.tools.terminal.autoApprove": {
+    "winget": true,
+    "Get-Command": true
+  }
 }
