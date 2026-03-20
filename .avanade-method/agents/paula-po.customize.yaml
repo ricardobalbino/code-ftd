@@ -56,18 +56,39 @@ dependencies:
     - backlog-template.yaml
 
 memories:
-  memory_file: "paula-po.memory.md"
+  memory_file: "paula-po-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+    - ".avanade-method/docs/stories/ftd-stories-refinamento.md"
+    - ".avanade-method/docs/roadmap/ftd-roadmap-sugestao.md"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  specialist_focus:
+    - "Stories devem usar template D365: docs/arquitetura/d365-story-template.md"
+    - "Épicos mapeados para as 11 ondas PBS (MVP, Habilitadores, Onda 1... Onda 11)"
+    - "Backlog priorizado: MVP 31/Mar primeiro, depois faxina de dados, depois Onda 1"
+    - "Acceptance criteria devem citar entidades e campos D365 reais (ftd_proposta, etc.)"
+    - "Stories de Dataverse Config são diferentes de Plugin Dev — categorizar corretamente"
+    - "Usuário primário: consultor comercial (404 usuários), mobile-first"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de criar stories. Stories de D365 exigem contexto de dados model e solution strategy."

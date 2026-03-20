@@ -31,6 +31,11 @@ devLoadAlwaysFiles:
   - .avanade-method/docs/especificacao-simulador-notion.md
   - .avanade-method/configs/d365-config.yaml
   - .github/instructions/avanade-bca-guidelines.instructions.md
+  - docs/arquitetura/d365-solution-architecture.md
+  - docs/arquitetura/d365-data-model.md
+  - docs/arquitetura/d365-integration-landscape.md
+  - docs/arquitetura/padroes-desenvolvimento.md
+  - docs/arquitetura/stack-tecnologica.md
 
 # ============================================================
 # DISCOVERY & ARCHITECTURE LOCATIONS

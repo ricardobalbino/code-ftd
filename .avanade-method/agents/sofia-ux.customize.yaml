@@ -59,18 +59,38 @@ dependencies:
     - fluent-design-guidelines.md
 
 memories:
-  memory_file: "sofia-ux.memory.md"
+  memory_file: "sofia-ux-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+    - "docs/discovery/discovery-simulador-comercial.md"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  specialist_focus:
+    - "MOBILE FIRST obrigatório — consultores usam celular em campo (404 usuários)"
+    - "Simulador: 6 etapas (Contexto, Produtos, Benefícios, Canais, Matriz, Revisão)"
+    - "Cálculos real-time no frontend (JavaScript) — UX sem delay/loading"
+    - "Power Pages (Liquid + JS) — restrições de componentes nativas"
+    - "Unified Interface (UCI) para apps D365 (Spartan, Hub SAC, PNLD)"
+    - "~404 consultores, muitos detratores do CRM atual — UX deve ser diferencial"
+    - "Fluent Design 2 para componentes D365 / Power Platform"
+    - "Área do Cliente: escolas aprovam/recusam propostas (portal separado)"
+    - "Notificações real-time: aprovação, recusa, assinatura (Teams + Email)"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios antes de wireframes. UX do Simulador deve eliminar a dor de 200 cliques para criar uma proposta — simplicidade é crítica."

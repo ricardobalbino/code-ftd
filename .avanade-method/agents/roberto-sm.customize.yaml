@@ -49,18 +49,40 @@ dependencies:
     - methodology-compliance.md
 
 memories:
-  memory_file: "roberto-sm.memory.md"
+  memory_file: "roberto-sm-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  ceremonies_context:
+    - "Segunda: Squad trabalho (Dev + UX + Oscar + Kevellin + Fabi)"
+    - "Terça: Negócio (área de negócio FTD)"
+    - "Quinta: Tecnologia (Arquitetos + Oscar + Medella + Jovanello)"
+  specialist_focus:
+    - "Pipeline Azure DevOps é concorrido com outras áreas — planejar lead time"
+    - "Deploy para PROD requer GMUD via SMAX (Giselle infrastructure)"
+    - "QA e RC environments ainda não configurados — bloqueia sprint se necessário"
+    - "Plugin deploy para DEV é manual — considerar no sprint planning"
+    - "Pico sazonal Nov-Jan: sprints pré-pico devem focar em estabilidade"
+    - "FTDMaxFlow = usuário de serviço dos flows (acesso restrito: Julio, Fernando, Thiago)"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios ANTES de sprint planning. Conheça as restrições de pipeline D365 para estimar corretamente."

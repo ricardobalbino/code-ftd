@@ -201,21 +201,27 @@ _Links para artefatos relacionados_
 ### Descobertas JÁ REALIZADAS (Transcrições Onboarding Março 2026)
 
 **Stakeholders Mapeados**:
-- Julio Cesar (Tech Lead FTD CRM), Fernando (Dev Power Pages/Azure), Kevellin (UX/Dev)
-- Oscar de Rooij (PO/Business Analyst - especificações), Eduardo (Functional)
-- Thiago Veiga (Arquiteto integrações - time separado)
-- Danilo Macedo (Tech Lead Avanade, conhece FTD desde 2022)
-- Marcio Jovanello (Manager Avanade)
+- Oscar de Rooij (PO/Business Analyst FTD)
+- Kevellin (UX/Dev FTD)
+- Julio Cesar (Tech Lead CRM FTD)
+- Fernando (Dev FTD)
+- Eduardo (Funcional/Demo FTD)
+- Marcel (FTD) - Segurança/Infra
+- Mônica (FTD Commercial Business) - Alçadas
+- Danilo Macedo (Avanade Tech Lead)
+- Jovanello (Avanade Manager)
 
 **Pain Points Identificados**:
 1. Consultor leva até **3 HORAS** para criar 1 proposta (200 produtos × 3 cliques)
 2. Dataverse em nível CRÍTICO de armazenamento
-3. Tabela de produtos poluída (1.283 vs 15 esperados)
-4. 12+ tabelas de preço (workaround)
-5. Campos duplicados Oportunidade ↔ Proposta
-6. 50+ templates Word para contratos
-7. Vulcano (aprovação duplicada)
-8. Cadastro de contas sem processo definido (CRM vs TOTVS)
+3. Tabela de produtos poluída (1.283 registros vs 15 esperados) — falta flag de Produto Prateleira vs Customizado
+4. Desalinhamento Taxonômico: ISA (Família SKU) ≠ TOTVS (Família Comercial) ≠ CRM (Linha Negócio)
+5. Categorização de Contas: campo `tipo_instituicao` mistura conceitos (Confessional, KA, Rede S)
+6. Higienização: 101.000 contas precisam de limpeza (recorte 2025-2026)
+7. Oportunidades desvinculadas: dados históricos sem vínculo com Proposta, impede BI
+8. Contrato manual: ~50 templates Word/PDF sem modularização
+9. Alçadas: Regras mal parametrizadas travam fluxo no Nível 4 e geram backlog excessivo
+10. Cadastro de contas sem processo definido (CRM vs TOTVS)
 
 **Processo Comercial Mapeado**:
 Conta → Contato (Rep. Legal) → Oportunidade → Produtos → Proposta → Aprovação (4 níveis) → Contrato → Adobe Sign → TOTVS
@@ -225,12 +231,14 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos → Proposta → Ap
 **Safra**: ano letivo/comercial (pico nov-jan)
 
 ### O Que FALTA Descobrir
-- Detalhamento exato de plugins existentes (lista + entidades/eventos)
-- Número exato de PCFs, Power Automate flows
-- Lista completa de entidades customizadas (ftd_*)
-- Modelo de segurança detalhado (BUs por filial?)
-- Status real do assessment de código legado
-- Requisitos LGPD específicos
+- [ ] Lista exata de plugins existentes (entidades/eventos)
+- [ ] Número exato de PCFs, Power Automate flows
+- [ ] Lista completa de entidades customizadas (ftd_*)
+- [x] Modelo de segurança detalhado → CONFIRMADO (Consultor = suas contas, Gerente = filial)
+- [x] Alçadas de Aprovação → CONFIRMADO (7 níveis sequenciais)
+- [ ] Status real do assessment de código legado
+- [ ] Requisitos LGPD específicos
+- [x] Ecossistema Lumisfera → CONFIRMADO (4 lojas, integração B2B Livreiro)
 
 ### D365 Discovery Artifacts
 - Workflow: `d365-discovery.workflow.md`
