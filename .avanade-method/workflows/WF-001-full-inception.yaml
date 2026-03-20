@@ -1,0 +1,162 @@
+workflow:
+  id: avanade-full-inception
+  name: Avanade Full Project Inception
+  description: >-
+    Workflow completo de inception para projetos greenfield seguindo metodologia Avanade.
+    Cobre desde discovery inicial até readiness para implementação, orquestrando todos os
+    agentes necessários para produzir product brief, PRD, UX design, arquitetura e backlog.
+  type: generic
+  project_types:
+    - greenfield
+    - novo-produto
+    - nova-feature-complexa
+    - transformacao-digital
+    - mvp
+
+  phases:
+    - phase: discovery-analysis
+      name: "Discovery & Análise"
+      description: "Descoberta de requisitos, análise de mercado e definição do product brief"
+      quality_gate: "QG1: Brief e Pesquisa Aprovados"
+
+      sequence:
+        - activity: product-brief
+          description: "Criação do product brief colaborativo através de discovery passo-a-passo"
+          agents:
+            - agent: analyst
+              creates: product-brief.md
+              notes: "Discovery passo-a-passo: visão, usuários, métricas, escopo. Output em {planning_artifacts}/product-brief.md"
+
+        - activity: research
+          description: "Pesquisa de mercado, domínio e viabilidade técnica"
+          agents:
+            - agent: analyst
+              creates: research-market.md
+              notes: "Análise de mercado, competitive landscape, customer needs e trends"
+
+            - agent: analyst
+              creates: research-domain.md
+              notes: "Industry domain deep dive, subject matter expertise, terminologia"
+
+            - agent: analyst
+              creates: research-technical.md
+              condition: "se necessário avaliar viabilidade técnica"
+              notes: "Technical feasibility, architecture options, implementation approaches"
+
+        - quality_gate: discovery_approval
+          criteria:
+            - "Product brief completo com visão, usuários e métricas definidas"
+            - "Pesquisa de mercado e domínio validadas"
+            - "Escopo inicial claramente delimitado"
+          approvers: ["product-owner", "stakeholders"]
+          notes: "Quality Gate 1 - Brief e pesquisa aprovados para prosseguir ao planejamento"
+
+    - phase: planning
+      name: "Planning & Design"
+      description: "Criação do PRD, validação e design de UX"
+      quality_gate: "QG2: PRD e UX Aprovados"
+
+      sequence:
+        - activity: create-prd
+          description: "Criação guiada do PRD completo (12 steps)"
+          agents:
+            - agent: pm
+              creates: prd-{project_name}.md
+              requires: [product-brief.md]
+              notes: "PRD tri-modal: create mode com 12 steps cobrindo discovery, success metrics, journeys, domain, scoping, requisitos"
+
+        - activity: validate-prd
+          description: "Validação adversarial do PRD criado"
+          agents:
+            - agent: pm
+              creates: prd-validation-report.md
+              requires: [prd-{project_name}.md]
+              notes: "Validação adversarial com 13 dimensões de qualidade"
+
+        - activity: ux-design
+          description: "Design de experiência do usuário"
+          condition: "se projeto possui interface de usuário"
+          agents:
+            - agent: ux-expert
+              creates: ux-design.md
+              requires: [prd-{project_name}.md]
+              notes: "UX design completo: core experience, visual foundation, design directions, user journeys, component strategy, responsive/accessibility"
+
+        - quality_gate: planning_approval
+          criteria:
+            - "PRD completo e validado sem issues críticos"
+            - "UX design aprovado (se aplicável)"
+            - "Requisitos funcionais e não-funcionais claros"
+            - "Success metrics definidas"
+          approvers: ["product-owner", "tech-lead"]
+          notes: "Quality Gate 2 - PRD e UX aprovados para prosseguir ao solutioning"
+
+    - phase: solutioning
+      name: "Solutioning & Readiness"
+      description: "Arquitetura técnica, decomposição em épicos/stories e validação de readiness"
+      quality_gate: "QG3: Pronto para Implementação"
+
+      sequence:
+        - activity: architecture
+          description: "Criação da arquitetura técnica"
+          agents:
+            - agent: architect
+              creates: architecture.md
+              requires: [prd-{project_name}.md]
+              notes: "Facilitação colaborativa de decisões arquiteturais (8 steps): context, starter, decisions, patterns, structure, validation"
+
+        - activity: epics-and-stories
+          description: "Decomposição em épicos e stories implementation-ready"
+          agents:
+            - agent: pm
+              creates: epics.md
+              requires: [prd-{project_name}.md, architecture.md]
+              notes: "Transformação de PRD + Architecture em épicos estruturados"
+
+            - agent: sm
+              creates: stories/
+              requires: [epics.md, architecture.md]
+              notes: "Criação de stories INVEST-compliant com acceptance criteria e tasks"
+
+        - activity: readiness-check
+          description: "Validação de readiness para implementação"
+          agents:
+            - agent: analyst
+              creates: readiness-report.md
+              requires: [prd-{project_name}.md, architecture.md, epics.md]
+              notes: "Adversarial review: document-discovery, prd-analysis, epic-coverage, ux-alignment, quality-review, final-assessment"
+
+        - quality_gate: implementation_ready
+          criteria:
+            - "Arquitetura técnica completa e aprovada"
+            - "Épicos e stories criados com acceptance criteria"
+            - "Readiness report sem blockers"
+            - "Todos os artefatos alinhados (PRD ↔ Architecture ↔ Stories)"
+            - "Estimativas e priorização definidas"
+          approvers: ["architect", "product-owner", "scrum-master"]
+          notes: "Quality Gate 3 - Projeto pronto para iniciar implementação (WF-002)"
+
+  handoff_prompts:
+    discovery_to_planning: "Discovery completo aprovado em QG1. Product brief e pesquisas validados. Prossiga para Planning com criação do PRD."
+    planning_to_solutioning: "Planning completo aprovado em QG2. PRD validado e UX design aprovado. Prossiga para Solutioning com arquitetura."
+    inception_to_development: "Inception completo aprovado em QG3. Todos artefatos prontos. Inicie WF-002 Feature Development com sprint-planning."
+
+  decision_guidance:
+    when_to_use:
+      - Projetos greenfield (novo produto ou feature complexa)
+      - MVPs que precisam de planejamento estruturado
+      - Projetos com múltiplos stakeholders e requisitos complexos
+      - Quando é necessário documentação completa antes de implementar
+      - Transformações digitais com escopo amplo
+    when_not_to_use:
+      - Bug fixes ou hotfixes (use quick-dev)
+      - Features pequenas em projetos existentes (use quick-spec + quick-dev)
+      - Projetos brownfield sem mudança significativa de escopo
+
+  success_criteria:
+    - Product brief captura visão e escopo corretamente
+    - PRD completo, validado e sem ambiguidades
+    - Arquitetura técnica viável e documentada
+    - Épicos e stories prontos para sprint planning
+    - Readiness report sem blockers críticos
+    - Alinhamento entre todos os artefatos mantido

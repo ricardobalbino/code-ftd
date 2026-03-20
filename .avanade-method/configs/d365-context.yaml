@@ -1,0 +1,289 @@
+# ============================================================
+# DYNAMICS 365 CE & POWER PLATFORM - PROJECT CONTEXT
+# ============================================================
+# Avanade Method v4.29.0 - D365 Contextualization Layer
+# Este arquivo contextualiza todo o framework para D365/Power Platform
+# Carregado por todos os agentes como contexto de stack tecnológico
+# ============================================================
+
+project_context:
+  type: brownfield
+  platform: dynamics-365-ce
+  description: |
+    Projeto de customizações múltiplas em Dynamics 365 CE (Customer Engagement)
+    com integrações via Azure Functions, plugins Dataverse C#, PCF Controls,
+    Power Automate flows e Power Pages.
+
+# ============================================================
+# STACK TECNOLÓGICO D365
+# ============================================================
+technology_stack:
+  primary_platform:
+    name: "Dynamics 365 Customer Engagement"
+    modules:
+      - Sales
+      - Customer Service
+      - Marketing
+      - Field Service
+    version: "9.x (Online)"
+    deployment: "Cloud (Microsoft Managed)"
+
+  data_layer:
+    name: "Microsoft Dataverse"
+    alias: "Common Data Service (CDS)"
+    description: |
+      Camada de dados unificada baseada em tabelas (entidades) com
+      schema extensível, security roles, business rules e calculated fields.
+    concepts:
+      tables: "Entidades (Account, Contact, Opportunity, Custom entities)"
+      columns: "Atributos (campos de cada tabela)"
+      relationships: "1:N, N:1, N:N entre tabelas"
+      choices: "OptionSets (enumerações)"
+      business_rules: "Validações client-side no form"
+      calculated_fields: "Campos calculados e rollup"
+      views: "Consultas salvas (System Views, Personal Views)"
+      forms: "UI de entrada de dados (Main, Quick Create, Quick View)"
+      dashboards: "Painéis analíticos (System, Interactive Experience)"
+      security_roles: "Modelo RBAC baseado em BU/Team/User"
+      business_units: "Unidades organizacionais para segregação de dados"
+
+  frontend:
+    model_driven_apps:
+      description: "Apps baseados em metadata do Dataverse"
+      technology: "Unified Interface (UCI)"
+      customization: "Sitemap, Forms, Views, Dashboards, Business Rules"
+    canvas_apps:
+      description: "Apps low-code com Power Fx"
+      technology: "Power Apps Canvas"
+      customization: "Screens, galleries, forms, connectors"
+    pcf_controls:
+      description: "PowerApps Component Framework"
+      technology: "TypeScript + React (ou sem framework)"
+      build: "pac pcf init → npm run build → pac pcf push"
+      deployment: "Solution package → Import to environment"
+    power_pages:
+      description: "Portais web externos sobre Dataverse"
+      technology: "Liquid templates + JavaScript + Web API"
+      authentication: "Azure AD B2C / Local Auth"
+
+  backend:
+    plugins:
+      description: "Lógica server-side C# no pipeline de execução Dataverse"
+      technology: "C# (.NET Framework 4.6.2+)"
+      patterns:
+        - "Pre-Validation (Stage 10)"
+        - "Pre-Operation (Stage 20)"
+        - "Post-Operation (Stage 40)"
+      registration: "Plugin Registration Tool (PRT)"
+      isolation: "Sandbox (isolado) - sem acesso a filesystem/registry"
+      limits:
+        - "Timeout: 2 minutos por execução"
+        - "Profundidade máxima de chamada: 8 níveis"
+        - "Tamanho máximo de mensagem: 256KB"
+      best_practices:
+        - "Stateless - nunca armazene estado entre execuções"
+        - "IOrganizationService via ServiceProvider"
+        - "ITracingService para logging/debugging"
+        - "IPluginExecutionContext para contexto de execução"
+        - "Early-bound entities com CrmSvcUtil ou pac modelbuilder"
+        - "Unit test com FakeXrmEasy ou similar"
+    custom_apis:
+      description: "APIs customizadas no Dataverse (substitui Custom Actions)"
+      technology: "C# Plugin backend + Definição no solution"
+      use_case: "Operações complexas expostas como endpoints reutilizáveis"
+    custom_workflow_activities:
+      description: "Atividades customizadas para Workflows clássicos"
+      technology: "C# (.NET Framework 4.6.2)"
+      note: "Uso diminuindo - preferir Power Automate + Custom APIs"
+
+  integration:
+    azure_functions:
+      description: "Backend serverless para lógica complexa/integrações"
+      technology: "C# / .NET 8 (Isolated Worker)"
+      triggers:
+        - "HTTP Trigger (webhooks do Dataverse)"
+        - "Service Bus Trigger (mensagens async)"
+        - "Timer Trigger (jobs agendados)"
+        - "Event Grid Trigger (eventos do Azure)"
+      authentication: "Managed Identity + Azure AD App Registration"
+      patterns:
+        - "Webhook receiver para eventos Dataverse"
+        - "Processamento assíncrono pesado"
+        - "Integração com sistemas externos"
+        - "ETL e transformação de dados"
+    azure_service_bus:
+      description: "Mensageria enterprise para integração async"
+      patterns:
+        - "Queue: ponto-a-ponto"
+        - "Topic/Subscription: pub/sub"
+      use_cases:
+        - "Desacoplamento entre D365 e sistemas externos"
+        - "Garantia de entrega (at-least-once)"
+        - "Processamento em ordem (sessions)"
+    azure_event_grid:
+      description: "Roteamento de eventos serverless"
+      use_cases:
+        - "Eventos do Dataverse para múltiplos subscribers"
+        - "Integração event-driven"
+    power_automate:
+      cloud_flows:
+        description: "Automação low-code"
+        triggers:
+          - "Dataverse triggers (Create, Update, Delete)"
+          - "Schedule triggers"
+          - "HTTP triggers"
+          - "Email/Teams triggers"
+        patterns:
+          - "Approval workflows"
+          - "Notificações automáticas"
+          - "Sincronização entre sistemas"
+          - "Transformação de dados simples"
+      desktop_flows:
+        description: "RPA para automação de UI"
+        use_case: "Integração com sistemas legados sem API"
+
+  devops_alm:
+    solution_management:
+      description: "Empacotamento de customizações D365"
+      types:
+        managed: "Para deploy em produção (imutável)"
+        unmanaged: "Para desenvolvimento (editável)"
+      publisher:
+        prefix: "[DEFINIR]"  # Ex: "ftd_" - prefixo para todas customizações
+        description: "Publisher único do projeto para rastreabilidade"
+      layers:
+        - "System (base Microsoft)"
+        - "Managed solutions (ISVs, third-party)"
+        - "Unmanaged customizations (projeto)"
+      best_practices:
+        - "Uma solução por feature/módulo (component-based)"
+        - "Solution segmentation: core, customizations, integrations"
+        - "Nunca editar solução Default"
+    environments:
+      dev: "Desenvolvimento - unmanaged solutions"
+      build: "Build/CI - export → build → managed"
+      test: "Teste/QA - import managed"
+      uat: "UAT/Staging - import managed"
+      prod: "Produção - import managed"
+    tools:
+      - "Power Platform CLI (pac)"
+      - "Solution Packager (SolutionPackager.exe)"
+      - "Configuration Migration Tool"
+      - "Plugin Registration Tool"
+      - "Azure DevOps / GitHub Actions pipelines"
+      - "Power Platform Build Tools (Azure DevOps tasks)"
+
+# ============================================================
+# PADRÕES DE DESENVOLVIMENTO D365
+# ============================================================
+development_patterns:
+  naming_conventions:
+    tables: "Prefixo do publisher + nome (ex: ftd_projecttask)"
+    columns: "Prefixo do publisher + nome (ex: ftd_estimatedhours)"
+    plugins: "Namespace.Entity.Message (ex: FTD.Account.PreCreate)"
+    azure_functions: "FTD.Functions.{Domain}.{Function}"
+    pcf_controls: "FTD{ControlName}Control"
+    web_resources: "ftd_/scripts/{module}/{file}.js"
+    power_automate: "FTD - {Module} - {Action} - {Trigger}"
+
+  solution_architecture:
+    core_solution: "FTDCore - Tabelas, security roles, opções globais"
+    module_solutions:
+      - "FTDSales - Customizações de vendas"
+      - "FTDService - Customizações de atendimento"
+      - "FTDIntegration - Webhooks, Custom APIs, connectors"
+      - "FTDControls - PCF controls compartilhados"
+    integration_solution: "FTDAzure - Azure Functions configs, Service Bus"
+
+  code_patterns:
+    plugin_pattern: |
+      1. Validate context (MessageName, Stage, Entity)
+      2. Extract Target entity from InputParameters
+      3. Execute business logic via Service classes
+      4. Handle exceptions com InvalidPluginExecutionException
+      5. Log via ITracingService
+    azure_function_pattern: |
+      1. Validate input (HTTP body / Service Bus message)
+      2. Authenticate to Dataverse (Managed Identity / App Registration)
+      3. Execute business logic
+      4. Call Dataverse Web API via HttpClient ou SDK
+      5. Return result / Complete message
+    pcf_pattern: |
+      1. init(): Setup do componente, attach event listeners
+      2. updateView(): Re-render baseado em novos dados
+      3. getOutputs(): Retornar valor para o form
+      4. destroy(): Cleanup de recursos
+
+# ============================================================
+# INTEGRAÇÃO COM AVANADE METHOD
+# ============================================================
+method_mapping:
+  discovery_phase:
+    focus: "Entender processos de negócio CRM atuais e gaps"
+    artifacts:
+      - "Process maps dos fluxos CRM atuais"
+      - "Gap analysis: OOB vs customização necessária"
+      - "Entity Relationship Diagram (ERD) do Dataverse"
+      - "Integration landscape map"
+  planning_phase:
+    focus: "PRD com contexto D365, definir o que é config vs dev"
+    artifacts:
+      - "PRD com seção D365 (entities, forms, views, business rules)"
+      - "Fit-Gap analysis detalhado"
+      - "Customization vs Configuration matrix"
+  solutioning_phase:
+    focus: "Arquitetura D365 + decisões de customização"
+    artifacts:
+      - "Architecture Document com Dataverse model"
+      - "ADRs para decisões D365 (plugin vs flow, PCF vs JS)"
+      - "Solution architecture (quantas solutions, dependências)"
+      - "Integration architecture (Azure Functions, Service Bus)"
+  implementation_phase:
+    focus: "Desenvolvimento seguindo ALM D365"
+    story_types:
+      - type: "Dataverse Configuration"
+        description: "Tables, columns, relationships, views, forms, business rules"
+        developer: "Configurador D365"
+      - type: "Plugin Development"
+        description: "Server-side logic C#"
+        developer: "Tiago Dev"
+      - type: "PCF Control"
+        description: "Custom UI components"
+        developer: "Tiago Dev"
+      - type: "Azure Function"
+        description: "Integration/backend logic"
+        developer: "Tiago Dev"
+      - type: "Power Automate Flow"
+        description: "Automation workflows"
+        developer: "Citizen Dev / Tiago Dev"
+      - type: "Power Pages"
+        description: "External portal pages"
+        developer: "Tiago Dev"
+      - type: "Canvas App"
+        description: "Custom mobile/tablet app"
+        developer: "Tiago Dev / Sofia UX"
+
+# ============================================================
+# REFERÊNCIAS E RECURSOS
+# ============================================================
+references:
+  documentation:
+    - name: "Microsoft Learn - Dynamics 365"
+      url: "https://learn.microsoft.com/dynamics365/"
+    - name: "Dataverse Developer Guide"
+      url: "https://learn.microsoft.com/power-apps/developer/data-platform/"
+    - name: "Plugin Development"
+      url: "https://learn.microsoft.com/power-apps/developer/data-platform/plug-ins"
+    - name: "PCF Documentation"
+      url: "https://learn.microsoft.com/power-apps/developer/component-framework/"
+    - name: "Power Platform ALM"
+      url: "https://learn.microsoft.com/power-platform/alm/"
+  tools:
+    - name: "Power Platform CLI (pac)"
+      install: "dotnet tool install --global Microsoft.PowerApps.CLI.Tool"
+    - name: "XrmToolBox"
+      description: "Suite de ferramentas comunitária para D365"
+    - name: "FakeXrmEasy"
+      description: "Framework de mocking para testes de plugins"
+    - name: "Dataverse DevTools"
+      description: "Extensão VS Code para D365"

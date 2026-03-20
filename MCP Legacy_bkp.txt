@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "mcp-agent-dev": {
+      "url": "https://mcp-agent.br.avanade.ai/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "x-api-key": "cFf4IwGhwy38llzPNxpnv1EUrrs92GWN5mM6xBbNAPMy4Dr6DrjhOA00EnmVTQho",
+        "x-cockpit-api-key": "3e91ee028b50c217c0a8585d2f95ddcd1388819de9d51fb223f321a61a179a05",
+        "x-cockpit-license-id": "612bcc78-9444-4d60-b0f3-3313736e0251",
+        "x-cockpit-namespace-id": "65cbf4e9-4b91-42f3-9ea0-3e21152fb5e6",
+        "x-cockpit-utility-agent-id": "1eb1a69a-65e2-4d78-8655-8bf243d62f65"
+      },
+      "type": "http"
+    }
+  }
+}

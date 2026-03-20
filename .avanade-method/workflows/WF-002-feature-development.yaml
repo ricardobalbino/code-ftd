@@ -1,0 +1,157 @@
+workflow:
+  id: avanade-feature-development
+  name: Avanade Feature Development
+  description: >-
+    Workflow de desenvolvimento iterativo para implementação de features usando sprints ágeis.
+    Cobre sprint planning, criação de stories, desenvolvimento, code review, retrospectiva
+    e correção de curso. Tipicamente usado após WF-001 (Full Inception).
+  type: generic
+  project_types:
+    - feature-development
+    - sprint-execution
+    - iterative-delivery
+    - continuous-development
+
+  phases:
+    - phase: sprint-setup
+      name: "Sprint Setup"
+      description: "Planejamento e preparação do sprint"
+      quality_gate: "QG1: Sprint Planejado"
+
+      sequence:
+        - activity: sprint-planning
+          description: "Planejamento do sprint com seleção e priorização de stories"
+          agents:
+            - agent: sm
+              creates: sprint-status.yaml
+              requires: [epics.md]
+              notes: "Gera e gerencia sprint-status.yaml tracking file com stories selecionadas, velocidade e metas do sprint"
+
+            - agent: po
+              action: backlog-prioritization
+              notes: "Priorização do backlog com framework RICE, seleção de stories para o sprint"
+
+        - quality_gate: sprint_planned
+          criteria:
+            - "Sprint goal definido e claro"
+            - "Stories selecionadas e priorizadas"
+            - "Capacidade da equipe validada"
+            - "Dependências identificadas e resolvidas"
+            - "sprint-status.yaml criado e atualizado"
+          approvers: ["scrum-master", "product-owner"]
+          notes: "Quality Gate 1 - Sprint planejado e pronto para execução"
+
+    - phase: development-loop
+      name: "Development Loop"
+      description: "Ciclo iterativo de criação de story, desenvolvimento e code review"
+      quality_gate: "QG2: Stories do Sprint Completas"
+
+      sequence:
+        - activity: create-story
+          description: "Criação da próxima user story do épico com context analysis"
+          agents:
+            - agent: sm
+              creates: stories/ST-XXX.md
+              requires: [sprint-status.yaml, epics.md]
+              notes: "Cria story com enhanced context analysis, acceptance criteria detalhados e tasks sequenciais"
+
+        - activity: develop-story
+          description: "Implementação da story seguindo tasks sequenciais"
+          agents:
+            - agent: dev
+              action: implement_story
+              requires: [stories/ST-XXX.md]
+              notes: "Executa tasks/subtasks IN ORDER, escreve testes, valida contra acceptance criteria. Atualiza Dev Agent Record na story"
+
+        - activity: code-review
+          description: "Revisão adversarial do código implementado"
+          agents:
+            - agent: qa
+              creates: code-review-ST-XXX.md
+              requires: [stories/ST-XXX.md]
+              notes: "Adversarial Senior Developer code review - encontra 3-10 issues SEMPRE. Oferece opção de auto-fix"
+
+        - activity: update-sprint-status
+          description: "Atualização do tracking do sprint"
+          agents:
+            - agent: sm
+              action: update_sprint_tracking
+              creates: sprint-status-update
+              notes: "Atualiza sprint-status.yaml com progresso, velocity e métricas"
+
+        - loop_control:
+          repeat: "Para cada story no sprint"
+          continue_condition: "Enquanto houver stories pendentes no sprint"
+          break_condition: "Todas stories do sprint completas OU sprint timebox expirado"
+
+        - quality_gate: sprint_stories_complete
+          criteria:
+            - "Todas as stories do sprint implementadas"
+            - "Code review aprovado para cada story"
+            - "Testes passando (unit, integration)"
+            - "Acceptance criteria atendidos"
+            - "sprint-status.yaml atualizado"
+          approvers: ["qa", "scrum-master"]
+          notes: "Quality Gate 2 - Todas stories implementadas e revisadas"
+
+    - phase: review-adapt
+      name: "Review & Adapt"
+      description: "Retrospectiva, aprendizados e correção de curso"
+      quality_gate: "QG3: Sprint Fechado"
+
+      sequence:
+        - activity: sprint-status-review
+          description: "Revisão do status final do sprint"
+          agents:
+            - agent: sm
+              action: sprint_status_summary
+              notes: "Summariza sprint-status.yaml, surface risks, route to next workflow"
+
+        - activity: retrospective
+          description: "Retrospectiva após completar épico ou sprint"
+          condition: "após epic completion ou sprint end"
+          agents:
+            - agent: sm
+              creates: retrospective-EP-XXX.md
+              notes: "Review de success, learnings e next epic insights"
+
+        - activity: correct-course
+          description: "Correção de curso se necessário"
+          condition: "se mudanças significativas identificadas"
+          agents:
+            - agent: sm
+              creates: change-proposal.md
+              notes: "Navega mudanças significativas - pode recomendar update PRD, redo architecture, re-prioritize backlog"
+
+        - quality_gate: sprint_closed
+          criteria:
+            - "Retrospectiva realizada com action items"
+            - "Métricas do sprint documentadas (velocity, burndown)"
+            - "Lições aprendidas registradas"
+            - "Próximo sprint planejado ou projeto encerrado"
+          approvers: ["scrum-master", "product-owner"]
+          notes: "Quality Gate 3 - Sprint encerrado, pronto para próximo ciclo"
+
+  handoff_prompts:
+    setup_to_dev: "Sprint planejado e aprovado em QG1. Stories priorizadas e sprint-status.yaml criado. Inicie o development loop."
+    dev_to_review: "Stories do sprint implementadas e aprovadas em QG2. Code reviews completos. Prossiga para Review & Adapt."
+    next_sprint: "Sprint fechado em QG3. Retrospectiva realizada. Inicie novo ciclo voltando ao Sprint Setup."
+
+  decision_guidance:
+    when_to_use:
+      - Após WF-001 Full Inception estar completo
+      - Implementação iterativa de features planejadas
+      - Sprints de desenvolvimento ágil
+      - Entrega contínua de valor incremental
+    when_not_to_use:
+      - Quando não há PRD e arquitetura definidos (use WF-001 primeiro)
+      - Para bug fixes urgentes (use quick-dev)
+      - Para exploração e discovery (use WF-001)
+
+  success_criteria:
+    - Sprint goal atingido
+    - Todas stories implementadas com testes passando
+    - Code review aprovado sem issues críticos
+    - Velocity consistente com planejamento
+    - Retrospectiva com action items acionáveis
+    - Sprint-status.yaml reflete estado real do projeto

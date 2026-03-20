@@ -1,0 +1,262 @@
+﻿workflow:
+  id: avanade-enterprise-delivery
+  name: Avanade Enterprise Solution Delivery
+  description: >-
+    Workflow completo seguindo metodologia oficial Avanade de 3 fases para entrega de soluções empresariais.
+    Baseado na metodologia Discover & Envision → Design & Implement → Run & Evolve.
+  type: enterprise
+  project_types:
+    - transformacao-digital
+    - microsoft-365
+    - azure-migration
+    - dynamics-365
+    - enterprise-integration
+    - modernizacao-legacy
+
+  phases:
+    - phase: discover-envision
+      name: "Discover & Envision"
+      description: "Descoberta, definição da visão e planejamento estratégico do programa"
+      quality_gate: "QG1: Aprovação para Design & Implementation"
+      
+      sequence:
+        # Discovery Activity
+        - activity: discovery
+          description: "Descoberta e análise do estado atual"
+          agents:
+            - agent: analyst
+              creates: stakeholder-analysis.md
+              notes: "Mapeamento completo de stakeholders, influenciadores e tomadores de decisão"
+              
+            - agent: analyst
+              creates: current-state-analysis.md
+              notes: "Documentação do estado atual (As-Is) incluindo sistemas, processos e limitações"
+
+        # North Star Definition
+        - activity: north-star-definition
+          description: "Definição da visão e objetivos estratégicos"
+          agents:
+            - agent: pm
+              creates: north-star-vision.md
+              requires: [stakeholder-analysis.md, current-state-analysis.md]
+              notes: "Definição da visão North Star e objetivos estratégicos do programa"
+
+        # Program Definition
+        - activity: program-definition
+          description: "Estruturação e definição do programa"
+          agents:
+            - agent: pm
+              creates: program-charter.md
+              requires: [north-star-vision.md]
+              notes: "Charter do programa incluindo escopo, cronograma macro e estrutura organizacional"
+
+        # Engagement Definition
+        - activity: engagement-definition
+          description: "Modelo de engajamento e governança"
+          agents:
+            - agent: pm
+              creates: engagement-model.md
+              notes: "Modelo de engajamento, governança e estrutura de comunicação do programa"
+              
+            - agent: pm
+              creates: discovery.md
+              requires: [stakeholder-analysis.md, current-state-analysis.md, north-star-vision.md, program-charter.md, engagement-model.md]
+              template: discovery-avanade-tmpl
+              notes: "Documento consolidado de discovery seguindo metodologia Avanade. SAVE OUTPUT: Copy to docs/ folder."
+          
+        - quality_gate: discover_envision_approval
+          criteria:
+            - "North Star e visão estratégica definida e aprovada"
+            - "Program Charter aprovado com escopo e cronograma"
+            - "Modelo de engajamento estabelecido"
+            - "Análise de stakeholders completa"
+            - "Requisitos de negócio documentados e validados"
+          approvers: ["program-sponsor", "steering-committee"]
+          notes: "Quality Gate 1 - Aprovação para prosseguir para Design & Implement"
+
+    - phase: design-implement
+      name: "Design & Implement"
+      description: "Design da solução, configuração, desenvolvimento e implementação"
+      quality_gate: "QG2: Go-Live Ready"
+      
+      sequence:
+        # Blueprint & Design
+        - activity: blueprint-design
+          description: "Arquitetura e design detalhado da solução"
+          agents:
+            - agent: architect
+              creates: solution-architecture.md
+              requires: [discovery.md]
+              template: arquitetura-avanade-tmpl
+              notes: "Arquitetura técnica completa priorizando Microsoft Stack e Azure. SAVE OUTPUT: Copy to docs/ folder."
+              
+            - agent: ux-expert
+              creates: ux-design.md
+              requires: [discovery.md, solution-architecture.md]
+              notes: "Design de experiência seguindo Fluent Design System e padrões Microsoft"
+
+        # Build & Configuration + Quality Engineering (Parallel)
+        - activity: build-configuration
+          description: "Desenvolvimento e configuração da solução"
+          parallel_execution: true
+          agents:
+            - agent: dev
+              action: implement_solution
+              creates: implementation_files
+              requires: [solution-architecture.md, ux-design.md]
+              notes: "Implementação seguindo padrões Avanade e arquitetura aprovada"
+              
+            - agent: qa
+              action: quality_engineering
+              creates: test-strategy.md
+              parallel_with: dev
+              notes: "Estratégia de testes, automação e quality engineering contínuo"
+
+        # Data Migration
+        - activity: data-migration
+          description: "Estratégia e execução de migração de dados"
+          condition: "if data migration required"
+          agents:
+            - agent: dev
+              creates: data-migration-plan.md
+              notes: "Plano de migração de dados incluindo estratégia, ferramentas e validação"
+
+        # Application Migration  
+        - activity: application-migration
+          description: "Migração e modernização de aplicações existentes"
+          condition: "if application migration required"
+          agents:
+            - agent: dev
+              creates: app-migration-plan.md
+              notes: "Estratégia de migração de aplicações e modernização de sistemas legados"
+
+        # Go-Live Management
+        - activity: go-live-management
+          description: "Preparação e execução do go-live"
+          agents:
+            - agent: qa
+              action: user_acceptance_testing
+              creates: uat-results.md
+              notes: "Execução de UAT estruturado com stakeholders de negócio"
+              
+            - agent: dev
+              action: production_deployment
+              creates: deployment-guide.md
+              requires: [uat-results.md]
+              notes: "Deployment em produção seguindo procedimentos Avanade"
+
+        # Managed Services Mobilization
+        - activity: managed-services-mobilization
+          description: "Preparação para operação e serviços gerenciados"
+          agents:
+            - agent: pm
+              creates: service-transition-plan.md
+              notes: "Plano de transição para operação e início dos serviços gerenciados"
+
+        # Change, Learning & Communication Enablement
+        - activity: change-learning-enablement
+          description: "Gestão de mudança, treinamento e comunicação"
+          agents:
+            - agent: pm
+              creates: change-management-plan.md
+              notes: "Estratégia de gestão de mudança organizacional e comunicação"
+              
+            - agent: qa
+              creates: training-materials.md
+              notes: "Material de treinamento para usuários finais e equipe técnica"
+
+        # Talent, Organization & Leadership Enablement
+        - activity: talent-organization-enablement
+          description: "Capacitação organizacional e liderança"
+          agents:
+            - agent: pm
+              creates: organizational-readiness.md
+              notes: "Plano de capacitação organizacional e preparação de lideranças"
+          
+        - quality_gate: go_live_ready
+          criteria:
+            - "Solução implementada e testada completamente"
+            - "UAT aprovado pelos stakeholders"
+            - "Planos de migração executados com sucesso"
+            - "Equipe treinada e capacitada"
+            - "Infraestrutura produtiva validada"
+            - "Processos de suporte operacional estabelecidos"
+            - "Planos de contingência e rollback preparados"
+          approvers: ["solution-architect", "business-sponsor", "operations-team"]
+          notes: "Quality Gate 2 - Solução pronta para go-live"
+
+    - phase: run-evolve
+      name: "Run & Evolve"
+      description: "Operação, suporte e evolução contínua da solução"
+      
+      sequence:
+        # Post Go-Live Support
+        - activity: post-go-live-support
+          description: "Suporte imediato pós go-live e estabilização"
+          agents:
+            - agent: qa
+              creates: post-golive-support.md
+              notes: "Suporte estruturado pós go-live incluindo monitoramento e resolução de issues"
+              
+            - agent: dev
+              action: performance_optimization
+              creates: performance-report.md
+              notes: "Otimização de performance e ajustes pós-implementação"
+
+        # Operations Execution & Transformation
+        - activity: operations-transformation
+          description: "Execução operacional e transformação contínua"
+          agents:
+            - agent: pm
+              creates: operations-model.md
+              notes: "Modelo operacional para execução e gestão contínua da solução"
+              
+            - agent: sm
+              creates: continuous-improvement.md
+              notes: "Processos de melhoria contínua e evolução da solução"
+
+        # Service Management
+        - activity: service-management
+          description: "Gestão de serviços e atendimento"
+          agents:
+            - agent: pm
+              creates: service-management-framework.md
+              notes: "Framework de gestão de serviços incluindo SLAs, KPIs e governança"
+              
+            - agent: po
+              creates: service-catalog.md
+              notes: "Catálogo de serviços disponíveis e procedimentos de atendimento"
+              
+        - knowledge_transfer:
+          action: complete_documentation_handover
+          creates: complete-support-documentation.md
+          notes: "Documentação completa para operação, suporte e evolução da solução"
+          
+        - support_model:
+          action: establish_managed_services
+          creates: managed-services-model.md
+          notes: "Modelo de serviços gerenciados com SLAs, escalation e responsabilidades operacionais"
+
+  handoff_prompts:
+    discover_to_design: "Discover & Envision completo aprovado em QG1. North Star definido, Program Charter aprovado. Save docs/discovery.md e prossiga para Design & Implement."
+    design_to_run: "Design & Implement completo aprovado em QG2. Solução implementada e pronta para go-live. Prossiga para Run & Evolve."
+
+  decision_guidance:
+    when_to_use:
+      - Projetos de transformação digital empresarial
+      - Implementações de soluções Microsoft (Azure, M365, Dynamics)
+      - Programas complexos com múltiplas fases e stakeholders
+      - Integrações com sistemas legados e modernização
+      - Projetos que requerem serviços gerenciados pós-implementação
+      - Ambientes regulamentados com compliance rigoroso
+      - Soluções que necessitam de suporte e evolução contínua
+
+  success_criteria:
+    - Aderência à metodologia oficial Avanade de 3 fases
+    - North Star e visão estratégica claramente definidos
+    - Solução implementada com tecnologias Microsoft preferenciais
+    - Go-live executado com sucesso e sem interrupções
+    - Modelo de serviços gerenciados operacional
+    - Processos de melhoria contínua estabelecidos
+    - Satisfação do cliente e alcance dos objetivos de negócio
+    - ROI demonstrado conforme business case inicial

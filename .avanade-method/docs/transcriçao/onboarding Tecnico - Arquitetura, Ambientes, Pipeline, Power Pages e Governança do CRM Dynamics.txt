@@ -1,0 +1,213 @@
+Título da reunião: Onboarding Técnico — Arquitetura, Ambientes, Pipeline, Power Pages e Governança do CRM Dynamics
+Data: 10/03/2026
+Horário de início: 13:05
+Horário de término: ~13:58 (estimado com base na transcrição)
+
+Participantes presentes
+
+•	Julio Cesar Teixeira dos Santos
+•	Fernando Mauricio da Costa Filho
+•	Danilo Macedo
+•	Camila Moraes
+•	João Carlos Figueirôa de Castilho
+•	Kevellin dos Santos Corrado
+
+________________________________________
+
+2) PAUTA
+
+Conforme o convite da reunião, a pauta programada foi:
+1.	Apresentação da estrutura de ambientes, soluções e pipeline de deploy
+2.	Repositório de código e gestão de branches
+3.	Aplicativos do CRM (Spartan, PNLD, Hub SAC, Adobe Sign)
+4.	Decisão técnica do Power Pages para o Simulador Comercial
+5.	Power Automate, Azure Functions e integrações
+6.	Performance, débitos técnicos, documentação e governança
+
+________________________________________
+
+3) DESENVOLVIMENTO
+
+3.1 Ambientes e Soluções
+
+Apresentação por Julio Cesar Teixeira dos Santos:
+
+•	3 ambientes na esteira atual: DEV, UAT e Produção.
+•	2 ambientes adicionais em configuração (ainda não no pipeline): QA (Quality/homologação) e Release Candidate (pré-produção).
+•	Soluções separadas por tipo de componente: data model, client extension, plugins, site map, etc. — 9 soluções numeradas com ordem de importação definida.
+•	Deploy via pipeline (Azure DevOps). Para produção, é aberta uma GMUD no sistema SMax por Giselle (recurso de infra). O pipeline é concorrido com outras áreas (pode haver fila).
+•	Deploy manual somente em casos críticos com liberação especial.
+•	Exceção: deploy de plugins para DEV é manual (pipeline ainda não configurado para isso). De UAT em diante, segue pelo pipeline.
+
+________________________________________
+
+3.2 Repositório de Código
+
+•	Repositório: FTD Dynamics (dentro do projeto FTD Educação no Azure DevOps).
+•	Branches: dev e master. Trabalho diário feito em features criadas a partir da dev.
+•	A branch fiel aos ambientes é a dev (não a master).
+•	Comunicação verbal entre o time para evitar sobrescrita de assemblies — não há deploy automatizado da master para ambientes.
+•	O repositório atual não está no mesmo projeto dos PBIs, impossibilitando link automático entre commits/PRs e features. Documentação é feita manualmente nas features e nos PRs.
+•	Migração em andamento para novo repositório onde código e PBIs ficarão juntos, permitindo rastreabilidade.
+
+________________________________________
+
+3.3 Aplicativos do CRM
+
+•	Spartan: aplicativo principal de vendas.
+•	PNLD: aplicativo da área pública — funcionalidades diferentes do Spartan.
+•	Hub SAC: usado pela área de CRC para atendimentos.
+•	Adobe Sign: estrutura para assinatura de contratos dentro do Dynamics — em vias de mudar para outra tecnologia.
+•	Área do Cliente / Consultoria Online: equipe separada que usa Canvas App com as mesmas tabelas do Dataverse. Existe uma Squad de link para gestão de mudanças entre os times.
+
+________________________________________
+
+3.4 Decisão Técnica — Power Pages para o Simulador Comercial
+
+Apresentação por Fernando Mauricio da Costa Filho:
+
+Premissas do simulador:
+•	Liberdade de layout maior que o Dynamics nativo.
+•	Interface amigável com performance independente do número de produtos.
+•	Incluído na licença existente (sem custo adicional).
+•	Manutenção prática.
+•	Suporte a mobile e desktop.
+
+3 opções avaliadas:
+1.	Power Pages (escolhida): portal apartado, responsivo, single page por enquanto. Autenticação via Microsoft Entra ID (usuários internos com licença Enterprise) — sem custo adicional de licenciamento (confirmado com a Microsoft por e-mail).
+2.	Custom Page (HTML/CSS dentro do Dynamics): descartada — experiência mobile limitada pelo app nativo do Dynamics for Sales.
+3.	Canvas App: descartada — necessitaria manter aplicativo desktop e mobile separados, gerando manutenção em 2 lugares para alterações de front-end.
+
+Estado atual do desenvolvimento:
+•	Single page de adição de produto individual em desenvolvimento.
+•	Ainda sem home page, header, footer ou contexto geral de portal.
+•	Duas opções de entrega sendo consideradas: (1) redirecionamento via botão no Dynamics ou (2) embed dentro do Dynamics.
+•	Intenção final: portal apartado independente.
+•	Apresentação completa da estrutura do Power Pages planejada para após a entrega interna (sexta-feira), com sessão para Avanade na semana seguinte.
+
+Estratégia de performance:
+•	Mínimo de consultas ao Dataverse — dados carregados em cache no front-end.
+•	Filtros dinâmicos processados no front-end (sem fetch ao Dataverse a cada interação).
+•	Cálculos em tempo real via JavaScript no front-end.
+•	Validação no back-end (Azure Functions) como segunda camada de segurança — garante integridade mesmo se o usuário não usar o simulador.
+•	Uso de PowerFX para cálculos com valores totais (substituindo valores acumulados entre produtos, que causavam lentidão).
+
+Cálculos — arquitetura atual:
+•	Cálculo de produtos da proposta: se ≤50 produtos, processado no Dataverse (plugin síncrono dentro de 2 minutos). Se >50 produtos, enviado para Azure Function.
+•	Cálculo da proposta comercial: feito por Azure Function.
+•	Power Pages reutilizará as Azure Functions existentes, com refatoração/revisão planejada.
+
+________________________________________
+
+3.5 Estrutura de Código
+
+•	Plugins: separados por entidade (contas, etc.). Índice de bugs muito baixo após 1,5 ano de reestruturação pela Squad (2 bugs no mês anterior).
+•	JavaScript: formulários passaram por refatoração (assessment anterior). Algumas partes já no novo padrão, outras ainda como legado.
+•	Azure Functions: renovação automática e cálculos de proposta comercial.
+•	Batch projects: para atualizações em massa — executados em VM solicitada ao time de infra (não na máquina do desenvolvedor).
+•	Actions: existem actions no Dynamics que disparam Power Automates. Não há actions expostas para consumo externo — sistemas externos consultam via OData ou FetchXML.
+
+________________________________________
+
+3.6 Power Automate
+
+•	Power Automate de aprovação de proposta: em processo de refatoração (muito extenso).
+•	Usuário de serviço: "FTDMaxFlow" — usado como proprietário dos flows e para todas as conexões. Acesso restrito a Julio, Fernando e um desenvolvedor de sustentação (Thiago).
+•	Azure Key Vault: usado para Azure Functions (tokens, URLs), mas não dentro dos Power Automates (usam variáveis de ambiente para URLs e dados).
+•	Conexões existentes para child flows: a verificar — atenção ao limite de conexões por usuário de serviço.
+•	Tabelas de suporte:
+	o	Tabela de logs de integração (genérica, reutilizável por qualquer integração).
+	o	Tabela de fluxos gerenciais (URLs de child flows para matriz de serviços — específica, não reutilizável).
+
+________________________________________
+
+3.7 Integrações
+
+•	Integrações construídas por time separado (Thiago Veiga, arquiteto). Squad do CRM faz apenas o consumo (recebe endpoint).
+•	Não há padrão de API Management centralizado — consumo feito via Power Automate ou Azure Function conforme a complexidade.
+•	Caminho inverso (expor endpoint do CRM): não existe. Sistemas externos consultam via OData/FetchXML com queries montadas pela Squad.
+
+________________________________________
+
+3.8 Performance e Dataverse
+
+•	Nível crítico de armazenamento no Dataverse: já passou do limite devido a processo de carga de dados. Plano de ação a verificar com Jovanello.
+•	Instabilidade na semana anterior: problema de região da Microsoft, Dynamics ficou indisponível o dia todo.
+•	Fora esses itens, sem outros riscos de performance identificados.
+
+________________________________________
+
+3.9 Débitos Técnicos
+
+•	Refatoração em andamento de Power Automate, plugins e JavaScript.
+•	São itens funcionais (não impactam o cliente final) — atacados como atividades não planejadas ao final das sprints quando sobra capacidade.
+•	Não há roadmap formal de 6 meses — trabalho é contínuo e oportunístico.
+•	Índice de bugs muito baixo (2 no último mês) após 1,5 ano de reestruturação.
+
+________________________________________
+
+3.10 Documentação
+
+•	Maioria dos itens tem PBIs no DevOps.
+•	Documentação técnica existe para B2B e PNLD. Demais itens possuem documentação limitada aos PBIs.
+•	Não existe modelo de entidade-relacionamento (ER) atualizado.
+•	Não existe guia de arquitetura, convenção de nomeação ou documento formal de padrões — Squad pequena, conhecimento passado via acompanhamento e code review.
+
+________________________________________
+
+3.11 Governança e Padrões
+
+•	Prefixo de tabelas/campos: "ftd_" (publicador padrão FTD).
+•	Não há convenção de nomenclatura além do prefixo — prática é deixar nomes de variáveis/campos claros e descritivos.
+•	Security roles: problema reconhecido — ambientes não equalizados, muitos perfis possivelmente duplicados ou que poderiam ser unificados. Equalização no roadmap mas ainda não executada.
+•	Processo de bugs: N1 feito por equipe de sustentação separada (portal à parte). Se não resolvido, bug é criado no DevOps e atribuído ao time do CRM. Story bugs são criados diretamente no DevOps associados à user story.
+
+________________________________________
+
+3.12 Processo de Gestão de Código
+
+•	Fluxo: criar feature a partir da dev → desenvolver → comunicar com time sobre assemblies em uso → merge se necessário → enviar para dev.
+•	Comunicação verbal para evitar conflitos (sem proteção automatizada de branches).
+•	Code review feito pelo líder técnico (Julio) acompanhando entregas.
+
+________________________________________
+
+4) DECISÕES
+
+Observação: foram registradas abaixo apenas decisões explícitas (ou confirmações formais) verbalizadas na reunião.
+
+1.	Apresentação técnica do Power Pages para Avanade será feita na semana seguinte à entrega interna (sexta-feira): Fernando e Kevellin combinaram. Forma: consenso verbal.
+2.	Dúvidas sobre coexistência de dois times no pipeline ficaram para a sessão de amanhã (11/03): Danilo propôs, Julio concordou. Forma: consenso verbal.
+
+________________________________________
+
+5) AÇÕES E RESPONSÁVEIS
+
+Prazos foram registrados somente quando verbalizados. Quando não houve prazo explícito, consta "Não definido na reunião".
+
+Descrição da ação	Responsável	Prazo de entrega	Status
+Apresentação técnica completa do Power Pages (estrutura, arquitetura, divisão) para equipe Avanade	Fernando Mauricio da Costa Filho / Kevellin dos Santos Corrado	Semana seguinte (após entrega interna na sexta-feira)	Aberta
+Compartilhar lista de security roles com breve descrição de perfis associados	Julio Cesar Teixeira dos Santos	Não definido na reunião	Aberta
+Compartilhar nome e estrutura da tabela de logs de integração genérica	Julio Cesar Teixeira dos Santos / Fernando Mauricio da Costa Filho	Não definido na reunião	Aberta
+Compartilhar documentação técnica existente (B2B, PNLD e PBIs relevantes)	Julio Cesar Teixeira dos Santos	Não definido na reunião	Aberta
+Verificar com Jovanello plano de ação para nível crítico de armazenamento do Dataverse	Camila Moraes / Danilo Macedo	Não definido na reunião	Aberta
+Discutir coexistência de dois times no pipeline e processo de deploy (sessão dedicada)	Danilo Macedo / Julio Cesar Teixeira dos Santos	11/03/2026 (sessão de amanhã)	Aberta
+Verificar conexões existentes reutilizáveis para child flows e limites do usuário de serviço	Fernando Mauricio da Costa Filho	Não definido na reunião	Aberta
+Aprofundar governança e acessos na próxima sessão	Camila Moraes / Danilo Macedo / Time Técnico FTD	11/03/2026	Aberta
+
+________________________________________
+
+6) OBSERVAÇÕES ADICIONAIS
+
+•	O Dataverse já ultrapassou o limite de armazenamento — risco crítico que pode impactar novas funcionalidades. Escalar com Jovanello.
+•	A branch "master" não está sendo usada como referência para deploy — a branch "dev" é a fiel aos ambientes. Atenção na coexistência de times.
+•	Não existe modelo ER, guia de arquitetura ou documento formal de padrões. A Avanade precisará construir entendimento via análise direta do código e soluções.
+•	A escolha do Power Pages foi validada com a Microsoft em relação ao licenciamento (autenticação via Entra ID para usuários internos, sem custo adicional).
+•	Azure Functions são compartilhadas entre o fluxo atual do CRM e o futuro Power Pages — refatoração será necessária.
+
+________________________________________
+
+7) ENCERRAMENTO
+
+Horário de encerramento: ~13:58 (estimado).
+Registro de encerramento: Kevellin dos Santos Corrado verificou se havia mais pontos. Danilo Macedo agradeceu e indicou que dúvidas restantes serão tratadas na sessão de amanhã (11/03).

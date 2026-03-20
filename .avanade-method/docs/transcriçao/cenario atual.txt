@@ -1,0 +1,835 @@
+Transcrição
+10 de março de 2026, 01:05PM
+
+Julio Cesar Teixeira dos Santos começou a transcrição
+
+Julio Cesar Teixeira dos Santos   0:05
+O pessoal iniciou a gravação.
+Bom é, vou apresentar aqui aqueles que não me conhecem. Meu nome é Julio. Eu sou líder técnico aqui na Squad de melhorias e sustentação no CRM. É, nós atuamos ali com as melhorias do dia a dia e com a faixa de sustentação também.
+É, estou compartilhando minha tela com vocês, consegue enviar a tela?
+
+Danilo Macedo   0:34
+Sim.
+
+Julio Cesar Teixeira dos Santos   0:35
+OK, bom, hoje nossos ambientes, eles é estão divididos em 3 ambientes dentro da nossa esteira hoje, que é o ambiente de deve, um ambiente de OAT e um ambiente de produção. São esses 3 ambientes que nós.
+
+Camila Moraes   0:37
+Mhm.
+
+Julio Cesar Teixeira dos Santos   0:51
+Temos aqui, trabalhamos com soluções separadas por componentes, então nós temos a data móvel, client extension, os plugins, temos toda a parte de site map, então a as soluções, elas são separadas.
+De acordo com cada tipo de componente aqui dentro, hoje nós temos, se eu não me engano, 9 tipos de soluções que comportam é os componentes. Bom, o.
+
+Danilo Macedo   1:18
+Mhm.
+Tem uma ordem também, Julio, de De Paula.
+
+Julio Cesar Teixeira dos Santos   1:24
+Sim, possui uma ordem de de Cassia, por isso que elas são numeradas isso.
+
+Danilo Macedo   1:25
+Tá, tá numerado aí, tá.
+
+Julio Cesar Teixeira dos Santos   1:30
+É os nossos deploys. Hoje eles são executados via pipeline. Nós temos aqui um pipeline onde nós executamos as releases para todos os ambientes, OATI produção para o ambiente de produção dentro do.
+dos deploys é alocado o recurso de infra para que eles façam a liberação do Deploy. Então, hoje a gente tem um processo de abrir um Giselle e uma pessoa que é a Giselle, que refaz a abertura da Giselle da Giselle para nós.
+Aonde nós fornecemos todos os pacotes que foram usados e patch, aqui nós trabalhamos com patch e ela monta a estrutura do que vai ser feito o deploy no dia e faz a abertura dessa G Mode no sistema chamado S Max. E aí esse S Max gera um link.
+Então é feito a alocação de um recurso do tindin e infraestrutura para fazer o deploy para a produção a partir do fornecimento das releases.
+É essas releases, elas estão dentro do projeto FTD, dentro desse Word, aqui em release vai ter acesso às releases. Então todo o processo de criação de release, ele é executado por aqui e exige a aprovação.
+De algum aprovador cadastrado dentro daquele pipeline é hoje o nosso pipeline. Ele é concorrido com outras áreas, então pode acontecer de algum momento um Deploy e ele ficar dependendo de algum recurso ser liberado, de alguma fila ser liberada.
+Mas assim que o recurso é liberado, o deploy ocorre é normalmente.
+Nós não fazemos subidas de forma manual, anão ser que seja um caso muito específico para alguma coisa que realmente não está funcionando ou para algo que precise de uma certa urgência e o pipeline esteja ocupado, então.
+Em algum caso de oliveira Glugovskis que é mais crítica, então pede-se liberação para poder fazer essas subidas. Do ponto de vista de código, nós temos aqui um repositório que é o FTD Dynamics.
+Aonde nós temos as soluções dev e master, que é onde nós trabalhamos. É esse repositório. Ele fica dentro do FTD educação, também dentro do FTD dynamics. E aqui você tem o as brains on.
+As features de cada um e as brands que nós trabalhamos no dia a dia.
+Deploy para plugin.
+Manual somente para a dev, porque precisa o pipeline não faz o deploy para o ambiente, ainda não está configurado. Então nós fazemos o deploy para a dev e de um ambiente de de de OATI e produção, nós seguimos pelo pelo pipeline, então.
+Hoje o nosso.
+Repositório ele não está dentro do mesmo projeto dos PBIS, então a gente dentro dos commit, dentro dos purequest, a gente não consegue associar o pipeline a.
+Feature está sendo entregue, então normalmente a gente documenta isso na feature para ficar específico o que está sendo feito ali.
+Então, para poder identificar isso e nas ideais também, a gente coloca ali o que está sendo feito e as evidências. Isso é a estrutura que a gente usava até o momento, a estrutura de soluções por componentes enumeradas, os ambientes.
+O nosso pipeline, os nossos, o repositório e a gente está fazendo a migração para esse novo porte que ele foi criado agora e que provavelmente os códigos também virão para cá para poder migrar para que todos fiquem dentro de um lugar só.
+E a gente consiga fazer esse link entre a feature que está sendo entregue e os PBIS que estão sendo desenvolvidos. Isso ainda não está, não está disponível. É para isso. Então, do ponto de.
+Governança de ambiente e de gestão de entregas, essas são os itens que nós temos como ambientes e como e.
+Pires e Brasil, temos mais 2 ambientes aqui que eles não estão em uso ainda, porque a gente está configurando, que é um ambiente de QA e é um ambiente de Release candidate, que seria o ambiente de homologação e um ambiente de pré-produção, que é esse cara aqui.
+Então, eles estão feitos, mas ainda não estão configurados no pipeline para a gente ter esses ambientes de pré-produção e ambientes de Quality também. Isso é um processo que está em andamento de acordo com o que a gente consegue atender às demandas aqui.
+Ele vai conseguindo tocar isso.
+Bom é que OA FTD tem hoje de eu não vou entrar muito em questões técnicas, porque quando vocês tiverem acesso, vocês vão poder navegar pelas soluções e virem os itens que possuem é no dia a dia.
+Mas o que a FTD?
+
+Danilo Macedo   6:41
+Machado.
+Deixa eu só comentar, amanhã a gente tem mais uma sessão focada em Deploy. Você já explicou bastante coisa aí pra gente, então não vou fazer perguntas agora sobre isso. Aí a gente deixa focado para amanhã, tá bom? Apesar que hoje a gente reduziu o tempo, talvez essa reunião de hoje a gente usa o tempinho de
+
+Julio Cesar Teixeira dos Santos   6:45
+Sim.
+Machado.
+
+Danilo Macedo   7:03
+da manhã mas é isso pode seguir aí aí é mais dúvidas de Deploy a gente discute porque a gente tem que pensar aqui na coexistência né de dois times porque hoje vocês estão com o time só né Aí a gente vai ter dois times
+Como que a gente vai tratar aí para trabalhar juntos, está bom?
+
+Julio Cesar Teixeira dos Santos   7:23
+Bom, é dentro de aplicativos o que a gente tem aqui que o pessoal mais usa ali no dia a dia. Nós temos o aplicativo do PNLD, que é voltado ali para a área pública. Temos o hub do SAC, que é usado ali pela área de CRC, onde eles fazem os atendimentos.
+
+Danilo Macedo   7:30
+Hhh.
+
+Julio Cesar Teixeira dos Santos   7:40
+e o Esparta Tem a parte do de venda e provisoriamente a gente tem um aplicativo aqui do Adobe Sign que é uma estrutura que a gente tem para assinaturas de contrato dentro do Dynamic porém
+Isso está em vias de mudar para outra tecnologia.
+Mas hoje isso é, essas são os aplicativos que o pessoal mais usa. Hoje é, a gente tem uma.
+Um time de core, que é o time de sustentação que faz toda a parte de é triagem dos chamados que os que os clientes abrem referente a algum problema ou alguma dúvida que eles possuem ali.
+É dentro do Dynamics.
+Dentro de Paulo Automate, a gente tem alguns Paulo Automates que são bem críticos aqui.
+
+Danilo Macedo   8:34
+O Julio, deixa eu tirar uma dúvida, OPNLD, ele tem praticamente as mesmas funcionalidades do Spartan, ou seja, por time de vendas, ou não é diferente?
+
+Julio Cesar Teixeira dos Santos   8:46
+Bom.
+Por ser um aplicativo diferente, ele possui características diferentes do Spartan.
+
+Danilo Macedo   8:52
+Mhm.
+
+Julio Cesar Teixeira dos Santos   8:58
+Onde eu tava, tá? Sobre os Power automates, a gente tem.
+alguns Paulo automates que estão em processo de revisão hoje que eles serão refatorados eles estão bem extensos principalmente o Paulo atualmente referente a parte do fluxo de aprovação do CRM que hoje lá dentro do KT de negócio eles devem ter passado com vocês sobre essa questão
+
+Danilo Macedo   9:04
+Hhh.
+
+Julio Cesar Teixeira dos Santos   9:21
+De aprovação das propostas comerciais e.
+
+Danilo Macedo   9:26
+A gente ainda não teve ainda o carté de negócios, Julio, mas tenho é conheço esse fluxo, mas a gente não teve, ainda não está.
+
+Julio Cesar Teixeira dos Santos   9:34
+Esse é um fluxo que a gente está revisando ele para poder.
+E uma maior?
+Manutenção dele, uma menor manutenção dele, uma manutenção mais fácil também é.
+
+Danilo Macedo   9:51
+Está, não é mudança de negócio, vocês estão fazendo ajuste nele, mantendo as regras que tem hoje, não é?
+
+Julio Cesar Teixeira dos Santos   9:58
+É, nós estamos refatorando ele, como eu disse.
+
+Danilo Macedo   10:00
+Mhm.
+
+Julio Cesar Teixeira dos Santos   10:01
+É.
+Nós trabalhamos com pet, como eu havia dito agora há pouco. Existem algumas iniciativas referente a como fazer esses deploys e até mesmo a parte ali de aprovação que a gente tem uma outra esteira concorrente também, que é a área do cliente.
+Então, área do cliente, consultoria online, que é uma outra área que atua aqui também, que eles têm um Power Apps, um Power canvas e um canvas app, na verdade, e eles usam as mesmas tabelas do dynamics. Então a gente tem uma Squad link, a gente conversa sobre as coisas que estão sendo.
+Desenvolvidas lá e o que a gente está desenvolvendo, desenvolvendo aqui e faz a gestão é dessas mudanças. Então, provavelmente, quando vocês já tiverem os acessos, aí vocês vão conseguir fazer download do.
+No código e já dá uma olhada nele dentro do.
+Projeto da FTD, a gente tem também alguns outros recursos.
+E são algumas ezure functions que atuam ali em cima do dos cálculos da proposta comercial. Deixa eu só abrir aqui.
+
+Danilo Macedo   11:08
+Sim.
+
+Julio Cesar Teixeira dos Santos   11:23
+Que a gente tem hoje?
+Nós temos algumas actions referente a ao dynamic que realiza algumas ações, inclusive o disparamos para o Antonio Mates. É temos a parte de Bugins, então nós temos os plugins aqui separado por contas.
+Temos a parte de testes e de Abreu também separados por tipos Ribeiro e os Gis de Carlos formulário. Esses esses Java Santos, eles passaram por processo de refatoração e ainda estão passando por algum processo de refatoração.
+E foi fruto de um assessment que foi criado aí algum tempo atrás, então é.
+Algumas coisas já vão, já vão estar num padrão diferente e outras vão estar aí como legado. É, temos aqui as vesurin functions.
+Aqui tem os plugins de conta. Esse Adobe agreement é referente ao processo de assinatura de contratos que nós temos aqui dentro do CRME. Os demais plugins são referentes às entidades que o pessoal usa aqui também.
+Dentro das eras de Jesus em functions, a gente tem algumas eras de Franca referente a renovação automática e também a parte de cálculo de proposta comercial. Existem alguns projetos referente que a gente usa de vez em quando que precisa.
+Pra ou quando ela tem alguma solicitação de atualização em massa que a gente cria aqui dentro desse batch e faz a execução disso. É normalmente quando você precisa executar uma ação via console e não via ETL, ou seja, por ser um.
+Algo que um ETL seria muito e fazer manual seria trabalhoso. A gente cria um batch e solicita uma VM para o time de Infra para executar isso via VM e não deixar executando ali dentro da máquina do cliente.
+Dentro da máquina do desenvolvedor, é do ponto de vista de Plugins. A gente tem é poucos plugins comparado com algumas outras, com alguns outros projetos e tem pouquíssima manutenção. Hoje o nosso índice de Bug, ele é bem baixo.
+Nós fizemos aí um trabalho de 1 ano e meio na reestruturação. É dessa parte de código do CRM, então toda a Squad, ele atuou nisso. Então hoje a gente tem um índice de bug muito baixo, mesmo dentro do lançamento de novas features.
+Tem mantido, é bem baixo o índice de incidentes e o objetivo é manter esse índice baixo de incidente. Esse mês mesmo nós tivemos no mês passado, tivemos, acho que um foram 2 bugs.
+Que precisaram de atuação ou de alguma coisa nesse sentido. Então mostra que a gente tem tido êxito naquilo que a gente trabalhou aí durante esse último um ano e meio. É dessa parte de.
+É soluções, ambientes, pipelines.
+É brentes, Brasil e dentro da parte de código, ficou alguma dúvida ou tem algo que não ficou claro para vocês, pessoal?
+
+Danilo Macedo   14:48
+Estou revisando aqui só uma lista de duvidas que eu tinha anotado Julio, só um momentinho.
+
+João Carlos Figueirôa de Castilho   14:53
+É, eu acho que você falou, Julio, é, ficou claro, é, só tinha a gente. Abreu, só tinha anotado algumas questões que a gente estava, tinha que levantar aqui. É, por exemplo, no nos plugins de vocês, tem uma, vocês tem uma classe abstrata que vocês estendem para usar o.
+Para construir os plugins, ou seja, estendem eles do plugin base é padrão e.
+
+Julio Cesar Teixeira dos Santos   15:21
+Bom, Eu Acredito que assim que vocês fizeram o do projeto, vocês vão conseguir fazer uma análise melhor disso, tá? Mas a gente tem ambos os cenários. Nós temos os cenários aonde nós trabalhamos com Leite, com Leite, com.
+
+João Carlos Figueirôa de Castilho   15:29
+Machado.
+
+Julio Cesar Teixeira dos Santos   15:36
+de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de A
+
+João Carlos Figueirôa de Castilho   15:41
+Sim.
+
+Julio Cesar Teixeira dos Santos   15:53
+É sobre isso?
+Mais alguma dúvida?
+
+Danilo Macedo   16:09
+Tem mais algumas, Julio, senão vou perguntar sobre um dos temas.
+
+João Carlos Figueirôa de Castilho   16:14
+Pode tocar, Danilo.
+
+Danilo Macedo   16:15
+Tá bom, deixa eu falar sobre arquitetura de integração, Julio, se tem algum padrão de arquitetura que está adotado que a gente tem que seguir.
+
+Julio Cesar Teixeira dos Santos   16:25
+Não, essa parte de arquitetura de integração é com o time do Thiago Veiga. O que nós fazemos aqui é, dependendo do tipo de integração, é criar os Power Automates para chamar essa integração ou, se for o caso, alguma Eiji Function ou alguma coisa nesse sentido, mas do ponto de vista de integração com outros
+Sistema existe um time que constrói essas integrações, nós fazemos apenas o consumo dessas integrações.
+
+Danilo Macedo   16:52
+Então a dúvida é essa mesmo, se tem um padrão para o consumo, porque normalmente é assim mesmo, a gente não vai no direto no sistema final, mas se tem, por exemplo, um API management, alguma coisa que padronizada, entendeu?
+
+Julio Cesar Teixeira dos Santos   17:04
+Não sei te dizer, Danilo, isso daí só seria mais com Thiago Veiga, que é o arquiteto que cuida dessa parte de desenvolvimento e integração. A gente só faz o consumo, ele passa o endpoint pra gente e a gente faz o consumo disso agora, a forma como que isso é construído do lado deles lá.
+Eu não tenho muito conhecimento sobre isso.
+
+Danilo Macedo   17:23
+Tá aí o consumo é, você disse que faz via power atomate ou via agure function. Não tem um padrão definido em é, pode. Depende muito da integração da de volume.
+
+Julio Cesar Teixeira dos Santos   17:35
+Não necessariamente da integração, depende da necessidade. Se for algo muito simples, o Power Automate resolve, senão a Enzo de Function, então não é. Não está relacionado ao tipo de integração, mas sim a característica da necessidade, a complexidade da necessidade.
+
+Danilo Macedo   17:50
+Sim, sir.
+So.
+Tá bom, não era essa du, mas nessa linha mesmo, minha dúvida.
+É.
+
+João Carlos Figueirôa de Castilho   18:16
+E o caminho inverso tem um padrão, Julio, assim, da gente disponibilizar um endpoint e uma action do CRM para um outro sistema consultar. Existe esse cenário?
+
+Danilo Macedo   18:20
+Cristina.
+
+Julio Cesar Teixeira dos Santos   18:26
+Não, normalmente eles usam o data. Nós montamos as queries para eles e eles fazem a consulta via o data ou via fetch XML.
+
+João Carlos Figueirôa de Castilho   18:32
+Aham.
+Então vocês não tem uma action que é consultada externamente.
+
+Julio Cesar Teixeira dos Santos   18:46
+O action.
+
+João Carlos Figueirôa de Castilho   18:49
+Mhm.
+
+Julio Cesar Teixeira dos Santos   18:50
+Que não é consultada externamente.
+
+João Carlos Figueirôa de Castilho   18:52
+você assim já que ele sempre utilizou a data para fazer as consultas no CRM é vocês não não tem nenhuma Action que vocês construíram para que outros é outros sistemas de consultem essa action interno dos RM né esse cenário não existe
+
+Julio Cesar Teixeira dos Santos   18:53
+Sim.
+Não existe.
+Fernando, você quer passar a parte lá de Power Pages?
+
+Danilo Macedo   19:24
+Santos.
+
+Fernando Mauricio da Costa Filho   19:30
+Fala pessoal, tudo bem? Bom dia Julio, a respeito do PowerPages, a gente pode tratar na reunião após a entrega. Eu estava falando aqui com a Kevellin sobre isso, a gente vai fazer uma apresentação na sexta-feira para os membros internos e aí na próxima semana após essa apresentação a gente pode marcar já o PowerPages todo estruturado para mostrar como a gente dividiu
+
+Danilo Macedo   19:32
+Bom dia.
+
+Julio Cesar Teixeira dos Santos   19:34
+Sim.
+Machado.
+Machado.
+
+Fernando Mauricio da Costa Filho   19:49
+De Paula e tudo mais.
+
+Julio Cesar Teixeira dos Santos   19:51
+Entendi tranquilo.
+
+Danilo Macedo   19:55
+É.
+Teo, a gente tem mais algumas dúvidas, mas eu queria é o quanto antes também falar sobre essa parte, porque a gente é deve trabalhar na sequência do que vocês estão desenvolvendo. Então eu queria entender melhor o.
+Como que vocês estão fazendo? É o Oscar mostrou rapidamente ali um.
+Um documento que vocês acho que foram vocês que levantaram prós e contras de soluções, tudo queria entender melhor é o que vocês discutiram para chegar na melhor solução.
+Que se identificaram como Power Base.
+Então é.
+Acho que a gente pode fazer o seguinte.
+
+Fernando Mauricio da Costa Filho   20:41
+Isso a gente pode falar agora, Danilo, se você quiser, o que não dá. A questão é a apresentação em si da estrutura do power page que eu estava falando que era melhor deixar para quando estivesse pronto de fato.
+
+Danilo Macedo   20:43
+Pode ser? Está bom? Vamos lá.
+Assim que vocês estão construindo, não perfeito. Vamos falar sobre isso então, por favor.
+
+Fernando Mauricio da Costa Filho   20:56
+Pronto, eu acho que aqui também tem espaço de fala e a Kevellin também, que foram as pessoas que participaram ali durante o todos os discovery processo aqui do da escolha do Power Pires, tá? A necessidade do simulador comercial ser o Power Pires é vamos.
+Surgiu da de que não é? A gente pensou em alguma coisa? É, a gente precisava de algo.
+Tivesse uma Liberdade de layout maior.
+A gente precisava de algo que estivesse, que a gente pudesse construir uma interface mais amigável para o usuário, com algumas coisas relacionadas a Teo de Almeida de Almeida, tela independente do número de produtos e coisas do género e que a gente tivesse incluído na nossa licença.
+É que fosse algo que fosse, entre aspas, prático da manutenção e que ele suportasse tanto o mobile quanto o desktop.
+Eram essas as principais premissas do que era necessário o simulador comercial e nós escolhemos o Power Pires depois de várias discussões pelo motivo de que no Power Pires a pessoa vai ter acesso diretamente e unicamente à proposta, que é o que vai ser necessário.
+Para ela.
+É a princípio, no início agora, essa primeira versão a gente vai estar. A gente está desenvolvendo 2 possíveis entregas, uma que seria um redirecionamento. Você está dentro do da NMX, tem um botão, você clica e é redirecionado para o web pages ou AE vedar a página, porque no momento a gente está fazendo uma single page, tá Danilo?
+Que é a página do adicionar produto, é individual dentro do inovador. Isso. Então a gente está desenvolvendo essa single page, então ainda não tem uma home page, ainda não tem um footer definido, um reader definido, um contexto geral de portal definido.
+
+Danilo Macedo   22:32
+Assim Oscar mostrou, sim.
+
+Fernando Mauricio da Costa Filho   22:44
+Então a gente tem uma single page com muitas funcionalidades lá dentro e complexidade que vai seguir o mesmo modelo para tudo que for definido no pós. Mas para agora é por isso que a gente pensou em talvez embedar dentro do Dynamic só para fazer uma demonstração do que é o Power Page, mas a intenção final dele é ele se tornar de fato um portal apartado.
+
+Danilo Macedo   22:58
+Mhm.
+
+Fernando Mauricio da Costa Filho   23:04
+Do que é o Dynamics, justamente por ele ter essa facilidade de o usuário ter uma interface mais tranquila, de Lima de Lima de Lima de Lima de Lima de Lima de Lima de Lima e a gente poder interpretar aquela interface como a gente queira, os componentes que a gente quiser e tudo mais, a liberdade de Lima de Lima.
+Outras linguagens que o Dynamics em si não permite. E também é pela questão da simplicidade dali, ele não tem todas aquelas informações que o Spartan carrega ou outros aplicativos carregam. Então a mesma experiência que ele vai ter quando ele acessar diretamente o portal no computador dele, notebook dele ou no tablet dele.
+Ele vai ter também se ele precisar acessar pelo celular, então essa foi a principal premissa do.
+
+Danilo Macedo   23:46
+Aí o Oscar mostrou lá que vocês fizeram comparativamente entre dynamics, Justin page.
+Cordeiro acho com isso.
+
+Fernando Mauricio da Costa Filho   23:58
+Então a gente tinha a gente tinha alguns alguns temas na mesa, não é dentre os de todos que a gente levantou, a gente considerou 3 para apresentar para a mesa decisão. Esses 3 eram o Paulo Brasil, que foi o que a gente tomou. A gente tinha uma segunda opção, que era a gente ter.
+
+Danilo Macedo   24:03
+So.
+Alexandre.
+
+Fernando Mauricio da Costa Filho   24:15
+Meio que um conceito de Coach builder, mesmo meio que um conceito assim de uma página customizada dentro de um pop-up dentro do dynamics, então você ter ali um botão para você ter 11 etapa personalizada com um layout mais.
+Mas intuitivo, por assim dizer, dentro da própria, dentro da própria proposta comercial da do Aplicative Spartan ou o que quer que seja. E aí a gente tem uma custom page para isso feita em HTML, CSSE tudo mais, uma funcionalidade também.
+Com a intenção da intuitividade para isso, é e também a gente considerou ter um canvas app.
+Qual foi o porque a gente descartou? A gente não descartou. A gente escolheu o Power Pages pelo fato de que a gente não precisaria é alterar as coisas em 2 lugar quando estivesse alterando. Porque se a gente fosse optar pelo.
+Pelo Canvas app, a gente teria um aplicativo desktop e um aplicativo mobile. E aí, quando precisasse alterar uma coisa no lugar, se fosse uma coisa simples, uma coisa back-end, OK, só se alterava no lugar, mas se fosse alguma coisa de front, alguma coisa de campo ou nomenclatura, alguma coisa do tipo.
+teriam sempre 2 lugares para se alterar. E aí a outra opção que era essa do custom page também foi uma das principais que a gente levou da decisão final mesmo, só estava sendo levado em consideração a Power Pages e a custom page, mas a Pire Pessoni levou a vantagem porque a gente construiu a ideia de que os caras poderiam ter uma
+de experiência mobile mais intuitiva do que se ele tivesse o custom page, porque ele estaria usando, querendo ou não, o aplicativo nativo do Dynamics for Sales para o para o celular e a gente sabe das limitações que tem um aplicativo mobile da própria Microsoft.
+
+Danilo Macedo   26:02
+Machado.
+Sim, é você comentou sobre licenciamento, não é de.
+
+Fernando Mauricio da Costa Filho   26:10
+Isso.
+
+Danilo Macedo   26:10
+É como que como que AO modelo que vocês estão fazendo para não ter cobrança de licenciamento do Power Place, porque?
+É a cobrança. Ela não é feita por acesso ali, por sessão, não é? Ela não é por usuário de frente de da Costa Vasep. Como que vocês pensaram em relação a isso?
+
+Fernando Mauricio da Costa Filho   26:33
+Então a gente primeiro a gente eu peguei OA própria da operação da Microsoft sobre licenciamento de Pau Pages e me apoiei nisso para Tomar essa decisão. A gente viu que a gente já tem dentro do nosso pacote de Licenças de Abreu de Licenças Enterprises e como a gente não tem a intenção de liberar o Pau Pires para usuários externos.
+A gente vai utilizar o próprio Adilson e d e como o login do Pire Pages, então a gente não teria nenhum problema em questão de Lima e do tipo a própria. A gente enviou um e-mail para a Microsoft e tudo mais e a própria Microsoft deu a ver sobre isso.
+
+Danilo Macedo   27:05
+Tá, porque se ele está logando com o Microsoft Santos ID, aí não tem essa questão de login, page view e tal.
+
+Fernando Mauricio da Costa Filho   27:11
+Exatamente.
+Isso mesmo, exatamente.
+Se agora, se a gente precisasse liberar para usuários externos que não usam dynamics hoje, que não tem a licença dynamics atribuída ao seu usuário enterprise, aí sim a gente entraria num custo.
+
+Danilo Macedo   27:31
+Sim sei.
+É, eu estou. Eu estou fazendo essas perguntas porque o Power Pages, ele é normalmente indicado para uso externo, para usuários externos que não tem uma licença dynamics, não tem uma licença Power Power Apps, alguns casos.
+Sim, também usar para.
+Usuários internos também é.
+E é por isso que a gente eu, todo mundo aqui ficou nessa nessa dúvida de entender melhor essa decisão aí do Power Pires, porque.
+Normalmente a gente usa o Canvas app. Você falou da questão do da manutenção, acho que entendi por conta do Power Pages, ele ser responsivo, então você já consegue.
+Ter uma interface que já vai responder ali nos diferentes aplicativos e os seios vendedores, eles têm a necessidade de uso do celular ali na contar na junto com a na escola, contar com o cliente ali.
+
+Fernando Mauricio da Costa Filho   28:40
+Isso.
+
+Danilo Macedo   28:42
+É.
+Então, por isso que por isso essa dúvida, a questão do licenciamento, mas aí trouxe a questão que vocês já vão configurar a autenticação do usuário via Microsoft entre ID.
+
+Fernando Mauricio da Costa Filho   28:56
+Isso exatamente.
+
+Danilo Macedo   28:57
+É.
+E vocês fizeram algum? Vocês já vão, já estão desenvolvendo hoje, não é?
+
+Fernando Mauricio da Costa Filho   29:05
+Já sim.
+
+Danilo Macedo   29:07
+Tá bom? É que eu tenho dúvidas sobre como que vai, como, se vai ter dificuldade ali no desenvolvimento em relação a buscar os dados, no que ele vai te dar de te dá muita possibilidade de layout de design, mas.
+É consultar os dados. É do data verse. O Oscar mostrou ali um no formato que.
+Conforme o usuário vai alterando o produto, quantidade, valor, ele já vai fazendo o cálculo automaticamente. O que vocês pensarem em relação a isso? Porque se ficar fazendo como é hoje no Dynamis,
+Calculando ali, ele sempre leva um tempo, não é? Qualquer alteração que você faz, ele fica ali processando. São muitos cálculos para fazer, não é?
+
+Fernando Mauricio da Costa Filho   29:49
+Mhm.
+Sim, é. Então a gente foi uma decisão que foi conversada entre eu e julho e o que a gente decidiu fazer foi aqui. A premissa é que a gente utilize o mínimo possível de consultas ao dataverse, então trabalhar com o Ricardo e coisa do gênero.
+
+Danilo Macedo   30:10
+Machado.
+
+Fernando Mauricio da Costa Filho   30:13
+Para que até mesmo os filtros dinâmicos, eles não precisem ficar sendo consultados através de um FTD toda a hora. Ou seja, eu trago tudo o que eu preciso e já que uma vez isso vai estar no meu Castilho, eu trabalho com isso através do dos filtros dinâmicos que o usuário vai selecionar.
+
+Danilo Macedo   30:13
+Mhm.
+Machado.
+
+Fernando Mauricio da Costa Filho   30:30
+É a respeito dos cálculos, a gente vai ter 2 frentes de cálculos, ou seja, a gente vai ter tudo que está ali no front end através do JavaScript, sendo calculado em real time, e a gente vai ter também uma etapa de validação.
+É a gente. Hoje a gente já tem ela na Azure function, a gente vai ter essa etapa de validação também no back-end, que caso o usuário queira fugir ou por alguma mania de vício, queira não utilizar o simulador ou queira fazer uma importação ou criar no próprio dynamics.
+Ele tem também ali a questão dos cálculos sendo assegurados do lado do Dynamics, mas a nossa intenção é deixar tudo o que puder ser deixado da forma mais dinâmica possível na tela do usuário vai ser deixado da forma mais dinâmica possível. Como a gente está trabalhando com valores isolados, o principal problema que a gente tinha no desempenho dos Carlos.
+Áculos era porque a gente trabalhava com valores acumulados entre produtos ou coisa do gênero.
+E agora a gente vai trabalhar com valores totais utilizando PowerFX. É para poder simplificar, é.
+E encurtar o caminho dos cálculos.
+
+Danilo Macedo   31:39
+Tá, então não tá mais. Os cálculos da Costa não estão sendo mais feitos via plugins. Você já colocaram para o Major funcion, comentaram isso não tinha certeza se já tinha sido implementada.
+
+Fernando Mauricio da Costa Filho   31:49
+A gente tem o.
+A gente tinha o processar, a gente tem hoje o cálculo em si, ele ainda é feito dentro de um plugin. Agora, quando ele quando ele vai precisar atualizar.
+OA questão do dos produtos e tudo mais. O cálculo da proposta é feito por ezuri Franca. Agora, o cálculo dos produtos da proposta e do to Thais após essa atualização dos produtos da proposta depende do número de produtos. A gente tem ali um de Bounce para que?
+Se for até 50 produtos, ele mantém o processamento dentro do dataverse, que o plugin consegue manter dentro do dos 2 minutos síncronos, sem nenhum problema. Se por acaso passar dos 50 produtos, a gente já manda o processamento para as elefante.
+
+Danilo Macedo   32:34
+Entendi, entendi e aí o Power Pages, ele vai usar as mesmas as mesmas Azure functions que vocês criaram lá?
+
+Fernando Mauricio da Costa Filho   32:41
+A princípio, sim, é óbvio que isso vai ter. Isso vai precisar se passar por uma revisão, vai precisar se passar talvez por um refactory e tudo mais, porque a nossa extensão é otimizar o processo. A gente está construindo agora a interface do powerpages, vai deixar.
+
+Danilo Macedo   32:43
+So.
+Mhm.
+
+Fernando Mauricio da Costa Filho   32:55
+As coisas bonitinhas na tela é para garantir que tudo que esteja na tela esteja fidedigno com o que vai para o Dynamics. Óbvio, do lado Dynamics, a gente vai precisar refatorar e revalidar tudo aquilo que já está do lado do Dynamics.
+
+Danilo Macedo   33:17
+Beleza.
+
+Fernando Mauricio da Costa Filho   33:22
+Pode ficar à vontade para fazer mais dúvidas, viu Danilo?
+
+Danilo Macedo   33:24
+Vanderlei, estou pensando aqui.
+
+Fernando Mauricio da Costa Filho   33:26
+Machado.
+
+Danilo Macedo   33:30
+Pensando aqui se tem mais alguma coisa.
+É, deixa eu fazer perguntas sobre outros temas. Se tiver alguma coisa, dúvida sobre isso, a gente fala de novo, tá bom?
+
+Fernando Mauricio da Costa Filho   33:56
+Tá bom, sem nenhum problema.
+
+Danilo Macedo   33:58
+É, queria falar sobre por o tomate.
+
+Camila Moraes   33:58
+Sim.
+
+Danilo Macedo   34:03
+Em relação à conexão, como que vocês configuram usuário das conexões, usuários do flow, proprietário dos flows?
+
+Fernando Mauricio da Costa Filho   34:15
+Julio, você quer falar?
+
+Julio Cesar Teixeira dos Santos   34:19
+Pode falar aí, Fernando, tranquilo.
+
+Fernando Mauricio da Costa Filho   34:22
+Beleza, a gente tem um usuário de serviço, Danilo, é óbvio, no ambiente de teste a gente faz os primeiros testes ali usando o nosso usuário como proprietário, mas antes mesmo de migrar já para o ambiente de UAT para fazer os testes e tudo mais, a gente já utiliza o usuário de serviço que é o Santos da Limaxflow.
+Tá, então a gente, todas as conexões são mantidas com esse usuário. No momento, só quem tem acesso a esse usuário é eu, o Julio e o e um outro desenvolvedor que é o desenvolvedor que está no na parte de sustentação, que é o Thiago e pronto, e tudo o que é fluxo a gente mantém a referência de conexão com esse usuário de serviço.
+
+Danilo Macedo   34:39
+Ta.
+E também como proprietário do flow, passa para esse usuário.
+
+Fernando Mauricio da Costa Filho   35:04
+Sim, o proprietário do flor também fica como ele.
+
+Danilo Macedo   35:05
+Ta.
+Santos.
+Está bom, então vocês não utilizam ejuk vault porque já era ali no usuário de serviço, certo?
+
+Fernando Mauricio da Costa Filho   35:27
+A gente quem volte a gente utiliza para as Adilson de Franca que nós temos.
+
+Danilo Macedo   35:31
+Machado.
+
+Fernando Mauricio da Costa Filho   35:32
+Tá, então a gente tem ali algumas keywalls que nós utilizamos para o Tavares, essas coisas do tipo, mas dentro dos Power Automates, tirando variáveis ambientes para informações de URL, dados, coisas do tipo, acho que não tem. A gente não faz a utilização de K vault.
+
+Danilo Macedo   35:47
+Tá bom?
+Tem alguma conexão referente conexão já padrão para usar nos codes flows que a gente poderia que seria reutilizado?
+
+Fernando Mauricio da Costa Filho   36:00
+Mhm.
+De cabeça assim, eu não lembro. Danilo, eu posso dar uma olhada, deixar aqui como tudo e ver se eu consigo. Julio, você tem de cabeça a lembrança disso?
+
+Danilo Macedo   36:06
+Mhm.
+
+Julio Cesar Teixeira dos Santos   36:12
+É, eu sei que tem algumas já estão criadas, é que estão sendo usadas, porém é só precisa se atentar por conta da quantidade de conexões permitidas pelos usuários. É Hoje Eu Não sei quantas conexões tem para usuários que a gente usa aqui como usuário de serviço.
+
+Danilo Macedo   36:14
+O.
+
+Fernando Mauricio da Costa Filho   36:23
+Isso.
+
+Danilo Macedo   36:31
+Está bom, se a gente.
+For desenvolver um flow que vai usar, a gente pode também discutir na hora, não é? Precisa também definir tudo agora.
+Com certeza, algumas coisas a gente vai ter que se conversar aí durante o caminho.
+Mas aí a gente, quando for desenvolver, a gente pode questionar para vocês.
+
+Fernando Mauricio da Costa Filho   36:55
+Sim, sem problema nenhum. Daniel. No decorrer aí a gente pode ter outras reuniões, outros KTs para conversar sobre isso.
+
+Danilo Macedo   37:02
+Mhm.
+
+João Carlos Figueirôa de Castilho   37:07
+Thais uma dúvida é o Julio comentou que vocês têm um cenário bem saudável com relação a Brasil aí né mas como é que funciona o processo de atendimento de Band o item é criado no devops lá e vocês são finalizados
+Existe um portal que de criação de incidentes que vocês consultam, como é que funciona essa questão dos bugs aí?
+
+Fernando Mauricio da Costa Filho   37:34
+Então, o N1, depende da origem do bug, Joao. Se a origem do bug for originário de algum ticket que a gente passou para teste, alguma coisa do tipo, é uma coisa, é story bug, então ele já é criado diretamente no DevOps associado.
+
+João Carlos Figueirôa de Castilho   37:38
+Um.
+Caio mhm.
+
+Fernando Mauricio da Costa Filho   37:51
+Ao aquilo que está sendo entregue, aquela user story, aquela teste que está sendo entregue, e aí a gente resolve pular mesmo e tudo mais. Quando é um bug mesmo de produção, o N1 não é feito pela gente, o N1 é feito por.
+Por uma equipe de sustentação, que tem um portal à parte, então o ticket primeiro surge lá. E aí o n um faz a triagem, vê se é possível resolver por lá mesmo, caso não é possível, no caso não seja possível resolver por lá, aí sim é criado uma task.
+É um bug dentro do DevOps e esse bug é seguinado a alguém do time aqui dynamics é do CRM para poder é atender aquele ticket, entender e resolver.
+Entendido, Joao.
+
+João Carlos Figueirôa de Castilho   38:41
+Entendido.
+Camila.
+
+Camila Moraes   38:45
+Como está caminhando os 15 últimos minutos é para perguntar de modo assim geral, porque aqui não é o anseio, não é desenhar tudo, mas sim mapear alguns riscos, débitos técnicos para poder, nessa fase de visão e preparação, dar uma melhor devolutiva.
+
+Fernando Mauricio da Costa Filho   38:48
+Santos.
+
+Camila Moraes   39:03
+Com isso, eu tenho 3 pontos, primeiro sobre performance. Existe hoje limitações ou riscos relacionados à performance na questão mais assim de capacidade e estabilidade no ambiente vocês nos últimos 6 meses teve algum problema nessa questão de performance ou capacidade ali do dataverse estabilidade?
+Para compartilhar com a gente.
+
+Fernando Mauricio da Costa Filho   39:27
+Julio.
+
+Julio Cesar Teixeira dos Santos   39:32
+Bom, hoje a gente está com nível crítico referente ao Dataverse em relação ao processo de carga de dados que foi realizado no Dataverse. Nós tivemos uma instabilidade na semana passada que foi referente a um problema.
+
+Camila Moraes   39:43
+Machado.
+
+Julio Cesar Teixeira dos Santos   39:48
+De região que a Microsoft teve, a gente ficou praticamente o dia todo sem dynamics.
+É fora isso, não vejo nenhum outro risco é a ser considerado.
+
+Danilo Macedo   40:03
+De dados, você quer dizer armazenamento, tá? Já passou do limite ou está próxima? Passou, está.
+
+Camila Moraes   40:03
+É e está sendo.
+
+Julio Cesar Teixeira dos Santos   40:08
+Já passou do limite.
+
+Camila Moraes   40:09
+Cristina.
+Está certo? E aí já tem um plano de ação aí junto com FTD, gente, tem que ficar aqui de olho para não colaborar de forma negativa com isso.
+Está certo? Desculpa, vó, gente.
+
+Danilo Macedo   40:25
+É, já tem desculpa, mas já tem o plano de ação, acho que é essa de uma dúvida.
+
+Julio Cesar Teixeira dos Santos   40:30
+Não sei, Danilo, teria que ver com Jovanello.
+
+Danilo Macedo   40:32
+Santos.
+
+Camila Moraes   40:33
+Tá, então a gente fica aqui com a questão de performance, capacidade, um ponto de viver com o Juba. O segundo é mais sobre o com isso, não sei se agrega. Quais são os principais débitos técnicos do risco conhecido assim por vocês? Se teve plano de ação, então eu entendo que é esse que o Julio acabou de comentar.
+Para a gente perguntar com Jovanello.
+Porque?
+
+Julio Cesar Teixeira dos Santos   40:56
+É em relação ao tempos técnicos, foi o que eu mencionei no início da.
+
+Camila Moraes   40:59
+Okay.
+Sim.
+
+Julio Cesar Teixeira dos Santos   41:01
+Da reunião que nós temos o.
+Que nós temos o acesso de em andamento, então existe uma refatoração acontecendo. Ela não concluiu ainda que são referentes a esses débitos técnicos.
+
+Camila Moraes   41:06
+Julio tá igual eu.
+Sim.
+
+Julio Cesar Teixeira dos Santos   41:17
+É, e isso contempla para o automate, plugins e JavaScript.
+
+Camila Moraes   41:23
+E esses débitos técnicos, você sabe se tem um roadmap para ser atendido no próximo, por exemplo, 6 meses?
+Ele contempla.
+
+Julio Cesar Teixeira dos Santos   41:31
+Não tem porque já está finalizando, já o que nós temos aqui são atividades que estão em andamento e que elas funcionam como?
+
+Camila Moraes   41:36
+Um.
+
+Julio Cesar Teixeira dos Santos   41:39
+É atividades não planejadas. Então, se chegar ao final da sprint, no Brasil, sprint e todos os de Bias tiverem sido entregues, a gente ataca. É esses técnicos, porque são coisas que estão funcionando e que não tem impacto para o cliente. Tem impacto mais para a questão de manutenção, então não é algo.
+Crítico, preciso ficar entrando nas na nas esteiras.
+
+Camila Moraes   42:05
+Enzo então é atuado pontualmente sem AO cliente nem sente, clique em rede final nem sente.
+Tá certo? E tem alguma atualização na expectativa agora aqui na fase gente de visão, preparação, então a gente está buscando as informações e toda a devolutiva é com a documentação baseado naquilo que vocês já levantaram para não ter que ser refeito.
+Além do que amanhã vai estar o pipeline mostrando a solution, tem alguma documentação técnica? Olha, teve API, por exemplo, do b to b, que foi a última entrega quando que eu estava por aí passeando com vocês.
+É, tem alguma documentação que fala ali sobre? É coisa, tá? Uma documentação não os PIBiais existe. É uma documentação assim que a gente possa se basear.
+Isso pode ser PBI, pode ser projetos, coisas assim.
+
+Julio Cesar Teixeira dos Santos   43:01
+É na maioria tem os seus PBs e algumas coisas possuem documentação técnica, como o b to B e o PNL D.
+
+Camila Moraes   43:09
+Isso a gente pode buscar com vocês.
+Bom, pra essa eu tinha esses 3 pontos de performance, débitos técnicos e documentação para fase de visão e preparação.
+
+Danilo Macedo   43:22
+Você consegue passar e você tem acesso a esses documentos, Julio? Todos eles.
+
+Camila Moraes   43:25
+Hhh.
+
+Julio Cesar Teixeira dos Santos   43:28
+Sim, consigo.
+
+Danilo Macedo   43:33
+o Tiago eu tenho mais dúvidas aqui tá tem tem tabelas que vocês usam como tabelas customizadas né Como suporte para uma integração alguma
+
+Camila Moraes   43:33
+Abreu.
+Hhh.
+
+Danilo Macedo   43:48
+Alguma coisa de, por exemplo, de ambiente para definir alguns parâmetros de ambiente.
+Alguma coisa genérica que a gente iria reutilizar também, sabe?
+
+Julio Cesar Teixeira dos Santos   44:02
+Caio, não entendi sua pergunta, você poderia dar um exemplo, por favor?
+
+Danilo Macedo   44:06
+Sim, por exemplo, uma tabela onde vocês registram logs de integração ou tabela que vocês.
+
+Julio Cesar Teixeira dos Santos   44:12
+Sim, existe uma tabela sim.
+
+Danilo Macedo   44:14
+E ela é, ela é de qualquer integração, é ou até específica de alguma integração?
+
+Julio Cesar Teixeira dos Santos   44:15
+Messias de Jesus.
+De qualquer integração que queira salvar dados lá.
+
+Danilo Macedo   44:22
+Tá, qual que é essa tabela? Você pode ir dar pra gente. É nesse sentido, entendeu? E tem.
+
+Julio Cesar Teixeira dos Santos   44:26
+Você lembra o nome dela, Fernanda? Não lembro, não.
+
+Fernando Mauricio da Costa Filho   44:30
+A gente tem a tabela de Lima e a gente tem também a tabela do que a gente guarda as URLs do fluxo de Matriz de Sa e Julio.
+Tirando essas 2, eu não me recordo de alguma outra.
+
+Danilo Macedo   44:56
+Pala explicar um pouquinho mais sobre essa segunda?
+
+Fernando Mauricio da Costa Filho   45:00
+É um. A gente construiu uma estrutura de fluxos recursivos. Danilo, que é só as matérias de serviço aqui da FTD, é quando uma escola contrata algum pacote de livros, ela gera alguns benefícios. Vamos desse jeito para simplificar as coisas.
+E aí é cada fluxo tem uma regra e aí a gente tem um fluxo gerencial que chama os outros fluxos através de Abreu Request e esses Abreu e essa URL de cada fluxo está dentro dessa tabela, que é a tabela de fluxos gerenciais.
+
+Danilo Macedo   45:32
+Entendi, mas ela é específica pra esse fluxo. Provavelmente a gente não vai reutilizar igual a data beleza.
+
+Fernando Mauricio da Costa Filho   45:35
+Sim.
+
+Danilo Macedo   45:39
+Está bom, mas vamos saber dessa tabela aí.
+Tem alguma coisa? Só se tiver pronto um modelo de entidade de relacionamento atualizado.
+O documento sobre as principais tabelas.
+
+Fernando Mauricio da Costa Filho   45:56
+Julho.
+
+Julio Cesar Teixeira dos Santos   45:58
+Não tem isso nunca foi feito.
+
+Danilo Macedo   46:02
+E sobre governança?
+Tem algum guia de arquitetura?
+Ou padrões obrigatórios?
+É políticas de convenção, de nomeação, versionamento, Brasil, essas coisas.
+
+Julio Cesar Teixeira dos Santos   46:22
+Não, porque a Squad é pequena, então isso não faz sentido para ter um Quando a Squad é tão reduzida quanto a nossa aqui. Então, à medida que o pessoal vai entrando, a gente vai passando para eles como que é feito, são feitas as coisas, não se faz necessário, não se fez até hoje necessário ter isso.
+
+Danilo Macedo   46:25
+Hhh.
+E o que vocês passam pra eles é o que vocês já estão passando pra gente aqui desse de padrões.
+
+Julio Cesar Teixeira dos Santos   46:47
+Não só isso. A gente acompanha as atividades ali, faz code review com eles. Não é só chegar lá e entregar atividade pro pro desenvolvedor ou pro consultor. A gente acompanha o que está sendo entregue e vai dando as de Lima orientações.
+
+Danilo Macedo   47:03
+Tem mais alguma coisa de padrão que a gente tem que seguir, que vocês ainda não passaram para gente aqui? Se não tiver água, se você não souber agora também, vocês podem passar para gente depois.
+Precisar de um tempo para documentar, sei lá, solicitar, aí vocês podem passar para a gente depois também.
+
+Julio Cesar Teixeira dos Santos   47:15
+Eu me lembre, não.
+
+João Carlos Figueirôa de Castilho   47:26
+Eu tenho uma, pode falar.
+
+Danilo Macedo   47:26
+E de e deixa eu só uma dúvida de nomeação, porque eu?
+Quando a gente implementou, aí tinha umas regras para nomeação de tabela de campo.
+Não sei se isso permaneceu ou não, se tem alguma regra ainda para tinha um prefixo underline o nome do khan, por exemplo, entendeu?
+
+Julio Cesar Teixeira dos Santos   47:49
+Isso é padrão de todo o projeto. Então aqui o que a gente segue é o que já foi pré-determinado. Tem o publicador padrão FTD e o prefixo é sempre o FTD underline. Isso daí é padrão do projeto, a menos que a pessoa crie.
+Direto via solução.
+Em produção ou de publicador diferente é que o prefixo vai ficar diferente.
+
+Danilo Macedo   48:16
+e eu digo mais depois da parte desse prefixo é se tem algum padrão de nomenclatura de por exemplo é sempre a primeira ler primeiro tem que ser maiúsculo é quando o campo for de um determinado tipo tem que colocar no nome do campo ali alguma sigla para determinar
+
+Julio Cesar Teixeira dos Santos   48:28
+Hhh.
+
+Danilo Macedo   48:35
+O tipo desse campo, coisas desse tipo, sabe?
+
+Julio Cesar Teixeira dos Santos   48:36
+É isso, é isso acontecia muito na década de 80 e 90 que as coisas eram, você precisava tipificar ali o nome da variável, mas hoje em dia aqui dentro do que a gente faz aqui é deixar o nome da variável mais claro possível para que quem?
+For usar o ler, entender do que se trata a variável é e dentro do próprio dynamics ele já exibe ali nas configurações da própria do próprio campo, o tipo do campo é o que descontinua a necessidade de e.
+Identificar se o campo é um e de um float, um e alguma coisa nesse sentido.
+
+Danilo Macedo   49:16
+É que quando a gente implementou, tinha passaram essas regrinhas para a gente, entendeu? Por isso que eu estou questionando.
+
+Julio Cesar Teixeira dos Santos   49:21
+É coisas legadas normalmente são assim mesmo.
+
+Danilo Macedo   49:26
+Beleza.
+
+João Carlos Figueirôa de Castilho   49:34
+É, eu tenho uma dúvida com relação ao processo de alteração é de código no repositório. Lá é, você fala vocês do que vocês tem é, são 2 branches, eu acho, não é? E aí, quando vocês vão iniciar uma o desenvolvimento de um o S novo?
+Resolução de um bug. Vocês tem um padrão assim, eu sempre crio uma branche baseado na master. E aí quando termina a alteração, o purequest é direto para master ou não? Como é que funciona esse processo?
+
+Julio Cesar Teixeira dos Santos   50:05
+Normalmente a gente trabalha com features. Você vai baixar a dev, vai criar uma feature ali com as descrições e aí você faz os testes. O que a gente faz aqui é comunicar com o time técnico o que está sendo feito ali dentro do assembly para ver se tem alguém trabalhando.
+O assembly também pra não sobrescrever as coisas um do outro. E aí, caso alguém esteja fazendo alguma coisa, é importante fazer o merge entre as duas features pra nenhum sobrescrever as coisas do outro. E aí, assim que tá pronto, a gente envia pra pra Bruna de deve.
+
+João Carlos Figueirôa de Castilho   50:27
+Machado.
+Mhm.
+
+Julio Cesar Teixeira dos Santos   50:40
+E aí hoje a gente não tem processo de deploy da master para print, para os ambientes, então o que a gente faz é se comunicar para poder ninguém sobrescrever uma coisa do outro ali.
+
+João Carlos Figueirôa de Castilho   50:50
+Machado.
+Então a branche que está fiel aos ambientes é a de de Bia, a master desconsidera.
+
+Julio Cesar Teixeira dos Santos   51:02
+Isso por hora, sim.
+
+João Carlos Figueirôa de Castilho   51:04
+Santos.
+
+Danilo Macedo   51:16
+É, eu queria saber mais sobre security roles, quais são usadas?
+Quais são?
+Para cada perfil.
+
+Julio Cesar Teixeira dos Santos   51:27
+Feature roles, não entendi.
+
+Danilo Macedo   51:28
+Não security security roles.
+
+Julio Cesar Teixeira dos Santos   51:30
+Tá, existem, é. Hoje a gente tem um problema com a parte de Saecurity, tá? Os ambientes do ponto de vista de equalização, eles não estão equalizados. Então todas as security roles hoje são bem ruins.
+
+Danilo Macedo   51:35
+Mhm.
+
+Julio Cesar Teixeira dos Santos   51:46
+É algo que precisa que está no roadmap para poder fazer a equalização disso, porém, entretanto, tudo o que, contudo, precisa-se fazer uma análise para antes para verificar se é os direitos de acesso.
+Fazem sentido existir os que existem hoje, porque tem muitos ali que a gente acredita que podem ser unificados e além desses, se podem ser unificados, se precisam de novos direitos de acesso para contemplar outros direitos de acesso que poderiam ser aglutinado em um só.
+Então a gente tem um problema referente aos direitos de acesso.
+Hoje, entre os ambientes, eles não estão equalizados.
+
+Danilo Macedo   52:28
+Entendi, entendi. Vocês podem passar pra gente depois a lista dos direitos de acesso, uma breve descrição pra que ele é, pra qual tipo de perfil que é importante pra gente saber quando for alterar alguma coisa e qual e quais deles serão impactados.
+
+Julio Cesar Teixeira dos Santos   52:47
+Podemos sim.
+
+Kevellin dos Santos Corrado   53:06
+Almeida tem mais algum ponto pessoal?
+
+Danilo Macedo   53:10
+Tavares, só um segundo.
+
+Camila Moraes   53:11
+H
+
+Danilo Macedo   53:20
+não por enquanto não sei aqui por tudo tem a gente quer falar mais sobre depois mas a gente fala amanhã tem agenda amanhã
+
+Camila Moraes   53:28
+Isso que a gente profunda um pouquinho mais sobre o governança e acessos.
+Alexandre.
+Também faltar um minutinho para acabar a reunião.
+
+Danilo Macedo   53:40
+No.
+Beleza, obrigado Julio Fernando, muito obrigado aí pelas informações.
+
+Camila Moraes   53:42
+Castilho.
+Hhh.
+
+Julio Cesar Teixeira dos Santos parou a transcrição

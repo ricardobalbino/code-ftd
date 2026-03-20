@@ -1,0 +1,649 @@
+Título da reunião: Onboarding — Protótipo Final do Simulador Comercial e Arquitetura de Produtos
+Data: 09/03/2026
+Horário de início: 18:06
+Horário de término: ~19:03 (estimado com base na transcrição)
+
+Participantes presentes
+
+•	Oscar de Rooij
+•	Kevellin dos Santos Corrado
+•	Danilo Macedo
+•	Camila Moraes
+•	João Carlos Figueirôa de Castilho
+•	Fabiana Bacini
+•	Rodrigo Silva
+•	Participante não identificado (referido como "Falante 1" / "Roberto" na transcrição)
+
+________________________________________
+
+2) PAUTA
+
+Conforme o convite da reunião, a pauta programada foi:
+1.	Apresentação do protótipo em versão final (Power Pages) — identidade visual FTD
+2.	Demonstração da interface da Etapa 2 (Produtos e Serviços) em desenvolvimento
+3.	Arquitetura de catálogo de produtos: tabelas de preços, customizados, personalizados
+4.	Revisão da oportunidade no CRM e funcionalidade de cópia de proposta
+5.	Alinhamentos sobre funcionalidades nativas do Dynamics e próximos passos
+
+________________________________________
+
+3) DESENVOLVIMENTO
+
+3.1 Apresentação do protótipo final em Power Pages
+
+•	Oscar de Rooij compartilhou o protótipo final com a identidade visual da FTD, já em desenvolvimento em Power Pages.
+•	Esclareceu que apenas a Etapa 2 (Produtos e Serviços) está sendo construída neste momento. As demais etapas possuem placeholders na interface (dados da proposta, benefícios, modelo de venda), mas ainda não estão implementadas.
+•	Fluxo atual do MVP: o consultor cria a proposta no Dynamics (Etapa 1), e ao chegar na etapa de produtos, um botão abrirá a nova interface em Power Pages. Ao salvar e sair, os dados sincronizam com o CRM e aparecem no grid existente.
+•	Reorganização de campos já em andamento pelo time da FTD: taxa de administração e modalidade de entrega foram movidas para etapas posteriores, pois não fazem sentido na etapa inicial.
+
+________________________________________
+
+3.2 Interface de Produtos — Experiência do Consultor
+
+•	Adição de produto individual: experiência com filtros rápidos (front-end com cache), permitindo adicionar múltiplos produtos sem fechar o modal a cada inclusão. Os produtos caem automaticamente no grid.
+•	Adição em lote: placeholder presente, mas não disponível nesta versão (depende de base de cadastro de produtos corrigida).
+•	Resumo financeiro lado a lado: cada modificação no grid atualiza automaticamente os totalizadores (perspectiva FTD e perspectiva escola). Regras de cálculo no front-end para performance em tempo real; revalidação no back-end ao submeter.
+•	Agrupamento por nível educacional (educação infantil, etc.), seleção múltipla de produtos e ação de deletar em lote.
+•	Terminologia revisitada com a equipe comercial: total tabela, total família, receita após benefícios e patrocínio. Código do produto exibido abaixo do nome (sem coluna extra). Coleção abaixo da linha de negócio.
+•	Resumo financeiro retrátil (expandir/recolher) para o consultor trabalhar com mais espaço no grid.
+
+Validação de UX:
+
+•	"Falante 1" (Roberto) perguntou sobre o processo de design/UX. Oscar explicou que houve validação com: (1) liderança comercial, (2) dois coordenadores de filiais de referência, (3) "anjas" (pessoas que cadastram produtos em nome dos consultores), (4) time de UX da FTD fez sessões de Discovery com consultores e gravou vídeos confirmando que o design resolve as dores identificadas.
+•	Oscar reafirmou que o MVP atual não possui inteligência comercial — é apenas melhoria de interface e carregamento em cache. A redução de tempo virá pela tecnologia de front-end (Power Pages vs. Dynamics nativo).
+
+Performance dos cálculos:
+
+•	Danilo Macedo perguntou se o time técnico (Julio e Fernando) já avaliou o impacto de cálculos em tempo real. Oscar confirmou que as regras ficarão no front-end justamente para evitar lentidão, resolvendo o problema atual onde cálculos só acontecem no final e o consultor fica "às cegas" (razão pela qual usam Excel hoje).
+
+________________________________________
+
+3.3 Etapa 3 — Benefícios, Patrocínios e Adiantamento (Preview para Avanade)
+
+•	Oscar mostrou que a Etapa 3, embora fora do MVP, já tem UX avançada e será responsabilidade da Avanade.
+•	Inclui: taxa de administração, adiantamento de royalties, benefícios (cupons para filhos de professores), grid de patrocínios e totalizadores.
+•	O resumo financeiro aparece sempre, independente da etapa, porque a negociação é sequencial mas não linear — o consultor pode voltar à Etapa 2 e precisa ver os números completos (especialmente em cenários de recusa pelo cliente).
+
+________________________________________
+
+3.4 Visão de futuro — Inteligência Comercial e Upsell
+
+•	Oscar descreveu funcionalidades futuras (não no MVP):
+	o	Sugestões inteligentes de produtos com base no perfil/segmento da escola ("clientes que compraram isso também compraram aquilo").
+	o	Pacotes pré-montados por tipo de cliente.
+	o	Tutorial/base de conhecimento de produtos (link dentro da ferramenta).
+	o	Exibição de comissão projetada para incentivar o consultor (upsell com "cenourinha").
+•	Danilo Macedo apontou que o Dynamics já possui estrutura nativa de cross-sell/upsell que pode ser aproveitada no curto prazo.
+•	Oscar ponderou que a maturidade de dados da FTD é ainda muito baixa para IA — atualmente tudo depende de regras manuais (if/else) sobre dados corrigidos. Prioridade é "feijão com arroz bem feito".
+
+________________________________________
+
+3.5 Arquitetura de Catálogo de Produtos e Tabelas de Preço
+
+Oscar apresentou em detalhes o problema estrutural de produtos e tabelas de preço:
+
+Problema das múltiplas tabelas de preço:
+
+•	Existem mais de 12 tabelas de preço. A causa raiz não é complexidade de negociação, mas sim controle de visualização: as tabelas foram usadas para evitar que consultores vissem produtos customizados/personalizados de outras escolas.
+•	Exemplo: ao filtrar "sistema de ensino > trilhas" esperava-se ~15 produtos, mas retornam 1.283 linhas (incluindo produtos customizados de escolas específicas como "Colégio Sandra Maria", "Colégio Santana").
+•	Não existe coluna no cadastro que diferencie produto de "prateleira" de customização.
+
+Estrutura proposta para catálogo de produtos:
+
+•	Tabela de produtos única por safra/ano (Brasil inteiro): produtos de prateleira + customizados compartilhados.
+	o	Customizado compartilhado: alteração leve no produto padrão (ex.: remover disciplina de artes do kit Trilhas) — qualquer escola pode utilizar.
+•	Produtos customizados e personalizados não compartilhados: vinculados a uma escola/mantenedora específica.
+	o	Customização: alteração mais leve (ex.: remover capítulo, renumerar).
+	o	Personalização: alteração pesada (ex.: trocar capa, mudar mascote, nome da escola) — gera código de produto novo, visível apenas para aquele cliente.
+
+Filtro por tipo de negociação:
+
+•	Três categorias que não existem hoje no CRM e precisam ser criadas:
+	1.	Venda para escola (com compromisso contratual de venda — entra no planejamento de metas)
+	2.	Venda para revendedor/livreiro (sem compromisso — base histórica, ex.: Amazon)
+	3.	Venda para família (e-commerce aberto/B2C)
+•	Cada categoria tem linhas de negócio permitidas diferentes (ex.: livreiros só podem acessar algumas linhas de negócio).
+•	O catálogo disponível para uma proposta = tabela de preços oficial + filtro por tipo de negociação + produtos customizados/personalizados daquele cliente.
+
+Decisão técnica pendente:
+
+•	Definição de se será uma tabela de preço única com colunas adicionais ou tabelas separadas — a ser discutido com Julio, Fernando e equipe Avanade.
+•	Danilo Macedo sugeriu como alternativa 3 listas de preço (escola, revendedor, família) usando funcionalidade nativa do Dynamics para filtrar produtos automaticamente. Oscar concordou que é uma possibilidade e que o importante é eliminar a necessidade de o consultor escolher tabela de preços manualmente.
+
+________________________________________
+
+3.6 Código substituto e versionamento de produtos
+
+•	No cadastro de produtos existe o campo "código substituto": quando uma nova versão de um produto é lançada de uma safra para outra, o campo aponta para o novo código.
+•	Essa informação será usada na funcionalidade de copiar proposta do ano anterior: ao copiar, os produtos são substituídos pelos seus substitutos e recebem reajuste de preço automaticamente — tudo com poucos cliques.
+•	Não confundir com customização/personalização: versionamento é de safra para safra (anual).
+
+________________________________________
+
+3.7 Revisão da Oportunidade no CRM
+
+•	Oscar está revisando todos os campos da oportunidade, identificando o que deve sair (campos duplicados com proposta) e o que deve entrar:
+	o	Penetração (percentual do potencial de mercado que a FTD já atende naquele cliente)
+	o	Potencial de receita do cliente
+	o	Meta definida para o cliente no planejamento comercial (baseline para gap analysis)
+	o	Classificação do tipo de negociação (campo novo necessário para filtro de catálogo)
+•	Conceito: na oportunidade não haverá mais produtos — apenas valores de potencial e meta. Os produtos ficam exclusivamente na proposta.
+•	Se a meta era 200k e a proposta fechou em 150k, o gap de 50k aparece em relatório para ser coberto em outro cliente.
+•	Perfil laranja (termômetro) na oportunidade possivelmente será removido por não ser utilizado.
+•	Segmentação de clientes: "a FTD já sabe quem são todos os clientes" — não é um modelo de leads/prospecção, é planejamento sobre base existente.
+
+________________________________________
+
+3.8 Funcionalidade de cópia de proposta — Situação atual
+
+•	A funcionalidade existente (no CRM) copia da oportunidade, mas não funciona adequadamente:
+	o	Campos vêm em branco após a cópia.
+	o	Consultores ignoram ou deletam a tabela de produtos da oportunidade.
+	o	Alguns consultores usavam oportunidade do ano anterior (sem fechá-la) para criar nova proposta, gerando vínculos errados.
+•	Kevellin dos Santos Corrado confirmou os problemas: a cópia não traz informações necessárias preenchidas.
+•	Danilo Macedo lembrou que na época de 2022 já havia controles para forçar uso da oportunidade; a funcionalidade não foi evoluída desde então.
+•	Nova funcionalidade (especificada, para desenvolvimento futuro): cópia ficará na proposta (não na oportunidade), incluindo substituição de produtos por código substituto e aplicação automática de reajuste de preço.
+
+________________________________________
+
+3.9 Funcionalidades nativas do Dynamics
+
+•	Danilo Macedo alertou sobre a importância de não perder funcionalidades nativas ao customizar excessivamente: versionamento de proposta (nativo — botão "Revisar"), fluxo oportunidade→proposta→pedido, cross-sell/upsell.
+•	Oscar confirmou que a entidade "pedido" não existe mais no fluxo atual.
+•	Verificação de uso do versionamento nativo ficou como pauta para a reunião técnica com Julio/Fernando/Jova.
+•	Danilo expressou interesse em discussões futuras sobre uso de funcionalidades nativas de marketing (leads, campanhas, cliente potencial) — Oscar confirmou que está trabalhando da proposta para trás (proposta → oportunidade → compromissos/tarefas → campanha/lead).
+
+________________________________________
+
+3.10 Estrutura de equipes e vínculo consultor-conta
+
+•	Camila Moraes perguntou sobre a estrutura de equipe de vendas. Oscar esclareceu:
+	o	O consultor é o "proprietário" da conta no CRM (não há equipe de vendas nativa vinculada).
+	o	O gerente regional/filial tem acesso via oportunidade (não via conta diretamente).
+	o	Estabelecimento = filial no CRM.
+	o	Abaixo do proprietário, existem outros papéis vinculados à conta (consultor educacional, especialista público, comercial de idiomas, etc.), mas seus papéis e responsabilidades não estão claramente definidos.
+•	Troca de proprietário é manual; não há balanceamento automático de oportunidades nem tratamento para desligamentos.
+•	Camila levantou riscos operacionais: se um consultor for desligado e ninguém fizer a troca em 15 dias, tarefas e registros ficam em aberto. Sugeriu automatização e definição clara de papéis.
+•	Conceito Hunter vs. Farmer citado: não há processo claro de transição no CRM.
+
+________________________________________
+
+4) DECISÕES
+
+Observação: foram registradas abaixo apenas decisões explícitas (ou confirmações formais) verbalizadas na reunião.
+
+1.	Confirmação de que a Etapa 3 (Benefícios, Patrocínios, Adiantamento) será responsabilidade da Avanade: Oscar e Camila confirmaram que não está no MVP do time FTD. Forma: consenso verbal.
+2.	Arquitetura de tabela de preços será discutida com Julio/Fernando/Avanade antes de definição: Oscar indicou que a decisão técnica (uma tabela com colunas adicionais vs. tabelas separadas) será tomada em conjunto. Forma: consenso verbal.
+3.	Verificação do uso do versionamento nativo de proposta ficou como pauta para reunião técnica com Julio/Fernando/Jova: Danilo e Oscar alinharam. Forma: consenso verbal.
+
+________________________________________
+
+5) AÇÕES E RESPONSÁVEIS
+
+Prazos foram registrados somente quando verbalizados. Quando não houve prazo explícito, consta "Não definido na reunião".
+
+Descrição da ação	Responsável	Prazo de entrega	Status
+Discutir arquitetura de catálogo de produtos e tabelas de preço com Julio, Fernando e equipe Avanade	Oscar de Rooij / Time Técnico	Não definido na reunião	Aberta
+Verificar se o versionamento nativo de proposta do Dynamics está sendo utilizado (pauta para reunião técnica)	Danilo Macedo / Julio / Fernando	Não definido na reunião	Aberta
+Validar com gerentes de filial se a funcionalidade de cópia de oportunidade realmente é utilizada	Oscar de Rooij	Não definido na reunião	Aberta
+Definir classificação de tipo de negociação (escola/revendedor/família) como campo novo na oportunidade	Oscar de Rooij (Discovery em andamento)	Não definido na reunião	Em andamento
+Discussão sobre uso de funcionalidades nativas do Dynamics (cross-sell, upsell, marketing/leads) em sessões futuras	Danilo Macedo / Oscar de Rooij	Não definido na reunião	Aberta
+Definir papéis e responsabilidades dos diferentes perfis vinculados à conta no CRM (proprietário, consultor educacional, etc.)	Oscar de Rooij / Equipe Comercial	Não definido na reunião	Aberta
+Avaliar automatização de processo de troca de proprietário em caso de desligamento	Camila Moraes (sugestão) / Time Técnico	Não definido na reunião	Aberta
+
+________________________________________
+
+6) OBSERVAÇÕES ADICIONAIS
+
+•	Esta reunião foi a continuação do onboarding iniciado às 12:03 do mesmo dia, conforme combinado.
+•	O time técnico da FTD (Julio e Fernando) é a referência para questões de implementação do Power Pages e arquitetura do MVP.
+•	A decisão arquitetural do Jova (Avanade) será necessária para definir o nível de participação da Avanade na discussão de tabela de preços e catálogo.
+•	Oscar está conduzindo revisão da oportunidade (Discovery) e da estrutura de cadastro de produtos em paralelo com o desenvolvimento do MVP.
+
+________________________________________
+
+7) ENCERRAMENTO
+
+Horário de encerramento: ~19:03 (estimado).
+Registro de encerramento: Oscar de Rooij informou necessidade de sair para outra reunião. Danilo Macedo propôs continuar discussões sobre funcionalidades nativas do Dynamics em sessões futuras.
+Assinatura/aprovação:
+•	Esta ata será considerada aprovada se não houver objeções enviadas em até 24h após o recebimento.
+ATA DE REUNIÃO
+
+1) CABEÇALHO
+
+Título da reunião: Onboarding Técnico — Arquitetura, Ambientes, Pipeline, Power Pages e Governança do CRM Dynamics
+Data: 10/03/2026
+Horário de início: 13:05
+Horário de término: ~13:58 (estimado com base na transcrição)
+
+Participantes presentes
+
+•	Julio Cesar Teixeira dos Santos
+•	Fernando Mauricio da Costa Filho
+•	Danilo Macedo
+•	Camila Moraes
+•	João Carlos Figueirôa de Castilho
+•	Kevellin dos Santos Corrado
+
+________________________________________
+
+2) PAUTA
+
+Conforme o convite da reunião, a pauta programada foi:
+1.	Apresentação da estrutura de ambientes, soluções e pipeline de deploy
+2.	Repositório de código e gestão de branches
+3.	Aplicativos do CRM (Spartan, PNLD, Hub SAC, Adobe Sign)
+4.	Decisão técnica do Power Pages para o Simulador Comercial
+5.	Power Automate, Azure Functions e integrações
+6.	Performance, débitos técnicos, documentação e governança
+
+________________________________________
+
+3) DESENVOLVIMENTO
+
+3.1 Ambientes e Soluções
+
+Apresentação por Julio Cesar Teixeira dos Santos:
+
+•	3 ambientes na esteira atual: DEV, UAT e Produção.
+•	2 ambientes adicionais em configuração (ainda não no pipeline): QA (Quality/homologação) e Release Candidate (pré-produção).
+•	Soluções separadas por tipo de componente: data model, client extension, plugins, site map, etc. — 9 soluções numeradas com ordem de importação definida.
+•	Deploy via pipeline (Azure DevOps). Para produção, é aberta uma GMUD no sistema SMax por Giselle (recurso de infra). O pipeline é concorrido com outras áreas (pode haver fila).
+•	Deploy manual somente em casos críticos com liberação especial.
+•	Exceção: deploy de plugins para DEV é manual (pipeline ainda não configurado para isso). De UAT em diante, segue pelo pipeline.
+
+________________________________________
+
+3.2 Repositório de Código
+
+•	Repositório: FTD Dynamics (dentro do projeto FTD Educação no Azure DevOps).
+•	Branches: dev e master. Trabalho diário feito em features criadas a partir da dev.
+•	A branch fiel aos ambientes é a dev (não a master).
+•	Comunicação verbal entre o time para evitar sobrescrita de assemblies — não há deploy automatizado da master para ambientes.
+•	O repositório atual não está no mesmo projeto dos PBIs, impossibilitando link automático entre commits/PRs e features. Documentação é feita manualmente nas features e nos PRs.
+•	Migração em andamento para novo repositório onde código e PBIs ficarão juntos, permitindo rastreabilidade.
+
+________________________________________
+
+3.3 Aplicativos do CRM
+
+•	Spartan: aplicativo principal de vendas.
+•	PNLD: aplicativo da área pública — funcionalidades diferentes do Spartan.
+•	Hub SAC: usado pela área de CRC para atendimentos.
+•	Adobe Sign: estrutura para assinatura de contratos dentro do Dynamics — em vias de mudar para outra tecnologia.
+•	Área do Cliente / Consultoria Online: equipe separada que usa Canvas App com as mesmas tabelas do Dataverse. Existe uma Squad de link para gestão de mudanças entre os times.
+
+________________________________________
+
+3.4 Decisão Técnica — Power Pages para o Simulador Comercial
+
+Apresentação por Fernando Mauricio da Costa Filho:
+
+Premissas do simulador:
+•	Liberdade de layout maior que o Dynamics nativo.
+•	Interface amigável com performance independente do número de produtos.
+•	Incluído na licença existente (sem custo adicional).
+•	Manutenção prática.
+•	Suporte a mobile e desktop.
+
+3 opções avaliadas:
+1.	Power Pages (escolhida): portal apartado, responsivo, single page por enquanto. Autenticação via Microsoft Entra ID (usuários internos com licença Enterprise) — sem custo adicional de licenciamento (confirmado com a Microsoft por e-mail).
+2.	Custom Page (HTML/CSS dentro do Dynamics): descartada — experiência mobile limitada pelo app nativo do Dynamics for Sales.
+3.	Canvas App: descartada — necessitaria manter aplicativo desktop e mobile separados, gerando manutenção em 2 lugares para alterações de front-end.
+
+Estado atual do desenvolvimento:
+•	Single page de adição de produto individual em desenvolvimento.
+•	Ainda sem home page, header, footer ou contexto geral de portal.
+•	Duas opções de entrega sendo consideradas: (1) redirecionamento via botão no Dynamics ou (2) embed dentro do Dynamics.
+•	Intenção final: portal apartado independente.
+•	Apresentação completa da estrutura do Power Pages planejada para após a entrega interna (sexta-feira), com sessão para Avanade na semana seguinte.
+
+Estratégia de performance:
+•	Mínimo de consultas ao Dataverse — dados carregados em cache no front-end.
+•	Filtros dinâmicos processados no front-end (sem fetch ao Dataverse a cada interação).
+•	Cálculos em tempo real via JavaScript no front-end.
+•	Validação no back-end (Azure Functions) como segunda camada de segurança — garante integridade mesmo se o usuário não usar o simulador.
+•	Uso de PowerFX para cálculos com valores totais (substituindo valores acumulados entre produtos, que causavam lentidão).
+
+Cálculos — arquitetura atual:
+•	Cálculo de produtos da proposta: se ≤50 produtos, processado no Dataverse (plugin síncrono dentro de 2 minutos). Se >50 produtos, enviado para Azure Function.
+•	Cálculo da proposta comercial: feito por Azure Function.
+•	Power Pages reutilizará as Azure Functions existentes, com refatoração/revisão planejada.
+
+________________________________________
+
+3.5 Estrutura de Código
+
+•	Plugins: separados por entidade (contas, etc.). Índice de bugs muito baixo após 1,5 ano de reestruturação pela Squad (2 bugs no mês anterior).
+•	JavaScript: formulários passaram por refatoração (assessment anterior). Algumas partes já no novo padrão, outras ainda como legado.
+•	Azure Functions: renovação automática e cálculos de proposta comercial.
+•	Batch projects: para atualizações em massa — executados em VM solicitada ao time de infra (não na máquina do desenvolvedor).
+•	Actions: existem actions no Dynamics que disparam Power Automates. Não há actions expostas para consumo externo — sistemas externos consultam via OData ou FetchXML.
+
+________________________________________
+
+3.6 Power Automate
+
+•	Power Automate de aprovação de proposta: em processo de refatoração (muito extenso).
+•	Usuário de serviço: "FTDMaxFlow" — usado como proprietário dos flows e para todas as conexões. Acesso restrito a Julio, Fernando e um desenvolvedor de sustentação (Thiago).
+•	Azure Key Vault: usado para Azure Functions (tokens, URLs), mas não dentro dos Power Automates (usam variáveis de ambiente para URLs e dados).
+•	Conexões existentes para child flows: a verificar — atenção ao limite de conexões por usuário de serviço.
+•	Tabelas de suporte:
+	o	Tabela de logs de integração (genérica, reutilizável por qualquer integração).
+	o	Tabela de fluxos gerenciais (URLs de child flows para matriz de serviços — específica, não reutilizável).
+
+________________________________________
+
+3.7 Integrações
+
+•	Integrações construídas por time separado (Thiago Veiga, arquiteto). Squad do CRM faz apenas o consumo (recebe endpoint).
+•	Não há padrão de API Management centralizado — consumo feito via Power Automate ou Azure Function conforme a complexidade.
+•	Caminho inverso (expor endpoint do CRM): não existe. Sistemas externos consultam via OData/FetchXML com queries montadas pela Squad.
+
+________________________________________
+
+3.8 Performance e Dataverse
+
+•	Nível crítico de armazenamento no Dataverse: já passou do limite devido a processo de carga de dados. Plano de ação a verificar com Jovanello.
+•	Instabilidade na semana anterior: problema de região da Microsoft, Dynamics ficou indisponível o dia todo.
+•	Fora esses itens, sem outros riscos de performance identificados.
+
+________________________________________
+
+3.9 Débitos Técnicos
+
+•	Refatoração em andamento de Power Automate, plugins e JavaScript.
+•	São itens funcionais (não impactam o cliente final) — atacados como atividades não planejadas ao final das sprints quando sobra capacidade.
+•	Não há roadmap formal de 6 meses — trabalho é contínuo e oportunístico.
+•	Índice de bugs muito baixo (2 no último mês) após 1,5 ano de reestruturação.
+
+________________________________________
+
+3.10 Documentação
+
+•	Maioria dos itens tem PBIs no DevOps.
+•	Documentação técnica existe para B2B e PNLD. Demais itens possuem documentação limitada aos PBIs.
+•	Não existe modelo de entidade-relacionamento (ER) atualizado.
+•	Não existe guia de arquitetura, convenção de nomeação ou documento formal de padrões — Squad pequena, conhecimento passado via acompanhamento e code review.
+
+________________________________________
+
+3.11 Governança e Padrões
+
+•	Prefixo de tabelas/campos: "ftd_" (publicador padrão FTD).
+•	Não há convenção de nomenclatura além do prefixo — prática é deixar nomes de variáveis/campos claros e descritivos.
+•	Security roles: problema reconhecido — ambientes não equalizados, muitos perfis possivelmente duplicados ou que poderiam ser unificados. Equalização no roadmap mas ainda não executada.
+•	Processo de bugs: N1 feito por equipe de sustentação separada (portal à parte). Se não resolvido, bug é criado no DevOps e atribuído ao time do CRM. Story bugs são criados diretamente no DevOps associados à user story.
+
+________________________________________
+
+3.12 Processo de Gestão de Código
+
+•	Fluxo: criar feature a partir da dev → desenvolver → comunicar com time sobre assemblies em uso → merge se necessário → enviar para dev.
+•	Comunicação verbal para evitar conflitos (sem proteção automatizada de branches).
+•	Code review feito pelo líder técnico (Julio) acompanhando entregas.
+
+________________________________________
+
+4) DECISÕES
+
+Observação: foram registradas abaixo apenas decisões explícitas (ou confirmações formais) verbalizadas na reunião.
+
+1.	Apresentação técnica do Power Pages para Avanade será feita na semana seguinte à entrega interna (sexta-feira): Fernando e Kevellin combinaram. Forma: consenso verbal.
+2.	Dúvidas sobre coexistência de dois times no pipeline ficaram para a sessão de amanhã (11/03): Danilo propôs, Julio concordou. Forma: consenso verbal.
+
+________________________________________
+
+5) AÇÕES E RESPONSÁVEIS
+
+Prazos foram registrados somente quando verbalizados. Quando não houve prazo explícito, consta "Não definido na reunião".
+
+Descrição da ação	Responsável	Prazo de entrega	Status
+Apresentação técnica completa do Power Pages (estrutura, arquitetura, divisão) para equipe Avanade	Fernando Mauricio da Costa Filho / Kevellin dos Santos Corrado	Semana seguinte (após entrega interna na sexta-feira)	Aberta
+Compartilhar lista de security roles com breve descrição de perfis associados	Julio Cesar Teixeira dos Santos	Não definido na reunião	Aberta
+Compartilhar nome e estrutura da tabela de logs de integração genérica	Julio Cesar Teixeira dos Santos / Fernando Mauricio da Costa Filho	Não definido na reunião	Aberta
+Compartilhar documentação técnica existente (B2B, PNLD e PBIs relevantes)	Julio Cesar Teixeira dos Santos	Não definido na reunião	Aberta
+Verificar com Jovanello plano de ação para nível crítico de armazenamento do Dataverse	Camila Moraes / Danilo Macedo	Não definido na reunião	Aberta
+Discutir coexistência de dois times no pipeline e processo de deploy (sessão dedicada)	Danilo Macedo / Julio Cesar Teixeira dos Santos	11/03/2026 (sessão de amanhã)	Aberta
+Verificar conexões existentes reutilizáveis para child flows e limites do usuário de serviço	Fernando Mauricio da Costa Filho	Não definido na reunião	Aberta
+Aprofundar governança e acessos na próxima sessão	Camila Moraes / Danilo Macedo / Time Técnico FTD	11/03/2026	Aberta
+
+________________________________________
+
+6) OBSERVAÇÕES ADICIONAIS
+
+•	O Dataverse já ultrapassou o limite de armazenamento — risco crítico que pode impactar novas funcionalidades. Escalar com Jovanello.
+•	A branch "master" não está sendo usada como referência para deploy — a branch "dev" é a fiel aos ambientes. Atenção na coexistência de times.
+•	Não existe modelo ER, guia de arquitetura ou documento formal de padrões. A Avanade precisará construir entendimento via análise direta do código e soluções.
+•	A escolha do Power Pages foi validada com a Microsoft em relação ao licenciamento (autenticação via Entra ID para usuários internos, sem custo adicional).
+•	Azure Functions são compartilhadas entre o fluxo atual do CRM e o futuro Power Pages — refatoração será necessária.
+
+________________________________________
+
+7) ENCERRAMENTO
+
+Horário de encerramento: ~13:58 (estimado).
+Registro de encerramento: Kevellin dos Santos Corrado verificou se havia mais pontos. Danilo Macedo agradeceu e indicou que dúvidas restantes serão tratadas na sessão de amanhã (11/03).
+Assinatura/aprovação:
+•	Esta ata será considerada aprovada se não houver objeções enviadas em até 24h após o recebimento.
+ATA DE REUNIÃO
+
+1) CABEÇALHO
+
+Título da reunião: Onboarding — Demonstração do Fluxo Operacional do CRM Dynamics (Conta → Oportunidade → Proposta)
+Data: 10/03/2026
+Horário de início: 17:06
+Horário de término: ~17:58 (estimado com base na transcrição)
+
+Participantes presentes
+
+•	Eduardo De Oliveira
+•	Camila Moraes
+•	Danilo Macedo
+•	Kevellin dos Santos Corrado
+•	Oscar de Rooij
+•	Tercio Eduardo Freire Lins
+
+________________________________________
+
+2) PAUTA
+
+Conforme o convite da reunião, a pauta programada foi:
+1.	Demonstração ao vivo do fluxo completo do CRM: criação de conta (escola nova), cadastro de contato, criação de oportunidade, inclusão de produtos e geração de proposta
+2.	Navegação pelas funcionalidades existentes (análise de vendas, matriz de serviços, desconto em lote, geração de documentos)
+3.	Fluxo de aprovação, revisão e status da proposta
+4.	Esclarecimento de dúvidas operacionais da equipe Avanade
+
+________________________________________
+
+3) DESENVOLVIMENTO
+
+3.1 Criação de Conta (Escola Nova)
+
+Demonstração por Eduardo De Oliveira:
+
+•	Tela inicial do CRM: contas, alunos, oportunidades, propostas, pedidos, compromissos.
+•	Botão "Criar" para nova conta. Campos obrigatórios marcados com asterisco.
+•	Campos preenchidos: nome da instituição (extraído da Receita Federal), CEP (autopreenchimento de endereço), tipo de instituição (ex.: particular laica), código MEC, CNPJ (obrigatório), estabelecimento (filial).
+•	Validações automáticas: CNPJ duplicado é bloqueado; código MEC duplicado também gera alerta; campos obrigatórios não preenchidos impedem salvar.
+
+Permissões de criação de conta:
+
+•	Consultores, anjas, coordenadores e gerentes podem criar contas.
+•	Exceção: consultores do PNLD não podem criar contas (apenas administram/compartilham contas existentes).
+
+Visibilidade:
+
+•	Camila Moraes perguntou sobre quem enxerga a conta criada. Eduardo explicou que depende do perfil de acesso — há segmentações por unidade de negócio. Detalhamento ficou para discussão futura.
+
+________________________________________
+
+3.2 Cadastro de Contato e Representante Legal
+
+•	Após criar a conta, o consultor deve cadastrar um contato como representante legal (necessário para a proposta).
+•	Pode pesquisar contato existente (já vinculado a outra escola) ou criar novo.
+•	Ao marcar como representante legal, o CPF torna-se obrigatório.
+•	Conta já vem vinculada automaticamente no contato.
+•	Se o contato não for cadastrado antes, o consultor terá que voltar à conta durante a criação da proposta (retrabalho).
+
+________________________________________
+
+3.3 Criação de Oportunidade
+
+•	Para chegar à proposta, é obrigatório ter uma oportunidade vinculada à conta.
+•	Campos obrigatórios da oportunidade: modelo de venda (ex.: FTD com Você), entrega primária (ex.: e-commerce), estoque (escola), taxa de administração, safra (ex.: 2026), vigência (ex.: 1 ano), tipo de contrato (novo, para escola sem histórico), motivo do desconto.
+•	Existe um funil de oportunidade na interface, mas a navegabilidade não é boa e é pouco utilizado.
+
+________________________________________
+
+3.4 Inclusão de Produtos na Oportunidade
+
+•	A proposta não pode ser criada sem produtos na oportunidade — sistema bloqueia.
+•	Adição individual: selecionar produto, informar segmento e série. Preço de capa vem automaticamente; preço família é definido pelo consultor.
+•	Adição em lote: filtro por produto com seleção múltipla. Produtos selecionados caem automaticamente na listagem.
+•	Grid de indicação: para escolas com histórico, o sistema traz uma lista de produtos sugeridos com base em valor de mensalidade e cluster da escola (safra anterior). Para escolas novas, não há indicação.
+•	Todos os produtos selecionados na oportunidade são transferidos automaticamente para a proposta ao criá-la.
+
+________________________________________
+
+3.5 Criação e Preenchimento da Proposta
+
+•	Ao criar a proposta, ela nasce com ID de revisão zero (primeira versão).
+•	Campos obrigatórios incluem: fornecedor atual, forma de pagamento, justificativa de desconto, motivo do desconto, representante legal (já preenchido se cadastrado antes), assinatura de contrato (sim/não), tipo de comercialização, operação filial, condição de frete, vigência (início/fim), previsão de venda, data de início das aulas.
+•	Produtos vêm com valores calculados do cadastro; consultor pode alterar descontos individualmente.
+•	Informações de código ERP são sincronizadas entre CRM e Totvs uma vez por dia (~6h da manhã).
+
+________________________________________
+
+3.6 Análise de Vendas
+
+•	Aba que mostra produtos com valores, descontos e quantidades por aluno.
+•	Permite editar descontos e quantidades diretamente.
+•	Agrupamento por linha de negócio e nível de ensino.
+•	Se alunos não foram cadastrados na conta, quantidade padrão é 1 (mínimo para venda).
+
+________________________________________
+
+3.7 Matriz de Serviços
+
+•	Gerada ao clicar no botão "Validar Serviços" — processo leva de 10 a 15 minutos dependendo da quantidade de produtos.
+•	O algoritmo analisa cada produto e traz serviços educacionais relacionados (simuladores, Enem, pacotes específicos).
+•	O consultor pode desabilitar serviços (não remover), fica a critério dele validar.
+•	Não há controle automático que garanta que o consultor clicou em "Validar Serviços" antes de ativar a proposta.
+•	Oscar de Rooij informou que a matriz de serviços está sendo inteiramente revista — algoritmo, informações utilizadas e funcionalidade de exportação para contrato.
+
+Perguntas e esclarecimentos:
+
+•	Danilo Macedo sugeriu que deveria haver validação para garantir que o consultor executou a validação de serviços antes de ativar a proposta.
+
+________________________________________
+
+3.8 Funcionalidades Adicionais na Proposta
+
+Botões personalizados:
+
+•	"Validar Serviços": dispara o fluxo de geração da matriz de serviços.
+•	"Gerar Grade Mestre": gera grade do professor — funcionalidade criada especificamente para FTD (implementada no ano anterior; origem incerta).
+•	"Transferir Arquivos": não utilizado atualmente.
+•	Campo "Aplicar desconto em lote": existia mas não estava funcionando; será removido (Kevellin confirmou).
+
+Danilo Macedo lembrou que o campo de desconto em lote funcionava anteriormente (aplicava desconto/majoração por linha de negócio) como ferramenta para acelerar ajustes na proposta.
+
+Produtos grade:
+
+•	Oscar de Rooij e Eduardo explicaram que "grade" é um tipo de personalização específica para ensino médio — produto feito sob demanda para uma escola, vinculado àquela conta. Será reorganizado na revisão de cadastro de produtos.
+
+________________________________________
+
+3.9 Fluxo de Aprovação
+
+•	Ao ativar a proposta, ela entra automaticamente no fluxo de aprovação.
+•	O aprovador (ex.: coordenador da filial) recebe notificação por e-mail e Teams com informações de valores da proposta.
+•	Pode entrar na proposta para validar alunos, materiais, descontos e então aprovar ou rejeitar.
+•	Níveis de aprovação definidos por regras automáticas no CRM (taxa de administração, adiantamento, tipo de produto, assinatura de contrato).
+•	Kevellin dos Santos Corrado informou que as regras de aprovação estão sendo revistas por Oscar.
+
+________________________________________
+
+3.10 Ciclo de Vida da Proposta — Status e Revisões
+
+•	Revisão: o consultor pode revisar a proposta a qualquer momento (até com status "ativo aprovado"), informando motivo (inclusão/exclusão de produtos, revisão de valores, atualização de alunos). A revisão mata o fluxo de aprovação vigente e incrementa o ID de revisão.
+•	Propostas podem chegar a 27-28 revisões dependendo da negociação.
+•	Status possíveis:
+	o	Rascunho/Em andamento: editável, único momento para modificações.
+	o	Ativo em aprovação: no fluxo de aprovação, mas ainda pode ser revisada.
+	o	Ativo aprovado: proposta aceita — fluxo encerrado. Ainda pode ser revisada se necessário.
+	o	Fechado perdido: encerrado, sem possibilidade de revisão.
+	o	Fechado cancelado: encerrado, sem possibilidade de revisão.
+	o	Contrato emitido: bloqueio final — time de contratos barra alterações.
+•	Oscar de Rooij informou que Eduardo está ajudando no mapeamento de todos os estágios para depara com nova estrutura. Atualmente existem 3 campos (razão do status, status e outro) que serão simplificados para 2. Necessária higienização de base e depara de valores.
+•	Danilo Macedo confirmou que a entidade "pedido" não existe mais no fluxo — proposta aprovada é o ponto final.
+
+________________________________________
+
+3.11 Geração de Documentos (Word/PDF)
+
+•	A proposta permite exportar documentos em Word/PDF a partir de templates pré-configurados.
+•	Existem ~50 modelos de documentos diferentes (contratos, aditivos, patrocínios, etc.).
+•	O modelo correto depende do tipo de conta, produtos, canais de venda e condições comerciais preenchidas.
+•	Kevellin confirmou que a quantidade de documentos é um problema conhecido e já está sendo mapeado por Oscar.
+
+Fluxo atual de geração de contrato:
+
+•	Oscar de Rooij explicou que hoje o consultor/equipe administrativa baixa 2-3 templates, copia e cola no Word, faz ajustes manuais de texto e salva como PDF.
+•	A estrutura do contrato não é modularizável — não permite criação automática com base na proposta.
+•	Necessário trabalho com jurídico para revisar e modularizar cláusulas antes de automatizar (identificar tipo de contrato/aditivo, cláusulas aplicáveis, canais de venda, etc.).
+
+________________________________________
+
+3.12 Anexos e Histórico
+
+•	Funcionalidade de anexar documentos existe (aba Anexos e Linha do Tempo), mas é pouquíssimo utilizada.
+•	Alguns consultores anexam simuladores (Excel) para histórico, mas não é prática comum.
+•	Notificações do fluxo de aprovação são recebidas via Teams (bot) e e-mail.
+
+________________________________________
+
+3.13 Alinhamentos de Agenda
+
+•	Eduardo solicitou 30 minutos com Oscar para alinhar mapeamento de status/depara — agendado para a manhã de 11/03/2026.
+•	Próxima sessão de onboarding funcional prevista para quinta-feira (12/03/2026).
+•	Kevellin pediu confirmação dos horários para não conflitar com outras agendas (reunião técnica da manhã).
+•	Tercio Eduardo Freire Lins ficou de validar os convites com a equipe.
+•	Danilo, Camila e Rodrigo estarão presencialmente na FTD na quinta-feira.
+
+________________________________________
+
+4) DECISÕES
+
+Observação: foram registradas abaixo apenas decisões explícitas (ou confirmações formais) verbalizadas na reunião.
+
+1.	Campo "Aplicar desconto em lote" será removido da proposta: Kevellin confirmou que o campo não funciona e será retirado. Forma: consenso verbal.
+2.	Reunião de alinhamento Oscar + Eduardo sobre mapeamento de status agendada para a manhã de 11/03/2026: Eduardo solicitou, Oscar confirmou disponibilidade. Forma: consenso verbal.
+3.	Próxima sessão de onboarding funcional na quinta-feira (12/03/2026): Camila confirmou, Kevellin pediu validação de horários. Forma: consenso verbal.
+
+________________________________________
+
+5) AÇÕES E RESPONSÁVEIS
+
+Prazos foram registrados somente quando verbalizados. Quando não houve prazo explícito, consta "Não definido na reunião".
+
+Descrição da ação	Responsável	Prazo de entrega	Status
+Reunião de alinhamento sobre mapeamento de status e depara da proposta (30 min)	Eduardo De Oliveira / Oscar de Rooij	11/03/2026 (manhã)	Aberta
+Trazer algoritmo/lógica de status atual da proposta para a equipe Avanade realizar o depara	Eduardo De Oliveira	Não definido na reunião	Aberta
+Validar convites e horários das agendas de quinta-feira com a equipe	Tercio Eduardo Freire Lins	Não definido na reunião	Aberta
+Detalhar segmentação de perfis de acesso e visibilidade de contas no CRM (discussão futura)	Eduardo De Oliveira / Camila Moraes	Não definido na reunião	Aberta
+Avaliar inclusão de validação obrigatória de "Validar Serviços" antes de ativar proposta	Time Técnico	Não definido na reunião	Aberta
+Remover campo "Aplicar desconto em lote" da proposta (não funcional)	Kevellin dos Santos Corrado / Time FTD	Não definido na reunião	Em andamento
+Revisar e modularizar estrutura de templates de contrato com jurídico para permitir geração automática	Oscar de Rooij / Jurídico FTD	Não definido na reunião	Em análise
+
+________________________________________
+
+6) OBSERVAÇÕES ADICIONAIS
+
+•	A demonstração foi feita em ambiente de produção — Eduardo criou uma conta e proposta de teste que entrou no fluxo de aprovação real (coordenadora Raquel de BH foi notificada).
+•	A sincronização CRM ↔ Totvs para código ERP ocorre uma vez por dia (~6h da manhã).
+•	A matriz de serviços leva 10-15 minutos para ser processada, dependendo da quantidade de produtos.
+•	Existem ~50 templates de documentos Word/PDF no CRM — mapeamento em andamento para simplificação.
+•	Oscar está conduzindo o mapeamento de depara de status (3 campos atuais → 2 campos) com necessidade de higienização de base.

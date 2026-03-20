@@ -1,0 +1,65 @@
+```yaml
+workflow:
+  id: greenfield-service-workflow-v2
+  name: Greenfield Service Development
+  version: 2.0
+  type: service_development
+
+phases:
+  - id: service-design
+    name: "Service Design"
+    tasks:
+      - define_service_requirements
+      - design_api_contracts
+      - plan_service_architecture
+      - specify_data_models
+
+  - id: development
+    name: "Service Development"
+    tasks:
+      - implement_service_logic
+      - build_api_endpoints
+      - setup_data_persistence
+      - implement_security_controls
+
+  - id: integration
+    name: "Integration & Testing"
+    tasks:
+      - integrate_external_services
+      - perform_api_testing
+      - validate_service_contracts
+      - optimize_performance
+
+  - id: deployment
+    name: "Deployment & Operations"
+    tasks:
+      - deploy_service
+      - setup_monitoring
+      - configure_scaling
+      - document_operations
+
+gates:
+  - phase: service-design
+    criteria:
+      - requirements_defined
+      - api_contracts_approved
+      - architecture_validated
+  
+  - phase: development
+    criteria:
+      - service_logic_complete
+      - api_endpoints_implemented
+      - security_controls_active
+  
+  - phase: integration
+    criteria:
+      - integrations_working
+      - api_tests_passing
+      - performance_optimized
+  
+  - phase: deployment
+    criteria:
+      - deployment_successful
+      - monitoring_configured
+      - documentation_complete
+```

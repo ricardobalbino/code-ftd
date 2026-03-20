@@ -1,0 +1,356 @@
+# ============================================================
+# Dynamics 365 CE & Power Platform - Context Configuration
+# Avanade Method v4.29.0 - D365 Brownfield Context
+# ============================================================
+# Este arquivo é carregado por TODOS os agentes quando o contexto
+# é Dynamics 365 CE. Complementa core-config.yaml.
+
+project_context:
+  type: "brownfield"
+  platform: "Dynamics 365 CE + Power Platform"
+  description: "Modernização e customização CRM para FTD Educação - distribuidora de materiais didáticos"
+  client:
+    name: "FTD Educação S/A"
+    group: "Grupo Marista"
+    industry: "Educação / Editora / Distribuição de Livros Didáticos"
+    history: "+120 anos de atuação"
+    headquarters: "São Paulo, SP - Brasil"
+    branches: 28  # filiais de distribuição
+    students_impacted: "~1.5 milhão"
+    mission: "Produção e distribuição de livros e materiais didáticos para escolas públicas e privadas"
+  business_context:
+    peak_season: "Novembro a Janeiro (adoção escolar)"
+    peak_volume: "~5.000 contratos/dia no pico"
+    sales_model: "B2B (escolas, secretarias de educação, livrarias)"
+    programs: ["PNLD (Programa Nacional do Livro Didático)", "Vendas Privadas", "Governo"]
+    critical_processes:
+      - "Simulador Comercial (Power Pages) - criação de propostas"
+      - "Fluxo de aprovação multi-nível (4 alçadas)"
+      - "Adição de produtos em lote (propostas com até 200 produtos)"
+      - "Integração bidirecional CRM ↔ TOTVS/Datasul (contas, pedidos, faturamento)"
+      - "Assinatura digital de contratos (Adobe Sign - em migração)"
+      - "Geração de contratos Word/PDF (50+ templates)"
+      - "Matriz de serviços educacionais (auto-gerada)"
+      - "Gestão de royalties, patrocínios, benefícios e adiantamentos"
+    pain_points:
+      - "Consultor leva até 3 HORAS para criar 1 proposta (200 produtos × 3 cliques)"
+      - "Dataverse em nível CRÍTICO de armazenamento (já passou do limite)"
+      - "Tabela de produtos poluída (1.283 linhas onde deveria ser 15)"
+      - "12+ tabelas de preço (workaround para visibilidade, não pricing)"
+      - "Campos duplicados Oportunidade ↔ Proposta (dados desatualizados)"
+      - "50+ templates Word para contratos (manutenção insustentável)"
+      - "Vulcano: aprovação externa duplicada (será eliminada)"
+      - "Security roles não equalizadas entre ambientes"
+      - "Cadastro de contas sem processo definido (CRM vs TOTVS race condition)"
+  existing_integrations:
+    erp:
+      system: "TOTVS/Datasul"
+      type: "ERP corporativo"
+      integration_pattern: "ETLs bidirecionais + Azure Functions"
+      data_sync: ["contas/CNPJ", "pedidos", "faturamento", "estoque", "financeiro", "código ERP"]
+      sync_frequency: "Contas: 1x/dia às 6h; Pedidos: near real-time"
+      known_issues:
+        - "Cadastro duplo necessário (CRM + TOTVS) com sync posterior"
+        - "Sem owner da informação definido"
+        - "CNPJ desalinhado entre sistemas"
+    isa:
+      system: "ISA"
+      type: "Sistema de cadastro de produto"
+      integration_pattern: "ISA ↔ TOTVS ↔ CRM (a redesenhar)"
+    digital_signature:
+      system: "Adobe Acrobat Sign"
+      type: "Assinatura digital de contratos"
+      integration_pattern: "Plugin Adobe Agreement no CRM"
+      status: "Em migração para nova tecnologia"
+    data_lake:
+      system: "Azure Data Lake"
+      type: "Analytics e BI"
+      integration_pattern: "ETLs + Event-driven"
+    area_do_cliente:
+      system: "Portal Área do Cliente"
+      type: "Portal externo para escolas"
+      team: "Squad separada (não CRM)"
+      integration: "Canvas App + mesmas tabelas Dataverse"
+    vulcano:
+      system: "Vulcano"
+      type: "Aprovação externa de propostas"
+      status: "SERÁ ELIMINADO (migrar para fluxo D365)"
+    monitoring:
+      apm: "Datadog"
+      dashboards: "Grafana"
+      logs: "Application Insights + Datadog"
+  environments:
+    dev: { status: "ativo", pipeline: false, plugin_deploy: "manual" }
+    oat: { status: "ativo", pipeline: true }
+    prod: { status: "ativo", pipeline: true, requires_gmud: true }
+    qa: { status: "criado", pipeline: false, notes: "não configurado" }
+    release_candidate: { status: "criado", pipeline: false, notes: "não configurado" }
+  repository:
+    name: "FTD Dynamics"
+    org: "FTD Educação"
+    branches: { source_of_truth: "dev", production: "master (não usado para deploy)" }
+    pattern: "Feature branches a partir de dev"
+    issue: "Repo desacoplado dos PBIs (migração em andamento)"
+  solutions_count: 9
+  solutions_strategy_detail: "Segmentação por tipo de componente, numeradas com ordem de dependência"
+
+# ============================================================
+# D365 CE MODULES IN SCOPE
+# ============================================================
+d365_modules:
+  - name: "Sales"
+    entities: [account, contact, lead, opportunity, quote, order, invoice]
+    apps: ["Spartan (app principal vendas)", "PNLD (setor público)"]
+    status: "active"
+    custom_entities: ["ftd_proposta", "ftd_produto_proposta", "ftd_beneficio", "ftd_patrocinio", "ftd_adiantamento"]
+  - name: "Customer Service"
+    entities: [incident, knowledgearticle, entitlement, sla]
+    apps: ["Hub SAC (CRC atendimentos)"]
+    status: "active"
+  - name: "Marketing"
+    entities: [campaign, list, campaignactivity, campaignresponse]
+    status: "limited"
+  - name: "Field Service"
+    entities: [bookableresource, workorder, agreement, warehouse]
+    status: "limited"
+
+# ============================================================
+# COMMERCIAL PROCESS - FTD SPECIFIC
+# ============================================================
+commercial_process:
+  journey: "Conta → Contato (Rep. Legal) → Oportunidade → Produtos → Proposta → Aprovação → Contrato → Adobe Sign → TOTVS"
+  proposal_stages: 6  # refined from initial 4
+  simulator:
+    technology: "Power Pages (frontend) + CRM (motor)"
+    auth: "Entra ID (sem custo extra licenciamento)"
+    calculations: "Real-time frontend (JS/PowerFX) + validação backend (Azure Functions)"
+    debounce_rule: "≤50 produtos → plugin síncrono; >50 → Azure Function"
+    mvp_deadline: "31 Março 2026"
+    mvp_scope: "Adição individual de produtos"
+  sales_channels:
+    - "FTD com Você (Lumisfera e-commerce) - PRINCIPAL"
+    - "Venda Direta (faturamento/invoice)"
+    - "Frente de Loja / Balcão Escola"
+    - "Smart POS (plantão de vendas presencial)"
+  business_lines:
+    - { name: "Sistema de Ensino", majoracao: true, lote: true }
+    - { name: "Didático", majoracao: false, lote: true }
+    - { name: "Bilíngue", majoracao: true, lote: true }
+    - { name: "Espanhol", majoracao: true, lote: true }
+    - { name: "Literatura", majoracao: false, lote: false }
+    - { name: "APE", majoracao: false, lote: true }
+  approval_levels: 4  # consultor, coordenador+gerente, +diretor adjunto, +diretor comercial
+  product_types:
+    - "Prateleira (catálogo padrão)"
+    - "Customizado Compartilhado (alteração leve, qualquer escola)"
+    - "Customizado (vinculado a escola/mantenedora)"
+    - "Personalizado (alteração pesada, escola específica)"
+    - "Grade (ensino médio, escola específica)"
+
+# ============================================================
+# TECHNOLOGY STACK
+# ============================================================
+stack:
+  crm_platform: "Dynamics 365 CE (Online)"
+  data_platform: "Microsoft Dataverse"
+  ui_framework: "Unified Interface (UCI)"
+  backend_languages:
+    - "C# (.NET 6+ para Plugins e Azure Functions)"
+    - "TypeScript (PCF Controls)"
+    - "JavaScript (Web Resources)"
+    - "Power Fx (Canvas Apps)"
+    - "Liquid (Power Pages)"
+  automation: "Power Automate (Cloud Flows)"
+  integration:
+    - "Azure Functions (HTTP, Service Bus, Timer triggers)"
+    - "Azure Service Bus (Topics, Queues)"
+    - "Azure Event Grid"
+    - "Dataverse Webhooks"
+  testing:
+    - "FakeXrmEasy (Plugin unit tests)"
+    - "xUnit (.NET testing)"
+    - "Jest + React Testing Library (PCF)"
+    - "Postman/Newman (API integration tests)"
+  alm:
+    - "Power Platform CLI (pac)"
+    - "Solution Packager"
+    - "Azure DevOps Pipelines"
+    - "Power Platform Build Tools"
+  monitoring:
+    - "Datadog (APM, logs, alertas)"
+    - "Grafana (dashboards operacionais)"
+    - "Application Insights (Azure Functions telemetry)"
+  erp_integration:
+    - "TOTVS/Datasul (ERP corporativo)"
+    - "Azure Service Bus (mensageria async)"
+    - "Azure Functions (orchestration layer)"
+
+# ============================================================
+# NAMING CONVENTIONS
+# ============================================================
+naming:
+  publisher_prefix: "ftd"
+  solution_prefix: "FTD"
+  plugin_namespace: "FTD.Plugins"
+  function_namespace: "FTD.Functions"
+  pcf_prefix: "FTD"
+  web_resource_prefix: "ftd_"
+  flow_prefix: "FTD -"
+  environment_names:
+    dev: "FTD-Dev"
+    build: "FTD-Build"
+    test: "FTD-Test"
+    uat: "FTD-UAT"
+    prod: "FTD-Prod"
+
+# ============================================================
+# SOLUTION STRATEGY
+# ============================================================
+solutions:
+  strategy: "segmented"  # segmented | monolithic
+  layers:
+    - name: "FTDCore"
+      type: "Core"
+      description: "Tabelas base, security roles, shared components"
+      components: ["tables", "security_roles", "option_sets", "connection_roles"]
+    - name: "FTDSales"
+      type: "Module"
+      description: "Customizações de Sales"
+      depends_on: ["FTDCore"]
+    - name: "FTDService"
+      type: "Module"
+      description: "Customizações de Service"
+      depends_on: ["FTDCore"]
+    - name: "FTDPlugins"
+      type: "Code"
+      description: "Assemblies de plugins"
+      depends_on: ["FTDCore"]
+    - name: "FTDIntegration"
+      type: "Integration"
+      description: "Webhooks, Custom APIs, Azure Function configs"
+      depends_on: ["FTDCore", "FTDPlugins"]
+
+# ============================================================
+# DECISION FRAMEWORKS
+# ============================================================
+decision_frameworks:
+  logic_placement:
+    # WHEN → THEN → USE
+    - when: "Validação simples no form (show/hide, required)"
+      then: "Business Rule"
+      reason: "No-code, mantida por configuradores"
+    - when: "Validação server-side obrigatória"
+      then: "Plugin Pre-Validation (Stage 10)"
+      reason: "Executa antes de tudo, bloqueia operação"
+    - when: "Lógica de negócio complexa server-side"
+      then: "Plugin Pre/Post-Operation (Stage 20/40)"
+      reason: "Acesso completo ao contexto, transacional"
+    - when: "Operação assíncrona (notificação, log, sync)"
+      then: "Plugin Async Post-Operation"
+      reason: "Não impacta UX, pode falhar com retry"
+    - when: "Orquestração de processo multi-step"
+      then: "Power Automate Cloud Flow"
+      reason: "Visual, auditável, retry nativo"
+    - when: "Aprovação multi-nível"
+      then: "Power Automate Approvals"
+      reason: "UI nativa, integração Teams/Outlook"
+    - when: "Processamento pesado / longa duração"
+      then: "Azure Function + Service Bus"
+      reason: "Sem timeout, escalável, isolado"
+    - when: "Integração com API externa (real-time)"
+      then: "Azure Function HTTP trigger"
+      reason: "Isolamento, retry, circuit breaker"
+    - when: "Integração com API externa (async)"
+      then: "Azure Function + Service Bus trigger"
+      reason: "Desacoplado, resiliente, dead-letter"
+    - when: "Operação reutilizável cross-entity"
+      then: "Custom API"
+      reason: "Tipada, versionável, chamável de qualquer lugar"
+    - when: "UI customizada no form (beyond OOB)"
+      then: "PCF Control"
+      reason: "React, reusável, lifecycle gerenciado"
+    - when: "Manipulação rápida de form events"
+      then: "JavaScript Web Resource"
+      reason: "Rápido, mas harder to test/maintain"
+
+  app_type_selection:
+    - when: "CRUD padrão com business process"
+      then: "Model-driven App"
+    - when: "UI altamente customizada para cenário específico"
+      then: "Canvas App (embedded ou standalone)"
+    - when: "Portal externo para clientes/parceiros"
+      then: "Power Pages"
+    - when: "Mobile field worker"
+      then: "Field Service Mobile / Canvas App offline"
+
+# ============================================================
+# QUALITY GATES - D365 SPECIFIC
+# ============================================================
+quality_gates:
+  solution_checker:
+    max_critical: 0
+    max_high: 0
+    max_medium: 10
+    run_before: "solution export"
+  plugin_standards:
+    max_execution_time_ms: 2000
+    require_tracing: true
+    require_error_handling: true
+    ban_hardcoded_guids: true
+    require_unit_tests: true
+    min_coverage: 80
+  flow_standards:
+    require_error_handling: true
+    require_scope_try_catch: true
+    require_run_after_config: true
+    naming_convention: "FTD - [Module] - [Action] - [Trigger]"
+  pcf_standards:
+    require_unit_tests: true
+    min_coverage: 70
+    require_manifest_validation: true
+
+# ============================================================
+# ALM PIPELINE
+# ============================================================
+alm:
+  pipeline_type: "Azure DevOps"
+  stages:
+    - name: "Build"
+      actions: ["Export unmanaged", "Pack managed", "Run Solution Checker"]
+    - name: "Test"
+      actions: ["Import managed to Test", "Run integration tests"]
+    - name: "UAT"
+      actions: ["Import managed to UAT", "Business validation"]
+    - name: "Prod"
+      actions: ["Import managed to Prod", "Smoke tests"]
+  branching: "GitFlow"
+  solution_versioning: "SemVer (MAJOR.MINOR.BUILD.REVISION)"
+
+# ============================================================
+# PERFORMANCE CONSIDERATIONS - FTD SPECIFIC
+# ============================================================
+performance:
+  peak_season:
+    period: "Novembro a Janeiro"
+    description: "Pico de adoção escolar - volume 5-10x normal"
+    considerations:
+      - "Plugins devem ter execution time < 2s mesmo sob carga"
+      - "Flows com retry e error handling para volume alto"
+      - "Azure Functions com auto-scale configurado"
+      - "Service Bus com partitioning para throughput"
+      - "Bulk operations via ExecuteMultiple quando possível"
+  integration_sla:
+    totvs_datasul: "Near real-time (< 5 min via Service Bus)"
+    adobe_sign: "Real-time (HTTP trigger)"
+    data_lake: "Eventual consistency (Event Grid, < 15 min)"
+
+# ============================================================
+# DEVLOADALWAYSFILES - D365 context
+# ============================================================
+devLoadAlwaysFiles:
+  - .avanade-method/docs/ftd-knowledge-base.md
+  - docs/arquitetura/d365-data-model.md
+  - docs/arquitetura/d365-solution-architecture.md
+  - docs/arquitetura/d365-integration-landscape.md
+  - docs/arquitetura/padroes-desenvolvimento.md
+  - docs/arquitetura/stack-tecnologica.md

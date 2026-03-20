@@ -1,0 +1,65 @@
+```yaml
+workflow:
+  id: greenfield-fullstack-workflow-v2
+  name: Greenfield Full-Stack Development
+  version: 2.0
+  type: fullstack_development
+
+phases:
+  - id: discovery
+    name: "Product Discovery"
+    tasks:
+      - conduct_market_research
+      - define_product_requirements
+      - create_user_personas
+      - validate_product_concept
+
+  - id: architecture
+    name: "System Architecture"
+    tasks:
+      - design_system_architecture
+      - define_technology_stack
+      - plan_data_architecture
+      - create_api_specifications
+
+  - id: mvp-development
+    name: "MVP Development"
+    tasks:
+      - implement_core_features
+      - develop_user_interface
+      - build_backend_services
+      - setup_data_storage
+
+  - id: testing-deployment
+    name: "Testing & Deployment"
+    tasks:
+      - execute_comprehensive_testing
+      - setup_deployment_pipeline
+      - deploy_to_production
+      - monitor_system_health
+
+gates:
+  - phase: discovery
+    criteria:
+      - market_research_complete
+      - prd_approved
+      - user_validation_passed
+  
+  - phase: architecture
+    criteria:
+      - architecture_approved
+      - tech_stack_validated
+      - api_design_confirmed
+  
+  - phase: mvp-development
+    criteria:
+      - core_features_complete
+      - ui_development_finished
+      - backend_services_ready
+  
+  - phase: testing-deployment
+    criteria:
+      - testing_passed
+      - deployment_successful
+      - monitoring_active
+```

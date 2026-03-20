@@ -1,0 +1,9 @@
+{
+  // Ativa prompt e instruções no projeto
+  "chat.promptFiles": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+
+  // Localizações dos arquivos instrução e prompts
+  "chat.instructionsFilesLocations": {".github/instructions": true},
+  "chat.promptFilesLocations": {".github/prompts": true}
+}

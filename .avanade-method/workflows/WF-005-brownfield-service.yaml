@@ -1,0 +1,65 @@
+﻿```yaml
+workflow:
+  id: brownfield-service-workflow-v2
+  name: Brownfield Service Enhancement
+  version: 2.0
+  type: service_enhancement
+
+phases:
+  - id: discovery
+    name: "Discovery & Analysis"
+    tasks:
+      - analyze_existing_service
+      - identify_enhancement_scope
+      - assess_technical_debt
+      - evaluate_integration_points
+
+  - id: planning
+    name: "Enhancement Planning"
+    tasks:
+      - create_enhancement_prd
+      - design_service_architecture
+      - plan_migration_strategy
+      - define_testing_approach
+
+  - id: implementation
+    name: "Service Implementation"
+    tasks:
+      - implement_service_enhancements
+      - update_integration_points
+      - perform_testing_validation
+      - prepare_deployment_artifacts
+
+  - id: deployment
+    name: "Deployment & Validation"
+    tasks:
+      - execute_deployment_plan
+      - validate_service_functionality
+      - monitor_service_performance
+      - complete_documentation
+
+gates:
+  - phase: discovery
+    criteria:
+      - existing_service_analysis_complete
+      - enhancement_scope_defined
+      - technical_impact_assessed
+  
+  - phase: planning
+    criteria:
+      - prd_approved
+      - architecture_validated
+      - testing_strategy_confirmed
+  
+  - phase: implementation
+    criteria:
+      - code_review_passed
+      - tests_passing
+      - integration_validated
+  
+  - phase: deployment
+    criteria:
+      - deployment_successful
+      - performance_validated
+      - documentation_complete
+```

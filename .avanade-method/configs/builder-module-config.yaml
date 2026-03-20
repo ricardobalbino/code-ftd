@@ -1,0 +1,396 @@
+## 📋 O que é este Artefato?
+
+Este artifact configura o módulo Builder, incluindo versão, agentes disponíveis, artifacts referenciados e configurações gerais.
+
+---
+
+## 🎯 Quando Usar
+
+Use este artifact para:
+- ✅ Configurar Builder Module em novo ambiente
+- ✅ Listar builders disponíveis
+- ✅ Referenciar artifacts do módulo
+- ✅ Documentar versão e dependências
+
+---
+
+## 📖 Estrutura YAML
+
+```yaml
+# AVANADE BUILDER MODULE - Configuration
+# Version: 2.0
+# Platform: Avanade Method via MCP
+
+---
+
+## Module Metadata
+module:
+  id: "avanade-builder-module"
+  name: "Avanade Builder Module"
+  version: "2.0"
+  type: "optional"
+  status: "active"
+  created: "2026-02-12"
+  updated: "2026-02-12"
+  
+  description: |
+    Módulo opcional do Avanade Method para criação e customização
+    de componentes metodológicos (agentes, workflows, tasks).
+    
+  features:
+    - "Auto-geração de agentes Avanade Method"
+    - "Criação de workflows especializados"
+    - "Geração de tasks/checklists reutilizáveis"
+    - "Exportação para Plataforma Cockpit (JSON)"
+    - "Sistema de delegação supervisor → standard agents"
+
+---
+
+## Builders Available
+
+builders:
+  - builder_id: "AVANADE_BUILDER_AGENT_SUPERVISOR"
+    name: "Agent Builder"
+    type: "Supervisor"
+    role: "Criar e gerenciar agentes completos"
+    chatmode_file: ".github/agents/avanade-agent-builder.agent.md"
+    instruction_artifact: "AVANADE_BUILDER_AGENT_SUPERVISOR_INSTRUCTION_MD"
+    prompt_artifact: "AVANADE_BUILDER_AGENT_PROMPT_MD"
+    status: "active"
+    
+    capabilities:
+      - "Criar estrutura de agente (.customize.yaml + .agent.md)"
+      - "Configurar sistema de herança"
+      - "Delegar workflows para Workflow Builder"
+      - "Delegar tasks para Task Builder"
+      - "Validar conformidade metodológica"
+      - "Exportar agente para Cockpit (JSON)"
+    
+    delegation:
+      can_delegate: true
+      delegates_to:
+        - "Workflow Builder"
+        - "Task Builder"
+  
+  - builder_id: "AVANADE_BUILDER_WORKFLOW_STANDARD"
+    name: "Workflow Builder"
+    type: "Standard"
+    role: "Criar workflows metodológicos"
+    chatmode_file: ".github/agents/avanade-workflow-builder.agent.md"
+    instruction_artifact: "AVANADE_BUILDER_WORKFLOW_INSTRUCTION_MD"
+    prompt_artifact: "AVANADE_BUILDER_WORKFLOW_PROMPT_MD"
+    status: "active"
+    
+    capabilities:
+      - "Criar workflows estruturados (.workflow.md)"
+      - "Gerar diagramas Mermaid"
+      - "Aplicar padrões metodológicos"
+      - "Integrar com manifesto de workflows"
+    
+    delegation:
+      can_delegate: false
+  
+  - builder_id: "AVANADE_BUILDER_TASK_STANDARD"
+    name: "Task Builder"
+    type: "Standard"
+    role: "Criar tasks e checklists"
+    chatmode_file: ".github/agents/avanade-task-builder.agent.md"
+    instruction_artifact: "AVANADE_BUILDER_TASK_INSTRUCTION_MD"
+    prompt_artifact: "AVANADE_BUILDER_TASK_PROMPT_MD"
+    status: "active"
+    
+    capabilities:
+      - "Criar tasks/checklists (.task.md)"
+      - "Definir critérios de validação"
+      - "Aplicar scoring models"
+      - "Categorizar tasks por tipo"
+    
+    delegation:
+      can_delegate: false
+
+---
+
+## Artifacts Registry
+
+artifacts:
+  instruction_artifacts:
+    - key: "AVANADE_BUILDER_AGENT_SUPERVISOR_INSTRUCTION_MD"
+      description: "Instruções completas do Agent Builder"
+      type: "Instruction"
+      format: "Markdown"
+      agent: "Agent Builder"
+      
+    - key: "AVANADE_BUILDER_WORKFLOW_INSTRUCTION_MD"
+      description: "Instruções completas do Workflow Builder"
+      type: "Instruction"
+      format: "Markdown"
+      agent: "Workflow Builder"
+      
+    - key: "AVANADE_BUILDER_TASK_INSTRUCTION_MD"
+      description: "Instruções completas do Task Builder"
+      type: "Instruction"
+      format: "Markdown"
+      agent: "Task Builder"
+  
+  prompt_artifacts:
+    - key: "AVANADE_BUILDER_AGENT_PROMPT_MD"
+      description: "Prompt VSCode para Agent Builder"
+      type: "Prompt"
+      format: "Markdown"
+      
+    - key: "AVANADE_BUILDER_WORKFLOW_PROMPT_MD"
+      description: "Prompt VSCode para Workflow Builder"
+      type: "Prompt"
+      format: "Markdown"
+      
+    - key: "AVANADE_BUILDER_TASK_PROMPT_MD"
+      description: "Prompt VSCode para Task Builder"
+      type: "Prompt"
+      format: "Markdown"
+  
+  template_artifacts:
+    - key: "AVANADE_BUILDER_AGENT_TEMPLATE_YAML"
+      description: "Template para .customize.yaml"
+      type: "Template"
+      format: "YAML"
+      output: ".avanade-method/agents/{nome}.customize.yaml"
+      
+    - key: "AVANADE_BUILDER_CHATMODE_TEMPLATE_MD"
+      description: "Template para .agent.md"
+      type: "Template"
+      format: "Markdown"
+      output: ".github/agents/{nome}.agent.md"
+      
+    - key: "AVANADE_BUILDER_WORKFLOW_TEMPLATE_MD"
+      description: "Template para .workflow.md"
+      type: "Template"
+      format: "Markdown"
+      output: ".avanade-method/workflows/{nome}.workflow.md"
+      
+    - key: "AVANADE_BUILDER_TASK_TEMPLATE_MD"
+      description: "Template para .task.md"
+      type: "Template"
+      format: "Markdown"
+      output: ".avanade-method/tasks/{nome}.task.md"
+  
+  export_artifacts:
+    - key: "AVANADE_BUILDER_EXPORT_JSON_GUIDE_MD"
+      description: "Guia completo para exportação JSON (Cockpit)"
+      type: "Guide"
+      format: "Markdown"
+      reference_file: "AGENT-JSON-TEMPLATE-GUIDE.md"
+      
+    - key: "AVANADE_BUILDER_EXPORT_TEMPLATE_JSON"
+      description: "Template JSON para exportação Cockpit"
+      type: "Template"
+      format: "JSON"
+      output: "agent-{nome}/cockpit-export.json"
+      
+    - key: "AVANADE_BUILDER_EXPORT_REPORT_TEMPLATE_MD"
+      description: "Template de relatório de exportação"
+      type: "Template"
+      format: "Markdown"
+      output: "agent-{nome}/export-report.md"
+  
+  config_artifacts:
+    - key: "AVANADE_BUILDER_MODULE_CONFIG_YAML"
+      description: "Configuração do módulo builder"
+      type: "Config"
+      format: "YAML"
+      file: "config.yaml"
+
+---
+
+## Dependencies
+
+dependencies:
+  core_artifacts:
+    - artifact: "AVANADE_BASE_MASTER_AGENT_MD"
+      required: true
+      description: "Template base de herança para agentes"
+      
+    - artifact: "AVANADE_BASE_CONFIG_YAML"
+      required: true
+      description: "Configuração base de herança"
+      
+    - artifact: "AVANADE_WORKFLOW_MANIFEST"
+      required: false
+      description: "Manifesto de workflows existentes"
+      
+    - artifact: "AVANADE_MERMAID_LIBRARY_MD"
+      required: false
+      description: "Biblioteca de diagramas Mermaid"
+      
+    - artifact: "AVANADE_DOC_STANDARDS_MD"
+      required: true
+      description: "Padrões de documentação"
+  
+  vscode:
+    required: true
+    version: ">= 1.80"
+    extensions:
+      - "GitHub.copilot"
+      - "GitHub.copilot-chat"
+  
+  mcp:
+    required: true
+    server: "avanade-metho"
+    tools:
+      - "mcp_avanade-metho_get_artifact"
+      - "mcp_avanade-metho_create_artifact"
+      - "mcp_avanade-metho_update_artifact"
+      - "mcp_avanade-metho_search_artifacts"
+
+---
+
+## Installation
+
+installation:
+  folder_structure:
+    root: "[WORKSPACE_ROOT]"
+    
+    folders:
+      - path: ".github/agents/"
+        description: "Chatmode files dos builders"
+        files:
+          - "avanade-agent-builder.agent.md"
+          - "avanade-workflow-builder.agent.md"
+          - "avanade-task-builder.agent.md"
+      
+      - path: ".avanade-method/_builders/"
+        description: "Módulo builder (opcional)"
+        files:
+          - "README.md"
+          - "config.yaml"
+        subfolders:
+          - "templates/"
+          - "agents/"
+          - "examples/"
+          - "validation/"
+      
+      - path: ".avanade-method/agents/"
+        description: "Agentes customizados gerados"
+        pattern: "{nome}.customize.yaml"
+      
+      - path: ".avanade-method/workflows/"
+        description: "Workflows gerados"
+        pattern: "{nome}.workflow.md"
+      
+      - path: ".avanade-method/tasks/"
+        description: "Tasks geradas"
+        pattern: "{nome}.task.md"
+
+---
+
+## Usage
+
+usage:
+  activation:
+    agent_builder:
+      chatmode: "@avanade-agent-builder"
+      menu_trigger: "Digite número da ação desejada"
+      
+    workflow_builder:
+      chatmode: "@avanade-workflow-builder"
+      menu_trigger: "Digite número da ação desejada"
+      
+    task_builder:
+      chatmode: "@avanade-task-builder"
+      menu_trigger: "Digite número da ação desejada"
+  
+  workflows:
+    create_new_agent:
+      builder: "Agent Builder (Supervisor)"
+      steps:
+        - "Discovery Protocol (6 perguntas)"
+        - "Criar estrutura core"
+        - "Configurar herança"
+        - "Delegar workflows (opcional)"
+        - "Delegar tasks (opcional)"
+        - "Validar conformidade"
+        - "Gerar documentação"
+    
+    export_to_cockpit:
+      builder: "Agent Builder (Supervisor)"
+      command: "export-to-cockpit"
+      output: "agent-{nome}/cockpit-export.json"
+
+---
+
+## Versioning
+
+versioning:
+  current_version: "2.0"
+  release_date: "2026-02-12"
+  
+  changelog:
+    - version: "2.0"
+      date: "2026-02-12"
+      changes:
+        - "Initial release do Builder Module"
+        - "3 builders: Agent, Workflow, Task"
+        - "Sistema de delegação supervisor → standard"
+        - "Exportação para Cockpit (JSON)"
+        - "Templates completos para todos componentes"
+    
+  compatibility:
+    avanade_method_core: ">= 2.0"
+    vscode: ">= 1.80"
+    mcp_server: ">= 1.0"
+
+---
+
+## Support
+
+support:
+  documentation:
+    - file: "README.md"
+      description: "Overview do módulo"
+    - file: "BUILDER-MODULE-ARCHITECTURE.md"
+      description: "Arquitetura detalhada"
+    - file: "ARTIFACTS-CATALOG.md"
+      description: "Catálogo de artifacts"
+    - file: "AGENT-JSON-TEMPLATE-GUIDE.md"
+      description: "Guia de exportação JSON"
+  
+  examples:
+    folder: ".avanade-method/_builders/examples/"
+    files:
+      - "example-agent/"
+      - "example-workflow/"
+      - "example-task/"
+  
+  validation:
+    folder: ".avanade-method/_builders/validation/"
+    scripts:
+      - "validate-agent.js"
+      - "validate-workflow.js"
+      - "validate-task.js"
+```
+
+---
+
+## ✅ Checklist de Validação
+
+### Config File Válido
+
+- [ ] Metadata do módulo completa
+- [ ] 3 builders listados (Agent, Workflow, Task)
+- [ ] Todos artifacts registrados (15 total)
+- [ ] Dependencies documentadas
+- [ ] Installation structure definida
+- [ ] Usage examples incluídos
+- [ ] Versioning information presente
+- [ ] Support resources listados
+- [ ] YAML syntax válido
+
+---
+
+## 📚 Artifacts Relacionados
+
+- ${AVANADE_BUILDER_AGENT_TEMPLATE_YAML} - Template de agente
+- ${AVANADE_BUILDER_CHATMODE_TEMPLATE_MD} - Template de chatmode
+- ${AVANADE_BUILDER_WORKFLOW_TEMPLATE_MD} - Template de workflow
+- ${AVANADE_BUILDER_TASK_TEMPLATE_MD} - Template de task
+
+---

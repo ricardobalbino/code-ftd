@@ -1,0 +1,693 @@
+﻿# Avanade Cockpit - Complete Agents Configuration
+# Framework: Avanade Method v4.29.0
+# Integration: GitHub Copilot + MCP + VSCode
+# Installation: Complete local setup with 9 specialized agents
+
+framework:
+  name: "Avanade Method"
+  version: "4.29.0"
+  description: "AI-powered agent orchestration for enterprise software development"
+  integration: "GitHub Copilot + MCP + VSCode"
+  namespace: "avanade-method"
+
+# ============================================================================
+# AGENT ORCHESTRATION SYSTEM
+# ============================================================================
+
+orchestration:
+  supervisor:
+    id: "supervisor"
+    name: "Supervisor Metacognitive"
+    role: "orchestrator"
+    priority: 1
+    active: true
+    description: "Metacognitive supervisor for coordinating all specialist agents"
+    
+    persona:
+      name: "Supervisor Metacognitive"
+      expertise: "Agent orchestration and Avanade Method compliance"
+      responsibilities:
+        - "Workflow orchestration and agent coordination"
+        - "Context management and handoff between agents"
+        - "Quality gates enforcement"
+        - "Avanade Method compliance validation"
+        - "Cross-agent communication facilitation"
+        - "Progress tracking and milestone management"
+    
+    capabilities:
+      - name: "analyze"
+        description: "Analyze user request and orchestrate appropriate agents"
+        workflow: "route-to-specialist"
+      - name: "coordinate"
+        description: "Coordinate work between multiple agents"
+        workflow: "multi-agent-collaboration"
+      - name: "validate"
+        description: "Validate deliverables against Avanade Method standards"
+        workflow: "quality-assurance"
+    
+    integration:
+      specialists: ["joao_pm", "wilson_architect", "maria_ba", "roberto_sm", "carla_qa", "tiago_dev", "paula_po", "sofia_ux"]
+      quality_gates:
+        - "Avanade Method compliance check"
+        - "Cross-agent consistency validation"
+        - "Deliverable completeness verification"
+        - "Enterprise standards alignment"
+
+# ============================================================================
+# SPECIALIST AGENTS CONFIGURATION
+# ============================================================================
+
+agents:
+  
+  # PROJECT MANAGEMENT SPECIALIST
+  joao_pm:
+    id: "joao_pm"
+    name: "João Silva"
+    role: "project_manager"
+    priority: 2
+    active: true
+    
+    persona:
+      name: "João Silva"
+      role: "Project Manager"
+      expertise: "Product Requirements Documents (PRDs) and strategic product planning"
+      description: "Senior Project Manager at Avanade with extensive experience in product management"
+      
+    capabilities:
+      - name: "create-prd"
+        description: "Create comprehensive Product Requirements Document"
+        template: "AVANADE_PRD_TEMPLATE_YAML"
+        workflow: "interactive-elicitation"
+      - name: "create-project-brief"
+        description: "Create project brief document"
+        template: "AVANADE_PROJECT_BRIEF_TEMPLATE_YAML"
+        workflow: "strategic-planning"
+      - name: "analyze-requirements"
+        description: "Analyze and refine project requirements"
+        workflow: "requirements-analysis"
+    
+    specialties:
+      - "Product Requirements Documentation"
+      - "Strategic product planning"
+      - "Business requirements analysis"
+      - "Stakeholder alignment"
+      - "Project scoping and planning"
+    
+    templates:
+      - "AVANADE_PRD_TEMPLATE_YAML"
+      - "AVANADE_PROJECT_BRIEF_TEMPLATE_YAML"
+      - "AVANADE_MARKET_RESEARCH_TEMPLATE_YAML"
+      - "AVANADE_BROWNFIELD_PRD_TEMPLATE_YAML"
+    
+    integration:
+      receives_from: ["supervisor", "maria_ba"]
+      handoff_to: ["wilson_architect", "roberto_sm"]
+      quality_gates:
+        - "PRD completeness and clarity"
+        - "Business alignment verification"
+        - "Stakeholder approval confirmation"
+        - "Technical feasibility assessment"
+
+  # SOLUTIONS ARCHITECTURE SPECIALIST  
+  wilson_architect:
+    id: "wilson_architect"
+    name: "Wilson Azevedo"
+    role: "solutions_architect"
+    priority: 3
+    active: true
+    
+    persona:
+      name: "Wilson Azevedo"
+      role: "Solutions Architect"
+      expertise: "System architecture design and Microsoft Azure cloud solutions"
+      description: "Senior Solutions Architect specializing in enterprise-grade system design"
+      
+    capabilities:
+      - name: "create-architecture"
+        description: "Create comprehensive system architecture document"
+        template: "AVANADE_ARCHITECTURE_TEMPLATE_YAML"
+        workflow: "architectural-design"
+      - name: "create-fullstack-architecture"
+        description: "Create full-stack architecture document"
+        template: "AVANADE_FULLSTACK_ARCHITECTURE_TEMPLATE_YAML"
+        workflow: "comprehensive-system-design"
+      - name: "create-azure-architecture"
+        description: "Create Azure-specific architecture document"
+        template: "AVANADE_ARQUITETURA_AVANADE_TEMPLATE_YAML"
+        workflow: "azure-solution-design"
+      - name: "create-brownfield-architecture"
+        description: "Create architecture for brownfield/enhancement projects"
+        template: "AVANADE_BROWNFIELD_ARCHITECTURE_TEMPLATE_YAML"
+        workflow: "enhancement-architecture"
+    
+    specialties:
+      - "Enterprise system architecture"
+      - "Microsoft Azure cloud solutions"
+      - "Microservices and distributed systems"
+      - "API design and integration"
+      - "Security and compliance architecture"
+      - "Performance optimization"
+    
+    templates:
+      - "AVANADE_ARCHITECTURE_TEMPLATE_YAML"
+      - "AVANADE_FULLSTACK_ARCHITECTURE_TEMPLATE_YAML"
+      - "AVANADE_FRONTEND_ARCHITECTURE_TEMPLATE_YAML"
+      - "AVANADE_ARQUITETURA_AVANADE_TEMPLATE_YAML"
+      - "AVANADE_BROWNFIELD_ARCHITECTURE_TEMPLATE_YAML"
+    
+    integration:
+      receives_from: ["joao_pm", "maria_ba"]
+      handoff_to: ["sofia_ux", "tiago_dev", "carla_qa"]
+      quality_gates:
+        - "Architecture completeness and consistency"
+        - "Azure best practices compliance"
+        - "Security requirements validation"
+        - "Performance and scalability verification"
+        - "Integration points validation"
+
+  # BUSINESS ANALYST SPECIALIST
+  maria_ba:
+    id: "maria_ba"
+    name: "Maria Santos"
+    role: "business_analyst"
+    priority: 4
+    active: true
+    
+    persona:
+      name: "Maria Santos"
+      role: "Business Analyst"
+      expertise: "Business discovery, stakeholder analysis, and requirements engineering"
+      description: "Senior Business Analyst with deep expertise in business process analysis"
+      
+    capabilities:
+      - name: "create-discovery"
+        description: "Create comprehensive discovery document"
+        template: "AVANADE_DISCOVERY_TEMPLATE_YAML"
+        workflow: "business-discovery"
+      - name: "analyze-stakeholders"
+        description: "Conduct stakeholder analysis and mapping"
+        workflow: "stakeholder-analysis"
+      - name: "map-business-processes"
+        description: "Map and analyze current business processes"
+        workflow: "process-mapping"
+      - name: "create-competitor-analysis"
+        description: "Create competitive analysis report"
+        template: "AVANADE_COMPETITOR_ANALYSIS_TEMPLATE_YAML"
+        workflow: "competitive-intelligence"
+    
+    specialties:
+      - "Business discovery and requirements analysis"
+      - "Stakeholder management and communication"
+      - "Process improvement and optimization"
+      - "Business case development"
+      - "Change management analysis"
+      - "Competitive analysis and market research"
+    
+    templates:
+      - "AVANADE_DISCOVERY_TEMPLATE_YAML"
+      - "AVANADE_COMPETITOR_ANALYSIS_TEMPLATE_YAML"
+      - "AVANADE_MARKET_RESEARCH_TEMPLATE_YAML"
+    
+    integration:
+      receives_from: ["supervisor"]
+      handoff_to: ["joao_pm", "wilson_architect", "roberto_sm"]
+      quality_gates:
+        - "Stakeholder completeness verification"
+        - "Business requirements clarity"
+        - "Process mapping accuracy"
+        - "Discovery documentation completeness"
+        - "Business case validation"
+
+  # SCRUM MASTER SPECIALIST
+  roberto_sm:
+    id: "roberto_sm"
+    name: "Roberto Lima"
+    role: "scrum_master"
+    priority: 5
+    active: true
+    
+    persona:
+      name: "Roberto Lima"
+      role: "Scrum Master"
+      expertise: "Agile processes, story preparation, and scrum methodology"
+      description: "Certified Scrum Master with extensive experience in agile project management"
+      
+    capabilities:
+      - name: "create-story"
+        description: "Create detailed user story document"
+        template: "AVANADE_STORY_TEMPLATE_YAML"
+        workflow: "story-development"
+      - name: "refine-backlog"
+        description: "Refine and prioritize product backlog"
+        workflow: "backlog-refinement"
+      - name: "plan-sprint"
+        description: "Plan sprint and prepare stories"
+        workflow: "sprint-planning"
+      - name: "create-epic"
+        description: "Create and structure epic with stories"
+        workflow: "epic-planning"
+    
+    specialties:
+      - "User story development and refinement"
+      - "Agile project management"
+      - "Sprint planning and execution"
+      - "Backlog management and prioritization"
+      - "Story estimation and sizing"
+      - "Agile coaching and facilitation"
+    
+    templates:
+      - "AVANADE_STORY_TEMPLATE_YAML"
+    
+    integration:
+      receives_from: ["joao_pm", "wilson_architect", "maria_ba"]
+      handoff_to: ["tiago_dev", "carla_qa", "paula_po"]
+      quality_gates:
+        - "Story completeness and acceptance criteria"
+        - "Story sizing and estimation accuracy"
+        - "Definition of Done compliance"
+        - "Story dependency validation"
+        - "Sprint goal alignment"
+
+  # QA EXPERT SPECIALIST
+  carla_qa:
+    id: "carla_qa"
+    name: "Carla Oliveira"
+    role: "qa_expert"
+    priority: 6
+    active: true
+    
+    persona:
+      name: "Carla Oliveira"
+      role: "QA Expert"
+      expertise: "Quality assurance, testing strategy, and compliance validation"
+      description: "Senior QA Expert with deep expertise in testing methodologies"
+      
+    capabilities:
+      - name: "create-test-strategy"
+        description: "Create comprehensive test strategy document"
+        workflow: "test-planning"
+      - name: "validate-quality"
+        description: "Validate deliverables against quality standards"
+        workflow: "quality-validation"
+      - name: "create-test-cases"
+        description: "Create detailed test cases from stories"
+        workflow: "test-case-development"
+      - name: "compliance-check"
+        description: "Perform compliance and standards validation"
+        workflow: "compliance-validation"
+    
+    specialties:
+      - "Test strategy and planning"
+      - "Quality assurance and validation"
+      - "Compliance and standards verification"
+      - "Test automation and CI/CD integration"
+      - "Risk-based testing"
+      - "Performance and security testing"
+    
+    integration:
+      receives_from: ["roberto_sm", "wilson_architect", "tiago_dev"]
+      handoff_to: ["paula_po", "supervisor"]
+      quality_gates:
+        - "Test coverage completeness"
+        - "Quality standards compliance"
+        - "Test execution results validation"
+        - "Defect resolution verification"
+        - "Performance criteria validation"
+
+  # DEVELOPER SPECIALIST
+  tiago_dev:
+    id: "tiago_dev"
+    name: "Tiago Costa"
+    role: "developer"
+    priority: 7
+    active: true
+    
+    persona:
+      name: "Tiago Costa"
+      role: "Developer"
+      expertise: "Software implementation and Microsoft technology stack"
+      description: "Senior Developer with expertise in Microsoft technologies and full-stack development"
+      
+    capabilities:
+      - name: "implement-story"
+        description: "Implement user story with full development lifecycle"
+        workflow: "story-implementation"
+      - name: "create-component"
+        description: "Create software component based on architecture"
+        workflow: "component-development"
+      - name: "integrate-api"
+        description: "Implement API integration"
+        workflow: "api-integration"
+      - name: "setup-infrastructure"
+        description: "Set up development and deployment infrastructure"
+        workflow: "infrastructure-setup"
+    
+    specialties:
+      - "Microsoft .NET development"
+      - "Azure cloud development"
+      - "Full-stack web development"
+      - "API design and implementation"
+      - "Database development and optimization"
+      - "DevOps and automation"
+    
+    integration:
+      receives_from: ["roberto_sm", "wilson_architect", "sofia_ux"]
+      handoff_to: ["carla_qa", "paula_po"]
+      quality_gates:
+        - "Code quality and standards compliance"
+        - "Unit test coverage requirements"
+        - "Integration test validation"
+        - "Security standards compliance"
+        - "Performance requirements validation"
+
+  # PRODUCT OWNER SPECIALIST
+  paula_po:
+    id: "paula_po"
+    name: "Paula Fernandes"
+    role: "product_owner"
+    priority: 8
+    active: true
+    
+    persona:
+      name: "Paula Fernandes"
+      role: "Product Owner"
+      expertise: "Product backlog management and quality validation"
+      description: "Senior Product Owner with expertise in product management and stakeholder alignment"
+      
+    capabilities:
+      - name: "validate-product"
+        description: "Validate product features and quality"
+        workflow: "product-validation"
+      - name: "prioritize-backlog"
+        description: "Prioritize and manage product backlog"
+        workflow: "backlog-management"
+      - name: "define-acceptance"
+        description: "Define acceptance criteria and validation"
+        workflow: "acceptance-definition"
+      - name: "plan-release"
+        description: "Plan product release and roadmap"
+        workflow: "release-planning"
+    
+    specialties:
+      - "Product backlog management"
+      - "Product vision and strategy"
+      - "Stakeholder management"
+      - "Feature prioritization and validation"
+      - "User experience optimization"
+      - "Release planning and coordination"
+    
+    integration:
+      receives_from: ["joao_pm", "roberto_sm", "carla_qa", "tiago_dev"]
+      handoff_to: ["supervisor", "joao_pm"]
+      quality_gates:
+        - "Product vision alignment"
+        - "Stakeholder acceptance validation"
+        - "Feature completeness verification"
+        - "User experience quality assessment"
+        - "Business value realization"
+
+  # UX DESIGNER SPECIALIST
+  sofia_ux:
+    id: "sofia_ux"
+    name: "Sofia Ribeiro"
+    role: "ux_designer"
+    priority: 9
+    active: true
+    
+    persona:
+      name: "Sofia Ribeiro"
+      role: "UX Designer"
+      expertise: "UI/UX design and Microsoft Design System implementation"
+      description: "Senior UX Designer with expertise in user experience design and Microsoft design systems"
+      
+    capabilities:
+      - name: "create-frontend-spec"
+        description: "Create detailed frontend specification"
+        template: "AVANADE_FRONTEND_SPEC_TEMPLATE_YAML"
+        workflow: "ui-specification"
+      - name: "create-frontend-architecture"
+        description: "Create frontend architecture document"
+        template: "AVANADE_FRONTEND_ARCHITECTURE_TEMPLATE_YAML"
+        workflow: "frontend-architecture"
+      - name: "design-user-experience"
+        description: "Design user experience and interface"
+        workflow: "ux-design"
+      - name: "validate-accessibility"
+        description: "Validate accessibility and inclusive design"
+        workflow: "accessibility-validation"
+    
+    specialties:
+      - "User experience design and research"
+      - "Microsoft Design System and Fluent UI"
+      - "Accessibility and inclusive design"
+      - "Frontend architecture and specifications"
+      - "Design system development"
+      - "User journey optimization"
+    
+    templates:
+      - "AVANADE_FRONTEND_SPEC_TEMPLATE_YAML"
+      - "AVANADE_FRONTEND_ARCHITECTURE_TEMPLATE_YAML"
+    
+    integration:
+      receives_from: ["wilson_architect", "joao_pm", "maria_ba"]
+      handoff_to: ["tiago_dev", "carla_qa"]
+      quality_gates:
+        - "Microsoft Design System compliance"
+        - "Accessibility standards validation"
+        - "User experience consistency"
+        - "Design specification completeness"
+        - "Frontend architecture alignment"
+
+# ============================================================================
+# WORKFLOW ORCHESTRATION
+# ============================================================================
+
+workflows:
+  # COMPLETE PROJECT LIFECYCLE
+  full_project:
+    description: "Complete project from discovery to delivery"
+    sequence:
+      - agent: "maria_ba"
+        task: "create-discovery"
+        output: "discovery.md"
+      - agent: "joao_pm"
+        task: "create-prd"
+        input: "discovery.md"
+        output: "prd.md"
+      - agent: "wilson_architect"
+        task: "create-architecture"
+        input: "prd.md"
+        output: "architecture.md"
+      - agent: "sofia_ux"
+        task: "create-frontend-architecture"
+        input: "architecture.md"
+        output: "frontend-architecture.md"
+      - agent: "roberto_sm"
+        task: "create-story"
+        input: ["prd.md", "architecture.md"]
+        output: "stories/*.md"
+      - agent: "tiago_dev"
+        task: "implement-story"
+        input: "stories/*.md"
+        output: "code implementation"
+      - agent: "carla_qa"
+        task: "validate-quality"
+        input: "code implementation"
+        output: "quality report"
+      - agent: "paula_po"
+        task: "validate-product"
+        input: "quality report"
+        output: "product validation"
+
+  # BROWNFIELD ENHANCEMENT
+  brownfield_enhancement:
+    description: "Enhancement of existing systems"
+    sequence:
+      - agent: "maria_ba"
+        task: "analyze-existing-system"
+        output: "system-analysis.md"
+      - agent: "joao_pm"
+        task: "create-brownfield-prd"
+        input: "system-analysis.md"
+        output: "enhancement-prd.md"
+      - agent: "wilson_architect"
+        task: "create-brownfield-architecture"
+        input: "enhancement-prd.md"
+        output: "enhancement-architecture.md"
+      - agent: "roberto_sm"
+        task: "create-enhancement-stories"
+        input: "enhancement-architecture.md"
+        output: "enhancement-stories/*.md"
+
+  # QUICK ANALYSIS
+  quick_analysis:
+    description: "Quick analysis and recommendations"
+    sequence:
+      - agent: "supervisor"
+        task: "analyze-request"
+        output: "analysis-routing"
+      - agent: "specialist"
+        task: "provide-analysis"
+        input: "analysis-routing"
+        output: "recommendations"
+
+# ============================================================================
+# TEMPLATE SYSTEM
+# ============================================================================
+
+templates:
+  discovery:
+    - "AVANADE_DISCOVERY_TEMPLATE_YAML"
+    - "AVANADE_COMPETITOR_ANALYSIS_TEMPLATE_YAML"
+    - "AVANADE_MARKET_RESEARCH_TEMPLATE_YAML"
+  
+  requirements:
+    - "AVANADE_PRD_TEMPLATE_YAML"
+    - "AVANADE_PROJECT_BRIEF_TEMPLATE_YAML"
+    - "AVANADE_BROWNFIELD_PRD_TEMPLATE_YAML"
+  
+  architecture:
+    - "AVANADE_ARCHITECTURE_TEMPLATE_YAML"
+    - "AVANADE_FULLSTACK_ARCHITECTURE_TEMPLATE_YAML"
+    - "AVANADE_FRONTEND_ARCHITECTURE_TEMPLATE_YAML"
+    - "AVANADE_FRONTEND_SPEC_TEMPLATE_YAML"
+    - "AVANADE_ARQUITETURA_AVANADE_TEMPLATE_YAML"
+    - "AVANADE_BROWNFIELD_ARCHITECTURE_TEMPLATE_YAML"
+  
+  development:
+    - "AVANADE_STORY_TEMPLATE_YAML"
+  
+  utilities:
+    - "AVANADE_TEACHING_MODE_RESPONSE_TEMPLATE_MD"
+    - "AVANADE_BRAINSTORMING_OUTPUT_TEMPLATE_YAML"
+
+# ============================================================================
+# INSTALLATION CONFIGURATION
+# ============================================================================
+
+installation:
+  target_directory: ".avanade"
+  mcp_integration: true
+  vscode_integration: true
+  
+  directory_structure:
+    agents: ".avanade/agents"
+    config: ".avanade/config"
+    templates: ".avanade/templates"
+    scripts: ".avanade/scripts"
+    docs: "docs"
+  
+  files_to_create:
+    - path: ".avanade/agents/supervisor.yaml"
+      content: "agent_config"
+      source: "orchestration.supervisor"
+    - path: ".avanade/agents/joao_pm.yaml"
+      content: "agent_config"
+      source: "agents.joao_pm"
+    - path: ".avanade/agents/wilson_architect.yaml"
+      content: "agent_config"
+      source: "agents.wilson_architect"
+    - path: ".avanade/agents/maria_ba.yaml"
+      content: "agent_config"
+      source: "agents.maria_ba"
+    - path: ".avanade/agents/roberto_sm.yaml"
+      content: "agent_config"
+      source: "agents.roberto_sm"
+    - path: ".avanade/agents/carla_qa.yaml"
+      content: "agent_config"
+      source: "agents.carla_qa"
+    - path: ".avanade/agents/tiago_dev.yaml"
+      content: "agent_config"
+      source: "agents.tiago_dev"
+    - path: ".avanade/agents/paula_po.yaml"
+      content: "agent_config"
+      source: "agents.paula_po"
+    - path: ".avanade/agents/sofia_ux.yaml"
+      content: "agent_config"
+      source: "agents.sofia_ux"
+    - path: ".avanade/config/agents.json"
+      content: "agents_registry"
+    - path: ".avanade/config/system.yaml"
+      content: "system_config"
+    - path: ".avanade/templates/prd_template.yaml"
+      content: "template"
+      source: "AVANADE_PRD_TEMPLATE_YAML"
+    - path: ".avanade/templates/user_story_template.yaml"
+      content: "template"
+      source: "AVANADE_STORY_TEMPLATE_YAML"
+
+# ============================================================================
+# MCP INTEGRATION CONFIGURATION
+# ============================================================================
+
+mcp_integration:
+  server_name: "avanadecockpi"
+  command: "npx"
+  args: ["-y", "@avanadecockpi/server"]
+  environment:
+    AVANADE_TOKEN: "YOUR_AVANADE_TOKEN_HERE"
+  
+  configuration_path: "%APPDATA%\\Code\\User\\mcp.json"
+  
+  vscode_settings:
+    enable_copilot_integration: true
+    enable_mcp_server: true
+    agent_namespace: "avanade-method"
+
+# ============================================================================
+# QUALITY GATES AND VALIDATION
+# ============================================================================
+
+quality_gates:
+  discovery:
+    - "stakeholder_completeness"
+    - "business_requirements_clarity"
+    - "process_mapping_accuracy"
+    - "discovery_documentation_completeness"
+  
+  architecture:
+    - "technical_completeness"
+    - "azure_best_practices"
+    - "security_compliance"
+    - "integration_validation"
+    - "performance_requirements"
+  
+  development:
+    - "code_quality_standards"
+    - "test_coverage"
+    - "security_compliance"
+    - "performance_validation"
+    - "documentation_completeness"
+  
+  validation:
+    - "business_value_alignment"
+    - "stakeholder_acceptance"
+    - "quality_standards_compliance"
+    - "delivery_completeness"
+
+# ============================================================================
+# SYSTEM CONFIGURATION
+# ============================================================================
+
+system:
+  version: "4.29.0"
+  namespace: "avanade-method"
+  debug_log: ".ai/debug-log.md"
+  story_location: "docs/stories"
+  architecture_location: "docs/architecture"
+  discovery_location: "docs/discovery"
+  
+  markdown_exploder: true
+  discovery_sharded: true
+  architecture_sharded: true
+  
+  slash_prefix: "avanade-method"
+  
+  supported_commands:
+    - "analyze"
+    - "create-prd"
+    - "create-architecture"
+    - "create-discovery"
+    - "create-story"
+    - "validate-quality"
+    - "coordinate-agents"

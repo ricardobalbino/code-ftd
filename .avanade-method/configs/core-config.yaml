@@ -1,0 +1,26 @@
+version: 4.29.0
+markdownExploder: true
+discovery:
+  discoveryFile: docs/discovery.md
+  discoveryVersion: v4
+  discoverySharded: true
+  discoveryShardedLocation: docs/discovery
+  phaseFilePattern: fase-{n}*.md
+architecture:
+  architectureFile: docs/arquitetura.md
+  architectureVersion: v4
+  architectureSharded: true
+  architectureShardedLocation: docs/arquitetura
+customTechnicalDocuments: null
+devLoadAlwaysFiles:
+  # Os arquivos abaixo serão criados pelo Wilson Architect (create-architecture workflow):
+  # - docs/arquitetura/padroes-desenvolvimento.md
+  # - docs/arquitetura/stack-tecnologica.md
+  # - docs/arquitetura/estrutura-codigo.md
+  - .avanade-method/docs/ftd-knowledge-base.md
+  - .avanade-method/docs/discovery/ftd-discovery.md
+  - .avanade-method/docs/especificacao-simulador-notion.md
+  - .avanade-method/configs/d365-config.yaml
+devDebugLog: .ai/debug-log.md
+devStoryLocation: docs/stories
+slashPrefix: Avanade

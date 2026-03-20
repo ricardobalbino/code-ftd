@@ -1,0 +1,3 @@
+# Code Coverage
+
+Considering the test approach described above, it is of utmost importance that the Code Coverage calculated in Visual Studio or in the pipeline is above the agreed threshold. This means that as minimum requirement, every development is responsible for adhering to this threshold. If the agreed threshold is beyond an achievable threshold, every developer should contribute to increase the threshold with every development by covering additional scenarios in the unit tests for the new functionality or even existing functionality where the code is not yet fully covered.

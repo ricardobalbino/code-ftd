@@ -1,0 +1,866 @@
+---
+---
+
+> **⚠️ FTD EDUCAÇÃO - CONTEXTO OBRIGATÓRIO**
+> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `.avanade-method/docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
+
+## 📋 O que é este Artefato?
+
+Este é o **template oficial** para criação de Product Requirements Documents (PRDs) na Avanade Method. Fornece estrutura YAML completa para documentar:
+- **Contexto de Negócio**: Problema, oportunidade, alinhamento estratégico
+- **Requisitos Funcionais/Não-Funcionais**: Detalhamento técnico e UX
+- **Métricas de Sucesso**: KPIs mensuráveis e critérios de aceitação
+- **Stakeholders e Dependências**: Comunicação e coordenação
+- **Roadmap e Fases**: Planejamento de entrega
+
+---
+
+## 🎯 Quando Usar
+
+### ✅ USE para:
+- Novos features ou produtos (greenfield)
+- Mudanças significativas em features existentes
+- Iniciativas que requerem alinhamento multi-equipes
+- Projetos com investimento substancial (>1 sprint)
+- Comunicação com stakeholders executivos
+
+### ❌ NÃO USE para:
+- Bug fixes simples (use issue tracker)
+- Refactoring técnico interno (use ADR)
+- Protótipos/experimentos rápidos (use discovery doc)
+- Mudanças triviais de UI (<1 dia de trabalho)
+
+---
+
+## 📄 Template YAML Completo
+
+```yaml
+# ====================================
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+# ====================================
+# Version: 1.0 (Avanade Method v6)
+# Template Owner: João PM
+# Last Updated: 2025-02-03
+
+metadata:
+  document_id: "PRD-YYYY-MM-###"  # Exemplo: PRD-2025-02-001
+  title: "[Nome do Feature/Produto]"
+  version: "1.0"
+  status: "Draft | In Review | Approved | Archived"
+  created_date: "YYYY-MM-DD"
+  last_updated: "YYYY-MM-DD"
+  owner:
+    name: "[Nome do PM]"
+    email: "[email@example.com]"
+  approvers:
+    - name: "[Nome do Aprovador]"
+      role: "[Cargo]"
+      approval_status: "Pending | Approved | Rejected"
+      approval_date: "YYYY-MM-DD (se aprovado)"
+
+# ====================================
+# 1. EXECUTIVE SUMMARY
+# ====================================
+# TL;DR para stakeholders executivos (máx 3 parágrafos)
+
+executive_summary:
+  problem_statement: |
+    [Qual problema estamos resolvendo? Para quem?]
+    Exemplo: "Usuários enterprise gastam 2h/dia exportando dados manualmente,
+    resultando em 40% de erros humanos e perda de produtividade."
+  
+  proposed_solution: |
+    [Como vamos resolver? Qual abordagem?]
+    Exemplo: "Sistema de exportação automatizada com agendamento, validação
+    integrada e templates customizáveis, reduzindo tempo para 15min/dia."
+  
+  expected_impact: |
+    [Qual benefício? Métricas quantificáveis]
+    Exemplo: "Redução de 87% no tempo de exportação, eliminação de 90% dos
+    erros, ROI positivo em 4 meses ($120k savings/ano)."
+  
+  strategic_alignment:
+    company_okrs:
+      - okr_id: "OKR-2025-Q1-03"
+        objective: "Aumentar eficiência operacional enterprise em 30%"
+        key_result: "KR2: Reduzir tempo médio de tarefas manuais em 50%"
+    
+    product_roadmap:
+      theme: "[Tema Estratégico - ex: Automation & Efficiency]"
+      quarter: "Q1 2025"
+      priority: "P0 | P1 | P2"
+
+# ====================================
+# 2. CONTEXT & BACKGROUND
+# ====================================
+
+context:
+  business_context:
+    market_opportunity: |
+      [Oportunidade de mercado, competição, timing]
+      - Tamanho do mercado endereçável (TAM/SAM/SOM)
+      - Posicionamento competitivo
+      - Janela de oportunidade (por que agora?)
+    
+    customer_insights:
+      - persona: "[Nome da Persona - ex: Enterprise Data Analyst]"
+        pain_points:
+          - "Processos manuais consomem 40% do dia de trabalho"
+          - "Falta de automação causa erros críticos"
+          - "Ferramentas atuais são complexas e limitadas"
+        goals:
+          - "Automatizar tarefas repetitivas"
+          - "Garantir precisão de dados críticos"
+          - "Integrar com ferramentas existentes (Excel, PowerBI)"
+        research_sources:
+          - type: "User Interviews"
+            date: "2025-01-15"
+            sample_size: 12
+            key_finding: "80% relatam frustração com exportação manual"
+          - type: "Analytics Data"
+            date: "2025-01-20"
+            metric: "Average export time: 1.8h per user/day"
+  
+  technical_context:
+    current_state: |
+      [Estado atual do sistema/arquitetura]
+      - Sistema legado: Manual CSV exports via UI
+      - Limitações: Single-threaded, no validation, no scheduling
+      - Technical debt: Monolithic export service (10k LOC)
+    
+    constraints:
+      - type: "Technical"
+        description: "Must maintain backward compatibility with v2 API"
+      - type: "Security"
+        description: "GDPR compliance required for EU data exports"
+      - type: "Performance"
+        description: "Export time must be <30s for datasets up to 100k rows"
+      - type: "Budget"
+        description: "Infrastructure budget cap: $5k/month"
+    
+    dependencies:
+      - system: "Auth Service"
+        type: "Hard Dependency"
+        reason: "User permissions validation for export scopes"
+        contact: "auth-team@example.com"
+      - system: "Data Warehouse"
+        type: "Data Source"
+        reason: "Primary data source for exports"
+        contact: "data-team@example.com"
+
+# ====================================
+# 3. GOALS & SUCCESS METRICS
+# ====================================
+
+goals:
+  primary_goal: |
+    [Objetivo principal mensurável]
+    Exemplo: "Reduzir tempo médio de exportação de dados de 1.8h para 15min
+    com 95% de precisão até fim de Q1 2025."
+  
+  secondary_goals:
+    - "Aumentar satisfação de usuários enterprise (NPS) de 45 para 70"
+    - "Reduzir tickets de suporte relacionados a exports em 60%"
+    - "Habilitar self-service para 90% dos casos de uso"
+
+success_metrics:
+  kpis:
+    - metric: "Time to Export (TTE)"
+      baseline: "1.8 hours"
+      target: "15 minutes"
+      measurement: "Average export completion time per user/day"
+      tracking: "Datadog dashboard - Export Analytics"
+    
+    - metric: "Error Rate"
+      baseline: "40%"
+      target: "<5%"
+      measurement: "Percentage of exports with data errors"
+      tracking: "Automated validation reports"
+    
+    - metric: "User Adoption"
+      baseline: "0% (new feature)"
+      target: "60% of enterprise users within 3 months"
+      measurement: "MAU using automated export feature"
+      tracking: "Mixpanel - Feature Adoption funnel"
+    
+    - metric: "Cost Savings"
+      baseline: "$0"
+      target: "$120k/year"
+      measurement: "Labor hours saved × average salary"
+      tracking: "Finance dashboard"
+  
+  acceptance_criteria:
+    must_have:
+      - "✅ Exports complete in <30s for datasets up to 100k rows"
+      - "✅ Validation accuracy >95% (automated tests)"
+      - "✅ Schedule exports for recurring reports (daily/weekly/monthly)"
+      - "✅ Support 5 export formats (CSV, Excel, JSON, Parquet, PDF)"
+      - "✅ GDPR-compliant data masking for PII fields"
+    
+    should_have:
+      - "⭕ Custom templates for frequently used export configs"
+      - "⭕ Email notifications on export completion"
+      - "⭕ Retry mechanism for failed exports (3 attempts)"
+    
+    could_have:
+      - "🔵 API endpoints for programmatic export triggering"
+      - "🔵 Export history with version control (30-day retention)"
+
+# ====================================
+# 4. USER STORIES & REQUIREMENTS
+# ====================================
+
+user_stories:
+  epic: "EP-2025-001: Automated Data Export System"
+  
+  stories:
+    - id: "US-001"
+      title: "As a Data Analyst, I want to schedule daily exports so I don't manually trigger them every morning"
+      priority: "P0"
+      story_points: 8
+      acceptance_criteria:
+        - "Given I have configured an export template"
+        - "When I set a daily schedule at 6AM UTC"
+        - "Then the export runs automatically and emails me the result"
+      technical_notes: |
+        - Use Celery Beat for scheduling
+        - Store schedules in PostgreSQL (exports_schedule table)
+        - Email via SendGrid integration
+    
+    - id: "US-002"
+      title: "As a Compliance Officer, I want PII data masked in exports so we maintain GDPR compliance"
+      priority: "P0"
+      story_points: 5
+      acceptance_criteria:
+        - "Given an export includes PII fields (email, SSN, phone)"
+        - "When export format is CSV or Excel"
+        - "Then PII fields are masked (e.g., em***@example.com)"
+      technical_notes: |
+        - Implement PII detection service (regex patterns)
+        - Configurable masking rules per tenant
+        - Audit log all PII access
+    
+    - id: "US-003"
+      title: "As a Power User, I want to save export templates so I reuse common configurations"
+      priority: "P1"
+      story_points: 3
+      acceptance_criteria:
+        - "Given I have configured export filters and format"
+        - "When I click 'Save as Template'"
+        - "Then I can reuse this template for future exports"
+      technical_notes: |
+        - Store templates in user_export_templates table
+        - Support template sharing across team members
+
+functional_requirements:
+  core_features:
+    - id: "FR-001"
+      feature: "Automated Export Scheduler"
+      description: |
+        Permite usuários agendar exports recorrentes (daily, weekly, monthly)
+        com configuração de horário, formato e filtros customizáveis.
+      priority: "P0"
+      complexity: "High"
+      dependencies: ["Celery Beat", "PostgreSQL", "Email Service"]
+    
+    - id: "FR-002"
+      feature: "Multi-Format Export Engine"
+      description: |
+        Suporta 5 formatos de export (CSV, Excel, JSON, Parquet, PDF) com
+        conversão automática e validação de schema.
+      priority: "P0"
+      complexity: "Medium"
+      dependencies: ["Pandas", "OpenPyXL", "ReportLab"]
+    
+    - id: "FR-003"
+      feature: "Data Validation Layer"
+      description: |
+        Valida dados exportados contra schema esperado, detecta missing values,
+        outliers e inconsistências antes de finalizar export.
+      priority: "P0"
+      complexity: "Medium"
+      dependencies: ["Great Expectations", "Data Warehouse Schema"]
+
+non_functional_requirements:
+  performance:
+    - "Exports até 100k rows completam em <30s (p95)"
+    - "Sistema suporta 100 concurrent exports sem degradação"
+    - "Export scheduling tem latência <5s para setup"
+  
+  scalability:
+    - "Arquitetura suporta 10x crescimento de volume (1M rows)"
+    - "Horizontal scaling via worker pool (Celery)"
+  
+  security:
+    - "GDPR compliance: PII masking, audit logs, data retention policies"
+    - "RBAC: Usuários só exportam dados que têm permissão de visualizar"
+    - "Encryption at rest (AES-256) e in transit (TLS 1.3)"
+  
+  reliability:
+    - "99.9% uptime SLA para export service"
+    - "Retry mechanism: 3 attempts com exponential backoff"
+    - "Dead letter queue para exports com falha permanente"
+  
+  usability:
+    - "Onboarding wizard para primeiro export (<5min)"
+    - "Template library com 10 casos de uso comuns pré-configurados"
+    - "In-app help tooltips para cada configuração"
+
+# ====================================
+# 5. DESIGN & USER EXPERIENCE
+# ====================================
+
+design:
+  wireframes:
+    - screen: "Export Configuration Screen"
+      figma_link: "https://figma.com/file/ABC123"
+      key_elements:
+        - "Dataset selector (dropdown)"
+        - "Format picker (radio buttons: CSV, Excel, JSON...)"
+        - "Schedule configurator (calendar + time picker)"
+        - "Filter builder (drag-and-drop)"
+        - "Preview pane (first 10 rows)"
+    
+    - screen: "Export History Dashboard"
+      figma_link: "https://figma.com/file/DEF456"
+      key_elements:
+        - "Timeline view of past exports"
+        - "Status badges (Success, Failed, In Progress)"
+        - "Download links for completed exports"
+        - "Re-run button for failed exports"
+  
+  user_flows:
+    - flow: "Happy Path - Schedule Daily Export"
+      mermaid: |
+        ```mermaid
+        sequenceDiagram
+            User->>UI: Click "New Export"
+            UI->>User: Show export wizard
+            User->>UI: Select dataset + format + schedule
+            UI->>API: POST /exports/schedule
+            API->>Database: Save schedule config
+            API->>Scheduler: Register cron job
+            Scheduler-->>User: Email "Export scheduled successfully"
+            Note over Scheduler: Next day at 6AM UTC
+            Scheduler->>Export Engine: Trigger export
+            Export Engine->>Data Warehouse: Fetch data
+            Data Warehouse-->>Export Engine: Dataset (100k rows)
+            Export Engine->>Validation: Validate schema
+            Validation-->>Export Engine: ✅ Valid
+            Export Engine->>S3: Upload CSV file
+            S3-->>User: Email with download link
+        ```
+  
+  accessibility:
+    - "WCAG 2.1 Level AA compliance"
+    - "Keyboard navigation: Tab order lógico, atalhos (Ctrl+E para export)"
+    - "Screen reader support: ARIA labels em todos inputs"
+    - "Color contrast ratio: 4.5:1 mínimo para texto"
+    - "Focus indicators visíveis em todos elementos interativos"
+
+# ====================================
+# 6. TECHNICAL ARCHITECTURE
+# ====================================
+
+architecture:
+  high_level_diagram: |
+    ```mermaid
+    graph TB
+        subgraph "Frontend"
+            UI[React Export UI]
+        end
+        subgraph "Backend Services"
+            API[Export API Gateway]
+            Scheduler[Celery Beat Scheduler]
+            Workers[Celery Workers Pool]
+            Validator[Validation Service]
+        end
+        subgraph "Data Layer"
+            DWH[(Data Warehouse)]
+            PG[(PostgreSQL)]
+            S3[S3 Export Storage]
+        end
+        UI --> API
+        API --> Scheduler
+        Scheduler --> Workers
+        Workers --> DWH
+        Workers --> Validator
+        Validator --> S3
+        API --> PG
+        Workers --> PG
+    ```
+  
+  components:
+    - name: "Export API Gateway"
+      technology: "FastAPI (Python 3.11)"
+      responsibility: "REST API para CRUD de exports, autenticação, rate limiting"
+      endpoints:
+        - "POST /exports/schedule - Agendar export"
+        - "GET /exports/{id} - Status de export"
+        - "GET /exports/history - Histórico de exports"
+        - "DELETE /exports/{id} - Cancelar export agendado"
+    
+    - name: "Celery Beat Scheduler"
+      technology: "Celery 5.x + Redis"
+      responsibility: "Orquestração de exports agendados (cron jobs)"
+      configuration: |
+        CELERY_BEAT_SCHEDULE = {
+            'daily-exports': {
+                'task': 'exports.tasks.run_scheduled_exports',
+                'schedule': crontab(minute=0, hour=6),  # 6AM UTC diariamente
+            }
+        }
+    
+    - name: "Export Workers Pool"
+      technology: "Celery Workers (autoscaling 10-50 workers)"
+      responsibility: "Execução paralela de exports, conversão de formatos"
+      scaling_policy: "CPU > 70% → scale up, CPU < 30% → scale down"
+    
+    - name: "Validation Service"
+      technology: "Great Expectations + Pandas"
+      responsibility: "Validação de schema, missing values, outliers"
+      validation_rules: |
+        expectations = [
+            "expect_column_values_to_not_be_null(column='user_id')",
+            "expect_column_values_to_be_in_set(column='status', value_set=['active', 'inactive'])",
+            "expect_table_row_count_to_be_between(min_value=1, max_value=100000)"
+        ]
+  
+  data_models:
+    - entity: "ExportSchedule"
+      table: "export_schedules"
+      schema: |
+        CREATE TABLE export_schedules (
+            id UUID PRIMARY KEY,
+            user_id UUID NOT NULL REFERENCES users(id),
+            dataset_name VARCHAR(255) NOT NULL,
+            export_format VARCHAR(20) NOT NULL,  -- csv, excel, json, parquet, pdf
+            schedule_cron VARCHAR(100) NOT NULL,  -- cron expression
+            filters JSONB,  -- filter configurations
+            template_id UUID REFERENCES export_templates(id),
+            status VARCHAR(20) DEFAULT 'active',  -- active, paused, deleted
+            created_at TIMESTAMP DEFAULT NOW(),
+            updated_at TIMESTAMP DEFAULT NOW()
+        );
+    
+    - entity: "ExportHistory"
+      table: "export_history"
+      schema: |
+        CREATE TABLE export_history (
+            id UUID PRIMARY KEY,
+            schedule_id UUID REFERENCES export_schedules(id),
+            status VARCHAR(20) NOT NULL,  -- success, failed, in_progress
+            row_count INT,
+            file_size_bytes BIGINT,
+            s3_url TEXT,
+            error_message TEXT,
+            started_at TIMESTAMP,
+            completed_at TIMESTAMP,
+            created_at TIMESTAMP DEFAULT NOW()
+        );
+
+# ====================================
+# 7. SECURITY & COMPLIANCE
+# ====================================
+
+security:
+  authentication:
+    - "OAuth 2.0 via Auth Service"
+    - "JWT tokens (15min expiry, refresh token flow)"
+  
+  authorization:
+    - "RBAC model: Roles = [Viewer, Exporter, Admin]"
+    - "Row-level security: Users só exportam dados de seu tenant"
+    - "Export scopes validados contra permissões do usuário"
+  
+  data_protection:
+    - "PII masking automático (email, phone, SSN)"
+    - "Encryption at rest: AES-256 (S3 server-side)"
+    - "Encryption in transit: TLS 1.3"
+    - "Audit logs: Todas exports logadas com user_id, timestamp, dataset"
+  
+  compliance:
+    - framework: "GDPR"
+      requirements:
+        - "Right to be forgotten: Exports deletados após 30 dias"
+        - "Data minimization: Apenas colunas solicitadas exportadas"
+        - "Consent tracking: Usuário confirma export antes de executar"
+    
+    - framework: "SOC 2 Type II"
+      requirements:
+        - "Access controls documented e auditados"
+        - "Change management: PRD aprovado antes de desenvolvimento"
+        - "Incident response: Alertas automáticos para export failures"
+
+# ====================================
+# 8. RISKS & MITIGATION
+# ====================================
+
+risks:
+  - risk: "Performance degradation com datasets >100k rows"
+    likelihood: "Medium"
+    impact: "High"
+    mitigation: |
+      - Implementar pagination (chunks de 50k rows)
+      - Streaming exports para datasets grandes
+      - Cache de datasets frequentemente exportados
+    owner: "Engineering Lead"
+  
+  - risk: "GDPR non-compliance se PII masking falhar"
+    likelihood: "Low"
+    impact: "Critical"
+    mitigation: |
+      - Automated tests para PII detection (100% coverage)
+      - Manual review de export configs por Compliance team
+      - Fail-safe: Bloquear export se PII detectado sem masking rule
+    owner: "Compliance Officer + Engineering"
+  
+  - risk: "Usuários confusos com UI complexa"
+    likelihood: "Medium"
+    impact: "Medium"
+    mitigation: |
+      - Onboarding wizard com tooltips contextuais
+      - Template library com casos de uso pré-configurados
+      - User testing com 5 usuários antes de launch
+    owner: "UX Designer"
+  
+  - risk: "Dependência de Data Warehouse (SPoF)"
+    likelihood: "Low"
+    impact: "High"
+    mitigation: |
+      - Fallback para cached datasets (1h stale data aceitável)
+      - Circuit breaker: Disable exports se DWH down >5min
+      - SLA agreement com Data team (99.9% uptime)
+    owner: "DevOps + Data Team"
+
+# ====================================
+# 9. ROADMAP & DELIVERY PLAN
+# ====================================
+
+roadmap:
+  phases:
+    - phase: "Phase 1 - MVP (4 weeks)"
+      quarter: "Q1 2025"
+      goal: "Launch core export functionality para early adopters"
+      deliverables:
+        - "✅ CSV/Excel export formats"
+        - "✅ Basic scheduling (daily only)"
+        - "✅ Email notifications"
+        - "✅ PII masking for common fields"
+      success_criteria: "10 enterprise users using feature weekly"
+      team: "2 backend devs, 1 frontend dev, 1 QA"
+    
+    - phase: "Phase 2 - Scale (3 weeks)"
+      quarter: "Q1 2025"
+      goal: "Expand to all export formats e advanced features"
+      deliverables:
+        - "⭕ JSON/Parquet/PDF formats"
+        - "⭕ Weekly/monthly schedules"
+        - "⭕ Export templates library"
+        - "⭕ Retry mechanism"
+      success_criteria: "60% adoption rate, <5% error rate"
+      team: "1 backend dev, 1 frontend dev, 1 QA"
+    
+    - phase: "Phase 3 - Enterprise (2 weeks)"
+      quarter: "Q2 2025"
+      goal: "Enterprise features e API access"
+      deliverables:
+        - "🔵 API endpoints para programmatic access"
+        - "🔵 Export history com version control"
+        - "🔵 Advanced filters (SQL-like queries)"
+      success_criteria: "5 enterprise customers using API"
+      team: "1 backend dev, 1 DevOps"
+  
+  milestones:
+    - date: "2025-02-15"
+      milestone: "PRD Approved"
+      gate: "Stakeholder sign-off (PM, Engineering Lead, Compliance)"
+    
+    - date: "2025-02-22"
+      milestone: "Design Review Complete"
+      gate: "UX wireframes approved, accessibility audit passed"
+    
+    - date: "2025-03-08"
+      milestone: "MVP Beta Launch"
+      gate: "10 early adopters onboarded, monitoring dashboards live"
+    
+    - date: "2025-03-29"
+      milestone: "GA Release Phase 1"
+      gate: "All MVP acceptance criteria met, error rate <5%"
+  
+  timeline_gantt: |
+    ```mermaid
+    gantt
+        title Export Feature Roadmap
+        dateFormat YYYY-MM-DD
+        section Phase 1 MVP
+        Backend development    :2025-02-15, 3w
+        Frontend development   :2025-02-22, 2w
+        QA testing            :2025-03-08, 1w
+        section Phase 2 Scale
+        Format expansion      :2025-03-15, 2w
+        Template library      :2025-03-22, 1w
+        section Phase 3 Enterprise
+        API development       :2025-04-01, 2w
+    ```
+
+# ====================================
+# 10. STAKEHOLDERS & COMMUNICATION
+# ====================================
+
+stakeholders:
+  primary:
+    - name: "[Nome VP Product]"
+      role: "VP of Product"
+      responsibility: "PRD approval, strategic alignment"
+      communication: "Weekly sync (Fridays 2PM)"
+      concerns: "ROI timeline, competitive positioning"
+    
+    - name: "[Nome Engineering Lead]"
+      role: "Engineering Lead"
+      responsibility: "Technical feasibility, resource allocation"
+      communication: "Daily standups, Slack #export-feature"
+      concerns: "Technical debt, performance SLAs"
+  
+  secondary:
+    - name: "[Nome Compliance Officer]"
+      role: "Compliance Officer"
+      responsibility: "GDPR/SOC2 sign-off"
+      communication: "Bi-weekly review sessions"
+      concerns: "PII handling, audit trails"
+    
+    - name: "[Nome Customer Success Manager]"
+      role: "Customer Success Manager"
+      responsibility: "User adoption, feedback collection"
+      communication: "Monthly business review"
+      concerns: "User onboarding friction, support load"
+  
+  communication_plan:
+    - frequency: "Weekly"
+      audience: "Engineering Team"
+      format: "Standup + Slack updates"
+      content: "Sprint progress, blockers, design changes"
+    
+    - frequency: "Bi-weekly"
+      audience: "Executive Stakeholders"
+      format: "Slide deck (5 slides max)"
+      content: "KPI progress, risks, milestone updates"
+    
+    - frequency: "Monthly"
+      audience: "All Stakeholders"
+      format: "Town hall presentation"
+      content: "Demo, user feedback, roadmap adjustments"
+
+# ====================================
+# 11. DEPENDENCIES & INTEGRATIONS
+# ====================================
+
+dependencies:
+  internal:
+    - team: "Auth Team"
+      dependency: "OAuth token validation API"
+      status: "Available"
+      contact: "auth-lead@example.com"
+      sla: "99.99% uptime"
+    
+    - team: "Data Team"
+      dependency: "Data Warehouse read access"
+      status: "Available (requires new read replica)"
+      contact: "data-lead@example.com"
+      sla: "99.9% uptime, <2s query latency"
+      action_required: "Provision read replica by 2025-02-20"
+    
+    - team: "Email Platform"
+      dependency: "SendGrid API for export notifications"
+      status: "Available"
+      contact: "devops@example.com"
+      sla: "99% delivery rate"
+  
+  external:
+    - vendor: "AWS S3"
+      dependency: "Export file storage"
+      status: "Active"
+      cost: "$200/month (estimated)"
+      sla: "99.99% availability"
+    
+    - vendor: "Celery + Redis"
+      dependency: "Task scheduling infrastructure"
+      status: "Active (shared infrastructure)"
+      cost: "Included in existing Redis cluster"
+      sla: "Managed by DevOps team"
+
+# ====================================
+# 12. OPEN QUESTIONS & ASSUMPTIONS
+# ====================================
+
+open_questions:
+  - question: "Qual retention policy para exports? 30 dias suficiente?"
+    owner: "Compliance Officer"
+    deadline: "2025-02-10"
+    impact: "Medium - afeta storage costs e GDPR compliance"
+  
+  - question: "Precisamos suportar exports de datasets >1M rows em Phase 1?"
+    owner: "Engineering Lead"
+    deadline: "2025-02-08"
+    impact: "High - pode alterar arquitetura (streaming vs batch)"
+  
+  - question: "Email notifications são suficientes ou precisamos in-app notifications também?"
+    owner: "UX Designer"
+    deadline: "2025-02-12"
+    impact: "Low - pode ser Phase 2 feature"
+
+assumptions:
+  - assumption: "Data Warehouse pode lidar com 100 concurrent queries sem degradação"
+    validation: "Load testing por Data Team antes de 2025-02-15"
+    risk_if_wrong: "Precisaremos rate limiting ou queue system"
+  
+  - assumption: "Usuários preferem email notifications vs in-app"
+    validation: "User research survey enviado 2025-02-05"
+    risk_if_wrong: "Baixa engagement se usuários perderem emails"
+  
+  - assumption: "CSV/Excel são formatos mais usados (80% dos casos)"
+    validation: "Analytics de export manual atual"
+    risk_if_wrong: "Priorizamos formatos errados em MVP"
+
+# ====================================
+# 13. APPENDIX
+# ====================================
+
+appendix:
+  glossary:
+    - term: "PII (Personally Identifiable Information)"
+      definition: "Dados que identificam indivíduo (email, SSN, phone, endereço)"
+    
+    - term: "RBAC (Role-Based Access Control)"
+      definition: "Sistema de permissões baseado em roles/funções do usuário"
+    
+    - term: "Dead Letter Queue"
+      definition: "Fila para mensagens/tarefas que falharam após retry attempts"
+  
+  references:
+    - title: "Great Expectations Documentation"
+      url: "https://docs.greatexpectations.io"
+      relevance: "Data validation framework usado no projeto"
+    
+    - title: "GDPR Compliance Guide"
+      url: "https://gdpr.eu/checklist/"
+      relevance: "Checklist de compliance para PII handling"
+    
+    - title: "Celery Best Practices"
+      url: "https://docs.celeryproject.org/en/stable/userguide/tasks.html"
+      relevance: "Task scheduling architecture reference"
+  
+  change_log:
+    - version: "1.0"
+      date: "2025-02-03"
+      author: "[Nome do PM]"
+      changes: "Initial PRD creation"
+    
+    - version: "1.1"
+      date: "2025-02-10 (expected)"
+      author: "[Nome do PM]"
+      changes: "Incorporated feedback from design review"
+
+# ====================================
+# END OF PRD
+# ====================================
+```
+
+---
+
+## 🔍 Como Usar Este Template
+
+### Para João PM (Product Manager):
+
+**1. Iniciar novo PRD:**
+```python
+# Copiar template YAML completo
+# Substituir placeholders [Nome do Feature/Produto] com contexto real
+# Preencher seções progressivamente (não precisa ser linear)
+```
+
+**2. Seções obrigatórias (MVP):**
+- ✅ `metadata` - Identificação e ownership
+- ✅ `executive_summary` - TL;DR para stakeholders
+- ✅ `goals.success_metrics` - KPIs mensuráveis
+- ✅ `user_stories` - Pelo menos 3-5 user stories core
+- ✅ `roadmap.phases` - Timeline de entrega
+
+**3. Seções opcionais (podem ser iterativas):**
+- ⭕ `architecture` - Pode ser high-level inicialmente
+- ⭕ `design.wireframes` - Pode começar com sketches
+- ⭕ `open_questions` - Adicionar conforme surgem
+
+**4. Validação antes de compartilhar:**
+```yaml
+checklist:
+  - "✅ Problema claramente definido no executive_summary?"
+  - "✅ Pelo menos 3 KPIs mensuráveis em success_metrics?"
+  - "✅ User stories têm acceptance criteria específicos?"
+  - "✅ Risks identificados com mitigation plans?"
+  - "✅ Stakeholders e approvers listados?"
+  - "✅ Timeline realista no roadmap?"
+```
+
+### Para outros agentes:
+
+- **Developers**: Seções `architecture`, `functional_requirements`, `technical_context`
+- **UX Designers**: Seções `design`, `user_stories`, `accessibility`
+- **QA**: Seções `acceptance_criteria`, `non_functional_requirements`
+- **DevOps**: Seções `architecture.components`, `dependencies`
+
+---
+
+## 📊 Exemplo de PRD Preenchido (Resumido)
+
+```yaml
+metadata:
+  document_id: "PRD-2025-02-001"
+  title: "Automated Data Export System"
+  version: "1.0"
+  status: "In Review"
+  owner:
+    name: "João Silva"
+    email: "joao.silva@example.com"
+
+executive_summary:
+  problem_statement: |
+    Usuários enterprise gastam 2h/dia exportando dados manualmente,
+    resultando em 40% de erros humanos e $150k/ano em custos operacionais.
+  
+  proposed_solution: |
+    Sistema automatizado de exports com scheduling, validação integrada
+    e suporte a 5 formatos (CSV, Excel, JSON, Parquet, PDF).
+  
+  expected_impact: |
+    Redução de 87% no tempo de exportação, eliminação de 90% dos erros,
+    ROI positivo em 4 meses ($120k savings/ano).
+
+goals:
+  primary_goal: "Reduzir tempo médio de exportação de 1.8h para 15min com 95% de precisão até fim de Q1 2025"
+  
+  success_metrics:
+    kpis:
+      - metric: "Time to Export (TTE)"
+        baseline: "1.8 hours"
+        target: "15 minutes"
+
+roadmap:
+  phases:
+    - phase: "Phase 1 - MVP (4 weeks)"
+      deliverables:
+        - "✅ CSV/Excel export formats"
+        - "✅ Daily scheduling"
+        - "✅ Email notifications"
+```
+
+---
+
+## 🔗 Integração com Outros Artefatos
+
+- **${AVANADE_PM_CHECKLIST_MD}**: Usar checklist para validar PRD antes de approval
+- **${AVANADE_DISCOVERY_TEMPLATE_YAML}**: Discovery doc alimenta contexto do PRD
+- **${AVANADE_TASK_RICE_PRIORITIZATION}**: Usar RICE para priorizar user stories
+- **${AVANADE_MEMORY_PM_JOAO}**: Armazenar PRDs aprovados para referência futura
+
+---

@@ -1,0 +1,223 @@
+Título da reunião: Onboarding — Demonstração do Fluxo Operacional do CRM Dynamics (Conta → Oportunidade → Proposta)
+Data: 10/03/2026
+Horário de início: 17:06
+Horário de término: ~17:58 (estimado com base na transcrição)
+
+Participantes presentes
+
+•	Eduardo De Oliveira
+•	Camila Moraes
+•	Danilo Macedo
+•	Kevellin dos Santos Corrado
+•	Oscar de Rooij
+•	Tercio Eduardo Freire Lins
+
+________________________________________
+
+2) PAUTA
+
+Conforme o convite da reunião, a pauta programada foi:
+1.	Demonstração ao vivo do fluxo completo do CRM: criação de conta (escola nova), cadastro de contato, criação de oportunidade, inclusão de produtos e geração de proposta
+2.	Navegação pelas funcionalidades existentes (análise de vendas, matriz de serviços, desconto em lote, geração de documentos)
+3.	Fluxo de aprovação, revisão e status da proposta
+4.	Esclarecimento de dúvidas operacionais da equipe Avanade
+
+________________________________________
+
+3) DESENVOLVIMENTO
+
+3.1 Criação de Conta (Escola Nova)
+
+Demonstração por Eduardo De Oliveira:
+
+•	Tela inicial do CRM: contas, alunos, oportunidades, propostas, pedidos, compromissos.
+•	Botão "Criar" para nova conta. Campos obrigatórios marcados com asterisco.
+•	Campos preenchidos: nome da instituição (extraído da Receita Federal), CEP (autopreenchimento de endereço), tipo de instituição (ex.: particular laica), código MEC, CNPJ (obrigatório), estabelecimento (filial).
+•	Validações automáticas: CNPJ duplicado é bloqueado; código MEC duplicado também gera alerta; campos obrigatórios não preenchidos impedem salvar.
+
+Permissões de criação de conta:
+
+•	Consultores, anjas, coordenadores e gerentes podem criar contas.
+•	Exceção: consultores do PNLD não podem criar contas (apenas administram/compartilham contas existentes).
+
+Visibilidade:
+
+•	Camila Moraes perguntou sobre quem enxerga a conta criada. Eduardo explicou que depende do perfil de acesso — há segmentações por unidade de negócio. Detalhamento ficou para discussão futura.
+
+________________________________________
+
+3.2 Cadastro de Contato e Representante Legal
+
+•	Após criar a conta, o consultor deve cadastrar um contato como representante legal (necessário para a proposta).
+•	Pode pesquisar contato existente (já vinculado a outra escola) ou criar novo.
+•	Ao marcar como representante legal, o CPF torna-se obrigatório.
+•	Conta já vem vinculada automaticamente no contato.
+•	Se o contato não for cadastrado antes, o consultor terá que voltar à conta durante a criação da proposta (retrabalho).
+
+________________________________________
+
+3.3 Criação de Oportunidade
+
+•	Para chegar à proposta, é obrigatório ter uma oportunidade vinculada à conta.
+•	Campos obrigatórios da oportunidade: modelo de venda (ex.: FTD com Você), entrega primária (ex.: e-commerce), estoque (escola), taxa de administração, safra (ex.: 2026), vigência (ex.: 1 ano), tipo de contrato (novo, para escola sem histórico), motivo do desconto.
+•	Existe um funil de oportunidade na interface, mas a navegabilidade não é boa e é pouco utilizado.
+
+________________________________________
+
+3.4 Inclusão de Produtos na Oportunidade
+
+•	A proposta não pode ser criada sem produtos na oportunidade — sistema bloqueia.
+•	Adição individual: selecionar produto, informar segmento e série. Preço de capa vem automaticamente; preço família é definido pelo consultor.
+•	Adição em lote: filtro por produto com seleção múltipla. Produtos selecionados caem automaticamente na listagem.
+•	Grid de indicação: para escolas com histórico, o sistema traz uma lista de produtos sugeridos com base em valor de mensalidade e cluster da escola (safra anterior). Para escolas novas, não há indicação.
+•	Todos os produtos selecionados na oportunidade são transferidos automaticamente para a proposta ao criá-la.
+
+________________________________________
+
+3.5 Criação e Preenchimento da Proposta
+
+•	Ao criar a proposta, ela nasce com ID de revisão zero (primeira versão).
+•	Campos obrigatórios incluem: fornecedor atual, forma de pagamento, justificativa de desconto, motivo do desconto, representante legal (já preenchido se cadastrado antes), assinatura de contrato (sim/não), tipo de comercialização, operação filial, condição de frete, vigência (início/fim), previsão de venda, data de início das aulas.
+•	Produtos vêm com valores calculados do cadastro; consultor pode alterar descontos individualmente.
+•	Informações de código ERP são sincronizadas entre CRM e Totvs uma vez por dia (~6h da manhã).
+
+________________________________________
+
+3.6 Análise de Vendas
+
+•	Aba que mostra produtos com valores, descontos e quantidades por aluno.
+•	Permite editar descontos e quantidades diretamente.
+•	Agrupamento por linha de negócio e nível de ensino.
+•	Se alunos não foram cadastrados na conta, quantidade padrão é 1 (mínimo para venda).
+
+________________________________________
+
+3.7 Matriz de Serviços
+
+•	Gerada ao clicar no botão "Validar Serviços" — processo leva de 10 a 15 minutos dependendo da quantidade de produtos.
+•	O algoritmo analisa cada produto e traz serviços educacionais relacionados (simuladores, Enem, pacotes específicos).
+•	O consultor pode desabilitar serviços (não remover), fica a critério dele validar.
+•	Não há controle automático que garanta que o consultor clicou em "Validar Serviços" antes de ativar a proposta.
+•	Oscar de Rooij informou que a matriz de serviços está sendo inteiramente revista — algoritmo, informações utilizadas e funcionalidade de exportação para contrato.
+
+Perguntas e esclarecimentos:
+
+•	Danilo Macedo sugeriu que deveria haver validação para garantir que o consultor executou a validação de serviços antes de ativar a proposta.
+
+________________________________________
+
+3.8 Funcionalidades Adicionais na Proposta
+
+Botões personalizados:
+
+•	"Validar Serviços": dispara o fluxo de geração da matriz de serviços.
+•	"Gerar Grade Mestre": gera grade do professor — funcionalidade criada especificamente para FTD (implementada no ano anterior; origem incerta).
+•	"Transferir Arquivos": não utilizado atualmente.
+•	Campo "Aplicar desconto em lote": existia mas não estava funcionando; será removido (Kevellin confirmou).
+
+Danilo Macedo lembrou que o campo de desconto em lote funcionava anteriormente (aplicava desconto/majoração por linha de negócio) como ferramenta para acelerar ajustes na proposta.
+
+Produtos grade:
+
+•	Oscar de Rooij e Eduardo explicaram que "grade" é um tipo de personalização específica para ensino médio — produto feito sob demanda para uma escola, vinculado àquela conta. Será reorganizado na revisão de cadastro de produtos.
+
+________________________________________
+
+3.9 Fluxo de Aprovação
+
+•	Ao ativar a proposta, ela entra automaticamente no fluxo de aprovação.
+•	O aprovador (ex.: coordenador da filial) recebe notificação por e-mail e Teams com informações de valores da proposta.
+•	Pode entrar na proposta para validar alunos, materiais, descontos e então aprovar ou rejeitar.
+•	Níveis de aprovação definidos por regras automáticas no CRM (taxa de administração, adiantamento, tipo de produto, assinatura de contrato).
+•	Kevellin dos Santos Corrado informou que as regras de aprovação estão sendo revistas por Oscar.
+
+________________________________________
+
+3.10 Ciclo de Vida da Proposta — Status e Revisões
+
+•	Revisão: o consultor pode revisar a proposta a qualquer momento (até com status "ativo aprovado"), informando motivo (inclusão/exclusão de produtos, revisão de valores, atualização de alunos). A revisão mata o fluxo de aprovação vigente e incrementa o ID de revisão.
+•	Propostas podem chegar a 27-28 revisões dependendo da negociação.
+•	Status possíveis:
+	o	Rascunho/Em andamento: editável, único momento para modificações.
+	o	Ativo em aprovação: no fluxo de aprovação, mas ainda pode ser revisada.
+	o	Ativo aprovado: proposta aceita — fluxo encerrado. Ainda pode ser revisada se necessário.
+	o	Fechado perdido: encerrado, sem possibilidade de revisão.
+	o	Fechado cancelado: encerrado, sem possibilidade de revisão.
+	o	Contrato emitido: bloqueio final — time de contratos barra alterações.
+•	Oscar de Rooij informou que Eduardo está ajudando no mapeamento de todos os estágios para depara com nova estrutura. Atualmente existem 3 campos (razão do status, status e outro) que serão simplificados para 2. Necessária higienização de base e depara de valores.
+•	Danilo Macedo confirmou que a entidade "pedido" não existe mais no fluxo — proposta aprovada é o ponto final.
+
+________________________________________
+
+3.11 Geração de Documentos (Word/PDF)
+
+•	A proposta permite exportar documentos em Word/PDF a partir de templates pré-configurados.
+•	Existem ~50 modelos de documentos diferentes (contratos, aditivos, patrocínios, etc.).
+•	O modelo correto depende do tipo de conta, produtos, canais de venda e condições comerciais preenchidas.
+•	Kevellin confirmou que a quantidade de documentos é um problema conhecido e já está sendo mapeado por Oscar.
+
+Fluxo atual de geração de contrato:
+
+•	Oscar de Rooij explicou que hoje o consultor/equipe administrativa baixa 2-3 templates, copia e cola no Word, faz ajustes manuais de texto e salva como PDF.
+•	A estrutura do contrato não é modularizável — não permite criação automática com base na proposta.
+•	Necessário trabalho com jurídico para revisar e modularizar cláusulas antes de automatizar (identificar tipo de contrato/aditivo, cláusulas aplicáveis, canais de venda, etc.).
+
+________________________________________
+
+3.12 Anexos e Histórico
+
+•	Funcionalidade de anexar documentos existe (aba Anexos e Linha do Tempo), mas é pouquíssimo utilizada.
+•	Alguns consultores anexam simuladores (Excel) para histórico, mas não é prática comum.
+•	Notificações do fluxo de aprovação são recebidas via Teams (bot) e e-mail.
+
+________________________________________
+
+3.13 Alinhamentos de Agenda
+
+•	Eduardo solicitou 30 minutos com Oscar para alinhar mapeamento de status/depara — agendado para a manhã de 11/03/2026.
+•	Próxima sessão de onboarding funcional prevista para quinta-feira (12/03/2026).
+•	Kevellin pediu confirmação dos horários para não conflitar com outras agendas (reunião técnica da manhã).
+•	Tercio Eduardo Freire Lins ficou de validar os convites com a equipe.
+•	Danilo, Camila e Rodrigo estarão presencialmente na FTD na quinta-feira.
+
+________________________________________
+
+4) DECISÕES
+
+Observação: foram registradas abaixo apenas decisões explícitas (ou confirmações formais) verbalizadas na reunião.
+
+1.	Campo "Aplicar desconto em lote" será removido da proposta: Kevellin confirmou que o campo não funciona e será retirado. Forma: consenso verbal.
+2.	Reunião de alinhamento Oscar + Eduardo sobre mapeamento de status agendada para a manhã de 11/03/2026: Eduardo solicitou, Oscar confirmou disponibilidade. Forma: consenso verbal.
+3.	Próxima sessão de onboarding funcional na quinta-feira (12/03/2026): Camila confirmou, Kevellin pediu validação de horários. Forma: consenso verbal.
+
+________________________________________
+
+5) AÇÕES E RESPONSÁVEIS
+
+Prazos foram registrados somente quando verbalizados. Quando não houve prazo explícito, consta "Não definido na reunião".
+
+Descrição da ação	Responsável	Prazo de entrega	Status
+Reunião de alinhamento sobre mapeamento de status e depara da proposta (30 min)	Eduardo De Oliveira / Oscar de Rooij	11/03/2026 (manhã)	Aberta
+Trazer algoritmo/lógica de status atual da proposta para a equipe Avanade realizar o depara	Eduardo De Oliveira	Não definido na reunião	Aberta
+Validar convites e horários das agendas de quinta-feira com a equipe	Tercio Eduardo Freire Lins	Não definido na reunião	Aberta
+Detalhar segmentação de perfis de acesso e visibilidade de contas no CRM (discussão futura)	Eduardo De Oliveira / Camila Moraes	Não definido na reunião	Aberta
+Avaliar inclusão de validação obrigatória de "Validar Serviços" antes de ativar proposta	Time Técnico	Não definido na reunião	Aberta
+Remover campo "Aplicar desconto em lote" da proposta (não funcional)	Kevellin dos Santos Corrado / Time FTD	Não definido na reunião	Em andamento
+Revisar e modularizar estrutura de templates de contrato com jurídico para permitir geração automática	Oscar de Rooij / Jurídico FTD	Não definido na reunião	Em análise
+
+________________________________________
+
+6) OBSERVAÇÕES ADICIONAIS
+
+•	A demonstração foi feita em ambiente de produção — Eduardo criou uma conta e proposta de teste que entrou no fluxo de aprovação real (coordenadora Raquel de BH foi notificada).
+•	A sincronização CRM ↔ Totvs para código ERP ocorre uma vez por dia (~6h da manhã).
+•	A matriz de serviços leva 10-15 minutos para ser processada, dependendo da quantidade de produtos.
+•	Existem ~50 templates de documentos Word/PDF no CRM — mapeamento em andamento para simplificação.
+•	Oscar está conduzindo o mapeamento de depara de status (3 campos atuais → 2 campos) com necessidade de higienização de base.
+
+________________________________________
+
+7) ENCERRAMENTO
+
+Horário de encerramento: ~17:58 (estimado).
+Registro de encerramento: Camila Moraes indicou que o tempo da reunião havia se esgotado. Próxima sessão de onboarding funcional agendada para quinta-feira (12/03/2026).

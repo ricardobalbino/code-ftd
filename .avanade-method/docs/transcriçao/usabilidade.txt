@@ -1,0 +1,3800 @@
+Transcrição
+10 de março de 2026, 05:06PM
+
+Kevellin dos Santos Corrado começou a transcrição
+
+Camila Moraes   0:08
+Pronto, já IA perguntar se você tinha colocado para funcionar mesmo. Pronto, então vamos lá. Então mesmo que é você mostra essa navegação, olha esse cenário inicial, inicial mesmo, é porque depois nós vamos falar de direito acesso, personas para falar assim, quem é a pessoa para falar, mas você vai falar a persona consultora, então você é uma pessoa.
+
+Kevellin dos Santos Corrado   0:11
+Pronto, deu certo.
+
+Camila Moraes   0:27
+Nova.
+Bom, pessoal, não perdão. Uma escola nova vai atuar desde do da protipação de uma escola nova. Como fazer esse cadastro? E a gente pode ir navegando. Olha, pessoa, escola nova tem este cenário, vamos atuando neste cenário, tem esse cadastros e você pode citar, como você falou, isso aqui tem vínculos e você vai citando porque eu não vou me apegar a.
+Campos, mas sim é o processo e você pode ir citando ali o os Campos. E aí, com a primeira fase de você ter aonde atuar, no caso da escola, aí você vai talvez para produtos, criação das propostas. E aí, vamos, porque aí nessa primeira pincelada da atuação do zero.
+
+Eduardo De Oliveira   0:52
+Cesar.
+
+Camila Moraes   1:05
+Primeiro zero. Nós vamos perceber o seguinte, é, o processo já está coeso ali com Oscar, que ele já colocou, principalmente as próximas fases. Eu consigo é olhar aqui e falar, isso aqui é exatamente o quadradinho que Oscar já detalhou aqui e vem para essas ideias. E aí, aonde que vai vindo assim surgindo os?
+Perguntas não é para poder ter ideias e melhorar os processos ou até mesmo a construção aqui do dynamics, está bom?
+
+Eduardo De Oliveira   1:32
+Então vamos começar do processo do zero mesmo, da criação da conta dele, inclusão de alunos, tudo, tá? Eu vou, eu vou compartilhar a tela.
+
+Camila Moraes   1:36
+Isso.
+Isso pode compartilhar, aí eu vou, isso aí eu fecho a cara aqui que tudo.
+E aí eu vou perguntando que eu sei que você não vai ver, está?
+
+Eduardo De Oliveira   1:48
+Eu vou, vou minimizar vocês.
+Só para ter a navegabilidade e visualização melhor aqui.
+Então funciona assim, quando o consultor ou quando o usuário em si entra no CRM, essa daqui é a primeira telinha deles.
+
+Camila Moraes   2:06
+Aham.
+
+Eduardo De Oliveira   2:07
+Aqui são é a parte de contas, tá? Nós temos os alunos, as oportunidades, as propostas, pedidos, compromissos e assim sucessivamente.
+Mas para dar início a uma conta que vai virar uma oportunidade essa essa conta e vamos chegar numa proposta. Ele nasceu aqui e ele tem esse botãozinho aqui ó criar. Esse botãozinho criar é onde ele vai criar a conta.
+
+Camila Moraes   2:28
+É.
+Mhm.
+
+Eduardo De Oliveira   2:35
+Dentro dessa criação de conta, nós temos diversas informações, mas o básico para que para que a conta seja criada vem com asterisco já. Então vamos lá.
+
+Camila Moraes   2:45
+Aí uma pergunta que já a criação de curta, ela está limitada hoje aos consultores e gestores ou tem consultores? Qualquer consultor pode isso?
+
+Eduardo De Oliveira   2:56
+Consultores, no modo geral, pode criar consultores, anjas, é coordenadores, gerente.
+
+Camila Moraes   3:02
+Tem alguém que não possa criar, que tem acesso ao Daniel, por exemplo?
+
+Eduardo De Oliveira   3:07
+Não, não existe restrição nesse perfil na criação de uma conta, não. Atualmente existe sim, perdão, os consultores do PNLD atualmente não conseguem criar.
+
+Camila Moraes   3:08
+Então, beleza.
+Está bom?
+Está bom, porque é uma coisa objetiva deles lá de eles não poderem eles só administrarem, eles só compartilham coisa existente, está bom?
+
+Eduardo De Oliveira   3:26
+Isso exato.
+Exatamente.
+Então ó, é aquilo, o consultor ele tem que dar um nome para essa escola. Geralmente utiliza-se a Receita Federal, tá? Então o nome fantasia fica a critério deles, mas aqui o nome da instituição, eles vão pegar direto na receita.
+
+Camila Moraes   3:55
+Mhm.
+
+Eduardo De Oliveira   4:01
+Vamos só teste aqui, eu vou colocar o que for aparecendo.
+
+Camila Moraes   4:03
+Tá, não fica à vontade aí isso não está validando, não só vai dar outras coisas.
+
+Eduardo De Oliveira   4:08
+Então.
+Preencheu o CEP, ele já vai trazer todos os Campos preenchidos.
+Preciso informar qual é o tipo dessa instituição, se é delegacia de ensino, livreiro, parceiro comercial, particular e assim sucessivamente. Vou falar aqui uma escola particular laica aqui, código MEC, eu não possuo o código MEC dessa escola. O consultor, ele já vai falar aqui.
+
+Camila Moraes   4:27
+Mhm.
+
+Eduardo De Oliveira   4:31
+É uma escola do mercado particular. Não possuo o código MEC CNPJ. É um campo obrigatório. Eu já de Souza separado aqui.
+
+Camila Moraes   4:41
+Viu pronto.
+
+Eduardo De Oliveira   4:49
+Todos os Campos que são obrigatórios vão estar com asterisco, tem que dar um estabelecimento para ele.
+Vou voltar ela para o meu nome.
+
+Camila Moraes   5:02
+Mhm.
+Oh, Eduardo, é, estou entendendo aqui que como não existe equipe de vendas, eu cadastrei essa escola. É eu, consultor enxergo e o meu gerente que está acima. Os outros consultores também enxergam porque estão dentro da unidade de negócio.
+
+Eduardo De Oliveira   5:24
+Deivid
+
+Camila Moraes   5:25
+Ou tem segmentações?
+
+Eduardo De Oliveira   5:27
+Tem segmentações, mas aí vai depender do perfil de acesso da que essa pessoa tem, das liberações desse perfil de acesso.
+
+Camila Moraes   5:34
+Tá, então a gente conversa depois, tá bom?
+
+Eduardo De Oliveira   5:37
+Caso eu não tenha preenchido algum campo o sistema ele vai me bloquear caso o CNPJ já já exista na nossa base o sistema vai me bloquear com a mensagem dizendo olha é esse CNPJ já existe cadastrado se eu tivesse colocado um código MEC
+Atualmente, ele também me informaria isso.
+Certo? Vamos para a próxima etapa aqui. Já criei a conta. Esse é o primeiro ponto do consultor.
+Depois disso, ele tem que para que ele chegue na oportunidade, é bom que ele já cadastre um contato e esse contato ele precisa ser um representante legal para que lá na frente, na proposta, ele não tenha que voltar nesse passo anterior aqui.
+Então, criar um conta contato.
+Dentro da conta eu vou cadastrar um contato posso clicar aqui na loupinha e pesquisar um contato que já esteja vinculado a uma escola ou novo contato.
+Aqui eu já posso informar que ele é um representante legal e a hora que eu pego aqui, ele pede ORG não é obrigatório, mas OCPF automaticamente passa a ser obrigatório.
+Já havia deixado outro CPF aqui também.
+
+Camila Moraes   7:02
+Hhh.
+
+Eduardo De Oliveira   7:03
+A conta já vem vinculada dentro desse contato.
+Telefone aqui continua obrigatório, mas não é necessário. A gente vai mudar essa regra.
+Ou para que ele pegue celular?
+Ele já pegou duplicidade no número de telefone.
+Contato já está dentro da conta, já tem um representante legal para essa conta lá na frente. Quando eu for gerar a proposta, não vou precisar cadastrar esse cara.
+
+Camila Moraes   7:38
+Machado.
+
+Eduardo De Oliveira   7:43
+Para que eu chegue numa proposta, eu preciso de uma oportunidade, tá vendo?
+Quando ele pede aqui, verifique se todos os requisitos de Campos são atendidos, é porque eu não tenho uma oportunidade nessa conta.
+Então, para que eu chegue lá em proposta, a primeira coisa vem em oportunidade, criar uma oportunidade para essa conta.
+A conta já vem vinculada aqui e aqui também temos muitos Campos obrigatórios. Se eu tentar fazer qualquer coisa que não condiga, que não esteja preenchido, ele vai me avisar.
+Vou falar que é um modelo de venda, é OFTD com você. A Entrega primária só pode ser e-commerce. Vou falar que é estoques cola aqui. Taxa de administração é zero.
+Safra.
+E 26 vigência anos é quanto tempo?
+Que vai ser essa proposta, essa oportunidade, no caso, um ano.
+É um tipo de contrato novo, até por ser uma escola nova, ela não tem histórico conosco.
+E já vou deixar o motivo do desconto.
+Clicando em salvar, ele vai me trazer outras guias aqui de preenchimentos.
+Aqui nós temos também, olha, não sei se vocês separaram um funil.
+Da dessa oportunidade.
+A navegabilidade dele não é tão boa e não utilizável.
+Caso tenha alguma dúvida disso daqui, pode perguntar também, tá? Eu estou mostrando como se geraria uma oportunidade para essa conta.
+Para que eu consiga.
+tava carregando ali eu cliquei em proposta para que eu consiga criar uma proposta eu preciso dessa oportunidade e essa oportunidade ela precisa ter produto então se eu tentar criar aqui essa proposta já sou barrado
+Porque eu preciso colocar um produto, esse produto eu posso colocar aqui pela produto da oportunidade.
+Eu seleciono o produto que eu vou vender para essa escola ou ofertar para essa escola. No caso da oportunidade, vou falar qual o segmento que eu estou colocando esse produto e qual a série desse segmento.
+Feito isso, ele já traz os preços de capa, mas o preço família sou eu que vou consultor quem vai colocar.
+Vou manter o mesmo padrão.
+Coloquei o produto dessa oportunidade.
+Já está liberado para que eu crie a proposta, mas o consultor também. Ele tem a opção de adicionar produtos em lote, então o representante, o vendedor, ele vai ter a opção aqui de fazer um filtro específico por produto e selecionar os produtos.
+Mais de um produto para essa conta que eu vou adicionar 4 produtos em lote, não estou fazendo filtro, só pegando aqui para mostrar o processo.
+Coloquei todos esses produtos aqui dentro da selecionei esses produtos, eles já vem automático aqui para minha listagem.
+Dessa listagem, a hora que eu clicar aqui em proposta comercial, criar proposta, todos esses produtos já vão estar dentro da minha proposta.
+Dentro aqui do produto da oportunidade também existe esse progresso de indicação.
+No ano anterior, no na safra de 2025, foi gerado uma lista com alguns produtos que.
+O consultor indicaria para a escola com base em valor de mensalidade no cluster da escola.
+Foi trazido para dentro dessa grade de indicação esses produtos aonde eles diriam, olha, esse produto aqui condiz com a realidade da escola eu vou ofertar.
+Selecionava aqui também já IA direto para proposta. Como essa conta aqui é nova, ela não possui essa grade de indicação. Essa oportunidade não possui indicação prevista para esse ano.
+Mas no caso das escolas Aquário, que nós tínhamos proposta ou que nós tínhamos um histórico com essas contas, foi gerada essa grid de indicação.
+Em proposta comercial, agora eu vou clicar aqui para criar a proposta.
+Ele vai gerar a propósito um linkzinho para mim aqui na parte inferior, trazer algumas informações das quais eu preenchi aqui os produtos ou adicionando em lote, onde ele vai trazer valor, o tipo.
+E para a proposta?
+Tudo aquilo que eu preenchi lá na oportunidade, ele trouxe aqui para mim, para a proposta, os produtos que eu selecionei lá.
+Ela nasce com AD de revisão zero. O que isso quer dizer? Que essa daqui é a primeira proposta que eu que está sendo gerada aqui. Qualquer alteração que eu vá fazer nela a partir do momento que o status dela passar para ativo aqui toda e qualquer alteração.
+Ela vai gerar um ID de revisão, ela mudou o status de rascunho para ativo, ela vai precisar ser revisada.
+Como eu estava falando, todos eles, todos os Campos obrigatórios precisam, vem referenciado com esse asterisco e precisa ser preenchido. Se eu tentar salvar ela, já vai falar, olha, você precisa preencher 15 Campos aqui.
+Fernando atual, vou falar que ela era da positivo.
+Pagamento vai ser à vista.
+A justificativa para caso haja um desconto ou aquilo que eu estou negociando com a escola e eu vá trazer essa informação para que meu gestor ou diretor saiba o que está acontecendo é preenchido aqui.
+O motivo do desconto já preenchia um campo obrigatório também.
+contrato aqui lembra que eu cadastrei aquele contato a hora que eu clico aqui para o representante legal ele já tá preenchido caso eu não tivesse criado esse contato anteriormente eu teria que ir lá na na conta e cadastrar ele
+Dá para criar por aqui também?
+Só que você acaba perdendo todo o preenchimento que foi feito anteriormente.
+Aqui é para informar se a escola assina contrato ou não.
+O tipo de comercialização, como eu selecionei e-commerce lá na modalidade, ele já vem direto aqui para mim, que isso daqui só pode ser vendido, venda direta, cliente. Tem a opção de pegar um desses, mas geralmente vai ser o e-commerce, pode ser balcão escola também.
+Vou deixar com uma operação filial na escola.
+Cândido do frete vai ser gratuito, que é um padrão.
+Aqui nesses Campos, início da vigência.
+Geralmente utilizado a data do dia da criação da proposta.
+E até o final.
+Do ano, como eu selecionei um ano, por padrão, utiliza-se o último dia do ano letivo.
+Previsão de venda, como o próprio nome diz, é para dizer se existe a previsão de venda para essa escola, no caso, sim. Data de início das aulas, o time do e-commerce utiliza essa data para estimar mais ou menos a entrega desse material.
+Então.
+Como já está no início aqui, eu vou colocar agora, mas.
+Geralmente o pessoal coloca entre 10 a 20 de janeiro, vai depender de cada região.
+E agora eu consigo salvar.
+Até aqui, gente, tudo bem?
+Vocês não tem alguma dúvida?
+
+Camila Moraes   16:57
+Não no processo também.
+
+Danilo Macedo   17:00
+Eu estou, eu conheci já esse processo, estou mais acompanhando a ver se teve alguma modificação.
+É, eu queria só confirmar uma coisa, você inseriu os produtos na oportunidade, ele já trouxe para a proposta. Você tem que fazer algum ajuste, alguma informação a mais que você tem que incluir na nesses produtos quando está na proposta ou não precisa incluir nada a mais.
+
+Eduardo De Oliveira   17:12
+Certo.
+
+Danilo Macedo   17:24
+Por exemplo, eu estou vendo que a coluna ali é grade e está tudo vazia. Você poderia ter é que você não preencheu mesmo na oportunidade ou era só ir preenchendo na proposta?
+
+Eduardo De Oliveira   17:25
+Paci.
+Na realidade, depende do produto, existem produtos que ele vai gerar uma grade.
+Agora, existem produtos no caso desses aqui, não supondo que eu coloque, já vou colocar até por aqui, pela análise de vendas.
+Se eu não me engano, essa loira do banheiro aqui, ela é grade.
+
+Danilo Macedo   17:53
+E o que quer dizer grade?
+
+Camila Moraes   17:53
+Hhh.
+
+Eduardo De Oliveira   17:57
+Grade.
+
+Oscar de Rooij   17:59
+É um tipo de produto específico que é customizado para uma escola específica, então é.
+
+Eduardo De Oliveira   18:00
+Isso.
+É como se fosse uma customização.
+
+Oscar de Rooij   18:07
+É um produto feito sob demanda para uma escola, então ele foi cadastrado e ele foi feito para e só pode ser vendido para tal escola.
+
+Danilo Macedo   18:17
+Tá, que é o que você te comentou ontem, Oscar de?
+
+Camila Moraes   18:22
+Customização e personalização de produto.
+
+Danilo Macedo   18:23
+É customização, personalização que.
+
+Oscar de Rooij   18:25
+É, tem a ver. A grade é uma das personalizações, tá? Ela é uma, é uma personalização específica para o ensino médio, tá? Então assim, dentro da revisão de produto, a gente também vai organizar um pouco disso também, tá? Mas é para tentar separar um pequeno pedaço ali.
+
+Danilo Macedo   18:29
+Sim.
+Mhm.
+Aham.
+
+Oscar de Rooij   18:44
+E dos produtos personalizados.
+
+Camila Moraes   18:47
+E aí eu entendo que, por exemplo, não estaria disponível a todos os consultores, porque como vai estar vinculado a conta somente aquela conta que teve aquela personalização.
+
+Oscar de Rooij   18:57
+Sim, é com a nova versão, com as filtragens corretas, com a tabela de preços estruturada. É isso mesmo? É até chegar lá. Agora tem um tem uns desenhos para a gente fazer.
+
+Camila Moraes   19:00
+Mhm.
+Isso objetivo.
+Certo.
+
+Danilo Macedo   19:08
+Mas hoje mostra para todos ou ele teria que ter alterado a lista de preços para poder ver o produto e assim, tá?
+
+Oscar de Rooij   19:14
+É, ele altera a lista de preço, então hoje a limitação fica na lista de preço.
+
+Danilo Macedo   19:20
+Okay.
+
+Camila Moraes   19:20
+Mhm.
+
+Danilo Macedo   19:21
+Bom, então, Eduardo, você não precisa incluir nenhuma informação a mais nos produtos aí na proposta. O que veio na oportunidade, ele tá bom, tá?
+
+Eduardo De Oliveira   19:28
+Não, não, ela já vem, já vem direto do cadastro de cada produto vai vir com a sua informação direto do cadastro dele.
+
+Danilo Macedo   19:33
+Michelle.
+Tá, você teve que colocar coisas a mais ali em condições comerciais, em contrato.
+
+Eduardo De Oliveira   19:41
+Sim, aqui você, o produto em si, ele já vem. Agora, caso você precise preencher algo diferenciado aqui, são Campos calculados, tá? Os valores aqui estão de acordo com aquilo que está.
+
+Danilo Macedo   19:42
+Alexandre.
+Simone ma'am.
+Aham.
+Os produtos preferidos.
+
+Eduardo De Oliveira   19:57
+Sendo calculado exatamente, mas você consegue alterar isso com base em desconto que você vai dando.
+
+Danilo Macedo   20:00
+Mhm.
+Mhm.
+Eu IA perguntar, acho uma coisa que eu acho que eu vi ali, que eu lembro que tinha um aplicar desconto em lote, até acho que é o que tá ali embaixo.
+
+Eduardo De Oliveira   20:12
+Ele já.
+Aplicar desconto em lote?
+
+Danilo Macedo   20:23
+É tipo ali embaixo, tá vendo? Aplicar porcentagem para definir preço final de venda a partir do preço de capa. Eu lembro que tinha algumas funcionalidades, mesmo se era desconto, mas isso sim, entendeu?
+
+Eduardo De Oliveira   20:32
+Ela.
+É o ele. Você consegue a quer dizer, teoricamente você conseguiria aplicar. A gente chegou a conversar sobre esse campo no final do ano passado. Ele não estava funcionando, esse campo aqui praticamente morto.
+
+Camila Moraes   20:39
+Forte.
+Karen.
+
+Danilo Macedo   20:47
+Mhm.
+Okay.
+
+Kevellin dos Santos Corrado   20:51
+A gente vai retirar esse campo agora.
+
+Eduardo De Oliveira   20:52
+Exatamente.
+
+Danilo Macedo   20:55
+Não, isso funcionava. Ele dava, ele dava o desconto, a majoração. É, você precisava linha de negócio. Ele fazia isso. Foram ferramentas para.
+
+Eduardo De Oliveira   21:05
+Já vinha para cá, preenchendo por aqui, você dava desconto em massa.
+
+Danilo Macedo   21:09
+É ferramentas para acelerar a mudança, os ajustes na proposta.
+
+Eduardo De Oliveira   21:09
+Aparecida agindo.
+
+Danilo Macedo   21:14
+Santos.
+
+Eduardo De Oliveira   21:17
+Aqui seria uma análise por linha de negócio, como eu só coloquei produtos de literatura, ele vai calcular caso tivesse dando algum desconto específico ali também, tá?
+
+Danilo Macedo   21:17
+Hhh.
+Mas por que está mostrando literatura 2 vezes aí?
+
+Eduardo De Oliveira   21:27
+Ele entraria o desconto.
+Provavelmente seja pelo tipo que eu que eu coloquei. Isso daqui é, pode ser que ela esteja numa outra versão dentro do dentro do produto.
+
+Camila Moraes   21:33
+Carga.
+
+Eduardo De Oliveira   21:44
+Linha divergente, no caso, espaço, nome, isso.
+
+Danilo Macedo   21:46
+O mesmo nome.
+Entendi.
+
+Eduardo De Oliveira   21:55
+Matriz de serviços seria caso eu coloque algum produto aqui dentro do deixa eu pegar um produto específico, trilhas.
+André de Lima Costa.
+consultor consegue pegar aqui, pode fazer filtro por sistema, por tipo de produto, linha de negócios. Eu, Eduardo, prefiro procurar por contém determinado produto.
+
+Camila Moraes   22:29
+Hhh.
+
+Eduardo De Oliveira   22:29
+E pego o segmento desse produto.
+Adiciono os produtos.
+E dentro desses produtos, só para explicar para vocês.
+Vou sair aqui, já adicionei lá. Dentro do produto em si, eu cliquei justo no de Saanhol. Não vai ter detalhes adicionais. Não vai ter produto relacionado. Mas.
+Isso aqui é bom que vocês entendam também.
+É o time de avaliação educacional quem utiliza muito.
+É onde elas vão fazer as entregas para as para as escolas de produtos adicionais. Então 2 simuladores tct às vezes tem é Enem.
+São pacotes específicos para as escolas que adotam determinados materiais.
+
+Danilo Macedo   24:08
+Mas aí se diz que está relacionado, isso quer dizer que esse produto já entra automaticamente junto ou ele está como uma sugestão para ser incluído também?
+
+Eduardo De Oliveira   24:16
+ele ele faz parte do pacote o consultor pode falar olha essa escola não quer esse esse pacote de serviços mas aí fica a critério da da escola mesmo
+
+Danilo Macedo   24:20
+Turnes.
+Entendi, é um serviço que vai junto com um produto que ele tá contratando, tal.
+
+Eduardo De Oliveira   24:37
+Isso.
+
+Danilo Macedo   24:43
+Aí é quando esse sistema de ensino que tem essa que vai a matriz de serviços.
+
+Eduardo De Oliveira   24:45
+Geralmente, geralmente sistema de ensino tem isso.
+Aqui, teoricamente, temos uma proposta já sempre finalizada.
+O consultor, ele leva mais tempo porque ele vai colocar produtos específicos aqui, então ele tem que ser selecionar o trilhas. Eu peguei aleatório.
+Ele pode procurar pelo código também e aí se torna mais bem mais rápido.
+Agora vocês querem ir para a parte mais?
+Tirar dúvidas direcionada. Aí vocês vão perguntando, eu vou, vou explicando.
+
+Danilo Macedo   25:37
+O que faz ali na aba análise de vendas.
+
+Eduardo De Oliveira   25:40
+Análise de vendas são os produtos que nós temos, os valores que estão sendo passados para a escola. Aqui ele também consegue, a gente consegue mexer nos descontos, por exemplo, como não coloquei alunos na conta, dentro da conta,
+Ela está vindo com a quantidade de um, que é o mínimo para que haja venda, mas vamos supor que eu queira dar um desconto de.
+10%.
+E nessa sala tem 50 alunos.
+Aqui ele vai conseguir ter uma base de como está sendo feito isso. Deixa eu salvar, né?
+Então, o desconto médico tá sendo de Novaes 70.
+O valor está saindo de 51000, então é para ele ter uma prévia mais ou menos. Agora nós temos AO sistema aqui na linha de negócios também, a literatura.
+E os níveis de ensino de cada um deles?
+
+Danilo Macedo   26:53
+Sergio aquela aquela lista e você pode editar os produtos por a por ali mesmo, tá?
+
+Eduardo De Oliveira   26:57
+Isso aqui você consegue editar o os valores, os descontos.
+Dúvida.
+
+Danilo Macedo   27:12
+É matriz de serviços. Ele só lista os produtos que estão relacionados a algum que foi inserido na proposta. Ele não tem nenhuma ação aí não. Ele pode remover, ele pode remover e incluir serviços também.
+
+Eduardo De Oliveira   27:20
+Isso.
+Ele pode?
+Ele pode incluir? Não, ele consegue. Não é remover, ele vai desabilitar.
+
+Danilo Macedo   27:27
+Well
+
+Eduardo De Oliveira   27:33
+Ele está girando o fluxo aqui, terminando, ele provavelmente vai me trazer OA matriz do trilhas que eu coloquei.
+
+Danilo Macedo   27:42
+Entendi.
+
+Camila Moraes   27:44
+Não mudou.
+
+Eduardo De Oliveira   27:44
+É que ele vai, ele leva uns 15 minutinhos para rodar tudo.
+
+Camila Moraes   27:48
+Tá, então aproveitando isso da performance, ele foi lá, cadastrou a nova escola, é pegou os dados, selecionou o os produtos dessa proposta, você mostrou tanto o individual ali adicionar em lote e aí ele fica nesse tempo aí de validação, como que é?
+A questão de com o usuário nesse tempo que fica.
+Ele sai tranquilo e ele recebe um aviso que rodou.
+
+Eduardo De Oliveira   28:13
+Sim.
+Ele recebe aqui pelo jeans.
+
+Camila Moraes   28:17
+Pelo jeans.
+Boa.
+
+Eduardo De Oliveira   28:20
+Olha, tá rodando aqui.
+Pelo Teams, ele vai informando tudo.
+
+Camila Moraes   28:29
+Ricardo.
+Pois bem, aí, segundo, continuando na trilha ali do Danilo anexo, vocês não utilizam de anexar algo aqui dentro do CRM?
+
+Eduardo De Oliveira   28:42
+Pouquíssimo são para casos específicos. Vamos supor que eu.
+
+Camila Moraes   28:45
+Abreu.
+
+Eduardo De Oliveira   28:50
+a filial, ela tenha o simulador, não são todas que utilizam, mas caso ela tenha o simulador e queira deixar de histórico, ela consegue incluir aqui na aba Nexus.
+
+Camila Moraes   29:00
+A imagem PDF do celular, o simulador da proposta.
+
+Eduardo De Oliveira   29:00
+Simone Victor Paulo.
+OPA, isso o simulador seria tipo um Excel, esse Excel ela consegue anexar aqui.
+
+Danilo Macedo   29:06
+Sim.
+Mas você vê que é anotações da linha do tempo, Camila da proposta, entendeu?
+
+Eduardo De Oliveira   29:11
+Pds também.
+
+Camila Moraes   29:17
+Não, sim, que roda, mas quero saber se eles anexam, chegam a porque tem a opção de anexar o documento.
+
+Eduardo De Oliveira   29:22
+Tem a opção de anexar, eles conseguem anexar.
+
+Camila Moraes   29:24
+Isso consome espaço.
+
+Eduardo De Oliveira   29:25
+Eles com eles colocam também em atividade, se eu não me engano, alguns alguns anexos, tá?
+
+Camila Moraes   29:34
+Então.
+
+Eduardo De Oliveira   29:34
+Criar atividade.
+
+Camila Moraes   29:40
+Então, dentro da rotina deles, é normal ele querer deixar para histórico um Excel daquele momento, vamos dizer assim, um raio x daquele momento na oportunidade.
+
+Eduardo De Oliveira   29:51
+De verdade, pouquíssimo usado, tá, Camila? Pouquíssimo usado mesmo.
+
+Camila Moraes   29:53
+Tiago.
+Que bom, que bom.
+Turnes.
+
+Danilo Macedo   30:00
+Eduardo, e os botões ali em cima, validar serviços, transferir arquivos.
+
+Camila Moraes   30:03
+Hhh.
+
+Eduardo De Oliveira   30:04
+Validar serviços é o que eu cliquei para que gere a matriz, então quando eu clico em validar serviços, ele começa a rodar aquele fluxo que vai olhar para o produto e vai me trazer aqui as informações de serviços educacionais.
+
+Danilo Macedo   30:18
+E ele só roda quando clica no botão, é isso?
+
+Eduardo De Oliveira   30:21
+E.
+
+Danilo Macedo   30:22
+Eu não reparei se você tinha clicado.
+
+Eduardo De Oliveira   30:23
+Santos eu é, eu cliquei, aí ele começa aqui fazer o andamento.
+
+Camila Moraes   30:26
+Sim.
+
+Eduardo De Oliveira   30:29
+São dois tempos aqui.
+
+Danilo Macedo   30:29
+E Thiago.
+
+Eduardo De Oliveira   30:32
+Em determinado momento foi gerado esse botão e Eu Acredito que atualmente eles a matriz só rode se o se a pessoa clicar no validar serviços.
+Anteriormente era só salvar, é só clicando.
+
+Kevellin dos Santos Corrado   30:47
+E tudo.
+Tem que validar, tem que clicar ali pra avaliar.
+
+Eduardo De Oliveira   30:52
+Anteriormente era só salvar, mas isso estava dando.
+Conflito estava não estava rodando direito, por isso foi clicar, foi criado esse botão validar serviços.
+
+Danilo Macedo   31:05
+E ter algum controle para, de alguma forma, garantir que o usuário e o vendedor clicou nesse botão que não foi esquecido?
+
+Eduardo De Oliveira   31:15
+Se tem, não tem só o serviço só entra se ele clicar e fica a critério do consultor validar serviços.
+
+Danilo Macedo   31:23
+Stop.
+Essa ela está em status rascunho, tá? E os outros botões atrás de transferir arquivos, grande, gerar grade mestre.
+
+Eduardo De Oliveira   31:32
+Não utiliza.
+
+Oscar de Rooij   31:32
+Só sobre matriz de serviço rapidinho é isso aí. Ele é montado automaticamente. Já tem um algoritmo para isso que eu também não sei o detalhe, mas é está sendo inteiramente revisto também, tá? Então, como que a matriz de serviço vai ser criada?
+E que informações vão ser utilizadas para a criação dela, tá? Por enquanto, já existe a funcionalidade que eu de exportar isso daí que vai para o contrato, mas isso também está sendo vai ser revisto.
+
+Camila Moraes   32:04
+Mhm.
+
+Eduardo De Oliveira   32:05
+O meu acesso, gente, ele dá visualização a algumas coisas que o usuário comum não tem, tá?
+
+Danilo Macedo   32:10
+Tá bom, tá?
+
+Eduardo De Oliveira   32:11
+Então, clicando aqui, vou ter diversas informações que o usuário comum não tem.
+
+Danilo Macedo   32:18
+Tá, tem algum outro botão que tem alguma ação assim personalizada? Pelo que eu vi ali.
+
+Eduardo De Oliveira   32:22
+Personalizadas, gerar grade mestre é algo padrão para eles.
+
+Danilo Macedo   32:27
+Não quero dizer assim que foi criado por conta do negócio da FTD, entendeu? Que tem alguns botões, eu vejo ali que são nativos já, por exemplo, gerar grade de mestre, o que ele faz?
+
+Eduardo De Oliveira   32:37
+Ele vai gerar a grade do mestre para o do professor.
+Isso daqui foi criado para o para FTD mesmo.
+
+Camila Moraes   32:46
+Desculpa, ignorância, que é essa grade mestre se desse para dar um.
+
+Eduardo De Oliveira   32:46
+Bem como?
+Kevin, foi você que criou, Eu Acredito que você consiga.
+
+Camila Moraes   32:53
+Resumo.
+
+Kevellin dos Santos Corrado   32:56
+Não, esse não foi eu não.
+
+Eduardo De Oliveira   32:57
+Não foi você?
+Esse daqui entrou no ano passado.
+É confesso não saber exato.
+
+Kevellin dos Santos Corrado   33:05
+Foi champanhar que colocou esse daí aí.
+
+Eduardo De Oliveira   33:08
+É uma piada nossa.
+
+Camila Moraes   33:08
+Champanhe.
+
+Kevellin dos Santos Corrado   33:11
+No.
+
+Camila Moraes   33:13
+Alexandre, não se não.
+
+Kevellin dos Santos Corrado   33:14
+A Camila só pensa em champanhe, tudo para ela é um champanhe, tudo ela brinca.
+
+Eduardo De Oliveira   33:16
+Hhh.
+
+Camila Moraes   33:17
+Vamos brindar, vamos brindar a vida.
+
+Danilo Macedo   33:17
+Mhm.
+
+Eduardo De Oliveira   33:19
+Jesus foi a.
+
+Camila Moraes   33:21
+Mas o.
+
+Danilo Macedo   33:21
+É, mas eu estou. Eu estou entendendo que é uma ação assim, complementar. Não faz parte do se ele não fizer isso, OKA venda segue, não vai, tá?
+
+Eduardo De Oliveira   33:26
+Isso.
+Segue normalmente, segue segue normalmente.
+
+Camila Moraes   33:33
+Então vamos falar aqui do processo do Teixeira cadastrou a escola, habilitou aqui para poder ter o representante na proposta comercial, preencheu os dados ali de interesse, valores, aí vai ter parametrizações de desconto, se ele pode dar ou não, que eu entendo que a tabela do desconto da Messias.
+
+Danilo Macedo   33:34
+Tá bom?
+
+Eduardo De Oliveira   33:47
+Análise de vendas.
+
+Camila Moraes   33:53
+De preço, tudo bonitinho, salvou aqui, validou, está esperando a validação do serviço.
+
+Eduardo De Oliveira   34:01
+Isso.
+
+Camila Moraes   34:02
+Validou que acontece. Qual que é o próximo passo? Ele cadastrou a, vamos dizer assim, o corpo da proposta.
+Com as informações devidas a ele.
+
+Danilo Macedo   34:11
+Vai ativar, vai ativar a proposta.
+
+Eduardo De Oliveira   34:14
+Tá, vamos supor que aqui esteja tudo OK.
+
+Camila Moraes   34:17
+Um.
+
+Eduardo De Oliveira   34:18
+Ele vai agora passar pelo processo de aprovações, então ele manda ativar a proposta.
+
+Camila Moraes   34:22
+Okay.
+
+Eduardo De Oliveira   34:28
+Desculpa, gente.
+
+Danilo Macedo   34:30
+Tem que fazer um Jesus lá na conta, não é?
+
+Eduardo De Oliveira   34:32
+É.
+
+Camila Moraes   34:32
+Em Santos Alvarez pode, Thank You.
+
+Eduardo De Oliveira   34:33
+Esqueci desse detalhe.
+É aquilo, quem sabe faz ao vivo.
+E por via das dúvidas, eu vou parar o compartilhamento por 2 segundos, tá?
+Aí já volto.
+
+Camila Moraes   34:58
+Momento que eu bebo a.
+
+Eduardo De Oliveira   35:19
+Só CRM carregar aqui o campo.
+
+Camila Moraes   35:43
+Sim.
+
+Eduardo De Oliveira   35:50
+Pronto.
+Alexandre.
+Novaes.
+
+Danilo Macedo   36:26
+Poderia ter uma validação aí no momento de ativar a proposta para verificar se.
+Foi feita a validação dos serviços, entende? Por isso que eu perguntei se tinha alguma validação.
+Será que pode ser que isso seja um processo bem comum já para os vendedores, não é esquecido?
+
+Eduardo De Oliveira   36:49
+Mas caso ele esqueça, esses códigos, eles são feitos, são gerados através do totus, então o código ERP, se os dados da conta.
+Estão preenchidos de forma correta.
+É, ele vai fazer uma conexão no totus e pegar o código ERP que vai ficar cadastrado no totus e voltar pro pro CRM, bem como o código único, e isso ocorre.
+Na atualização, que é feita, eu acho que 6 horas da manhã, se eu não me engano, então roda uma vez por dia esse sincronismo entre CRME totos.
+
+Danilo Macedo   37:32
+Não, eu quis dizer do da matriz de serviços ali que do validar serviços que, por exemplo, você conseguiu ativar a proposta e o fluxo de validação não rodou ainda, entendeu?
+
+Eduardo De Oliveira   37:34
+Tá.
+Não, não concluiu. Ele está no trilhas ainda. Vamos ver quantos são.
+É, está no primeiro, pelo visto.
+
+Camila Moraes   37:55
+Como é que é, meu querido, nesse tempo que você clicou normalmente, quanto que é o tempo que leva?
+
+Eduardo De Oliveira   37:58
+Ele tá.
+Em média, 15 minutos de 10 a 15 minutos para rodar todos os serviços, vai depender da quantidade de produtos também, tá?
+
+Danilo Macedo   38:08
+É porque vai ser pesado mesmo. Imagina, ele tem que olhar cada produto, ver o que se tem produto, se tem item relacionado, trazer para ele poder, para incluir nessa na proposta.
+Vai ser demorado mesmo.
+
+Eduardo De Oliveira   38:25
+Agora elas, ela está no.
+
+Oscar de Rooij   38:26
+É por isso que o simulador vai fazer tudo em front-end.
+
+Eduardo De Oliveira   38:29
+É.
+E mais rápido?
+
+Camila Moraes   38:35
+Mhm.
+
+Eduardo De Oliveira   38:35
+Ela Foi, entrou no ciclo de aprovação.
+Como eu estou trabalhando no ambiente de produção, eu tenho que avisar a Raquel, que é a coordenadora de BH.
+Para que ela não aprove isso?
+Eu tinha que ter usado um outro estabelecimento, mas fazendo aqui eu não esqueci que não ia aprovar.
+Feito isso?
+
+Camila Moraes   39:00
+Quiser dar um toque nele nela, pode dar.
+
+Eduardo De Oliveira   39:03
+Não, tranquilo.
+
+Camila Moraes   39:05
+Santos.
+
+Eduardo De Oliveira   39:06
+Ela, mas Oh, já disparou isso daqui para ela. Ou seja, está no fluxo dela. Ela vai poder aprovar ou rejeitar essa proposta. Ela vai ver que é teste.
+
+Camila Moraes   39:08
+Sim.
+Uma perguntinha.
+Qual que é a visão que hoje a Rafael tem que ela precisa tomar uma ação?
+
+Eduardo De Oliveira   39:23
+Ela vai receber o informe da
+Desse.
+
+Danilo Macedo   39:29
+Pelo e-mail.
+
+Eduardo De Oliveira   39:30
+Dessa proposta via e-mail e via teams, então.
+
+Camila Moraes   39:34
+Perfeito.
+
+Eduardo De Oliveira   39:35
+Vai chegar, deixa eu ver se eu consigo achar algum do Teams aqui por atividades, ela vai receber uma atividade.
+São muitas atividades aqui.
+
+Danilo Macedo   39:46
+E lá, se eu não me engano, já vai ter as informações dos totais ali da proposta, os valores.
+
+Eduardo De Oliveira   39:50
+Isso.
+
+Camila Moraes   39:50
+Não precisa ter um modelo, depois a gente pega um modelo só pra poder fechar o.
+
+Danilo Macedo   39:54
+Fernando.
+
+Camila Moraes   39:56
+As etapas.
+
+Eduardo De Oliveira   39:58
+Então ela vai ela vai receber essa atividade com os informes de valores e ela vai dar o OK dela ela pode entrar dentro dessa proposta e validar alunos
+
+Camila Moraes   40:06
+Mhm.
+
+Eduardo De Oliveira   40:12
+É o material que está dando, os descontos, tudo.
+Só assim ela vai aprovar.
+
+Danilo Macedo   40:21
+E aí foi definido que é o nível de aprovação, vai até o nível 4 por conta da taxa de administração e por conta da regra nova de adiantamento.
+
+Eduardo De Oliveira   40:29
+Isso são as regras do próprio CRM, do que foram integrados no CRM. É ela quem vai dizer aqui de forma automática.
+
+Danilo Macedo   40:40
+Mhm.
+Santos.
+
+Kevellin dos Santos Corrado   40:43
+E aí é só para complementar aqui essa regra de aprovação. Ela está sendo revista já. O Oscar já está dando uma olhadinha nela, vai mudar. EAE ela sobe para o nível de aprovação também, conforme a pessoa não assina ou assina ali o contrato também, tá? Então assim, os níveis de aprovação, não.
+Não é só por conta da taxa de valor e tal, é por conta de produto também.
+
+Eduardo De Oliveira   41:06
+Produto, geralmente produto.
+Ó esse botão aqui ele não existia a partir do momento que ela mudou o status aqui para ativo em aprovação o fechar proposta ele aparece tá ele é habilitado
+
+Camila Moraes   41:13
+Machado.
+
+Eduardo De Oliveira   41:26
+Caso ela esteja aprovada, aqui gera um outro botão que é perder proposta. No caso, como ela está em aprovação, eu posso vir aqui e revisar. OPA, vir aqui e revisar essa proposta. Vamos supor que eu esqueci de incluir algum produto ou.
+Preciso fazer algum ajuste em turma, alguma coisa. Posso revisar essa proposta? Revisei a proposta.
+Vou dar um motivo aqui, vou falar, olha, é inclusão, exclusão de produtos, revisão de valores negociados, atualização de alunos, código.
+Vou falar que é inclusão, exclusão de produtos.
+Só para a gente revisar ela.
+Revisei e acabei de matar o fluxo de aprovação dessa proposta, tá?
+
+Camila Moraes   42:16
+Então ele pode fazer esse processo enquanto a aprovadora ainda não viu.
+
+Eduardo De Oliveira   42:23
+Na realidade, ela pode estar aprovada e eu consigo revisar também, porque a gente precisa fazer ajustes, inclusive às vezes ajustes demais. Existem propostas, Camila, que chega ao ID de revisão, ele estava no zero aqui, agora está no um.
+2728 vai da negociação entre escola e o que está sendo feito aqui.
+
+Camila Moraes   42:42
+Hhh.
+Entendi. Então ele pode ter vários momentos de revisão. E qual que é a definição de que ele não pode fazer a revisão? Que estágio?
+
+Danilo Macedo   42:46
+Yeah.
+
+Eduardo De Oliveira   42:54
+Contrato assinado.
+
+Camila Moraes   42:56
+Quando daí em diante não mexe mais.
+
+Eduardo De Oliveira   42:58
+Não de Jesus, não deveria.
+
+Danilo Macedo   43:00
+Quando ele fechar a proposta ali no botão fechar.
+Porque assim, na teoria, ele tem que esperar todas as aprovações para ir na escola, apresentar proposta. A escola pode falar, não tá caro, não vamos tirar um produto, vamos incluir mais um, aí revisa, aí passa pelas aprovações de novo, aí mostra para a escola.
+Na teoria, teria que ser assim.
+
+Eduardo De Oliveira   43:22
+Na teoria.
+Na prática, é, eles revisam bastante, são muitos ajustes.
+
+Danilo Macedo   43:28
+Mhm.
+
+Camila Moraes   43:33
+Não, tudo bem, é só mesmo a validação de quando ele não pode.
+Em si para frente.
+
+Eduardo De Oliveira   43:42
+Contrato emitido, geralmente até o próprio time de contratos barra eles.
+
+Danilo Macedo   43:52
+E depois que também coloca como perdida, aí também já não revisa mais, aí já encerrou o processo dela.
+
+Eduardo De Oliveira   43:57
+Não revista mais. Exatamente.
+
+Danilo Macedo   44:02
+E depois que ele colocou como fechado o ganho, aí não vai para pedido, não já era pedido mais ou ainda já era.
+
+Eduardo De Oliveira   44:10
+Fechado o ganho, eu acho que.
+
+Danilo Macedo   44:13
+É, ele foi lá e fechou e falou, ganhei. O cliente aceitou a proposta, fechamos aqui a proposta, está certo? A escola aceitou.
+
+Eduardo De Oliveira   44:19
+É porque assim, o termo ganho nós não utilizamos mais.
+
+Kevellin dos Santos Corrado   44:25
+Ele tem só na oportunidade ali que tem o ganho. Acho que é isso que ele está falando, Edu.
+
+Eduardo De Oliveira   44:26
+No.
+
+Danilo Macedo   44:28
+É eu?
+
+Oscar de Rooij   44:28
+Que não é fechada?
+
+Eduardo De Oliveira   44:28
+A Nadine Nadine Nadine Nadine Nadine Nadine Nadine No.
+
+Danilo Macedo   44:30
+É eu?
+
+Eduardo De Oliveira   44:32
+Tá, é porque aqui na proposta dava para fazer.
+
+Danilo Macedo   44:33
+Isso e na oportunidade tem o ganho, mas.
+Aham, mas quer dizer assim, fechou a proposta. A escola aceitou, fechou a proposta, não fechou como perdida, entendeu? Fechou como ganho, tá feito aí o acordo. E aí?
+
+Eduardo De Oliveira   44:48
+Em proposta, o termo passa a ser ativo aprovado.
+
+Danilo Macedo   44:52
+Ativa aprovada e aí para aí ou tem uma sequência?
+
+Eduardo De Oliveira   44:53
+Isso.
+Acabou. Ativo aprovado, proposta, perfeito, seguiu o fluxo. Acabou aí. Fechado perdido.
+
+Danilo Macedo   44:58
+Amorim.
+
+Eduardo De Oliveira   45:12
+Acabou e morreu também.
+Fechado, cancelado, morreu também. Ela só vai dar andamento quando ela tiver em rascunho em andamento. É o único momento que você consegue mexer dentro da proposta.
+
+Danilo Macedo   45:25
+Costa.
+
+Oscar de Rooij   45:28
+Inclusive, o Edu está ajudando a gente no mapeamento de todos esses estágios e fazer o depara para nova estrutura. Tem um status diferente e estágio diferente. A proposta vai ser composta por dois Campos.
+
+Danilo Macedo   45:28
+Teixeira.
+
+Oscar de Rooij   45:43
+Status, estágio hoje tem 3, tem razão do status, status e mais alguma coisa, então vai simplificar, vamos deixar só 2. Só que a gente vai ter que fazer um trabalho de higienização de Base, vai ter que fazer um de Pessoni, porque a os as razões de status e status hoje elas misturam conceitos e não
+
+Eduardo De Oliveira   45:47
+3.
+
+Oscar de Rooij   46:03
+Emerson Machado de Abreu de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de Abreu Machado de A
+Tá da Avanade. Então o Edu tem que trazer esse algoritmo aqui para a gente, que por sinal, Edu, você pode até atualizar a gente sobre isso, porque eles que vão pegar, tá? É para a gente conseguir fazer esse depara ali depois.
+
+Eduardo De Oliveira   46:31
+Abreu.
+
+Oscar de Rooij   46:33
+Então é isso, então a gente tem que entrar nesse detalhe depois para preparar como é que a gente vai fazer esse essa atualização massiva de status.
+
+Eduardo De Oliveira   46:46
+Aliás, Oscar, como é que tá sua agenda aí depois dessa daqui nossa?
+
+Oscar de Rooij   46:50
+Hoje eu não consigo, mas amanhã dá pra marcar.
+
+Eduardo De Oliveira   46:51
+Não.
+Seria bom pelo menos um uns 30 minutinhos.
+
+Oscar de Rooij   46:54
+Amanhã de manhã está livre.
+Pode marcar para amanhã de manhã, qualquer horário.
+
+Eduardo De Oliveira   47:00
+Combinado, então?
+
+Camila Moraes   47:05
+E a esqueçam dos status.
+
+Eduardo De Oliveira   47:05
+Algum?
+Alguma dúvida a mais aqui no status?
+Posso pegar uma minha nossa aqui que já esteja ativa e aprovado para mostrar campus.
+
+Camila Moraes   47:12
+Nossa, não.
+Sim.
+Sim, porque falta só 6 minutinhos voou.
+
+Eduardo De Oliveira   47:19
+Pois.
+
+Camila Moraes   47:24
+A gente vai ter outra na quinta, aí já vou ter perguntas.
+É na quinta, gente, próximo.
+
+Eduardo De Oliveira   47:32
+Pode ser o erro?
+
+Camila Moraes   47:35
+É.
+
+Kevellin dos Santos Corrado   47:36
+É porque eu acho que amanhã é técnico. Na parte da manhã, deixa eu. Deixa eu só confirmar isso aí. Você só precisa lá alinhar cá a questão de quinta-feira, daquelas 2 outras agendas que eu te mandei.
+
+Camila Moraes   47:38
+É.
+
+Danilo Macedo   47:39
+So.
+
+Camila Moraes   47:49
+Não vai estar o Danilo, eu e o Rodrigo.
+Vai estar lá no presencial tomando café com você?
+
+Kevellin dos Santos Corrado   47:58
+Não, beleza, mas só precisa ver os outros envolvidos nessa agenda para ver se os horários batem tudo certinho, está bom?
+
+Camila Moraes   48:01
+A te mandou?
+Isso, Térso ajuda nós para mandar aqui para a equipe.
+
+Kevellin dos Santos Corrado   48:08
+Só para ver se os horários estão certinhos, se não vai conflitar com alguma outra coisa, está bom?
+
+Camila Moraes   48:12
+Tiago de Lima.
+Aham.
+
+TercioEduardoFreire Lins   48:16
+Ok, é só mandar os inveitos que eu valeu aqui com o Pessoal.
+
+Camila Moraes   48:17
+Hhh.
+Yeah.
+Em Vanderlei.
+
+Danilo Macedo   48:25
+Eu IA perguntar sobre.
+Gera o Word.
+Tiago com a proposta com é PDF, é verdade e no final eles viravam.
+
+Eduardo De Oliveira   48:32
+Jessica Word PDF.
+Eu consigo exportar aqui para PDF, consigo exportar alguns produtos, é a relação de.
+
+Danilo Macedo   48:40
+So.
+
+Eduardo De Oliveira   48:45
+De produtos, tá? Então, caso.
+
+Danilo Macedo   48:47
+Eu lembro que é que eu lembro que tinha uma funcionalidade de gerar OPDF, que é o que vai ser enviado para a escola, isso ainda está sendo usado.
+
+Eduardo De Oliveira   48:54
+Esse aqui?
+
+Danilo Macedo   48:56
+É isso aí, tá?
+
+Camila Moraes   48:58
+EOPDF é aquele todo bonitinho.
+
+Eduardo De Oliveira   49:00
+Esse aqui ó.
+
+Danilo Macedo   49:01
+Com modelos diferentes, é isso aí mesmo.
+
+Eduardo De Oliveira   49:03
+Você seleciona, eu quero PDF de Patrocínio, é bonitinha, relativa aqui.
+
+Kevellin dos Santos Corrado   49:06
+Bonitinha Forte, hein?
+
+Camila Moraes   49:09
+Com logo, com imagens.
+
+Kevellin dos Santos Corrado   49:11
+Hhh.
+
+Eduardo De Oliveira   49:14
+Mas vamos supor que eu queira exportar de um de um aditivo.
+
+Camila Moraes   49:18
+Calma aí, calma aí que você foi muito rápido. É, você está numa proposta aí, você tem vários modelos.
+
+Eduardo De Oliveira   49:18
+Seria aqui?
+Isso.
+Exatamente. Se condizer com a realidade dessa conta, ele vai trazer para mim a informação. No caso, se tiver royalties e eu exportar, ele vai me trazer o valor dos royalties, se não ele vem em branco.
+
+Danilo Macedo   49:38
+Cada modelo pode trazer informações diferentes, aí dependendo do tipo da escola, você pode, você tem que ver qual modelo vai escolher.
+
+Eduardo De Oliveira   49:42
+Exatamente, vai depender do que está.
+O que está preenchido dentro da Cunha da proposta?
+
+Danilo Macedo   49:54
+Isso aí, Camila, são modelos de Word diferentes que geram dados que estão nessa proposta.
+
+Camila Moraes   49:56
+Mhm.
+Mhm.
+Não tranquilo. O que me chamou atenção foi a quantidade de opções ali e a sustentação disso, mas tranquilo.
+
+Eduardo De Oliveira   50:03
+Santos.
+E aí, que queres?
+
+Kevellin dos Santos Corrado   50:13
+Hhh.
+
+Eduardo De Oliveira   50:13
+E quantos 50?
+
+Kevellin dos Santos Corrado   50:14
+É muito. É um probleminha que aí a gente está correndo atrás disso. O Oscar também já está mapeando isso, porque não dá. São muitos documentos.
+
+Camila Moraes   50:15
+Machado.
+E.
+
+Eduardo De Oliveira   50:18
+Mhm.
+
+Camila Moraes   50:26
+É, não tem que ter.
+
+Eduardo De Oliveira   50:26
+São muitos documentos.
+
+Kevellin dos Santos Corrado   50:27
+Então já está previsto isso também, está?
+
+Camila Moraes   50:30
+Hehe.
+
+Kevellin dos Santos Corrado   50:38
+Machado.
+
+Oscar de Rooij   50:38
+Que são esses documentos, eles têm que usar. Esse contrato é do tipo tal com esse cliente tipo tal, então eu preciso desse template, daquele template, do outro template. Ele pega, faz o download dos três, copia e cola tudo no Word e salva como PDF e ainda faz algumas alterações.
+
+Eduardo De Oliveira   50:47
+É isso mesmo.
+
+Oscar de Rooij   50:57
+Hoje é isso.
+
+Camila Moraes   50:57
+O Place fica feliz, não entendi, entendi.
+
+Oscar de Rooij   50:59
+Hoje é, hoje é isso.
+Então a estrutura da proposta e até a própria estrutura do contrato não é modularizável para que o sistema crie ele automaticamente, então a estrutura do contrato ela vai ter que ser revista com o jurídico para que ele seja de alguma forma modularizável.
+Para ele poder ser criado em cima da proposta. Então, a proposta ela tem tais produtos, tais canais de venda, tais isso e aquilo, então tá bom, então como é que eu monto isso? É um contrato ou é um aditivo? Ele tem. Ele é um aditivo de encerramento, ele é um aditivo de renovação.
+Ele é um aditivo de que então, e todo esse trabalho de mapeamento, que é o que vai definir a criação automática do contrato, que cláusulas vão, que cláusulas não vão, tudo isso é tem que ser revisto antes de qualquer coisa. Hoje a equipe.
+
+Eduardo De Oliveira   51:49
+Machado.
+
+Oscar de Rooij   51:52
+Administrativa é quem faz isso. Eles pegam ali esses documentos. Quando é necessário, eles mudam ali algum texto. E é isso. Eles não mudam os textos das cláusulas, tá? Mas eles poderiam, não é? Nada impede, mas eles não mudam.
+
+Camila Moraes   52:08
+Entendi, perfeito.
+
+Transcrição 
+
+12 de março de 2026, 12:08PM 
+
+ 
+Kevellin dos Santos Corrado começou a transcrição 
+
+ 
+Camila Moraes   0:06 
+Aracy. 
+
+ 
+Danilo Macedo   0:08 
+Beleza, é então, Oscar, esse primeiro bloco você explicou com mais detalhes. E aí ele todo tá nessa primeira. Até a parte de visualização da proposta pelo cliente é já tá nessa entrega do dia. 
+
+ 
+Camila Moraes   0:10 
+Hhh. 
+
+ 
+Danilo Macedo   0:25 
+De março, certo? 
+
+ 
+Oscar de Rooij   0:26 
+Isso. 
+
+ 
+Danilo Macedo   0:28 
+A. 
+É essa parte aí de faxina. 
+
+ 
+Oscar de Rooij   0:33 
+A parte de faxina, ela é o que é necessário para fazer OA inclusão em lote de produtos funcionar. Então aqui eu tenho algumas questões que. 
+Lembra que na nas etapas da especificação, nas etapas, a gente tem lá a escolha do canal de venda, por exemplo, os canais de venda, eles não estão limpos no CRM. 
+
+ 
+Danilo Macedo   0:56 
+Mhm. Mhm. 
+
+ 
+Oscar de Rooij   1:03 
+Então tem uma revisão desses modelos de venda. Então, quais valores têm que estar disponíveis ali? Então isso daqui foi feito um trabalho e a gente vai remover alguns valores, então está em andamento. Cadastro de produto. 
+Isso daqui é um trabalho que não é tecnológico, mas vai precisar, provavelmente de um apoio de tecnologia quando isso terminar, porque quando o cadastro ficar, quando a estrutura do cadastro ficar pronta, a gente vai ter que planejar o desenvolvimento desses novos Campos. 
+E das integrações para fazer o cadastro de produto sincronizar entre OCRMO totus e o isa. O isa é o sistema de cadastro de produto, totus é o totus EOCRM. 
+
+ 
+Danilo Macedo   1:47 
+Tá isso? Eu estou em dúvida se isso está na entrega de março ou não. Esse desse bloco tá e mais é o bloquinho da esquerda. 
+
+ 
+Oscar de Rooij   1:48 
+Depois que isso ficar pronto. 
+Não vai ser entregue em março, aqui vai ficar com vocês. 
+Isso é que aqui, na verdade, todo esse trabalho aqui é OMVP. Só que o que tem Deadline de março é esse daqui. Esse tem um Deadline, esse daqui. Ele também faz parte do MVP, porque eu não consigo ir para a próxima onda direito. 
+
+ 
+Danilo Macedo   2:01 
+Mhm. 
+Mhm. 
+
+ 
+Oscar de Rooij   2:12 
+Com o seu principal valor, se eu não fazer essa faxina, então isso aqui está em andamento. Mas a gente sabe que demora mais do que março, então vai chegar em algum momento ali em abril ou maio, onde a gente vai ter o cadastro de produtos pronto. 
+E a gente vai ter que definir como que vai ser essa integração. E vocês vão participar do desenho da integração junto com a equipe do Totvs para falar, esses são, está aqui o desenho que eu vou trazer para vocês, quais são os Campos? E aí a gente vai ter que fazer essa sincronia primeiro, corrigir a base. 
+Desenvolver as integrações e implantar tudo de uma vez. Então o algoritmo para corrigir a base massivamente mais a integração vai ficar com vocês no cadastro de produto, uma vez que isso aqui está pronto. Isso aqui é até uma boa eu mudar. 
+Cor aqui, porque isso está comigo na prática, então aqui eu estou trabalhando, eu que estou trabalhando neles, fica mais, estava até errado, mais legível deixar isso daqui desse jeito, enquanto que os modelos de venda já tem. 
+Então, essas definições, elas estão acontecendo justamente para poder ter no final uma história que vai ter um algoritmo que vocês vão precisar desenvolver ou escalar. E aí a ideia é que vocês não recebam apenas uma história no final de tudo pronto. 
+Lembrando que os arquitetos vão participar comigo dessas conversas a partir do momento que vocês estão prontos, então talvez semana que vem, vocês que vão me dizer a partir de quando eu posso incluir vocês na minha nas nessas reuniões. 
+
+ 
+Camila Moraes   3:44 
+Ano que vem? 
+
+ 
+Oscar de Rooij   3:45 
+Semana que vem? 
+
+ 
+Danilo Macedo   3:46 
+Okay. 
+
+ 
+Camila Moraes   3:46 
+Semana que vem? 
+
+ 
+Oscar de Rooij   3:47 
+Então tá bom, então, nas próximas reuniões de cadastro de produto, tabela de preço, et cetera, eu já vou passar a incluir vocês também. 
+Eu faço uma primeira, não é com vocês para passar todo o contexto histórico do e o detalhe, para depois a gente começar a ter conversa com as áreas de negócio, está? 
+
+ 
+Danilo Macedo   4:05 
+Tá bom? 
+
+ 
+Oscar de Rooij   4:06 
+Bom, tabela única de preço. Hoje a gente tem mais de 12 tabelas de preço, então já foi feito um desenho. Eu já conversei com o Júlio e o Fernando da FTD sobre essa estrutura. Eu tenho uma conversa agendada para a com a com a Mônica do totus. 
+Para entender como é que isso funciona no tots e na semana que vem eu já IA juntar eles. Então, semana que vem, inclusive, eu já posso trazer vocês para a gente discutir isso daqui. A tabela única de preços, a gente já entendeu a raiz do problema. Então agora é uma, agora é uma etapa de desenho de solução. 
+Então vamos, juntos com a equipe de Totvs ECRM, discutir como que a gente tem que desenvolver uma, como que seria uma solução para a gente não ter mais de 12 tabelas de preço, tá? 
+Revisão dos processos de cadastro de contas, tá? Isso aqui depende. Deixa eu a higienização do aqui. Deixa eu botar isso aqui embaixo. 
+Só para deixar organizado. 
+Então, depois que eu revi o cadastro do produto, eu vou ter que rever o processo do cadastro de produto. Isso aqui não vai ter tecnologia, isso aqui é com as áreas de negócio, com os novos Campos, do jeito que a gente definiu como que os sistemas vão se comportar. 
+A gente também vai definir qual que é o processo de cadastro de novos produtos e aí a área de negócio vai ter que passar a operar dessa forma, tá? Então isso aqui não é de tecnologia. Revisão do processo de cadastro de contas e a higienização dos cadastros de conta. Eu vou deixar aqui. 
+Separado. 
+Só para cadastro de contas, tá? 
+Porque ali em cima eu já falei do eu já falei do produto. 
+Esse aqui. 
+
+ 
+Danilo Macedo   5:58 
+Eight. 
+
+ 
+Oscar de Rooij   5:59 
+E esse aqui? 
+Basicamente, essa alinhar CNPJ entre CRME tots. A Karina que está me ajudando com isso, a gente tem a tem que fazer uma extração do tots, uma extração do CRM. Nós temos que entender os gaps. 
+Clássico, o que está lá, que não está aqui, o que está aqui, que não está lá, os que estão nos 2, os Campos que deveriam ser iguais, quais são que não estão iguais? E a partir do momento que não estão iguais, qual que é o Golden source? E aí replicar? Então é um trabalho inteiro de higienização. 
+A gente espera muitos problemas aqui. 
+Então, o resultado desse trabalho, ele vai sim precisar de correção macifa, que vai ter que ser muito bem planejada, não só tecnicamente, mas também com as áreas de negócio e com as áreas que constroem os BIs. Então vai ter impacto. 
+Então a gente vai ter que fazer isso muito bem orquestrado. O fato é hoje que, por exemplo, o Totvs, ele tem livreiros, o CRM não tem e deveria ter. Você tem um cadastro que acontece sem uma ordem muito bem definida, porque eu já ouvi gente falando que cadastra no CRM e espera 9 da noite para. 
+
+ 
+Danilo Macedo   6:56 
+E. 
+
+ 
+Oscar de Rooij   7:12 
+Para cadastrar no Totvs e sincronizar. E tem gente que cadastra no Totvs e depois cadastra no CRM e aí depois espera o vínculo acontecer. Então, o cadastro tem que acontecer em dois lugares para depois ter uma automação que vincula os dois. Então, depende dos dois estarem já com os mesmos dados para depois uma integração só fazer o vínculo. 
+
+ 
+Danilo Macedo   7:30 
+Entendi. 
+
+ 
+Oscar de Rooij   7:32 
+E é e é claro que essa operação ela vai ter que ser melhorada. E é a definição dessa melhoria. Ela é com a área de negócio para falar como é que deve ser feito o cadastro de uma conta. Quem é responsável por isso é o gerente da filial. 
+É o consultor, é uma área administrativa, dado que a gente tem o censo, dado que a gente pode ter outras Fontes para fazer o cadastro dessas escolas. Então esse processo vai ser revisitado. Mas uma coisa a gente sabe que é que OCRM, ele é a entrada dessas contas. 
+E hoje isso não acontece, pode falar, João? 
+
+ 
+Marcio Jovanello   8:08 
+Boa, querido, boa você tocar nisso daí que é bem legal. Esse assunto de conta é. E aí, aí eu estou falando do meu time avanade, tá? É muito importante a gente obedecer o time EAE. 
+e a entrega do processo do Oscar. Então assim, é até bom, você colocou as cores caixinhas, que é legal, porque eu acho que a gente tem que ter um board de upstream, aonde que está o momento e aonde a gente entra ali na parte do refinamento ou nas escritas das histórias ali para apoiar. 
+Ótimo, mas a questão de conta que eu entendo, Oscar, eu já tentei mexer nesse balaio, tá? Eu já tentei. Mas assim, o que eu é que eu acho é, eu acho que nasce no CRNOCRM provê a fonte de informação para o totus. 
+
+ 
+Oscar de Rooij   8:47 
+Imagino. 
+
+ 
+Marcio Jovanello   8:57 
+É o que a gente, mas vai ter um rolê aí com a área de negócio, você vai, você vai, você vai esbarrar, eu posso te ajudar ali, você me chama, eu posso, que eu já arrumei algumas brigas. E aí, e aí pro pro, pro pro pessoal da avanade, só para vocês fazer uma referência. O Danilo acho que sabe um pouco mais disso. 
+
+ 
+Oscar de Rooij   9:03 
+Tá bom? 
+
+ 
+Marcio Jovanello   9:12 
+Danilo é aquele Monte de ETL que estava esparramado para ficar fazendo esse tipo de comportamento acontecer. Ora no tótus, então, ora, quem foi no tótus, ora no tótus, a gente traz para OCRME, ora no tótus lá, o gerente da filial colocou no CRM. 
+A gente precisava propagar o toque, então eu tenho 2 ETLS, um winda e um winda, para que a coisa seja sincronizada. Mas eu acho, Oscar, o que pega nesse ponto é que a gente não tem um owner information, um responsável pelo cadastro, então fica muito. 
+
+ 
+Oscar de Rooij   9:41 
+É. 
+
+ 
+Marcio Jovanello   9:44 
+É dissolvido nas áreas e aí cada um faz uma coisa. E aí a gente fez um ET lizão lá para o Leo ter uma visibilidade das contas que estão ativas e todo fazer o gerenciamento ali das contas. Então é, eu só queria é reforçar. 
+Aí principalmente pro pro pro pro meu time tech aqui da avanade, que não está nos ajudando. Que é isso, Danilo? É olhar esse processo também com carinho de vocês, participar muito perto do Oscar, porque eu entendo que isso é uma fonte de informação. SRME nessa tacada de a gente entender o processo nascendo num CRM. 
+Com alma information, enfim, a gente mata OZTLEA gente pode propor um serviço para se comunicar com o tots para consumir isso no tots. Então é esse tipo de situação do processo que vai é trazer insights para a gente, porque a gente também desidrata. 
+Do que está sobrando na nossa cadeia hoje, está bom? 
+
+ 
+Danilo Macedo   10:38 
+Beleza, beleza, tá bom. É esse processo de ter que criar nos 2 para sincronizar. É esquisito. Poderia criar em um só e replicar para o outro e. 
+
+ 
+Marcio Jovanello   10:40 
+É isso? 
+Não. 
+Total, tentei mexer nisso e foi uma. Foi uma Batalha que eu não venci, tá? Mas agora o Oscar tá aí, graças a Deus, fazendo um bom trabalho aí, o trabalho liso e eu tenho vocês agora como braço aí pra pra apoiar na execução. 
+
+ 
+Danilo Macedo   10:49 
+Yes. 
+Yes. 
+So. 
+Mhm. 
+
+ 
+Marcio Jovanello   11:03 
+Desse processo é isso, tá? 
+
+ 
+Danilo Macedo   11:04 
+E eu lembro. 
+Tá, eu lembro que tinha um processo que criava contas em massa, que é todo ano. Vocês pegam lá da lista do IBGE, não é das escolas públicas, é do é do censo. Isso é do censo. E acho que tinha também. 
+
+ 
+Marcio Jovanello   11:13 
+Sim, tem um sensozinho lá que a gente puxa. 
+
+ 
+Danilo Macedo   11:22 
+Escolas particulares, uma outra base que vocês buscavam, mas ainda assim tem cadastros manuais. 
+
+ 
+Marcio Jovanello   11:26 
+É. 
+Tem, mas depois a gente, eu acho que a gente vai se debruçar nesse processo. Eu acho que o Oscar vai se debruçar ainda um pouco mais. Eu acho que é bom. E aí, Danilo, você, como arquiteto, é estar muito perto. Eu acho que a gente tem que estar muito perto para o Oscar, para a gente. 
+
+ 
+Danilo Macedo   11:35 
+Mhm. 
+
+ 
+Marcio Jovanello   11:45 
+Apoiar a gente precisa entender esse é esse processo. E aí eu acho que aí você vai ter ali uma, você tem que ter uma habilidade de entender o as is e aí propor o to be, sabe? 
+E aí é aquilo, cara, é o processo. Não vai ter mais porque o time lá do editorial que faz o cadastro de um determinado fornecedor faz por lá, o outro, porque tá na filial, faz pelo CRM. 
+Eu acho que a gente vai sair desse processo com papéis e responsabilidades. Oscar, me corrija se eu estiver errado e vai ter um owner information. E aí a gente vai determinar, cara, para isso aqui ter uma vida é para ter uma saúde nesse processo. 
+Esse aluno information é responsável por cadastro e concentração de cadastros. É para esse cenário. E aí a gente vai ter esse cara pra pra fazer, porque a gente tem e o Oscar, o Oscar já sabe disso. A gente tem muitos problemas de que a gente não tem um personagem de cadastros. 
+E aí cada um faz um pouquinho, só que esse cada um faz um pouquinho, nasce em ou e nasce em muitos outros sistemas. Nasce em totus, tem uma situação lá que acontece que você, que eu lembrei aqui, tem uma coisa que acontece na iônica, que a iônica dá uma, dá um, dá um, dá um input, não sei. 
+RM enfim vem de todos os lados então acho que o processo vai vai preservar o fluxo sabe e vai trazer ali as responsabilidades é para a empresa né E aí eu acho que a gente vai inclusive ele já esses personagens né o ao meio information enfim 
+Mas é, mas é um assunto bastante aí que a gente vai precisar descer no detalhe, está bom? 
+
+ 
+Danilo Macedo   13:30 
+Está bom, beleza. 
+
+ 
+Oscar de Rooij   13:36 
+Beleza? Então aqui pode falar. 
+
+ 
+Marcio Jovanello   13:36 
+Um. 
+
+ 
+Danilo Macedo   13:36 
+Ok, então você tá no item de revisão dos processos de cadastro de conta e higienização. Bom, eu vejo que a ação tecnológica na revisão é por conta que talvez a gente tenha que aumentar ali as informações que tem no cadastro de conta, integração. 
+
+ 
+Oscar de Rooij   13:44 
+Isso. 
+
+ 
+Danilo Macedo   13:55 
+São nova, ajustar e. 
+
+ 
+Oscar de Rooij   13:56 
+Exato. 
+Arrumar OETL, tirar esses ETLS, não é ou arrumar esses ETLS para ele ter a manutenção também, sincronizar os dados. 
+
+ 
+Danilo Macedo   14:00 
+Bom. 
+So. 
+Tá bom, então? 
+
+ 
+Marcio Jovanello   14:05 
+Eu não sou a favor de ETL, tá só para vocês. Então, quem está comigo mais tempo sabe. Eu, quando eu cheguei, tinha 140 ETLS, hoje a gente tem 35 ETLS. Então a ideia é a gente desidratar, tá bom? Quanto antes de desidratar para a gente ter um processo mais. 
+
+ 
+Danilo Macedo   14:20 
+Elisa. 
+
+ 
+Oscar de Rooij   14:21 
+É um bom, um bom indicador. Se você quiser acompanhar isso daí, já vamos mapear 35. Quantos são e vamos acompanhar quantos a gente vai deletando ao longo do tempo. 
+
+ 
+Marcio Jovanello   14:23 
+Ruído. 
+Hhh. 
+
+ 
+Danilo Macedo   14:31 
+É. 
+
+ 
+Marcio Jovanello   14:32 
+É isso, mas eu tinha 140, Hein? Tinha 140, há 1 ano e 10 meses atrás, Hein? 
+
+ 
+Oscar de Rooij   14:35 
+Já diminuiu, já diminuiu. Excel também. Excel é uma boa a gente conseguindo ter uns indicadores de Excel aí que a gente está eliminando. 
+
+ 
+Marcio Jovanello   14:39 
+Muito bom, muito bom. 
+
+ 
+Danilo Macedo   14:42 
+É verdade? 
+
+ 
+Marcio Jovanello   14:44 
+Excelente, excelente. 
+
+ 
+Danilo Macedo   14:48 
+OKE aí, Oscar, vocês já tem uma definição se, por exemplo, essa é a ordem de execução de tanto a gente refinar, fazer o Discovery, refinar, desenvolver, é essa ordem mesmo? 
+
+ 
+Oscar de Rooij   14:57 
+Sim. 
+Sim. 
+É da esquerda para direita. 
+
+ 
+Danilo Macedo   15:05 
+Tá. 
+
+ 
+Oscar de Rooij   15:07 
+Então assim é o grande bloco do MVP, depois o grande bloco da onda, um pós MVP, depois o do funil comercial segunda onda e depois esses outros já começa a ficar menos. Então até aqui, segunda onda, isso aqui já está definido, tá? 
+
+ 
+Danilo Macedo   15:07 
+Okay. 
+
+ 
+Oscar de Rooij   15:22 
+Essas 3 grandes fases, OMVP. 
+A onda um e esse funil comercial segunda onda, então esse daqui eu posso onda 2 funil comercial só para deixar no padrão, tá? Então isso já está, tá bom essa fase aqui da onda um ela é grande, então ela e são coisas. 
+
+ 
+Danilo Macedo   15:30 
+Mhm. 
+Tá. 
+E. 
+Mhm. 
+
+ 
+Oscar de Rooij   15:45 
+Diferentes que estão agrupadas aqui, eu vou entrar num detalhe. 
+
+ 
+Danilo Macedo   15:48 
+Tá esse o onda um pós MVP, ele tem vários itens aí dentro também já está priorizado da esquerda para direita nessa ordem. 
+
+ 
+Oscar de Rooij   15:57 
+Os. 
+
+ 
+Danilo Macedo   15:58 
+Ou vocês não pensaram nisso, ainda não definiram isso? 
+
+ 
+Oscar de Rooij   16:01 
+É que tem muita coisa aqui que pode andar em paralelo, tá? Então, por exemplo, é, vamos lá, não. 
+Não está em ordem. Resumindo, vai ter que ser basicamente, a gente vai ter que decidir, tá bom, mas o pacote está definido. Qual é o objetivo desse pacote? Relançamento do CRM. 
+
+ 
+Danilo Macedo   16:10 
+Tá. 
+Tá. 
+
+ 
+Oscar de Rooij   16:25 
+E aí é claro que como esse pacote é grande, a gente vai ter que entender quando que cada coisa sai, porque como que eu estou pensando nessa dinâmica? Eu estou fazendo os laranjinhas, os laranjinhas, eles vão com vocês participando comigo. Vai ficar melhor esse processo, porque. 
+Com usa laranja. Qual a especificação? Eu vou pronta. Com as regras definidas, a gente entra numa etapa de UX barra design, certo? E também da escrita das histórias, que é onde a kevelin e o Rodrigo vão me apoiar. Só que vocês, como arquitetos, já em. 
+E, é claro, curva de aprendizado para entender OCRM. Mas vocês já vão entender, pela especificação e pelas conversas, qual que é a complexidade daquilo que a gente está mexendo, porque o que a gente vai precisar trazer é semanalmente. Isso é toda reunião de quinta-feira. 
+Onde a gente tem um comitê tático e também toda terça-feira, onde a gente reporta para a equipe de negócios e mensalmente, quando a gente fala com a diretoria, a gente vai ter que trazer o que é que já está mapeado e já tem duração. Então, por exemplo, digamos que esse pacote aqui de 3 interfaces. 
+Ele tem ali uma duração de 1 mês e meio, 2 meses. Então essas durações vai ser o nosso trabalho de entender a complexidade e começar a ver. Esse aqui dura 2 meses. Putz, a gente está em março agora, vamos começar agora, vamos começar daqui a pouco. 
+Aí é cronograma. 
+
+ 
+Danilo Macedo   17:48 
+Mhm. 
+
+ 
+Oscar de Rooij   17:49 
+É só que um dos fatores para decisão do cronograma é justamente a duração, porque se a gente vê que alguma coisa é mais rápida e grande e traz um grande valor capaz da gente colocar alguma coisa na frente, então a duração é um fator também de um critério de decisão. Então, aqui, por enquanto, você vai vendo que. 
+
+ 
+Danilo Macedo   17:59 
+Mhm. 
+Aham sim. 
+
+ 
+Oscar de Rooij   18:06 
+Tudo que eu consigo paralelizar, eu já vou, eu estou paralelizando. Então tem conversas acontecendo aqui na tabela de preços, cadastro de produto e de contas, com a ajuda da Karina. Aí eu tenho aqui a parte de oportunidades. Eu estou revisando todos os Campos da oportunidade nesse momento. 
+E eu estou entendendo o que é que vai ter que sair, o que é que vai ficar e o que vai ter que ser revisto. E eu estou fazendo isso primeiro internamente, com um time de CRM, que aí eu tenho o Henrique e a kevelin e o Eduardo. Mas eu vou ter que falar com a equipe de negócios e entender como que eles percebem tudo isso. 
+E aí eu vou ter que juntar tudo e definir uma especificação. E a gente vai ter que ter. Aí aqui a gente vai ter um trabalho bem grande para fazer a aprovação. Já está pronto, eu tenho uma especificação aqui pronto para mostrar para vocês. E aí assim a gente vai, tá? Então é sempre assim, nesses outros comitês, a gente tem que trazer as durações. 
+
+ 
+Danilo Macedo   18:41 
+Mhm. 
+
+ 
+Oscar de Rooij   18:58 
+E é claro que a partir do momento que a gente define que vai começar, aí a gente tem ali o cronograma já não é sempre prevendo aí pelo menos uns 2 meses para frente. 
+
+ 
+Danilo Macedo   19:06 
+Uhum, tá bom, você tem isso em um em algum outro formato, por exemplo, numa lista no Excel, porque se não a gente a gente monta aqui para. 
+
+ 
+Oscar de Rooij   19:16 
+Não, isso aí vai direto para as histórias, tá? Então no DevOps é, eu tinha conversado com a Kevin antes de vocês chegarem da gente organizar por funcionalidades épicos e aí a gente tenta definir qual que é o padrão, tá? Por exemplo, simulador comercial interfaces pode ser um épico. 
+
+ 
+Danilo Macedo   19:19 
+Tá. 
+Tá. 
+
+ 
+Oscar de Rooij   19:33 
+E aí cada um desses aqui pode ser uma funcionalidade. Quando eu vejo propostas, pode ser um épico e cada um desses são funcionalidades. Não sei, tá? É entender, mas é super importante isso que você está falando, porque a gente tem que garantir que a informação é a mesma em qualquer. 
+
+ 
+Danilo Macedo   19:42 
+Done. 
+Mhm. 
+
+ 
+Oscar de Rooij   19:50 
+Ferramenta de gestão essa aqui é a visualização dos executivos, comitê tático, comitê diretivo e a equipe de negócio está lendo o quê? Está lendo etapa um dados da proposta. 
+
+ 
+Danilo Macedo   19:51 
+Sim. 
+Mhm. 
+
+ 
+Oscar de Rooij   20:04 
+Etapa 3 benefícios e patrocínios. É isso que eles estão lendo. Essa daqui, esse daqui é o diagrama mais visual utilizado pela equipe de negócios. E eu tenho zero problemas em rebatizar nomes aqui, tá? O importante é a gente ter claro o que é esse empregável que vai dentro dele e ter isso refletido dentro. 
+Do devops, que vai ser a ferramenta de controle para a gente não ficar se perdendo em terminologia ou em nomes diferentes. 
+
+ 
+Danilo Macedo   20:26 
+Mhm. 
+Two. 
+Tá bom aí? Bom você ter falado disso para alertar. Não sei se vocês já estavam pensando em cadastrar, mas a gente é dar uma segurada só porque a gente está configurando um board para esse projeto que vai ser baseado no que a gente roda lá no iônica. 
+É porque a gente já tem vários controles em cima disso. Dashboard, aí a gente é. O albert pode trazer uma atualização, se como que está o andamento disso, quando deve estar pronto, que aí a gente cadastra tudo nesse board já e aí fica para todo mundo. É no é um board na no ambiente FTD mesmo. 
+
+ 
+Marcio Jovanello   21:06 
+OK. 
+Boa é Danilo, é eu não. Eu não trouxe essa informação para o Oscar, eu trouxe para o meu time, mas o que a gente comprou nesse pacote de serviços? 
+Ou que a avanade ofereceu nesse pacote de serviço contratado, tá? É o control Tower, que é um modelo ali que ele isso você já conheceu porque eu IA falar meninos de repente. 
+
+ 
+Oscar de Rooij   21:24 
+É, eu conheci. 
+Elvino kickoff. 
+
+ 
+Marcio Jovanello   21:29 
+Exato. Dá um banho de loja para o Oscar e principalmente para o time do Mendela. Dá um banho de loja para a gente, para a gente, para a gente combinar o jogo. Mas eu quero experimentar, tal Oscar. Então vamos tentar ir aí, Kevin, enfim. 
+
+ 
+Danilo Macedo   21:36 
+Mhm. 
+
+ 
+Marcio Jovanello   21:45 
+Se vocês tiverem dificuldades ali, eu acho que a kemily já teve, eu acho que com alguém da vanade aí alguma discussão sobre, mas vamos insistir nesse nesse serviço, tá bom? 
+
+ 
+Falante 1   21:55 
+Ô Jova, é bom dia, Albert, é sobre esse tema, é, eu até puxei, mandou uma mensagem aqui pra Karina, eu tava, eu acho que a kevelin deve conversou comigo sobre justamente esse ponto dos boards, é como ele vai ser criado. E aí a gente pode fazer em uma outra. 
+
+ 
+Marcio Jovanello   21:58 
+OPA. 
+
+ 
+Falante 1   22:12 
+Reunião privada é, a gente abriu um chamado para criação de board, que é um projeto novo, para a gente justamente conectar o é o control tower, certo? É só que aí é esse chamado. Ele até eu entendi, até onde eu entendi, ele não tem. 
+
+ 
+Danilo Macedo   22:22 
+Just over. 
+
+ 
+Falante 1   22:31 
+SLA. E aí eu queria ver contigo em outro momento se a gente poderia dar uma agilidade pra que eu possa de fato transformar e conectar. E aí com pouco tempo eu consigo já apresentar e fazer um, como é que vai funcionar a forma de trabalho, etc. Aí vai ficar mais visual. E aí a gente não. 
+Não tem mais nenhum atraso. Eu conversei com a Kevin ontem, ela me falou assim, vamos precisar, porque não tem. E aí de ontem para hoje eu estou tentando puxar vocês para falar. Como IA ter essa reunião, eu IA deixar só no final. E aí eu resolvi falar agora justamente porque você puxou esse tema, tá? 
+
+ 
+Carina C. P. Rinaldi   23:07 
+Robertson. 
+
+ 
+Falante 1   23:09 
+Oi, Karina. 
+
+ 
+Carina C. P. Rinaldi   23:09 
+É, oi, Albert, você já abriu um chamado, é isso? 
+
+ 
+Falante 1   23:14 
+Eu pedi para a kevelin abrir chamada que eu estou sem usuário também. E aí ela abriu, eu posso, quer que eu te mandando privado, por favor? 
+
+ 
+Carina C. P. Rinaldi   23:15 
+Is. 
+Tá. 
+Eu quero. Era isso que eu IA te pedir. Se você puder me mandar no privado, se abriu o chamado, se você tem um número, me passa isso em detalhes, por favor, porque aí eu vou atrás disso para a gente agilizar. 
+
+ 
+Falante 1   23:28 
+Tá bom? 
+Pronto, eu nem passei. Eu falei, só que eu queria falar contigo, mandei a mensagem, porque eu IA te passar o contexto todo. Mas como veio esse tema, eu já falei aqui agora pra aproveitar, pra acelerar, tá? Eu te agradeço. Vou te mandar aqui no privado. 
+
+ 
+Carina C. P. Rinaldi   23:35 
+Stop. 
+Isso. 
+Não é, me manda no privado e aí eu já corro atrás disso para a gente agilizar esse assunto. 
+
+ 
+Oscar de Rooij   23:50 
+Uma dúvida, esse ambiente, ele vai ser completo com CIC Divos, controles de pipeline, vínculo com código e tudo, ou é só o control Tower e as histórias, funcionalidades e épicos? 
+
+ 
+Falante 1   23:50 
+Tá OK, obrigado. 
+
+ 
+Carina C. P. Rinaldi   23:51 
+Imagina. 
+
+ 
+Oscar de Rooij   24:03 
+Unidades e épicos. 
+
+ 
+Falante 1   24:04 
+Bom, a gente pode atualizar, a gente pode. 
+Aliás, vai ser, vai ser até não entendo pelo modelo é completo os pipelines. 
+
+ 
+Danilo Macedo   24:15 
+Não, Elbert, a parte de sair CID não, porque a gente vai usar o que já tem hoje que o Júlio mostrou para a gente. 
+
+ 
+Falante 1   24:20 
+I. 
+Então, beleza, é, foi a conversa de ontem, foi a conversa de ontem, então é isso. 
+
+ 
+Danilo Macedo   24:22 
+Não, ele vai ser a parte de gestão mesmo. 
+
+ 
+João Carlos Figueirôa de Castilho   24:24 
+E repositórios, repositórios também. 
+
+ 
+Danilo Macedo   24:25 
+É. 
+
+ 
+Marcio Jovanello   24:26 
+Ô, é, ô, ô, Danilo, é até uma provocação minha, tá? É uma provocação minha, porque assim a gente tem uma prática atual, não significa que a gente não possa discutir para a gente ter excelência. E aí a gente precisa dar uma entendida. O que eu falei para o Rodrigo até. 
+Até antes da gente, nas discussões de projeto tudo, a gente só precisa ter o cuidado de preservar, porque eu tenho uma histeria. Isso que está acontecendo e os meninos estão desenvolvendo. Mas se a gente entender que a gente tem um modelo mais atual, mais moderno, enfim. 
+A gente aparta e a gente experimenta, porque o CICD é uma coisa que eu gostaria muito de ver acontecendo. Então assim, precisa só precisa só ter essa provocação de que a gente não adotar exis para tudo, por conta. 
+O que eu pedi lá foi um cuidado de preservar o que eu estou fazendo na esteira atual, mas isso me enche os olhos, disse ICD. E se a gente tiver que ir lá montar toda uma infraestrutura de fazer de apartar para a gente experimentar o melhor modelo? E aí, vocês contam comigo porque eu faço. 
+Entendeu? Então essa é uma provocação que eu estou fazendo para vocês, tá? 
+
+ 
+Danilo Macedo   25:35 
+Mhm. 
+Tá bom, tá bom? 
+
+ 
+Oscar de Rooij   25:39 
+É, e agora, na era dos agentes de desenvolvimento, o ambiente de CICD, ele é fundamental para a gente ter extrair o máximo das IAS. 
+
+ 
+Marcio Jovanello   25:50 
+Mas assim, eu acho que pode ser uma outra pauta, está, mas eu só vou deixar OA nota aqui. O recado está. 
+
+ 
+Danilo Macedo   25:53 
+Mhm. 
+Beleza. 
+
+ 
+Oscar de Rooij   26:00 
+Quer você ia comentar alguma coisa? 
+
+ 
+Kevellin dos Santos Corrado   26:03 
+Não era exatamente o que o João acabou de falar. 
+
+ 
+Oscar de Rooij   26:06 
+Tá bom. 
+Bom, é. Então, voltando aqui para o nosso diagrama, tá? Eu acho que tem um ponto aqui. É, terminamos o bloco da faxina. Posso passar para o próximo? 
+Beleza é acho que um ponto importante aqui para trazer é a relevância do change management, tá? E vocês vão fazer parte disso, porque a gente vai ter que sincronizar a criação dos comunicações. 
+
+ 
+Danilo Macedo   26:20 
+Much. 
+
+ 
+Oscar de Rooij   26:34 
+A definição das Datas de release, a criação dos tutoriais com o processo de desenvolvimento. A gente não pode fazer deploy em uma data sem aviso prévio para os consultores, tá? Então, com a Fabi, precisamos ter uma conversa para entender como que vocês no. 
+Kanban de vocês, ali no devops de vocês, onde que a gente sincroniza a criação desses materiais? Porque enquanto eu estou em Discovery, eu posso fazer alguma coisa, eu posso ter um roteiro, eu posso imaginar quantos manuais eu posso ter, mas depois, quando eu estou em design, eu posso já começar a ter algo mais detalhado. 
+E depois, quando eu estou em desenvolvimento e homologação, eu posso ter de finalizar os meus tutoriais, eu posso finalizar meus materiais de comunicação. Hoje a gente tem mais de 400 consultores. Eu vou generalizar e eles não gostam do CRM. Uma das principais razões. 
+É porque o CRM muda do nada. Ninguém sabe de onde veio alguma mudança, ninguém sabe o que foi que corrigiu e muitas vezes aquilo que era para corrigir, eles não entendem. Aí eles entendem que dificultou, quebrou, etc. Existe aqui uma preocupação gigantesca com a perceção de valor que os consultores. 
+Vão ter de tudo o que estamos fazendo. Se os consultores se tornar continuarem detratores, nós fracassamos. Então aqui a gente vai ter que trabalhar muito forte essa parte de change até a definição desse escopo nessa ordem. 
+Ela tem uma lógica, tá? A lógica é a seguinte, jogo, eu só vou passar rapidinho pela lógica das 3 fases. 
+OMVP, ele nem eu não estou nem falando para os consultores que eu estou melhorando a vida deles. Eu estou mais melhorando a vida da anja que está usando CRM, porque o consultor ele delega para anja. Eu estou melhorando um pouco da vida dela, porque aí a anja ela dá. 
+Nossa, olha aqui, melhorou, eu estou fazendo as coisas, mas ela comenta com os consultores. É claro que tem alguns consultores que usam CRME, já vão ver, tá? Até porque a gente vai fazer piloto e tudo mais. Só que assim, nada na FTD é padrão, então você sempre vai ter várias coisas acontecendo ao mesmo tempo. Então aqui a gente está melhorando um pouquinho a vida da anja, sem inteligência nenhuma, do jeito que você já conhece. 
+Aqui na onda um pós MVP, eu vou melhorar ainda mais a experiência da anja. Eu vou começar a melhorar bem a experiência do consultor, porque, além da inclusão de produto, as outras telas do simulador também estarão prontas. E é pela primeira vez o gerente e o coordenador. 
+Comercial, da filial e da central da matriz. Eles vão ter relatórios real time do CRM confiáveis. É a primeira vez que eles vão ter isso, certo? Eu vou depois melhorar o processo de aprovação, que vai ficar mais rápido e que vai melhorar ainda mais. 
+A vida deles. Então isso aqui já vai trazer um up, um up que nós acreditamos ser suficiente para um relançamento. Então, só que eu não estou nesse pacote impactando o jeito que ele trabalha. 
+Não estou fazendo isso. Foi postergado para onda 2. A onda 2 é quando eu vou fazer tudo aquilo que um consultor pode não gostar. Ele vai ter que criar o compromisso, coisa que ele não faz hoje. Ele vai ter que colocar resultado do compromisso. 
+
+ 
+Danilo Macedo   29:53 
+Mhm. 
+
+ 
+Oscar de Rooij   29:56 
+Ele vai ter que a gente vai ter auto interligação dos registros, a da oportunidade da proposta. Não pode ter proposta solta. Você tem um compromisso, ela não pode mudar o status Do Nada. O consultor não faz isso. Quem faz a autorização de status de estágio é o sistema com base na jornada. 
+Eu vou impactar a jornada do que o que a operação do dia a dia dele. Mas com base em quê? Com base em tudo que a comercial liderança comercial definiu como a forma que ela quer fazer toda essa gestão. Então isso aqui foi postergado para. 
+
+ 
+Danilo Macedo   30:27 
+Mhm. 
+
+ 
+Oscar de Rooij   30:30 
+Ele ter a chance de experimentar tudo aquilo que a gente está entregando antes e criar um pouco de motivação e engajamento e acreditar no que estamos fazendo. Porque quando a gente chegar para ele e falar, eu vou botar compromisso e tarefa para você. Ele tem toda a chance do mundo de chegar e falar, nem a pau, eu tenho que ficar puto. Ele tem toda essa. 
+Chance, mas se ele dá uma chance para gente por causa do sucesso anterior, a gente ganha um pouco mais, tá? Então tem uma lógica, tá? E a forma como a gente vai levar essa transparência de como as coisas estão evoluindo. 
+De, sei lá, pegar até testemunha. Então é gravação de consultor falando do piloto e colocando numa newsletter junto com uma release, sabe? Tem a ver com o fator humano, tá? Esse vai ser um fator crítico desse projeto. Então eu só queria. 
+Chamar bastante atenção aqui que esse daqui vai ser o primeiro. A gente está preparando o portal, a gente está preparando quem são os públicos alvo. Então, assim, podemos ter uma sessão mais específica sobre isso com a Fabi para a gente casar essas coisas. 
+Terminei jogo, pode falar. 
+
+ 
+Marcio Jovanello   31:38 
+Não imagina, tudo bem, eu vou aproveitar aí sua fala. Então, super importante. E o e o change? A gente está discutindo com uma empresa, tá? Porque a gente entende dessa tudo que o Oscar é, afirmou. Aí a gente tem uma preocupação. 
+De como leva a mensagem, em que momento leva a mensagem, porque a gente vai precisar virar um jogo. Aí quando a gente fala de consultor, principalmente filiais, tá? Então é isso. Então a gente está conversando com uma empresa também para ver. É até uma empresa. E aí eu posso abrir porque. 
+
+ 
+Danilo Macedo   32:04 
+Mhm. 
+
+ 
+Marcio Jovanello   32:10 
+Eles já estão aqui, eles estão fazendo um trabalho de excelência para mim, lá no projeto da Adobe, lá no projeto da Adobe do editorial. Então a gente, a gente tá, começamos umas conversas bastante tímidas ali com o Vitor. E aí a semana que vem, eu estando em São Paulo também. 
+Pode ser que a gente que a gente potencialize isso, mas existe uma vontade nossa aqui, projeto de ter ali. É um agente para tratar esse change, tá bom? 
+
+ 
+Danilo Macedo   32:39 
+Legal e aí entra treinamento também. 
+
+ 
+Marcio Jovanello   32:39 
+Era isso? 
+
+ 
+Oscar de Rooij   32:42 
+Tutorial, material escrito, treinamento. 
+
+ 
+Marcio Jovanello   32:42 
+É isso, é isso, Danilo. 
+
+ 
+Danilo Macedo   32:44 
+Obrigado. Tá bom, é isso. É importante. Já no outro acesso que a gente fez, a gente falou muito disso, não é? Jovan era importante. 
+
+ 
+Marcio Jovanello   32:45 
+É isso? 
+Sim, muito. 
+
+ 
+Oscar de Rooij   32:55 
+Boa, então indo aqui agora para onda um pós MVP, tá? Aqui a gente tem algumas possibilidades. Então, na verdade, são várias entregas que culminam numa possibilidade de relançamento. 
+
+ 
+Marcio Jovanello   32:56 
+Okay. 
+
+ 
+Oscar de Rooij   33:11 
+Não necessariamente isso vai ser algo a ser decidido no comitê tático de quintas-feiras, com o Jova, com o medela e com os arquitetos daqui da avanade. A gente vai definir se precisa terminar tudo para relançar ou se a gente faz um lançamento ali no meio. 
+Tá bom, mas vamos lá. 
+
+ 
+Marcio Jovanello   33:28 
+Ou podemos mudar o nome? 
+
+ 
+Oscar de Rooij   33:30 
+Do que Spartan? Sem dúvida. 
+
+ 
+Marcio Jovanello   33:31 
+Do esparta, vamos matar o esparta, porque eu matei o primeiro, está, eu matei o primeiro, tem 21 já foi, já vamos fazer, fazer um, vamos fazer um rebrand da marca. 
+
+ 
+Danilo Macedo   33:34 
+Hhh. 
+
+ 
+Oscar de Rooij   33:38 
+Então vamos, Spartan pode mudar, mas a ideia é essa, é mudar a cor, mudar a logo, mudar nome. 
+É isso aí, é isso. 
+
+ 
+Marcio Jovanello   33:48 
+Boa. 
+
+ 
+Oscar de Rooij   33:51 
+Aqui, então, eu separei em 4 blocos, está? 
+E lembrando da lógica de change, do porque a gente colocou a etapa de compromissos para depois, aqui a gente está querendo melhorar a experiência do consultor mais diretamente. Eu tenho e eu não preciso, outra coisa importante tá gente, a gente não tem, não precisa tanto da equipe comercial 
+para essas entregas enquanto que para fazer o compromissos e tarefas e tudo mais é óbvio que a gente depende totalmente da equipe comercial para garantir o a lógica toda tá então eu mapeei já boa parte disso mas ainda tem mais o que mapear 
+Tá bom, então aqui eu tenho. 
+No MVP, nós estamos fazendo a etapa 2. Essa etapa 2 que eu mostrei para vocês, certo? Essa interface aqui que está sendo feita, tá a etapa um, a etapa 3 e a etapa 4. Elas não estão sendo feitas. 
+Então elas vão ficar para essa etapa um, etapa 3 e a etapa 4 está bom? 
+Elas entram nesse pacote, porque aí eu começo a lembra que o consultor, por enquanto, ele vai ter que entrar no CRM para acessar a proposta, para preencher a primeira parte, e depois ela vai ter que ir para nova interface para incluir produto. É óbvio que a gente não quer isso. Então ele, quando ele quiser lidar com proposta, ele vai acessar essa plataforma. Ele tem que ter, consegue, ele tem que conseguir fazer. 
+Tudo da proposta dentro dessa interface. Então aqui a gente já traz as etapas 13 e 4, tá? Para ele conseguir fazer esse cadastro básico da proposta, para ele incluir os produtos, para ele fazer a configuração dos benefícios e patrocínios e também fazer a configuração das vendas. 
+Praticamente ele fechou a proposta aqui, tá? O que vai ficar de fora? A etapa 6 que está aqui. 
+Porque do 4 foi pro 6. Cadê o sim? O sim, que é a matriz de serviços que por enquanto a gente não vai fazer porque ela já funciona no CRM. Tem uma exportação da matriz de serviços, ela sai em Word. Isso resolve o problema atual, mas a gente vai ter que refazer isso só quando. 
+Toda a matriz de serviços for redefinida e isso está com a equipe de negócios. A gente não vai fazer isso agora. Talvez em algum momento, se essa matriz aí demora muito, tá, gente? A gente fecha AUXEAUI, porque o que vai mudar, na verdade, são as linhas que vão ficar lá dentro e o algoritmo para. 
+Você conseguir capturar essas informações, não é? Mas aí OXUI daria para fazer em algum momento. Só não coloquei porque já tem bastante coisa para fazer, tá? 
+
+ 
+Danilo Macedo   36:22 
+Mhm. 
+
+ 
+Oscar de Rooij   36:31 
+Então, interface. 
+Qual é o benefício? Quem ganha com isso aqui? Anja e consultor. 
+Estrutura de oportunidades e propostas. Quem ganha com isso? Liderança comercial. É a primeira vez que eles vão conseguir, no final disso tudo, relatórios comerciais baseados em propostas de oportunidades e metas comerciais. Hoje, toda a gestão. 
+Todo BI que a comercial usa e a segmentação que existe, ela é feita numa base paralela. Essa base paralela, ela consome dados do CRM de proposta, faz um monte de if else ali para corrigir um Monte de coisa, e aí você chega nesse Painel aqui. 
+É óbvio que isso daqui tem que sair de CRM, porque aqui eu estou falando de quê? De oportunidade. Eu estou falando do potencial de receita que esse cliente tem e eu estou falando da penetração que o meu minha proposta atual vigente tem dentro desse potencial. E aí eu tenho uma outra coisa que a gente tem que colocar na oportunidade, que é. 
+Beleza, eu tenho um potencial de 1000000. Eu tenho uma proposta com ele atualmente vigente de 100000. Quer dizer que eu vou de 100000 para 1000000 no ano que vem? Não para o ano que vem. Talvez eu vou tentar 200000 porque eu vou tentar incluir essas linhas de negócio, não é um. 
+Quanto que eu vou de fato buscar a soma das oportunidades desse campo 200000 que eu falei, ela deveria dar a meta, a meta orçamentária da equipe comercial, se eu pegar ano safra 2026 e somar todas as oportunidades? 
+Isso deveria ser igual a meta orçamentária da equipe comercial. E à medida que as propostas são fechadas, eu tenho o gap para essa meta, porque se era 200000 que eu queria com esse cliente e eu fechei 150, faltou 50. 
+Esse gap tem que estar visível, esse gap vai ter que ser coberto por alguma outra negociação e é isso que vai gerar valor para a equipe comercial. Então, quando eu falo de oportunidades. 
+É liderança comercial. Eles que tem que criar e gerenciar as oportunidades. Eles que tem que definir quanto que é a meta deles com aquele cliente especificamente. Hoje, no CRM, qualquer consultor, qualquer usuário consegue criar uma oportunidade. 
+Esse é o tipo de coisa que a gente vai ter que rever. Isso aqui é um trabalho. Hoje a oportunidade não é utilizado, tá, gente? Então é por mais que tenha ali uma trava hoje, atualmente tem uma trava de oportunidade de criar a proposta que aí a Camila viu numa das reuniões. 
+Os valores que são preenchidos na oportunidade são de zero utilidade. 
+O preenchimento da oportunidade não serve para nada. Ele está lá como uma burocracia que não agrega valor algum. Então é isso que a gente vai ter que mudar. A gente vai ter que mudar o conceito da oportunidade, o funcionamento da oportunidade, vai ter que higienizar as oportunidades para. 
+Fazer com que o 2026 e 2025, porque eu tenho que ser capaz de comparar pelo menos ano contra ano. Não vou falar de 2423-2221, mas 26 e 25 a gente precisa resolver as oportunidades, fazer o vínculo com as propostas. 
+Para a gente poder ter esses primeiros relatórios, tá, que vão sair diretamente do CRM. 
+
+ 
+Danilo Macedo   39:51 
+Mas vai ser você quer dizer relatórios baseados em dados de 2025? 
+
+ 
+Oscar de Rooij   39:56 
+De oportunidade 2025, oportunidades 2026 e propostas dos respectivos anos. Porque ele precisa, o comercial trabalha ano contra ano, né? Então eu posso limpar 2026 as oportunidades, mas aí qual que é o meu ganho se eu não limpei 2025 para fazer uma comparação? 
+
+ 
+Danilo Macedo   39:56 
+Mas vai ser válido? 
+É porque você falou que eles não estão usando, então muitas, a maioria das propostas não vai ter oportunidade nenhuma. 
+
+ 
+Oscar de Rooij   40:20 
+A gente vai ter que criar as oportunidades e eles têm os dados. Vai ter que então proposta que não tem oportunidade, que vai o algoritmo vai fazer, vai criar a oportunidade. Então, o que a gente revisar a oportunidade é meu, vamos revisar os Campos, vamos revisar a experiência da oportunidade. 
+
+ 
+Danilo Macedo   40:23 
+Entendi, entendi. 
+Entendi. 
+
+ 
+Oscar de Rooij   40:37 
+Aí nós vamos incluir Campos. Então, por exemplo, essa segmentação do nine box que eu mostrei para vocês, aí a gente vai ter que fazer uma atualização massiva disso. Vai ter que ter um algoritmo, vai ter que ter um depara muito robusto do que fazer em cada cenário para 2026. 
+E para 2025. E aí toda proposta tem que depender de uma oportunidade. Isso já existe. A gente só tem que ver, revisar isso para ver se não tem nenhum problema. E temos que ter os gatilhos de ganhos e perdas. Hoje está cheio de oportunidade aberta dentro do CRM. 
+
+ 
+Danilo Macedo   41:06 
+Mhm. 
+
+ 
+Oscar de Rooij   41:07 
+Não é? Então a gente tem que garantir que essas coisas abrem e fecham. 
+
+ 
+Danilo Macedo   41:08 
+Uhum. 
+Perfect. 
+
+ 
+Oscar de Rooij   41:13 
+Proposta já está mais Maduro. A gente já está inclusive em desenvolvimento ali no MVPA, gente já está higienizando esses Campos, tá? O que a gente não está fazendo? A gente não está planejando toda a revisão da dos status e estágios. 
+Isso está neste momento com o Eduardo, que também é da equipe de CRM. Ele tem todo um histórico jardianos. Ele está montando um Excel que fala, se a proposta tiver com essa combinação de status atual, ele vai para essa combinação de status novo. 
+Ele está montando e se depara para a gente, para depois a gente poder fazer uma atualização massiva desses estágios de proposta, tá? É claro que isso daqui é um impacto gigantesco, porque o que tem de BI que consome essas informações pela de proposta, com certeza a oportunidade. 
+Muito provavelmente não está, mas a gente vai ter que arrumar tudo isso daqui. E aí, claro, criar os primeiros relatórios. 
+That. 
+
+ 
+Danilo Macedo   42:11 
+Okay mhm. 
+
+ 
+Oscar de Rooij   42:15 
+Aprovação de propostas quando a proposta ela é toda, os produtos são incluídos, passam pelas etapas ali, na hora que o consultor manda para o cliente e o cliente aprova essa proposta, ela entra no fluxo de aprovação interno, são as alçadas internas. 
+As alçadas internas, já existe um algoritmo no CRM que calcula qual que é o nível que vai ter que aprovar, se é a diretoria executiva, se é a superintendente, se é só o gerente, já existe isso no CRM. Então, depois que esse fluxo acontece dentro do CRM, 
+A equipe, a anja da filial, ela pega as informações disso, ela tira print, ela monta OPDF, ela coloca no vulcano, que é um sistema de editorial que fizeram um puxadinho para captar a aprovação de outras áreas, financeiro, Controladoria. 
+E nesse fluxo, pasmem, a comercial tem que aprovar de novo. 
+Então você tem dupla aprovação, a aprovação de proposta, ela vem para resolver isso. Morre vulcano, que é esse sistema, traz todo o fluxo de aprovação para cá, para OCRM. E com isso, claro, tem que trazer esses usuários, porque eles também vão aprovar ali dentro. 
+Eles vão aprovar o workflow dentro do CRM, vão receber uma notificação, eles vão olhar as informações da proposta e eles vão aprovar essa proposta. Pode falar, João? 
+
+ 
+Marcio Jovanello   43:37 
+Não é bom, Oscar. É bom você ter tocado aí, porque o vulcano é uma dor latente aí na situação, principalmente para os diretores, tanto para o Alisson como para o Pintela, porque eles fazem dupla aprovação. E aí quando você entra até no vulcano, a tela do CRM está lá anexada. 
+Divulgando para eles aprovarem um negócio muito sem é print, muito sem lógica. E aí, Danilo, Rodrigo e companhia, a Camila. A Camila participou dessa discussão é quando ela esteve aqui com conosco. Então acho que já tem ali alguma coisa. 
+
+ 
+Oscar de Rooij   43:55 
+Print. 
+
+ 
+Marcio Jovanello   44:10 
+É um pouco já conhecida aí pela pela vanante, tá bom? 
+
+ 
+Oscar de Rooij   44:15 
+Inclusive, a Camila fez a especificação numa parte dela, pelo menos. 
+
+ 
+Marcio Jovanello   44:19 
+Você já estava aqui? 
+
+ 
+Camila Moraes   44:19 
+Sim. 
+
+ 
+Oscar de Rooij   44:21 
+Eu já estava. 
+
+ 
+Camila Moraes   44:22 
+Não. 
+
+ 
+Marcio Jovanello   44:22 
+Então, não talk, talk, é isso mesmo boa. 
+
+ 
+Oscar de Rooij   44:26 
+Então eu passei a limpo o documento que eu tinha enviado lá atrás, dado os avanços no simulador, eu passei a limpo. Eu tenho uma nova especificação para isso que já está pronta para as histórias. Por isso que eu deixei aqui marcado e a Kevlin já pode trabalhar nisso assim que ela chegar nessa prioridade. 
+É porque ela já tem as outras também ali para fazer nessa, nessa, nesse fluxo de aprovação de proposta que eu coloquei a etapa 6, que aí é a última tela ali da nova interface do simulador, porque essa é a tela que os diretores vão acessar. 
+Controladoria, produtos, quem mais for acessar? Porque aqui estão os big numbers que eles querem saber e querem conhecer. E aqui a gente vai resolver uma série de dores da diretoria, porque as informações que tem hoje no CRM, elas não são suficientes para uma aprovação. 
+Eles têm que ficar pedindo informações a mais, tem que conversar com consultora. Não é fácil, não é? Não é rápido tomar decisão. Tem alguns números faltando que a gente vai poder ajudar. 
+Então, uma coisa é. 
+Considerando as políticas atuais, esse cálculo de alçadas que já existe, eu matar o Vulcano e trazer todo mundo para dentro, isso é uma coisa. Isso vai resolver o problema do Quintela e do Alisson? Não. Ele vai resolver porque ele vai aprovar uma vez só, pelo menos. 
+Só que a quantidade de propostas que vai chegar para ele vai continuar sendo a mesma. É que hoje é a quantidade de propostas vezes 2. A gente fazendo a primeira parte, a gente reduz para a quantidade de propostas vezes um. 
+E aí eu tenho a política comercial das novas alçadas de aprovação. Aí é um novo conjunto de regras que faz mais sentido e que não fica levantando tudo para o Alisson e para o Quintela. Aí é mexer no motor de cálculo das alçadas. Isso daqui ainda está com a equipe comercial. Eles estão lá definindo as coisas. Não está nem robusto o suficiente para. 
+Conversar comigo. Por isso que isso aqui está parado, tá? Isso aqui, por enquanto, está só. 
+Está em preto aqui, tá bom? 
+
+ 
+Danilo Macedo   46:35 
+Okay. 
+
+ 
+Marcio Jovanello   46:35 
+Só tudo isso, moça? 
+
+ 
+Oscar de Rooij   46:35 
+Esse só tudo isso, só beleza. Aí eu tenho rescisão de propostas. Não adianta nada eu arrumar toda a entrada de propostas se na hora de encerrar um cliente eu encerrar errado e ele poluir meus relatórios. 
+
+ 
+Marcio Jovanello   46:38 
+Boa. 
+
+ 
+Oscar de Rooij   46:51 
+Então eu já estou mapeando o processo de rescisão para entender como que isso aparece no CRM e como que eu cubro as lacunas para a gente não ter o CRM ali mostrando coisas erradas ali. Então isso aqui também eu tô mapeando só para garantir que a base que o relatório vai ficar consistente. 
+
+ 
+Danilo Macedo   47:08 
+Isso aí você quer dizer rescisão, quer dizer que tá encerrando um contrato antes do prazo? 
+
+ 
+Oscar de Rooij   47:08 
+E aí? 
+
+ 
+Danilo Macedo   47:15 
+Definido. 
+
+ 
+Oscar de Rooij   47:15 
+São algumas coisas, tá? É hoje rescisão é basicamente quando eu perco de 1 ano para o outro. Então eu não tenho, não acontece. 
+Aliás, pode até acontecer, mas assim eu preciso detalhar isso melhor de no meio do ano você cancelar um contrato. Imagina só, a escola tá lá no meio do ano, já tá usando o material da FTD, vai cancelar e vai. Como é que é uma mudança bem radical? É. Então ela não acontece normalmente. 
+
+ 
+Danilo Macedo   47:33 
+Tá. 
+Mhm. 
+Mhm. 
+
+ 
+Oscar de Rooij   47:45 
+Então é sempre no ciclo de preparação do ano seguinte. Então o que eu preciso então sempre então agora em fevereiro, barra março, se eu tivesse as oportunidades, tá? Elas já teriam que ter sido criadas para 2027. 
+
+ 
+Danilo Macedo   47:48 
+Mhm. 
+
+ 
+Oscar de Rooij   47:59 
+Então é aqui que eu vou dar a perda, tá? Porque 2026 já tá rodando, já ganhei a proposta, então agora 2027 eu vou dar perda na oportunidade. É claro que eu posso tentar fazer uma proposta, mas eu posso morrer já na oportunidade, porque sem proposta, porque o cliente já falou assim, vou descontinuar, nem tentar falar comigo, não quero uma versão. 
+
+ 
+Danilo Macedo   48:16 
+Sim. 
+
+ 
+Oscar de Rooij   48:17 
+Então ele já vai dar perda na oportunidade de cara, tá? Só que existe um gap de tempo ali de janeiro a fevereiro que não tem a oportunidade criada e ele pode já declarar essa perda. Então eu preciso entender um pouco melhor como é que essas coisas funcionam para entender, para ver como é que vai ser registrado. 
+
+ 
+Danilo Macedo   48:18 
+Mhm. 
+Mhm. 
+Mhm. 
+É, então seria tanto no caso que, por exemplo, vocês AFTD fez o contrato de 3 anos com uma escola. No segundo ano, ele vai e fala, não vou dar sequência. 
+
+ 
+Oscar de Rooij   48:46 
+Esse é um cenário que aí eu tenho multa, inclusive nesse cenário. Mas eu tenho um cenário que é, eu é, vence esse ano mesmo e ele não vai querer. Aí eu não tenho multa, aí eu não tenho multa. 
+
+ 
+Danilo Macedo   48:46 
+Mas isso é um cenário uhum. 
+Sim, não renovou, mas é e é uma informação muito importante, muito valiosa, que hoje não tem. 
+
+ 
+Oscar de Rooij   48:59 
+Sopra. 
+Exatamente, exatamente, tá? Então eu preciso entender como que eles fazem isso bonitinho para travar as coisas e não deixar OCRM descompensado. 
+
+ 
+Danilo Macedo   49:09 
+Mhm. 
+
+ 
+Oscar de Rooij   49:12 
+E depois é a segunda onda. Aí é o funil, gente. Aí é compromisso, tarefa, é resultado de compromisso. Terminei esse compromisso de introdução comercial. Qual é o próximo passo? É agora uma visita de apresentação de produto. Então é o funil. É o funil para cada tipo de oportunidade. 
+Então eu tenho uma oportunidade que é novo cliente. Eu tenho uma jornada. Eu tenho uma oportunidade que ela é de renovação, de manutenção, que é tipo ajuste IPCA. Eu só vou arrumar OIPCAE segue a vida. Eu tenho uma outra que é. 
+Aumento de escopo, aumento de contrato. É uma negociação que eu vou buscar uma venda acima. Não é uma outra linha de produtos. É uma venda que não é de manutenção, não é? Então eu só vou. Eu vou aumentar meu leque de produtos ofertados para esse cliente. 
+Então esse é outro tipo de tratamento. E eu tenho o último, que é de renovação estratégica, renovação estratégica. Ele é basicamente esse de 3 anos que você falou, tá, Danilo? Então assim, de 3 em 3 anos, de 4 em 4 anos, eu vou ter essa renovação estratégica, porque com esse cliente eu defini que é 4 anos o contrato. 
+Com outro cliente pode ter sido 3 anos, com outro cliente pode ser 2 anos, mas essa é a renovação estratégica. É quando está encerrando esse contrato de longo prazo. A renovação de manutenção é esses anos intermediários, de 1 ano para o outro, dentro de 4 anos, por exemplo, tá? 
+Então são complexidades diferentes de negociação. E no final das contas, a gente vai ter que ser capaz de mostrar tudo isso dentro de um único funil. Existe uma correlação, dá para você fazer os deparas para montar um funil único, tá? Então isso é o que eu estou, já estou. 
+Definindo, só que eu consegui mapear novo cliente. 
+Mas o resto eu não consegui mapear. Por quê? Porque a equipe comercial, atualmente ela está alocada em uma, em um, em um processo todo que está acontecendo lá dentro. 
+
+ 
+Danilo Macedo   51:05 
+Isso que você está falando, eu me perdi aqui. Você está em algum quadrinho desses? 
+
+ 
+Oscar de Rooij   51:09 
+Aqui, segundo o funil, tá aqui. Revisão de compromissos, revisão de tarefas, construir a jornada, conexão de tarefas, compromissos e etapas do funil, controle. Aí tem algumas coisas aqui, o livro mestre de divulgação e controle de follow-ups, demo, prova social, et cetera. Então tem algumas coisas aqui que eu estou mapeando. 
+
+ 
+Danilo Macedo   51:17 
+Sim tá. 
+Stop. 
+Hello. 
+Okay. 
+
+ 
+Oscar de Rooij   51:29 
+Tá, daqui para frente não vale a pena ver, tá? Eu, é claro que eu posso mostrar para vocês, mas assim, só na hora que realmente for necessário, que tem um Monte de coisas já mapeada. 
+
+ 
+Danilo Macedo   51:41 
+É, acho que a gente a gente tem que fazer uma organização. Fala aí, João, fala aí. 
+
+ 
+Marcio Jovanello   51:42 
+Boa é o é gente. 
+O Danilo, desculpa, cara, eu 10 horas, eu vou, eu vou precisar respeitar esse timebox. E aí, Oscar, eu acho que a gente pode também ali ter uma oportunidade no transformation Office de trazer a vanade, alguns representantes da vanade, porque a gente tem. 
+Algumas decisões ali, alguns pontos que a gente consegue discutir. E hoje o Oscar, infelizmente hoje eu tenho uma reunião aqui na PUC, tá? É. E aí eu coloquei a Camila, e aí, Danilo e Rodrigo, e eu mandei para vocês também um invite. 
+Pra pra pra vocês estarem aí nessa sessão de trabalho, nessa discussão que é que é bem importante, tá? É uma. É uma cadência de quinta-feira que o Oscar, que o Oscar patrocina aí às 11:00 da manhã, inclusive ao vivo no escritório. Então, gente. 
+A oportunidade de estar no escritório seria bastante interessante também, está bom? 
+
+ 
+Camila Moraes   52:44 
+Okay. 
+
+ 
+Danilo Macedo   52:45 
+OKOK. 
+
+ 
+Oscar de Rooij   52:45 
+Combinado, gente? Então é às 11, a gente se encontra lá. 
+
+ 
+Camila Moraes   52:46 
+A de hoje é às 11. 
+Então tá bom? 
+
+ 
+Marcio Jovanello   52:49 
+A música. 
+
+ 
+Camila Moraes   52:50 
+Tá bom? 
+
+ 
+Danilo Macedo   52:51 
+A reunião das. 
+
+ 
+Marcio Jovanello   52:51 
+Oscar, obrigado, viu, querido? 
+
+ 
+Oscar de Rooij   52:53 
+Estamos juntos, gente até mais tchau, tchau. 
+
+ 
+Danilo Macedo   52:54 
+Valeu, Jova. É Kevin. Só uma dúvida, acho que seria com você mesmo. Foi cancelada a reunião das 10. É isso? 
+
+ 
+Camila Moraes   52:55 
+Obrigada, gente. 
+
+ 
+Falante 1   52:55 
+Valeu, Oscar. Valeu, Kevelin. 
+
+ 
+Marcio Jovanello   52:56 
+Sim. 
+
+ 
+Kevellin dos Santos Corrado   53:03 
+Cancelei. Preciso entender o que a gente vai precisar nessa reunião, porque se for configuração, não é com o Eduardo. Aí eu falei para a Camila que eu IA cancelar. 
+
+ 
+Camila Moraes   53:14 
+Parametrizações e direito e direito de acesso é quem mesmo e direito de acesso. 
+
+ 
+Danilo Macedo   53:14 
+Tá bom? 
+
+ 
+Kevellin dos Santos Corrado   53:14 
+Que parametrização, o que exatamente que vocês precisam? 
+
+ 
+Marcio Jovanello   53:19 
+Tchau, gente. Beijo para vocês. Valeu, Jeová. 
+
+ 
+Danilo Macedo   53:20 
+Valeu, João, vá, tchau, tchau, tchau. 
+
+ 
+Camila Moraes   53:21 
+Beijo, tchau e direito de acesso aqui mesmo para a gente poder pedir. 
+
+ 
+Kevellin dos Santos Corrado   53:21 
+Tchau Jova. 
+
+ 
+
+
+Camila Moraes   0:03
+Para gravar eu bocejando.
+É isso?
+
+Kevellin dos Santos Corrado   0:09
+Começou, gente, deixa eu ver se deu certo aqui. 2 gravações em uma só. Deixa só olhar no chat para ver. Depois vocês vão brigar comigo, que eu mando as gravação, tudo coisada para você.
+
+João Carlos Figueirôa de Castilho   0:11
+Yeah.
+
+Camila Moraes   0:19
+Vai ter a versão um, acho que versão 2.
+
+Kevellin dos Santos Corrado   0:21
+Então tá bom, eu já venho, tá?
+
+Camila Moraes   0:23
+Confia, tá?
+
+Eduardo De Oliveira   0:25
+Exato.
+
+Danilo Macedo   0:26
+Então é, Eduardo, você comentou que não está em uso, mas como tem a pretensão de voltar a usar, é bom a gente ter um bom entendimento do que tem hoje, porque nós vamos ter que adaptar o que tem hoje, com certeza, entendeu? Por isso que é importante a gente entender isso aí.
+
+João Carlos Figueirôa de Castilho   0:41
+E aí eu queria entender aproveitar que vai data aqui talvez o Danilo Saga também entender conceitualmente para que é utilizada a oportunidade não é porque tinha um determinado momento dos nossos cartões aqui eu eu tinha subentendido que ela era um guarda-chuva das propostas anuais para aquele cliente.
+então o cliente ele vai ter uma oportunidade 2026 que que vai ser a negociação para 2026 dele mas aí em outro momento com nas conversas com o Oscar e tem entende que aquele cliente ele pode ter mais uma oportunidade para o ano
+Então, como é que funciona conceitualmente o uso da oportunidade para vocês hoje, assim?
+
+Eduardo De Oliveira   1:22
+Então, vamos lá, eu vou compartilhar a tela e apresentar a tela de oportunidade aqui para gente.
+Essa daqui é a nossa telinha de oportunidades já criadas, tá? Então todas as contas que foi gerada uma oportunidade na safra de 20 e 26, seu caso filtre aqui, tá?
+Aqui somente 26. E aqui eu estou falando como eu tenho uma visão Brasil, eu estou falando de oportunidades de todos os consultores. Quem gerou alguma oportunidade está nessa minha visualização aqui.
+Aí dentro de cada oportunidade, a gente entre em oportunidade clicando aqui no tópico, tá?
+
+Camila Moraes   2:11
+Telefone.
+
+Eduardo De Oliveira   2:12
+Ela vai ter a etapa do nosso pipeline lá, os valores que estão sendo trabalhados dentro dessa oportunidade, o modelo de venda que ele está tentando negociar.
+Aqui, Oh, a campanha comercial era referente a safra mar aberto de 2526. Tá, então Oh, se eu parar o mouse, eu consigo ler aqui Oh, mar aberto.
+
+Camila Moraes   2:28
+As pessoas.
+Nome.
+To you.
+
+Eduardo De Oliveira   2:40
+Isso foi uma campanha pré-criada, já informando que olha, nós temos.
+Produtos dentro dessas dessas escolas, nós temos uma proposta com essas escolas, então vocês vão. O farmer principalmente, vai trabalhar diretamente nessas. Tínhamos também o mar aberto, o.
+O aquário perdão, tá só retificando aqui. Mar aberto é aquilo que o Hunter IA pegar e o aquário para o para o farmer. Vou entrar em uma delas aqui só para.
+Mostrar os Campos e os.
+
+Camila Moraes   3:15
+Como é que é? Desculpa que essas expressões mar aberto é o nome de uma campanha.
+
+Eduardo De Oliveira   3:20
+Isso, mar aberto significa que nós não temos propostas, nós não temos nenhum material nosso dentro dessas dessas escolas.
+
+Camila Moraes   3:28
+Mhm.
+
+Danilo Macedo   3:29
+Cliente novo não é praticar cliente, cliente que não tem, não tem, não é contrato vigente.
+
+Eduardo De Oliveira   3:29
+Tá.
+Isso, cliente novo.
+
+Camila Moraes   3:32
+Uns leads.
+
+Eduardo De Oliveira   3:35
+Vai prospectar, vai angariar lá com a com a escola e tentar trazê-la para a gente. Aquário é aquela que a gente já tem.
+É material nosso lá dentro.
+
+Camila Moraes   3:45
+Adorei a versão.
+
+Eduardo De Oliveira   3:49
+Então aqui é aquilo que eu passei para vocês ontem, tem todos os Campos pré-preenchidos aqui para que isso vá para uma proposta.
+
+Camila Moraes   3:50
+Sim.
+
+Eduardo De Oliveira   3:58
+Coisas que são geradas, que foi criado ano passado, seria esse campo aqui, tá? Ontem nós não tínhamos porque eu estava criando uma oportunidade nova.
+Mas isso daqui é a grid de indicações, por exemplo, essa conta aqui ela é do mar aberto, então.
+A gente teria uma gama de produtos com base na clusterização dessa escola para ofertar para essa escola. Com base no padrão, localização, valores de mensalidade, foi gerado essa grid de indicação para essa escola.
+O consultor falou, olha, nessa oportunidade eu posso ofertar isso daqui e daqui ser encaminhado lá para a proposta. Ele pode ter assim, pode falar.
+
+Danilo Macedo   4:45
+Esse processo de indicação só está na oportunidade, não está na proposta.
+
+Eduardo De Oliveira   4:50
+Não só na oportunidade da oportunidade, ele leva para a proposta. Na proposta, ele já vai levar os produtos que ele selecionou aqui. Produtos da oportunidade.
+
+Danilo Macedo   4:52
+Tá.
+Aí eu lembro que ele é obrigado, isso aí foi implementado em 2024 e 25 né? Eu fiquei um tempo aí com vocês aí eu lembro do Jô pra me mostrar e ele é obrigado a rejeitar ou aceitar e se ele aceita e inclui na proposta, na oportunidade, quer dizer.
+
+Eduardo De Oliveira   5:06
+25.
+Exatamente, exatamente isso. Aqui ele tem o status aonde ele vai é falar, olha, e vou selecionar aqui.
+
+Danilo Macedo   5:16
+Tá.
+
+Eduardo De Oliveira   5:24
+esse cara aqui eu vou aceitar ou eu vou rejeitar provavelmente aqui a gente nota que ele rejeitou todos e falou olha a escola tem capacidade de adotar esse material vou ofertar para ela e gerou a oportunidade com base nesse material que ele inseriu aqui
+
+Danilo Macedo   5:28
+The.
+Mhm.
+
+Eduardo De Oliveira   5:44
+Certo? E daqui, basicamente, ele já vai direto para a proposta. Eles não costumam é andar nesse pipe aqui, como eu estava falando.
+
+Danilo Macedo   5:54
+Mhm.
+
+Eduardo De Oliveira   5:55
+Então ele não traz para a oportunidade, não fala, olha, eu cheguei numa fase de negociação, agora eu vou levar isso daqui para uma proposta e dessa proposta ou eu dou o contrato ou eu perco essa oportunidade.
+
+Danilo Macedo   6:07
+Mhm.
+
+Eduardo De Oliveira   6:10
+Tipo.
+
+Danilo Macedo   6:10
+Aí a pergunta que o João fez, como que usa a oportunidade? Na verdade, não estão usando João. A ideia era cria oportunidade e vai andando ali sobre as fases para ter o acompanhamento do fundo de vendas, mas como não tem até travas.
+não, você não consegue criar a proposta enquanto você não avançar. Eles pulam porque assim, o que eles preenchem na oportunidade vai para a proposta. Então, eles não fazem, acho que o principal é não tem um acompanhamento e travas
+
+João Carlos Figueirôa de Castilho   6:39
+Tá então.
+
+Danilo Macedo   6:46
+Para fazer com que ele é ande com a oportunidade. E aí o que o Oscar falou, eles podem fazer a proposta, fecha, está fechada. O cliente contratou e aqui a oportunidade fica assim, é o jeito que está agora, ou ele ou perdeu.
+
+João Carlos Figueirôa de Castilho   6:50
+Sim.
+
+Eduardo De Oliveira   6:59
+Parada era só.
+
+João Carlos Figueirôa de Castilho   7:00
+Não assim eu.
+
+Danilo Macedo   7:01
+Também fica aí parada.
+
+João Carlos Figueirôa de Castilho   7:02
+É, eu sei que eles não utilizam a oportunidade. A minha dúvida era mais com relação ao conceito, o que é que representa a oportunidade no processo de vendas? Ele é ele é um que nem eu citei. Eu tinha entendido que ele era um guarda-chuva de propostas.
+
+Eduardo De Oliveira   7:14
+Ele é um.
+
+João Carlos Figueirôa de Castilho   7:17
+Para aquele cliente no ano, mas ao eu posso ter 2 oportunidades para o mesmo cliente no mesmo ano.
+
+Eduardo De Oliveira   7:25
+Pode ter 234 modelo modelos de vendas distintos, tá? Mesmo modelo de vendas, ele não vai deixar na mesma safra, mesmo ano. Aí você teria que.
+
+João Carlos Figueirôa de Castilho   7:26
+Um.
+Eu, como é que funciona isso aí? Eu sou o eu sou o vendedor.
+Tá, então Eu Não queria o.
+Mhm.
+
+Eduardo De Oliveira   7:39
+Se a gente se a gente está no ano safra 20 e 26, você teria que colocar 20 e 27 um ano safra modelo de pra pra ser o mesmo modelo, se não ele não, ele bloqueia você ali.
+
+João Carlos Figueirôa de Castilho   7:45
+Mhm.
+Vamos.
+Então, se eu fechar com o cliente uma quantidade x, só que uma parte ser venda direta, outra parte ser e-commerce, então seriam 2 oportunidades diferentes isso.
+
+Eduardo De Oliveira   8:02
+Isso são modelos de venda diferentes dentro do mesmo ano safra.
+
+Danilo Macedo   8:03
+Um.
+
+João Carlos Figueirôa de Castilho   8:07
+Mas aí na hora que ele monta a proposta, ele monta uma proposta só.
+
+Danilo Macedo   8:07
+Mask.
+
+João Carlos Figueirôa de Castilho   8:12
+E aí, são 2 propostas.
+
+Danilo Macedo   8:13
+Não, it was proposed.
+2 propostas, um pro um pra.
+
+Eduardo De Oliveira   8:16
+Para a modalidade venda FTD Commerce, igual você falou, e a outra para o para venda direto escola.
+
+Danilo Macedo   8:20
+É são doce.
+
+João Carlos Figueirôa de Castilho   8:22
+É porque eu tenho impressão que quando ele mostrou o simulador lá, ele na proposta, ele podia poderia selecionar 22 modelos, não? Ele seleciona um só.
+
+Eduardo De Oliveira   8:33
+Isso daí eu acho que é o modelo dele agora, a ideia dele.
+
+Danilo Macedo   8:33
+Então é o é a mudança que ele está fazendo, é a mudança que ele está fazendo.
+
+Kevellin dos Santos Corrado   8:33
+É.
+É, mas não agora também, tá? Então a nessa primeira entrega ainda a gente vai considerar somente um modelo de venda ali da proposta. Mas realmente, futuramente, eu acho que entra ali na segunda onda, vamos se dizer assim. Aí é isso mesmo que o João falou.
+
+Danilo Macedo   8:54
+Mhm.
+
+João Carlos Figueirôa de Castilho   8:54
+Então, hoje eu só tenho 2 oportunidades para o mesmo cliente por questão de modelo de venda.
+
+Eduardo De Oliveira   9:00
+Modelo de venda.
+
+Danilo Macedo   9:01
+E assim, provavelmente o vendedor já está negociando tudo ao mesmo tempo. Poderia estar tudo junto, quero dizer em relação ao momento. Normalmente ele está fazendo tudo ao mesmo tempo. Não é que ele negociou em 1 mês uma coisa e no outro mês ou outras semanas ele está negociando outra.
+
+João Carlos Figueirôa de Castilho   9:02
+Tá.
+
+Eduardo De Oliveira   9:20
+Pode ocorrer também, mas é. Geralmente eles já negociam tudo ali no na hora. Geralmente é isso mesmo.
+
+Danilo Macedo   9:20
+É mais pro.
+Tudo de uma vez, porque a porque a negociação é porque a escola vai usar no ano seguinte, o ano inteiro seguinte. Tanto que é muito difícil ter vendas no meio do ano, vendas para algo ponto ser assim para coisas pontuais, mas é difícil.
+
+João Carlos Figueirôa de Castilho   9:32
+Mhm.
+
+Danilo Macedo   9:39
+como a RFL trabalha com a grade escolar, a venda mais focada aqui para, que aí no caso, tô falando no caso do que é o propósito aqui desses vendedores do CRM aqui, é para venda para escola, então a escola define o que vai usar o ano inteiro.
+
+João Carlos Figueirôa de Castilho   9:54
+E essas vendas de e-mail?
+Essas vendas de meio de ano, elas podem, ao invés de ser oportunidades novas, elas viram aditivo, não é? Eu fechei no começo.
+
+Danilo Macedo   10:04
+Nova, não, mas aí deveria ser oportunidade nova.
+
+João Carlos Figueirôa de Castilho   10:05
+E.
+Mas aí o, por exemplo.
+Eu fechei a escola, fechou no meio do ano um evento de literatura lá na escola e ela quer que FTD envie uma pessoa lá para fazer um como o Oscar falou, esqueci até o termo que ele usou, mas vai ter lá um estande da FTD como venda de livros.
+
+Danilo Macedo   10:19
+Mhm.
+Mhm.
+
+João Carlos Figueirôa de Castilho   10:27
+Só que pelo que ele falou, é essas vendas, elas entram como seus e-commerce também.
+E já existe, já existe um contrato fechado no início do ano para a e-commerce, então ele teria sistema teria que permitir que eu criasse uma outra quantidade para o mesmo tipo de venda, não?
+
+Eduardo De Oliveira   10:47
+Atualmente é bloqueado para isso.
+
+Danilo Macedo   10:49
+É, entendi, senhor.
+
+Eduardo De Oliveira   10:50
+Acho que é o único modelo de venda que você conseguiria. Eu acho que nós não vamos ter aqui temos.
+
+João Carlos Figueirôa de Castilho   10:51
+Yeah.
+
+Eduardo De Oliveira   10:57
+Achava que era só em proposta divulgação. Você consegue criar o mesmo modelo para o mesmo ano safra, mas é material de divulgação, não é? Não é considerado.
+
+João Carlos Figueirôa de Castilho   11:09
+Uhum é, então talvez eles façam e nem lancem, porque eu vou até dar o mesmo exemplo, se tem 2 eventos de literatura, um no começo e no final do ano, e aí ele não conseguiria lançar 2 oportunidades, porque é o mesmo, é o mesmo modelo de vendas.
+
+Eduardo De Oliveira   11:10
+Produto.
+
+João Carlos Figueirôa de Castilho   11:23
+E existe o bloqueio, então talvez eles nem lancem esses casos. Não sei se acontecem também, mas.
+
+Eduardo De Oliveira   11:23
+Exatamente.
+
+Danilo Macedo   11:24
+É.
+
+Camila Moraes   11:28
+É, mas aí eu entendi do João, inclusive na escola da minha filha, acontece mais ou menos isso. Você compra daquela safra, inclusive de vocês, e depois tem a feira literária. Então são outro tipo de.
+
+João Carlos Figueirôa de Castilho   11:40
+Uhum.
+
+Eduardo De Oliveira   11:42
+É outro modelo?
+
+Camila Moraes   11:43
+É um outro modelo, então ele vai ter uma outra oportunidade, ele vai ter na mesma.
+
+Eduardo De Oliveira   11:45
+É outro modelo.
+
+João Carlos Figueirôa de Castilho   11:48
+Mas se tiver 2 feiras no ano?
+
+Camila Moraes   11:51
+Pode ser, pode acontecer 2 feiras por ponta, pode ser é classe diferente de idade.
+
+Eduardo De Oliveira   11:52
+Pode ser drop.
+
+João Carlos Figueirôa de Castilho   11:55
+Aí não dá para fazer 2 oportunidades, é, não dá para ter 2 oportunidades, que é o mesmo modelo de vendas.
+
+Eduardo De Oliveira   12:02
+Trocas de um modelo de venda.
+
+João Carlos Figueirôa de Castilho   12:04
+Aí está, então eles adaptam para poder registrar OA feira.
+
+Eduardo De Oliveira   12:06
+Isso.
+
+Camila Moraes   12:07
+Aí é a pergunta que é fazer uma coisa, o sistema poder fazer como que é no dia a dia acontece, tem essas gambiarras.
+
+João Carlos Figueirôa de Castilho   12:10
+Parentes.
+É, eles dão.
+
+Eduardo De Oliveira   12:15
+Está sendo gravado, eu prefiro me aparecer de toda e qualquer palavra nesse momento.
+
+Camila Moraes   12:18
+Não.
+Então a gente quer saber a gambiarra para pensar de melhorar e não ter mais gambiarras, não é?
+
+João Carlos Figueirôa de Castilho   12:25
+É, mas eu acho que é algo que está previsto até pelo que a Kevin falou aí no futuro ele vai permitir ter 2 ter 2 modelos de venda, não na mesma oportunidade tem mais de um modelo de venda. E aí futuramente eu posso ter outra oportunidade.
+
+Danilo Macedo   12:27
+É.
+
+Camila Moraes   12:31
+2 oportunidades.
+
+Danilo Macedo   12:33
+É da mesma oportunidade, tem mais um modelo de venda.
+
+Camila Moraes   12:34
+Não.
+Por conta do ano safra.
+
+Eduardo De Oliveira   12:39
+O bloqueio que nós temos no CRM, se eu não me engano, era mais é para o time financeiro, se eu não me engano, tá para travar no financeiro isso.
+
+Danilo Macedo   12:39
+Hey.
+É, sabe por que trava? É porque para conseguir ter só uma lista de preços na proposta ou na oportunidade, porque se muda o modelo de venda, muda o preço dos itens. Então é uma. É uma forma de assim aqui.
+Só vai ter os preços para FTD com você, não vai ter o preço para e-commerce, que pode ser mais caro ou mais barato.
+
+Eduardo De Oliveira   13:12
+Exatamente.
+
+Danilo Macedo   13:13
+É por isso que tem essa trava.
+Não é por alguma questão comercial, não é por questão sistêmica, na verdade.
+
+Eduardo De Oliveira   13:22
+Sistema não ia se adequar a isso, mas agora vai?
+
+Danilo Macedo   13:27
+So.
+Não discutimos, não falamos ainda sobre isso. Ele só ele só falou que ele quer fazer isso. Agora a gente não discutiu, vai ter que conversar muito. Ele falou que tem que tem que ter uma mudança lá na é.
+Cadastro de produto, leijo, totus, enfim, uma coisa é fato, o sistema, ele tem uma lista de preços vinculado na proposta, na oportunidade, é uma lista de preços. Então a gente vai ter que quebrar a cabeça, pensar como que vai fazer e como tratar, se tem 2 preços diferentes e tal, então a gente vai ter que.
+
+Eduardo De Oliveira   13:56
+Não vai resolver isso daí, é?
+
+Danilo Macedo   14:01
+Sem saber como eu, quando eu implementei, eu lembro que podia trocar a lista de preço. Eu não lembro se tinha essa trava aí de modelo de venda.
+
+Eduardo De Oliveira   14:07
+Ainda pode, ainda pode, tá? Eu tô com a tabela de itens ativos 2026 aqui. Se eu remover ela, eu posso pegar, mas somente ativos desse ano. Para mim tá aparecendo mais listas de preços porque eu tenho acesso Brasil, mas vamos supor que a Vanessa que é daqui de
+
+Danilo Macedo   14:24
+Uhum.
+
+Eduardo De Oliveira   14:29
+São Paulo, ela pegaria somente essa visualização aqui, aparecer isso daqui para ela. Grades provavelmente apareceria os distratos, os digitais, tudo isso daqui iria aparecer para ela, tá normalmente.
+
+Danilo Macedo   14:32
+Mhm.
+Não tem nenhum filtro de, dependendo do modelo de venda selecionado, é filtros listas de preços mostradas ou não.
+
+Eduardo De Oliveira   14:50
+Não é necessário.
+
+Danilo Macedo   14:55
+Não, por exemplo.
+
+Eduardo De Oliveira   14:55
+Até porque ele pode selecionar aqui aquilo que ele realmente precisa, pode estar em outras listas esse material.
+
+Danilo Macedo   15:03
+Não tenho uma lista de preços, por exemplo, de e-commerce.
+
+Eduardo De Oliveira   15:06
+Notia digital.
+Mas e-commerce em si não, ela geralmente vai estar aqui dentro de tabela de itens ativos 26.
+A TV 26.
+
+Danilo Macedo   15:22
+Não, eu tô pensando se não se tem algum caso que, por exemplo, se eu escolhi lá no modelo de venda FTD com você, tem algumas listas de preços que eu não posso usar para esse modelo de venda.
+
+Eduardo De Oliveira   15:33
+Não, porque assim é dentro dele do produto que vai estar.
+Aquilo que é ou não?
+
+Danilo Macedo   15:41
+Não porque.
+Sim, só que assim, um produto ele pode. Tem o tem o caso do que eu tinha exemplificado antes. Por exemplo, se for SDZ com você, o livro custa 100 BRL. Se for e-commerce, ele custa 110.
+Existe isso ou não?
+
+Eduardo De Oliveira   15:59
+Existe aqui dentro dessa?
+De filial, só.
+
+Danilo Macedo   16:04
+Diferença de preço por filial.
+
+Eduardo De Oliveira   16:04
+Noção.
+Por filial, até porque é uma customização de preços entre e negociado entre gestões, entre diretoria e a gestão da.
+
+Danilo Macedo   16:07
+Mista.
+
+Eduardo De Oliveira   16:16
+Material.
+
+Danilo Macedo   16:16
+Mhm.
+Então, acho que o que eu tinha falado está errado. De é, tem 11 modelo de venda só, porque aí ele define qual a qual a lista de preços pode ser usada? Acho que não, porque ele pode trocar por lista de preços diferentes.
+E não tem, na verdade, não tem.
+
+Eduardo De Oliveira   16:32
+Cada um vai ter direito a sua visualização da sua filial, por exemplo.
+
+Danilo Macedo   16:36
+Sim, mas é. Mas a filial que define não é a modelo de venda, o que define é o usuário de que filial ele faz parte.
+
+Eduardo De Oliveira   16:43
+Isso.
+
+Danilo Macedo   16:46
+É, então agora eu estou em dúvida, o que por que está travando?
+
+Eduardo De Oliveira   16:49
+Mas a gestão bate muito neles com relação a isso, tá?
+Isso, geralmente os coordenadores conhecem bem a as escolas que os consultores estão trabalhando, vão e falam, olha, isso daqui está errado, isso vai ter que ser negociado dessa forma.
+
+Danilo Macedo   16:54
+Sim.
+Mhm.
+
+Eduardo De Oliveira   17:07
+Por isso que existem as alçadas de aprovação. O coordenador começo está bem atento nisso.
+
+Danilo Macedo   17:10
+Não, eu tô bem.
+É, eu tinha dado uma justificativa do porquê que só pode ter um modelo de venda, mas eu acho que não está certo na justificativa, entendeu? Do que eu tinha entendido.
+
+Eduardo De Oliveira   17:20
+Nada.
+
+Danilo Macedo   17:22
+Porque eu achava que era, porque ele delimita quais listas de preços podem ser usadas para cada modelo de venda. Mas, pelo que eu entendi, não tem esse essa regra.
+
+Eduardo De Oliveira   17:23
+Bom dia.
+Não.
+
+Danilo Macedo   17:34
+É, então não sei se é alguma coisa por conta de contrato, o contrato tem que ser um.
+Para um por vez, bom, a gente vai entender melhor depois.
+
+João Carlos Figueirôa de Castilho   17:44
+Essa questão de preços também, pelo que eu entendi, o existe uma negociação entre o consultor, o vendedor e a escola. E aí, depois que os 2 estão alinhados, existe AO fluxo de aprovação interna do FTD. E aí, como é que acontece isso assim? O.
+
+Eduardo De Oliveira   17:57
+Isso.
+
+João Carlos Figueirôa de Castilho   17:59
+O vendedor acertou um preço, a escola topou, tá tudo certo. Aí, dependendo do retorno da FTDO, vendedor vai dizer, não vai rolar, não vou. A gente vai ter que mudar isso aqui mesmo. A gente combinou, mas não vai rolar porque ASTD negou.
+
+Eduardo De Oliveira   18:13
+Pode acontecer, sim.
+Pode acontecer, sim.
+
+João Carlos Figueirôa de Castilho   18:16
+O fluxo disso é grande, é mais, é mais, é mais assim em termos de volume, é mais muito mais comum as aprovações acontecerem, porque o vendedor erra pouco essa questão de preço. Como é que funciona?
+
+Eduardo De Oliveira   18:28
+Então é muito difícil voltar uma proposta, tá? Muito de ser recusado. Isso daí eu estou.
+
+João Carlos Figueirôa de Castilho   18:34
+Esse bate e volta é mais com o cliente.
+
+Eduardo De Oliveira   18:36
+É tem a hora que chega aqui para gente é 99.9999 por cento de estar Ok óbvio óbvio que acaba abrindo algumas revisões pode acontecer revisões dentro de
+
+João Carlos Figueirôa de Castilho   18:37
+Mhm.
+Tá.
+Mhm.
+
+Eduardo De Oliveira   18:51
+Dessa negociação, mas o título de reprovado é quase.
+Quase nulo.
+
+João Carlos Figueirôa de Castilho   19:00
+Uhum raríssimos.
+
+Eduardo De Oliveira   19:01
+Caríssimo, porque, como eu disse.
+
+Danilo Macedo   19:03
+Mas é que assim, na teoria, só mostra para a escola depois que foi aprovado também internamente.
+
+João Carlos Figueirôa de Castilho   19:03
+Tá.
+
+Eduardo De Oliveira   19:08
+Sim.
+
+Danilo Macedo   19:10
+Deu, João?
+
+Eduardo De Oliveira   19:11
+Some, some.
+
+João Carlos Figueirôa de Castilho   19:11
+Não é porque ele negocia a quantidades e valores com as colas antes de mandar, antes da diretoria aprovar.
+
+Eduardo De Oliveira   19:18
+Sim.
+
+Danilo Macedo   19:18
+As quantidades, mas valores não. Ele define a quantidade, aí ele não. Aí ele submete para aprovação, só depois que foi aprovado que aí ele apresenta os valores para a escola. Na teoria deveria ser assim.
+
+João Carlos Figueirôa de Castilho   19:19
+Escola.
+Valores, valores.
+Valores, não?
+É porque o que eu tinha entendido é que ele acerta quantidades e valores na escola e depois AFTD aprovar.
+
+Camila Moraes   19:36
+Ele.
+
+Danilo Macedo   19:39
+Não.
+
+Camila Moraes   19:39
+Isso. E aí, se ele quer desconto, ele pede aprovação, que aí ele aplica o desconto, porque o valor base ele tem, o valor da prateleira ele tem aí.
+
+João Carlos Figueirôa de Castilho   19:47
+Sabe dizer que se é isso?
+
+Danilo Macedo   19:49
+Sim, ele começa pelo valor de está sim, é isso aí.
+
+Eduardo De Oliveira   19:51
+Isso conheço dessa forma que a Camila está explicando aí também, tá? O consultor, ele leva o valor para a escola com base no preço de capa.
+
+Camila Moraes   19:51
+Isso.
+
+Danilo Macedo   19:53
+É.
+É.
+É.
+
+Camila Moraes   20:19
+Fica esperando para poder dar OK para a escola. Oh, consegui o seu desconto. Vamos fechar.
+
+Danilo Macedo   20:22
+Yeah.
+Mas não é algo formal, entendeu? Não é uma proposta formal que foi enviada para a escola ainda. Só pode ser uma proposta formal depois que está aprovada.
+
+João Carlos Figueirôa de Castilho   20:33
+Não é o que eu digo proposta para a escola, porque existe aquele bate-volta antes pelo portal que a escola aprova ou faz alguma observação, ajuste.
+
+Camila Moraes   20:39
+Sim.
+
+Danilo Macedo   20:41
+Não. Então, pelo portal só vai. Eu acho que só vai aquilo que já foi aprovado internamente.
+Só o que foi aprovado pela FB.
+
+João Carlos Figueirôa de Castilho   20:49
+Não ele a simulação que ele fez, a simulação que ele fez. Quando ele termina de adicionar os produtos, ele clica no botão lá embaixo, vai, já foi direto para a escola.
+
+Danilo Macedo   20:57
+Esse é um processo novo, não é? Então eu entendi que é o processo que eles querem fazer, que eles querem implementar, na verdade.
+
+João Carlos Figueirôa de Castilho   20:59
+Tá.
+Aí a escola faz as observações, é?
+Ai para eu não sei se isso é essa aí veio o que ele mostrou aí depois desse bate-volta com a escola, aí existe alçada de aprovação lá com AFTD.
+
+Danilo Macedo   21:07
+É.
+É, não tem ainda.
+Mas esse processo já existe. Pessoal de da escola receber a proposta lá por um portal e ali ela já aprovar, rejeitar? Ainda não.
+
+Eduardo De Oliveira   21:26
+Até onde eu sei, não, isso daí é algo que vai vir ainda.
+
+Danilo Macedo   21:27
+Não tem não, João, é a gente vai vim. Ele mostrou o esperado, entendeu?
+
+Eduardo De Oliveira   21:31
+O.
+Isso.
+
+João Carlos Figueirôa de Castilho   21:34
+Não, eu acho que não existe via portal, mas eu acho que a escola recebe de alguma forma algum draft é.
+
+Eduardo De Oliveira   21:38
+Não, ela recebe isso.
+
+Kevellin dos Santos Corrado   21:40
+Ela recebe João, ela recebe é via teams, via e-mail, e esse processo, já aprovado via portal, entra na segunda, terceira, quarta onda.
+
+Eduardo De Oliveira   21:40
+Ela reserva.
+
+João Carlos Figueirôa de Castilho   21:46
+Mhm.
+Tá.
+E ela recebe antes das aprovações da FTD, ela recebe o que ela conversou com o consultor inicialmente já ou ela só recebe o que ela recebe? É só depois que AFTD já aprovou e que já está tudo certo internamente.
+
+Kevellin dos Santos Corrado   22:04
+Não acho, na verdade, a escola. Não sei se a escola recebe, só acho que só quem recebe são os aprovadores, não é do.
+
+Eduardo De Oliveira   22:10
+Olha, pelo que eu vi isso daí, a gente está falando lá do portal.
+
+Kevellin dos Santos Corrado   22:11
+A escola eu acho que não.
+
+Eduardo De Oliveira   22:15
+Pelo que eu vi.
+
+Kevellin dos Santos Corrado   22:15
+Portal não faz nada.
+
+João Carlos Figueirôa de Castilho   22:17
+Então estamos falando 2 is. Hoje o consultor, ele conversou lá com a escola, acertou quantidades, mostrou os valores de prateleira, montou a proposta. A escola não recebe isso.
+
+Kevellin dos Santos Corrado   22:25
+Não.
+
+Eduardo De Oliveira   22:27
+Não.
+
+Kevellin dos Santos Corrado   22:28
+Não recebe, ela não gera nenhum fluxo, não faz nada. Quem recebe para aprovação e tudo mais. Via teens e-mail são os aprovadores. Quando a proposta isso, esses daí sim, a escola não. Aí no caso, lá do portal.
+
+João Carlos Figueirôa de Castilho   22:29
+Tá.
+
+Eduardo De Oliveira   22:29
+É.
+Os aprovadores, esse pessoal aqui ó.
+
+João Carlos Figueirôa de Castilho   22:39
+Mhm.
+
+Kevellin dos Santos Corrado   22:43
+Quando a gente implementa lá no portal, acho que na segunda, terceira onda, aí sim eles vão conseguir fazer comentários lá e também vão conseguir aprovar e recusar.
+
+João Carlos Figueirôa de Castilho   22:56
+Tá bom?
+
+Kevellin dos Santos Corrado   22:56
+Era isso que você tinha perguntado?
+
+João Carlos Figueirôa de Castilho   22:59
+Sim.
+
+Danilo Macedo   23:00
+Agora, o que tem é a geração do da proposta por aqui, se era um PDF.
+Mas aí o vendedor, ele pode gerar, na verdade, em qualquer momento.
+
+Eduardo De Oliveira   23:07
+Isso.
+Sim.
+
+Kevellin dos Santos Corrado   23:11
+Isso e aí ele manda isso.
+
+Danilo Macedo   23:11
+Até o momento ele pode gerar.
+
+Eduardo De Oliveira   23:13
+Ele consegue baixar o PDF?
+
+Danilo Macedo   23:16
+Yeah.
+
+Eduardo De Oliveira   23:18
+Ou mesmo eu não lembro se nós ainda temos, mas aqui também tinha um arquivo de Word, se não me engano, Excel.
+
+João Carlos Figueirôa de Castilho   23:20
+E.
+Sim.
+Que eu imagino que não exista um fluxo para isso, mas que eu acho que o vendedor lá com a escola, ele deve fazer isso, gerar esse PDF e mostrar para a escola.
+
+Danilo Macedo   23:31
+É.
+
+Kevellin dos Santos Corrado   23:33
+É por isso que no simulador a gente é está desenvolvendo um PDF, então aí na depois que ele fizer ali aquela parte do simulador, vai ter um PDF.
+Mostrando valores e tudo mais para ele conseguir entregar isso para o para a escola, sabe?
+
+João Carlos Figueirôa de Castilho   23:50
+Mhm.
+
+Kevellin dos Santos Corrado   23:51
+Isso já vai ter aqui agora.
+
+Danilo Macedo   23:51
+Mas aqui já era também, mas aqui já era também, não daí não já era também.
+
+Kevellin dos Santos Corrado   23:56
+É aham, mas esse daqui é aham.
+
+Eduardo De Oliveira   23:56
+Quero.
+
+Danilo Macedo   23:56
+Que tem vários formatos.
+
+Camila Moraes   23:59
+Aqueles 50000 formatos.
+
+Danilo Macedo   24:00
+É que isso que eu tenho.
+
+Kevellin dos Santos Corrado   24:01
+É que aqui tem 50000 formato.
+
+Eduardo De Oliveira   24:03
+É fatiado, cada campo aparece lá.
+
+Camila Moraes   24:05
+Agora deixa eu, deixa eu só ser curiosa, esse PDF de bate pronto ali no simulador será para pegar um visto, um visto ali no momento? Será mais para isso, para fazer de praxe, porque o final, depois ele vai ter assinatura em algum canto oficial.
+
+Kevellin dos Santos Corrado   24:15
+Yeah.
+
+Camila Moraes   24:20
+E.
+
+Kevellin dos Santos Corrado   24:21
+É, acho que é só Pra Ele levado na escola igual o João tá falando, sabe?
+
+Eduardo De Oliveira   24:23
+É o restante seria via a Doctor Sim, agora o Adobe Science ainda.
+
+Camila Moraes   24:24
+Uhum.
+
+João Carlos Figueirôa de Castilho   24:29
+é para não correr o risco do da de mandar para os aprovadores e depois tem algum ajuste que os aprovadores tem que aprovar de novo assim é só para é só para dizer com a escola estamos alinhados que é isso né vou pedir essa provações esse número se não tem esse passo aí vai ter ele aprova e volta com cliente cliente faz três observações aí tem que voltar de novo
+
+Kevellin dos Santos Corrado   24:30
+É.
+É.
+Eu acho que é isso.
+
+Danilo Macedo   24:41
+Mhm.
+
+João Carlos Figueirôa de Castilho   24:48
+A prova de novo?
+
+Eduardo De Oliveira   24:51
+E fica no vai e vem que já que já existe aqui, não precisaria disso.
+
+João Carlos Figueirôa de Castilho   24:53
+É.
+Sim.
+
+Danilo Macedo   24:56
+Yeah.
+
+Eduardo De Oliveira   25:01
+Vocês perguntaram de fluxo, Kevin? Existem alguns fluxos aqui que a gente utiliza dentre eles.
+Vamos supor, deixa eu só validar aqui se isso daqui é uma.
+Acredito que tenha para esse modelo também, tá?
+Não tem que pegar uma proposta do e-commerce, então existe fluxo para que a gente abra a venda no e-commerce, tá?
+Pegar uma real.
+Não filtrei a safra, mas vamos dar uma olhadinha.
+Aqui, Oh, esse daqui é o fluxo de integração, é aquilo que vai liberar a venda lá na no portal.
+Então a anjo, consultor ou coordenador, vem aqui, abre ou fecha essa venda, tá? Então é isso que vai refletir lá na lumisfera.Se não habilitar isso daqui, não libera venda.
+
+Danilo Macedo   26:27
+Não entendi, a proposta já está aprovada.
+E AI foi criado automaticamente uma tarefa.
+Vinculada à proposta.
+
+Eduardo De Oliveira   26:36
+Isso é gerado uma tarefa para essa proposta, onde, se eu não me engano, quem recebe a coordenação comercial e aí, ou a própria coordenação ou AO anjo dessa regional vem aqui, entra nesse.
+Nesta atividade e abre a venda e isso startou o fluxo que manda para.
+Para onde será?
+
+Danilo Macedo   27:01
+Ou seja, isso daí é o que habilita lá no a venda, lá pelo portal da escola, que é para aquela escola. É o portal da FTD que está habilitado para os pais entrarem. É esse ou não?
+
+Eduardo De Oliveira   27:04
+À venda?
+Isso.
+Exatamente, é isso mesmo.
+
+Danilo Macedo   27:15
+The.
+
+Eduardo De Oliveira   27:16
+É isso que vai habilitar a venda.
+
+Danilo Macedo   27:16
+E porque eles?
+Explicar um pouquinho pro pro João camelo, não sei se vocês entenderam uma modalidade de venda. Não é que assim AFCD vai entregar o livro, mandar os livros lá para a escola e a escola vai distribuir para os pais? Não. A escola vai lá e fala pais.
+Acessem aqui esse site que aí se já tem uma URL específica da escola. Aí os pais entram e lá só vai aparecer os livros que foram negociados para aquela escola. Não é o e-commerce geral da FTD, só aquilo que foi. E aí os pais fazem a compra por ali.Pagam do jeito que eles querem, compram quando eles querem. E aí essa atividade, ela é um gatilho para informar, quando abrir, para informar lá para esse portar um outro sistema que essa proposta com esses livros pode habilitar aí, disponibilizar para essa conta, para esses.Cola é isso, Eduardo.
+
+Eduardo De Oliveira   28:13
+É exatamente, pois aqui a gente já tá OK com os produtos que vão ser negociados.
+
+Danilo Macedo   28:19
+Tá, mas e porque tem a possibilidade de fechar?
+
+Eduardo De Oliveira   28:23
+É na realidade, não é primeiro que acabou o ano letivo.
+Ele pode vir aqui e fechar, se não isso daí fica aberto no portal, tá? Hoje em dia existe um outro fluxo, quem roda é ATI mesmo, que vai lá e fecha isso de forma automática. Começou esse ano, mas.
+
+Danilo Macedo   28:35
+Entendi para isso.
+Figure.
+
+Eduardo De Oliveira   28:45
+Até o final do ano passado.
+Cada regional, cada estabelecimento era responsável por entrar dentro da conta que ele abriu a venda e fechar manualmente isso.
+
+Danilo Macedo   28:59
+Tá bom, entendi.
+
+Eduardo De Oliveira   28:59
+Então, além de abrir, eles tinham que fechar.
+
+Danilo Macedo   29:02
+Entendi, tá bom?
+
+Eduardo De Oliveira   29:05
+Se não, a venda continuava.
+
+Camila Moraes   29:05
+E se não fechar, ficava aberto e não IA aparecer no portal e nada.
+
+Eduardo De Oliveira   29:07
+E estava aberto lá no portal.
+Continuava aberto lá no portal.
+
+Danilo Macedo   29:12
+É, continua aparecendo lá, sendo que é para fechar, porque provavelmente vão entrar outros livros, sei lá, está virando o ano.
+
+Eduardo De Oliveira   29:14
+Isso.
+
+Camila Moraes   29:19
+Como eu estivesse comprando o livre do ano passado.
+
+Danilo Macedo   29:22
+É isso aí.
+
+Eduardo De Oliveira   29:22
+É isso mesmo.
+
+Danilo Macedo   29:24
+Sim.
+
+Camila Moraes   29:24
+Passei por isso.
+
+Eduardo De Oliveira   29:26
+fluxo ainda falando em fluxo vamos supor que o um consultor precisa revisar essa proposta aqui isso revisei essa proposta ela já fecha a vinda automaticamente ou seja já vou ter que habilitar a venda mas também preciso
+Integrar essa proposta, tá? Então existe esse cara aqui que somente a coordenação e as anjas tem acesso da sua filial.
+e aqui ele abre isso eu tô falando de fluxos específicos tá gente são os mais utilizados é o reintegrar proposta manualmente esse fluxo nada mais é do que o cara vai reintegrar isso daqui para ir lá
+
+Danilo Macedo   29:55
+Ele roda um fluxo.
+
+Eduardo De Oliveira   30:10
+Pro.
+Magento vulcano é vai para um dos 2. Eu não vou lembrar de cabeça agora, tá?
+Mas é um fluxo que manda lá para o acho que para o magento para habilitar lá e aqui, a hora que ela tiver ativa e aprovada, o consultor ou a anja ou a gestão precisa.
+Vou dar o abrir venda também novamente.
+
+Danilo Macedo   30:36
+Daí acho que eu acho que eu não entendi, você tá na proposta a.
+
+Eduardo De Oliveira   30:39
+Estou na proposta, vamos supor que eu revisei essa proposta, certo?
+
+Danilo Macedo   30:43
+Ela tá, é uma proposta que já tava.
+
+Eduardo De Oliveira   30:45
+Ela deixou de ser ativo e aprovado aqui, a partir do momento que isso ela tá ativa e aprovada. A hora que eu clico no botão revisar, ela volta para rascunho em andamento e muda o ID de revisão dela aqui.
+
+Danilo Macedo   30:48
+Ela está aprovada, está?
+Tá.
+
+Eduardo De Oliveira   31:00
+Ela iria para os sims.
+
+Danilo Macedo   31:00
+É, ele cria uma nova versão e a anterior ele coloca como fechada, revisada, fechada, revisada.
+
+Eduardo De Oliveira   31:03
+Exatamente.
+Revisada.
+Com isso, ele tem a total Liberdade de mexer. Por exemplo, vamos supor que entrou mais alunos, ele está negociando com mais alunos, com a escola. Alguma coisa ele precisou revisar, estava ativo e aprovado.
+
+Danilo Macedo   31:10
+Tá, entendi.
+E assim, ele já tinha aberto lá, ele já tinha, já tinha feito aquela aquela tarefa. Entendi, entendi. Agora, ele estava com a proposta aprovada e já tinha aberta a venda lá, tá?
+
+Eduardo De Oliveira   31:25
+Já estava com a vida aberta.
+Então aqui.
+Aí, por dado motivo, a escola falou, olha, chegou mais alunos ou a gente quer acrescentar o material ou esse material não vai atender a gente?
+Troca material ou remove material? Então ele precisou revisar essa proposta.
+Passa-se por toda a aprovação novamente, ela entrou nesse status aqui de novo, ativo, aprovada.
+A hora que revisou, ele derrubou em todos os lugares que essa proposta estava, então ele vai precisar reintegrar essa proposta através de um fluxo.Que é o integrar a proposta manualmente.Para que seja aberto a venda novamente. Então ele vai para o magento ou para o vulcano de verdade. Gente, desculpa, eu não lembro agora a sequência.E aí ele tem que entrar lá no nas atividades, vai ser gerado uma nova atividade, ele vai ter que abrir venda novamente nessa atividade.Dentro de propostas fluxo em si, esses são os mais utilizados, os demais pouco se conhecem.
+
+Danilo Macedo   32:43
+E aquele botão ali perder próxima safra?
+Tinha visto isso ainda?
+
+Eduardo De Oliveira   32:48
+Por exemplo.
+Estamos aqui chegando na no final dessa safra lá para junho mais ou menos essa escola aqui não vai ter não vai dar sequência com a gente ela ficaria uma proposta ativa aprovada ele só vai colocar perder para a próxima safra
+E vai dar OA as características dela do porquê da perda.
+Gera toda uma telinha aqui na frente, onde ele vai preencher.
+Aqui ele está perdendo para a próxima safra.
+Tem o botão?
+
+Danilo Macedo   33:19
+Mas o contrato só tinha um contrato para a safra atual, o contrato iria até a safra atual, certo?
+Ou não é um tá?
+
+Eduardo De Oliveira   33:27
+Isso, mas ele precisa perder.
+Então ele está perdendo para que para que não seja cobrado dele a próxima safra, tipo 2027, não vai ser cobrado do consultor ou gestor essa proposta, porque ele já perdeu.
+
+Danilo Macedo   33:43
+mas iniciar o contrato era até 2028 por exemplo pode acontecer dele perder também
+
+Eduardo De Oliveira   33:48
+Aí paga-se, aí paga-se as multas, essas coisas, aí entra já com a parte financeira também.
+
+Danilo Macedo   33:53
+Mas ele pode também colocar, perder a safra nesse caso.
+
+Eduardo De Oliveira   33:57
+Sim.
+
+Danilo Macedo   33:58
+E o seu contrato só tá?
+
+Eduardo De Oliveira   33:59
+Ele vai estar perdendo a proposta, no caso. Aí vai ser quebra de contrato, aí entra outra, entra jurídica, essas coisas. Aí já não tenho como dar alguma explicação.
+
+Danilo Macedo   34:03
+Sim.
+Mas é que eu não entendi porque assim, OA sala, ele fez a proposta de em 2025, ele fez uma proposta para o ano de 2026. Aí lá para outubro, setembro, ele foi negociar para 2027.
+
+Eduardo De Oliveira   34:20
+Isso.
+
+Danilo Macedo   34:25
+E essa proposta, tipo, já fechou, já vendeu, já tá rolando ali.
+
+Eduardo De Oliveira   34:30
+Caso não vai ter para o próximo ano, caso ele não queira renovar, ele perde a próxima safra. É só isso.
+
+Danilo Macedo   34:35
+Mas ele e o que ele muda de status? Ele muda alguma coisa que ele não vai mudar o status da proposta.
+
+Eduardo De Oliveira   34:42
+Não, ele vai. Isso daqui ele vai trazer uma informação aqui nesse campinho. Deixa eu dar um control f aqui.
+Essa daqui não tem, não é que ela não tenha, é que eu tenho que pegar uma perdida aqui para mostrar para vocês aqui embaixo, num desses Campos aqui, eu acho que é próximo de justificativa, ele vem, é proposta perdida por.
+inadimplência, por quebra de contrato, ali tem diversas opções, tá? Eu acho que são umas oito opções. E ele vai falar, olha, tô perdendo essa conta para o próximo ano porque a escola resolveu adotar a concorrência.
+
+Danilo Macedo   35:27
+É um informativo, mas não muda o status. Eles dão, entendi. Eu imagino que o Oscar tá.
+
+Eduardo De Oliveira   35:29
+É um informativo isso.
+Ele não, ele não muda o status aqui nesse caso, tá?
+
+Danilo Macedo   35:34
+Que o do processo fosse.
+
+Eduardo De Oliveira   35:35
+Ele só tá perdendo, ele traz o informativo.
+
+Danilo Macedo   35:37
+Uhum.
+Tá.
+
+Eduardo De Oliveira   35:40
+Fechar proposta aí já é outra coisa. Ele pode fechar como perdido, como cancelado, como qualquer outra coisa.
+
+Danilo Macedo   35:43
+Mhm.
+Uhum sim, é que o processo que o Oscar está pensando, na verdade, já eu fiz a proposta em 1 ano. No ano seguinte vai ser criada uma oportunidade para aquela outra escola, para essa escola, quer dizer, para o para a safra seguinte.
+
+Eduardo De Oliveira   36:01
+Yeah.
+
+Danilo Macedo   36:04
+E se ele perdeu, ele vai falar lá na oportunidade, não precisa informar aqui. Aí tem o rastreio do furinho de vendas, porque desse jeito não tem o furinho de vendas daquele ano.
+
+Eduardo De Oliveira   36:14
+Não.
+
+Danilo Macedo   36:15
+É, entendi.
+Entendi.
+Aí você disse que não tem nenhum outro processo, algum outro fluxo ou funcionalidade vinculada à proposta e oportunidade seja usado mesmo.
+
+Eduardo De Oliveira   36:28
+Assim.
+Não é que não tenha, existem.
+Mas que eu tenha conhecimento assim de usabilidade diária ou rotineira ou mesmo.
+Não, eu, Eduardo, não saberia explicar.
+Tá tanto que aqui, dentro de fluxo, nós temos diversos fluxos onde você pode.
+Girar.
+
+Danilo Macedo   37:02
+Entendi.
+
+Eduardo De Oliveira   37:03
+Habitualmente, não é utilizado a maioria deles.
+
+Danilo Macedo   37:07
+Tá bom, bons e alguma nova funcionalidade?
+É ter referência com esses fluxos, a gente pode entrar no detalhe.
+
+Eduardo De Oliveira   37:19
+Sim, todos eles têm detalhes também, tá? Na raiz, inclusive eu estava vendo pedir para ver o de um hoje que estava impactando.
+
+Danilo Macedo   37:19
+É.
+
+Eduardo De Oliveira   37:29
+Um conta.
+
+Danilo Macedo   37:35
+e se você passou mostrou tudo que que teria de importunidade e proposta eu queria justamente é mais como que tá o cadastro de conta você que tem um vínculo com contato então que é diferente diferente do padrão do dinâmico não nativo que
+
+Eduardo De Oliveira   37:54
+Então vamos lá.
+
+Danilo Macedo   37:54
+A gente tem aí a tabela contas versus contatos.
+
+Eduardo De Oliveira   37:59
+Conta.
+Vou, vou criar uma nova, tá?
+Quer dizer, vou usar essa daqui como exemplo de criar.
+Conta, todas as informações da conta, todos os dados, dados cadastrais da escola vão estar nessa guiazinha aqui. Deixa eu só dar uma definição para ela aqui.
+Não.
+O contato.
+Quando a gente fala, vocês estavam falando de criar o conta contato, de vincular um contato aqui, melhor eu pegar uma já existente, porque senão ele não vai liberar os Campos para mim.
+Esse contato.
+Quando foi gerado dentro de uma conta, ele já é criado um conta contato, tá? Então dentro do campo de contato em uma conta.Quando eu vou adicionar um contato?Ele já fala, olha, eu sou essa conta aqui para que você adicione um contato.Clicando aqui na lupinha, ó, ele vem o novo e aqui ele faz o vínculo entre conta contato.Não vou criar outro aqui, mas é só para que vocês tenham ideia e gente, caso tenha dúvida, já vai cortando eu aqui, tá?
+
+Danilo Macedo   39:46
+É, eu tô vendo que eu acho que isso não mudou, não.
+
+Eduardo De Oliveira   39:49
+Certo.
+
+Danilo Macedo   39:49
+Mas o que está mostrando aí?
+
+Eduardo De Oliveira   39:52
+Quando eu venho só em contato, eu posso ou não incluir uma conta e aqui é um monte de contato que para mim está ocupando espaço.
+Mas ao criar o contato, ele é bem livre, ele vai pedir o nome.
+Campos obrigatórios. Assim, tem a opção de tem opção, não tenho que colocar a origem desse contato, já que eu não estou vinculando teoricamente ele a nada.
+Então, temos algumas opções aqui já de origem do contato, se eu peguei por WhatsApp, se é qualificação de leads, se é tudo PNLD, ensino médio, PNLD anos iniciais, que é o que os consultores estão utilizando agora, se esse contato veio da lumisfera,Iônica, STD Prime, que é pode ser eventos.E-commerce se a se a gente for fazer um filtro por contato lá na origem, ele vai trazer diversas informações.Como eu vou apagar isso daqui é só para exemplificar.
+
+Camila Moraes   41:04
+É nesse, nesse caso, OCPF, ele não é obrigatório.
+
+Eduardo De Oliveira   41:08
+Não, porque não é um atendedor. A partir do momento que eu coloco aqui, ele passa a ser falando que o cara é um representante legal para da escola.
+
+Camila Moraes   41:08
+Para contato.
+
+Eduardo De Oliveira   41:17
+Enquanto eu estou aqui, não. Enquanto é só um contato, não tem problema. Eu falei que ele é um representante, CPF, passa a ser obrigatório e automático.
+
+Camila Moraes   41:25
+Está e só e o telefone comercial também está bom.
+
+Danilo Macedo   41:29
+O contato pode ter é dono de escola, professor, coordenador, diretor, pais.
+Responsáveis por alunos, alunos também.
+
+Eduardo De Oliveira   41:40
+A.
+
+Camila Moraes   41:40
+Que.
+
+Eduardo De Oliveira   41:42
+Alunos.
+
+Danilo Macedo   41:43
+Isso que pode variar o que pede de informação.
+
+Eduardo De Oliveira   41:45
+Exatamente.
+A gente tem todos esses na nossa base.
+
+Danilo Macedo   41:55
+E ali responsável por aluno é onde tem um vínculo de contato com contato pra você fazer o vínculo de.
+É pai com filho, por exemplo.
+
+Camila Moraes   42:05
+Homem que contato com contato.
+
+Eduardo De Oliveira   42:06
+Mhm.
+
+Danilo Macedo   42:07
+É porque você cria o contato do filho.
+
+Eduardo De Oliveira   42:08
+Sim.
+
+Danilo Macedo   42:12
+Eu acho que é isso e a é e vincula o pai, não é?
+
+Eduardo De Oliveira   42:12
+E amarra o pai? Não, aqui é só o deixa eu habilitar esse campo.
+
+Danilo Macedo   42:19
+É.
+Eu não lembro agora se é contato ou contato, mas eu acho que sim.
+
+Eduardo De Oliveira   42:30
+Eu acho que é só nomenclatura.
+Você tem?
+
+Danilo Macedo   42:34
+E marca lá o.
+Representante legal.
+
+Eduardo De Oliveira   42:38
+I verdade, so it's my crap.
+
+Camila Moraes   42:45
+Só para lembrar, acabar 5 minutinhos antes para a gente poder.
+Molhar antes de ir para a reunião das 11, tá, Daniel?
+
+Danilo Macedo   42:54
+Sim.
+
+Eduardo De Oliveira   42:57
+Você é, você consegue criar o responsável, no caso aqui, como a gente não está falando que é um aluno, mas você consegue sim amarrar, está?
+
+Danilo Macedo   43:07
+Então cli clica aí para ver uma coisa.
+
+Eduardo De Oliveira   43:09
+Criar o responsável.
+
+Danilo Macedo   43:13
+Estável.
+
+Eduardo De Oliveira   43:13
+Vou vincular uma escola.
+
+Camila Moraes   43:15
+Tá, mas me dá um cenário de exemplo aqui, você está cadastrando o contato, que é o diretor, o financeiro, alguém ali representante da escola.
+
+Eduardo De Oliveira   43:23
+Aqui, no caso, seria o isso, pode ser o diretor, o professor, pode ser qualquer pessoa aqui, desde que eu delegue ele aqui.
+
+João Carlos Figueirôa de Castilho   43:28
+Isso é uma tabela customizada.
+
+Danilo Macedo   43:31
+Pessoa.
+
+Camila Moraes   43:32
+Isso e em que momento eu vou fazer envolvimento do aluno e responsável do aluno aqui?
+
+Eduardo De Oliveira   43:32
+Yep.
+
+Camila Moraes   43:40
+Pra que serve?
+
+Eduardo De Oliveira   43:41
+Para ser honesto, não conheço ninguém nunca nem que fez e olha que eu cadastro bastante contatos aqui, mas não existe essa amarração.
+
+Danilo Macedo   43:45
+É.
+
+Camila Moraes   43:48
+Entendi.
+
+Danilo Macedo   43:50
+Eu acho que tinha alguma coisa, eu acho que é para o time de customer série de atendimento.
+Porque aí eles fazem o atendimento aos pais.
+
+Eduardo De Oliveira   44:04
+OCRC.
+
+Danilo Macedo   44:04
+Eu acho que é isso, é.
+Acho que é isso.
+
+João Carlos Figueirôa de Castilho   44:08
+Essa esse quando você procura aluno ali é um contato.
+
+Eduardo De Oliveira   44:08
+E.
+
+Danilo Macedo   44:11
+É o contato. Por isso que eu falei, é o vínculo com contato, mas não é só um vínculo ali.
+
+Eduardo De Oliveira   44:12
+Isso já é um contato existente.
+
+João Carlos Figueirôa de Castilho   44:14
+É, mas é porque essa é uma entidade customizada. Essa é uma entidade customizada.
+
+Danilo Macedo   44:18
+É porque ele quer saber, ele é. Ele é responsável por esse aluno, referente a qual escola a nível de ensino e série.
+
+Camila Moraes   44:18
+Então.
+
+João Carlos Figueirôa de Castilho   44:25
+Mhm.
+
+Danilo Macedo   44:27
+E também tem uma tabela customizada de conta versus contato, porque um contato nativamente o no dynamics, o contato está vinculado a uma conta só no nativo, só que o só que assim eu uma pessoa pode ser professor de 2 escolas diferentes.
+
+Camila Moraes   44:39
+Mhm.
+
+Eduardo De Oliveira   44:44
+Sim.
+
+Danilo Macedo   44:45
+E então, além de vincular, pode ser professor de uma e diretor de outra. E aí, além de vincular com 2 contas, também informa o que ele é naquela escola. Ele é diretor de tais referente a tais.
+
+Eduardo De Oliveira   44:47
+Isso ocorre bastante, tá? Com frequência.
+
+Camila Moraes   44:57
+Mhm.
+Não, aí tudo bem.
+
+Danilo Macedo   45:02
+Níveis de ensino, séries e tal.
+
+Camila Moraes   45:03
+Eu só fiquei curiosa sobre relacionamento ao aluno, essa granulidade de chegar ao pai do aluno e o aluno neste momento.
+
+Danilo Macedo   45:12
+Eu acho que é pra CRC mesmo, pro atendimento.
+
+Eduardo De Oliveira   45:14
+Agora nós temos aqui o responsável vinculado ao aluno do sétimo ano.
+E da escola? Só que o aluno ainda não está amarrado a uma escola, teria que ser criado aqui.
+
+Camila Moraes   45:21
+Mhm. Okay.
+
+Danilo Macedo   45:28
+Mas para o processo de vendas, é diretor, professor, é, são os funcionários de escola.
+
+Eduardo De Oliveira   45:35
+Isso.
+Geralmente.
+
+Danilo Macedo   45:39
+Não me lembro do Oscar falar de alguma funcionalidade que a gente iria mexer aí, mas é bom a gente conhecer. Eu me lembro se teria.
+Mas okay, eu conheço bem essa parte aí, não parece que não foi alterado nada, não.
+
+Eduardo De Oliveira   45:54
+Algum ponto a mais, gente?
+
+Danilo Macedo   45:57
+Deixa eu só abrir a lista de ativo de tabelas ali.
+Alunos é onde, na verdade, tem a quantidade de alunos de cada escola.
+
+Eduardo De Oliveira   46:06
+Isso.
+O que pode ser criado por aqui ou dentro, diretamente dentro da escola, no campo de alunos, o consultor tem a opção de colocar da escola pública o Censo 2025.
+
+Danilo Macedo   46:13
+Da escola.
+
+Eduardo De Oliveira   46:22
+Colocar provavelmente e até o final do mês, então os alunos senso nesse campo aqui, senso.
+Eu subo até o final do mês e aqui nós temos o do consultor.
+Que ele foi lá até a escola, pegou na Secretaria com a direção, alguma coisa falando, olha, tem x alunos nessas contas, essa, esse segmento.
+Aí vem e coloca por nível.
+
+Danilo Macedo   46:48
+Aí could.
+E aí isso existe, porque quando abre ainda existe a possibilidade de quando abre uma proposta, ele vai na conta, pega as quantidades de alunos que tem por série e já insere no lá na proposta para isso já ir virar quantidade de produtos, certo?
+
+Eduardo De Oliveira   46:59
+Vai automático.
+Vai automático.
+Isso vai automático.
+
+João Carlos Figueirôa de Castilho   47:07
+Mas ele pega do censo ou da do curso?
+
+Danilo Macedo   47:07
+É.
+Aí acho que ele pega primeiro do consultor, se estiver vazio, ele pega no senso. Então minha memória está boa, eu estou lembrando.
+
+Eduardo De Oliveira   47:13
+Exatamente. É exatamente isso. Vou no consultor. Não tem aluno, vou no senso.
+
+João Carlos Figueirôa de Castilho   47:16
+Tá.
+
+Danilo Macedo   47:17
+É porque assim o senso.
+Deixa eu ver no censo, é porque o censo eles pegam do censo mesmo e.
+
+João Carlos Figueirôa de Castilho   47:23
+E isso só funciona para a escola pública.
+
+Eduardo De Oliveira   47:26
+Não particular, pública. Esse número é válido para ambos.
+
+João Carlos Figueirôa de Castilho   47:31
+O censo, o censo traz da escola particular.
+
+Danilo Macedo   47:34
+Só ele traz, só que o consultor pode preencher e o do consultor provavelmente vai ser mais assertivo.
+
+Eduardo De Oliveira   47:35
+Okay.
+
+João Carlos Figueirôa de Castilho   47:39
+Não, sim, é porque eu acho que só achar que tinha citado que o censo trazido de escola pública, mas então ele traz todas, se é pública ou privada.
+
+Eduardo De Oliveira   47:40
+Com certeza.
+
+Danilo Macedo   47:46
+É que do censor ele traz a lista de escolas.
+
+Eduardo De Oliveira   47:50
+No modo geral, todas as escolas do Brasil teoricamente estão registradas ali, deveriam pelo menos.
+
+Danilo Macedo   47:51
+Modo geral.
+
+João Carlos Figueirôa de Castilho   48:00
+Uhum estão registradas e com quantidade de alunos.
+
+Danilo Macedo   48:01
+Assim.
+
+Eduardo De Oliveira   48:04
+Quantidade de aluno, tipo, se ela é particular, laica, católica, é sesi.
+
+Danilo Macedo   48:05
+Okay.
+
+João Carlos Figueirôa de Castilho   48:10
+Entendi.
+Isso é uma isso é uma API pública ou vocês pagam? Vocês pagam pra consultar isso? Então?
+
+Eduardo De Oliveira   48:16
+Ela é não, ela é pública, ela é pública.
+
+Camila Moraes   48:20
+MEC.
+
+Danilo Macedo   48:20
+Aí tem uma carga anual que atualiza aqui uma vez no ano.
+
+João Carlos Figueirôa de Castilho   48:20
+Entendi.
+
+Danilo Macedo   48:24
+E aí é uma forma de acelerar o preenchimento da proposta, porque aí o consultor já quando ele vai incluir o produto, já traz a quantidade de acordo com a série do produto, porque todo o produto que inclui na proposta, você tem que falar para qual série que é. Você não pode simplesmente por um produto. E aí ele já puxa, então é.
+
+Eduardo De Oliveira   48:36
+Para você se está destinado a este produto.
+
+Danilo Macedo   48:40
+É grade de terceiros, 153, já pega 53 e já bota na quantidade e ele pode ajustar, lógico.
+Eduardo, eu tô vendo outras outros itens no menu, catálogo, produtos, listas de preços.
+Clientes potenciais eu acho que algumas coisas vocês não usam mais, mas acho que era bom a gente ter uma outra sessão para explorar mais essa parte.
+Pode ser?
+
+Eduardo De Oliveira   49:09
+Pode, claro.
+
+Camila Moraes   49:13
+Quer fazer um levantamento do que tem no menu, que é usado ou não e se pode ser menteado, certo?
+
+Danilo Macedo   49:18
+Então, e não só isso. E entender também aquilo que é usado é ou não usado também a gente entender o que é.
+
+Eduardo De Oliveira   49:23
+A lista de preços é utilizado para levar lá para a proposta, né? Ela vai levar os produtos ativos que a gente vai atuar nessa safra. Produtos, nosso catálogo de produtos, no caso aqui ele já tem um filtro.
+
+Danilo Macedo   49:28
+É.
+
+Eduardo De Oliveira   49:39
+Que são os ativos, não é somente produtos ativos.
+
+Camila Moraes   49:43
+Mhm.
+
+Danilo Macedo   49:44
+É, mas vamos marcar, porque eu lembro que produtos a gente teve que fazer bastante customização, tem vários vínculos, marcação pra caramba. É bom a gente entender isso daí.
+
+Eduardo De Oliveira   49:49
+Tem amarração para caramba aqui.
+
+Camila Moraes   49:52
+Hhh.
+
+Eduardo De Oliveira   49:54
+Tem bastante amarração aqui.
+
+Danilo Macedo   49:56
+Vamos combinar então, Tércio, uma outra agenda, tá de negócio para a gente se entender melhor essas partes aí. Isso é importante, principalmente de produto.
+
+TercioEduardoFreire Lins   50:04
+Okay.
+
+Danilo Macedo   50:07
+Um pra pra outra reunião.
+
+Camila Moraes   50:09
+Vamos, não é?
+
+Danilo Macedo   50:10
+Vamos lá?
+
+TercioEduardoFreire Lins   50:10
+I'm like, tá na hora.
+
+Danilo Macedo   50:13
+Beleza, valeu pessoal. Obrigado Eduardo. Kevin, muito obrigado. Tchau, tchau.
+
+Camila Moraes   50:14
+Obrigadão, gente.
+
+Eduardo De Oliveira   50:15
+Bom dia gente, fiquem com Deus, tchau, tchau.
+
+Kevellin dos Santos Corrado   50:15
+Tchau, gente.
+
+Camila Moraes   50:16
+Obrigado, tchau.
+

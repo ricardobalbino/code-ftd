@@ -1,0 +1,71 @@
+# Avanade Method - Unified Configuration
+# Este arquivo é carregado automaticamente por TODOS os agentes na ativação
+# Ref: avanade-master.md step 2 → "{project-root}/.avanade-method/config.yaml"
+# Merge de base-config.yaml + core-config.yaml + referências FTD
+
+# ============================================================
+# USER & PROJECT
+# ============================================================
+version: 4.29.0
+user_name: "Usuário"
+communication_language: "pt-BR"
+output_folder: "docs"
+artifacts_folder: ".avanade-output"
+slashPrefix: Avanade
+
+# ============================================================
+# PROJECT CONTEXT - FTD Educação
+# ============================================================
+project:
+  client: "FTD Educação (Grupo Marista)"
+  type: brownfield
+  platform: dynamics-365-ce-online
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, TOTVS/Datasul, ISA, Adobe Sign"
+
+# ============================================================
+# MANDATORY READING - Loaded by ALL agents
+# ============================================================
+devLoadAlwaysFiles:
+  - .avanade-method/docs/ftd-knowledge-base.md
+  - .avanade-method/docs/discovery/ftd-discovery.md
+  - .avanade-method/docs/especificacao-simulador-notion.md
+  - .avanade-method/configs/d365-config.yaml
+  - .github/instructions/avanade-bca-guidelines.instructions.md
+
+# ============================================================
+# DISCOVERY & ARCHITECTURE LOCATIONS
+# ============================================================
+discovery:
+  discoveryFile: docs/discovery.md
+  discoverySharded: true
+  discoveryShardedLocation: docs/discovery
+architecture:
+  architectureFile: docs/arquitetura.md
+  architectureSharded: true
+  architectureShardedLocation: docs/arquitetura
+
+# ============================================================
+# DEV SETTINGS
+# ============================================================
+devDebugLog: .ai/debug-log.md
+devStoryLocation: docs/stories
+
+# ============================================================
+# AGENT BEHAVIOR
+# ============================================================
+settings:
+  show_reasoning_chain: true
+  require_elicitation: true
+  strict_methodology_compliance: true
+  auto_save_outputs: true
+
+party_mode:
+  default_team: "fullstack"
+  max_agents: 5
+  handoff_style: "explicit"
+
+naming:
+  prd_prefix: "PRD-"
+  story_prefix: "STORY-"
+  epic_prefix: "EPIC-"
+  adr_prefix: "ADR-"

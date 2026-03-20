@@ -1,0 +1,65 @@
+```yaml
+workflow:
+  id: greenfield-ui-workflow-v2
+  name: Greenfield UI Development
+  version: 2.0
+  type: ui_development
+
+phases:
+  - id: ux-design
+    name: "UX Design & Research"
+    tasks:
+      - conduct_user_research
+      - create_user_personas
+      - design_user_journeys
+      - develop_wireframes
+
+  - id: ui-design
+    name: "UI Design & Prototyping"
+    tasks:
+      - create_design_system
+      - design_ui_components
+      - build_interactive_prototypes
+      - validate_design_concepts
+
+  - id: development
+    name: "UI Development"
+    tasks:
+      - implement_component_library
+      - build_application_screens
+      - integrate_backend_apis
+      - optimize_performance
+
+  - id: testing-launch
+    name: "Testing & Launch"
+    tasks:
+      - conduct_usability_testing
+      - perform_accessibility_audit
+      - deploy_application
+      - monitor_user_experience
+
+gates:
+  - phase: ux-design
+    criteria:
+      - user_research_complete
+      - personas_validated
+      - wireframes_approved
+  
+  - phase: ui-design
+    criteria:
+      - design_system_established
+      - prototypes_validated
+      - design_approved
+  
+  - phase: development
+    criteria:
+      - components_implemented
+      - screens_complete
+      - api_integration_working
+  
+  - phase: testing-launch
+    criteria:
+      - usability_tests_passed
+      - accessibility_compliant
+      - deployment_successful
+```

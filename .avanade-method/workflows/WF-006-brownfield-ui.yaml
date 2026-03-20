@@ -1,0 +1,65 @@
+```yaml
+workflow:
+  id: brownfield-ui-workflow-v2
+  name: Brownfield UI Enhancement
+  version: 2.0
+  type: ui_modernization
+
+phases:
+  - id: ui-analysis
+    name: "UI Analysis & Assessment"
+    tasks:
+      - analyze_existing_ui
+      - assess_user_experience
+      - identify_modernization_opportunities
+      - evaluate_design_system_needs
+
+  - id: design-planning
+    name: "Design & Planning"
+    tasks:
+      - create_ui_enhancement_spec
+      - design_component_architecture
+      - plan_migration_strategy
+      - define_testing_approach
+
+  - id: development
+    name: "UI Development"
+    tasks:
+      - implement_ui_components
+      - integrate_design_system
+      - perform_usability_testing
+      - optimize_performance
+
+  - id: deployment
+    name: "Deployment & Validation"
+    tasks:
+      - deploy_ui_enhancements
+      - validate_user_experience
+      - monitor_usage_metrics
+      - gather_user_feedback
+
+gates:
+  - phase: ui-analysis
+    criteria:
+      - ui_assessment_complete
+      - modernization_scope_defined
+      - user_needs_identified
+  
+  - phase: design-planning
+    criteria:
+      - ui_spec_approved
+      - component_design_validated
+      - migration_plan_confirmed
+  
+  - phase: development
+    criteria:
+      - components_implemented
+      - usability_tests_passed
+      - performance_optimized
+  
+  - phase: deployment
+    criteria:
+      - deployment_successful
+      - ux_validated
+      - feedback_collected
+```

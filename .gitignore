@@ -1,0 +1,29 @@
+# ============================================================
+# Avanade Method - FTD Educação
+# ============================================================
+
+# MCP Server credentials (NEVER commit)
+.vscode/mcp.json
+.dataverse-mcp
+.env
+.env.*
+!.env.example
+
+# Avanade Method outputs
+.avanade-output/
+.ai/
+
+# Node.js (MCP servers)
+node_modules/
+build/
+dist/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+*.swp
+*.swo
+*~

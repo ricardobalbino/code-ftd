@@ -1,0 +1,1701 @@
+Transcrição
+9 de março de 2026, 12:03PM
+
+Kevellin dos Santos Corrado começou a transcrição
+
+Kevellin dos Santos Corrado   0:10
+Pronto, gente!
+
+Oscar de Rooij   0:13
+Prontinho.
+Hhh.
+Então tá certo é vamos lá deixa eu compartilhar a tela de novo
+Feito.
+Então, o que nós temos é esse protótipo visual. Ele veio antes da especificação, tá? Aquela de 70 páginas. Foi em cima desse protótipo que tivemos várias sessões de refinamento. E hoje?
+A especificação é o que representa a realidade. Então aqui vocês vão perceber que em alguns momentos eu vou falar, isso daqui já mudou, isso aqui tá diferente, et cetera. Por isso que a Kevellin vai mostrar a versão que está agora no MVP depois. Só que aqui tem.
+O comportamento esperado. Então, para onde vamos? Então, aqui é um pouco nesse intuito que vamos que eu vou apresentar, tá? Então, o simulador, a primeira coisa que vale mencionar é que ele foi definido como sendo uma plataforma separada em Power Pages.
+Que é o front-end conectado ao CRM, que OCRM é o motor, tá? Então uma coisa não vai sem a outra. O simulador, ele foi criado em Power Pires porque ele não é só uma interface do CRM, ele vai ser uma ferramenta de venda.
+Vai ter upsell, cross sell, vai ter sugestão para o consultor, vai ter instruções para o consultor, vai ter notificação, vai ter uma série de coisas que vão além do que é o escopo fechado ali, do que OCRM tem para oferecer.
+Tá, então é claro que dá para fazer muita coisa no CRM, mas a questão é que também AIUXEAUI do dynamics, ela tem suas limitações para esses objetivos. Então aqui começa com uma tela que recebe o consultor para ele ter uma visão.
+Sobre as propostas que estão nas mãos dele, eu não vou entrar nesse detalhe. Eu vou direto para uma nova simulação para mostrar para vocês um pouco do que é a ideia. Tá bom? AOA simulação, ela tem várias etapas.
+Dentro da especificação, são 6 etapas no total. Nessa nessa fase anterior, aqui a gente imaginava que eram 4 etapas. Fomos refinando, refinando e chegamos em 6, tá? Mas o contexto ele continua.
+OA base continua. Então primeiro eu vou ter que escolher aqui o meu cliente. Eu posso identificar quem é o sócio que é daquela escola, não é? Então aqui no caso tem esses 2. Lembrando que tudo vem do CRM.
+Tudo vem de um pré-cadastro e feito no CRM, porque a jornada comercial de negociação, ela acontece muito antes, lá no lide, na primeira reunião de introdução comercial, e ela vai avançando e à medida que o consultor avança usando OCRM.
+Ele vai cadastrando, por exemplo, os contatos. Ele cadastra, por exemplo, o endereço da escola, ele cadastra outras coisas. Então, quando chega na etapa da proposta, que é bem adiante, aí essas informações já estão disponíveis. Então aqui eu escolho quem que é o sócio.
+Quem que é o destinatário da proposta, por exemplo, o Antonio pode ser o sócio, só que é o Roberto e a Ana que estão negociando comigo. Então, quando eu enviar a proposta para o cliente visualizar, é o Roberto e a Ana que vão de fato acompanhar, vão trazer feedback, vão tentar baixar preços, aquela coisa toda.
+Tá, eu tenho tipos de proposta, ou é um contrato ou é um aditivo. Isso aqui futuramente vai definir o que vai ser a integração com o Adobe Sign para saber qual é o template de contrato ou de aditivo que a gente vai ter que utilizar.
+Dentro dos aditivos, vamos ter tipos de aditivo específicos, tá bom? E eu tenho um vínculo com a proposta anterior. Esse vínculo, inclusive, em algum momento vai poder ser automatizado, porque é sempre cada proposta é sempre em cima de uma proposta anterior.
+Então eu tenho, primeiro é um contrato, depois é um aditivo, aditivo, aditivo, então sempre vai ter o encadeamento de propostas, tá?
+Então aqui vou com contrato mesmo, não vai mudar aqui o nosso, a nossa simulação atual fornecedora é uma informação relevante, mas ela não influencia. Vigência do contrato 5 anos. Esse campo aqui de reajuste anual a gente já removeu, então vou pular.
+Aqui eu tenho responsável jurídico, responsável financeiro. O jurídico é aquele que vai de fato assinar essa proposta. Então, dentro da FTD, você pode negociar com uma escola individualmente. É Ela que vai assinar. Você pode negociar com a mantenedora.
+E a mantenedora é quem vai assinar. Digamos que aquela escola faz parte de uma rede. Então você está negociando com uma escola. A proposta é na escola, mas quem vai assinar é a mantenedora. Então pode definir aqui quem é que vai assinar essa proposta.
+E aqui o responsável financeiro é quem de fato vai receber ou vai pagar FTD. Então, no caso das nas negociações da FTD, a gente pode oferecer Patrocínio, a gente pode oferecer algumas coisas, que é o royalties que a gente.
+Paga a escola. Então eu vou pagar a mantenedora ou eu vou pagar a própria escola? E OA contrapartida também é verdadeira. Quando vende, quando a escola vende os nossos produtos, de onde vem esse dinheiro? Tá, então tá aqui.
+O ano safra. Qual é a safra que eu estou vendendo? Nesse caso, 26 e a tabela de preços. Hoje existem mais de 12 tabelas de preços. Não faz sentido a tabela de preços. Estamos melhorando a arquitetura para que o sistema identifique o preço. O construtor não tem que ficar sabendo qual é a tabela de preços.
+Então, mas hoje tem isso. E aí você tem o alunado da escola, eu vou colocar aqui 5 alunos em cada uma das séries, porque essa informação é importante mais adiante.
+Na segunda etapa, nessa época aqui, a gente ainda entendia que OA definição do modelo de venda ela vinha antes, que é modelo de venda. A gente está até rebatizando esse nome para canal de venda. Na prática, aqui você está definindo se a escola vai vender os produtos.
+Pela FTD com você, que isso aqui é um é um gap de nome, tá? Hoje se chama FTD com você, mas na verdade é o lumisfera. Lumisfera é o e-commerce da FTD. Então aqui a escola vai ganhar a sua loja dentro da lumisfera.
+Com os seus produtos acordados aqui na proposta e ela vai compartilhar esse link para as famílias dela e ela. As famílias vão comprar os produtos na lumisfera, tá? Então isso aqui é o esse é o principal canal de venda da FTD atualmente.
+E aí aqui eu posso aumentar, habilitar ou diminuir outros canais de venda. Esse conceito continua. Só que ele mudou a forma Como Ele É feito. Eu vou explicar isso um pouquinho mais para frente.
+Mas aqui eu acho que só é garantindo que vocês entendam que existe mais de uma forma da FTD vender, certo? E aqui do lado, a ideia é o quê? Cada canal de venda, ele tem os seus próprios parâmetros de configuração.
+Então, por exemplo, quando eu vou configurar FTD com você, que é um e-commerce, eu tenho definições dos parâmetros logísticos. Eu vou entregar para a família, eu vou entregar para a escola, eu vou vai cobrar frete? Não vai cobrar frete? Então tem vários parâmetros que são negociados aqui.
+E são tem que ser inseridos no CRE, tá? Então aqui eu vou adiante. Essa aqui é a tela principal.
+Hoje, se vocês lembram bem, tem aquele número mágico de que um consultor demora até 3 horas para colocar uma proposta para dentro do sistema. Isso se dá por várias razões. A primeira delas é que o consultor nem cadastra o cliente antes, às vezes.
+Então ele vai fazer tudo de uma vez. Ele vai preencher não só a proposta, mas o próprio cadastro da conta no logo nessa etapa. Por quê? Porque ele fez tudo por fora. Então isso já é uma parte do tempo que é consumida agora aqui.
+Lembra que eu comentei na semana passada que o consultor ele gasta é um clique por produto e tem proposta que chega a 200 produtos, então é clique no adicionar produto, aí é o tempo de carregamento, é o clique para escolher o produto, aí depois você adicionou no grid, aí você vai ter que ir lá aumentar.
+A quantidade de alunos, aí você tem que ir lá modificar o desconto aplicado, etc. Ele faz isso 200 vezes. Então, o que a gente precisava era criar um mecanismo que facilitasse essa inclusão de produtos.
+Principalmente, então aqui eu tenho uma ferramenta de adicionar produtos em lote e aqui eu tenho de fato a minha proposta, os produtos que estão aqui dentro e aqui eu tenho os totalizadores.
+Tá, então o que está sendo desenvolvido nesse momento, tá?
+Dado que a minha base de produtos, ela não está correta, então eu tenho vários gaps de cadastro de produto, eu não vou conseguir fazer essa funcionalidade de adicionar produto em lote. Por quê? Porque.
+Essa funcionalidade depende de uma base de produtos consistente e confiável. Por isso, estamos desenvolvendo agora adição de produto individual hoje. Lembra que vocês conhecem OCRM? Então ele tem as suas, as suas limitações.
+Então é o clique, aí carrega, aí clica e carrega, et cetera. Aqui a gente vai usar basicamente tecnologia de Franca Pred deixar as coisas mais rápidas. Então o senhor digita OP, já filtrou e já filtrou que já filtrou, eu vou adicionar pequeno príncipe, esse tipo de coisa que a gente está colocando, nada mágico para.
+Nós de tecnologia, certo? Então a gente só tá fazendo o quê? Melhorando a tecnologia para que a velocidade de inserção de produtos seja mais rápida. Então, beleza, Pequeno Príncipe foi adicionado aqui, tá tudo bem. Onde é que de fato o consultor vai?
+Vê valor nessa ferramenta? Só quando a gente adicionar o produto em loja até lá, a gente vai ajudar outras pessoas dentro da filial, não exatamente o consultor. Como que a gente ajuda? A gente ajuda pela linha de negócio.
+Então é como o consultor pensa, como que ele negocia o consultor. Ele primeiro ele pensa, qual é a linha de negócio que eu tenho que trazer um produto para esse cliente? A linha de negócio é como se fossem as possibilidades de produtos complementares que ele pode levar para a escola.
+Ele pode levar um sistema de ensino junto do sistema de ensino, ele pode levar um didático. Junto do didático, ele pode levar um bilíngue, ele pode levar um espanhol, ele pode levar um apê. É como se tudo é um em cima do outro. Ele pode vender tudo para essa escola.
+Então isso, inclusive, é a forma como coordenadores, gerentes e diretores querem ver as informações. Então, a partir do momento que o consultor definiu que ele está querendo vender um sistema de ensino, ele vai escolher qual que é a coleção.
+Trilhas é uma coleção com vários livros de várias séries. Na experiência atual, ele tem que adicionar um por um, então são só no trilhas. Deve ser uns 15, uns 15 materiais que ele tem que incluir. São 15 vezes, uns 3 cliques cada um que ele tem que.
+Colocar dentro do CRME. Aqui a ideia é ele conseguir escolher o trilhas, escolher as séries que ele quer incluir o trilhas. Ele vai padronizar um desconto de 10%, colocar um markup de 20%.
+E quando ele clicar, adicionar todos os produtos, vende uma vez.
+Só isso já economizou uns 10 minutos dele.
+E aí aqui, então, a premissa não é da do desenvolvimento dessa funcionalidade é, ele faz sempre o grosso. O grosso ele faz com base no cadastro, depois o consultor refina.
+Então, aqui, por exemplo, digamos que nesse livro aqui a gente colocou o padrão de 10% de desconto, mas ele vai começar a negociar. E aqui ele diminui esse aqui para 5 de desconto. Por alguma razão, ele não quer. Lembra que eu coloquei o alunado na primeira tela? Então, o alunado, ele já veio preenchido.
+Também correspondente à série. Eu botei 5 em todas, então aparece 5 em todos aqui, mas é o correspondente à série. Mas eu posso aumentar no produto individualmente. Tem casos na FTD que você está negociando com o cliente. O livro foi feito para o primeiro ano.
+Mas, por alguma razão, aquela escola quer usar aquele livro em uma outra série. Então ele pode vir aqui e mudar esse livro aqui do primeiro ano. Ele pode mudar para, por exemplo, para a educação infantil na série que se chama 5 anos.
+Eu posso fazer essas modificações individualmente. Eu posso pegar também o royalty que a gente mudou. A gente mudou o nome do royalty para markup. Markup eu posso mudar individualmente também.
+Posso aumentar isso daqui para 30 e eu posso fazer o contrário. É normal o consultor também não definir o markup pelo percentual, como eu fiz aqui, 30% de markup. É normal ele pegar aqui 948, ele vai botar aqui 950 e aí o cálculo inverso.
+Também acontece. E o consultor? Não é porque ele adicionou trilhas nem todas essas séries que ele não pode pegar um dos livros e deletar. Então ele tira, então ele coloca o grosso, depois ele vai refinando a proposta dele para chegar.
+No modelo que na proposta que ele quer e à medida que ele foi editando isso, o importante é que os totalizadores já reflitam o que está sendo alterado.
+Então, aqui eu estou abaixando o desconto, aumentando o desconto, estou aumentando a quantidade. Ele está sempre atualizando os valores. Eu tenho uma coisa chamada taxa de administração, que está aqui. Se eu incluo a taxa de administração, eu estou automaticamente já mudando os valores. Isso é importante para o consultor, para ele visualizar.
+O que está acontecendo com a proposta dele? E aí, aqui embaixo, o que acontece hoje? Existem uma série de regras políticas comerciais que elas ficam escondidas. Os consultores não conseguem saber exatamente.
+Qual que é a regra de alçada que está estourando a partir do momento que ele mudou alguma coisa? Porque essas regras são difíceis. Você tem regra de percentual no royalty, regra de regra de percentual de adiantamento, regra de percentual de Patrocínio.
+Regra, regra de taxa de administração, adiantamento bruto, royalty bruto e de parcelamento na loja. Então, por exemplo, se eu pegar até 6 aqui, 4 parcelas, uma parcela, tá vendo que aqui não estoura nada? Aí eu vou pegar aqui 7 parcelas. OPA.
+Estourou, foi para o nível 4. Nível 4 é o quê? É o nível que vai até o diretor comercial, consultor, coordenador, gerente, diretor adjunto comercial. Se eu volto aqui para 6?
+Aí agora eu estou no nível 2, então é consultor, coordenador e gerente. Então as alçadas ficam claras e eu posso habilitar o adiantamento. Então é outra condição comercial da FTD. E aí tudo a gente tem que entrar num detalhe que é adiantamento, que é road, que é tudo.
+Vai fazer parte do onboarding de vocês também, entender o que é cada uma dessas coisas. Mas qual que é o ponto principal aqui nessa interface? É a premissa de que eu vou sempre, com base no cadastro do produto, eu consegui ter uma ferramenta que adiciona tudo em lote.
+Pra Ele poder refinar e, caso necessário, ele vai lá e adiciona ainda algum produto individualmente. Por exemplo, quando a gente fala de literatura, Pequeno Príncipe, Dom Casmurro, é livros de literatura, não é normal você fazer uma adição em lote.
+Não tem sentido fazer isso. É comum você vir aqui colocar literatura, você filtra e aí você vai apresentar só os livros, não é? E você vai escolher a série que você quer adicionar a esse livro. Então, cada linha de negócio.
+Ela pode ter. Ela tem algumas especificidades de comportamento. Exemplo, literatura, não faz sentido adicionar em lote. Exemplo 2 sistema de ensino eu posso ter desconto?
+Eu posso ter mais de oração. Eu tenho um preço de tabela, é 100. Eu coloquei 10 de majoração. O preço para essa escola é 110, não é 90. Eu tô preço. Eu estou modificando o preço para cima.
+Em bilíngue, eu também posso fazer isso, mas no didático eu não posso fazer isso. Então, o simulador, ele vai ter que trazer essas regras e particularidades de cada linha de negócio para a interface. E isso está é o que está sendo mapeado, certo? É isso que está na especificação.
+Deixa eu ver se tem mais alguma coisa?
+Não.
+Depois que eu inclui todos os produtos, qual que é o conceito principal dessa tela aqui?
+É tudo que eu vou vender para essa escola.
+Lembra do modelo de venda?
+Antes, a gente pensava que cada modelo de venda vai IA até a sua lista de produtos e IA fazer a venda, depois a gente percebeu que esse entendimento estava errado.
+A escola, ela tem uma negociação, que é essa lista de produtos, com esses descontos, com essas quantidades. É esse é o compromisso dela, do que ela vai vender? É esse é o compromisso do de receita para FTD.
+Para toda a nossa gestão comercial e gestão da operação, esse é o compromisso, independente de por onde ela vai vender. Então, na especificação, vocês vão ver que produto e serviço vem primeiro.
+E o canal de venda está vindo depois, porque o canal de venda, no novo conceito que estamos trazendo, ele independe. Eu vou se essa escola aqui, ela vai vender isso aqui.
+A maior parte ela vai vender no FTD com você, mas ela também vai ter uma parte que ela vai fazer uma venda direta. Ela vai. A gente vai faturar a escola diretamente. Ela vai comprar tudo de uma vez. Vai ser uma invoice, não vai ser um e-commerce comprando.
+Certo.
+E aí eu posso ter uma frente de loja, um evento, um plantão de vendas que vai acontecer na escola. São outros canais de venda que podem acontecer em paralelo, ao mesmo tempo, na mesma proposta. Eu vou vender, só que a mesma, as mesmas condições comerciais.
+Em canais diferentes, por isso que o modelo de venda foi para frente na especificação, tá?
+Esse é o conceito principal.
+Quando eu clico próximo aqui, eu tô indo para o que seria a última, pode falar, Daniel?
+
+Danilo Macedo   20:00
+Câ
+Tá, bom dia, deixa eu tirar uma dúvida aí do que você falou agora, mas aí em algum momento vai ser vinculado o produto ao canal, ao canal de venda.
+
+Oscar de Rooij   20:12
+Perfeito, a ferramenta que vende ao fatorar isso ou ao processar isso no totus, tem que mapear por onde foi vendido.
+
+Danilo Macedo   20:22
+Mas aí aqui, então o construtor, ele vai selecionar esses são produtos que são FD com você, esses produção de outra modalidade.
+
+Oscar de Rooij   20:29
+Não.
+Eles, o que aqui vai ver? O que aqui vai definir primeiro é uma coisa, é a lista de produtos. Beleza, aqui a gente vai definir na especificação. Tem isso na tela de configuração dos canais de venda. Uma das coisas que tem para UFTD com você.
+
+Danilo Macedo   20:31
+Como que vai identificar?
+Teixeira.
+
+Oscar de Rooij   20:46
+Por exemplo, é uma sublista de produtos no venda direta, é uma sublista de produtos. Essa sublista de produtos, ela não está em todos os canais de venda. O que é essa sublista de produtos? É dentro dessa lista inteira de produtos. É quais que eu vou?
+Disponibilizar naquele canal. Aí eu vou dar um exemplo real, que é o exemplo do Marista, uma lista ele negocia com FTD, ele coloca ali toda a parte de sistema de ensino e literatura, sistema de ensino, uma lista, ele fatura direto com a gente.
+Eu pego uma invoice, a equipe aqui financeira faz uma invoice, manda para Marcia e o Marcia paga essa invoice. É o Marcia que compra todos os materiais. Então dentro da minha lista de produtos, que é aqui, produtos e serviços, eu vou ter.
+Tudo eu vou ter todo o sistema de ensino e toda a literatura, mas é na configuração do canal que eu vou mostrar que no venda direta eu já vou faturar toda essa parte de sistema de ensino, porque ele escolheu e dentro do FTD com você.
+Vai ter aqui toda a literatura. Então, literatura, ele não. A gente não vai faturar nada. A gente vai esperar a escola divulgar, vai esperar os pais entrarem na lumisfera, vai esperar a compra acontecer, vai esperar o lumisfera processar a venda e mandar isso para o Totvs.
+Aí sim, eu tenho no tots. O que é que foi vendido por cada canal? E nós sim, vamos ter esse cruzamento que você está falando. E só que qual é o ponto? Eu posso vender a mais.
+Eu tenho aqui essa lista de produtos que tem 100 quantidades de produtos, mas como pode vender 120, não tem problema. Isso é um problema bom. Na verdade, a gente não tem estoque, et cetera, beleza, isso é outra coisa, mas ele pode vender a mais.
+Agora ele pode vender a menos também. Então essa gestão de vender a mais, vender a menos, vai ser super importante para fazer depois. E é claro que a gente vai querer entender qual que é a performance de cada canal. Então, nessa negociação com o Marcelo, 90% foi vendido via venda direta.
+E 10% foi vendido via lumisfera b to c, porque só foram, só as literaturas foram vendidas ali e está tudo bem. Só que tem outros canais que aparecem no meio do caminho. Então digamos que eu tenho essa mesma configuração. E aí o marista vai lá e chama um consultor para fazer um evento, um plantão de vendas lá na escola, em algum dia específico.
+E vai aparecer ali 34 por cento que foi vendido no plantão de vendas. Pode isso acontece, tá? Faz. Eu cheguei a consegui responder, Daniel.
+
+Danilo Macedo   23:23
+É, eu não estou com dúvida ainda se na proposta o vendedor ele precisa, por exemplo, ele incluiu 100 produtos. Se acontece desde assim, 90 desses produtos é FTD com você o modelo de venda.
+
+Oscar de Rooij   23:37
+Não.
+No.
+
+Danilo Macedo   23:38
+10. Os outros 10? Não. Ele não precisa identificar cada um desses produtos. Ele só precisa identificar que para essa proposta tem 123 modelos de vendas.
+
+Oscar de Rooij   23:43
+Não.
+Aqui ele aqui na lista inteira, eu defino as quantidades. Quando eu vou lá no FTD com você, eu não defino que ele vai vender 3 Dom Casmurros. Eu falo que ele pode vender Dom Casmurro, não a quantidade. Eu não limito a quantidade no FTD com você.
+
+Danilo Macedo   23:52
+Mhm.
+Mhm.
+Michelle.
+
+Oscar de Rooij   24:05
+Eu limito que produto pode ser vendido pela FTD com você.
+
+Danilo Macedo   24:10
+E não precisa definir quais desses o modelo de venda para cada um dos produtos, não precisa.
+
+Oscar de Rooij   24:15
+No, no.
+
+Danilo Macedo   24:16
+Bom, está bom, beleza, essa é meu, está bom.
+
+João Carlos Figueirôa de Castilho   24:18
+E se o?
+
+Oscar de Rooij   24:18
+Eu posso ter o Dom Casmurro pode estar sendo vendido no FTD com você no venda direta. Eu posso ter um faturamento. No limite, a escola pode fazer uma venda de uma parte ali dos produtos, tá? Então eu vou, eu vou, eu vou lá no fazer um exemplo de Faria FTD com você com.
+
+Danilo Macedo   24:32
+Mhm.
+
+Oscar de Rooij   24:38
+Com plantão de vendas, ele pode vender o Dom Casmurro lá no FTD com você e aí no plantão de vendas ele vai vendedor do Casmurro também.
+
+Danilo Macedo   24:48
+Mas pode acontecer de, por exemplo, ele, como eu falei, eles tem produtos, 90 produtos, ele vai vender direto para a escola, ou seja, ele tem que faturar para a escola 10 produtos. Ele vai colocar no FTD com você, não tem que identificar quais são esses 90 para poder fazer essa invoice desses 90 produtos.
+
+Oscar de Rooij   24:55
+Mhm.
+Machado.
+Sim, é isso que é o caso do humanista. Quando ele colocar o venda direta, já vai direto fazer a invoice.
+
+Danilo Macedo   25:12
+Mas como que vai saber que dos 100 produtos que estão na proposta são 90 que são devem estar na invoice e 10 não ou não pode ter isso? Se é venda direta, todos os itens já vão para a invoice.
+
+Oscar de Rooij   25:24
+Você diz a quantidade do venda direta.
+
+Danilo Macedo   25:26
+Não quantidade e também os itens mesmo.
+
+Oscar de Rooij   25:28
+Por exemplo, dom casmurro, digamos, aqui vamos um exemplo, pequeno príncipe, eu estou falando aqui que eu tenho 5.
+
+Danilo Macedo   25:35
+Mhm.
+
+Oscar de Rooij   25:35
+Todo o resto eu vou colocar no FTD com você. O que você está me perguntando é o quê? É se O Pequeno Príncipe, quando eu colocar em venda direta, é 5 que eu vou faturar ou se é 3 que eu vou faturar?
+
+Danilo Macedo   25:47
+Isso aí.
+
+Oscar de Rooij   25:48
+É isso, essa é a pergunta.
+
+Danilo Macedo   25:50
+É como que vai diferenciar quais que são, vai faturar porque já é venda direta e quais que não, porque é fita com você.
+
+Oscar de Rooij   25:55
+Sim.
+A lista de produtos ela vai ficar separada. O que vai para FTD com você? O que vai para venda direta? E isso ele permite no venda direta. O que foi definido até agora com a comercial é que vai direto todos os produtos. Então, por exemplo, Dong, se eu tenho um pequeno príncipe.
+Eu coloquei ele no venda direta, vai 4 nesse caso.
+
+Danilo Macedo   26:18
+Mas a minha dúvida é, como que o vendedor identifica isso? São 2 propostas diferentes ou fica tudo numa proposta só?
+
+Oscar de Rooij   26:24
+Não é na próxima, na próxima etapa. Tem uma outra etapa, depois dessa que ele faria isso, só que está na especificação.
+
+Danilo Macedo   26:27
+Tá bom, tá bom, não entendi, entendi. Em algum momento ele vai identificar quais produtos e qual é a quantidade para cada modelo de venda. É isso, tá?
+
+Oscar de Rooij   26:32
+Sim.
+É, então assim, quando vocês lerem a especificação e eu tinha pedido para vocês lerem depois dessa conversa, certo? É justamente para vocês terem o contexto. Quando vocês vem aqui para a etapa, configuração de vendas, primeiro produtos e serviços, que é a que eu mostrei agora.
+
+Danilo Macedo   26:47
+Tiago.
+
+Oscar de Rooij   26:54
+Benefícios, doações e patrocínios nem tá no protótipo.
+Aí depois tem a etapa 4, que é a configuração de vendas. Na configuração de venda, eu tenho aqui o contexto, o comportamento, eu tenho configurações logísticas. No caso de, se o modelo de venda for FTD com você, for empresa ou presencial plant de B, tem todos os modelos de venda aplicáveis aqui.
+Então aí tenho esses parâmetros de configuração.
+Aí eu tenho sub lista de produtos, tá vendo? Se é sub de lista de produtos para canal b2c, isso é uma sub lista. Eu tenho sub lista de produtos para canais de venda lumisfera empresas. Tá aqui a sub lista sub lista de produto parceiro comercial e sub lista de produtos e serviços.
+Então eu tenho essas sub listas que vão ter que ser definidas nessa etapa que não está no protótipo. Por quê? Porque a gente só identificou depois.
+
+Danilo Macedo   27:46
+Não, beleza, está claro, está bom. Nenhum momento tenho. E tenho essa separação, está bom.
+
+Oscar de Rooij   27:47
+É claro.
+Isso aí, quando vocês lerem aqui, vai ficar, vai fazer um pouco mais de sentido. É óbvio que vocês vão ter dúvida ainda. E é por isso que a gente tem uma semana inteira para fazer reuniões e tirar essas dúvidas, tá?
+Certo? Então aqui, essa tela aqui, gente, é basicamente a que a gente está desenvolvendo agora, tá no MVP sem adicionar em lote. Isso aqui não tá? Então a Kevellin vai mostrar depois para vocês, tá? Então como?
+
+Danilo Macedo   28:18
+Então, nem no nem no dynamic eles não estão usando hoje o adicional em notch.
+
+Oscar de Rooij   28:22
+Não, não estou usando.
+Não é? Foi uma funcionalidade que foi desenvolvida, mas ela não teve, não foi bem, não teve sucesso, não está ajudando os consultores.
+
+Danilo Macedo   28:25
+E.
+Tá uhum e outra dúvida é, ainda tem a funcionalidade de fazer uma cópia da proposta do ano anterior?
+
+Oscar de Rooij   28:41
+Isso está na oportunidade, isso funciona para algumas é filiais, mas não para todas.
+
+Danilo Macedo   28:50
+Não funciona no sentido que nem sempre vai ser uma cópia mesmo. Tem muitas mudanças, é isso?
+
+Oscar de Rooij   28:54
+É, eu não entrei no detalhe. Por quê? Porque a gente ainda tem que resolver esse pedaço. Mas a gente tem na especificação essa funcionalidade, tá? Quando a gente vem aqui para funcionalidades da etapa, produtos e serviços.
+Eu tenho adicionar em lote, que é basicamente essa parte aqui, tá? Esse pedaço aqui. Nesse ferramenta de adicionar em lote, eu tenho a opção um, copiar produtos da proposta vigente e filtrar produtos.
+
+Danilo Macedo   29:23
+Tá.
+
+Oscar de Rooij   29:27
+Então eu vou ter na proposta a possibilidade de copiar da proposta anterior. Não na oportunidade, porque a oportunidade ela vai ter que ser ressignificada. A oportunidade da FTD, ela não é uma oportunidade de verdade. Ela tem muitos dados duplicados.
+Com relação à proposta, se comparada à proposta, então eu vou pegar aqui só um exemplo aqui para vocês, onde que eu coloquei isso aqui?
+É isso aqui foi um mapa que eu estava fazendo da oportunidade, tá? Então aqui, Campos duplicado, duplicado, duplicado. É tudo duplicado com a proposta, tá vendo?
+Duplicado, duplicado. Tem muito campo duplicado com a proposta e isso causa uma série de problemas de relatórios, porque quando o consultor avança para a proposta, ele não volta para a oportunidade para fazer alguma coisa.
+Aí os dados ficam desatualizados, então a oportunidade ela vai ser inteiramente revisitada.
+
+Danilo Macedo   30:27
+Araujo.
+
+Oscar de Rooij   30:29
+Set.
+
+João Carlos Figueirôa de Castilho   30:31
+Na dúvida, Alexandre.
+
+Danilo Macedo   30:31
+Certo, então, informações que podem ser que devem ser preenchidas só na fase de proposta, não precisam ser preenchidas na fase de oportunidade.
+
+Oscar de Rooij   30:36
+Os.
+That.
+
+Danilo Macedo   30:39
+Tá bom.
+
+João Carlos Figueirôa de Castilho   30:41
+Abreu Victor é que no momento da proposta ele colocou os canais venda lá o espera e o a venda direta E aí depois que já tá tudo fechado o acordo foi foi fechado e o a escola quer que o e o consultor vai lá fazer um evento
+Isso acontece e como é que isso é tratado, já que é um canal de venda que não foi acordado na proposta.
+
+Oscar de Rooij   31:04
+É isso. Hoje o consultor, ele tem que ir na proposta e, na verdade, hoje no CRM é uma proposta para um modelo de venda. Hoje OCRM está assim. É isso que a gente vai ter que mudar.
+
+João Carlos Figueirôa de Castilho   31:18
+Certo.
+
+Oscar de Rooij   31:20
+Para ser uma proposta, pode ter uma lista de produtos que pode ser vendida por qualquer um desses canais de venda.
+Certo? Esse é uma mudança conceitual de como a gente vai atacar o problema. Hoje, por exemplo, você tem consultor que faz o plantão de venda e ele nem sequer cria a proposta.
+
+João Carlos Figueirôa de Castilho   31:30
+Certo.
+
+Oscar de Rooij   31:40
+Por quê? Porque não faz. Não faz sentido para ele dar trabalho, não faz. O certo hoje seria criar uma proposta com o modelo de venda e ter que duplicar todos os produtos da proposta da FTD com você. Porque, na prática, o que é vendido lá no plantão de vendas.
+São exatamente as mesmas condições comerciais do FTD com você, porque são os pais que estão indo lá comprar. Só que ao invés dele comprar no e-commerce, ele está comprando no smart POS. Então você tem ali um grande problema operacional, que OA forma como está no CRM não reflete a realidade.
+Eu não preciso habilitar o canal do FTD do SmartPOS, não deveria precisar de um aditivo contratual, não precisaria de uma proposta a mais. Eu precisava no máximo habilitar.
+Só que habilitar o Smart POS, na prática, ele é vender exatamente a mesma coisa que está na FTD com você, que é o que já está na proposta. Então, a operação de pedir um plantão de vendas, ela deveria ser muito mais simples, deveria só habilitar o Smart POS para
+Esses dados e ele começar a vender por ali, entrou no Totvs, processou, já começa a contabilizar daquela listagem de produtos que eu tive, do que eu estava prevendo de vendas, meu, caiu 2% que eu vendi aqui nesses 2 dias que eu fiquei lá e ele veio.
+Pelo plantão de vendas, se a pode não.
+
+João Carlos Figueirôa de Castilho   33:06
+E isso no to be deve ser algo simples. Não é assim. Eu mudei algo na proposta, então vai precisar mudar a alçada. Vai precisar de aprovação no.
+
+Oscar de Rooij   33:12
+Isso.
+Exatamente.
+Exatamente. Não tem nada de Alçada. Não preciso de nada disso. Na prática, hoje isso já não acontece. Hoje fica tudo por fora, porque o sistema é burocrático.
+
+João Carlos Figueirôa de Castilho   33:22
+Tá.
+Mhm.
+Entendi.
+
+Oscar de Rooij   33:30
+Então é uma mudança conceitual, tá? Antes era uma proposta para um modelo de venda. Na prática, quando o consultor, ele vai, visita escola, negocia, ele negocia todos os canais de venda. Ele não negocia. Então, e uma proposta?
+Ela tem que refletir a negociação inteira, ela não tem que refletir.
+Ela não tem que ser quebrada em 3, até porque isso dificulta, inclusive, o cálculo do comissionamento desse consultor. Uma das entregas que vamos buscar é apresentar o comissionamento do consultor dentro do simulador comercial. Para isso.
+Eu tenho que ter toda a toda a perspetiva de venda da escola, não é? Eu não tenho que ter isso em múltiplas propostas separadas. Isso dificulta muito o processo.
+Posso passar para a próxima etapa aqui?
+
+Danilo Macedo   34:29
+Pires Santos.
+
+Camila Moraes   34:29
+Pode sim.
+
+Oscar de Rooij   34:30
+Beleza, então aqui.
+Produtos e serviços o conceito é quanto dinheiro vem para FTD?
+A próxima etapa ela não está aqui no protótipo, a próxima etapa.
+É benefícios, doações, patrocínios e adiantamento. Basicamente, é aquilo que eu estou cedendo, que eu estou cedendo.
+Da minha margem para essa escola para fechar o negócio, porque quando eu tenho tudo que eu vou ter de receita e aí eu vou lá e eu dou benefícios, por exemplo, eu dou 10 cupons de 40% de desconto para os filhos de professores.
+Eu estou reduzindo a receita esperada, porque para esses produtos eu estou dando 40% de desconto, eu estou cedendo na minha negociação, eu vou lá e eu dou além disso, além desses 10 produtos que eu estou dando 40% de desconto.
+Eu estou doando 10 materiais de por qualquer razão da primeira série, da terceira série, da quarta série.
+Além disso, eu vou lá e eu dou 50000 BRL de Patrocínio para ele fazer investimento em marketing na escola da durante ali, não sei o quê e fazer uma revisão da fachada da escola.
+E aí eu tenho o adiantamento, então, de tudo que a escola IA vender.
+Porque ela coloca um markup em cima do preço que a gente negocia com ela. Produto é 100. A gente combina com ela, que vai, ela vai ver que a gente combina com ela 90. Ela vai lá na loja dela, da lumisfera, e ela coloca 150.
+O pai está pagando 150. A escola vai passar para a gente 90. Essa diferença é o royalty.
+Isso, esse royalt acumula para cada venda.
+E eu vou pagar essa escola em maio e em agosto, dependendo das condições que foram negociadas. O adiantamento nada mais é do que eu pegar esse dinheiro que eu IA pagar em maio, que eu IA pagar em agosto. Eu vou adiantar para ela.
+Então é o adiantamento, não é dinheiro a menos, mas é fluxo de caixa.
+Certo? Então é isso, eu estou cedendo. Então é como se a etapa 2 é tudo que entra de dinheiro, sinal positivo.
+E a etapa 3 é sinal negativo. É tudo que eu estou tirando do que poderia ser. E eu tenho que deixar isso à mostra para o consultor. Eu tenho que deixar isso à mostra para os gerentes, coordenadores, diretores que vão aprovar essa proposta, tá? Então, quais são os tipos que a gente tem?
+A gente tem.
+Grid de Benefícios.
+E aí aqui a gente vai ter.
+A nova, a nova interface a Kevellin vai poder mostrar, tá? Então a gente tem o grid de benefícios, o grid de patrocínios, o do adiantamento e os totalizadores. Então eu vou pular aqui. A Kevellin mostra em assim que ela voltar, tá bom?
+E depois, desculpa, pode falar?
+
+Danilo Macedo   37:42
+Oscar, uma dúvida, esses são funcionalidades que já tem no dynamics?
+
+Oscar de Rooij   37:45
+Não, esse aqui não tem no dynamics. Hoje, por exemplo, aqui, hoje benefícios é um campo, um valor bruto. Bota ali 20000 doação, bota lá o número 50000, Patrocínio, bota lá o número 50000.
+
+Danilo Macedo   37:46
+Mhm.
+Não tem Jesus Jesus.
+Mhm.
+Turnes.
+
+Oscar de Rooij   38:02
+Então, ele não tem uma quebra, ele não é processualizado, ele não é um dado estruturado. O que vamos fazer é estruturar essas informações.
+
+Danilo Macedo   38:10
+Star.
+Tá bom?
+
+Oscar de Rooij   38:17
+Por exemplo, eu Patrocínio tem, é um campo numérico, moeda, bota o valor que quiser, doação, doação e benefício nem aparece.
+No CRM hoje.
+
+Danilo Macedo   38:32
+Tá bom, é benefício porque ele vai dar um desconto total na proposta. Hoje ele consegue dar desconto, mas é na.
+
+Oscar de Rooij   38:35
+Não.
+Não benefício não é desconto na proposta, o desconto na proposta.
+
+Danilo Macedo   38:44
+Abreu.
+
+Oscar de Rooij   38:44
+É isso aqui, é o desconto que eu coloco na minha lista de produto. Esse é o desconto, o benefício. Ele é para filhos de professores e ele define ali a quantidade de cada série. 2 na primeira série, 3 na quinta série.
+
+Danilo Macedo   38:48
+Sim.
+Meireles.
+
+Oscar de Rooij   39:00
+Ele vai dar 40% de desconto, é um cupom.
+
+Danilo Macedo   39:05
+Danger.
+
+Oscar de Rooij   39:06
+Então eu perco mais na receita em cima do preço negociado.
+Entendeu?
+Doação é mais ainda, aí é 100% de desconto. Tem uma mudança ali, a gente vai parar de fazer doação de 100%, está em transição. Por enquanto, ainda tem a doação de 100%, mas vai ser a doação nova, vai ser uma, na verdade, um desconto de 90%. Isso está na especificação também.
+
+Danilo Macedo   39:12
+Yeah.
+
+Oscar de Rooij   39:28
+Vocês vão ver que tem esses 3 tipos, cupom de desconto para filho de professor, doação 90%, doação 100%, tá? E basicamente OA forma como isso é apresentado tá só porque a Kevellin não tá aqui, eu vou mostrar rapidinho.
+É isso aqui, ó.
+É uma tabela por série. Ele coloca a quantidade, por exemplo, desconto para filho de funcionário. Ele vai definir um valor único, percentual, 40%. E aí ele vai colocar, aqui eu quero um, aqui eu quero 2, aqui eu quero 3.
+Aí eu tenho na no 90% de desconto, eu coloco mais 2 aqui nessa série, 3 nessa, 4 naquela. Aí depois eu tenho a doação total. Então aqui é por quantidade, não é? E o sistema vai ter que calcular qual que é o impacto disso na receita.
+O grid de.
+
+Camila Moraes   40:24
+E isso é o que o pessoal tá fazendo, Oscar na primeira fase.
+
+Oscar de Rooij   40:27
+Isso aqui não está fazendo, não é da primeira fase. Isso aqui, isso aqui vão ser vocês.
+
+Camila Moraes   40:31
+Tá, tá, porque senão não ia ter um, tá bom.
+
+Oscar de Rooij   40:35
+O grid de Patrocínio basicamente é um grid, tá? Você escolhe o tipo de Patrocínio que você tem esses aqui, aí você escolhe o total patrocinado, a justificativa e adiciona. Então é uma, é um grid, vai adicionando cada linha ali. Eu tenho um, eu estou doando 10000 BRL para compra de laptops, eu estou doando mais x para.
+
+Camila Moraes   40:35
+Hhh.
+
+Oscar de Rooij   40:55
+Fazer uma renovação da fachada, et cetera. Então isso daqui é o grid de Patrocínio, adiantamento é sim ou não. E aí coloca ali o valor que vai ser adiantado.
+E aí você tem os totalizadores e nos totalizadores você tem a perspectiva FTD e perspectiva escola. Então só voltando aqui para tangibilizar perspectiva FTD, perspectiva escola. Então o que eu vou ter é na perspectiva FTD eu vou ter algumas subtrações aqui.
+E tudo o que eu estou subtraindo da FTD para o cliente, eu estou somando, porque além de eu falei dele estar vendendo e ganhando o royalty ali, eu ainda estou dando mais isso para você, dando mais aquilo, dando mais aquilo. Então para o cliente é positivo, para a gente é negativo. É óbvio que na hora que a gente for apresentar a proposta.
+
+Camila Moraes   41:29
+Sim.
+
+Oscar de Rooij   41:42
+Na visualização para o cliente, a gente vai mostrar a perspetiva escola, que é onde mostra tudo ali positivo para ele fechar o negócio com a gente.
+
+Camila Moraes   41:49
+Só uma duvidinha ali, voltar um pouquinho ali. Patrocínio, o que seria AO conceito do Patrocínio? Porque eu vi ali que tem ativos.
+
+Oscar de Rooij   41:59
+O que são ativos?
+
+Camila Moraes   42:00
+Não o que seria esse grid de Patrocínio que você espera do Patrocínio?
+
+Oscar de Rooij   42:06
+Ele é um grid que você classifica os tipos de Patrocínio que estão usando dá. Por exemplo, eu estou negociando com a escola, escolhi todos os produtos, já falei que vai ter uns 10 cupom de professor, vai ter umas 4 doações, beleza? Aí agora eu vou falar de Patrocínio, Patrocínio, então, além disso tudo.
+Eu vou te dar 10000 reais para você comprar laptops.
+
+Camila Moraes   42:24
+Mhm.
+
+Oscar de Rooij   42:25
+Estou te dando mais 5000 BRL para você dar uma renovada no seu Jardim.
+
+Camila Moraes   42:29
+Tá, então o Patrocínio seria com montante. E aí eles é dividiria da melhor forma, como você está falando, computadores tal. Então a gente não precisa ter um passivo de materiais, ter um controle de materiais que você está doando, mas sim, ou tá bom, obrigado.
+
+Oscar de Rooij   42:36
+Isso.
+Não.
+Isso.
+Cesar.
+Bom, depois da etapa 3 vem a configuração das vendas que eu mostrei para vocês, a parte logística, aquelas sub listas.
+E aí você tem a etapa 5 matriz de serviços. Essa daqui não está mapeada nem está no escopo neste momento, tá? Hoje OCRM, ele já tem uma matriz de serviços que é exportada a partir de uma funcionalidade. Ali ela é montada automaticamente com base nos produtos que estão disponíveis.
+Isso está sendo inteiramente revisitado, então não faz sentido trabalhar nisso agora até que cheguem a cheguem as definições de como que isso aqui vai ter que ser, é processado, definido, estruturado, et cetera, tá?
+A etapa 6.
+É a etapa que consolida tudo, mostra os big numbers e é a tela que vai ser enviada para as alçadas de aprovação. Então, a alçada de aprovação, ela vai ser basicamente a partir do momento que o consultor fecha a primeira versão da proposta e manda para o cliente.
+Eles começam a bater e voltar, certo? Consultor, cliente, cliente, consultor, consultor, cliente, cliente, consultor, et cetera, até o ponto que o cliente fala, OK?
+Quando o cliente dá ok, essa proposta ela vai para o primeiro nível de alçada, que é o coordenador. Ok, aí tem todas as notificações, tá? Então eu coloquei as notificações em uma outra especificação aqui que eu posso mostrar para vocês, mas ela segue um fluxo e as
+Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre O
+Os dados dessa proposta, ele vai cair nessa tela, que é aqui onde a gente resume tudo e vocês vão ver que algumas coisas já estão nos totalizadores. Total tabela, diferença, tabela, total negociado, taxa de administração, receita bruta já estava na tela anterior.
+Aí você tem depois os benefícios que lembra da etapa 3? Então eu vou deduzir os benefícios para filhos de professores, deduzir doações, deduzir Patrocínio e deduzir custo de adiantamento. Esse daqui, inclusive, está em aberto ainda, porque a gente não sabe se AFTD, ela não.
+Ela não coloca uma taxa de antecipação. Então eu estou querendo apresentar aqui o custo que estamos perdendo ao não ter esse dinheiro com a gente devido ao adiantamento. Então isso está sendo trabalhado por uma das equipes, tá?
+Depois disso, eu tenho os royalties, o royalty potencial para a escola e o royalty deduzido do adiantamento. Não é que eu o royalty que eu vou pagar em maio é diferente do royalty que eu vou que eu defini, porque se eu adiantei.
+Eu tenho que eu lá em maio eu não vou pagar o adiantamento para ele, eu vou soltar a diferença, porque eu já paguei uma parte, tá? É isso. Eu tenho ainda análise de condições comerciais. Então aqui a perspetiva do a preocupação da diretoria, do gerente, et cetera, é.
+Por linha de negócio, sistema de ensino didático, bilíngue, et cetera. Qual é o valor da de desconto bruto que está sendo dado comparado à tabela e o percentual dele relativo a toda a proposta?
+Tudo isso daqui foi, inclusive, validado com o diretor adjunto comercial. Tá, gente?
+E aí eu tenho a última e essa aqui vai ser a mais difícil. É a apresentação de uma comparação com a proposta anterior. Então aqui tem alguns números que eles querem ser capaz de visualizar o que aconteceu. Diferença de receita bruta nominal.
+Significa o quê? A proposta do ano passado era de 100000 BRL, a desse ano é 150000 BRL, aumento de 50%.
+Não entrei no mérito de que produto está lá dentro, é dinheiro puro.
+Só que agora eu quero entender o que aconteceu nessa proposta um pouco melhor. Então, a diferença da receita bruta real significa o quê? O que eles querem ver? Eles querem, todo ano tem um reajuste que é aplicado nos preços de tabela. Esse reajuste pode ser de Sa, ele segue via contrato, segue OIPCA.
+Então você tem ali OIPCA de referência e você tem aquilo que de fato é fechado para o cliente. Então, digamos que o cliente tinha Pequeno Príncipe no ano passado por 50 BRL e é 10% OIPCA, então esse ano deveria ser 55 BRL.
+O que é que isso aqui vai mostrar? Ele vai mostrar se no pequeno príncipe ficou acima ou abaixo. No pequeno príncipe, para esse cliente ficou 55 ou ficou 5657 ou ficou 52, ficou abaixo do esperado.
+Então é isso que eles querem ver. Só que isso eles querem ver para todos os produtos iguais, de todos os produtos que estavam na proposta anterior e estão na proposta atual. Qual foi o reajuste médio aplicado?
+Aí eu vou saber se eu ajustei.
+Conforme OIPCA ou se eu não ajustei, conforme OIPCA, então é comparar banana com banana, só produtos que estão nas 2. Aí é claro que eu vou ter aqui o reajuste, todos os produtos eu.
+Eu descrevi esse daqui, mas era o reajuste médio.
+Filho de produtos iguais que estão em ambas as propostas, beleza, diferença de receita bruta real.
+Ah tá, esse aqui.
+Ele também é com base no dinheiro, gente, peço desculpas, tá? Esse aqui é o nominal, ele é 150 mil em cima de 100, beleza, ficou 50%. E aí aqui eu tiro o INPC para saber qual que é o reajuste real que aconteceu, né? Então, se for 50% e o imposto
+EOIPCA foi 10%, aqui aparece 40, tá? É isso. E o reajuste médio? Desculpa, é essa terceira linha aqui que eu comentei, tá?
+Esses aqui são para os produtos iguais. Aí depois você tem para novos produtos. Então, o que não tinha na proposta anterior e tem agora novos produtos. Quanto que isso representa da minha proposta sendo fechada? Então, quanto que eu aumentei? Eu tenho redução de produtos, porque eu tenho produtos que vão ser descontinuados.
+E aí, quais são os que eu perdi, então?
+A soma desse com esse daqui deveria dar positivo, não é se for uma proposta muito boa.
+
+Danilo Macedo   49:42
+É isso, é tudo números finais, não é? Não é para listar os produtos, não está bom.
+
+Oscar de Rooij   49:47
+Não é números finais, finais, exatamente finais.
+Isso aqui é o comparativo dos sonhos da comercial.
+Para eles conseguirem tomar decisões muito rápidas.
+Tá.
+
+Danilo Macedo   50:03
+E Oscar, é, está previsto alguma mudança no fluxo de aprovação? Você me falou de notificação, OK, mas não muda o fluxo, mas está previsto então uma mudança a ter alçadas a mais.
+
+Oscar de Rooij   50:09
+Sim.
+Sim, alçadas a menos. Na verdade, tá. Hoje existem infinitas alçadas. É. E as regras? Elas são péssimas porque tudo cai na mão do Quintela. Hoje as alçadas não servem para nada porque tudo cai para Quintela.
+
+Danilo Macedo   50:18
+Do Hagers Vedois.
+Mhm.
+
+Oscar de Rooij   50:35
+Então, o que é aquela equipe comercial? Ela está fazendo, ela está reavaliando todas as políticas comerciais, inclusive com esse projeto de simulador, junto com um outro projeto que é de pricing, definição de preço de produto, oferta, composição, desconto, et cetera.
+E um outro projeto de rentabilidade, então é rentabilidade do produto, rentabilidade da proposta, rentabilidade do cliente. Esses 3 projetos juntos tem que trazer para comercial subsídio suficiente para eles redefinirem as alçadas de aprovação.
+Inclusive, quais são os critérios utilizados? Tá, então, se eu olhar aqui, Oh.
+Hoje eu tenho.
+Essas regras aqui na especificação tem ali, é royalty percentual, abaixo de Franca nível 2 acima de não sei o que nível c é um Monte de número quebrado. Ninguém consegue descobrir o que é isso.
+De cabeça. E por isso que o sistema vai mostrar essas regras, essas caixinhas aqui, que são as regras, elas vão ser revisitadas, elas vão ser redefinidas pela comercial. Quando elas forem redefinidas, a gente vai rever o fluxo de aprovação, tá?
+O motor de aprovação já existe. Vão mudar as regras? Então, o que eu tenho aqui nessa especificação de aprovação de propostas é, considerando o motor atual, com as regras atuais, qual que é o?
+Comportamento do fluxo de aprovação.
+Está tudo listado aqui, com todos os requisitos de notificação, o que acontece em cada aprovação, et cetera. Então aqui essa é uma especificação que eu finalizei na semana passada e que também vai fazer parte do escopo de vocês.
+Só que é o escopo mais para frente, não é o escopo de agora, tá aqui. Se eu mostrar para vocês aqui o que a gente está fazendo agora, OMVP primeira onda é o que o time está desenvolvendo, certo? E vocês vão, estão começando a.
+Entender todo o projeto para depois começar a tocar o que é o onda um pós MVP, tá? Essa parte de aprovação de proposta está aqui.
+O que significa esse laranja? O laranja significa que está comigo, tá? Eu estou especificando isso daqui ainda. Daqui a pouco, Discovery Oscar mais arquitetos da Avelar. É claro que a gente só eu só espero vocês comigo.
+Depois do onboarding, mas o Discovery, ele vai acontecer entre nós. Depois você tem o design das histórias que aí entra para Kevellin junto com o time de CX, aí depois você tem o desenvolvimento de fato que aí vai. Por enquanto a gente ainda tem o time da FTD trabalhando.
+Mas depois vai ser a vanade que vai desenvolver, tá? Então aqui eu fiz essa separação visual só para a gente entender o que está com quem nesse momento.
+Essa aprovação de proposta, ela tá aqui, tá? Então teria que adicionar o usuário. Hoje, por exemplo, tem um Monte de gente das alçadas de aprovação que não estão no CRM.
+Porque aí, Danilo, talvez você lembre do vulcano. O vulcano, ele ainda é usado. A gente vai de nessa proposta aqui, nessa funcionalidade, a gente elimina o vulcano do fluxo de aprovação de proposta. E todos os usuários que estão lá no vulcano, eles vão ter que vir.
+Paulo Siqueira.
+Para eles acompanharem as propostas aqui.
+
+Danilo Macedo   54:10
+Tá, não, eu não lembro. Acho que não. Acho que foi o que começou a usar depois. Se volcano, não me recordo, não.
+
+Oscar de Rooij   54:16
+É um. É uma ferramenta que eles estão usando para fazer a aprovação de proposta. Depois que a comercial aprova no CRM, isso cai. A equipe administrativa comercial pega essa proposta, copia um Monte de informação do Totvs do CRM, printa a tela, monta um PDF, anexo no vulcano.
+
+Camila Moraes   54:18
+Okay.
+Isso.
+
+Danilo Macedo   54:29
+Mhm.
+
+Oscar de Rooij   54:31
+Coloque a informação na mão e aí depois manda para aprovação de novo e a comercial tem que aprovar de novo, junto das outras alçadas.
+
+Danilo Macedo   54:37
+Entendi, tá?
+
+Oscar de Rooij   54:39
+É o é ruim. Então, assim, foi um puxadinho que fizeram por alguma razão ali do passado. E aí agora a gente vai trazer todo mundo para dentro do mesmo fluxo de aprovação, para que a comercial não tenha que aprovar 2 vezes e para que a gente não tenha um trabalho manual.
+De printar a tela de totos de CRME, colocar dados manuais dentro do desse PDF no vulcano, tá?
+Cesar.
+
+Danilo Macedo   55:04
+Beleza, tá bom?
+
+Oscar de Rooij   55:08
+Gente, então aqui ó, onde estávamos?
+Essa etapa aqui, etapa análise e aprovação, é essa etapa 6 com essa tabela que eu mostrei para vocês, tá? Esquece tudo que está aqui, tá? Isso aqui foi gerado por IA, tá bom, então não é a realidade, foi só de novo a base para trabalhar, tá? Então aqui tem aquela ideia do.
+Do Patrocínio. Só que é mais simples do que isso. Não precisa de quantidade de palestras, entendeu? Lá está mais simples na especificação, tá bom? E eu tenho um texto de apresentação, João, conforme falamos, segue a proposta que conversamos.
+Segue a proposta de um para.
+Cesarmos, envia para o cliente. Ao enviar para o cliente, isso aqui vai para o portal do cliente. É um sistema que foi criado. Não sei se vocês conhecem, mas é a área do cliente que a escola acessa, tá?
+Ao acessar, ela vai conseguir visualizar o quê?
+A proposta, isso também não tem, isso está no MVP, tá? A apresentação da proposta. Essa daqui foi uma primeira versão que foi criada. Depois eu refinei isso com a equipe comercial. E aí estamos com essa versão aqui.
+E aí, na especificação, ela está de fato descrita com o que é para ser, com outras melhorias. Tá bom, mas qual que é o conceito? O conceito é, eu tenho uma proposta que é disponibilizada pela área do cliente para aquelas pessoas que eu defini.
+Dentro da etapa um, lá da proposta que vocês viram no simulador, certo? Hoje o consultor, ele não cadastra os contatos ali no CRMEA gente não espera que ele vá fazer isso. Hoje existe um campo chamado representante legal, que é a pessoa que tem acesso à área do cliente.
+
+Camila Moraes   56:57
+Sim.
+
+Oscar de Rooij   56:58
+É essa pessoa que vai conseguir visualizar a proposta. Então isso já está em discussão ali com o time da área do cliente. Então, o que eu tenho? Eu tenho um cabeçalho que vai me trazer os big numbers ali da proposta, as informações mais básicas da proposta também, por exemplo, quantidade de alunos.
+Sócio responsável, safra, o parcelamento da loja, a gente colocou para depois a vigência do contrato, o alunado, quem é o responsável jurídico, financeiro? Aqui no novo layout não apareceram todas as informações, então está lá na especificação.
+Tá então aqui de novo, só para referência. Então aqui eu tenho, por exemplo, a mensagem do consultor para dar um toque pessoal. Tá aqui aquilo que a gente conversou na reunião de ontem. Ele não vai para proposta, certo? No contrato, esse texto.
+Mas ele está na interface para ser apresentado, tá bom? Aí eu tenho aqui a separação dos produtos. Hoje existe um grid de produtos que é apresentado no contrato dentro do Word, tá, mas ele não resolve todas as dores. Tem muita informação lá, por exemplo, taxa de administração por produto, não faz sentido. O construtor não usa isso, polui a informação.
+E aquilo que ele precisa fazer na mão é isso aqui, por série, ele tem que ficar calculando na mão qual é a soma.
+Total família, total negociado, preço negociado por ano. Ele tem que fazer isso, tá? Então aqui já tem um pouco desse agrupamento que vai ajudar muito o consultor na conversa com o.
+Com a escola, tá? É claro que aqui também vai aparecer Patrocínio, vai aparecer os benefícios, vai aparecer tudo aquilo que a gente colocar, tá? Vai aparecer também. Então ela vai para ser uma proposta completa nesse exemplo aqui não está, não está mostrando mais para frente.
+E isso não tá no MVP, tá? A escola vai poder. Deixa eu voltar para a versão anterior aqui só para mostrar a funcionalidade. Em cada sessão, a escola vai poder fazer o seu próprio comentário, tá? Não são 6 parcelas, são 7.
+Aí ele pode vir aqui, aqui estava dividido. Lembra que estava dividido com o modelo de negócio na primeira versão? Esquece isso, tá, gente? É uma lista de produtos só, tá bom? Então, tira 5 unidades do Pequeno Príncipe.
+Beleza, aí tem aqui no Patrocínio também vai ter um comentário e aí ele vai poder recusar a proposta.
+E ele dá um comentário geral, isso gera concatenar, junta tudo, é um parágrafo só, coloca lá dentro da proposta e isso vai ser apresentado lá para o consultor, tá?
+E o consultor recebe isso, como recebe aqui no teste dele, ele vai receber. Tem uma proposta que foi recusada.
+E ao entrar na proposta recusada, ele vai ver porque Ela Foi recusada. Ele vê aqui o que o que ele relembra, o que aconteceu nessa proposta, o que ele colocou. E aí ele começa a entender, dependendo do estágio, ele pode fazer alguma coisa. Por exemplo, nesse estágio aqui ele pode.
+Não vou negociar mais, acabou, não vai dar certo essa negociação. Ele pode dar uma perda na oportunidade ou ele cria uma nova versão. Ao criar uma nova versão, o novo texto, a recusa fica aqui para referência, para ele trabalhar em cima dela. Todos os dados já foram copiados lá no sistema. Ele já arquivou a.
+Proposta anterior criou uma nova, copiou todos os dados, colocou a revisão, revisão 2 e agora ele trabalha em cima dessa nova proposta e ele vai trabalhar aonde? Aonde ele precisa. Então ele vai vir aqui para a etapa 2, por exemplo.
+Etapa 3, aliás, e ele vai adicionar ou tirar aqui algum produto.
+E quando ele terminar de ajustar, ele vai lá e ele manda de novo para o cliente e quando o cliente receber essa proposta.
+Quando o cliente receber essa proposta, ele vai. A gente tem o histórico do que aconteceu em cada versão. A gente consegue entender qual é a comparação e evolução dessa negociação. O coordenador, o gerente, o diretor, o próprio consultor consegue entender como que essas coisas estão.
+Evoluindo.
+E aí ele consegue o cliente.
+Consegue também ter acesso às versões anteriores lá no portal do cliente? Estou lá na revisão um, tem um alerta para o cliente, viu? Você está olhando para uma versão antiga, tá? Fica ligado, você não pode fazer nada nessa proposta, ela já foi recusada.
+Aí, beleza, ele olha a revisão um, ele olha a revisão 2, aí está na 3 a 3 ele pode trabalhar, não é?
+É isso, Jesus.
+
+Danilo Macedo   1:01:45
+Só uma dúvida, o portal do da escola, eles falou que ele já existe hoje, é isso?
+
+Oscar de Rooij   1:01:45
+Essa é.
+Já existe.
+Quem desenvolve isso é uma outra equipe aqui dentro da FTD.
+
+Danilo Macedo   1:01:52
+E aí?
+Siqueira minha dúvida, então toda essa parte de visualização não vai ser com o time aqui, vai ser.
+
+Oscar de Rooij   1:02:00
+Essa aqui, tá? Essa daqui vai ser com eles. Essa daqui são vocês. Essa daqui são vocês. É que a visão do consultor.
+
+Danilo Macedo   1:02:01
+Feita a visão do sim, isso está.
+Sim, para cara.
+Tá bom?
+
+Oscar de Rooij   1:02:13
+Então tudo isso aqui, gente, é.
+É o que trouxe um pouco da visão do para onde vamos. Tá aí. Tudo isso está sendo fatiado em etapas. OMVP é a primeira, aí depois tem o outro escopo que a gente está.
+Onde é que ele tá aqui que eu?
+Aqui tá sendo fatiado, tá fatiado aqui no MVP primeira onda, tá fatiado aqui no onda, um pós MVP, tá fatiado aqui no pós-venda. Então nós vamos ao longo desse trabalho.
+Fatiando o nosso problema, criando planos, não é para cada uma dessas etapas.
+Hoje, o que a equipe executiva espera da gente é da do MVP, primeira onda. Eles esperam o fim do desenvolvimento dia 31 de março.
+Hoje eles esperam da gente. Eles sabem que estamos na onda um pós MVP, estamos mapeando ou fazendo o Discovery disso. Eles esperam uma análise técnica e um plano de meu para quando a gente espera que vai entregar o quê?
+Dessa fase, essa fase é grande, ela é bem grande, então talvez ela fique pronta em agosto, mas o que eu vou entregar em junho?
+A gente vai fatiar a onda um aqui também, tá?
+É isso.
+Toda hoje mesmo eu mandei o status support da semana e vocês vão participar disso. Então eu mandei o status dessa semana, que é que a gente avançou, como as questões, os problemas, vocês vão participar comigo disso, porque toda quinta-feira.
+A gente vai estar junto na os arquitetos comigo e o Medella e o Jovanello nas quintas-feiras. Nas terças-feiras estaremos juntos com a área de negócio e nas segundas-feiras, que inclusive é a nossa reunião. Acontece daqui meia hora, é às 10:30.
+É a reunião de trabalho da equipe, onde está o time de desenvolvimento, o time de UXE eu e a Kevin, que aí a gente e a Fabi, que está lá também para a gente tocar o dia a dia para ver o que na semana está construindo, está dando certo. Tem algum impedimento? Eu estou ajudando muito nas regras de negócio, no entendimento do que de conceitos eu.
+Eu ainda estou participando muito disso.
+
+Danilo Macedo   1:04:34
+Tá bom, eu queria ter uma conversa mais técnica em relação ao simulador.
+É, a gente vê na a gente pediu uma agenda já com o time técnico, fazer um onboarding. Aí a gente inclui esse item para entender como que eles pensaram tecnicamente, como fazer isso, porque acho que eles já estão construindo. Paulo que eu entendi, eles já estão construindo, tá?
+
+Oscar de Rooij   1:04:54
+Tiago.
+
+Danilo Macedo   1:04:56
+Tá bom?
+
+Oscar de Rooij   1:04:57
+O power page já está sendo construído com a primeira versão. A Kevellin não está aqui, eu não tenho o link do protótipo.
+É, se não, eu já mostrava para vocês a versão final do que está acontecendo, você tem?
+
+Fabiana Bacini   1:05:09
+Eu acho que eu tenho o link para ele, deixa eu pegar aqui.
+
+Oscar de Rooij   1:05:13
+Seria ótimo já mostrar para eles.
+
+Fabiana Bacini   1:05:21
+Fernando Santos.
+
+Rodrigo Silva   1:05:33
+Você vai compartilhar com a gente a agenda de quinta-feira de tecnologia dos Santos, Santos Santos, Santos Santos Santos.
+
+Oscar de Rooij   1:05:43
+A Fabi, Fabi, acho que vale a pena já incluir, então quem que a gente inclui, gente, quem tem que participar?
+São os arquitetos nas 2, não precisa dos desenvolvedores.
+
+Rodrigo Silva   1:05:52
+Hoje.
+That.
+
+Fabiana Bacini   1:05:58
+Encaminha o nome, por favor, depois pessoal, para eu colocar aqui.
+É que eu tô pegando, então.
+Good Amorim Bender.
+Não, eu estou ainda no antigo, não está no novo. Sabe aquele que eles já fizeram com o?
+
+Oscar de Rooij   1:06:59
+Sei, bom, a gente tem a reunião agora às 10:30. É, vamos aí a gente pega o link e talvez a gente marca aqui, pessoal, mais meia hora. Hoje a gente mostra o protótipo para vocês que vocês acham?
+
+Fabiana Bacini   1:07:02
+And.
+
+Camila Moraes   1:07:18
+Sim, sim, por favor.
+
+Rodrigo Silva   1:07:18
+Okay.
+
+Camila Moraes   1:07:21
+Essa semana é para absorver tudo.
+
+Oscar de Rooij   1:07:21
+Que horas a gente marca?
+Que horas a gente marca?
+
+Camila Moraes   1:07:29
+Vocês tem que horas, 10 e meia?
+
+Oscar de Rooij   1:07:31
+10 e meia é o horário que a gente vai trabalhar na semana e vai já vai pegar o link, acaba 1 hora, 11 e meia, acaba às 11 e meia.
+
+Camila Moraes   1:07:34
+Isso e quando acaba.
+Depois do almoço fica ruim?
+
+Oscar de Rooij   1:07:43
+No.
+Pode ser as 2 para mim, Fabrício, se você puder.
+
+Camila Moraes   1:07:47
+Pode.
+
+Fabiana Bacini   1:07:48
+Não vai conseguir, eu acho, nos 15 primeiros 30 primeiros minutos, porque tem a daily da Squad ali da MVP um, mas assim pode começar.
+
+Camila Moraes   1:07:49
+Sim.
+Pode ser às 14 e 30, então?
+
+Danilo Macedo   1:08:01
+Da das 12 às 3, eu não das 2 às 3 eu não posso, tá?
+
+Oscar de Rooij   1:08:06
+3 horas então?
+
+Camila Moraes   1:08:07
+Às 15.
+
+Danilo Macedo   1:08:08
+3 horas, 3 horas eu posso.
+
+Oscar de Rooij   1:08:12
+Pá, então vamos fazer as 3 então.
+
+Camila Moraes   1:08:14
+Tá.
+Consegue mandar?
+
+Fabiana Bacini   1:08:20
+Como que está o acesso de vocês quanto a isso? Aproveitando aqui, nossa, minha câmera está fechada, gente. Quanto? Como que está o acesso de vocês referente a isso também para vocês terem autonomia aí em criar reunião? Quem que é OSM do projeto? Desculpa, gente.
+
+Falante 1   1:08:26
+Oi, Fabiana, eu?
+Bom dia, é o Teo. Ele tá aí na sala. Eu solicitei, eu solicitei os acessos semana passada. Eu fiz uma cobrança aqui hoje. O Teo foi o último que eu enviei, então pode ser que esteja um delay aqui, mas os primeiros que saírem aqui
+
+Fabiana Bacini   1:08:38
+Tá.
+
+Falante 1   1:08:54
+E a gente já começa a disparar os invites, e aí vocês, e aí a gente fica sem essa dependência, tá?
+
+Fabiana Bacini   1:08:57
+Abreu.
+Então, beleza, querida, eu vou pedir para Kevin aqui é mover essa reunião aqui que a gente acabou de ter para as 3 horas, então.
+
+Falante 1   1:09:01
+Tá bom?
+Está bom? E aí é pronto. Eu posso fazer um update aqui também, assim que eu saber o retorno deles, está?
+
+Fabiana Bacini   1:09:13
+Bom.
+Meireles de Bento.
+Então eu também estou indo aqui para outra reunião, pessoal, até às 3, então está.
+
+Oscar de Rooij   1:09:22
+Combinado, pessoal? Até mais, tchau, tchau.
+
+Falante 1   1:09:22
+Abraços, obrigado, tchau, tchau.
+
+Fabiana Bacini   1:09:23
+Sim.
+
+Danilo Macedo   1:09:24
+OK, obrigado, até mais.
+
+TercioEduardoFreire Lins   1:09:24
+Ok, até mais pessoal.
+
+Falante 1   1:09:25
+Machado.
+
+João Carlos Figueirôa de Castilho   1:09:26
+That's Ricardo.
+
+Rodrigo Silva   1:09:26
+Me Alessandra.
+
+
+Kevellin dos Santos Corrado   0:12
+Pronto.
+
+Oscar de Rooij   0:14
+Boa, bom Kevellin, aqui agora a gente só ficou com a tendência de mostrar o protótipo na versão.
+Final que a gente tem, porque a gente já apresentou todo o modelo de baixa fidelidade.
+Deixa eu achar o link aqui.
+
+Kevellin dos Santos Corrado   0:32
+I think I keep it.
+
+Oscar de Rooij   0:35
+É, deixa eu ver se eu tenho ele aqui.
+
+Kevellin dos Santos Corrado   0:38
+Em simulador comercial, eu lembro se.
+Está no planejamento comercial.
+
+Oscar de Rooij   0:44
+é aqui ó eu já tô com ele aqui deixou já compartilha a tela
+
+Kevellin dos Santos Corrado   0:47
+Okay.
+
+Oscar de Rooij   0:50
+Então tá aqui pessoal.
+Esse é o que vai ser desenvolvido em power pages e já está em andamento. Então essa já é a identidade visual da FTD. Então aqui a gente tem os comportamentos que a gente espera.
+Tá, é basicamente, nós estamos desenvolvendo apenas a etapa 2 tá então o consultor.
+No final, lá na entrega final, ele não acessa mais, ele tem acesso ao CRM, obviamente, o CRM, ele tem a entidade proposta e lá tem todas as informações. Só que para o dia a dia,
+O consultor não precisará acessar as propostas dentro do CRM. Por quê? Porque o simulador, ele tem toda essa gestão otimizada dentro dessa plataforma que usa OCRM como motor.
+Tá, então vocês pegaram toda a ideia do que vai ser e aqui a gente entrou dentro da segunda etapa.
+Da criação de proposta, então não tem dashboard, não tem kanbanzinho, não tem navegação entre propostas, não tem nada disso. Essa versão é pura e simplesmente essa etapa 2. Ela já tem os placeholders, claro, ela tem aqui o placeholder do dado da proposta, do benefício.
+do modelo de venda, ele já tem os placeholders de como vai ficar essa interface à medida que a gente avança. Só que essas telas não estão construídas. As que foram estão sendo construídas são etapa 2. E aí, mais para frente, as outras.
+Lara.
+
+Danilo Macedo   2:38
+Oscar, então o vendedor vai criar a proposta no Dynamics mesmo, preencher as informações de dados da proposta, depois ele consegue dar sequência aí.
+Por enquanto, vai ser assim, tá, beleza?
+
+Oscar de Rooij   2:53
+Exatamente, exatamente porque vamos lembrar do porquê das coisas, o que é prioridade, o que impacta o dia a dia do consultor. Hoje eu falei das 3 horas, não falei? A inclusão de produtos é o que dói mais. Então, ao invés da gente pegar aqui a proposta.
+A gente pegar qualquer uma aqui, ao invés de eu fazer a etapa condições comerciais primeiro, eu vou fazer produtos da proposta, porque essa é a etapa que machuca, essa é a que dói. Então a gente vai fazer essa primeiro.
+Então, ele tem que entrar no CRM, ele tem que criar proposta, ele tem que fazer as coisas aqui? Tem. Ele vai ter que fazer a primeira parte aqui, mas quando ele chegar nessa etapa, aí ele vai ter um botão aqui. Esse botão vai abrir essa tela que tem já os dados, já tem a possibilidade dele incluir os produtos da proposta.
+Quando ele clicar em salvar e sair, sincronizou com OCRM, aí vai aparecer tudo aqui. O grid continua existindo, tudo o que é da proposta continua existindo. A gente vai ter que melhorar as coisas. Então, o exemplo aqui.
+Lembra que eu falei de uma proposta para um modelo de venda? Então está aqui. Oh, é um campo drop down aqui. O modelo de venda está.
+Reorganização de Campos não é uma das melhorias que a gente também já está entregando agora, então, por exemplo.
+Taxa de administração não é para aparecer nessa primeira etapa, não faz sentido. Não é nessa hora que eu vou falar de taxa de administração. Então a gente já redesenhou e já colocou isso mais para frente. Modalidade de entrega primária, isso daqui é configuração da loja do e-commerce.
+Não tem que estar na primeira etapa, tem que estar na última. Então a gente moveu alguns Campos, organizou a relação entre Campos e até corrigiu comportamentos de Campos. Isso está acontecendo agora pelo time da FTD, não por vocês.
+Tá, e quando ele chegar nessa etapa, produto da proposta é que ele vai ter aqui um botão para conseguir abrir essa etapa aqui, essa nova janela, essa nova experiência, tá? E aqui tem essa ideia do produto em lote.
+Que é um placeholder, também não vai estar disponível ainda e vai ter o adicionar produto individualmente. Esse sim vai ter uma experiência de adicionar produto individualmente com os filtros e com as a com a seleção de produtos do jeito que é, podendo escolher série.
+Podendo adicionar com o comportamento que é esperado.
+
+Falante 1   5:29
+O Oscar, Roberto aqui. Oscar, eu não sei se você mencionou ou se alguém já perguntou. Aí eu vou reperguntar novamente. Quando vocês redesenharam para esse novo layout, duas coisas que eu quero fazer. Eu tenho muito aquelas 3 horas na cabeça.
+
+Oscar de Rooij   5:31
+Pode falar?
+
+Falante 1   5:47
+É, vocês tiveram algum? Como eu, na verdade, eu queria saber como é que vocês chegaram no layout, se vocês tiveram algum apoio de design de UX ou tiveram alguma sessão ali pra.
+
+Oscar de Rooij   6:01
+Sim.
+
+Falante 1   6:03
+Transpor. E aí eu lembro que eu tinha feito uma pergunta se vocês têm algum estudo, porque esse número aí era feeling, e meio que a gente baseando no que a gente tem lá de filling, mas que a gente não tá registrado, mas que esse layout que a gente muda algumas coisas aqui, a gente viu que a percepção ela vai.
+
+Oscar de Rooij   6:21
+Sim.
+
+Falante 1   6:21
+Diminuir na metade. Está aí, desculpa, só se vocês já falaram isso aí. Eu não. Eu não estava ciente.
+
+Oscar de Rooij   6:26
+Não, tranquilo, é primeiro todo o trabalho. Ele foi feito com a equipe comercial, com a liderança comercial. Segundo a gente fez a validou todo o protótipo e todo o desenho com 2 é 2 coordenadores de referência de filiais.
+Terceiro, a gente validou com anjas, que são as pessoas que hoje fazem cadastro de produtos em nome do consultor, porque o consultor fala, não vou fazer isso nem a pau, vou fazer isso, passa para você. E aí ela faz, tá? Então tudo isso foi feito já no protótipo de baixa fidelidade que vocês viram.
+Tá, então aquele comportamento e aquela experiência já foi validada de que sim, é resolve toda a dor. Aí tudo isso foi entregue para o time de UX da FTDO time de UX ainda fez um algumas sessões de Discovery e de pesquisa.
+Com consultores, eles apresentaram para a gente o resultado até os vídeos de gravação que eles apontaram e confirmaram que o que está aqui ele vai resolver. E, claro, o desenho final é o que vai resolver tudo o que a gente está entregando agora.
+Não tem nem eu já. Eu reafirmo, não tem nenhuma inteligência no que a gente está entregando agora. Nessa primeira versão, o que a gente está entregando é uma melhoria de interface e carregamento em cache, porque o front-end é melhor do que o do dynamics. Só isso. Então não tem nenhuma inteligência.
+Mas já vai melhorar muito a experiência deles, porque só o tempo de clicar, carregar, clicar, carregar, atualizar o grid, adicionar, et cetera, só isso já vai ficar muito mais rápido. Só que ele continua tendo que fazer 200 vezes se forem 200 produtos.
+Quando que ele vai ter que fazer 5 vezes ao invés de 200 vezes? Quando a base de cadastro de produtos estiver corrigida e a ferramenta de adicional em lote funcional? Aí ele vai fazer uma adição que demoraria de 200 produtos. Ele vai fazer em.
+5 cliques, talvez. 6 cliques, talvez, porque ele vai lá, ele vai adicionar produto em lote, sistema de ensino, trilhas, adicionar. Aí ele vai lá adicionar didáticos, não sei o que adicionar. Então ele já vai adicionar todos os produtos de cada série.
+
+Falante 1   8:32
+Obrigado, Tiago Tiago.
+
+Oscar de Rooij   8:35
+André isso.
+Então, aqui é o que a gente tem, tá? Os pontos importantes. A gente tem fácil acesso ao resumo financeiro. Cada modificação aqui feita do lado esquerdo no grid, ela é automaticamente replicada nos totalizadores aqui do lado.
+Eu tenho uma visualização lado a lado do que está acontecendo. Lembra que eu falei que do lado da FTD eu estou deduzindo, no lado da escola eu estou adicionando, eu estou investindo nela. Então está aqui investimento na escola, não é? Tem aqui os 3 as 3 linhas.
+E do lado da FTD, eu estou diminuindo. Então eu tenho outros números, as terminologias também lá do protótipo, elas estavam de um jeito. Agora elas já foram revisitadas. Então, total tabela, total família, receita após benefícios e Patrocínio.
+Então, toda essa terminologia, ela já foi revisitada, tá? A forma como a gente apresenta desconto, majoração, marcar, escola. É também a forma como a gente junta algumas informações. Então aqui, por exemplo, nome do produto e.
+Os consultores apontaram que o código do produto é extremamente importante, então para não colocar uma coluna a mais, então a gente coloca o código do produto aqui embaixo. O filtro continua funcionando com o código de produto. Coleção é uma informação que estava dando, a gente estava dando muita, muita atenção.
+Mas na prática, não é tanto assim. Ela é importante para o filtro. Ela não é importante para a experiência de do consultor. Então o produto, a linha de negócio está aqui, a coleção fica logo abaixo. Então a gente foi compilando as informações junto com a equipe comercial.
+Para entender a melhor forma, agrupamento por educação infantil, capacidade de selecionar todos os produtos ou apenas alguns deles e depois poder tomar uma ação do tipo deletar. Então tudo isso foi pensado para otimizar a experiência ali do.
+Do consultor aqui nessa tela de adicionar produtos individualmente, ele pode adicionar mais de um produto, não é tipo adicionar fechou modal, ele vai mudando os filtros, ele já vai clicando em adicionar, então ele já vai adicionando eles automaticamente, já isso já vai caindo ali no grid.
+Lá atrás, tá?
+Esse é o ponto mais relevante aqui e a gente já tem, pode falar?
+
+Danilo Macedo   10:58
+Simone.
+Deixa eu perguntar uma coisa, o time, o time técnico aí é o Julio e o Fernando Fernando é, eles estão trabalhando justamente nessa parte aí de adicionar o produto, de alterar ali na no grid.
+
+Oscar de Rooij   11:07
+Fernando.
+Isso.
+É isso.
+Toda essa interface, exatamente.
+
+Danilo Macedo   11:17
+Tá, e eles já fizeram um teste, uma análise ou já te deram uma resposta sobre a questão de esses cálculos, vai preenchendo, já vai calculando automaticamente. Eles não falaram que seria um problema de ficar lento, tipo, deixa calcular tudo de uma vez.
+
+Oscar de Rooij   11:33
+Não, porque todas as regras é todas as regras. Elas estarão no front-end justamente por causa disso. O front-end vai ter essas regras de cálculo, tá? É claro que no back-end, na hora de submeter.
+
+Danilo Macedo   11:40
+Tá, entendi.
+Mhm.
+
+Oscar de Rooij   11:47
+Isso vai ser revalidado hoje. Um dos problemas é justamente esse, depois de adicionar os produtos e tudo mais, só no final é que os cálculos são feitos. E aí o consultor fica às cegas enquanto ele está fazendo todo esse trabalho de negociação. É por essa é uma das razões para ele usar um Excel.
+
+Danilo Macedo   11:48
+Mhm.
+Yes.
+
+Oscar de Rooij   12:05
+O que no Excel ele atualiza tudo em real time.
+
+Danilo Macedo   12:05
+Mhm.
+Tá bom, entendi.
+
+Oscar de Rooij   12:13
+Então aqui tem a como a tabela, ela é grande, a gente trouxe aqui a questão de eu poder incluir ou diminuir.
+O resumo financeiro.
+Para o consultor poder trabalhar em paralelo.
+E aqui a etapa 3, a etapa 3, ela não está no MVP, mas a UX já está avançada. Então essa daqui vai ser para vocês. Aqui a gente está falando de taxa de administração, adiantamento de royalties, lembra que eu mostrei os benefícios para vocês, de como que eram as 3 colunas, os cupons.
+e tudo mais, então é essa estrutura aqui, os patrocínios que ele pode adicionar ao patrocínio, totalizador de patrocínio, etc. E isso ao preencher ele vai ter aqui essas linhas de baixo aqui, elas vão ser preenchidas.
+Tá, o trabalho de negociação do consultor, ele é sequencial, mas ele não é linear, tá? Então por isso que o resumo financeiro sempre aparece, porque eu posso muito bem voltar para a etapa 2.
+Para mudar alguma coisa e eu tenho que ver aqui o totalizador com os números que já vieram da etapa 3.
+Principalmente na recusa. Quando eu recebo uma recusa, a recusa, ela vem em cima da proposta inteira e eu vou ter que ajustar a etapa 2 e a etapa 3 já com os números preenchidos. Então eu vou sempre ter a foto completa.
+Aqui na lateral, independente de eu estar na etapa 2 pela primeira vez, por exemplo, tá?
+I think shoot.
+
+Danilo Macedo   14:07
+Pra mim, faz total sentido.
+Quando eu estava na finalização do projeto da Educação no projeto, a gente tinha já dado essa sugestão de ter uma página fora do Dayaneamente conectado obviamente com Dayaneamente para trabalhar nessa parte dos produtos.
+Porque é a parte que onera mais.
+Que são muitos cálculos. O processo de venda da FTD não é simples, ele é complexo, ele por si só e ano retrasado a gente também fez um assessment aí e esse era um dos pontos que também a gente tinha indicado de fazer algo.
+É.
+Desacoplado ali acoplado ao Dynamics, mas fora do Dynamics, porque dá para trabalhar muito mais em questão de layout, em questão da própria experiência do processo do usuário. De disso, justamente da pergunta que eu fiz ali de.
+É deixar carregando ali AO fazendo os cálculos, sem ter que ainda ficar alterando base de dados, que isso deixa tudo mais lento, então dá muito mais possibilidades. Então faz esse o fluxo em si faz muito sentido ser dessa forma para mim.
+
+Oscar de Rooij   15:19
+Yeah.
+Boa. E aqui é lembrando que isso daqui, por enquanto, de novo, eu ainda não estou agregando o valor que a gente gostaria. Quando que vai agregar valor que a gente gostaria, tá? Quando a inteligência comercial estiver embarcada aqui, o consultor está negociando com essa escola. Essa escola ela tem.
+
+Danilo Macedo   15:35
+Hhh.
+
+Oscar de Rooij   15:43
+Hoje ela é do tipo tal, ela está no segmento tal e ela não tem os produtos tais.
+
+Danilo Macedo   15:45
+Alexandre.
+
+Oscar de Rooij   15:51
+Então eu vou fazer, não é a plataforma, ela identifica essa oportunidade e aí é como se fosse.
+Clientes que compraram isso também compraram aquilo, não é? É tipo isso, não é? Então isso vai vir também, não é? Até pacotes pré-prontos. Aqui eu estou falando de adicionar produtos em lote. Aqui eu estou falando o quê? O consultor escolhe a linha de negócio, escolhe a coleção, a disciplina, as séries e clique.
+
+Danilo Macedo   16:01
+Mhm.
+
+Oscar de Rooij   16:16
+Não é? Vai ter também mais para frente um pacote completo, então é o pacote para esse tipo de cliente.
+E aí então ele vai vim com um conjunto de linhas de negócios já pré montado para esse cliente. É uma negociação como se fosse padronizada para o alvo desse cliente, para a característica desse cliente. Mas isso depende de muita inteligência trabalhada internamente para composição desses pacotes antes de trazer para cá.
+Mas é o tipo de coisa que a gente vai trazer, tá? Então sempre assim, essa ferramenta em algum momento ela vai ter inclusive tutorial de produto, tá? O que que é o produto XPTO? Não que seja aqui, tá? Mas talvez um link para uma base de conhecimento que vai ter.
+
+Danilo Macedo   16:46
+Mhm.
+
+Oscar de Rooij   17:00
+Porque o ponto é, a gente tem um 300 produtos diferentes.
+Todos os consultores não têm conhecimento nivelado sobre todos esses produtos, muitos consultores vendem aquilo que eles estão acostumados.
+E a ferramenta? Ela tem que provocar os consultores a saírem da zona de conforto, a entenderem os produtos que a gente consegue vender, a entender quando tem uma oportunidade com aquele cliente e também a incentivar ele a conseguir fazer isso.
+Porque eu tenho, eu vou ter a comissão dele, lembra? Então, se eu tenho ali um upsell mostrando sua comissão, vai para x se você conseguir fechar essa conta, então botar ali a cenourinha na frente para incentivar ele a trabalhar, porque ele sabe que se conseguir, OPA, tem uma comissão.
+Vou ganhar 3000 BRL aqui de comissão. Se eu conseguir fechar esse negócio aqui, então tem que deixar a cenourinha na frente, tá? Então a ferramenta vai trazer muito disso.
+
+Danilo Macedo   18:03
+Eles te falaram já, Oscar, mas tem estrutura nativa já da dynamics para dos produtos para já.
+
+Oscar de Rooij   18:12
+Desculpa, Daniel, deu uma cortada na hora que você falou.
+
+Danilo Macedo   18:15
+Tá no dynamics, já tem uma estrutura nativa para você criar esses vínculos de cross sell upsell. Eu sei o que você falou é até mais abrangente. Faz sentido. Acho que dá para usar IA para fazer comparativos de cliente do.
+Do tipo do cliente, do que ele já comprou, que ele não comprou, enfim, aí a trazer mais sugestões, mas pelo menos essa daí mais simples, já tem estrutura pronta que dá para usar, tá?
+
+Oscar de Rooij   18:36
+Sim.
+Boa. E assim, a gente está muito longe de usar IA nas coisas aqui, porque a maturidade de dados que a gente tem é muito baixa. É muito baixa. Então assim, tudo que é dados que a gente tem é tudo com um monte de BF else em cima de dados que estão vindo dos sistemas. É tudo corrigido.
+
+Danilo Macedo   18:50
+É assim, é, tem que ter.
+Mhm.
+
+Oscar de Rooij   19:02
+Então assim, até a gente chegar num nível que dá para confiar de verdade, vai um tempo. Então o que você está apontando é sim, é algo que a gente tem que buscar como oportunidades de melhorias de curto prazo. Então vamos. É o feijão com arroz bem feito.
+
+Danilo Macedo   19:02
+Mhm.
+Mhm.
+
+Oscar de Rooij   19:18
+O que a gente precisa aqui é um feijão com arroz bem feito.
+
+Danilo Macedo   19:21
+Sair exato.
+
+Oscar de Rooij   19:22
+Não é? Isso já vai ser suficiente para resolver uma pancada de problemas que eles têm aqui hoje.
+
+Danilo Macedo   19:29
+E Oscar, é a questão que de você tinha comentado que tem várias listas de preços, mas deveria ter uma só. E aí acontece muito de criar uma lista de preços. Quando você falou, eu lembrei que na época que eu tava aí de 2022 já foi discutido isso.
+Mas não lembro se a gente tinha já chegado numa solução ou não, é?
+Que de criar uma lista de preços específica para aquela escola, para aquela conta, porque tem alguma personalização. Às vezes é um, é um, é uma, é um livro que eles montam um livro específico.
+
+Oscar de Rooij   20:00
+That.
+
+Danilo Macedo   20:06
+Pegando alguns capítulos, alguns temas e monta um livro bem personalizado porque a escola, como que vocês pensaram em tratar isso ou ainda não vai ser agora?
+
+Oscar de Rooij   20:13
+Tá.
+Não isso. O que está em andamento não depende disso, tá? Então vai entregar com a tabela de preço ali até a gente resolver a tabela de preço. Mas a gente já chegou na causa raiz da tabela de preço.
+A razão das múltiplas tabelas de preço não tem nada a ver com complexidade de negociação. Tem a ver com o consultor ver um produto para aquela escola que não deveria ver, porque ele é de outra escola, que é a tal da Costa da Personalização que você falou.
+
+Danilo Macedo   20:45
+Mhm.
+
+Oscar de Rooij   20:45
+Então, as tabelas de preços foram utilizadas para resolver o problema de visualização de produtos. Então, uma filial não era para ver produtos customizados e personalizados de outra filial para outra escola, tá? Então isso você vê como.
+Tá, isso aqui é um screenshot da tabela de produtos do CRM, tá? Se eu pego aqui, filtro, status ativo, linha de negócios, sistema de ensino, coleção, trilhas, eu tinha que receber uns 15 produtos.
+Um de cada série. Isso era o que eu era para receber, porque aí naquela ferramenta de adicionar em lote, ele vai pegar cada produto e vai colocar na série correspondente. Pronto, resolvido. Só que eu estou recebendo 1283 linhas quando eu faço esse filtro.
+E aí quando eu olho, eu encontro colégio Sandra Maria.
+Colégio Santana, então eu não tenho nessa estrutura de produtos aqui e tem as outras colunas que eu chequei, tá? Não existe uma coluna que diz se esse produto ele é de prateleira, seria uma customização.
+Então isso já é um enorme gap que impede e por isso que numa frente de trabalho, que é cadastro de produto, que aí eu estou revisando toda a estrutura de cadastro de produto com a diretoria e com a gerência, para a gente conseguir chegar numa estrutura de produto que vai atender.
+O financeiro na hora de montar ADREA Controladoria na hora de fazer toda a parte de Controladoria e produtos na parte de fazer gestão de produtos, rentabilidade de produto, canais de venda, performance de vendas, et cetera, e a comercial fazer a parte dela, gerenciar quais são os canais tipo de cliente.
+O line box deles. Então, assim, fazer tudo isso tudo depende dessa estrutura e o simulador também vai ter que funcionar em cima disso, não é? Então isso aqui é para mostrar qual é o problema.
+A estrutura, ela é basicamente dividida em 2. Aqui a gente discutiu com o as equipes e a gente já chegou numa conclusão. Agora eu preciso conversar com o Julio e o Fernando. E aí com vocês, se vocês já puderem se juntar, a gente já se junta.
+Mas aí é uma decisão que eu acho que vale para o Jova decidir, tá? Mas o ponto é, qual que vai ser a arquitetura para resolver isso? Então, uma coisa é, quais produtos eu posso vender?
+Eu tenho uma tabela de produtos única.
+Por ano, safra para o Brasil inteiro são produtos de prateleira. E o que a gente batizou de produto customizado compartilhado, que é isso? É um produto que, na verdade, assim é como se você o trilhas, por exemplo.
+O trilhas é um conjunto de um Monte de livro, não é muito normal a escola pedir para tirar artes.
+É o mesmo produto, só que pega o livrinho de artes e tira a foto.
+Isso é uma coisa muito comum, então é uma customização. Ela vai acontecer todo ano, inclusive. E aí, o que eles fazem? Tem que pegar esse código de produto, que não é do produto, é do conjunto que eles chamam. É o conjunto de vários.
+E tem que compartilhar com todo mundo. Ele é um ele é de prateleira, só que não sabe o de prateleira é com artes. Esse daqui é um sem artes, mas todo mundo pode vender. Então esse cara aqui entra nessa lista.
+Enquanto que se você tem outros aqui, que são os customizados e personalizados, e aí customizados é uma coisa e personalizada é outra, tá, gente? Então vai ter que ser separado. Existe um que até hoje eu não entendi direito, mas tem uma diferença operacional.
+Entre customizado e personalizado, então você tem customizado e personalizado que não é compartilhado. Esse cara aqui, ele está vinculado na escola.
+Mais especificamente, se ele se a escola está dentro de uma mantenedora, dentro de um grupo, ele está vinculado a mantenedora. E aí todas as escolas vão poder visualizar aquele produto que foi customizado, personalizado para ela.
+Essa lista é diferente, pelo menos é o que a gente entendeu tecnicamente.
+Com Julio, com Fernando ou com vocês, a gente vai definir se a gente realmente coloca numa tabela separada ou se coloca umas colunas a mais aqui nessa tabela e coloca também. A grande questão é que esse aqui é vinculado a um cliente, então não depende do consultor, não depende da filial.
+Depende do cliente, então se eu achar.
+
+Camila Moraes   25:21
+Uma pergunta sobre o cliente falou que as escolas estão atreladas a mantedoras, é o consultor também tem esse vínculo? Você é regional também tem esse vínculo atrelado a eles ou é por safra, por momento que coloca essas aqui irão atender essas?
+
+Oscar de Rooij   25:40
+O consultor, ele está vinculado na conta.
+
+Camila Moraes   25:40
+Como seria esta segmentação?
+Consultor está vinculado a ele ter. Não existe uma equipe de vendas, por exemplo, não trabalho com uma equipe de vendas. Está a equipe de vendas está atrelado a conta? Não há.
+
+Oscar de Rooij   25:52
+É, você tem a regional, então o gerente da regional, ele tem acesso a todas as oportunidades. Então assim, ele não tem essa, ele não é da conta, tá? Ele é da oportunidade. Então assim, o gerente regional da gerente da filial x, ele tem acesso a todos os consultores que têm acesso às suas oportunidades.
+
+Camila Moraes   26:03
+Machado.
+
+Oscar de Rooij   26:09
+As oportunidades, elas têm donos. Esses donos são os consultores. Então a equipe é a equipe daquela filial. Dentro do CRMA filial, ela chama estabelecimento.
+
+Camila Moraes   26:14
+Mhm.
+
+Oscar de Rooij   26:21
+Então, estabelecimento, ele define ali quem são os consultores lá de dentro. Se você vai hoje no CRM, você vai dentro de uma conta, você vai encontrar a pessoa que é dona dela.
+Aqui, proprietário.
+
+Danilo Macedo   26:34
+Está como está como proprietário, como proprietário Cândido, porque aí a carterização é dessa forma, como proprietário.
+
+Oscar de Rooij   26:37
+Isso.
+
+Camila Moraes   26:40
+Então o proprietário é usuário, não é uma equipe de venda que está trollando todo mundo. Então, e se o cabra sair, foi embora, foi desligado.
+
+Danilo Macedo   26:43
+No.
+É.
+
+Oscar de Rooij   26:45
+Não.
+É que aí tem que ter anão tem tratamento para isso. Simples, não tem, não é? Então é manual.
+
+Camila Moraes   26:54
+Mhm.
+
+Danilo Macedo   26:54
+Aí tem que definir um novo proprietário manualmente, mas é manualmente que é fácil de fazer. É só fazer um filtro, pegar todos os registros da qual ele é comproprietário, escolher para quem vai atribuir.
+
+Oscar de Rooij   26:57
+Exatamente.
+
+João Carlos Figueirôa de Castilho   26:58
+Novo consultor.
+
+Oscar de Rooij   27:03
+Isso.
+E assim.
+Coisas que não estão definidas, tá? Pelo menos eu imagino que não estão definidas, porque eu nunca perguntei assim diretamente, tá? O que esse cargo do proprietário, o que o Rodrigo faz? Qual é o papel dele ao estar vinculado a essa?
+Conta.
+Porque uma coisa ele está vinculado a conta, outra coisa ele está vinculado a oportunidade e a proposta. Se ele está vinculado na oportunidade e na proposta, eu espero que ele seja responsável por formalizar toda a negociação e chegar numa conclusão. E depois?
+
+Camila Moraes   27:27
+Mhm.
+Mhm.
+
+Oscar de Rooij   27:44
+Ele faz o quê? Aqui embaixo, na conta, você tem um Monte de gente aqui, consultores, consultor de gestão educacional pública, especialista em educação pública, consultor comercial de idiomas, comercial educacional. Tem um Monte de pessoas aqui.
+Da FTD, que podem ser vinculadas a essa conta, cada um com sua função.
+O que esse cara aqui é responsável?
+
+Camila Moraes   28:07
+Esse é um bom questionamento entre papéis e funções e até onde vai. E aí, Daniel, é onde que eu estou questionando fazendo essa provocação? Porque de trocar de um usuário para o outro, OK, é fácil, mas quando é, você pode automatizar esse processo, você pode deixar.
+
+Oscar de Rooij   28:10
+E.
+
+Camila Moraes   28:26
+A pessoa foi desligada já faz uns 15 dias e ninguém fez essa movimentação, por exemplo, então saber papéis a função.
+
+Oscar de Rooij   28:31
+Tem as tarefas dela, tem outras coisas que podem estar a estar abertas depois, mais adiante. Então, sim, não existe o conceito de uma equipe de vendas e um roundabout ali, por exemplo, se eu recebo uma oportunidade, cai para outra pessoa. Então não tem Balanço de.
+
+Camila Moraes   28:35
+Carvalho dado.
+Prefeito, João, desculpa.
+No.
+
+Oscar de Rooij   28:50
+Quantas oportunidades cada um dá conta? Não tem nada disso, está. É a atribuição. Ela é manual, então fulano vai receber tal.
+
+Danilo Macedo   28:56
+É, mas.
+Mas acho que não tem, não tem esse balanceamento de oportunidade mesmo. Eles definem a caracterização, quem que é o dono e se proprietário é o consultor de vendas mesmo. Ele é o proprietário da conta. Aquelas outras pessoas que estão ali, elas podem atuar e ser e meio que.
+
+Oscar de Rooij   29:04
+Isso.
+
+Danilo Macedo   29:15
+Alexandre está na carteira dessas pessoas também, por conta de alguns serviços, algumas coisas específicas que essa escola pode contratar. Por exemplo, tem acho que idiomas. Se ele não comprou idiomas, não tem nenhuma ação para ele fazer. Então, normalmente ele, esses outros consultores, eles.
+
+Oscar de Rooij   29:24
+Sim.
+Sim.
+
+Danilo Macedo   29:31
+Tem alguma ação depois que você tem uma venda, não é não no processo de venda?
+
+Oscar de Rooij   29:34
+É, mas aqui também eu concordo sobre o que você tá falando, tá? É. Mas tem uma outra coisa na FTD, que é o Fernando e o Hunter. A partir do momento que é um Hunter, beleza, em qual momento eu troco pelo Fernando? Porque aí eu tenho uma questão que é o turn.
+
+Camila Moraes   29:37
+Machado.
+
+Oscar de Rooij   29:49
+Quem é responsável pelo Turnes é o Rodrigo.
+Então, assim, se essa escola, digamos que o atendimento foi ruim, a escola está reclamando. O trabalho que foi feito aqui embaixo por toda essa galera aqui não foi bom. Quem é o responsável?
+Comercial por essa conta. Então o Hunter, ele é sempre é para novas contas, mas depois isso cai para o Farmer. Quando o processo não está tão fechado, tá? Ele não está tão organizado assim.
+
+Danilo Macedo   30:13
+Uhum uhum.
+Machado.
+
+Oscar de Rooij   30:20
+Pode falar, João?
+
+João Carlos Figueirôa de Castilho   30:23
+Sair um pouco desse Tema voltando para a questão dos produtos, está você citou lá o exemplo do produto customizável, é compartilhável. Não é que é aquele caso de Lima, pegar um sistema de ensino e fazer uma alteração básica, tirar um item ou 2, enfim.
+Isso é compartilhável porque uma outra escola pode querer o mesmo produto, o mesmo kits, com a ausência daquele livro específico. E aí você citou os não compartilháveis, que são específicos para um para uma escola. Que tipo de personalização de customização é feito que torna esse produto não compartilhável?
+Específico para esse cliente?
+
+Oscar de Rooij   30:58
+Trocou a capa de vermelho pra azul.
+
+João Carlos Figueirôa de Castilho   31:01
+Beleza.
+
+Oscar de Rooij   31:01
+O Mascote é um sapo, não é um pássaro, sei lá, é customização mesmo, é customização, é não esse desculpa. Isso que eu falei agora são exemplos de personalização, tá? É a customização. Ela é mais leve do que a personalização, tá? É, por exemplo.
+
+João Carlos Figueirôa de Castilho   31:06
+Isso aí a gente, isso aí, tá?
+Personalização, tá bom?
+Mhm.
+
+Oscar de Rooij   31:19
+Eu vou tirar um dos capítulos, é, eu vou renumerar os não sei. Tem não. A personalização é mais pesada, a customização é mais leve, mas é que eu vi uns exemplos de customização, que para mim era personalização. Por isso que eu falo que eu não tenho certeza, tá, mas assim.
+
+João Carlos Figueirôa de Castilho   31:33
+Mhm.
+
+Oscar de Rooij   31:34
+Personalização é mais pesado.
+
+Camila Moraes   31:36
+Mas não chega a ser versionamento do produto.
+
+Oscar de Rooij   31:39
+Não nada a ver com versionamento. Versionamento do produto é de 1 ano para o outro. Eu tenho até dentro do CRM. Eu tenho uma coisa dentro do produto.
+
+Camila Moraes   31:40
+Tá OK?
+
+Oscar de Rooij   31:51
+Não só para falar de versionamento.
+Tem uma coisa aqui chamada código substituto.
+Se uma versão nova de um produto é lançada de uma safra para outra, eu tenho um código substituto. Então esse produto aqui ele foi substituído por esse. Isso inclusive vai ser usado por vocês, na funcionalidade, copiar produtos da proposta anterior.
+
+Camila Moraes   32:03
+Mhm.
+Okay.
+OK.
+
+Oscar de Rooij   32:15
+Porque quando eu pego um é, eu crio uma proposta com base na proposta do ano passado, eu vou ter que trazer todos os produtos da proposta do ano passado corrigidas pelos seus substitutos.
+E ainda aplicado um reajuste.
+
+Camila Moraes   32:30
+Isso.
+
+Oscar de Rooij   32:32
+Isso é uma outra funcionalidade.
+
+Camila Moraes   32:33
+Isso só com clique, você quer esse processo todo com clique?
+
+Oscar de Rooij   32:35
+Exato, é copiar da proposta anterior? Exatamente.
+
+Camila Moraes   32:39
+OKEO, aproveitando que você está aí no produto com a pergunta do João, o customizado seria, como você falou, não é um versionamento de 1 ano para o outro, mas é uma customização leve, por exemplo, trocando, tirando um capítulo.
+Ou reduzindo e tal e personalizado, seria, por exemplo, colocar o nome de uma escola específica para aquelas unidades.
+
+Oscar de Rooij   33:00
+Isso exatamente, exatamente. E esse processo ele acontece por fora do CRME. Tá tudo bem, ele vai ser melhorado com a nossa ajuda, tá? Mas por enquanto, quando precisa de uma customização ou uma.
+
+Camila Moraes   33:03
+Perfeito.
+Tá.
+É.
+
+Oscar de Rooij   33:17
+Personalização para uma escola, abre um e-mail ou preenche um formulário, manda para tal área, tal área faz alguma coisa, ela vai lá, ela cria um produto. Depois que criou o produto, devolve o código, devolve o código, fala assim, código do seu produto é o código XPTO.
+Esse cara copia o código, vai lá no adicionar produto em lote, adicionar produto, desculpa, ele vai vir aqui, adicionar produto e ele vai botar aqui no buscar, ele vai botar o código.
+
+Danilo Macedo   33:48
+Essa pergunta que eu IA fazer gera um código novo, não lembro que girava um código novo.
+
+Oscar de Rooij   33:48
+Leite.
+É um código novo, é um código novo, tá? E vai estar vinculado a essa escola. Então vai aparecer só para esse consultor nessa escola. Se outro consultor pegar o mesmo código em outra escola e procurar, o filtro vai mostrar não existe nenhum produto.
+
+Danilo Macedo   33:53
+Mhm.
+
+Oscar de Rooij   34:08
+Ou se a gente quiser evitar problemas ali, a gente fala assim, produto vinculado a outra escola, que aí pelo menos esse usuário ali, ele sabe que não é que o produto não existe, é o que o produto não está vinculado a escola dele.
+
+Danilo Macedo   34:21
+Mhm.
+
+Oscar de Rooij   34:22
+Então eu vou o processo fora, continua. Ele gera o quê? Um cadastro de produto novo que vai aparecer em nesse processo aqui de adicionar produto individual.
+Então a gente não melhora isso mais para frente. A gente consegue melhorar. Essa experiência já está especificada, inclusive, mas na hora que for para fazer, a gente de fato passa limpo e ver como é que a gente faz, tá bom?
+
+Danilo Macedo   34:47
+Oscar eu lembro que tinha essa questão de mais de uma lista de preços por conta do personalizado mas eu lembro que tinha outros motivos eu não sei se eu acho que tinha alguma questão que assim pode trocar lista de preços porque é uma lista de preços que tem um desconto maior mas é habilitado só para algumas
+Bola disso não tem mais.
+
+Oscar de Rooij   35:08
+Isso era uma das minhas premissas, que ia ter esse tipo de situação. Talvez na época que você estava fechando, tinha. Mas quando a gente foi analisar com a equipe, inclusive com a Claudia, que estava desde a sua época, hoje as restrições são basicamente visuais. Essas condições diferentes.
+De preços por é escola barra região, isso não tem mais.
+
+Danilo Macedo   35:33
+Está. Ou seja, faz sentido ficar só numa lista de preços mesmo, não ficar mudando, está?
+
+Oscar de Rooij   35:38
+É OCRM. Ele tem uma estrutura para preços diferentes. O dynamics tem esse tipo de complexidade. Se a gente precisar e a gente vai precisar, tá? A questão é agora, porque.
+
+Danilo Macedo   35:43
+Mhm.
+Mhm.
+
+Oscar de Rooij   35:53
+Quando eu falo quais produtos eu posso vender, eu estou falando de visualização. Então eu tenho uma única tabela de preços e uma de não compartilhados. Eu tenho um mercado privado, então minha proposta é para uma escola do mercado privado. A minha proposta é para uma escola do mercado público para o mercado privado.
+
+Camila Moraes   35:54
+Michelle.
+
+Oscar de Rooij   36:10
+Eu só posso vender produtos desenhados para o mercado privado para o mercado público. Eu posso vender produtos para o mercado feitos para o mercado público e para o privado. Eu posso. Tá aí. A outra coisa é dentro do mercado privado.
+Se eu estou vendendo para uma escola, eu tenho esses modelos canais de venda disponíveis e para essas escolas eu posso vender quais linhas de negócio? E aí tá aqui produtos disponíveis de prateleira.
+Todas as linhas de negócio não pode vender. Só quais? Quais são as exceções? Se público, agenda e outros das linhas de negócio, tá? Linha de negócio é isso aqui. Isso aqui é o que está cadastrado hoje no sistema.
+Dentro do cadastro de produtos, se você vem aqui, linha de negócio, é uma coluna aqui, está vendo?
+
+Danilo Macedo   37:02
+Mhm.
+
+Oscar de Rooij   37:03
+Esses valores aqui.
+
+Danilo Macedo   37:07
+Mhm.
+
+Oscar de Rooij   37:07
+Aí aqui.
+Quando eu falo de customizados compartilhados, eu posso todos dessas mesmas linhas compartilháveis, tá? Os não compartilháveis é só o que está na escola. É isso é o que vai aparecer agora, se eu estiver vendendo, negociando com um.
+
+Danilo Macedo   37:10
+Sim.
+Mhm.
+Mhm.
+
+Oscar de Rooij   37:25
+Livreiro.
+Aí eu não posso vender todos os produtos que eu tenho, eu posso vender apenas.
+Quer dizer, eu tenho todas as exceções aqui. Eu IA fazer o exercício contrário, acabei não fazendo. Então, gente, aqui é tanto menos aqui. Exceção que na prática é mais fácil, pode vender. Eu vou fazer a lista positiva aqui, mas eu posso vender só algumas linhas de negócio para os livreiros.
+E quando eu vou vender para Fernando Fernando Fernando Marcelo.
+
+Danilo Macedo   37:49
+Isso vai ser e isso vai ser controlado pela lista de preços, ou seja, vai ter uma lista de preços livreiro, que aí só vai sair incluso esses produtos aí.
+
+Oscar de Rooij   37:56
+Não é uma lista só. E aí no cadastro desse produto ou pela linha de negócio, a gente vai mostrar o que pode e não pode. Resumo da história. Quando eu tenho uma proposta que tem aqui, os produtos que vão ser incluídos nela, como é que eu mostro isso?
+O catálogo disponível para esse cliente é a lista de preço oficial.
+Considerando o produto por cliente, então esse filtro do esse cliente aqui, ele é esse tipo de negociação, ele é para uma escola, tem um compromisso de venda ou não é para 11 parceiro de B2B, um livreiro?
+Ou é para uma venda de B2C? Estou vendendo no mercado aberto, no oceano, no oceano vermelho, não é? Aí eu tenho esses outros, então eu tenho esse filtro por linha de negócio, tá? E aí aqui eu tenho os customizados e personalizados.
+Esse filtrado com esse?
+Eu até posso tirar essa linha aqui.
+Filtrado por esse cai aqui e eu tenho os personalizados dessa escola. A junção desses 2 é que gera o catálogo disponível para cá. Então isso aqui, inclusive.
+
+Danilo Macedo   39:12
+Mhm.
+
+Oscar de Rooij   39:17
+Esse recorte aqui, Oh, venda para escola tem compromisso contratual de venda?
+Venda para revendedor não tem compromisso, Oliveira e esse venda para família, esses 3 modelos, essa categorização.
+Não existe um CRM.
+Ela não tá lá na, isso aqui deveria estar na oportunidade. Ela é um tipo de negociação que tem um compromisso de venda. Eu posso botar o compromisso contratual dessa escola no meu planejamento comercial e de metas.
+E eu tenho que fazer um acompanhamento. Se ela falou que vai vender 1000000 de reais, eu tenho um compromisso contratual. Eu tenho que acompanhar esse 1000000 de reais aqui para livreiro. Eu não tenho esse comprometimento.
+Ele vende, eu faço um trabalho histórico. Eu vejo quanto que a Amazon vende a Amazon, entra aqui, tá? A Amazon, a Amazon vende quanto a vende x então, tá, quanto que a gente acha que vai vender?
+10%, 5% vai cair 5%, não sei. Faz um histórico, mas não tem o compromisso. E aqui é o e-commerce aberta, família. Esses 3 não estão no CRM, então por isso você não consegue fazer esse filtro que você está falando, tá, Daniel? Hoje você não tem um campo que vai te dizer.
+O que é que eu posso vender? É isso aqui.
+Eu não tenho uma tabela que diz para esse tipo de cliente ou de oportunidade, eu posso mostrar essas linhas de negócio e para essa outra eu posso fazer essas linhas de negócio. Eu teria que ter 3 valores, eu teria que ter esse do das escolas, eu teria que ter esse do livreiro, eu teria que ter esse do e-commerce aberto. E aí cada um deles, dependendo.
+Da oportunidade que eu tenho, eu filtro a tabela de preços só para mostrar isso.
+Então vai ser um campo que vai aparecer na oportunidade, tá? Então, inclusive, eu estou fazendo esse Discovery agora, onde eu tenho aqui as oportunidades, revisão de oportunidade. Eu estou revisando todos os Campos da oportunidade e identificando o que é que vai ter que sair.
+
+Danilo Macedo   41:15
+Mhm.
+Sim.
+
+Oscar de Rooij   41:28
+E eu mostrei isso para vocês na reunião anterior, então vai ter que ter Campo Novo aqui, vai ter que entrar a penetração EAE um potencial da escola, vai ter que entrar a meta que eu vou ter com essa escola que eu estou considerando no meu planejamento comercial. Eu possivelmente vou ter que arrancar esse perfil laranja porque ele não está sendo utilizado, tanto é que é por.
+
+Danilo Macedo   41:30
+Mhm.
+Mhm.
+
+Oscar de Rooij   41:48
+Isso que a gente está fazendo a segmentação, esse termômetro aqui, eu vou ter que entender para que serve esse termômetro, como funciona e tudo mais, e eu vou ter que ter essa classificação aqui.
+Essa daqui.
+Para que o filtro seja aplicado, para que eu mostre para essa proposta apenas os produtos que fazem sentido.
+
+Danilo Macedo   42:10
+É, eu falei sobre ter mais de uma lista de preços, porque uma das formas para a gente fazer esse filtro, até de forma nativa, é, se você tivesse, é, eu sei que isso implica em questão operacional. Tem que pensar também, por exemplo, uma lista.
+Lista de preço para escola, uma outra para revendedor e uma outra para a família. E aí, como que você filtra? É só não colocar na lista de preços de família, por exemplo, uns determinados produtos, que aí não vai aparecer como opção para as incluir, entendeu?
+
+Oscar de Rooij   42:39
+Então, perfeito, é uma possibilidade também, tá? Então assim, essa conversa aqui eu vou ter com o Julio e com Fernando justamente para isso, para entender como uma tabela de preço é para a gente. É basicamente qual que é a necessidade, tá?
+
+Danilo Macedo   42:40
+Michelle Paulo.
+Costa.
+Mhm.
+Hhh.
+
+Oscar de Rooij   42:55
+É o consultor não precisar ficar definindo a tabela de preços. Não faz sentido o consultor definir a tabela de preços. Se vai ser uma ou se vão ser 3 bem definidas. Se a oportunidade for desse tipo aqui, vai pegar essa tabela de preços. Se for desse tipo aqui, vai pegar a outra tabela de preços. Se for desse aqui, vai ser outra.
+
+Danilo Macedo   42:59
+Mhm.
+Mhm.
+
+Oscar de Rooij   43:14
+Tabela de preços, se for bem claro esses 3, não é? Está tudo bem.
+
+Danilo Macedo   43:15
+Mhm.
+
+Oscar de Rooij   43:21
+Só não pode ter que ficar escolhendo tabela de preço.
+
+Danilo Macedo   43:21
+Abreu.
+E o importante não. E aí dá até para sabendo qual é a conta, automaticamente o sistema já definir sem precisar ainda que ele defina. Mas eu lembro que o que fazia que tinha que fazer, os motivos claros, eu não lembro.
+
+Oscar de Rooij   43:32
+Thais.
+
+Danilo Macedo   43:38
+Mas era de, na mesma proposta, ter que mudar a tabela de preços na mesma proposta. E isso para o próprio sistema é muito ruim. Assim, é muito tem que ficar controlando para esse produto entrou dessa lista de preços, mas esse outro produto não entrou de uma segunda lista de preços. Mas ele não faz parte da lista de preços principal. Então, como que ele está ali? Eu lembro que tinha umas.
+
+Oscar de Rooij   43:44
+Sim.
+Exato.
+
+Danilo Macedo   43:58
+fusões assim, isso se conseguir evitar isso é muito melhor.
+
+Oscar de Rooij   43:58
+Tem.
+
+Danilo Macedo   44:03
+Hhh.
+Mhm.
+
+Oscar de Rooij   44:21
+Entendeu? Ele devolve para o consultor e fala, cara, você está botando o produto da tabela errada e ele já manda arrumar. Isso não faz sentido.
+
+Danilo Macedo   44:25
+Mhm.
+
+Oscar de Rooij   44:29
+Então, só para falar sobre aquela questão dos preços e condições comerciais. Então, aqui eu estou falando sobre o que eu vou mostrar. A gente vai ter que usar as funcionalidades do dynamics para contemplar sobre quais condições eu posso vender.
+Isso é outra, é outro nível. Então é dentro daquilo que eu posso vender. Agora, qual é a condição que eu posso vender? Porque esse cliente ele é Triple a, esse cliente é premium, esse cliente é intermediário, esse cliente é popular ou esse cliente ele tá.
+Em no nordeste, ou ele tá no norte ou isso quem vai trazer é a consultoria de pricing. É um projeto que está em andamento. Eles estão avaliando todo acervo de produtos, estão entendendo a composição de preços, como preço é calculado. Eles vão trazer um diagnóstico e depois um trabalho de.
+Como que deve ser feita a definição de preço e a oferta disso no Brasil inteiro? Então a gente vai entender, por exemplo, se eu tenho, por exemplo, limite de desconto por segmentação.
+Se eu tenho alguma coisa, alguma tentativa por canal, o que for, aí sim eu vou entrar e vou ter que desenhar isso aqui. Isso aqui, por enquanto, não está nada desenhado, não é?
+Mas aqui eu consigo. Aqui já dá para dar uma discutida para pelo menos tirar a tabela de preço, porque a tabela de preço não tem a ver com isso aqui. Ela tem a ver com visualização.
+
+Danilo Macedo   46:08
+Tá bom, é? E essa é uma parte do sistema. Já sei que não é agora na hora de discutir isso, mas só para ficar em mente aí que é uma parte muito importante de produto, cadastro de produto, como que é vinculado com a oportunidade, com a proposta.
+É pra gente não perder funcionalidade nativa. Se a gente ficar customizando muito isso, por exemplo, já tem a funcionalidade nativa de você versionar a proposta, já tem de vocês, de uma oportunidade de virar proposta, já levar os produtos de não sei se depois vocês vão avançar pra.
+Uma etapa seguinte, tipo que antes tinha, eu acho que se perdeu. É a proposta vira um pedido, que aí o pedido que é integrado. E aí?
+
+Oscar de Rooij   46:51
+Não, não. O pedido não existe. Isso é uma das coisas que eu estou trazendo. Eu também estou trazendo a história de que meu as propostas ela e eu não sei se a revisão, isso é uma pauta para vocês com o Jova, o Julio e Fernando, tá? Então, por exemplo, se está usando o versionamento nativo, tá? Isso eu não sei te dizer.
+
+Danilo Macedo   46:53
+Não existe mais, é?
+Mhm.
+Tavares.
+
+Oscar de Rooij   47:09
+Tá, mas tem um versionamento hoje, se você vai hoje aqui nas propostas, tem um campo aqui que é versão de proposta.
+
+Danilo Macedo   47:10
+Mhm.
+Provavelmente é nativo, sim.
+
+Oscar de Rooij   47:17
+Aqui ó, a de revisão, tá vendo?
+
+Danilo Macedo   47:19
+É nativo, sim. Tem um botão lá em cima que faz a.
+
+Oscar de Rooij   47:21
+Pronto.
+
+Danilo Macedo   47:26
+E nos 3 pontos, talvez ou mudar o nome, não sei.
+
+Oscar de Rooij   47:32
+Enfim, é revisar aqui, talvez é.
+
+Camila Moraes   47:33
+Revisar isso.
+
+Danilo Macedo   47:34
+Isso é isso exato.
+
+Oscar de Rooij   47:37
+Então.
+Essa isso aí você consegue validar com eles o os detalhes mesmo, tá?
+
+Danilo Macedo   47:42
+Mhm.
+Tá bom?
+
+Oscar de Rooij   47:47
+Eu ia comentar alguma coisa, mas eu esqueci.
+Franca.
+Bom, eu não tenho mais nada aqui, gente, é.
+O objetivo era apresentar aqui para vocês entenderem um pouco da interface final que está sendo já desenvolvida, que é o que está em Power Pages que vocês vão acabar recebendo para depois vocês conversarem também com Jova, com Thiago e com Fernando e entender os pormenores ali.
+É tecnicamente como que tudo isso aí está sendo concebido, então?
+
+Danilo Macedo   48:29
+Tá bom?
+Uma dúvida, acho que não perguntei isso.
+É.
+Funcionalidade de fazer uma cópia da proposta do ano anterior.
+Isso não eu lembro. Eu acho que isso já tinha sido implementado. Não tem mais isso que você falou de construir.
+
+Oscar de Rooij   48:48
+Existe algo que tentou fazer isso e não funciona. O pessoal não tem utilizado. Isso está dentro da oportunidade. Tem aqui uma tabela de.
+Deixa eu pegar primeiro porque ninguém usa a oportunidade direito, não tem um padrão de uso de oportunidade, mas aqui você tem produtos da oportunidade. Kevellin, me corrige se eu tiver errado aqui, tá? Mas aqui esse produtos da oportunidade.
+
+Kevellin dos Santos Corrado   49:16
+Sim.
+
+Oscar de Rooij   49:20
+Ele nada mais é do que os produtos da proposta do ano anterior ou da proposta anterior, que está aqui para o consultor editar isso daqui e seguir à frente. Na prática, o que acontece? O consultor ignora essa tabela ou deleta tudo.
+
+Kevellin dos Santos Corrado   49:39
+E aí ele consegue copiar também ali a oportunidade, mas é que não está funcionando. E aí, às vezes, quando eles copiam, não é, não vai com as informações necessárias já preenchidas. Eles têm que copiar tudo de novo, tem que fazer tudo de novo.
+
+Oscar de Rooij   49:39
+Então a forma.
+
+Danilo Macedo   49:53
+Tá, é isso mesmo? É. Eu lembrei agora que na época a gente tinha implementado alguns nos controles com uma tentativa de fazer eles usarem a oportunidade e não pular só para a proposta. Então a cópia era na oportunidade.
+
+Kevellin dos Santos Corrado   50:06
+Isso.
+Exatamente aí, quando ele reflete e quando ele reflete, quando faz essa cópia, os Campos, eles acabam vindo em branco.
+
+Danilo Macedo   50:08
+Yeah.
+Uhum, entendi, entendi, deve ter Campos novos. E aí essa funcionalidade não foi evoluída junto. Entendi. E aí eu lembro, lembro que de Jesus conheceram a Patrícia Madzali, ela que era.
+
+Kevellin dos Santos Corrado   50:24
+É.
+Isso.
+Alexandre.
+
+Danilo Macedo   50:33
+PM na época e ela me contou que eles estavam.
+
+Kevellin dos Santos Corrado   50:36
+Isso.
+
+Danilo Macedo   50:38
+É, por exemplo, fiz a oportunidade de 2024, fiz a proposta de 2024, vendi OK. Aí chegava em 2025, ele IA na oportunidade de 2024 e criava uma nova proposta vinculada a ela. Só que mudava para 2025. Só que tinha um Monte de coisa errada.
+
+Oscar de Rooij   50:49
+Nossa.
+Nós editava a oportunidade de 1 ano que já deu ganha. Primeiro, nem deu ganha, não é? Pelo jeito era.
+
+Danilo Macedo   50:54
+Estão fazendo isso também.
+É.
+Não é que assim a oportunidade, ele não deu ganho, ele ganhou, só que ele não fez o fechamento da oportunidade, porque ninguém acompanha, ninguém acompanha, ele não fechou. Se ele fechado, ele não conseguia fazer isso. Aí ele ia lá e fazia uma nova proposta, porque já adiantava o trabalho dele, porque eram os mesmos produtos.
+
+Oscar de Rooij   51:07
+Lara.
+Correia.
+
+Danilo Macedo   51:19
+Só que os vínculos que tinha com a oportunidade, havia muita coisa errada.
+
+Oscar de Rooij   51:23
+É, tem gente. O Fernando, ele disse que Fernando, que vocês vão conversar do time de tecnologia, ele disse que tem gente que usa isso daqui, tá? Eu estou para ter uma conversa com ele também para ir com os gerentes de filial para entender se realmente usam.
+
+Danilo Macedo   51:32
+Tá.
+
+Oscar de Rooij   51:40
+Tá que aqui no meu mapa de oportunidade, eu tenho que entender se isso aqui de fato está sendo usado, porque a essa funcionalidade, ela não tem que estar na oportunidade lá no simulador, ele está na proposta e ele é uma funcionalidade de copiar do ano anterior.
+
+Danilo Macedo   51:41
+Mhm.
+
+Oscar de Rooij   51:57
+E o que foi implantado não atende todas as necessidades atuais da comercial, que é essa substituição de produtos. É também a aplicação do reajuste do preço, tá? Então tem 2 coisas a mais ali que não atende.
+Então, na proposta, ele vai poder copiar e a oportunidade, ela tem que ficar muito concisa, ela tem que ficar pequena, poucos Campos, Campos que a gestão comercial, a liderança comercial vão utilizar para definir o baseline do planejamento.
+Do ano, planejamento comercial, eles vão querer saber das oportunidades que eu criei, não consultor que ele criou.
+Quanto é que já foi fechado ou não foi fechado? Então, assim, construtor nem é para poder criar oportunidade. Ele tem que criar OA liderança comercial, que tem que criar essas oportunidades. Se ele for criar, que tem uma aprovação, porque OA liderança comercial.
+Quando entra uma oportunidade, isso está entrando no relatório de vendas dele, no relatório de metas dele, inclusive, não é?
+Então, ele tem que fazer isso com cuidado.
+
+Danilo Macedo   53:02
+Mhm.
+É, vai ter que tem que vai ter que pensar bem a essa questão, porque é possível fazer a oportunidade sem incluir os produtos, mas se for possível, legal para dar uma ideia de valores, o produto que no final compõe o valor que deve ser.
+
+Oscar de Rooij   53:14
+Santos.
+Sim.
+
+Danilo Macedo   53:20
+Costa, mas realmente ele acaba fazendo um trabalho quase que duplicado, apesar que o que ele coloca de produtos na oportunidade, esses produtos vão para a proposta.
+
+Oscar de Rooij   53:30
+É, mas isso é o que não tá funcionando direito, né? E aí depois você tem, aí tem outra coisa, depois na proposta, ele muda tudo. Ele vai adicionar novas coisas, ele vai mudar a quantidade, ele vai adicionar tudo. E aí os relatórios, eles consideram os dados da oportunidade da proposta e as coisas se misturam.
+
+Danilo Macedo   53:31
+Place.
+Nope, danger.
+
+Oscar de Rooij   53:49
+Tem relatório que usa um, tem relatório que usa outro. A informação está conflitando. Então assim, a gente tem que enriquecer as informações. Então tira, tira o produto da oportunidade, coloca na proposta, na oportunidade, coloca qual é o potencial de mercado. É o nine box que a comercial já definiu.
+
+Danilo Macedo   53:49
+É, não vai bater.
+Machado.
+
+Oscar de Rooij   54:06
+É isso aqui.
+Eu tenho que saber qual que é a penetração que eu tenho nesse cliente, qual que é o potencial de receita. Isso aqui está tudo numa base de dados paralela. Isso deveria estar na oportunidade. E dentro da oportunidade tem uma outra informação, uma terceira informação, porque isso aqui é o potencial.
+
+Danilo Macedo   54:15
+Perfeito.
+Perfeito.
+
+Oscar de Rooij   54:23
+Essa aqui é a penetração, isso é informação para o meu planejamento. A outra coisa é, quanto que eu vou colocar para esse cliente?
+Na minha meta, então se eu tenho, ele pode faturar 1 milhão, ele tá faturando comigo 100 mil. Eu vou colocar 200 para esse ano. O 200 é uma outra informação que tem que estar na oportunidade, porque esse é o baseline para quando a proposta vier por 150 mil.
+Eu tenho um gap de 50 que eu vou ter que cobrir em uma outra oportunidade, em um outro cliente. Porque eu tinha previsto na minha meta que eu me comprometi com a diretoria executiva, eu me comprometi com 200000 no meu planejamento. Isso foi fechado, é um baseline.
+Aí eu venho para esse cliente, ele não fechou 200, ele fechou 150. Eu tenho um buraco de 50. Eu vou ter que cobrir em outro lugar e eu vou ter que ter relatório que me mostre o tamanho do buraco à medida que as propostas vão fechando.
+
+Danilo Macedo   55:20
+Não perfeito, porque a porque aí você tá. Ele não precisa, na oportunidade, definir todos os produtos para chegar no preço. Já tem um trabalho feito que tem que diz ali qual que é o potencial de valor, mas também.
+
+João Carlos Figueirôa de Castilho   55:20
+Poxa.
+
+Danilo Macedo   55:35
+Imagino que tenha também qual é o potencial de virar, por exemplo, foi definido aqui para um cliente.
+
+Oscar de Rooij   55:39
+Que é o esses 200, que é o é uma avaliação deles sobre o potencial dessa escola, considerando o contexto dela no ano anterior.
+
+Danilo Macedo   55:46
+Uhum não, perfeito. Aí faz sentido, porque ele não vai ter um grande trabalho de ficar. É preenchendo a oportunidade. Já vem um valor ali que já foi estudado de alguma outra forma e faz sentido aquele valor, tá bom?
+
+Oscar de Rooij   55:56
+Isso.
+E tem que lembrar que dentro da FTD gente já sabe quem são todos clientes.
+
+Danilo Macedo   56:02
+Jesus.
+
+Oscar de Rooij   56:02
+Já sabe, não é tipo lead, cria, não é? Já está aqui AO planejamento. Ele é feito em cima da oportunidade e eu vou ter que sair para uma outra reunião aqui, gente, é.
+
+Danilo Macedo   56:04
+Nope, there.
+É.
+Mhm.
+Tá bom, depois eu queria discutir mais com você, mas aí em outros momentos a gente discute essa questão de Lima, de Franca, a gente discute melhor, porque eu acho que tem oportunidade de usar mais funcionalidades do dynamics aqui. A gente discute melhor.
+
+Oscar de Rooij   56:25
+Beleza, vamos fazer, vamos fazer. Inclusive marketing, a parte de lead, et cetera, tudo que é anterior, cliente potencial. Eu nem entrei, tá? Eu estou tentando resolver aqui da proposta e eu estou. Eu estou indo da proposta para trás.
+
+Danilo Macedo   56:34
+Uh-huh.
+Sim.
+
+Oscar de Rooij   56:41
+Da proposta eu tô indo pra oportunidade, da oportunidade a gente vai pra compromissos, tarefas pra gente ir amarrando a jornada, pra depois eu ir lá na campanha, no lead, o site que traz um formulário que, enfim, isso é depois eu não entrei nisso ainda.
+
+Danilo Macedo   56:43
+Mhm.
+Mhm.
+
+Oscar de Rooij   56:59
+Combinada?
+
+Danilo Macedo   57:00
+Beleza. Valeu, Oscar. Obrigado. Até mais. Até mais, pessoal.
+
+Oscar de Rooij   57:01
+Valeu então pessoal, até mais, tchau, tchau. Valeu gente, tchau, tchau.
+
+Kevellin dos Santos Corrado   57:04
+Tchau, pessoal, tchau, tchau.
+
+Camila Moraes   57:04
+Alexandre de Franca.
+
