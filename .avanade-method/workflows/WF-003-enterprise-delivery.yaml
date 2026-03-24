@@ -1,9 +1,9 @@
-ï»¿workflow:
+workflow:
   id: avanade-enterprise-delivery
   name: Avanade Enterprise Solution Delivery
   description: >-
-    Workflow completo seguindo metodologia oficial Avanade de 3 fases para entrega de soluÃ§Ãµes empresariais.
-    Baseado na metodologia Discover & Envision â†’ Design & Implement â†’ Run & Evolve.
+    Workflow completo seguindo metodologia oficial Avanade de 3 fases para entrega de soluções empresariais.
+    Baseado na metodologia Discover & Envision ? Design & Implement ? Run & Evolve.
   type: enterprise
   project_types:
     - transformacao-digital
@@ -16,34 +16,34 @@
   phases:
     - phase: discover-envision
       name: "Discover & Envision"
-      description: "Descoberta, definiÃ§Ã£o da visÃ£o e planejamento estratÃ©gico do programa"
-      quality_gate: "QG1: AprovaÃ§Ã£o para Design & Implementation"
+      description: "Descoberta, definição da visão e planejamento estratégico do programa"
+      quality_gate: "QG1: Aprovação para Design & Implementation"
       
       sequence:
         # Discovery Activity
         - activity: discovery
-          description: "Descoberta e anÃ¡lise do estado atual"
+          description: "Descoberta e análise do estado atual"
           agents:
             - agent: analyst
               creates: stakeholder-analysis.md
-              notes: "Mapeamento completo de stakeholders, influenciadores e tomadores de decisÃ£o"
+              notes: "Mapeamento completo de stakeholders, influenciadores e tomadores de decisão"
               
             - agent: analyst
               creates: current-state-analysis.md
-              notes: "DocumentaÃ§Ã£o do estado atual (As-Is) incluindo sistemas, processos e limitaÃ§Ãµes"
+              notes: "Documentação do estado atual (As-Is) incluindo sistemas, processos e limitações"
 
         # North Star Definition
         - activity: north-star-definition
-          description: "DefiniÃ§Ã£o da visÃ£o e objetivos estratÃ©gicos"
+          description: "Definição da visão e objetivos estratégicos"
           agents:
             - agent: pm
               creates: north-star-vision.md
               requires: [stakeholder-analysis.md, current-state-analysis.md]
-              notes: "DefiniÃ§Ã£o da visÃ£o North Star e objetivos estratÃ©gicos do programa"
+              notes: "Definição da visão North Star e objetivos estratégicos do programa"
 
         # Program Definition
         - activity: program-definition
-          description: "EstruturaÃ§Ã£o e definiÃ§Ã£o do programa"
+          description: "Estruturação e definição do programa"
           agents:
             - agent: pm
               creates: program-charter.md
@@ -52,11 +52,11 @@
 
         # Engagement Definition
         - activity: engagement-definition
-          description: "Modelo de engajamento e governanÃ§a"
+          description: "Modelo de engajamento e governança"
           agents:
             - agent: pm
               creates: engagement-model.md
-              notes: "Modelo de engajamento, governanÃ§a e estrutura de comunicaÃ§Ã£o do programa"
+              notes: "Modelo de engajamento, governança e estrutura de comunicação do programa"
               
             - agent: pm
               creates: discovery.md
@@ -66,197 +66,197 @@
           
         - quality_gate: discover_envision_approval
           criteria:
-            - "North Star e visÃ£o estratÃ©gica definida e aprovada"
+            - "North Star e visão estratégica definida e aprovada"
             - "Program Charter aprovado com escopo e cronograma"
             - "Modelo de engajamento estabelecido"
-            - "AnÃ¡lise de stakeholders completa"
-            - "Requisitos de negÃ³cio documentados e validados"
+            - "Análise de stakeholders completa"
+            - "Requisitos de negócio documentados e validados"
           approvers: ["program-sponsor", "steering-committee"]
-          notes: "Quality Gate 1 - AprovaÃ§Ã£o para prosseguir para Design & Implement"
+          notes: "Quality Gate 1 - Aprovação para prosseguir para Design & Implement"
 
     - phase: design-implement
       name: "Design & Implement"
-      description: "Design da soluÃ§Ã£o, configuraÃ§Ã£o, desenvolvimento e implementaÃ§Ã£o"
+      description: "Design da solução, configuração, desenvolvimento e implementação"
       quality_gate: "QG2: Go-Live Ready"
       
       sequence:
         # Blueprint & Design
         - activity: blueprint-design
-          description: "Arquitetura e design detalhado da soluÃ§Ã£o"
+          description: "Arquitetura e design detalhado da solução"
           agents:
             - agent: architect
               creates: solution-architecture.md
               requires: [discovery.md]
               template: arquitetura-avanade-tmpl
-              notes: "Arquitetura tÃ©cnica completa priorizando Microsoft Stack e Azure. SAVE OUTPUT: Copy to docs/ folder."
+              notes: "Arquitetura técnica completa priorizando Microsoft Stack e Azure. SAVE OUTPUT: Copy to docs/ folder."
               
             - agent: ux-expert
               creates: ux-design.md
               requires: [discovery.md, solution-architecture.md]
-              notes: "Design de experiÃªncia seguindo Fluent Design System e padrÃµes Microsoft"
+              notes: "Design de experiência seguindo Fluent Design System e padrões Microsoft"
 
         # Build & Configuration + Quality Engineering (Parallel)
         - activity: build-configuration
-          description: "Desenvolvimento e configuraÃ§Ã£o da soluÃ§Ã£o"
+          description: "Desenvolvimento e configuração da solução"
           parallel_execution: true
           agents:
             - agent: dev
               action: implement_solution
               creates: implementation_files
               requires: [solution-architecture.md, ux-design.md]
-              notes: "ImplementaÃ§Ã£o seguindo padrÃµes Avanade e arquitetura aprovada"
+              notes: "Implementação seguindo padrões Avanade e arquitetura aprovada"
               
             - agent: qa
               action: quality_engineering
               creates: test-strategy.md
               parallel_with: dev
-              notes: "EstratÃ©gia de testes, automaÃ§Ã£o e quality engineering contÃ­nuo"
+              notes: "Estratégia de testes, automação e quality engineering contínuo"
 
         # Data Migration
         - activity: data-migration
-          description: "EstratÃ©gia e execuÃ§Ã£o de migraÃ§Ã£o de dados"
+          description: "Estratégia e execução de migração de dados"
           condition: "if data migration required"
           agents:
             - agent: dev
               creates: data-migration-plan.md
-              notes: "Plano de migraÃ§Ã£o de dados incluindo estratÃ©gia, ferramentas e validaÃ§Ã£o"
+              notes: "Plano de migração de dados incluindo estratégia, ferramentas e validação"
 
         # Application Migration  
         - activity: application-migration
-          description: "MigraÃ§Ã£o e modernizaÃ§Ã£o de aplicaÃ§Ãµes existentes"
+          description: "Migração e modernização de aplicações existentes"
           condition: "if application migration required"
           agents:
             - agent: dev
               creates: app-migration-plan.md
-              notes: "EstratÃ©gia de migraÃ§Ã£o de aplicaÃ§Ãµes e modernizaÃ§Ã£o de sistemas legados"
+              notes: "Estratégia de migração de aplicações e modernização de sistemas legados"
 
         # Go-Live Management
         - activity: go-live-management
-          description: "PreparaÃ§Ã£o e execuÃ§Ã£o do go-live"
+          description: "Preparação e execução do go-live"
           agents:
             - agent: qa
               action: user_acceptance_testing
               creates: uat-results.md
-              notes: "ExecuÃ§Ã£o de UAT estruturado com stakeholders de negÃ³cio"
+              notes: "Execução de UAT estruturado com stakeholders de negócio"
               
             - agent: dev
               action: production_deployment
               creates: deployment-guide.md
               requires: [uat-results.md]
-              notes: "Deployment em produÃ§Ã£o seguindo procedimentos Avanade"
+              notes: "Deployment em produção seguindo procedimentos Avanade"
 
         # Managed Services Mobilization
         - activity: managed-services-mobilization
-          description: "PreparaÃ§Ã£o para operaÃ§Ã£o e serviÃ§os gerenciados"
+          description: "Preparação para operação e serviços gerenciados"
           agents:
             - agent: pm
               creates: service-transition-plan.md
-              notes: "Plano de transiÃ§Ã£o para operaÃ§Ã£o e inÃ­cio dos serviÃ§os gerenciados"
+              notes: "Plano de transição para operação e início dos serviços gerenciados"
 
         # Change, Learning & Communication Enablement
         - activity: change-learning-enablement
-          description: "GestÃ£o de mudanÃ§a, treinamento e comunicaÃ§Ã£o"
+          description: "Gestão de mudança, treinamento e comunicação"
           agents:
             - agent: pm
               creates: change-management-plan.md
-              notes: "EstratÃ©gia de gestÃ£o de mudanÃ§a organizacional e comunicaÃ§Ã£o"
+              notes: "Estratégia de gestão de mudança organizacional e comunicação"
               
             - agent: qa
               creates: training-materials.md
-              notes: "Material de treinamento para usuÃ¡rios finais e equipe tÃ©cnica"
+              notes: "Material de treinamento para usuários finais e equipe técnica"
 
         # Talent, Organization & Leadership Enablement
         - activity: talent-organization-enablement
-          description: "CapacitaÃ§Ã£o organizacional e lideranÃ§a"
+          description: "Capacitação organizacional e liderança"
           agents:
             - agent: pm
               creates: organizational-readiness.md
-              notes: "Plano de capacitaÃ§Ã£o organizacional e preparaÃ§Ã£o de lideranÃ§as"
+              notes: "Plano de capacitação organizacional e preparação de lideranças"
           
         - quality_gate: go_live_ready
           criteria:
-            - "SoluÃ§Ã£o implementada e testada completamente"
+            - "Solução implementada e testada completamente"
             - "UAT aprovado pelos stakeholders"
-            - "Planos de migraÃ§Ã£o executados com sucesso"
+            - "Planos de migração executados com sucesso"
             - "Equipe treinada e capacitada"
             - "Infraestrutura produtiva validada"
             - "Processos de suporte operacional estabelecidos"
-            - "Planos de contingÃªncia e rollback preparados"
+            - "Planos de contingência e rollback preparados"
           approvers: ["solution-architect", "business-sponsor", "operations-team"]
-          notes: "Quality Gate 2 - SoluÃ§Ã£o pronta para go-live"
+          notes: "Quality Gate 2 - Solução pronta para go-live"
 
     - phase: run-evolve
       name: "Run & Evolve"
-      description: "OperaÃ§Ã£o, suporte e evoluÃ§Ã£o contÃ­nua da soluÃ§Ã£o"
+      description: "Operação, suporte e evolução contínua da solução"
       
       sequence:
         # Post Go-Live Support
         - activity: post-go-live-support
-          description: "Suporte imediato pÃ³s go-live e estabilizaÃ§Ã£o"
+          description: "Suporte imediato pós go-live e estabilização"
           agents:
             - agent: qa
               creates: post-golive-support.md
-              notes: "Suporte estruturado pÃ³s go-live incluindo monitoramento e resoluÃ§Ã£o de issues"
+              notes: "Suporte estruturado pós go-live incluindo monitoramento e resolução de issues"
               
             - agent: dev
               action: performance_optimization
               creates: performance-report.md
-              notes: "OtimizaÃ§Ã£o de performance e ajustes pÃ³s-implementaÃ§Ã£o"
+              notes: "Otimização de performance e ajustes pós-implementação"
 
         # Operations Execution & Transformation
         - activity: operations-transformation
-          description: "ExecuÃ§Ã£o operacional e transformaÃ§Ã£o contÃ­nua"
+          description: "Execução operacional e transformação contínua"
           agents:
             - agent: pm
               creates: operations-model.md
-              notes: "Modelo operacional para execuÃ§Ã£o e gestÃ£o contÃ­nua da soluÃ§Ã£o"
+              notes: "Modelo operacional para execução e gestão contínua da solução"
               
             - agent: sm
               creates: continuous-improvement.md
-              notes: "Processos de melhoria contÃ­nua e evoluÃ§Ã£o da soluÃ§Ã£o"
+              notes: "Processos de melhoria contínua e evolução da solução"
 
         # Service Management
         - activity: service-management
-          description: "GestÃ£o de serviÃ§os e atendimento"
+          description: "Gestão de serviços e atendimento"
           agents:
             - agent: pm
               creates: service-management-framework.md
-              notes: "Framework de gestÃ£o de serviÃ§os incluindo SLAs, KPIs e governanÃ§a"
+              notes: "Framework de gestão de serviços incluindo SLAs, KPIs e governança"
               
             - agent: po
               creates: service-catalog.md
-              notes: "CatÃ¡logo de serviÃ§os disponÃ­veis e procedimentos de atendimento"
+              notes: "Catálogo de serviços disponíveis e procedimentos de atendimento"
               
         - knowledge_transfer:
           action: complete_documentation_handover
           creates: complete-support-documentation.md
-          notes: "DocumentaÃ§Ã£o completa para operaÃ§Ã£o, suporte e evoluÃ§Ã£o da soluÃ§Ã£o"
+          notes: "Documentação completa para operação, suporte e evolução da solução"
           
         - support_model:
           action: establish_managed_services
           creates: managed-services-model.md
-          notes: "Modelo de serviÃ§os gerenciados com SLAs, escalation e responsabilidades operacionais"
+          notes: "Modelo de serviços gerenciados com SLAs, escalation e responsabilidades operacionais"
 
   handoff_prompts:
     discover_to_design: "Discover & Envision completo aprovado em QG1. North Star definido, Program Charter aprovado. Save docs/discovery.md e prossiga para Design & Implement."
-    design_to_run: "Design & Implement completo aprovado em QG2. SoluÃ§Ã£o implementada e pronta para go-live. Prossiga para Run & Evolve."
+    design_to_run: "Design & Implement completo aprovado em QG2. Solução implementada e pronta para go-live. Prossiga para Run & Evolve."
 
   decision_guidance:
     when_to_use:
-      - Projetos de transformaÃ§Ã£o digital empresarial
-      - ImplementaÃ§Ãµes de soluÃ§Ãµes Microsoft (Azure, M365, Dynamics)
-      - Programas complexos com mÃºltiplas fases e stakeholders
-      - IntegraÃ§Ãµes com sistemas legados e modernizaÃ§Ã£o
-      - Projetos que requerem serviÃ§os gerenciados pÃ³s-implementaÃ§Ã£o
+      - Projetos de transformação digital empresarial
+      - Implementações de soluções Microsoft (Azure, M365, Dynamics)
+      - Programas complexos com múltiplas fases e stakeholders
+      - Integrações com sistemas legados e modernização
+      - Projetos que requerem serviços gerenciados pós-implementação
       - Ambientes regulamentados com compliance rigoroso
-      - SoluÃ§Ãµes que necessitam de suporte e evoluÃ§Ã£o contÃ­nua
+      - Soluções que necessitam de suporte e evolução contínua
 
   success_criteria:
-    - AderÃªncia Ã  metodologia oficial Avanade de 3 fases
-    - North Star e visÃ£o estratÃ©gica claramente definidos
-    - SoluÃ§Ã£o implementada com tecnologias Microsoft preferenciais
-    - Go-live executado com sucesso e sem interrupÃ§Ãµes
-    - Modelo de serviÃ§os gerenciados operacional
-    - Processos de melhoria contÃ­nua estabelecidos
-    - SatisfaÃ§Ã£o do cliente e alcance dos objetivos de negÃ³cio
+    - Aderência à metodologia oficial Avanade de 3 fases
+    - North Star e visão estratégica claramente definidos
+    - Solução implementada com tecnologias Microsoft preferenciais
+    - Go-live executado com sucesso e sem interrupções
+    - Modelo de serviços gerenciados operacional
+    - Processos de melhoria contínua estabelecidos
+    - Satisfação do cliente e alcance dos objetivos de negócio
     - ROI demonstrado conforme business case inicial

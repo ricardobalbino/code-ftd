@@ -132,4 +132,4 @@ Este projeto é **brownfield** — modificamos um ambiente D365 CE já em produ�
 
 ---
 
-*Referências: [README.md](../README.md) | [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md)*
+*Referências: [README.md](../README.md) | [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md)*

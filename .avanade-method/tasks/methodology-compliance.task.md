@@ -1,24 +1,24 @@
-ï»¿## Objetivo
-Validar aderÃªncia do projeto Ã  Avanade Method e best practices de delivery.
+## Objetivo
+Validar aderência do projeto à Avanade Method e best practices de delivery.
 
 ---
 
-## ğŸ“‹ Avanade Method Pillars
+## ?? Avanade Method Pillars
 
 ### 1. Discovery First (Entender Antes de Construir)
-**CritÃ©rio**: Problema e contexto profundamente entendidos antes de soluÃ§Ãµes
+**Critério**: Problema e contexto profundamente entendidos antes de soluções
 
 **Checklist**:
 - [ ] **Problem Statement**: Problema claramente definido
 - [ ] **Stakeholders**: Mapeados (poder vs interesse)
 - [ ] **User Research**: Entrevistas, surveys, ou dados qualitativos
 - [ ] **Current State**: As-Is documentado (processos, sistemas)
-- [ ] **Success Criteria**: MÃ©tricas de sucesso definidas
+- [ ] **Success Criteria**: Métricas de sucesso definidas
 
 **Red Flags**:
-- âŒ "Vamos construir X porque sim"
-- âŒ Pulando direto para soluÃ§Ã£o tÃ©cnica
-- âŒ Stakeholders descobertos durante implementaÃ§Ã£o
+- ? "Vamos construir X porque sim"
+- ? Pulando direto para solução técnica
+- ? Stakeholders descobertos durante implementação
 
 **Artifacts**:
 - Discovery Document (${AVANADE_DISCOVERY_TEMPLATE_YAML})
@@ -28,75 +28,75 @@ Validar aderÃªncia do projeto Ã  Avanade Method e best practices de delivery.
 
 ---
 
-### 2. Artifacts-Driven (DocumentaÃ§Ã£o Viva)
-**CritÃ©rio**: Artefatos estruturados, completos, e mantidos atualizados
+### 2. Artifacts-Driven (Documentação Viva)
+**Critério**: Artefatos estruturados, completos, e mantidos atualizados
 
 **Checklist**:
 - [ ] **PRD**: Product Requirements Document atualizado
-- [ ] **Architecture**: DocumentaÃ§Ã£o tÃ©cnica (ADRs, diagramas C4)
+- [ ] **Architecture**: Documentação técnica (ADRs, diagramas C4)
 - [ ] **Stories**: Backlog com User Stories INVEST-compliant
 - [ ] **Tests**: Test plans e casos de teste documentados
 - [ ] **Design**: Wireframes, UI specs, Figma/Sketch files
 - [ ] **API Specs**: OpenAPI/Swagger para APIs
 - [ ] **Deployment**: Runbooks, infra-as-code (Terraform/Bicep)
 
-**PadrÃ£o de Qualidade**:
+**Padrão de Qualidade**:
 Todos artefatos devem passar:
 - ${AVANADE_TASK_EDITORIAL_REVIEW_PROSE} (clareza)
 - ${AVANADE_TASK_EDITORIAL_REVIEW_STRUCTURE} (completude)
 
 **Red Flags**:
-- âŒ "CÃ³digo Ã© a documentaÃ§Ã£o"
-- âŒ Artefatos desatualizados (>1 sprint)
-- âŒ DecisÃµes arquiteturais nÃ£o documentadas (sem ADRs)
+- ? "Código é a documentação"
+- ? Artefatos desatualizados (>1 sprint)
+- ? Decisões arquiteturais não documentadas (sem ADRs)
 
 ---
 
-### 3. Quality Gates (ValidaÃ§Ã£o em Cada Fase)
-**CritÃ©rio**: ValidaÃ§Ã£o rigorosa antes de avanÃ§ar para prÃ³xima fase
+### 3. Quality Gates (Validação em Cada Fase)
+**Critério**: Validação rigorosa antes de avançar para próxima fase
 
 **Quality Gates por Fase**:
 
-#### ğŸ” Discovery â†’ Planning
+#### ?? Discovery ? Planning
 - [ ] **Discovery completo**: Todos stakeholders entrevistados
 - [ ] **Problem validation**: Dados suportam necessidade
-- [ ] **Success metrics**: KPIs definidos e mensurÃ¡veis
+- [ ] **Success metrics**: KPIs definidos e mensuráveis
 - [ ] **Scope agreed**: PO e stakeholders alinhados
 
-#### ğŸ“ Planning â†’ Design
+#### ?? Planning ? Design
 - [ ] **PRD aprovado**: PO validou requisitos
 - [ ] **Stories escritas**: Backlog priorizado (RICE/INVEST)
-- [ ] **Dependencies mapeadas**: IntegraÃ§Ãµes/APIs identificadas
-- [ ] **Risks identified**: Riscos tÃ©cnicos e de negÃ³cio documentados
+- [ ] **Dependencies mapeadas**: Integrações/APIs identificadas
+- [ ] **Risks identified**: Riscos técnicos e de negócio documentados
 
-#### ğŸ—ï¸ Design â†’ Development
+#### ??? Design ? Development
 - [ ] **Architecture reviewed**: ${AVANADE_TASK_ARCHITECTURE_QUALITY}
-- [ ] **ADRs criados**: DecisÃµes crÃ­ticas documentadas
-- [ ] **Wireframes aprovados**: UX validada com usuÃ¡rios/stakeholders
+- [ ] **ADRs criados**: Decisões críticas documentadas
+- [ ] **Wireframes aprovados**: UX validada com usuários/stakeholders
 - [ ] **DoD definido**: Definition of Done acordado
 
-#### ğŸ’» Development â†’ QA
+#### ?? Development ? QA
 - [ ] **Code review**: Aprovado por peer (${AVANADE_TASK_CODE_REVIEW})
-- [ ] **Unit tests**: Coverage â‰¥ 80% (${AVANADE_TASK_TEST_COVERAGE})
+- [ ] **Unit tests**: Coverage = 80% (${AVANADE_TASK_TEST_COVERAGE})
 - [ ] **Documentation**: README, comments, API docs atualizados
 - [ ] **CI/CD**: Pipeline verde (build + tests passando)
 
-#### âœ… QA â†’ Production
-- [ ] **Test plan executed**: Todos cenÃ¡rios testados
-- [ ] **UAT approved**: PO/usuÃ¡rios validaram funcionalidade
+#### ? QA ? Production
+- [ ] **Test plan executed**: Todos cenários testados
+- [ ] **UAT approved**: PO/usuários validaram funcionalidade
 - [ ] **Performance tested**: Load tests executados
 - [ ] **Security reviewed**: Scan de vulnerabilidades (Snyk, SonarQube)
 - [ ] **Deployment plan**: Runbook pronto, rollback strategy definida
 
 **Red Flags**:
-- âŒ Pular fases ("vamos codificar direto")
-- âŒ Aprovar fase com issues conhecidos
-- âŒ QA comeÃ§ando apenas no final
+- ? Pular fases ("vamos codificar direto")
+- ? Aprovar fase com issues conhecidos
+- ? QA começando apenas no final
 
 ---
 
-### 4. Self-Evolution (Melhoria ContÃ­nua)
-**CritÃ©rio**: Time reflete e melhora processos regularmente
+### 4. Self-Evolution (Melhoria Contínua)
+**Critério**: Time reflete e melhora processos regularmente
 
 **Checklist**:
 - [ ] **Retrospectives**: Executadas a cada sprint
@@ -111,71 +111,71 @@ Todos artefatos devem passar:
 - Metrics Dashboard (Velocity, Defect Density, Lead Time)
 
 **Red Flags**:
-- âŒ Mesmos problemas recorrentes (3+ sprints)
-- âŒ Retrospectives canceladas ou superficiais
-- âŒ AÃ§Ãµes nunca implementadas
+- ? Mesmos problemas recorrentes (3+ sprints)
+- ? Retrospectives canceladas ou superficiais
+- ? Ações nunca implementadas
 
 ---
 
-### 5. Multi-Agent Coordination (ColaboraÃ§Ã£o Estruturada)
-**CritÃ©rio**: Agentes/personas trabalham em sinergia, nÃ£o silos
+### 5. Multi-Agent Coordination (Colaboração Estruturada)
+**Critério**: Agentes/personas trabalham em sinergia, não silos
 
 **Checklist**:
-- [ ] **Handoffs claros**: Discovery â†’ PM â†’ Architect â†’ Dev â†’ QA â†’ PO
+- [ ] **Handoffs claros**: Discovery ? PM ? Architect ? Dev ? QA ? PO
 - [ ] **Shared context**: Todos agentes acessam mesmos artefatos
 - [ ] **Cross-functional reviews**: Architect revisa stories, QA participa de design
-- [ ] **Party Mode**: DiscussÃµes colaborativas quando apropriado (${AVANADE_PARTY_MODE_GUIDE})
-- [ ] **Memory sharing**: Aprendizados de 1 agente disponÃ­veis para outros
+- [ ] **Party Mode**: Discussões colaborativas quando apropriado (${AVANADE_PARTY_MODE_GUIDE})
+- [ ] **Memory sharing**: Aprendizados de 1 agente disponíveis para outros
 
-**Exemplos de ColaboraÃ§Ã£o**:
+**Exemplos de Colaboração**:
 ```
-âœ… Bom: Wilson (Architect) + Tiago (Dev) + Carla (QA) discutem design juntos
-âŒ Ruim: Architect desenha sozinho â†’ joga para Dev â†’ problemas surgem depois
+? Bom: Wilson (Architect) + Tiago (Dev) + Carla (QA) discutem design juntos
+? Ruim: Architect desenha sozinho ? joga para Dev ? problemas surgem depois
 ```
 
 **Party Mode Scenarios**:
-- DecisÃµes arquiteturais crÃ­ticas â†’ Architecture Party
-- Sprint retrospectives â†’ Full Party
-- Design reviews â†’ UX + Dev + Architect
+- Decisões arquiteturais críticas ? Architecture Party
+- Sprint retrospectives ? Full Party
+- Design reviews ? UX + Dev + Architect
 
 ---
 
-## ğŸ§  Memory System (Knowledge Management)
-**CritÃ©rio**: Conhecimento Ã© capturado, armazenado, e reutilizado
+## ?? Memory System (Knowledge Management)
+**Critério**: Conhecimento é capturado, armazenado, e reutilizado
 
 **Checklist**:
-- [ ] **Agent-specific memories**: Cada agente mantÃ©m memÃ³ria (decisions, patterns, learnings)
-- [ ] **Consulta prÃ©-execuÃ§Ã£o**: Agentes consultam memÃ³ria ANTES de executar
-- [ ] **AtualizaÃ§Ã£o pÃ³s-execuÃ§Ã£o**: MemÃ³ria atualizada APÃ“S cada interaÃ§Ã£o
-- [ ] **Cross-agent access**: Supervisor acessa memÃ³ria de todos agentes
+- [ ] **Agent-specific memories**: Cada agente mantém memória (decisions, patterns, learnings)
+- [ ] **Consulta pré-execução**: Agentes consultam memória ANTES de executar
+- [ ] **Atualização pós-execução**: Memória atualizada APÓS cada interação
+- [ ] **Cross-agent access**: Supervisor acessa memória de todos agentes
 
-**Estrutura de MemÃ³ria**:
+**Estrutura de Memória**:
 ```
 _memory/
-â”œâ”€â”€ analyst-sidecar/        â†’ ${AVANADE_MEMORY_ANALYST_MARIA}
-â”œâ”€â”€ architect-sidecar/      â†’ ${AVANADE_MEMORY_ARCHITECT_WILSON}
-â”œâ”€â”€ po-sidecar/             â†’ ${AVANADE_MEMORY_PO_PAULA}
-â”œâ”€â”€ sm-sidecar/             â†’ ${AVANADE_MEMORY_SM_ROBERTO}
-â”œâ”€â”€ qa-sidecar/             â†’ ${AVANADE_MEMORY_QA_CARLA}
-â”œâ”€â”€ dev-sidecar/            â†’ ${AVANADE_MEMORY_DEV_TIAGO}
-â”œâ”€â”€ ux-sidecar/             â†’ ${AVANADE_MEMORY_UX_SOFIA}
-â””â”€â”€ supervisor-sidecar/     â†’ ${AVANADE_MEMORY_SUPERVISOR}
++-- analyst-sidecar/        ? ${AVANADE_MEMORY_ANALYST_MARIA}
++-- architect-sidecar/      ? ${AVANADE_MEMORY_ARCHITECT_WILSON}
++-- po-sidecar/             ? ${AVANADE_MEMORY_PO_PAULA}
++-- sm-sidecar/             ? ${AVANADE_MEMORY_SM_ROBERTO}
++-- qa-sidecar/             ? ${AVANADE_MEMORY_QA_CARLA}
++-- dev-sidecar/            ? ${AVANADE_MEMORY_DEV_TIAGO}
++-- ux-sidecar/             ? ${AVANADE_MEMORY_UX_SOFIA}
++-- supervisor-sidecar/     ? ${AVANADE_MEMORY_SUPERVISOR}
 ```
 
-**ConteÃºdo TÃ­pico**:
+**Conteúdo Típico**:
 - Decisions & rationale (por que escolhemos X?)
 - Patterns validados (code patterns, design patterns)
 - Common mistakes (bugs recorrentes, anti-patterns)
 - User preferences (templates customizados)
 
 **Red Flags**:
-- âŒ Mesma pergunta feita mÃºltiplas vezes (memÃ³ria nÃ£o consultada)
-- âŒ DecisÃµes nÃ£o documentadas (lost knowledge)
-- âŒ Zero reuso de padrÃµes validados
+- ? Mesma pergunta feita múltiplas vezes (memória não consultada)
+- ? Decisões não documentadas (lost knowledge)
+- ? Zero reuso de padrões validados
 
 ---
 
-## ğŸ“Š Compliance Scoring
+## ?? Compliance Scoring
 
 **Pontos por pilar** (0-20):
 - Discovery First: /20
@@ -186,70 +186,70 @@ _memory/
 
 **Total: /100**
 
-**InterpretaÃ§Ã£o**:
-- **85-100**: âœ… **EXCELENTE** - Avanade Method totalmente implementado
-- **70-84**: ğŸŸ¢ **BOM** - AderÃªncia forte, gaps menores
-- **50-69**: ğŸŸ¡ **ADEQUADO** - Avanade Method parcialmente seguido
-- **30-49**: ğŸŸ  **FRACO** - Desvios significativos da metodologia
-- **0-29**: ğŸ”´ **INADEQUADO** - Metodologia nÃ£o estÃ¡ sendo seguida
+**Interpretação**:
+- **85-100**: ? **EXCELENTE** - Avanade Method totalmente implementado
+- **70-84**: ?? **BOM** - Aderência forte, gaps menores
+- **50-69**: ?? **ADEQUADO** - Avanade Method parcialmente seguido
+- **30-49**: ?? **FRACO** - Desvios significativos da metodologia
+- **0-29**: ?? **INADEQUADO** - Metodologia não está sendo seguida
 
 ---
 
-## ğŸ¯ AÃ§Ãµes Corretivas por Faixa
+## ?? Ações Corretivas por Faixa
 
 ### 85-100 (Excelente)
-**AÃ§Ãµes**:
-- Continuar prÃ¡ticas atuais
+**Ações**:
+- Continuar práticas atuais
 - Compartilhar learnings com outros projetos
-- Considerar tornar-se projeto referÃªncia
+- Considerar tornar-se projeto referência
 
 ### 70-84 (Bom)
-**AÃ§Ãµes**:
-- Identificar gaps especÃ­ficos (scoring detalhado)
-- Priorizar 2-3 melhorias para prÃ³ximo sprint
-- Revisar retrospectives (estÃ£o gerando aÃ§Ãµes?)
+**Ações**:
+- Identificar gaps específicos (scoring detalhado)
+- Priorizar 2-3 melhorias para próximo sprint
+- Revisar retrospectives (estão gerando ações?)
 
 ### 50-69 (Adequado)
-**AÃ§Ãµes**:
+**Ações**:
 - Revisar processos com Supervisor
-- Training sessions em Ã¡reas fracas
-- Aumentar frequÃªncia de quality gates
+- Training sessions em áreas fracas
+- Aumentar frequência de quality gates
 
 ### 30-49 (Fraco)
-**AÃ§Ãµes**:
-- **IntervenÃ§Ã£o necessÃ¡ria**: RevisÃ£o completa de processo
+**Ações**:
+- **Intervenção necessária**: Revisão completa de processo
 - Workshop de Avanade Method com todo time
 - Supervisor ativamente facilitando handoffs
 
 ### 0-29 (Inadequado)
-**AÃ§Ãµes**:
-- **Red Alert**: EscalaÃ§Ã£o para lideranÃ§a
-- Parar e reavaliar se metodologia estÃ¡ sendo seguida
-- Reset do projeto com fundamentaÃ§Ã£o adequada
+**Ações**:
+- **Red Alert**: Escalação para liderança
+- Parar e reavaliar se metodologia está sendo seguida
+- Reset do projeto com fundamentação adequada
 
 ---
 
-## ğŸ“‹ Checklist RÃ¡pida (Sprint Review)
+## ?? Checklist Rápida (Sprint Review)
 
 Ao final de cada sprint, validar:
 - [ ] **Discovery**: Requisitos claros? Problema validado?
 - [ ] **Artifacts**: Atualizados e completos?
 - [ ] **Quality Gates**: Todos passaram?
-- [ ] **Retrospective**: Executada com aÃ§Ãµes rastreadas?
+- [ ] **Retrospective**: Executada com ações rastreadas?
 - [ ] **Collaboration**: Agentes trabalharam juntos?
 - [ ] **Memory**: Aprendizados documentados?
 
-**Se qualquer item falhar**: Adicionar aÃ§Ã£o corretiva na retrospective.
+**Se qualquer item falhar**: Adicionar ação corretiva na retrospective.
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Metodologia Avanade
+## ?? Integração com Metodologia Avanade
 
-- **FrequÃªncia**: Avaliar a cada sprint review (quinzenal)
+- **Frequência**: Avaliar a cada sprint review (quinzenal)
 - **Owner**: Supervisor ou Scrum Master
 - **Output**: Compliance Report + Action Plan
 - **Artifacts Relacionados**:
   - ${AVANADE_TASK_EDITORIAL_REVIEW_STRUCTURE}
   - ${AVANADE_TASK_ADVERSARIAL_REVIEW}
   - ${AVANADE_PARTY_MODE_GUIDE}
-  - Todas as ${AVANADE_MEMORY_*} (memÃ³rias de agentes)
+  - Todas as ${AVANADE_MEMORY_*} (memórias de agentes)

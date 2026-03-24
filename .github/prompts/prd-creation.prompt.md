@@ -2,7 +2,7 @@
 ---
 
 > **⚠️ FTD EDUCAÇÃO - CONTEXTO OBRIGATÓRIO**
-> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `.avanade-method/docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
+> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
 
 ## 📋 O que é este Artefato?
 

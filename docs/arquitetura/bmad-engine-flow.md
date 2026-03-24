@@ -106,9 +106,9 @@ graph TD
     end
 
     subgraph DOCS["📚 CAMADA 5 — Conhecimento FTD (devLoadAlwaysFiles)"]
-        KB[".avanade-method/docs/ftd-knowledge-base.md\n379 linhas: glossário, stakeholders, dores, KPIs"]
-        DIS[".avanade-method/docs/discovery/ftd-discovery.md\n347 linhas: 20 pain points, fit-gap, roadmap"]
-        SIM[".avanade-method/docs/especificacao-simulador-notion.md\nSimulador Comercial: 6 etapas, regras de cálculo"]
+        KB["docs/ftd-knowledge-base.md\n379 linhas: glossário, stakeholders, dores, KPIs"]
+        DIS["docs/discovery/ftd-discovery.md\n347 linhas: 20 pain points, fit-gap, roadmap"]
+        SIM["docs/especificacao-simulador-notion.md\nSimulador Comercial: 6 etapas, regras de cálculo"]
         D365[".avanade-method/configs/d365-config.yaml\n357 linhas: entidades, soluções, decision framework"]
     end
 

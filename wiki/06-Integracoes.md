@@ -166,4 +166,4 @@ Infraestrutura de mensageria para desacoplamento entre D365, TOTVS e Azure Funct
 
 ---
 
-*Referências: [docs/arquitetura/d365-integration-landscape.md](../docs/arquitetura/d365-integration-landscape.md) | [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md)*
+*Referências: [docs/arquitetura/d365-integration-landscape.md](../docs/arquitetura/d365-integration-landscape.md) | [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md)*

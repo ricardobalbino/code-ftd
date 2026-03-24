@@ -111,4 +111,4 @@ desenvolve     desenvolvimento     avançadas
 
 ---
 
-*Referências: [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md) | [especificacao-simulador-notion.md](../.avanade-method/docs/especificacao-simulador-notion.md)*
+*Referências: [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md) | [especificacao-simulador-notion.md](../docs/especificacao-simulador-notion.md)*

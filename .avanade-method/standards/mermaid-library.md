@@ -1,20 +1,20 @@
-﻿---
+---
 
-## 📋 O que é este Artefato?
+## ?? O que � este Artefato?
 
-Esta é a **biblioteca de patterns Mermaid** para criar diagramas text-based em documentação. Mermaid permite diagramas versionáveis, editáveis e acessíveis.
+Esta � a **biblioteca de patterns Mermaid** para criar diagramas text-based em documenta��o. Mermaid permite diagramas version�veis, edit�veis e acess�veis.
 
 **Por que Mermaid?**
-- ✅ **Text-based**: Versionável em Git (não binário)
-- ✅ **Fácil edição**: Mude código, não imagem
-- ✅ **Renderização universal**: GitHub, GitLab, Docusaurus, VS Code
-- ✅ **Acessível**: Can be narrated by screen readers
+- ? **Text-based**: Version�vel em Git (n�o bin�rio)
+- ? **F�cil edi��o**: Mude c�digo, n�o imagem
+- ? **Renderiza��o universal**: GitHub, GitLab, Docusaurus, VS Code
+- ? **Acess�vel**: Can be narrated by screen readers
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE Mermaid para:
+### ? USE Mermaid para:
 - Architecture diagrams (system, component)
 - Sequence diagrams (API flows, authentication)
 - Flowcharts (decision trees, processes)
@@ -22,14 +22,14 @@ Esta é a **biblioteca de patterns Mermaid** para criar diagramas text-based em 
 - State diagrams (workflows, state machines)
 - Gantt charts (project timelines)
 
-### ❌ NÃO USE Mermaid para:
+### ? N�O USE Mermaid para:
 - Wireframes/mockups (use Figma, Excalidraw)
 - Detailed UI designs (use design tools)
 - Complex diagrams com >20 nodes (too messy)
 
 ---
 
-## 🎨 DIAGRAM TYPE 1: FLOWCHARTS
+## ?? DIAGRAM TYPE 1: FLOWCHARTS
 
 ### Basic Flowchart (Top to Bottom)
 
@@ -180,7 +180,7 @@ flowchart TB
 
 ---
 
-## 🔄 DIAGRAM TYPE 2: SEQUENCE DIAGRAMS
+## ?? DIAGRAM TYPE 2: SEQUENCE DIAGRAMS
 
 ### Basic Sequence (API Request Flow)
 
@@ -296,7 +296,7 @@ Note over Actor1,Actor2: Text
 
 ---
 
-## 📊 DIAGRAM TYPE 3: CLASS/ER DIAGRAMS
+## ?? DIAGRAM TYPE 3: CLASS/ER DIAGRAMS
 
 ### Entity Relationship Diagram (Database Schema)
 
@@ -390,7 +390,7 @@ classDiagram
 
 ---
 
-## 🎯 DIAGRAM TYPE 4: STATE DIAGRAMS
+## ?? DIAGRAM TYPE 4: STATE DIAGRAMS
 
 ### Order Status State Machine
 
@@ -442,7 +442,7 @@ stateDiagram-v2
 
 ---
 
-## 📅 DIAGRAM TYPE 5: GANTT CHARTS
+## ?? DIAGRAM TYPE 5: GANTT CHARTS
 
 ### Project Timeline
 
@@ -469,7 +469,7 @@ gantt
 
 ---
 
-## 🏗️ DIAGRAM TYPE 6: ARCHITECTURE DIAGRAMS
+## ??? DIAGRAM TYPE 6: ARCHITECTURE DIAGRAMS
 
 ### Microservices Architecture
 
@@ -545,7 +545,7 @@ flowchart TB
 
 ---
 
-## 🎨 STYLING & CUSTOMIZATION
+## ?? STYLING & CUSTOMIZATION
 
 ### Basic Styling
 
@@ -583,18 +583,18 @@ flowchart LR
 
 ---
 
-## 🔧 BEST PRACTICES
+## ?? BEST PRACTICES
 
 ### 1. Keep Diagrams Simple
 ```
-✅ GOOD: 5-15 nodes, clear flow
-❌ BAD: 30+ nodes, spaghetti connections
+? GOOD: 5-15 nodes, clear flow
+? BAD: 30+ nodes, spaghetti connections
 ```
 
 ### 2. Use Descriptive Labels
 ```
-✅ GOOD: "User Authentication Service"
-❌ BAD: "Service 1"
+? GOOD: "User Authentication Service"
+? BAD: "Service 1"
 ```
 
 ### 3. Direction Matters
@@ -617,7 +617,7 @@ A["User Service<br/>(Authentication)"]
 
 ---
 
-## 📚 TEMPLATE LIBRARY
+## ?? TEMPLATE LIBRARY
 
 ### Template 1: API Documentation Flow
 
@@ -694,22 +694,22 @@ flowchart TD
 
 ---
 
-## ✅ DIAGRAM CHECKLIST
+## ? DIAGRAM CHECKLIST
 
 ### Before Publishing
 
-- [ ] **Clarity**: Diagram é self-explanatory?
-- [ ] **Labels**: Todos nodes têm labels descritivos?
-- [ ] **Flow**: Direção do fluxo é clara (arrows)?
+- [ ] **Clarity**: Diagram � self-explanatory?
+- [ ] **Labels**: Todos nodes t�m labels descritivos?
+- [ ] **Flow**: Dire��o do fluxo � clara (arrows)?
 - [ ] **Complexity**: <20 nodes (split se muito complexo)?
 - [ ] **Legend**: Precisa de legend? (add como note)
 - [ ] **Rendering**: Testa em target platform (GitHub, GitLab)?
-- [ ] **Alt text**: Markdown tem descrição do diagram?
+- [ ] **Alt text**: Markdown tem descri��o do diagram?
 
 ### Accessibility
 
 ```markdown
-✅ GOOD:
+? GOOD:
 **Figure 1: User Authentication Flow**
 ```mermaid
 sequenceDiagram
@@ -717,7 +717,7 @@ sequenceDiagram
 ```
 *This diagram shows the authentication process...*
 
-❌ BAD:
+? BAD:
 ```mermaid
 sequenceDiagram
     ...
@@ -727,7 +727,7 @@ sequenceDiagram
 
 ---
 
-## 🔗 Integração com Outros Artefatos
+## ?? Integra��o com Outros Artefatos
 
 - **${AVANADE_DOC_STANDARDS_MD}**: Mermaid patterns seguem doc standards
 - **${AVANADE_COMMONMARK_TEMPLATE_MD}**: Mermaid em fenced code blocks
@@ -736,7 +736,7 @@ sequenceDiagram
 
 ---
 
-## 📖 REFERENCES
+## ?? REFERENCES
 
 - **Mermaid Docs**: <https://mermaid.js.org/>
 - **Mermaid Live Editor**: <https://mermaid.live/>

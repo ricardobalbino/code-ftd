@@ -69,7 +69,7 @@ ftd_domain:
   integrations: ["TOTVS/Datasul (ERP)", "ISA (produtos)", "Adobe Sign (contratos)", "Data Lake"]
   focus: "Simulador Comercial - interface de negociação consultiva em Power Pages"
   mandatory_reading:
-    - ".avanade-method/docs/ftd-knowledge-base.md"
-    - ".avanade-method/docs/discovery/ftd-discovery.md"
-    - ".avanade-method/docs/especificacao-simulador-notion.md"
+    - "docs/ftd-knowledge-base.md"
+    - "docs/discovery/ftd-discovery.md"
+    - "docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"

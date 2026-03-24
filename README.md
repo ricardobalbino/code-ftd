@@ -127,17 +127,10 @@ graph TD
 
 ```
 code-ftd/
-├── .avanade-method/            # Configurações e docs do Avanade Method
+├── .avanade-method/            # Configurações do Avanade Method
 │   ├── config.yaml             # Configuração principal do projeto
 │   ├── configs/
 │   │   └── d365-config.yaml    # Configuração D365 com dados reais
-│   ├── docs/
-│   │   ├── ftd-knowledge-base.md          # Knowledge base completo
-│   │   ├── ftd-resumo-completo.md         # Resumo executivo
-│   │   ├── especificacao-simulador-notion.md  # Spec Simulador (501 linhas)
-│   │   ├── diretriz-avanade-inventory.md  # Inventário BCA (197 docs)
-│   │   └── discovery/
-│   │       └── ftd-discovery.md           # Discovery com fit-gap
 │   ├── standards/
 │   │   └── d365-development-standards.md # Padrões de dev D365
 │   └── prompts/                # Personas MCP (agentes IA)
@@ -522,9 +515,9 @@ Conta
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `.avanade-method/docs/ftd-knowledge-base.md` | Knowledge base completo da FTD (processos, integrações, glossário) |
-| `.avanade-method/docs/discovery/ftd-discovery.md` | Discovery com fit-gap analysis |
-| `.avanade-method/docs/especificacao-simulador-notion.md` | Especificação completa do Simulador Comercial |
+| `docs/ftd-knowledge-base.md` | Knowledge base completo da FTD (processos, integrações, glossário) |
+| `docs/discovery/ftd-discovery.md` | Discovery com fit-gap analysis |
+| `docs/especificacao-simulador-notion.md` | Especificação completa do Simulador Comercial |
 | `.avanade-method/configs/d365-config.yaml` | Configuração D365 com dados reais (pain points, ambientes) |
 | `.github/instructions/avanade-bca-guidelines.instructions.md` | Diretrizes BCA de desenvolvimento Avanade (padrões obrigatórios) |
 | `docs/arquitetura/d365-solution-architecture.md` | Arquitetura de solutions |

@@ -162,4 +162,4 @@ Deploy obrigatoriamente em **ordem sequencial** (dependências):
 
 ---
 
-*Referências: [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md) | [docs/arquitetura/d365-solution-architecture.md](../docs/arquitetura/d365-solution-architecture.md)*
+*Referências: [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md) | [docs/arquitetura/d365-solution-architecture.md](../docs/arquitetura/d365-solution-architecture.md)*

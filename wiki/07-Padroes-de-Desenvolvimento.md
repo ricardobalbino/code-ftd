@@ -3,7 +3,7 @@
 > [← Voltar ao Início](./Home.md)
 
 **Referência**: `.github/instructions/avanade-bca-guidelines.instructions.md`  
-**Inventário completo BCA**: `.avanade-method/docs/diretriz-avanade-inventory.md` (197 docs)
+**Inventário completo BCA**: `docs/diretriz-avanade-inventory.md` (197 docs)
 
 ---
 

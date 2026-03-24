@@ -1,12 +1,12 @@
-Ôªø---
+---
 
-## üìã Objetivo
+## ?? Objetivo
 
-Template padronizado para documenta√ß√£o de arquitetura de software. Baseado no modelo C4 e arc42, adaptado para projetos Avanade.
+Template padronizado para documentaÁ„o de arquitetura de software. Baseado no modelo C4 e arc42, adaptado para projetos Avanade.
 
 ---
 
-## üìù Architecture Document Template
+## ?? Architecture Document Template
 
 ```yaml
 # Architecture Document
@@ -32,22 +32,22 @@ reviewers:
 ## 1. Executive Summary
 
 ### 1.1 Purpose
-# Prop√≥sito deste documento e do sistema sendo arquitetado
+# PropÛsito deste documento e do sistema sendo arquitetado
 purpose: |
-  [Descrever o prop√≥sito em 2-3 par√°grafos]
+  [Descrever o propÛsito em 2-3 par·grafos]
 
 ### 1.2 Scope
 scope:
   in_scope:
-    - "[Funcionalidade/componente inclu√≠do]"
-    - "[Funcionalidade/componente inclu√≠do]"
+    - "[Funcionalidade/componente incluÌdo]"
+    - "[Funcionalidade/componente incluÌdo]"
   out_of_scope:
-    - "[Funcionalidade/componente exclu√≠do]"
-    - "[Funcionalidade/componente exclu√≠do]"
+    - "[Funcionalidade/componente excluÌdo]"
+    - "[Funcionalidade/componente excluÌdo]"
 
 ### 1.3 Key Decisions Summary
 key_decisions:
-  - decision: "[Decis√£o arquitetural importante]"
+  - decision: "[Decis„o arquitetural importante]"
     rationale: "[Justificativa breve]"
     adr_ref: "[ADR-XXX se existir]"
 
@@ -58,12 +58,12 @@ key_decisions:
 ### 2.1 Business Context
 business_context:
   problem_statement: |
-    [Problema de neg√≥cio que o sistema resolve]
+    [Problema de negÛcio que o sistema resolve]
   
   stakeholders:
     - name: "[Stakeholder Group]"
       role: "[Role]"
-      concerns: "[Suas preocupa√ß√µes/necessidades]"
+      concerns: "[Suas preocupaÁıes/necessidades]"
   
   business_goals:
     - "[Goal 1]"
@@ -72,18 +72,18 @@ business_context:
 ### 2.2 System Context (C4 Level 1)
 system_context:
   description: |
-    [Descri√ß√£o do sistema e seu ambiente]
+    [DescriÁ„o do sistema e seu ambiente]
   
   external_systems:
     - name: "[Sistema Externo 1]"
       type: "[API | Database | Service | etc]"
       interaction: "[Como interage com nosso sistema]"
-      owner: "[Quem √© dono]"
+      owner: "[Quem È dono]"
   
   users:
-    - persona: "[Tipo de usu√°rio]"
+    - persona: "[Tipo de usu·rio]"
       actions: "[O que fazem no sistema]"
-      volume: "[Estimativa de usu√°rios/requests]"
+      volume: "[Estimativa de usu·rios/requests]"
 
   # Diagrama C4 Context
   diagram: |
@@ -105,7 +105,7 @@ containers:
     [Link para diagrama ou Mermaid code]
 
 ### 3.2 Component Diagram (C4 Level 3)
-# Para containers cr√≠ticos, detalhar componentes
+# Para containers crÌticos, detalhar componentes
 components:
   container: "[Nome do container]"
   components:
@@ -121,7 +121,7 @@ data_architecture:
     - name: "[Database Name]"
       type: "[SQL | NoSQL | Cache | etc]"
       technology: "[PostgreSQL | MongoDB | Redis | etc]"
-      purpose: "[Para que √© usado]"
+      purpose: "[Para que È usado]"
       
   data_flows:
     - from: "[Origem]"
@@ -159,11 +159,11 @@ technology_stack:
 ### 4.2 Architecture Decision Records (ADRs)
 adrs:
   - id: "ADR-001"
-    title: "[T√≠tulo da decis√£o]"
+    title: "[TÌtulo da decis„o]"
     status: "[Proposed | Accepted | Deprecated]"
     link: "[Link para ADR completo]"
     
-# Refer√™ncia: ${AVANADE_ADR_TEMPLATE}
+# ReferÍncia: ${AVANADE_ADR_TEMPLATE}
 
 ---
 
@@ -198,8 +198,8 @@ reliability:
   availability_target: "[e.g., 99.9%]"
   rto: "[Recovery Time Objective]"
   rpo: "[Recovery Point Objective]"
-  backup_strategy: "[Descri√ß√£o]"
-  disaster_recovery: "[Estrat√©gia]"
+  backup_strategy: "[DescriÁ„o]"
+  disaster_recovery: "[EstratÈgia]"
 
 ### 5.4 Observability
 observability:
@@ -224,13 +224,13 @@ observability:
 environments:
   - name: "Development"
     purpose: "[Para desenvolvedores]"
-    infra: "[Descri√ß√£o breve]"
+    infra: "[DescriÁ„o breve]"
   - name: "Staging"
     purpose: "[Pre-production testing]"
-    infra: "[Descri√ß√£o breve]"
+    infra: "[DescriÁ„o breve]"
   - name: "Production"
     purpose: "[Live system]"
-    infra: "[Descri√ß√£o breve]"
+    infra: "[DescriÁ„o breve]"
 
 ### 6.2 CI/CD Pipeline
 cicd:
@@ -255,11 +255,11 @@ iac:
 
 risks:
   - id: "RISK-001"
-    description: "[Descri√ß√£o do risco]"
+    description: "[DescriÁ„o do risco]"
     probability: "[High | Medium | Low]"
     impact: "[High | Medium | Low]"
-    mitigation: "[Estrat√©gia de mitiga√ß√£o]"
-    owner: "[Respons√°vel]"
+    mitigation: "[EstratÈgia de mitigaÁ„o]"
+    owner: "[Respons·vel]"
 
 ---
 
@@ -268,18 +268,18 @@ risks:
 ### 8.1 Glossary
 glossary:
   - term: "[Termo]"
-    definition: "[Defini√ß√£o]"
+    definition: "[DefiniÁ„o]"
 
 ### 8.2 References
 references:
-  - "[Link para documenta√ß√£o relacionada]"
+  - "[Link para documentaÁ„o relacionada]"
   - "[Link para ADRs]"
   - "[Link para diagramas externos]"
 ```
 
 ---
 
-## üìä Diagrama C4 Example (Mermaid)
+## ?? Diagrama C4 Example (Mermaid)
 
 ```mermaid
 C4Context
@@ -295,7 +295,7 @@ C4Context
 
 ---
 
-## üîó Relacionamentos
+## ?? Relacionamentos
 
 - **ADR Template**: ${AVANADE_ADR_TEMPLATE}
 - **Usado por**: ${AVANADE_MEMORY_ARCHITECT_WILSON}

@@ -1,31 +1,31 @@
-ï»¿---
+---
 
-## ğŸ“‹ O que Ã© este Artefato?
+## ?? O que é este Artefato?
 
-Este guia documenta os princÃ­pios, componentes e prÃ¡ticas do **Microsoft Fluent Design System** adaptado para uso em projetos Avanade Method. Serve como referÃªncia central para designers e desenvolvedores garantirem consistÃªncia visual e experiÃªncia de usuÃ¡rio.
+Este guia documenta os princípios, componentes e práticas do **Microsoft Fluent Design System** adaptado para uso em projetos Avanade Method. Serve como referência central para designers e desenvolvedores garantirem consistência visual e experiência de usuário.
 
 ---
 
-## ğŸ¯ Quando Usar
+## ?? Quando Usar
 
 Use este guia quando:
-- âœ… Iniciar design de uma nova interface
-- âœ… Escolher componentes UI para implementaÃ§Ã£o
-- âœ… Definir paleta de cores e design tokens
-- âœ… Validar acessibilidade e responsividade
-- âœ… Criar wireframes ou protÃ³tipos de alta fidelidade
-- âœ… Fazer code review de componentes UI
+- ? Iniciar design de uma nova interface
+- ? Escolher componentes UI para implementação
+- ? Definir paleta de cores e design tokens
+- ? Validar acessibilidade e responsividade
+- ? Criar wireframes ou protótipos de alta fidelidade
+- ? Fazer code review de componentes UI
 
 ---
 
-## ğŸŒŸ PrincÃ­pios do Fluent Design
+## ?? Princípios do Fluent Design
 
-### 1. **Light** (IluminaÃ§Ã£o)
-Criar foco e hierarquia atravÃ©s de luz e sombra.
+### 1. **Light** (Iluminação)
+Criar foco e hierarquia através de luz e sombra.
 
-**ImplementaÃ§Ã£o**:
+**Implementação**:
 - **Elevation (Profundidade)**: Usar sombras para indicar hierarquia
-  - `depth_4`: Componentes no nÃ­vel da superfÃ­cie (cards)
+  - `depth_4`: Componentes no nível da superfície (cards)
   - `depth_8`: Componentes ligeiramente elevados (dropdowns, tooltips)
   - `depth_16`: Modais e overlays
   - `depth_64`: Elementos em primeiro plano (menus contextuais)
@@ -42,12 +42,12 @@ Criar foco e hierarquia atravÃ©s de luz e sombra.
 ---
 
 ### 2. **Depth** (Profundidade)
-Usar camadas e paralaxe para criar sensaÃ§Ã£o de espaÃ§o tridimensional.
+Usar camadas e paralaxe para criar sensação de espaço tridimensional.
 
-**ImplementaÃ§Ã£o**:
+**Implementação**:
 - Z-index consistente
 - Overlays semi-transparentes
-- TransiÃ§Ãµes suaves entre camadas
+- Transições suaves entre camadas
 
 **Hierarquia de Z-index**:
 - Base content: `z-index: 0`
@@ -61,22 +61,22 @@ Usar camadas e paralaxe para criar sensaÃ§Ã£o de espaÃ§o tridimensional.
 ---
 
 ### 3. **Motion** (Movimento)
-AnimaÃ§Ãµes intencionais que guiam atenÃ§Ã£o e facilitam compreensÃ£o.
+Animações intencionais que guiam atenção e facilitam compreensão.
 
-**PrincÃ­pios**:
-- **PropÃ³sito**: Toda animaÃ§Ã£o deve ter uma razÃ£o (feedback, transiÃ§Ã£o, atenÃ§Ã£o)
-- **DuraÃ§Ã£o**: RÃ¡pida mas perceptÃ­vel (150-300ms)
+**Princípios**:
+- **Propósito**: Toda animação deve ter uma razão (feedback, transição, atenção)
+- **Duração**: Rápida mas perceptível (150-300ms)
 - **Easing**: Natural (ease-in-out)
 
-**Timings PadrÃ£o**:
+**Timings Padrão**:
 ```css
 /* Fast - Micro-interactions */
 --duration-fast: 150ms;
 
-/* Normal - TransiÃ§Ãµes padrÃ£o */
+/* Normal - Transições padrão */
 --duration-normal: 300ms;
 
-/* Slow - TransiÃ§Ãµes complexas */
+/* Slow - Transições complexas */
 --duration-slow: 500ms;
 
 /* Easing */
@@ -95,10 +95,10 @@ AnimaÃ§Ãµes intencionais que guiam atenÃ§Ã£o e facilitam compreensÃ£o.
 ---
 
 ### 4. **Material** (Material)
-SuperfÃ­cies e texturas que conectam o digital ao fÃ­sico.
+Superfícies e texturas que conectam o digital ao físico.
 
-**ImplementaÃ§Ã£o**:
-- **Acrylic**: Efeito de vidro translÃºcido (backgrounds)
+**Implementação**:
+- **Acrylic**: Efeito de vidro translúcido (backgrounds)
 - **Reveal**: Destacar elementos ao passar o mouse
 - **Blur**: Fundos desfocados para modais
 
@@ -114,9 +114,9 @@ SuperfÃ­cies e texturas que conectam o digital ao fÃ­sico.
 ---
 
 ### 5. **Scale** (Escala)
-Design responsivo que se adapta a mÃºltiplos dispositivos e contextos.
+Design responsivo que se adapta a múltiplos dispositivos e contextos.
 
-**Breakpoints PadrÃ£o**:
+**Breakpoints Padrão**:
 - **Mobile**: 0 - 767px
 - **Tablet**: 768px - 1023px
 - **Desktop**: 1024px - 1365px
@@ -129,13 +129,13 @@ Design responsivo que se adapta a mÃºltiplos dispositivos e contextos.
 
 ---
 
-## ğŸ¨ Design Tokens
+## ?? Design Tokens
 
 ### Cores (Color Palette)
 
 #### Primary Colors (Azure Theme)
 ```yaml
-themePrimary: "#0078D4"           # AÃ§Ãµes primÃ¡rias, links, botÃµes
+themePrimary: "#0078D4"           # Ações primárias, links, botões
 themeLighterAlt: "#EFF6FC"
 themeLighter: "#DEECF9"
 themeLight: "#C7E0F4"
@@ -150,7 +150,7 @@ themeDarker: "#004578"
 ```yaml
 # Texto
 neutralPrimary: "#323130"        # Texto principal
-neutralSecondary: "#605E5C"      # Texto secundÃ¡rio
+neutralSecondary: "#605E5C"      # Texto secundário
 neutralTertiary: "#A19F9D"       # Texto desabilitado
 
 # Backgrounds
@@ -197,12 +197,12 @@ infoIcon: "#0078D4"
 #### Uso de Cores
 
 **Texto**:
-- **PrimÃ¡rio**: `neutralPrimary` (#323130) - TÃ­tulos, corpo de texto
-- **SecundÃ¡rio**: `neutralSecondary` (#605E5C) - SubtÃ­tulos, texto auxiliar
+- **Primário**: `neutralPrimary` (#323130) - Títulos, corpo de texto
+- **Secundário**: `neutralSecondary` (#605E5C) - Subtítulos, texto auxiliar
 - **Desabilitado**: `neutralTertiary` (#A19F9D) - Campos desabilitados
 
 **Backgrounds**:
-- **PÃ¡gina**: `white` (#FFFFFF)
+- **Página**: `white` (#FFFFFF)
 - **Card/Panel**: `white` com `depth_4` shadow
 - **Hover**: `neutralLighter` (#F3F2F1)
 - **Pressed**: `neutralLight` (#EDEBE9)
@@ -223,7 +223,7 @@ font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
              sans-serif;
 ```
 
-#### Type Ramp (Escala TipogrÃ¡fica)
+#### Type Ramp (Escala Tipográfica)
 
 | Variant | Size | Weight | Line Height | Uso |
 |---------|------|--------|-------------|-----|
@@ -238,13 +238,13 @@ font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
 
 #### Body Text
 ```css
-/* Body 1 - Texto padrÃ£o */
+/* Body 1 - Texto padrão */
 font-size: 14px;
 font-weight: 400;
 line-height: 20px;
 color: var(--neutralPrimary);
 
-/* Body 2 - Texto secundÃ¡rio */
+/* Body 2 - Texto secundário */
 font-size: 14px;
 font-weight: 400;
 line-height: 20px;
@@ -254,29 +254,29 @@ color: var(--neutralSecondary);
 #### Font Weights
 - **Regular**: 400 (body text)
 - **Semibold**: 600 (headings, labels)
-- **Bold**: 700 (raramente usado, apenas Ãªnfase)
+- **Bold**: 700 (raramente usado, apenas ênfase)
 
 ---
 
-### EspaÃ§amento (Spacing)
+### Espaçamento (Spacing)
 
-Sistema de espaÃ§amento baseado em mÃºltiplos de 4px:
+Sistema de espaçamento baseado em múltiplos de 4px:
 
 ```yaml
-spacing-xs: 4px       # EspaÃ§amento mÃ­nimo
+spacing-xs: 4px       # Espaçamento mínimo
 spacing-sm: 8px       # Pequeno (entre elementos relacionados)
-spacing-md: 16px      # MÃ©dio (padrÃ£o entre componentes)
-spacing-lg: 24px      # Grande (entre seÃ§Ãµes)
+spacing-md: 16px      # Médio (padrão entre componentes)
+spacing-lg: 24px      # Grande (entre seções)
 spacing-xl: 32px      # Extra grande (margens externas)
-spacing-xxl: 48px     # EspaÃ§amento generoso (hero sections)
+spacing-xxl: 48px     # Espaçamento generoso (hero sections)
 ```
 
-**AplicaÃ§Ã£o**:
+**Aplicação**:
 - **Gap entre elementos inline**: 8px
-- **Padding interno de botÃ£o**: 16px horizontal, 8px vertical
-- **Margin entre parÃ¡grafos**: 16px
+- **Padding interno de botão**: 16px horizontal, 8px vertical
+- **Margin entre parágrafos**: 16px
 - **Padding de cards**: 24px
-- **Margin entre seÃ§Ãµes**: 32px ou 48px
+- **Margin entre seções**: 32px ou 48px
 
 ---
 
@@ -284,30 +284,30 @@ spacing-xxl: 48px     # EspaÃ§amento generoso (hero sections)
 
 ```yaml
 radius-none: 0px
-radius-small: 2px      # BotÃµes, inputs
-radius-medium: 4px     # Cards, panels (padrÃ£o)
+radius-small: 2px      # Botões, inputs
+radius-medium: 4px     # Cards, panels (padrão)
 radius-large: 8px      # Modais, grandes containers
 radius-circular: 50%   # Avatares, badges circulares
 ```
 
 ---
 
-## ğŸ§© Componentes Fluent UI
+## ?? Componentes Fluent UI
 
-### Button (BotÃµes)
+### Button (Botões)
 
 #### Variantes
 
-**PrimaryButton** (AÃ§Ã£o principal):
+**PrimaryButton** (Ação principal):
 ```jsx
 <PrimaryButton text="Salvar" onClick={handleSave} />
 ```
 - Background: `themePrimary`
 - Texto: `white`
 - Hover: `themeDarkAlt`
-- Uso: 1 por tela (aÃ§Ã£o mais importante)
+- Uso: 1 por tela (ação mais importante)
 
-**DefaultButton** (AÃ§Ã£o secundÃ¡ria):
+**DefaultButton** (Ação secundária):
 ```jsx
 <DefaultButton text="Cancelar" onClick={handleCancel} />
 ```
@@ -316,7 +316,7 @@ radius-circular: 50%   # Avatares, badges circulares
 - Texto: `neutralPrimary`
 - Hover: `neutralLighter`
 
-**CompoundButton** (BotÃ£o com descriÃ§Ã£o):
+**CompoundButton** (Botão com descrição):
 ```jsx
 <CompoundButton 
   text="Upload Arquivo" 
@@ -325,11 +325,11 @@ radius-circular: 50%   # Avatares, badges circulares
 />
 ```
 
-**IconButton** (Apenas Ã­cone):
+**IconButton** (Apenas ícone):
 ```jsx
 <IconButton iconProps={{ iconName: 'Delete' }} title="Excluir" />
 ```
-- Usar para aÃ§Ãµes secundÃ¡rias/toolbar
+- Usar para ações secundárias/toolbar
 - Sempre fornecer `title` (tooltip)
 
 #### Estados
@@ -353,15 +353,15 @@ radius-circular: 50%   # Avatares, badges circulares
   label="Email"
   placeholder="seu.email@exemplo.com"
   required
-  errorMessage="Email invÃ¡lido"
-  description="Usaremos para recuperaÃ§Ã£o de senha"
+  errorMessage="Email inválido"
+  description="Usaremos para recuperação de senha"
 />
 ```
 
 #### Propriedades
 - **label**: Texto acima do campo
 - **placeholder**: Hint dentro do campo
-- **required**: Marca campo como obrigatÃ³rio (asterisco)
+- **required**: Marca campo como obrigatório (asterisco)
 - **errorMessage**: Exibe erro abaixo do campo
 - **description**: Texto de ajuda (abaixo do campo)
 - **multiline**: Transforma em textarea
@@ -374,18 +374,18 @@ radius-circular: 50%   # Avatares, badges circulares
 - **Disabled**: Background `neutralLighter`, opacidade reduzida
 
 #### Variantes
-- **TextField**: Input padrÃ£o
-- **MaskedTextField**: Com mÃ¡scara (CPF, telefone)
-- **SearchBox**: Input de busca com Ã­cone
+- **TextField**: Input padrão
+- **MaskedTextField**: Com máscara (CPF, telefone)
+- **SearchBox**: Input de busca com ícone
 
 ---
 
-### Dropdown (SeleÃ§Ã£o)
+### Dropdown (Seleção)
 
 ```jsx
 <Dropdown
-  label="PaÃ­s"
-  placeholder="Selecione um paÃ­s"
+  label="País"
+  placeholder="Selecione um país"
   options={[
     { key: 'br', text: 'Brasil' },
     { key: 'us', text: 'Estados Unidos' },
@@ -397,15 +397,15 @@ radius-circular: 50%   # Avatares, badges circulares
 ```
 
 #### Tipos
-- **Dropdown**: SeleÃ§Ã£o Ãºnica
-- **ComboBox**: SeleÃ§Ã£o com busca/autocomplete
-- **DropdownMultiselect**: SeleÃ§Ã£o mÃºltipla
+- **Dropdown**: Seleção única
+- **ComboBox**: Seleção com busca/autocomplete
+- **DropdownMultiselect**: Seleção múltipla
 
 ---
 
 ### Checkbox & Toggle
 
-**Checkbox** (SeleÃ§Ãµes mÃºltiplas):
+**Checkbox** (Seleções múltiplas):
 ```jsx
 <Checkbox 
   label="Aceito os termos de uso" 
@@ -414,10 +414,10 @@ radius-circular: 50%   # Avatares, badges circulares
 />
 ```
 
-**Toggle** (Estados binÃ¡rios on/off):
+**Toggle** (Estados binários on/off):
 ```jsx
 <Toggle 
-  label="NotificaÃ§Ãµes" 
+  label="Notificações" 
   checked={notificationsEnabled}
   onText="Ativado"
   offText="Desativado"
@@ -426,34 +426,34 @@ radius-circular: 50%   # Avatares, badges circulares
 ```
 
 **Quando usar**:
-- **Checkbox**: Aceitar termos, selecionar mÃºltiplos itens
-- **Toggle**: Ativar/desativar features (configuraÃ§Ãµes)
+- **Checkbox**: Aceitar termos, selecionar múltiplos itens
+- **Toggle**: Ativar/desativar features (configurações)
 
 ---
 
-### MessageBar (NotificaÃ§Ãµes)
+### MessageBar (Notificações)
 
 ```jsx
 <MessageBar messageBarType={MessageBarType.success}>
-  AlteraÃ§Ãµes salvas com sucesso!
+  Alterações salvas com sucesso!
 </MessageBar>
 ```
 
 #### Tipos
-- **info** (azul): InformaÃ§Ãµes gerais
-- **success** (verde): AÃ§Ã£o completada
-- **warning** (amarelo): AtenÃ§Ã£o necessÃ¡ria
-- **error** (vermelho): Erro crÃ­tico
-- **severeWarning** (vermelho escuro): Erro muito crÃ­tico
+- **info** (azul): Informações gerais
+- **success** (verde): Ação completada
+- **warning** (amarelo): Atenção necessária
+- **error** (vermelho): Erro crítico
+- **severeWarning** (vermelho escuro): Erro muito crítico
 
 #### Uso
-- Exibir no topo do formulÃ¡rio/pÃ¡gina
-- Auto-dismiss para success/info apÃ³s 5s
-- Manter visÃ­vel para errors (requer aÃ§Ã£o do usuÃ¡rio)
+- Exibir no topo do formulário/página
+- Auto-dismiss para success/info após 5s
+- Manter visível para errors (requer ação do usuário)
 
 ---
 
-### Modal (Modais/DiÃ¡logos)
+### Modal (Modais/Diálogos)
 
 ```jsx
 <Modal
@@ -462,7 +462,7 @@ radius-circular: 50%   # Avatares, badges circulares
   isBlocking={false}
 >
   <Stack tokens={{ childrenGap: 16 }} styles={{ root: { padding: 24 } }}>
-    <Text variant="xLarge">Confirmar ExclusÃ£o</Text>
+    <Text variant="xLarge">Confirmar Exclusão</Text>
     <Text>Tem certeza que deseja excluir este item?</Text>
     <Stack horizontal tokens={{ childrenGap: 8 }}>
       <PrimaryButton text="Confirmar" onClick={handleConfirm} />
@@ -475,8 +475,8 @@ radius-circular: 50%   # Avatares, badges circulares
 #### Propriedades
 - **isOpen**: Controla visibilidade
 - **onDismiss**: Callback ao fechar (Esc ou click fora)
-- **isBlocking**: Se true, nÃ£o fecha ao clicar fora
-- **isModeless**: Modal nÃ£o-bloqueante (pode interagir com background)
+- **isBlocking**: Se true, não fecha ao clicar fora
+- **isModeless**: Modal não-bloqueante (pode interagir com background)
 
 #### Overlay
 - Background: `rgba(0,0,0,0.4)` (semi-transparente)
@@ -493,7 +493,7 @@ radius-circular: 50%   # Avatares, badges circulares
   type={PanelType.medium}
   headerText="Filtros"
 >
-  {/* ConteÃºdo do painel */}
+  {/* Conteúdo do painel */}
 </Panel>
 ```
 
@@ -505,8 +505,8 @@ radius-circular: 50%   # Avatares, badges circulares
 - **custom**: Largura customizada
 
 #### Uso
-- Filtros avanÃ§ados
-- FormulÃ¡rios de criaÃ§Ã£o/ediÃ§Ã£o
+- Filtros avançados
+- Formulários de criação/edição
 - Detalhes de item selecionado
 
 ---
@@ -526,9 +526,9 @@ radius-circular: 50%   # Avatares, badges circulares
 ```
 
 #### Uso
-- AÃ§Ãµes principais de uma pÃ¡gina
-- Toolbar de aplicaÃ§Ã£o
-- AÃ§Ãµes de seleÃ§Ã£o (bulk actions)
+- Ações principais de uma página
+- Toolbar de aplicação
+- Ações de seleção (bulk actions)
 
 ---
 
@@ -544,9 +544,9 @@ radius-circular: 50%   # Avatares, badges circulares
 ```
 
 #### Features
-- OrdenaÃ§Ã£o por coluna (sortable)
-- SeleÃ§Ã£o (single/multiple)
-- PaginaÃ§Ã£o
+- Ordenação por coluna (sortable)
+- Seleção (single/multiple)
+- Paginação
 - Filtros inline
 - Grouping (agrupamento)
 
@@ -560,12 +560,12 @@ const columns = [
 
 ---
 
-### Persona (Avatar + InformaÃ§Ãµes)
+### Persona (Avatar + Informações)
 
 ```jsx
 <Persona
   text="Maria Silva"
-  secondaryText="Analista de NegÃ³cios"
+  secondaryText="Analista de Negócios"
   imageUrl="/avatars/maria.jpg"
   size={PersonaSize.size48}
 />
@@ -573,13 +573,13 @@ const columns = [
 
 #### Tamanhos
 - **size24**: 24x24px (inline, listas)
-- **size32**: 32x32px (padrÃ£o)
+- **size32**: 32x32px (padrão)
 - **size48**: 48x48px (cards)
 - **size72**: 72x72px (perfil)
 - **size100**: 100x100px (hero/destaque)
 
 #### Initiials
-Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
+Se `imageUrl` não fornecida, exibe iniciais do nome com background colorido.
 
 ---
 
@@ -596,9 +596,9 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 - **large**: 28px
 
 #### Uso
-- Carregamento de pÃ¡gina: Large, centralizado
+- Carregamento de página: Large, centralizado
 - Carregamento de componente: Medium/Small, inline
-- BotÃ£o em loading: Small, dentro do botÃ£o
+- Botão em loading: Small, dentro do botão
 
 ---
 
@@ -607,7 +607,7 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 ```jsx
 <ProgressIndicator 
   label="Upload em progresso" 
-  description="45% concluÃ­do"
+  description="45% concluído"
   percentComplete={0.45}
 />
 ```
@@ -615,11 +615,11 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 **Uso**:
 - Upload de arquivos
 - Processamento em lote
-- Wizards/formulÃ¡rios multi-step
+- Wizards/formulários multi-step
 
 ---
 
-### Dialog (DiÃ¡logo Simples)
+### Dialog (Diálogo Simples)
 
 ```jsx
 <Dialog
@@ -627,8 +627,8 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
   onDismiss={handleClose}
   dialogContentProps={{
     type: DialogType.normal,
-    title: 'Confirmar AÃ§Ã£o',
-    subText: 'Esta aÃ§Ã£o nÃ£o pode ser desfeita.'
+    title: 'Confirmar Ação',
+    subText: 'Esta ação não pode ser desfeita.'
   }}
 >
   <DialogFooter>
@@ -639,48 +639,48 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 ```
 
 #### Tipos
-- **normal**: DiÃ¡logo padrÃ£o
+- **normal**: Diálogo padrão
 - **largeHeader**: Com header visual destacado
 - **close**: Com X para fechar
 
 ---
 
-## â™¿ Acessibilidade (WCAG 2.1 AA)
+## ? Acessibilidade (WCAG 2.1 AA)
 
 ### Contraste de Cores
 
 **Requisitos WCAG 2.1 - 1.4.3**:
-- **Texto normal**: MÃ­nimo 4.5:1
-- **Texto grande** (18pt/24px+): MÃ­nimo 3:1
-- **UI Components**: MÃ­nimo 3:1
+- **Texto normal**: Mínimo 4.5:1
+- **Texto grande** (18pt/24px+): Mínimo 3:1
+- **UI Components**: Mínimo 3:1
 
-**ValidaÃ§Ã£o**:
+**Validação**:
 ```
-âœ… Texto preto (#323130) em branco (#FFFFFF): 12.63:1
-âœ… themePrimary (#0078D4) em branco: 4.54:1
-âŒ neutralTertiary (#A19F9D) em branco: 2.63:1 - NÃƒO usar para texto
+? Texto preto (#323130) em branco (#FFFFFF): 12.63:1
+? themePrimary (#0078D4) em branco: 4.54:1
+? neutralTertiary (#A19F9D) em branco: 2.63:1 - NÃO usar para texto
 ```
 
 **Ferramentas**:
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- axe DevTools (extensÃ£o Chrome)
-- WAVE (extensÃ£o Chrome)
+- axe DevTools (extensão Chrome)
+- WAVE (extensão Chrome)
 
 ---
 
-### NavegaÃ§Ã£o por Teclado
+### Navegação por Teclado
 
 **Requisitos WCAG 2.1 - 2.1.1**:
 
 **Tab Order**:
 - Seguir ordem visual (top-to-bottom, left-to-right)
-- Elementos interativos acessÃ­veis via Tab
-- Skip links para conteÃºdo principal
+- Elementos interativos acessíveis via Tab
+- Skip links para conteúdo principal
 
 **Atalhos**:
-- **Tab**: PrÃ³ximo elemento
+- **Tab**: Próximo elemento
 - **Shift + Tab**: Elemento anterior
-- **Enter/Space**: Ativar botÃ£o/link
+- **Enter/Space**: Ativar botão/link
 - **Esc**: Fechar modal/dropdown
 - **Arrow keys**: Navegar em listas/menus
 - **/**: Focar campo de busca (comum em apps)
@@ -700,21 +700,21 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 
 **ARIA Labels**:
 ```jsx
-{/* BotÃ£o apenas com Ã­cone */}
+{/* Botão apenas com ícone */}
 <IconButton 
   iconProps={{ iconName: 'Delete' }} 
   ariaLabel="Excluir item"
   title="Excluir"
 />
 
-{/* Input com descriÃ§Ã£o */}
+{/* Input com descrição */}
 <TextField
   label="Email"
   ariaDescribedBy="email-description"
 />
-<Text id="email-description">Usaremos para recuperaÃ§Ã£o de senha</Text>
+<Text id="email-description">Usaremos para recuperação de senha</Text>
 
-{/* NotificaÃ§Ã£o dinÃ¢mica */}
+{/* Notificação dinâmica */}
 <div role="alert" aria-live="polite">
   Item adicionado ao carrinho
 </div>
@@ -730,14 +730,14 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 ```
 
 **Testes**:
-- **NVDA** (Windows, grÃ¡tis)
+- **NVDA** (Windows, grátis)
 - **JAWS** (Windows, pago)
 - **VoiceOver** (macOS, built-in)
 - **TalkBack** (Android)
 
 ---
 
-### Forms AcessÃ­veis
+### Forms Acessíveis
 
 ```jsx
 <Label htmlFor="email" required>Email</Label>
@@ -745,30 +745,30 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
   id="email"
   ariaRequired={true}
   ariaDescribedBy="email-error"
-  errorMessage="Email invÃ¡lido"
+  errorMessage="Email inválido"
 />
 <Text id="email-error" role="alert">
   {errorMessage}
 </Text>
 ```
 
-**ValidaÃ§Ã£o**:
+**Validação**:
 - Labels associados (htmlFor)
 - Campos required marcados
 - Erros anunciados (role="alert")
-- InstruÃ§Ãµes antes do formulÃ¡rio
+- Instruções antes do formulário
 
 ---
 
-## ğŸ“± Responsividade
+## ?? Responsividade
 
 ### Mobile-First Approach
 
-**EstratÃ©gia**:
+**Estratégia**:
 1. Design para mobile primeiro
 2. Progressivamente adicionar features para telas maiores (progressive enhancement)
 
-### AdaptaÃ§Ãµes por Breakpoint
+### Adaptações por Breakpoint
 
 **Mobile (<768px)**:
 - Navigation: Hamburger menu
@@ -787,25 +787,25 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 - Full navigation
 - Grid: 12 colunas
 - Hover states ativos
-- Tooltips (nÃ£o disponÃ­veis em touch)
+- Tooltips (não disponíveis em touch)
 
 ### Touch Targets
 
 **WCAG 2.1 - 2.5.5**:
-- **MÃ­nimo**: 44x44px (iOS), 48x48dp (Android)
+- **Mínimo**: 44x44px (iOS), 48x48dp (Android)
 - **Recomendado**: 48x48px ou maior
 
 ```css
 .touch-target {
   min-width: 48px;
   min-height: 48px;
-  /* Se conteÃºdo menor, adicionar padding */
+  /* Se conteúdo menor, adicionar padding */
 }
 ```
 
 ---
 
-## ğŸ­ PadrÃµes de InteraÃ§Ã£o
+## ?? Padrões de Interação
 
 ### Empty States
 
@@ -853,7 +853,7 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 ```jsx
 <MessageBar messageBarType={MessageBarType.error} isMultiline>
   <Text><strong>Erro ao salvar</strong></Text>
-  <Text>NÃ£o foi possÃ­vel conectar ao servidor. Tente novamente.</Text>
+  <Text>Não foi possível conectar ao servidor. Tente novamente.</Text>
   <Link onClick={handleRetry}>Tentar novamente</Link>
 </MessageBar>
 ```
@@ -868,26 +868,26 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
   onDismiss={handleDismiss}
   dismissButtonAriaLabel="Fechar"
 >
-  AlteraÃ§Ãµes salvas com sucesso!
+  Alterações salvas com sucesso!
 </MessageBar>
 ```
 
 ---
 
-## ğŸ“ Layout Patterns
+## ?? Layout Patterns
 
 ### App Shell
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚          Header (64px)          â”‚ â† Fixed
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚         â”‚                       â”‚
-â”‚   Nav   â”‚    Main Content      â”‚
-â”‚  (240px)â”‚    (fluid)           â”‚
-â”‚         â”‚                       â”‚
-â”‚         â”‚                       â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++---------------------------------+
+¦          Header (64px)          ¦ ? Fixed
++---------------------------------¦
+¦         ¦                       ¦
+¦   Nav   ¦    Main Content      ¦
+¦  (240px)¦    (fluid)           ¦
+¦         ¦                       ¦
+¦         ¦                       ¦
++---------------------------------+
 ```
 
 ---
@@ -909,7 +909,7 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
       <Text variant="small">Card description...</Text>
     </Card.Section>
     <Card.Item>
-      <PrimaryButton text="AÃ§Ã£o" />
+      <PrimaryButton text="Ação" />
     </Card.Item>
   </Card>
 </Stack>
@@ -920,32 +920,32 @@ Se `imageUrl` nÃ£o fornecida, exibe iniciais do nome com background colorido.
 ### Master-Detail Pattern
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚              â”‚                    â”‚
-â”‚   Master     â”‚      Detail        â”‚
-â”‚   (List)     â”‚   (Selecionado)    â”‚
-â”‚              â”‚                    â”‚
-â”‚  - Item 1    â”‚  TÃ­tulo            â”‚
-â”‚  â–¶ Item 2 â—€  â”‚  DescriÃ§Ã£o...      â”‚
-â”‚  - Item 3    â”‚  [AÃ§Ãµes]           â”‚
-â”‚              â”‚                    â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++-----------------------------------+
+¦              ¦                    ¦
+¦   Master     ¦      Detail        ¦
+¦   (List)     ¦   (Selecionado)    ¦
+¦              ¦                    ¦
+¦  - Item 1    ¦  Título            ¦
+¦  ? Item 2 ?  ¦  Descrição...      ¦
+¦  - Item 3    ¦  [Ações]           ¦
+¦              ¦                    ¦
++-----------------------------------+
 ```
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Outros Artefatos
+## ?? Integração com Outros Artefatos
 
-- **${AVANADE_WIREFRAME_TEMPLATE}**: Usar este guia como referÃªncia ao criar wireframes
+- **${AVANADE_WIREFRAME_TEMPLATE}**: Usar este guia como referência ao criar wireframes
 - **${AVANADE_MEMORY_UX_SOFIA}**: Documentar patterns validados baseados neste guia
-- **${AVANADE_TASK_UX_CHECKLIST}**: Validar implementaÃ§Ã£o contra este guia
+- **${AVANADE_TASK_UX_CHECKLIST}**: Validar implementação contra este guia
 - **${AVANADE_TASK_ACCESSIBILITY_WCAG}**: Aplicar requisitos de acessibilidade deste guia
 
 ---
 
-## ğŸ“š Recursos Adicionais
+## ?? Recursos Adicionais
 
-### DocumentaÃ§Ã£o Oficial
+### Documentação Oficial
 - [Fluent UI React Documentation](https://developer.microsoft.com/en-us/fluentui#/controls/web)
 - [Fluent Design System](https://www.microsoft.com/design/fluent/)
 - [Fluent UI Icons](https://uifabricicons.azurewebsites.net/)

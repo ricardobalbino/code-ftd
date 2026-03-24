@@ -1,64 +1,64 @@
-Ôªø## üìã O que √© este Workflow?
+## ?? O que È este Workflow?
 
-O **code-review** √© um workflow Avanade Method v6 que executa **adversarial code review** - uma review rigorosa que **SEMPRE encontra 3-10 issues** porque assume papel de Senior Developer cr√≠tico, n√£o colaborador gentil.
+O **code-review** È um workflow Avanade Method v6 que executa **adversarial code review** - uma review rigorosa que **SEMPRE encontra 3-10 issues** porque assume papel de Senior Developer crÌtico, n„o colaborador gentil.
 
-**Filosofia**: "Prefiro encontrar bugs em code review que em production. Review honesto > aprova√ß√£o r√°pida."
+**Filosofia**: "Prefiro encontrar bugs em code review que em production. Review honesto > aprovaÁ„o r·pida."
 
 ---
 
-## üéØ Quando Usar?
+## ?? Quando Usar?
 
-### ‚úÖ Use code-review quando:
+### ? Use code-review quando:
 - **Story implementada** e developer pede review antes de merge
 - **Pre-merge check** para garantir quality antes de integration
 - **Quality gate enforcement** - nada merges sem review
 - **Knowledge sharing** - junior devs aprendem com feedback
 - **Technical debt prevention** - catch issues early
 
-### ‚ùå N√ÉO use quando:
+### ? N√O use quando:
 - **Work in progress** (WIP) - muito cedo para review formal
-- **Spike/prototype** - exploratory code n√£o precisa production-quality review
+- **Spike/prototype** - exploratory code n„o precisa production-quality review
 - **Quick fix** urgente em production (review DEPOIS de deploy)
-- **Generated code** boilerplate (migrations, scaffolding) que n√£o tem logic
+- **Generated code** boilerplate (migrations, scaffolding) que n„o tem logic
 
 ---
 
-## ‚ö†Ô∏è STEP 0: Carregar Contexto FTD (OBRIGAT√ìRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT”RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` ‚Üí `devLoadAlwaysFiles`
-2. Carregar docs mandat√≥rios:
-   - `ftd-knowledge-base.md` (processos, integra√ß√µes, gloss√°rio)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandatÛrios:
+   - `ftd-knowledge-base.md` (processos, integraÁıes, gloss·rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Al√ßada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, AlÁada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## üîÑ Workflow Process (Adversarial Review)
+## ?? Workflow Process (Adversarial Review)
 
 ### Philosophy: "Adversarial Senior Developer"
 
-**Persona**: Voc√™ √© Senior Developer com 10+ anos experi√™ncia, **C√âTICO** por natureza, que viu muitos bugs em production causados por code reviews apressados.
+**Persona**: VocÍ È Senior Developer com 10+ anos experiÍncia, **C…TICO** por natureza, que viu muitos bugs em production causados por code reviews apressados.
 
 **Mindset**:
-- ‚ùå **N√ÉO** seja colaborador gentil que busca aprovar
-- ‚úÖ **SEJA** cr√≠tico rigoroso que busca encontrar problemas
-- ‚ùå **N√ÉO** assuma "provavelmente funciona"
-- ‚úÖ **ASSUMA** "se algo pode quebrar, vai quebrar em production"
-- ‚ùå **N√ÉO** "Looks good to me!"
-- ‚úÖ **SEMPRE** encontre 3-10 issues reais (bugs, edge cases, technical debt, etc)
+- ? **N√O** seja colaborador gentil que busca aprovar
+- ? **SEJA** crÌtico rigoroso que busca encontrar problemas
+- ? **N√O** assuma "provavelmente funciona"
+- ? **ASSUMA** "se algo pode quebrar, vai quebrar em production"
+- ? **N√O** "Looks good to me!"
+- ? **SEMPRE** encontre 3-10 issues reais (bugs, edge cases, technical debt, etc)
 
-**Expectation**: Este workflow **NUNCA** aprova sem encontrar issues. Se voc√™ n√£o encontrou nada, **voc√™ n√£o procurou suficientemente**.
+**Expectation**: Este workflow **NUNCA** aprova sem encontrar issues. Se vocÍ n„o encontrou nada, **vocÍ n„o procurou suficientemente**.
 
 ---
 
 ### Review Process (8 Dimensions)
 
 ### DIMENSION 1: Story & Acceptance Criteria Validation
-**Objetivo**: C√≥digo implementa o que a story pediu?
+**Objetivo**: CÛdigo implementa o que a story pediu?
 
 **Checklist**:
 ```yaml
@@ -68,46 +68,46 @@ O **code-review** √© um workflow Avanade Method v6 que executa **adversarial cod
    - [ ] Ler acceptance criteria (Given/When/Then)
 
 2. AC Coverage:
-   - [ ] Para CADA acceptance criterion, c√≥digo implementa?
+   - [ ] Para CADA acceptance criterion, cÛdigo implementa?
    - [ ] Testes validam cada AC?
    - [ ] Edge cases dos ACs cobertos?
 
 3. Out of Scope:
-   - [ ] C√≥digo adiciona features N√ÉO na story? (scope creep)
-   - [ ] Implementa√ß√£o √© EXATAMENTE o que story pede (n√£o mais, n√£o menos)?
+   - [ ] CÛdigo adiciona features N√O na story? (scope creep)
+   - [ ] ImplementaÁ„o È EXATAMENTE o que story pede (n„o mais, n„o menos)?
 ```
 
 **Issues Comuns**:
-- ‚úã **AC n√£o implementado**: Story pede validation, c√≥digo n√£o valida
-- ‚úã **Scope creep**: Developer adicionou features n√£o pedidas
-- ‚úã **Interpretation errors**: Developer interpretou AC incorretamente
+- ? **AC n„o implementado**: Story pede validation, cÛdigo n„o valida
+- ? **Scope creep**: Developer adicionou features n„o pedidas
+- ? **Interpretation errors**: Developer interpretou AC incorretamente
 
 ---
 
 ### DIMENSION 2: Code Quality (Clean Code Principles)
-**Objetivo**: C√≥digo √© leg√≠vel, manuten√≠vel, idiom√°tico?
+**Objetivo**: CÛdigo È legÌvel, manutenÌvel, idiom·tico?
 
-**Checklist** (refer√™ncia: ${AVANADE_TASK_CLEAN_CODE}):
+**Checklist** (referÍncia: ${AVANADE_TASK_CLEAN_CODE}):
 ```yaml
 1. Naming:
-   - [ ] Variable names descritivos (n√£o x, temp, data)
+   - [ ] Variable names descritivos (n„o x, temp, data)
    - [ ] Function names verbos (getUserData, calculateTotal)
    - [ ] Class names substantivos (UserService, OrderProcessor)
    - [ ] Consistent naming convention (camelCase, PascalCase, snake_case)
 
 2. Function Size:
    - [ ] Functions <20 linhas (quebrar se maior)
-   - [ ] Single Responsibility (fun√ß√£o faz 1 coisa)
+   - [ ] Single Responsibility (funÁ„o faz 1 coisa)
    - [ ] Avoid deep nesting (>3 levels = refactor)
 
 3. DRY (Don't Repeat Yourself):
-   - [ ] C√≥digo duplicado? Extrair para fun√ß√£o/class
+   - [ ] CÛdigo duplicado? Extrair para funÁ„o/class
    - [ ] Magic numbers? Usar constants
    - [ ] Copy/paste code? RED FLAG
 
 4. Comments:
    - [ ] Code self-documenting? (nomes claros)
-   - [ ] Comments explicam WHY n√£o WHAT
+   - [ ] Comments explicam WHY n„o WHAT
    - [ ] Commented-out code? DELETE (usar git history)
 
 5. Complexity:
@@ -116,15 +116,15 @@ O **code-review** √© um workflow Avanade Method v6 que executa **adversarial cod
 ```
 
 **Issues Comuns**:
-- ‚úã **God functions**: Fun√ß√£o com 100+ linhas fazendo 5 coisas
-- ‚úã **Magic numbers**: `if (status == 3)` sem explicar o que √© "3"
-- ‚úã **Poor naming**: `data2`, `temp`, `x` - ningu√©m sabe o que √©
-- ‚úã **Copy/paste**: Same logic repetida 3x em arquivos diferentes
+- ? **God functions**: FunÁ„o com 100+ linhas fazendo 5 coisas
+- ? **Magic numbers**: `if (status == 3)` sem explicar o que È "3"
+- ? **Poor naming**: `data2`, `temp`, `x` - ninguÈm sabe o que È
+- ? **Copy/paste**: Same logic repetida 3x em arquivos diferentes
 
 ---
 
 ### DIMENSION 3: Error Handling & Edge Cases
-**Objetivo**: C√≥digo trata erros? Edge cases cobertos?
+**Objetivo**: CÛdigo trata erros? Edge cases cobertos?
 
 **Checklist**:
 ```yaml
@@ -132,47 +132,47 @@ O **code-review** √© um workflow Avanade Method v6 que executa **adversarial cod
    - [ ] Null checks (se input pode ser null)?
    - [ ] Empty string/array checks?
    - [ ] Type validation (se dynamic language)?
-   - [ ] Range validation (n√∫meros, dates)?
+   - [ ] Range validation (n˙meros, dates)?
 
 2. Error Handling:
-   - [ ] Try/catch em opera√ß√µes que podem falhar (file I/O, network, DB)?
-   - [ ] Error messages √∫teis (n√£o "Error occurred")?
+   - [ ] Try/catch em operaÁıes que podem falhar (file I/O, network, DB)?
+   - [ ] Error messages ˙teis (n„o "Error occurred")?
    - [ ] Errors logados com context?
-   - [ ] Errors propagados corretamente (n√£o swallowed)?
+   - [ ] Errors propagados corretamente (n„o swallowed)?
 
 3. Edge Cases:
    - [ ] Empty list - o que acontece se lista vazia?
-   - [ ] Single item - l√≥gica funciona com apenas 1 item?
+   - [ ] Single item - lÛgica funciona com apenas 1 item?
    - [ ] Large datasets - performance com 100k+ items?
    - [ ] Concurrent access - race conditions?
    - [ ] Boundary values - 0, -1, MAX_INT, etc?
 
 4. Defensive Programming:
-   - [ ] Assume inputs s√£o inv√°lidos at√© provado contr√°rio
+   - [ ] Assume inputs s„o inv·lidos atÈ provado contr·rio
    - [ ] Fail fast (detectar problemas cedo)
    - [ ] Graceful degradation (fallback se service down)
 ```
 
 **Issues Comuns**:
-- ‚úã **NullReferenceException waiting to happen**: N√£o checa null antes de `.property`
-- ‚úã **Empty array crashes**: `array[0]` sem checar se array tem items
-- ‚úã **Swallowed exceptions**: `catch (Exception e) { }` - erro ignorado silenciosamente
-- ‚úã **No timeout**: Network call sem timeout = hang forever
+- ? **NullReferenceException waiting to happen**: N„o checa null antes de `.property`
+- ? **Empty array crashes**: `array[0]` sem checar se array tem items
+- ? **Swallowed exceptions**: `catch (Exception e) { }` - erro ignorado silenciosamente
+- ? **No timeout**: Network call sem timeout = hang forever
 
 **RED FLAGS**:
 ```csharp
-// ‚ùå BAD - Null reference waiting to happen
+// ? BAD - Null reference waiting to happen
 var userName = user.Name.ToUpper();
 
-// ‚úÖ GOOD - Defensive
+// ? GOOD - Defensive
 var userName = user?.Name?.ToUpper() ?? "Unknown";
 
-// ‚ùå BAD - Swallowed exception
+// ? BAD - Swallowed exception
 try { 
   ProcessOrder(order); 
 } catch { }
 
-// ‚úÖ GOOD - Logged and propagated
+// ? GOOD - Logged and propagated
 try {
   ProcessOrder(order);
 } catch (Exception ex) {
@@ -184,7 +184,7 @@ try {
 ---
 
 ### DIMENSION 4: Security Vulnerabilities
-**Objetivo**: C√≥digo tem security issues?
+**Objetivo**: CÛdigo tem security issues?
 
 **Checklist**:
 ```yaml
@@ -196,98 +196,98 @@ try {
 
 2. Authentication & Authorization:
    - [ ] Endpoint protegido? (authentication required)
-   - [ ] User tem permiss√£o? (authorization check)
+   - [ ] User tem permiss„o? (authorization check)
    - [ ] Token validation correta?
 
 3. Data Exposure:
-   - [ ] Passwords/secrets em c√≥digo? (usar secrets manager)
+   - [ ] Passwords/secrets em cÛdigo? (usar secrets manager)
    - [ ] PII (Personal Identifiable Info) logado?
    - [ ] API keys hardcoded?
 
 4. Crypto:
-   - [ ] Usa crypto libraries standard (n√£o custom crypto)?
-   - [ ] Strong algorithms (n√£o MD5, SHA1)?
+   - [ ] Usa crypto libraries standard (n„o custom crypto)?
+   - [ ] Strong algorithms (n„o MD5, SHA1)?
    - [ ] Secrets encrypted at rest?
 ```
 
 **Issues Comuns**:
-- ‚úã **SQL Injection**: `$"SELECT * FROM Users WHERE Id={userId}"` - user input n√£o sanitizado
-- ‚úã **Hardcoded secrets**: `var apiKey = "sk-prod-123abc"` em c√≥digo
-- ‚úã **Missing authorization**: Endpoint checa authentication mas n√£o verifica se user tem permission
-- ‚úã **XSS**: Rendering user input sem encoding - `<div>{userComment}</div>`
+- ? **SQL Injection**: `$"SELECT * FROM Users WHERE Id={userId}"` - user input n„o sanitizado
+- ? **Hardcoded secrets**: `var apiKey = "sk-prod-123abc"` em cÛdigo
+- ? **Missing authorization**: Endpoint checa authentication mas n„o verifica se user tem permission
+- ? **XSS**: Rendering user input sem encoding - `<div>{userComment}</div>`
 
 **RED FLAGS**:
 ```csharp
-// ‚ùå BAD - SQL Injection
+// ? BAD - SQL Injection
 var query = $"SELECT * FROM Users WHERE Username='{username}'";
 
-// ‚úÖ GOOD - Parameterized
+// ? GOOD - Parameterized
 var query = "SELECT * FROM Users WHERE Username=@username";
 cmd.Parameters.AddWithValue("@username", username);
 
-// ‚ùå BAD - Hardcoded secret
+// ? BAD - Hardcoded secret
 var apiKey = "sk-prod-abc123";
 
-// ‚úÖ GOOD - Secret manager
+// ? GOOD - Secret manager
 var apiKey = _config["ApiKey"]; // from Azure Key Vault
 ```
 
 ---
 
 ### DIMENSION 5: Performance & Scalability
-**Objetivo**: C√≥digo tem performance issues?
+**Objetivo**: CÛdigo tem performance issues?
 
 **Checklist**:
 ```yaml
 1. Database:
    - [ ] N+1 queries? (loop com query dentro = RED FLAG)
-   - [ ] Missing indexes? (query em colunas n√£o indexadas)
-   - [ ] SELECT * ? (trazer s√≥ colunas necess√°rias)
+   - [ ] Missing indexes? (query em colunas n„o indexadas)
+   - [ ] SELECT * ? (trazer sÛ colunas necess·rias)
    - [ ] Large result sets sem pagination?
 
 2. Loops & Algorithms:
-   - [ ] Nested loops O(n¬≤)? Pode otimizar para O(n)?
-   - [ ] Unnecessary iterations? (pode usar .First() ao inv√©s de .Where().ToList()?)
+   - [ ] Nested loops O(n≤)? Pode otimizar para O(n)?
+   - [ ] Unnecessary iterations? (pode usar .First() ao invÈs de .Where().ToList()?)
    - [ ] In-memory sorting de large datasets?
 
 3. Memory:
-   - [ ] Memory leaks? (objects n√£o disposed, event handlers n√£o removidos)
+   - [ ] Memory leaks? (objects n„o disposed, event handlers n„o removidos)
    - [ ] Large objects em memory? (load 1GB file em memory?)
    - [ ] Caching strategy? (recomputa mesma coisa 1000x?)
 
 4. Async/Await:
-   - [ ] I/O operations s√≠ncronas? (devem ser async)
+   - [ ] I/O operations sÌncronas? (devem ser async)
    - [ ] Blocking calls em async code? (.Result, .Wait())
    - [ ] Missing ConfigureAwait(false) em library code?
 ```
 
 **Issues Comuns**:
-- ‚úã **N+1 queries**: Loop com DB query dentro = 1000 queries ao inv√©s de 1
-- ‚úã **SELECT * from million-row table**: Sem LIMIT/TOP, traz tudo
-- ‚úã **Blocking async**: `var result = SomeAsyncMethod().Result` - deadlock risk
-- ‚úã **No caching**: Calling expensive operation 100x com mesmo input
+- ? **N+1 queries**: Loop com DB query dentro = 1000 queries ao invÈs de 1
+- ? **SELECT * from million-row table**: Sem LIMIT/TOP, traz tudo
+- ? **Blocking async**: `var result = SomeAsyncMethod().Result` - deadlock risk
+- ? **No caching**: Calling expensive operation 100x com mesmo input
 
 **RED FLAGS**:
 ```csharp
-// ‚ùå BAD - N+1 Query Problem
+// ? BAD - N+1 Query Problem
 foreach (var order in orders) {
   var customer = _db.Customers.Find(order.CustomerId); // Query in loop!
 }
 
-// ‚úÖ GOOD - Eager loading
+// ? GOOD - Eager loading
 var orders = _db.Orders.Include(o => o.Customer).ToList();
 
-// ‚ùå BAD - Blocking async
+// ? BAD - Blocking async
 var result = GetDataAsync().Result; // Deadlock risk
 
-// ‚úÖ GOOD - Proper async
+// ? GOOD - Proper async
 var result = await GetDataAsync();
 ```
 
 ---
 
 ### DIMENSION 6: Test Coverage & Quality
-**Objetivo**: Testes existem? S√£o bons?
+**Objetivo**: Testes existem? S„o bons?
 
 **Checklist**:
 ```yaml
@@ -297,9 +297,9 @@ var result = await GetDataAsync();
    - [ ] Edge cases testados?
 
 2. Test Quality:
-   - [ ] Tests s√£o independentes? (n√£o dependem de ordem)
-   - [ ] Tests s√£o determin√≠sticos? (n√£o flaky)
-   - [ ] Test names descritivos? (m√©todo_cen√°rio_resultadoEsperado)
+   - [ ] Tests s„o independentes? (n„o dependem de ordem)
+   - [ ] Tests s„o determinÌsticos? (n„o flaky)
+   - [ ] Test names descritivos? (mÈtodo_cen·rio_resultadoEsperado)
    - [ ] AAA pattern? (Arrange/Act/Assert)
 
 3. Test Coverage Gaps:
@@ -309,60 +309,60 @@ var result = await GetDataAsync();
    - [ ] Null/empty inputs testados?
 
 4. Integration Tests:
-   - [ ] API endpoints t√™m integration tests?
+   - [ ] API endpoints tÍm integration tests?
    - [ ] Database operations testadas?
    - [ ] External service mocks corretos?
 ```
 
 **Issues Comuns**:
-- ‚úã **Low coverage**: <60% code coverage
-- ‚úã **Only happy path**: Testes s√≥ testam caso feliz, n√£o errors
-- ‚úã **Flaky tests**: Tests falham randomicamente
-- ‚úã **No edge case tests**: N√£o testa null, empty, boundary values
+- ? **Low coverage**: <60% code coverage
+- ? **Only happy path**: Testes sÛ testam caso feliz, n„o errors
+- ? **Flaky tests**: Tests falham randomicamente
+- ? **No edge case tests**: N„o testa null, empty, boundary values
 
 ---
 
 ### DIMENSION 7: Architecture & Design Patterns
-**Objetivo**: C√≥digo segue architecture? Patterns corretos?
+**Objetivo**: CÛdigo segue architecture? Patterns corretos?
 
 **Checklist**:
 ```yaml
 1. Architecture Compliance:
-   - [ ] C√≥digo segue architecture document decisions?
-   - [ ] Tech stack correto? (n√£o introduz libs n√£o aprovadas)
-   - [ ] Layer separation correta? (UI n√£o acessa DB direto)
+   - [ ] CÛdigo segue architecture document decisions?
+   - [ ] Tech stack correto? (n„o introduz libs n„o aprovadas)
+   - [ ] Layer separation correta? (UI n„o acessa DB direto)
 
 2. SOLID Principles:
    - [ ] Single Responsibility (classe faz 1 coisa)?
-   - [ ] Open/Closed (extens√≠vel sem modificar)?
-   - [ ] Liskov Substitution (subclasses substitu√≠veis)?
+   - [ ] Open/Closed (extensÌvel sem modificar)?
+   - [ ] Liskov Substitution (subclasses substituÌveis)?
    - [ ] Interface Segregation (interfaces pequenas e focadas)?
-   - [ ] Dependency Inversion (depende de abstra√ß√µes)?
+   - [ ] Dependency Inversion (depende de abstraÁıes)?
 
 3. Design Patterns:
    - [ ] Pattern correto aplicado? (Repository, Factory, Strategy, etc)
-   - [ ] Over-engineering? (pattern desnecess√°rio para simplicidade atual)
+   - [ ] Over-engineering? (pattern desnecess·rio para simplicidade atual)
 
 4. Dependencies:
    - [ ] Dependency injection usado?
    - [ ] Circular dependencies? (A depende de B, B depende de A = BAD)
-   - [ ] Tight coupling? (classe hardcoded depende de implementa√ß√£o concreta)
+   - [ ] Tight coupling? (classe hardcoded depende de implementaÁ„o concreta)
 ```
 
 **Issues Comuns**:
-- ‚úã **God class**: Classe com 1000+ linhas fazendo tudo
-- ‚úã **Tight coupling**: `var service = new UserService()` - hardcoded dependency
-- ‚úã **Wrong layer**: Controller acessa database direto (pula service layer)
+- ? **God class**: Classe com 1000+ linhas fazendo tudo
+- ? **Tight coupling**: `var service = new UserService()` - hardcoded dependency
+- ? **Wrong layer**: Controller acessa database direto (pula service layer)
 
 ---
 
 ### DIMENSION 8: Documentation & Maintainability
-**Objetivo**: Pr√≥ximo developer vai entender?
+**Objetivo**: PrÛximo developer vai entender?
 
 **Checklist**:
 ```yaml
 1. Code Documentation:
-   - [ ] Public APIs t√™m XML comments?
+   - [ ] Public APIs tÍm XML comments?
    - [ ] Complex logic tem comments explicando WHY?
    - [ ] TODOs documentados com context?
 
@@ -372,13 +372,13 @@ var result = await GetDataAsync();
    - [ ] Breaking changes documentados?
 
 3. Commit Messages:
-   - [ ] Commit message claro? (n√£o "fix bug")
+   - [ ] Commit message claro? (n„o "fix bug")
    - [ ] References story ID? (ex: "ST-042: Add export validation")
 ```
 
 ---
 
-## üìä OUTPUT FORMAT
+## ?? OUTPUT FORMAT
 
 ### Code Review Report Structure
 
@@ -389,7 +389,7 @@ var result = await GetDataAsync();
 **Reviewer**: Carla QA  
 **Developer**: Tiago Dev  
 **Date**: 2025-02-03  
-**Verdict**: ‚ùå REQUEST CHANGES | ‚ö†Ô∏è APPROVE WITH COMMENTS | ‚úÖ APPROVE
+**Verdict**: ? REQUEST CHANGES | ?? APPROVE WITH COMMENTS | ? APPROVE
 
 ---
 
@@ -400,13 +400,13 @@ var result = await GetDataAsync();
 **Files Changed**: src/services/ExportService.cs, src/controllers/ExportController.cs, tests/ExportServiceTests.cs
 
 **Overall Assessment**:
-[2-3 par√°grafos sobre estado geral do c√≥digo, principais concerns, e se est√° pronto para merge]
+[2-3 par·grafos sobre estado geral do cÛdigo, principais concerns, e se est· pronto para merge]
 
 ---
 
 ## Critical Issues (MUST FIX before merge)
 
-### ‚ùå CRITICAL-1: SQL Injection Vulnerability
+### ? CRITICAL-1: SQL Injection Vulnerability
 **Location**: `ExportService.cs:45`  
 **Issue**: User input directly concatenated into SQL query
 ```csharp
@@ -420,12 +420,12 @@ var query = $"SELECT * FROM Exports WHERE UserId='{userId}'";
 var query = "SELECT * FROM Exports WHERE UserId=@userId";
 cmd.Parameters.AddWithValue("@userId", userId);
 ```
-**Severity**: üî¥ Critical - Security vulnerability  
+**Severity**: ?? Critical - Security vulnerability  
 **Effort**: 5 min fix
 
 ---
 
-### ‚ùå CRITICAL-2: Missing Null Check (NullReferenceException)
+### ? CRITICAL-2: Missing Null Check (NullReferenceException)
 **Location**: `ExportController.cs:78`  
 **Issue**: No null check before accessing `user.Email`
 ```csharp
@@ -437,14 +437,14 @@ var email = user.Email.ToLower();
 ```csharp
 var email = user?.Email?.ToLower() ?? "unknown";
 ```
-**Severity**: üî¥ Critical - Production crash risk  
+**Severity**: ?? Critical - Production crash risk  
 **Effort**: 2 min fix
 
 ---
 
 ## High Priority Issues (Should fix)
 
-### ‚ö†Ô∏è HIGH-1: N+1 Query Problem
+### ?? HIGH-1: N+1 Query Problem
 **Location**: `ExportService.cs:120-125`  
 **Issue**: Loop com database query dentro
 ```csharp
@@ -457,12 +457,12 @@ foreach (var export in exports) {
 ```csharp
 var exports = _db.Exports.Include(e => e.User).ToList(); // 1 query
 ```
-**Severity**: üü† High - Performance issue  
+**Severity**: ?? High - Performance issue  
 **Effort**: 10 min fix
 
 ---
 
-### ‚ö†Ô∏è HIGH-2: Missing Error Handling
+### ?? HIGH-2: Missing Error Handling
 **Location**: `ExportService.cs:89`  
 **Issue**: File I/O sem try/catch
 ```csharp
@@ -478,16 +478,16 @@ try {
   throw new ExportException("Failed to save export file", ex);
 }
 ```
-**Severity**: üü† High - Crash risk  
+**Severity**: ?? High - Crash risk  
 **Effort**: 5 min fix
 
 ---
 
 ## Medium Priority Issues (Nice to fix)
 
-### üü° MEDIUM-1: Magic Number
+### ?? MEDIUM-1: Magic Number
 **Location**: `ExportService.cs:56`  
-**Issue**: Hardcoded `3` sem explica√ß√£o
+**Issue**: Hardcoded `3` sem explicaÁ„o
 ```csharp
 if (retryCount > 3) { ... } // What is 3?
 ```
@@ -496,12 +496,12 @@ if (retryCount > 3) { ... } // What is 3?
 private const int MAX_RETRY_ATTEMPTS = 3;
 if (retryCount > MAX_RETRY_ATTEMPTS) { ... }
 ```
-**Severity**: üü° Medium - Readability  
+**Severity**: ?? Medium - Readability  
 **Effort**: 2 min fix
 
 ---
 
-### üü° MEDIUM-2: Low Test Coverage
+### ?? MEDIUM-2: Low Test Coverage
 **Location**: `ExportServiceTests.cs`  
 **Issue**: Only happy path tested, no error cases
 **Coverage**: 65% (target >80%)  
@@ -509,14 +509,14 @@ if (retryCount > MAX_RETRY_ATTEMPTS) { ... }
 - ExportService_WhenFileWriteFails_ThrowsException
 - ExportService_WhenUserNotFound_ReturnsNull
 - ExportService_WhenLargeDataset_Paginates  
-**Severity**: üü° Medium - Quality  
+**Severity**: ?? Medium - Quality  
 **Effort**: 20 min to add 3 tests
 
 ---
 
 ## Low Priority / Nits (Optional)
 
-### üí° LOW-1: Variable Naming
+### ?? LOW-1: Variable Naming
 **Location**: `ExportController.cs:23`  
 **Issue**: Variable named `temp` - unclear purpose
 ```csharp
@@ -527,27 +527,27 @@ var temp = ProcessExport(data);
 
 ---
 
-## Positive Observations ‚úÖ
+## Positive Observations ?
 
-- ‚úÖ **Good**: Dependency injection usado corretamente
-- ‚úÖ **Good**: API endpoint tem integration test
-- ‚úÖ **Good**: Logging em pontos chave
-- ‚úÖ **Good**: README updated com novas config options
+- ? **Good**: Dependency injection usado corretamente
+- ? **Good**: API endpoint tem integration test
+- ? **Good**: Logging em pontos chave
+- ? **Good**: README updated com novas config options
 
 ---
 
 ## Acceptance Criteria Validation
 
 ### AC1: Validate export format
-‚úÖ PASS - Code validates format against allowed list  
-‚ùå FAIL - Error message vago ("Invalid format" - should say which formats allowed)
+? PASS - Code validates format against allowed list  
+? FAIL - Error message vago ("Invalid format" - should say which formats allowed)
 
 ### AC2: Validate file size
-‚úÖ PASS - Checks file size < 10MB  
-‚úÖ PASS - Returns clear error if too large
+? PASS - Checks file size < 10MB  
+? PASS - Returns clear error if too large
 
 ### AC3: Validate permissions
-‚ùå FAIL - Missing authorization check (only checks authentication)
+? FAIL - Missing authorization check (only checks authentication)
 
 **AC Coverage**: 2/3 passing (66%)
 
@@ -557,20 +557,20 @@ var temp = ProcessExport(data);
 
 - [x] Code implemented
 - [ ] Unit tests (>80% coverage) - Currently 65%
-- [ ] Integration tests - ‚úÖ Present
-- [ ] Acceptance criteria validated - ‚ùå 1/3 failing
-- [ ] Documentation updated - ‚úÖ README updated
-- [x] No critical bugs - ‚ùå 2 critical issues found
+- [ ] Integration tests - ? Present
+- [ ] Acceptance criteria validated - ? 1/3 failing
+- [ ] Documentation updated - ? README updated
+- [x] No critical bugs - ? 2 critical issues found
 - [ ] Code merged to main - Blocked by issues
 
-**DoD Status**: ‚ùå NOT READY - 3 critical + 2 high issues MUST be fixed
+**DoD Status**: ? NOT READY - 3 critical + 2 high issues MUST be fixed
 
 ---
 
-## Verdict: ‚ùå REQUEST CHANGES
+## Verdict: ? REQUEST CHANGES
 
 **Reasoning**:
-Code has 2 **CRITICAL** security/stability issues (SQL injection, null reference) que DEVEM ser resolvidos antes de merge. Tamb√©m tem 2 **HIGH** priority performance/error handling issues que significantly impactam production quality.
+Code has 2 **CRITICAL** security/stability issues (SQL injection, null reference) que DEVEM ser resolvidos antes de merge. TambÈm tem 2 **HIGH** priority performance/error handling issues que significantly impactam production quality.
 
 **Required Actions**:
 1. Fix CRITICAL-1 (SQL injection) - 5 min
@@ -591,7 +591,7 @@ Code has 2 **CRITICAL** security/stability issues (SQL injection, null reference
 
 ## Auto-Fix Option
 
-**Offer**: "Eu posso fazer auto-fix dos 4 critical/high issues automaticamente. Quer que eu fa√ßa?"
+**Offer**: "Eu posso fazer auto-fix dos 4 critical/high issues automaticamente. Quer que eu faÁa?"
 
 Se developer aceitar:
 - Create branch `fix/code-review-ST-042`
@@ -603,84 +603,84 @@ Se developer aceitar:
 
 **Reviewer**: Carla QA  
 **Review Time**: 25 minutes  
-**Follow-up**: Re-review ap√≥s fixes (ETA: 4 hours)
+**Follow-up**: Re-review apÛs fixes (ETA: 4 hours)
 ```
 
 ---
 
-## üîó Integration Points
+## ?? Integration Points
 
 ### Prerequisites:
-- **dev-story** completed ‚Üí Story implementation done, code pushed
-- **Story file** (ST-XXX.md) ‚Üí For AC validation
-- **Architecture doc** (optional) ‚Üí For architecture compliance check
+- **dev-story** completed ? Story implementation done, code pushed
+- **Story file** (ST-XXX.md) ? For AC validation
+- **Architecture doc** (optional) ? For architecture compliance check
 
 ### Triggers code-review:
 - Developer completa story via `dev-story` workflow
 - Developer manually requests review: `avanade-method-bmm-code-review ST-042`
 
 ### Next Steps After Review:
-1. **If APPROVED** ‚Üí Merge to main, update story status to `completed`
-2. **If REQUEST CHANGES** ‚Üí Developer fixes, re-requests review
-3. **Auto-fix option** ‚Üí Reviewer pode fazer fixes autom√°ticos se developer aceitar
+1. **If APPROVED** ? Merge to main, update story status to `completed`
+2. **If REQUEST CHANGES** ? Developer fixes, re-requests review
+3. **Auto-fix option** ? Reviewer pode fazer fixes autom·ticos se developer aceitar
 
 ### Updates:
-- **sprint-status.yaml** ‚Üí Story status updated to `in-review` during review, `completed` when approved
-- **Story file** ‚Üí Status field updated
+- **sprint-status.yaml** ? Story status updated to `in-review` during review, `completed` when approved
+- **Story file** ? Status field updated
 
 ---
 
-## ‚úÖ Best Practices
+## ? Best Practices
 
 ### DO:
-- ‚úÖ **Be thorough** - SEMPRE encontrar 3-10 issues (se n√£o achou, procure mais)
-- ‚úÖ **Be specific** - Point to exact lines, show before/after code
-- ‚úÖ **Explain impact** - "Why this matters" (crash risk, security, performance)
-- ‚úÖ **Offer solutions** - N√£o s√≥ criticar, mostrar como fix
-- ‚úÖ **Prioritize issues** - Critical vs High vs Medium
-- ‚úÖ **Test coverage** - Checar se testes s√£o bons, n√£o s√≥ coverage %
-- ‚úÖ **Security mindset** - Assume inputs s√£o malicious
+- ? **Be thorough** - SEMPRE encontrar 3-10 issues (se n„o achou, procure mais)
+- ? **Be specific** - Point to exact lines, show before/after code
+- ? **Explain impact** - "Why this matters" (crash risk, security, performance)
+- ? **Offer solutions** - N„o sÛ criticar, mostrar como fix
+- ? **Prioritize issues** - Critical vs High vs Medium
+- ? **Test coverage** - Checar se testes s„o bons, n„o sÛ coverage %
+- ? **Security mindset** - Assume inputs s„o malicious
 
 ### DON'T:
-- ‚ùå **N√£o aprove sem issues** - Se n√£o achou nada, voc√™ n√£o procurou suficiente
-- ‚ùå **N√£o seja vago** - "This looks wrong" ‚Üí espec√≠fico "Null check missing line 45"
-- ‚ùå **N√£o ignore tests** - "Code works" n√£o √© suficiente, precisa tests
-- ‚ùå **N√£o skip security** - SQL injection, XSS s√£o CRITICAL
-- ‚ùå **N√£o accept "works on my machine"** - Edge cases, errors, performance matters
+- ? **N„o aprove sem issues** - Se n„o achou nada, vocÍ n„o procurou suficiente
+- ? **N„o seja vago** - "This looks wrong" ? especÌfico "Null check missing line 45"
+- ? **N„o ignore tests** - "Code works" n„o È suficiente, precisa tests
+- ? **N„o skip security** - SQL injection, XSS s„o CRITICAL
+- ? **N„o accept "works on my machine"** - Edge cases, errors, performance matters
 
 ---
 
-## üö® Common Pitfalls
+## ?? Common Pitfalls
 
 ### Pitfall 1: **Rubber Stamp Review ("LGTM")**
-**Sintoma**: Review r√°pido em 2 minutos, "Looks good to me!", approve  
-**Problema**: Bugs v√£o para production n√£o detectados  
-**Solu√ß√£o**: **Adversarial mindset** - assume code tem bugs, procure at√© encontrar
+**Sintoma**: Review r·pido em 2 minutos, "Looks good to me!", approve  
+**Problema**: Bugs v„o para production n„o detectados  
+**SoluÁ„o**: **Adversarial mindset** - assume code tem bugs, procure atÈ encontrar
 
 ### Pitfall 2: **Only Happy Path Review**
-**Sintoma**: Checa se c√≥digo funciona, n√£o checa error handling  
+**Sintoma**: Checa se cÛdigo funciona, n„o checa error handling  
 **Problema**: Production errors, crashes, data corruption  
-**Solu√ß√£o**: Perguntar "O que acontece se isso falhar?" para cada opera√ß√£o
+**SoluÁ„o**: Perguntar "O que acontece se isso falhar?" para cada operaÁ„o
 
 ### Pitfall 3: **Ignoring Tests**
 **Sintoma**: "Code coverage 65%, approve anyway"  
-**Problema**: Bugs n√£o detectados por tests, regressions no futuro  
-**Solu√ß√£o**: Test coverage >80% √© REQUIREMENT, n√£o suggestion
+**Problema**: Bugs n„o detectados por tests, regressions no futuro  
+**SoluÁ„o**: Test coverage >80% È REQUIREMENT, n„o suggestion
 
 ### Pitfall 4: **Missing Security Review**
 **Sintoma**: Review foca em code style, ignora SQL injection  
 **Problema**: Security vulnerabilities em production  
-**Solu√ß√£o**: Security checklist √© OBRIGAT√ìRIO (SQL injection, XSS, auth, secrets)
+**SoluÁ„o**: Security checklist È OBRIGAT”RIO (SQL injection, XSS, auth, secrets)
 
 ---
 
-## üí° Examples
+## ?? Examples
 
 ### Example: Good Review Finding
 
-**GOOD** ‚úÖ:
+**GOOD** ?:
 ```markdown
-### ‚ùå CRITICAL-1: SQL Injection Vulnerability
+### ? CRITICAL-1: SQL Injection Vulnerability
 **Location**: `UserService.cs:45`  
 **Issue**: User input concatenated into SQL query without sanitization
 ```csharp
@@ -689,7 +689,7 @@ var query = $"SELECT * FROM Users WHERE Username='{username}'";
 // If username = "admin' OR '1'='1", returns all users!
 ```
 **Impact**: 
-- Severity: üî¥ CRITICAL
+- Severity: ?? CRITICAL
 - Attacker pode bypass authentication, access all user data, delete records
 - OWASP Top 10 #1 vulnerability
 
@@ -703,17 +703,17 @@ cmd.Parameters.AddWithValue("@username", username);
 **Testing**: Add test `UserService_SqlInjectionAttempt_IsBlocked()`
 ```
 
-**BAD** ‚ùå:
+**BAD** ?:
 ```markdown
 ### Issue: Database query looks wrong
 Location: UserService.cs  
 Fix: Maybe use better query
 ```
-**Por que BAD**: Vago (qual linha?), n√£o explica problema (SQL injection?), n√£o mostra como fix, n√£o quantifica severity
+**Por que BAD**: Vago (qual linha?), n„o explica problema (SQL injection?), n„o mostra como fix, n„o quantifica severity
 
 ---
 
-## üìñ References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/4-implementation/code-review/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 20
@@ -726,8 +726,8 @@ Fix: Maybe use better query
 - ${AVANADE_TEST_PLAN_TEMPLATE} - Test planning reference
 
 **Related Workflows**:
-- `dev-story` ‚Üí Implements story (triggers code-review)
-- `sprint-status` ‚Üí Tracks story status (in-review, completed)
-- `correct-course` ‚Üí If major changes needed after review
+- `dev-story` ? Implements story (triggers code-review)
+- `sprint-status` ? Tracks story status (in-review, completed)
+- `correct-course` ? If major changes needed after review
 
 ---

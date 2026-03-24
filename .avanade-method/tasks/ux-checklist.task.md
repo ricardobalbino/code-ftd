@@ -1,57 +1,57 @@
-Ôªø## Objetivo
-Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design systems.
+## Objetivo
+Validar design de interfaces contra princÌpios de UX, acessibilidade e design systems.
 
 ---
 
-## üé® User Experience (UX) Principles
+## ?? User Experience (UX) Principles
 
 ### 1. User-Centered Design
-**Crit√©rio**: Design serve necessidades reais de usu√°rios, n√£o prefer√™ncias pessoais
+**CritÈrio**: Design serve necessidades reais de usu·rios, n„o preferÍncias pessoais
 
 **Checklist**:
 - [ ] **User Research**: Personas validadas ou user interviews realizadas
-- [ ] **User Journey**: Fluxo mapeado (in√≠cio ao fim)
-- [ ] **Pain Points**: Problemas atuais identificados e endere√ßados
-- [ ] **Jobs-to-be-Done**: "Quando [situa√ß√£o], quero [a√ß√£o], para que [benef√≠cio]"
+- [ ] **User Journey**: Fluxo mapeado (inÌcio ao fim)
+- [ ] **Pain Points**: Problemas atuais identificados e endereÁados
+- [ ] **Jobs-to-be-Done**: "Quando [situaÁ„o], quero [aÁ„o], para que [benefÌcio]"
 - [ ] **Success Metrics**: Como mediremos sucesso? (conversion, time-on-task, NPS)
 
 **Exemplo**:
 ```
-‚ùå Ruim: "Bot√£o azul porque eu gosto de azul"
-‚úÖ Bom: "Bot√£o azul porque teste A/B mostrou 12% mais convers√£o vs verde"
+? Ruim: "Bot„o azul porque eu gosto de azul"
+? Bom: "Bot„o azul porque teste A/B mostrou 12% mais convers„o vs verde"
 ```
 
 ---
 
 ### 2. Accessibility (Acessibilidade) - WCAG 2.1 AA
-**Crit√©rio**: Design utiliz√°vel por todos, incluindo pessoas com defici√™ncias
+**CritÈrio**: Design utiliz·vel por todos, incluindo pessoas com deficiÍncias
 
-#### ‚ôø Checklist WCAG AA
+#### ? Checklist WCAG AA
 
 **Visual**:
 - [ ] **Contraste**: Texto 4.5:1, UI components 3:1 (usar WebAIM Contrast Checker)
-- [ ] **Tamanho de fonte**: M√≠nimo 16px (body text)
-- [ ] **Zoom**: Conte√∫do leg√≠vel at√© 200% zoom sem scroll horizontal
-- [ ] **Cor n√£o √© √∫nica**: Informa√ß√£o n√£o depende apenas de cor (adicionar √≠cones, texto)
+- [ ] **Tamanho de fonte**: MÌnimo 16px (body text)
+- [ ] **Zoom**: Conte˙do legÌvel atÈ 200% zoom sem scroll horizontal
+- [ ] **Cor n„o È ˙nica**: InformaÁ„o n„o depende apenas de cor (adicionar Ìcones, texto)
 
 **Keyboard Navigation**:
-- [ ] **Tab order**: L√≥gico e sequencial
-- [ ] **Focus indicator**: Vis√≠vel (outline, highlight)
-- [ ] **Shortcuts**: Todos controles acess√≠veis via teclado
-- [ ] **Skip links**: "Pular para conte√∫do principal"
+- [ ] **Tab order**: LÛgico e sequencial
+- [ ] **Focus indicator**: VisÌvel (outline, highlight)
+- [ ] **Shortcuts**: Todos controles acessÌveis via teclado
+- [ ] **Skip links**: "Pular para conte˙do principal"
 
 **Screen Readers**:
-- [ ] **Alt text**: Todas imagens t√™m alt descritivo (ou alt="" se decorativa)
-- [ ] **ARIA labels**: Bot√µes/links t√™m labels claros (`aria-label`, `aria-labelledby`)
+- [ ] **Alt text**: Todas imagens tÍm alt descritivo (ou alt="" se decorativa)
+- [ ] **ARIA labels**: Botıes/links tÍm labels claros (`aria-label`, `aria-labelledby`)
 - [ ] **Landmarks**: `<header>`, `<nav>`, `<main>`, `<footer>`
-- [ ] **Headings**: Hierarquia l√≥gica (H1 ‚Üí H2 ‚Üí H3, sem pular n√≠veis)
+- [ ] **Headings**: Hierarquia lÛgica (H1 ? H2 ? H3, sem pular nÌveis)
 
 **Forms**:
 - [ ] **Labels**: Todo input tem `<label>` associado
-- [ ] **Error messages**: Espec√≠ficas ("Email inv√°lido" n√£o "Erro no campo 3")
+- [ ] **Error messages**: EspecÌficas ("Email inv·lido" n„o "Erro no campo 3")
 - [ ] **Required fields**: Marcados visualmente e com `aria-required`
 
-**Ferramentas de Valida√ß√£o**:
+**Ferramentas de ValidaÁ„o**:
 - axe DevTools (browser extension)
 - WAVE (webaim.org/wave)
 - Screen reader: NVDA (Windows), VoiceOver (Mac)
@@ -61,60 +61,60 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 ---
 
 ### 3. Usability (Usabilidade) - Nielsen's 10 Heuristics
-**Crit√©rio**: Interface √© intuitiva, eficiente, e satisfat√≥ria
+**CritÈrio**: Interface È intuitiva, eficiente, e satisfatÛria
 
-#### üìã 10 Heur√≠sticas
+#### ?? 10 HeurÌsticas
 
 **1. Visibility of System Status**
-- [ ] Loading indicators em opera√ß√µes >1s
-- [ ] Feedback visual em a√ß√µes (bot√£o clicado, item salvo)
+- [ ] Loading indicators em operaÁıes >1s
+- [ ] Feedback visual em aÁıes (bot„o clicado, item salvo)
 - [ ] Progress bars em processos longos
 
 **2. Match Between System and Real World**
-- [ ] Linguagem familiar (n√£o jarg√£o t√©cnico)
-- [ ] Met√°foras do mundo real (√≠cones reconhec√≠veis)
-- [ ] Ordem l√≥gica (formul√°rio segue fluxo mental do usu√°rio)
+- [ ] Linguagem familiar (n„o jarg„o tÈcnico)
+- [ ] Met·foras do mundo real (Ìcones reconhecÌveis)
+- [ ] Ordem lÛgica (formul·rio segue fluxo mental do usu·rio)
 
 **3. User Control and Freedom**
 - [ ] Undo/Redo
 - [ ] "Cancelar" em processos longos
-- [ ] F√°cil sair de estados indesejados
+- [ ] F·cil sair de estados indesejados
 
 **4. Consistency and Standards**
-- [ ] Bot√µes prim√°rios sempre mesma cor/posi√ß√£o
-- [ ] Terminologia consistente ("Salvar" vs "Gravar" ‚Üí escolher 1)
-- [ ] Seguir padr√µes de plataforma (iOS HIG, Material Design, Fluent)
+- [ ] Botıes prim·rios sempre mesma cor/posiÁ„o
+- [ ] Terminologia consistente ("Salvar" vs "Gravar" ? escolher 1)
+- [ ] Seguir padrıes de plataforma (iOS HIG, Material Design, Fluent)
 
 **5. Error Prevention**
-- [ ] Valida√ß√£o inline (n√£o s√≥ no submit)
-- [ ] Confirma√ß√£o em a√ß√µes destrutivas ("Tem certeza que deseja deletar?")
-- [ ] Desabilitar a√ß√µes inv√°lidas (bot√£o "Enviar" desabilitado se formul√°rio incompleto)
+- [ ] ValidaÁ„o inline (n„o sÛ no submit)
+- [ ] ConfirmaÁ„o em aÁıes destrutivas ("Tem certeza que deseja deletar?")
+- [ ] Desabilitar aÁıes inv·lidas (bot„o "Enviar" desabilitado se formul·rio incompleto)
 
 **6. Recognition Rather than Recall**
-- [ ] Op√ß√µes vis√≠veis (n√£o escondidas em menus profundos)
+- [ ] OpÁıes visÌveis (n„o escondidas em menus profundos)
 - [ ] Autocomplete em inputs
-- [ ] Tooltips em √≠cones
+- [ ] Tooltips em Ìcones
 - [ ] Recently used items
 
 **7. Flexibility and Efficiency of Use**
 - [ ] Keyboard shortcuts (Ctrl+S para salvar)
-- [ ] A√ß√µes em massa (selecionar m√∫ltiplos itens)
-- [ ] Templates/presets para usu√°rios avan√ßados
+- [ ] AÁıes em massa (selecionar m˙ltiplos itens)
+- [ ] Templates/presets para usu·rios avanÁados
 
 **8. Aesthetic and Minimalist Design**
-- [ ] Foco no essencial (remove elementos desnecess√°rios)
+- [ ] Foco no essencial (remove elementos desnecess·rios)
 - [ ] Whitespace adequado (evita sobrecarga visual)
-- [ ] Hierarquia visual clara (tamanhos, cores, espa√ßamento)
+- [ ] Hierarquia visual clara (tamanhos, cores, espaÁamento)
 
 **9. Help Users Recognize, Diagnose, and Recover from Errors**
-- [ ] Mensagens de erro claras ("Email inv√°lido: formato esperado exemplo@dominio.com")
-- [ ] Sugest√µes de corre√ß√£o ("Voc√™ quis dizer: usuario@gmail.com?")
+- [ ] Mensagens de erro claras ("Email inv·lido: formato esperado exemplo@dominio.com")
+- [ ] Sugestıes de correÁ„o ("VocÍ quis dizer: usuario@gmail.com?")
 - [ ] Highlight do campo com erro
 
 **10. Help and Documentation**
-- [ ] Contextual (ajuda onde usu√°rio precisa, n√£o p√°gina separada)
-- [ ] Busc√°vel
-- [ ] Exemplos visuais (screenshots, v√≠deos)
+- [ ] Contextual (ajuda onde usu·rio precisa, n„o p·gina separada)
+- [ ] Busc·vel
+- [ ] Exemplos visuais (screenshots, vÌdeos)
 - [ ] Concisa
 
 **Artifact completo**: ${AVANADE_TASK_USABILITY_HEURISTICS}
@@ -122,7 +122,7 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 ---
 
 ### 4. Fluent Design System (Microsoft)
-**Crit√©rio**: Segue padr√µes do Fluent Design System
+**CritÈrio**: Segue padrıes do Fluent Design System
 
 **Checklist**:
 - [ ] **Typography**: Fluent typefaces (Segoe UI, Roboto)
@@ -130,14 +130,14 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 - [ ] **Spacing**: 4px/8px grid system
 - [ ] **Components**: Usar Fluent UI components (Button, Input, Card, etc.)
 - [ ] **Icons**: Fluent Icons library
-- [ ] **Motion**: Subtle animations (dura√ß√£o 200-300ms)
+- [ ] **Motion**: Subtle animations (duraÁ„o 200-300ms)
 
 **Resources**:
 - Fluent UI: fluent2.microsoft.design
 - Fluent Icons: aka.ms/fluentui-icons
 - Color tokens: ${AVANADE_FLUENT_DESIGN_GUIDELINES}
 
-**Componentes Obrigat√≥rios**:
+**Componentes ObrigatÛrios**:
 - **Buttons**: Primary, Secondary, Tertiary hierarchy
 - **Forms**: Input, Select, Checkbox, Radio
 - **Feedback**: Toast, Dialog, Progress
@@ -146,7 +146,7 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 ---
 
 ### 5. Responsive Design
-**Crit√©rio**: Design funciona em todos dispositivos/tamanhos de tela
+**CritÈrio**: Design funciona em todos dispositivos/tamanhos de tela
 
 **Breakpoints** (Fluent):
 - Mobile: <640px
@@ -154,9 +154,9 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 - Desktop: >1024px
 
 **Checklist**:
-- [ ] **Mobile-first**: Design come√ßa em mobile, expande para desktop
-- [ ] **Touch targets**: M√≠nimo 44x44px (iOS) ou 48x48px (Android)
-- [ ] **Readable text**: Sem zoom necess√°rio
+- [ ] **Mobile-first**: Design comeÁa em mobile, expande para desktop
+- [ ] **Touch targets**: MÌnimo 44x44px (iOS) ou 48x48px (Android)
+- [ ] **Readable text**: Sem zoom necess·rio
 - [ ] **Navigation**: Hamburger menu em mobile, navbar em desktop
 - [ ] **Tables**: Responsivas (scroll horizontal ou cards em mobile)
 - [ ] **Images**: Responsive (`max-width: 100%`)
@@ -168,29 +168,29 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 ---
 
 ### 6. Performance (Perceived Performance)
-**Crit√©rio**: Interface **parece** r√°pida mesmo se backend √© lento
+**CritÈrio**: Interface **parece** r·pida mesmo se backend È lento
 
 **Checklist**:
 - [ ] **Skeleton screens**: Placeholders enquanto carrega
 - [ ] **Optimistic UI**: Atualizar UI imediatamente (assumindo sucesso)
-- [ ] **Progressive loading**: Mostrar conte√∫do √† medida que carrega
+- [ ] **Progressive loading**: Mostrar conte˙do ‡ medida que carrega
 - [ ] **Lazy loading**: Imagens/componentes fora da viewport carregam depois
-- [ ] **Debounce**: Search input n√£o dispara request a cada tecla
+- [ ] **Debounce**: Search input n„o dispara request a cada tecla
 
 **Exemplos**:
 ```
-‚ùå Ruim: Loading spinner por 5s
-‚úÖ Bom: Skeleton screen mostra estrutura enquanto carrega dados
+? Ruim: Loading spinner por 5s
+? Bom: Skeleton screen mostra estrutura enquanto carrega dados
 
-‚ùå Ruim: Bot√£o "Curtir" espera resposta da API para mudar
-‚úÖ Bom: Bot√£o muda imediatamente (optimistic), reverte se API falhar
+? Ruim: Bot„o "Curtir" espera resposta da API para mudar
+? Bom: Bot„o muda imediatamente (optimistic), reverte se API falhar
 ```
 
 ---
 
-## üìä Scoring System
+## ?? Scoring System
 
-**Pontua√ß√£o por categoria** (0-5):
+**PontuaÁ„o por categoria** (0-5):
 - User-Centered Design: /5
 - Accessibility (WCAG AA): /5
 - Usability (Nielsen): /5
@@ -200,16 +200,16 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 
 **Total: /30**
 
-**Interpreta√ß√£o**:
-- **25-30**: ‚úÖ Excelente UX - Production-Ready
-- **20-24**: üü¢ Boa UX - Melhorias menores
-- **15-19**: üü° UX Adequada - Revisar gaps
-- **10-14**: üü† UX Problem√°tica - Refazer partes
-- **0-9**: üî¥ UX Inadequada - Redesign necess√°rio
+**InterpretaÁ„o**:
+- **25-30**: ? Excelente UX - Production-Ready
+- **20-24**: ?? Boa UX - Melhorias menores
+- **15-19**: ?? UX Adequada - Revisar gaps
+- **10-14**: ?? UX Problem·tica - Refazer partes
+- **0-9**: ?? UX Inadequada - Redesign necess·rio
 
 ---
 
-## üéØ Deliverables (Artefatos de Design)
+## ?? Deliverables (Artefatos de Design)
 
 ### Wireframes
 - [ ] Low-fi (sketches, papel)
@@ -238,12 +238,12 @@ Validar design de interfaces contra princ√≠pios de UX, acessibilidade e design s
 
 ---
 
-## üîó Integra√ß√£o com Metodologia Avanade
+## ?? IntegraÁ„o com Metodologia Avanade
 
-- **Pr√©-requisito**: Requirements/User Stories definidas
-- **Valida√ß√£o UX**: ${AVANADE_TASK_USABILITY_HEURISTICS}
-- **Valida√ß√£o Acessibilidade**: ${AVANADE_TASK_ACCESSIBILITY_WCAG}
-- **Valida√ß√£o Adversarial**: ${AVANADE_TASK_ADVERSARIAL_REVIEW}
+- **PrÈ-requisito**: Requirements/User Stories definidas
+- **ValidaÁ„o UX**: ${AVANADE_TASK_USABILITY_HEURISTICS}
+- **ValidaÁ„o Acessibilidade**: ${AVANADE_TASK_ACCESSIBILITY_WCAG}
+- **ValidaÁ„o Adversarial**: ${AVANADE_TASK_ADVERSARIAL_REVIEW}
 - **Template**: ${AVANADE_WIREFRAME_TEMPLATE}
-- **Mem√≥ria**: ${AVANADE_MEMORY_UX_SOFIA}
+- **MemÛria**: ${AVANADE_MEMORY_UX_SOFIA}
 

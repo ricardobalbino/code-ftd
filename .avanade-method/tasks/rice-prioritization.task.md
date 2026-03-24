@@ -1,37 +1,37 @@
-Ôªø## üìã O que √© este Artefato?
+## ?? O que È este Artefato?
 
-Este √© o **framework de prioriza√ß√£o RICE** usado na Avanade Method para tomar decis√µes objetivas sobre o que construir primeiro. RICE combina:
-- **R**each: Quantas pessoas/usu√°rios impacta por per√≠odo?
-- **I**mpact: Qu√£o significativo √© o impacto por usu√°rio?
-- **C**onfidence: Qual nosso n√≠vel de certeza sobre Reach/Impact/Effort?
-- **E**ffort: Quanto tempo/recursos necess√°rios?
+Este È o **framework de priorizaÁ„o RICE** usado na Avanade Method para tomar decisıes objetivas sobre o que construir primeiro. RICE combina:
+- **R**each: Quantas pessoas/usu·rios impacta por perÌodo?
+- **I**mpact: Qu„o significativo È o impacto por usu·rio?
+- **C**onfidence: Qual nosso nÌvel de certeza sobre Reach/Impact/Effort?
+- **E**ffort: Quanto tempo/recursos necess·rios?
 
-**F√≥rmula**: `RICE Score = (Reach √ó Impact √ó Confidence) / Effort`
+**FÛrmula**: `RICE Score = (Reach ◊ Impact ◊ Confidence) / Effort`
 
 ---
 
-## üéØ Quando Usar
+## ?? Quando Usar
 
-### ‚úÖ USE para:
+### ? USE para:
 - Priorizar features no backlog (P0 vs P1 vs P2)
-- Decidir entre m√∫ltiplas iniciativas competindo por recursos
+- Decidir entre m˙ltiplas iniciativas competindo por recursos
 - Validar se "hot request" de stakeholder merece prioridade imediata
-- Comunicar decis√µes de prioriza√ß√£o de forma objetiva
+- Comunicar decisıes de priorizaÁ„o de forma objetiva
 - Roadmap planning (O que vai em Q1 vs Q2 vs Q3?)
 
-### ‚ùå N√ÉO USE para:
-- Bugs cr√≠ticos de produ√ß√£o (P0 sempre, sem RICE)
-- Compliance requirements (obrigat√≥rios, sem escolha)
-- Decis√µes estrat√©gicas top-down (CEO mandates)
-- Features j√° comprometidas com clientes enterprise
+### ? N√O USE para:
+- Bugs crÌticos de produÁ„o (P0 sempre, sem RICE)
+- Compliance requirements (obrigatÛrios, sem escolha)
+- Decisıes estratÈgicas top-down (CEO mandates)
+- Features j· comprometidas com clientes enterprise
 
 ---
 
-## üìä Como Calcular RICE Score
+## ?? Como Calcular RICE Score
 
-### Step 1: Estimar REACH (Quantas pessoas por per√≠odo)
+### Step 1: Estimar REACH (Quantas pessoas por perÌodo)
 
-**Defini√ß√£o**: Quantos usu√°rios/customers ser√£o impactados pelo feature no per√≠odo de tempo escolhido (geralmente quarter)?
+**DefiniÁ„o**: Quantos usu·rios/customers ser„o impactados pelo feature no perÌodo de tempo escolhido (geralmente quarter)?
 
 **Fontes de dados:**
 - Analytics (MAU, DAU)
@@ -43,13 +43,13 @@ Este √© o **framework de prioriza√ß√£o RICE** usado na Avanade Method para tomar
 ```yaml
 feature: "Export Automation"
 reach:
-  calculation: "100 enterprise customers √ó 5 users/customer = 500 users/quarter"
+  calculation: "100 enterprise customers ◊ 5 users/customer = 500 users/quarter"
   source: "Salesforce customer data + usage analytics"
   value: 500
 
 feature: "Dark Mode"
 reach:
-  calculation: "10,000 MAU √ó 60% interested (survey) = 6,000 users/quarter"
+  calculation: "10,000 MAU ◊ 60% interested (survey) = 6,000 users/quarter"
   source: "User survey (n=500, 60% said 'would use dark mode')"
   value: 6000
 
@@ -60,61 +60,61 @@ reach:
   value: 50
 ```
 
-**‚ö†Ô∏è Importante**: Escolha per√≠odo consistente (month vs quarter vs year). **Recomendado: quarter** para balancear short-term e long-term.
+**?? Importante**: Escolha perÌodo consistente (month vs quarter vs year). **Recomendado: quarter** para balancear short-term e long-term.
 
 ---
 
-### Step 2: Estimar IMPACT (Qual tamanho do impacto por usu√°rio)
+### Step 2: Estimar IMPACT (Qual tamanho do impacto por usu·rio)
 
-**Defini√ß√£o**: Quanto cada usu√°rio individual se beneficia? Escala de 0.25 a 3:
+**DefiniÁ„o**: Quanto cada usu·rio individual se beneficia? Escala de 0.25 a 3:
 
-| Score | Label    | Descri√ß√£o | Exemplo |
+| Score | Label    | DescriÁ„o | Exemplo |
 |-------|----------|-----------|---------|
-| **3** | Massive  | Muda completamente como usu√°rio trabalha, game-changer | Automa√ß√£o que elimina 2h/dia de trabalho manual |
-| **2** | High     | Melhoria significativa, usu√°rio nota claramente | Reduz tarefa de 30min para 5min |
-| **1** | Medium   | Melhoria moderada, usu√°rio percebe mas n√£o √© transformador | Adiciona atalho de teclado √∫til |
+| **3** | Massive  | Muda completamente como usu·rio trabalha, game-changer | AutomaÁ„o que elimina 2h/dia de trabalho manual |
+| **2** | High     | Melhoria significativa, usu·rio nota claramente | Reduz tarefa de 30min para 5min |
+| **1** | Medium   | Melhoria moderada, usu·rio percebe mas n„o È transformador | Adiciona atalho de teclado ˙til |
 | **0.5** | Low    | Pequena melhoria, "nice to have" | Tooltip mais descritivo |
-| **0.25** | Minimal | Quase impercept√≠vel, polimento | Ajuste de padding de 8px para 12px |
+| **0.25** | Minimal | Quase imperceptÌvel, polimento | Ajuste de padding de 8px para 12px |
 
-**Exemplos pr√°ticos:**
+**Exemplos pr·ticos:**
 ```yaml
 feature: "Export Automation"
 impact:
   score: 3  # Massive
   reasoning: |
     Reduz 1.8h/dia de trabalho manual para 15min.
-    Elimina 40% error rate (dados cr√≠ticos).
-    ROI mensur√°vel: $120k/ano em time savings.
+    Elimina 40% error rate (dados crÌticos).
+    ROI mensur·vel: $120k/ano em time savings.
   source: "User interviews (n=12), time tracking data"
 
 feature: "Dark Mode"
 impact:
   score: 0.5  # Low
   reasoning: |
-    Prefer√™ncia est√©tica, n√£o melhora produtividade.
-    Reduz eyestrain para alguns usu√°rios (hard to quantify).
+    PreferÍncia estÈtica, n„o melhora produtividade.
+    Reduz eyestrain para alguns usu·rios (hard to quantify).
   source: "User survey feedback"
 
 feature: "Real-time Collaboration (Google Docs-like)"
 impact:
   score: 2  # High
   reasoning: |
-    Elimina back-and-forth de emails/Slack para edi√ß√£o.
-    Reduz conflitos de vers√£o de 30% para <5%.
+    Elimina back-and-forth de emails/Slack para ediÁ„o.
+    Reduz conflitos de vers„o de 30% para <5%.
   source: "Benchmark de competidores + user pain points"
 ```
 
-**Dica**: Se em d√∫vida entre dois scores, escolha o menor (conservative estimate).
+**Dica**: Se em d˙vida entre dois scores, escolha o menor (conservative estimate).
 
 ---
 
 ### Step 3: Estimar CONFIDENCE (Certeza sobre Reach/Impact/Effort)
 
-**Defini√ß√£o**: Qu√£o confiantes estamos nos dados de Reach, Impact e Effort? Escala de 0% a 100%:
+**DefiniÁ„o**: Qu„o confiantes estamos nos dados de Reach, Impact e Effort? Escala de 0% a 100%:
 
 | Score | Label | Quando Usar |
 |-------|-------|-------------|
-| **100%** | High Confidence | Dados s√≥lidos (analytics, A/B tests, produ√ß√£o) |
+| **100%** | High Confidence | Dados sÛlidos (analytics, A/B tests, produÁ„o) |
 | **80%** | Medium Confidence | Pesquisa qualitativa boa (interviews, surveys n>50) |
 | **50%** | Low Confidence | Assumptions educadas, dados limitados |
 
@@ -125,9 +125,9 @@ confidence:
   score: 80%  # Medium-High
   reasoning: |
     Reach: 100% (dados exatos de Salesforce)
-    Impact: 80% (time tracking + interviews, n√£o A/B test)
-    Effort: 70% (estimativa de engineering, n√£o prototipado)
-    Average: 83% ‚Üí round to 80%
+    Impact: 80% (time tracking + interviews, n„o A/B test)
+    Effort: 70% (estimativa de engineering, n„o prototipado)
+    Average: 83% ? round to 80%
   data_quality:
     reach: "High (exact analytics)"
     impact: "Medium (user research, no A/B test)"
@@ -137,87 +137,87 @@ feature: "AI-Powered Recommendations"
 confidence:
   score: 50%  # Low
   reasoning: |
-    Reach: 80% (analytics s√≥lidos)
-    Impact: 30% (n√£o sabemos se usu√°rios confiar√£o em AI)
+    Reach: 80% (analytics sÛlidos)
+    Impact: 30% (n„o sabemos se usu·rios confiar„o em AI)
     Effort: 40% (nova tecnologia, muitas unknowns)
     Average: 50%
   data_quality:
     reach: "High"
-    impact: "Low (hypothesis n√£o validada)"
+    impact: "Low (hypothesis n„o validada)"
     effort: "Low (technical spike needed)"
 ```
 
 **Red flags para LOW confidence (<50%):**
-- üö© Nenhuma user research feita
-- üö© Tecnologia nova sem experi√™ncia de equipe
-- üö© Estimativas de effort baseadas em "gut feeling"
-- üö© Impact √© "achismo" sem dados
+- ?? Nenhuma user research feita
+- ?? Tecnologia nova sem experiÍncia de equipe
+- ?? Estimativas de effort baseadas em "gut feeling"
+- ?? Impact È "achismo" sem dados
 
 **Como aumentar confidence:**
-- ‚úÖ Fazer user interviews/surveys
-- ‚úÖ Rodar technical spike (proof of concept)
-- ‚úÖ Analisar competidores (benchmarking)
-- ‚úÖ A/B test ou prototype antes de commit
+- ? Fazer user interviews/surveys
+- ? Rodar technical spike (proof of concept)
+- ? Analisar competidores (benchmarking)
+- ? A/B test ou prototype antes de commit
 
 ---
 
 ### Step 4: Estimar EFFORT (Pessoa-meses de trabalho)
 
-**Defini√ß√£o**: Quanto trabalho total (todas equipes) necess√°rio para lan√ßar feature? Unidade: **person-months** (1 pessoa em tempo integral por 1 m√™s).
+**DefiniÁ„o**: Quanto trabalho total (todas equipes) necess·rio para lanÁar feature? Unidade: **person-months** (1 pessoa em tempo integral por 1 mÍs).
 
-**Inclua no c√°lculo:**
+**Inclua no c·lculo:**
 - Development (frontend + backend)
 - Design (UX research, wireframes, visual design)
 - QA (test planning, automation, manual testing)
 - DevOps (infra, monitoring, deployment)
 - PM (coordination, documentation)
-- Post-launch support (30 dias ap√≥s GA)
+- Post-launch support (30 dias apÛs GA)
 
-**Exemplos de c√°lculo:**
+**Exemplos de c·lculo:**
 ```yaml
 feature: "Export Automation"
 effort:
   breakdown:
-    backend_dev: 1.5  # 1 dev √ó 1.5 months
-    frontend_dev: 1.0  # 1 dev √ó 1 month
-    ux_design: 0.5    # 1 designer √ó 0.5 month
-    qa: 0.5           # 1 QA √ó 0.5 month
-    devops: 0.3       # 1 DevOps √ó 0.3 month (infra setup)
-    pm: 0.2           # 1 PM √ó 0.2 month (coordination)
+    backend_dev: 1.5  # 1 dev ◊ 1.5 months
+    frontend_dev: 1.0  # 1 dev ◊ 1 month
+    ux_design: 0.5    # 1 designer ◊ 0.5 month
+    qa: 0.5           # 1 QA ◊ 0.5 month
+    devops: 0.3       # 1 DevOps ◊ 0.3 month (infra setup)
+    pm: 0.2           # 1 PM ◊ 0.2 month (coordination)
   total: 4.0  # person-months
   calendar_time: "6 weeks (with parallel work)"
   assumptions:
-    - "Team dispon√≠vel (n√£o bloqueado por dependencies)"
-    - "Scope n√£o cresce (no scope creep)"
-    - "Technical spike j√° foi feito"
+    - "Team disponÌvel (n„o bloqueado por dependencies)"
+    - "Scope n„o cresce (no scope creep)"
+    - "Technical spike j· foi feito"
 
 feature: "UI Polishing (buttons, spacing, colors)"
 effort:
   breakdown:
-    frontend_dev: 0.3  # 1 dev √ó 0.3 month (1.5 weeks)
-    ux_design: 0.2     # 1 designer √ó 0.2 month
-    qa: 0.1            # 1 QA √ó 0.1 month (quick regression)
+    frontend_dev: 0.3  # 1 dev ◊ 0.3 month (1.5 weeks)
+    ux_design: 0.2     # 1 designer ◊ 0.2 month
+    qa: 0.1            # 1 QA ◊ 0.1 month (quick regression)
   total: 0.6  # person-months
   calendar_time: "2 weeks"
 ```
 
-**‚ö†Ô∏è Armadilhas comuns:**
+**?? Armadilhas comuns:**
 ```
-‚ùå Subestimar: "Engineering disse 2 weeks" ‚Üí Esquecer design, QA, DevOps
-‚úÖ Incluir tudo: Engineering (2w) + Design (1w) + QA (0.5w) + DevOps (0.5w) = 1 month
+? Subestimar: "Engineering disse 2 weeks" ? Esquecer design, QA, DevOps
+? Incluir tudo: Engineering (2w) + Design (1w) + QA (0.5w) + DevOps (0.5w) = 1 month
 
-‚ùå Confundir calendar time com person-months:
-   "3 devs v√£o fazer em 1 month" ‚Üí Effort = 3 person-months (n√£o 1!)
+? Confundir calendar time com person-months:
+   "3 devs v„o fazer em 1 month" ? Effort = 3 person-months (n„o 1!)
 
-‚ùå Ignorar post-launch:
-   "Feature pronto" ‚Üí Esquecer bug fixes, monitoring, documenta√ß√£o
+? Ignorar post-launch:
+   "Feature pronto" ? Esquecer bug fixes, monitoring, documentaÁ„o
 ```
 
 ---
 
 ### Step 5: Calcular RICE Score Final
 
-**F√≥rmula**: `RICE Score = (Reach √ó Impact √ó Confidence) / Effort`
+**FÛrmula**: `RICE Score = (Reach ◊ Impact ◊ Confidence) / Effort`
 
 **Exemplo completo:**
 ```yaml
@@ -228,27 +228,27 @@ impact: 3   # Massive (3.0)
 confidence: 0.8  # 80%
 effort: 4.0  # person-months
 
-rice_score: (500 √ó 3 √ó 0.8) / 4.0 = 1200 / 4 = 300
+rice_score: (500 ◊ 3 ◊ 0.8) / 4.0 = 1200 / 4 = 300
 
-interpretation: "300 √© ALTO ‚Üí Prioridade P0"
+interpretation: "300 È ALTO ? Prioridade P0"
 ```
 
 ---
 
-## üèÜ Interpreta√ß√£o de RICE Scores
+## ?? InterpretaÁ„o de RICE Scores
 
 ### Score Ranges (Guia Geral)
 
-| RICE Score | Prioridade | A√ß√£o Recomendada |
+| RICE Score | Prioridade | AÁ„o Recomendada |
 |------------|-----------|------------------|
-| **>100** | üî• **P0 - Critical** | Roadmap imediato, come√ßa pr√≥ximo sprint |
-| **50-100** | ‚ö° **P1 - High** | Pr√≥ximo quarter, planning j√° |
-| **20-50** | ‚≠ï **P2 - Medium** | Backlog, considerar para futuro |
-| **<20** | üîµ **P3 - Low** | Ice box, apenas se tiver spare capacity |
+| **>100** | ?? **P0 - Critical** | Roadmap imediato, comeÁa prÛximo sprint |
+| **50-100** | ? **P1 - High** | PrÛximo quarter, planning j· |
+| **20-50** | ? **P2 - Medium** | Backlog, considerar para futuro |
+| **<20** | ?? **P3 - Low** | Ice box, apenas se tiver spare capacity |
 
-**‚ö†Ô∏è Importante**: Ranges s√£o relativos ao seu contexto. Calibre com sua equipe!
+**?? Importante**: Ranges s„o relativos ao seu contexto. Calibre com sua equipe!
 
-### Exemplos de Compara√ß√£o
+### Exemplos de ComparaÁ„o
 
 ```yaml
 features:
@@ -257,7 +257,7 @@ features:
     impact: 3
     confidence: 0.8
     effort: 4.0
-    rice: 300  # üî• P0
+    rice: 300  # ?? P0
     reasoning: "High impact, feasible effort, clear user need"
   
   - name: "Real-time Collaboration"
@@ -265,7 +265,7 @@ features:
     impact: 2
     confidence: 0.5
     effort: 12.0
-    rice: 167  # üî• P0
+    rice: 167  # ?? P0
     reasoning: "Massive reach, mas effort alto e confidence baixa (risk!)"
   
   - name: "Dark Mode"
@@ -273,7 +273,7 @@ features:
     impact: 0.5
     confidence: 1.0
     effort: 2.0
-    rice: 1500  # üî•üî• P0+
+    rice: 1500  # ???? P0+
     reasoning: "Reach enorme, effort baixo, easy win!"
   
   - name: "Advanced Analytics Dashboard"
@@ -281,28 +281,28 @@ features:
     impact: 2
     confidence: 0.8
     effort: 8.0
-    rice: 10  # üîµ P3
-    reasoning: "Reach muito baixo (s√≥ admins), effort alto, n√£o justifica"
+    rice: 10  # ?? P3
+    reasoning: "Reach muito baixo (sÛ admins), effort alto, n„o justifica"
   
   - name: "Keyboard Shortcuts"
     reach: 3000
     impact: 1
     confidence: 1.0
     effort: 1.0
-    rice: 3000  # üî•üî•üî• P0 (QUICK WIN!)
-    reasoning: "Reach grande, effort m√≠nimo, confidence alta = LOW-HANGING FRUIT"
+    rice: 3000  # ?????? P0 (QUICK WIN!)
+    reasoning: "Reach grande, effort mÌnimo, confidence alta = LOW-HANGING FRUIT"
 
 sorted_by_rice:
-  1. "Keyboard Shortcuts (3000)" ‚Üí DO FIRST (quick win)
-  2. "Dark Mode (1500)" ‚Üí DO SECOND (quick win)
-  3. "Export Automation (300)" ‚Üí DO THIRD (high value)
-  4. "Real-time Collaboration (167)" ‚Üí SPIKE FIRST (reduce confidence risk)
-  5. "Advanced Analytics Dashboard (10)" ‚Üí DEPRIORITIZE
+  1. "Keyboard Shortcuts (3000)" ? DO FIRST (quick win)
+  2. "Dark Mode (1500)" ? DO SECOND (quick win)
+  3. "Export Automation (300)" ? DO THIRD (high value)
+  4. "Real-time Collaboration (167)" ? SPIKE FIRST (reduce confidence risk)
+  5. "Advanced Analytics Dashboard (10)" ? DEPRIORITIZE
 ```
 
 ---
 
-## üéØ Como Usar RICE no Workflow de PM
+## ?? Como Usar RICE no Workflow de PM
 
 ### Workflow Completo
 
@@ -335,13 +335,13 @@ step_3_validation:
 step_4_roadmap_planning:
   action: "Montar roadmap baseado em RICE"
   tasks:
-    - "P0 features ‚Üí Q1 2025"
-    - "P1 features ‚Üí Q2 2025"
-    - "P2 features ‚Üí Backlog"
+    - "P0 features ? Q1 2025"
+    - "P1 features ? Q2 2025"
+    - "P2 features ? Backlog"
   output: "Roadmap quantitativo com RICE justifications"
 
 step_5_retrospective:
-  action: "Validar RICE predictions p√≥s-launch"
+  action: "Validar RICE predictions pÛs-launch"
   tasks:
     - "Reach real vs estimado?"
     - "Impact real vs estimado?"
@@ -351,16 +351,16 @@ step_5_retrospective:
 
 ---
 
-## üìù Template para C√°lculo RICE
+## ?? Template para C·lculo RICE
 
 ```yaml
 feature: "[Nome do Feature]"
 
 # ===== INPUTS =====
 reach:
-  value: [n√∫mero]
+  value: [n˙mero]
   period: "quarter | month | year"
-  calculation: "[Mostrar c√°lculo - ex: 100 customers √ó 5 users = 500]"
+  calculation: "[Mostrar c·lculo - ex: 100 customers ◊ 5 users = 500]"
   source: "[Analytics, survey, sales data]"
   notes: "[Assumptions importantes]"
 
@@ -368,9 +368,9 @@ impact:
   value: [0.25 | 0.5 | 1 | 2 | 3]
   label: "[Minimal | Low | Medium | High | Massive]"
   reasoning: |
-    [Por que esse score? Qual benef√≠cio concreto?]
+    [Por que esse score? Qual benefÌcio concreto?]
   source: "[User interviews, A/B test, benchmarks]"
-  notes: "[Se em d√∫vida entre dois scores, qual escolheu e por qu√™]"
+  notes: "[Se em d˙vida entre dois scores, qual escolheu e por quÍ]"
 
 confidence:
   value: [0.50 | 0.80 | 1.00]
@@ -381,7 +381,7 @@ confidence:
     effort_confidence: "[Low | Medium | High]"
   reasoning: |
     [Qual qualidade dos dados? O que aumentaria confidence?]
-  data_quality: "[√ìtima | Boa | Fraca]"
+  data_quality: "[”tima | Boa | Fraca]"
 
 effort:
   value: [person-months]
@@ -400,13 +400,13 @@ effort:
 
 # ===== OUTPUT =====
 rice_score:
-  calculation: "(reach √ó impact √ó confidence) / effort"
-  value: [n√∫mero calculado]
-  formula_filled: "([reach] √ó [impact] √ó [confidence]) / [effort] = [score]"
+  calculation: "(reach ◊ impact ◊ confidence) / effort"
+  value: [n˙mero calculado]
+  formula_filled: "([reach] ◊ [impact] ◊ [confidence]) / [effort] = [score]"
 
 priority:
   level: "P0 | P1 | P2 | P3"
-  reasoning: "[Por que esse n√≠vel de prioridade?]"
+  reasoning: "[Por que esse nÌvel de prioridade?]"
   recommended_action: "[Roadmap Q1, Backlog, Ice Box, etc]"
 
 # ===== METADATA =====
@@ -427,7 +427,7 @@ metadata:
 
 ---
 
-## üîç Exemplos Reais Preenchidos
+## ?? Exemplos Reais Preenchidos
 
 ### Exemplo 1: Feature de Alto Impacto
 
@@ -437,7 +437,7 @@ feature: "Automated Data Export System"
 reach:
   value: 500
   period: "quarter"
-  calculation: "100 enterprise customers √ó 5 data analysts/customer = 500 users/quarter"
+  calculation: "100 enterprise customers ◊ 5 data analysts/customer = 500 users/quarter"
   source: "Salesforce customer data + user role analytics (Jan 2025)"
   notes: "Conservative estimate - only counting active data analysts, not occasional users"
 
@@ -447,23 +447,23 @@ impact:
   reasoning: |
     Current state: 1.8h/day manual exports com 40% error rate
     Future state: 15min/day automated com <5% error rate
-    Time savings: 1.65h/day √ó 500 users √ó $50/hour = $412k/year
+    Time savings: 1.65h/day ◊ 500 users ◊ $50/hour = $412k/year
     Error reduction: Critical business data accuracy improved
   source: "User interviews (n=12), time tracking study (n=50), error logs analysis"
-  notes: "Scored 3 (Massive) porque √© game-changer para workflow di√°rio"
+  notes: "Scored 3 (Massive) porque È game-changer para workflow di·rio"
 
 confidence:
   value: 0.80
   label: "Medium-High"
   breakdown:
     reach_confidence: "High (exact data from Salesforce)"
-    impact_confidence: "Medium (user research s√≥lido, mas n√£o A/B tested)"
-    effort_confidence: "Medium (estimation de engineering, sem spike t√©cnico)"
+    impact_confidence: "Medium (user research sÛlido, mas n„o A/B tested)"
+    effort_confidence: "Medium (estimation de engineering, sem spike tÈcnico)"
   reasoning: |
     Reach: 100% confidence (dados exatos)
-    Impact: 70% confidence (user research + analytics, n√£o production test)
+    Impact: 70% confidence (user research + analytics, n„o production test)
     Effort: 80% confidence (similar features antes, mas nova tech stack)
-    Average: ~83% ‚Üí Rounded to 80%
+    Average: ~83% ? Rounded to 80%
   data_quality: "Boa (mix de quantitativo e qualitativo)"
 
 effort:
@@ -477,35 +477,35 @@ effort:
     pm: 0.2       # Coordination, documentation
   calendar_time: "6 weeks (com work paralelo)"
   assumptions:
-    - "Team dispon√≠vel (2 backend devs, 1 frontend, 1 designer, 1 QA)"
+    - "Team disponÌvel (2 backend devs, 1 frontend, 1 designer, 1 QA)"
     - "Dependencies prontas (Auth Service, Data Warehouse)"
-    - "No scope creep (scope locked ap√≥s PRD approval)"
-  notes: "Inclui 2 semanas de buffer para bug fixes p√≥s-launch"
+    - "No scope creep (scope locked apÛs PRD approval)"
+  notes: "Inclui 2 semanas de buffer para bug fixes pÛs-launch"
 
 rice_score:
-  calculation: "(reach √ó impact √ó confidence) / effort"
+  calculation: "(reach ◊ impact ◊ confidence) / effort"
   value: 300
-  formula_filled: "(500 √ó 3 √ó 0.8) / 4.0 = 1200 / 4 = 300"
+  formula_filled: "(500 ◊ 3 ◊ 0.8) / 4.0 = 1200 / 4 = 300"
 
 priority:
   level: "P0"
   reasoning: |
-    RICE 300 √© alto score. Combina√ß√£o de:
+    RICE 300 È alto score. CombinaÁ„o de:
     - High reach (500 users)
-    - Massive impact (transforma workflow di√°rio)
-    - Reasonable effort (4 months vi√°vel)
+    - Massive impact (transforma workflow di·rio)
+    - Reasonable effort (4 months vi·vel)
     - Strong business case ($412k/year ROI)
-  recommended_action: "Roadmap para Q1 2025, come√ßar desenvolvimento em pr√≥ximo sprint"
+  recommended_action: "Roadmap para Q1 2025, comeÁar desenvolvimento em prÛximo sprint"
 
 metadata:
-  author: "Jo√£o Silva (PM)"
+  author: "Jo„o Silva (PM)"
   date: "2025-02-03"
   status: "Approved"
   reviewers:
     - name: "Wilson Souza (Engineering Lead)"
       role: "Technical Feasibility"
       approved: true
-      comments: "Effort estimate razo√°vel, arquitetura validada"
+      comments: "Effort estimate razo·vel, arquitetura validada"
     - name: "Maria Oliveira (VP Product)"
       role: "Business Value"
       approved: true
@@ -526,7 +526,7 @@ feature: "Keyboard Shortcuts for Common Actions"
 reach:
   value: 3000
   period: "quarter"
-  calculation: "10,000 MAU √ó 30% power users = 3,000 users/quarter"
+  calculation: "10,000 MAU ◊ 30% power users = 3,000 users/quarter"
   source: "Mixpanel usage analytics (power users = >10 sessions/week)"
   notes: "Conservative - only power users will adopt shortcuts initially"
 
@@ -534,11 +534,11 @@ impact:
   value: 1
   label: "Medium"
   reasoning: |
-    Saves 5-10 seconds per action √ó 50 actions/day = 4-8min/day
+    Saves 5-10 seconds per action ◊ 50 actions/day = 4-8min/day
     Not transformational, but quality-of-life improvement for power users
     Reduces friction, improves user satisfaction (NPS boost)
   source: "User feature requests (n=120), competitive benchmarking"
-  notes: "Scored 1 (Medium) - useful but n√£o game-changer"
+  notes: "Scored 1 (Medium) - useful but n„o game-changer"
 
 confidence:
   value: 1.0
@@ -549,9 +549,9 @@ confidence:
     effort_confidence: "High (technology bem conhecida)"
   reasoning: |
     Reach: 100% (dados exatos de analytics)
-    Impact: 100% (feature padr√£o, sabemos exatamente o que faz)
-    Effort: 100% (j√° implementamos shortcuts antes, tech simples)
-  data_quality: "√ìtima"
+    Impact: 100% (feature padr„o, sabemos exatamente o que faz)
+    Effort: 100% (j· implementamos shortcuts antes, tech simples)
+  data_quality: "”tima"
 
 effort:
   value: 1.0
@@ -565,26 +565,26 @@ effort:
   calendar_time: "2 weeks"
   assumptions:
     - "Usando biblioteca existente (react-hotkeys)"
-    - "Apenas 10-15 shortcuts mais usados (n√£o comprehensive)"
+    - "Apenas 10-15 shortcuts mais usados (n„o comprehensive)"
   notes: "Low complexity feature, no dependencies"
 
 rice_score:
-  calculation: "(reach √ó impact √ó confidence) / effort"
+  calculation: "(reach ◊ impact ◊ confidence) / effort"
   value: 3000
-  formula_filled: "(3000 √ó 1 √ó 1.0) / 1.0 = 3000 / 1 = 3000"
+  formula_filled: "(3000 ◊ 1 ◊ 1.0) / 1.0 = 3000 / 1 = 3000"
 
 priority:
   level: "P0 (Quick Win!)"
   reasoning: |
-    RICE 3000 √© ALT√çSSIMO por causa de:
+    RICE 3000 È ALTÕSSIMO por causa de:
     - Massive reach (3k power users)
     - Minimal effort (1 person-month)
     - High confidence (low risk)
-    ‚Üí Cl√°ssico "low-hanging fruit" - alto ROI com baixo investimento
+    ? Cl·ssico "low-hanging fruit" - alto ROI com baixo investimento
   recommended_action: "Implementar imediatamente (next sprint), easy win para equipe"
 
 metadata:
-  author: "Jo√£o Silva (PM)"
+  author: "Jo„o Silva (PM)"
   date: "2025-02-03"
   status: "Approved"
   change_log:
@@ -594,57 +594,57 @@ metadata:
 
 ---
 
-## üö® Armadilhas Comuns e Como Evitar
+## ?? Armadilhas Comuns e Como Evitar
 
 ### Armadilha 1: "Gut Feeling" Prioritization
 ```
-‚ùå ERRADO: "CEO quer esse feature, √© P0"
-‚úÖ CORRETO: "Vamos calcular RICE para validar se alinha com dados"
+? ERRADO: "CEO quer esse feature, È P0"
+? CORRETO: "Vamos calcular RICE para validar se alinha com dados"
 
-Solu√ß√£o:
+SoluÁ„o:
 - Use RICE para TODAS features (mesmo CEO requests)
-- Se RICE baixo mas CEO insiste ‚Üí Document como "Strategic override"
+- Se RICE baixo mas CEO insiste ? Document como "Strategic override"
 - Reavaliar quarterly: Feature teve impact esperado?
 ```
 
 ### Armadilha 2: Sandbagging (Inflating Scores)
 ```
-‚ùå ERRADO: PM infla impact/reach do seu feature favorito
-‚úÖ CORRETO: Peer review de RICE scores com Engineering/Data
+? ERRADO: PM infla impact/reach do seu feature favorito
+? CORRETO: Peer review de RICE scores com Engineering/Data
 
-Solu√ß√£o:
+SoluÁ„o:
 - RICE scores precisam approval de pelo menos 2 stakeholders
-- Use dados objetivos (analytics, n√£o opinions)
+- Use dados objetivos (analytics, n„o opinions)
 - Retrospectives: Compare RICE predicted vs actual
 ```
 
 ### Armadilha 3: Analysis Paralysis
 ```
-‚ùå ERRADO: Gastar 1 semana calculando RICE perfeitamente
-‚úÖ CORRETO: 80/20 rule - estimativas r√°pidas, iterar depois
+? ERRADO: Gastar 1 semana calculando RICE perfeitamente
+? CORRETO: 80/20 rule - estimativas r·pidas, iterar depois
 
-Solu√ß√£o:
+SoluÁ„o:
 - Primeira passada: 30min por feature (ballpark RICE)
 - Segunda passada (top 5 only): Deep dive com research
-- RICE n√£o √© ci√™ncia exata, √© framework de decis√£o
+- RICE n„o È ciÍncia exata, È framework de decis„o
 ```
 
 ### Armadilha 4: Ignorar Confidence
 ```
-‚ùå ERRADO: Feature com RICE 500 mas confidence 30% ‚Üí Priorizar P0
-‚úÖ CORRETO: Low confidence = HIGH RISK ‚Üí Spike first
+? ERRADO: Feature com RICE 500 mas confidence 30% ? Priorizar P0
+? CORRETO: Low confidence = HIGH RISK ? Spike first
 
-Solu√ß√£o:
-- RICE > 100 MAS confidence < 50% ‚Üí Fazer spike/prototype PRIMEIRO
+SoluÁ„o:
+- RICE > 100 MAS confidence < 50% ? Fazer spike/prototype PRIMEIRO
 - Aumentar confidence antes de commit a full development
-- Re-calcular RICE ap√≥s spike com confidence atualizada
+- Re-calcular RICE apÛs spike com confidence atualizada
 ```
 
 ---
 
-## üîÑ Retrospective: Validar RICE Predictions
+## ?? Retrospective: Validar RICE Predictions
 
-Ap√≥s launch, compare predicted vs actual:
+ApÛs launch, compare predicted vs actual:
 
 ```yaml
 feature: "Export Automation"
@@ -663,14 +663,14 @@ actual_results:
   confidence_validated: 0.7  # Lower than predicted
 
 actual_rice_retrospective:
-  calculation: "(450 √ó 2.5 √ó 0.7) / 5.5 = 144"
-  variance: "-52% vs predicted (300 ‚Üí 144)"
+  calculation: "(450 ◊ 2.5 ◊ 0.7) / 5.5 = 144"
+  variance: "-52% vs predicted (300 ? 144)"
 
 learnings:
   - lesson: "Underestimated effort - scope creep com 'just one more format'"
     action: "Lock scope mais rigidamente em PRD, usar feature flags"
   
-  - lesson: "Impact superestimado - error reduction teve challenges t√©cnicos"
+  - lesson: "Impact superestimado - error reduction teve challenges tÈcnicos"
     action: "Validation layer needs Phase 2 improvements"
   
   - lesson: "Reach demorou mais - adoption slower than expected"
@@ -680,14 +680,14 @@ calibration:
   future_estimates:
     - "Multiplicar effort estimates por 1.2x (buffer para scope creep)"
     - "Ser mais conservative com impact scores (escolher lower bound)"
-    - "Reach em quarter 1 √© 70-80% de total reach (adoption curve)"
+    - "Reach em quarter 1 È 70-80% de total reach (adoption curve)"
 ```
 
 ---
 
-## üîó Integra√ß√£o com Outros Artefatos
+## ?? IntegraÁ„o com Outros Artefatos
 
-- **${AVANADE_PRD_TEMPLATE_YAML}**: RICE score vai na se√ß√£o `strategic_alignment.priority`
-- **${AVANADE_PM_CHECKLIST_MD}**: RICE validation √© gate para PRD approval
+- **${AVANADE_PRD_TEMPLATE_YAML}**: RICE score vai na seÁ„o `strategic_alignment.priority`
+- **${AVANADE_PM_CHECKLIST_MD}**: RICE validation È gate para PRD approval
 - **${AVANADE_DISCOVERY_TEMPLATE_YAML}**: Research alimenta inputs de RICE (reach, impact)
-- **${AVANADE_MEMORY_PM_JOAO}**: Armazenar RICE scores hist√≥ricos para calibra√ß√£o
+- **${AVANADE_MEMORY_PM_JOAO}**: Armazenar RICE scores histÛricos para calibraÁ„o

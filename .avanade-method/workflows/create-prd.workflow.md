@@ -1,46 +1,46 @@
-﻿## 📋 O que é este Workflow?
+## ?? O que � este Workflow?
 
-O **create-prd** é um workflow Avanade Method v6 tri-modal para criar, validar ou editar Product Requirements Documents (PRDs). É o workflow central do Phase 2-Planning.
+O **create-prd** � um workflow Avanade Method v6 tri-modal para criar, validar ou editar Product Requirements Documents (PRDs). � o workflow central do Phase 2-Planning.
 
-**Modos de Operação:**
-- 🆕 **CREATE**: Criação guiada de novo PRD (12 steps)
-- ✅ **VALIDATE**: Validação adversarial de PRD existente (13 checks)
-- ✏️ **EDIT**: Edição inteligente de PRD (5 steps com detecção de formato)
+**Modos de Opera��o:**
+- ?? **CREATE**: Cria��o guiada de novo PRD (12 steps)
+- ? **VALIDATE**: Valida��o adversarial de PRD existente (13 checks)
+- ?? **EDIT**: Edi��o inteligente de PRD (5 steps com detec��o de formato)
 
 **Workflow Path**: `_avanade-method/bmm/workflows/2-plan-workflows/create-prd/workflow.md`
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE create-prd para:
-- **Greenfield projects**: Nova feature/produto sem documentação
+### ? USE create-prd para:
+- **Greenfield projects**: Nova feature/produto sem documenta��o
 - **PRD validation**: Verificar PRD existente antes de architecture
-- **PRD updates**: Editar PRD após mudanças de escopo
-- **Legacy conversion**: Converter PRDs não-Avanade para padrão Avanade Method
+- **PRD updates**: Editar PRD ap�s mudan�as de escopo
+- **Legacy conversion**: Converter PRDs n�o-Avanade para padr�o Avanade Method
 
-### ❌ NÃO USE para:
+### ? N�O USE para:
 - Product Brief (use `create-product-brief` workflow)
 - Technical specs (use Architecture depois do PRD)
 - User stories (use `create-epics-and-stories` depois de PRD+Architecture)
 
 ---
 
-## ⚠️ STEP 0: Carregar Contexto FTD (OBRIGATÓRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT�RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` → `devLoadAlwaysFiles`
-2. Carregar docs mandatórios:
-   - `ftd-knowledge-base.md` (processos, integrações, glossário)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandat�rios:
+   - `ftd-knowledge-base.md` (processos, integra��es, gloss�rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Alçada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, Al�ada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## 🔄 WORKFLOW MODES
+## ?? WORKFLOW MODES
 
 ### MODE 1: CREATE (New PRD)
 
@@ -77,7 +77,7 @@ step-12-complete: Finalize and suggest next workflows
 
 **Triggers:**
 - User: "validar PRD"
-- User: "verificar se PRD está completo"
+- User: "verificar se PRD est� completo"
 - After CREATE mode completes (recommended)
 
 **Validation Dimensions (13 checks):**
@@ -141,7 +141,7 @@ step-e-04-complete:
 
 ---
 
-## 📊 PRD FORMAT (Avanade Standard)
+## ?? PRD FORMAT (Avanade Standard)
 
 ### Required Sections (6 core):
 
@@ -190,12 +190,12 @@ step-e-04-complete:
 
 ---
 
-## 🔗 Integration Points
+## ?? Integration Points
 
 ### Prerequisites (Before PRD):
-- ✅ **Product Brief** (optional but recommended): `create-product-brief` workflow
-- ✅ **Market Research** (if needed): `research` workflow with `research_type=market`
-- ✅ **Domain Research** (if complex domain): `research` workflow with `research_type=domain`
+- ? **Product Brief** (optional but recommended): `create-product-brief` workflow
+- ? **Market Research** (if needed): `research` workflow with `research_type=market`
+- ? **Domain Research** (if complex domain): `research` workflow with `research_type=domain`
 
 ### Next Steps (After PRD):
 1. **PRD Validation** (recommended): Run VALIDATE mode
@@ -205,26 +205,26 @@ step-e-04-complete:
 
 ---
 
-## 🎓 Best Practices
+## ?? Best Practices
 
 ### DO:
-- ✅ Start with Product Brief if greenfield (provides foundation)
-- ✅ Validate PRD before Architecture (catch gaps early)
-- ✅ Use VALIDATE mode after major edits
-- ✅ Keep requirements WHAT-focused (not HOW)
-- ✅ Quantify success criteria (no vague "improve UX")
-- ✅ Define MVP clearly (prevents scope creep)
+- ? Start with Product Brief if greenfield (provides foundation)
+- ? Validate PRD before Architecture (catch gaps early)
+- ? Use VALIDATE mode after major edits
+- ? Keep requirements WHAT-focused (not HOW)
+- ? Quantify success criteria (no vague "improve UX")
+- ? Define MVP clearly (prevents scope creep)
 
 ### DON'T:
-- ❌ Skip validation (invalid PRD → invalid Architecture → invalid Stories)
-- ❌ Mix implementation details in requirements (that's Architecture's job)
-- ❌ Create PRD without understanding problem (do Discovery first)
-- ❌ Leave TBDs or placeholders (complete all sections)
-- ❌ Ignore validation report findings (fix issues before proceeding)
+- ? Skip validation (invalid PRD ? invalid Architecture ? invalid Stories)
+- ? Mix implementation details in requirements (that's Architecture's job)
+- ? Create PRD without understanding problem (do Discovery first)
+- ? Leave TBDs or placeholders (complete all sections)
+- ? Ignore validation report findings (fix issues before proceeding)
 
 ---
 
-## 🚨 Common Pitfalls
+## ?? Common Pitfalls
 
 ### Pitfall 1: Implementation Leakage
 **Problem**: PRD includes HOW details (technologies, architecture)  
@@ -248,7 +248,7 @@ step-e-04-complete:
 
 ---
 
-## 📖 Example PRD Excerpts
+## ?? Example PRD Excerpts
 
 ### Good Executive Summary:
 ```markdown
@@ -259,9 +259,9 @@ step-e-04-complete:
 **Solution**: Unified export automation platform that aggregates data from all systems, applies business rules, and generates formatted reports (PDF, Excel, CSV) on-demand or scheduled.
 
 **Impact**:
-- **Labor Savings**: $412k/year (1.8h/day → 0.2h/day per agent, 50 agents)
-- **Error Reduction**: 40% → <5% (automated validation)
-- **Time-to-Report**: 45 minutes → 2 minutes (95% faster)
+- **Labor Savings**: $412k/year (1.8h/day ? 0.2h/day per agent, 50 agents)
+- **Error Reduction**: 40% ? <5% (automated validation)
+- **Time-to-Report**: 45 minutes ? 2 minutes (95% faster)
 - **User Satisfaction**: Enable self-service (reduce support tickets by 30%)
 ```
 
@@ -283,7 +283,7 @@ step-e-04-complete:
 
 ### Bad Functional Requirement (Implementation Leakage):
 ```markdown
-❌ BAD:
+? BAD:
 **FR-001: PostgreSQL Database**
 - Use PostgreSQL 14 for data storage
 - Redis for caching
@@ -291,7 +291,7 @@ step-e-04-complete:
 
 (This is ARCHITECTURE, not a requirement!)
 
-✅ GOOD:
+? GOOD:
 **FR-001: Persistent Data Storage**
 - System stores user preferences, export history, and templates persistently
 - Data survives system restarts
@@ -300,7 +300,7 @@ step-e-04-complete:
 
 ---
 
-## 🔧 Troubleshooting
+## ?? Troubleshooting
 
 ### Issue: Workflow won't start
 **Symptom**: Error "workflow not found"  
@@ -320,18 +320,18 @@ step-e-04-complete:
 
 ---
 
-## 🔗 Related Artifacts
+## ?? Related Artifacts
 
-- **${AVANADE_PRD_TEMPLATE_YAML}**: PRD template structure (João PM artifact)
+- **${AVANADE_PRD_TEMPLATE_YAML}**: PRD template structure (Jo�o PM artifact)
 - **${AVANADE_PM_CHECKLIST_MD}**: Validation checklist (used by VALIDATE mode)
 - **${AVANADE_TASK_RICE_PRIORITIZATION}**: Prioritize requirements (before PRD or during editing)
 - **${AVANADE_MEMORY_PM_JOAO}**: Historical PRD patterns, learnings
 
 ---
 
-## 📖 References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/2-plan-workflows/create-prd/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 9
 - **Command**: `avanade-method-bmm-create-prd` (CREATE), `avanade-method-bmm-validate-prd` (VALIDATE), `avanade-method-bmm-edit-prd` (EDIT)
-- **Owner Agent**: João PM (Product Manager)
+- **Owner Agent**: Jo�o PM (Product Manager)

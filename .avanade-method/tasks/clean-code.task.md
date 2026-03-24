@@ -1,27 +1,27 @@
-ï»¿## Objetivo
-Validar cÃ³digo contra princÃ­pios de Clean Code, SOLID, e best practices.
+## Objetivo
+Validar código contra princípios de Clean Code, SOLID, e best practices.
 
 ---
 
-## ğŸ’ Clean Code Principles
+## ?? Clean Code Principles
 
 ### 1. Meaningful Names (Nomes Significativos)
-**CritÃ©rio**: Nomes revelam intenÃ§Ã£o, evitam desinformaÃ§Ã£o
+**Critério**: Nomes revelam intenção, evitam desinformação
 
 **Checklist**:
 - [ ] **Classes**: Substantivos (User, OrderService, ProductRepository)
 - [ ] **Methods**: Verbos (calculateTotal, sendEmail, validateInput)
 - [ ] **Booleans**: Predicados (isActive, hasPermission, canEdit)
-- [ ] **Evita**:  - AbreviaÃ§Ãµes (`usr` â†’ `user`)
-  - Nomes genÃ©ricos (`data`, `info`, `temp`)
-  - NÃºmeros mÃ¡gicos (`status === 2` â†’ `status === OrderStatus.SHIPPED`)
+- [ ] **Evita**:  - Abreviações (`usr` ? `user`)
+  - Nomes genéricos (`data`, `info`, `temp`)
+  - Números mágicos (`status === 2` ? `status === OrderStatus.SHIPPED`)
 
 **Exemplos**:
 ```typescript
-âŒ Ruim:
+? Ruim:
 function d(n: number): number { return n * 365; }
 
-âœ… Bom:
+? Bom:
 function daysToYears(days: number): number { 
   return days / DAYS_PER_YEAR; 
 }
@@ -29,20 +29,20 @@ function daysToYears(days: number): number {
 
 ---
 
-### 2. Functions (FunÃ§Ãµes Pequenas e Focadas)
-**CritÃ©rio**: Uma funÃ§Ã£o faz uma coisa e faz bem
+### 2. Functions (Funções Pequenas e Focadas)
+**Critério**: Uma função faz uma coisa e faz bem
 
 **Checklist**:
-- [ ] **Tamanho**: <20 linhas (ideal), mÃ¡x 50 linhas
+- [ ] **Tamanho**: <20 linhas (ideal), máx 50 linhas
 - [ ] **Single Responsibility**: Faz apenas 1 coisa
-- [ ] **NÃ­vel de abstraÃ§Ã£o**: Consistente (nÃ£o mistura alto e baixo nÃ­vel)
-- [ ] **ParÃ¢metros**: â‰¤3 parÃ¢metros (ideal 0-2)
+- [ ] **Nível de abstração**: Consistente (não mistura alto e baixo nível)
+- [ ] **Parâmetros**: =3 parâmetros (ideal 0-2)
 - [ ] **Side effects**: Evita efeitos colaterais escondidos
-- [ ] **Command-Query Separation**: FunÃ§Ã£o faz OU retorna, nÃ£o ambos
+- [ ] **Command-Query Separation**: Função faz OU retorna, não ambos
 
 **Exemplo**:
 ```typescript
-âŒ Ruim (faz demais):
+? Ruim (faz demais):
 function processOrder(order: Order) {
   validateOrder(order);
   saveOrder(order);
@@ -51,7 +51,7 @@ function processOrder(order: Order) {
   logAnalytics(order);
 }
 
-âœ… Bom (orquestra funÃ§Ãµes menores):
+? Bom (orquestra funções menores):
 function processOrder(order: Order) {
   const validatedOrder = validateOrder(order);
   const savedOrder = saveOrder(validatedOrder);
@@ -62,29 +62,29 @@ function processOrder(order: Order) {
 
 ---
 
-### 3. Comments (ComentÃ¡rios Ãšteis)
-**CritÃ©rio**: CÃ³digo se explica, comentÃ¡rios explicam "por quÃª"
+### 3. Comments (Comentários Úteis)
+**Critério**: Código se explica, comentários explicam "por quê"
 
 **Checklist**:
-- [ ] **Evita comentÃ¡rios Ã³bvios**: CÃ³digo auto-explicativo
-- [ ] **Explica "por quÃª"**: DecisÃµes, trade-offs, workarounds
-- [ ] **TODOs**: RastreÃ¡veis (com ticket/issue)
-- [ ] **Warnings**: ConsequÃªncias crÃ­ticas
-- [ ] **JSDoc/Docstrings**: APIs pÃºblicas documentadas
+- [ ] **Evita comentários óbvios**: Código auto-explicativo
+- [ ] **Explica "por quê"**: Decisões, trade-offs, workarounds
+- [ ] **TODOs**: Rastreáveis (com ticket/issue)
+- [ ] **Warnings**: Consequências críticas
+- [ ] **JSDoc/Docstrings**: APIs públicas documentadas
 
 **Exemplos**:
 ```typescript
-âŒ Ruim (comentÃ¡rio Ã³bvio):
+? Ruim (comentário óbvio):
 // Incrementa contador
 counter++;
 
-âœ… Bom (explica "por quÃª"):
-// Workaround: API retorna null ao invÃ©s de array vazio
-// Removendo apÃ³s migraÃ§Ã£o para v2 (ticket JIRA-123)
+? Bom (explica "por quê"):
+// Workaround: API retorna null ao invés de array vazio
+// Removendo após migração para v2 (ticket JIRA-123)
 const items = response.items || [];
 
-âœ… Bom (warning crÃ­tico):
-// ATENÃ‡ÃƒO: Alterar ordem dessas operaÃ§Ãµes causa race condition
+? Bom (warning crítico):
+// ATENÇÃO: Alterar ordem dessas operações causa race condition
 // Ver: https://github.com/org/repo/issues/456
 await lockResource();
 await updateDatabase();
@@ -94,26 +94,26 @@ await unlockResource();
 ---
 
 ### 4. Error Handling (Tratamento de Erros)
-**CritÃ©rio**: Erros sÃ£o first-class citizens, nÃ£o afterthoughts
+**Critério**: Erros são first-class citizens, não afterthoughts
 
 **Checklist**:
-- [ ] **Try-catch**: Em operaÃ§Ãµes crÃ­ticas (DB, API, I/O)
-- [ ] **Error boundaries**: UI nÃ£o quebra totalmente
-- [ ] **Mensagens Ãºteis**: Contexto suficiente para debug
+- [ ] **Try-catch**: Em operações críticas (DB, API, I/O)
+- [ ] **Error boundaries**: UI não quebra totalmente
+- [ ] **Mensagens úteis**: Contexto suficiente para debug
 - [ ] **Logging**: Erros logados com severity adequada
-- [ ] **Fail fast**: ValidaÃ§Ã£o early, falha rÃ¡pida
+- [ ] **Fail fast**: Validação early, falha rápida
 - [ ] **Evita silent failures**: Sempre handle ou propague
 
 **Exemplos**:
 ```typescript
-âŒ Ruim (ignora erro):
+? Ruim (ignora erro):
 try {
   await updateUser(userId, data);
 } catch (e) {
   // ignorado
 }
 
-âœ… Bom (trata adequadamente):
+? Bom (trata adequadamente):
 try {
   await updateUser(userId, data);
 } catch (error) {
@@ -128,20 +128,20 @@ try {
 
 ---
 
-## ğŸ—ï¸ SOLID Principles
+## ??? SOLID Principles
 
 ### S - Single Responsibility Principle
-**CritÃ©rio**: Classe tem uma Ãºnica razÃ£o para mudar
+**Critério**: Classe tem uma única razão para mudar
 
 ```typescript
-âŒ Ruim (mÃºltiplas responsabilidades):
+? Ruim (múltiplas responsabilidades):
 class User {
   saveToDatabase() { /* DB logic */ }
   sendWelcomeEmail() { /* Email logic */ }
   validateData() { /* Validation logic */ }
 }
 
-âœ… Bom (separado):
+? Bom (separado):
 class User { /* apenas dados */ }
 class UserRepository { saveToDatabase() {} }
 class EmailService { sendWelcomeEmail() {} }
@@ -149,16 +149,16 @@ class UserValidator { validate() {} }
 ```
 
 ### O - Open/Closed Principle
-**CritÃ©rio**: Aberto para extensÃ£o, fechado para modificaÃ§Ã£o
+**Critério**: Aberto para extensão, fechado para modificação
 
 ```typescript
-âŒ Ruim (precisa modificar para adicionar tipo):
+? Ruim (precisa modificar para adicionar tipo):
 function calculateDiscount(user: User) {
   if (user.type === 'premium') return 0.2;
   if (user.type === 'vip') return 0.3;
 }
 
-âœ… Bom (extensÃ­vel via polimorfismo):
+? Bom (extensível via polimorfismo):
 interface DiscountStrategy {
   calculate(amount: number): number;
 }
@@ -167,16 +167,16 @@ class VIPDiscount implements DiscountStrategy { /* ... */ }
 ```
 
 ### L - Liskov Substitution Principle
-**CritÃ©rio**: Subtipos devem ser substituÃ­veis por seus tipos base
+**Critério**: Subtipos devem ser substituíveis por seus tipos base
 
 ```typescript
-âŒ Ruim (quebra contrato):
+? Ruim (quebra contrato):
 class Bird { fly() { /* ... */ } }
 class Penguin extends Bird { 
-  fly() { throw new Error('Cannot fly'); } // âŒ
+  fly() { throw new Error('Cannot fly'); } // ?
 }
 
-âœ… Bom (design correto):
+? Bom (design correto):
 interface Bird {}
 interface FlyingBird extends Bird { fly(); }
 class Sparrow implements FlyingBird { fly() { /* ... */ } }
@@ -184,10 +184,10 @@ class Penguin implements Bird { swim() { /* ... */ } }
 ```
 
 ### I - Interface Segregation Principle
-**CritÃ©rio**: Interfaces especÃ­ficas melhor que genÃ©ricas
+**Critério**: Interfaces específicas melhor que genéricas
 
 ```typescript
-âŒ Ruim (interface genÃ©rica):
+? Ruim (interface genérica):
 interface Worker {
   work();
   eat();
@@ -195,11 +195,11 @@ interface Worker {
 }
 class Robot implements Worker {
   work() { /* ok */ }
-  eat() { throw new Error(); } // âŒ robÃ´ nÃ£o come
-  sleep() { throw new Error(); } // âŒ robÃ´ nÃ£o dorme
+  eat() { throw new Error(); } // ? robô não come
+  sleep() { throw new Error(); } // ? robô não dorme
 }
 
-âœ… Bom (interfaces especÃ­ficas):
+? Bom (interfaces específicas):
 interface Workable { work(); }
 interface Eatable { eat(); }
 interface Sleepable { sleep(); }
@@ -208,32 +208,32 @@ class Human implements Workable, Eatable, Sleepable { /* ... */ }
 ```
 
 ### D - Dependency Inversion Principle
-**CritÃ©rio**: Dependa de abstraÃ§Ãµes, nÃ£o de implementaÃ§Ãµes concretas
+**Critério**: Dependa de abstrações, não de implementações concretas
 
 ```typescript
-âŒ Ruim (dependÃªncia concreta):
+? Ruim (dependência concreta):
 class UserService {
-  private db = new MySQLDatabase(); // âŒ acoplado ao MySQL
+  private db = new MySQLDatabase(); // ? acoplado ao MySQL
 }
 
-âœ… Bom (dependÃªncia abstrata):
+? Bom (dependência abstrata):
 interface Database { save(data: any): void; }
 class UserService {
-  constructor(private db: Database) {} // âœ… aceita qualquer DB
+  constructor(private db: Database) {} // ? aceita qualquer DB
 }
 ```
 
 ---
 
-## ğŸ§ª Testing (Testabilidade)
+## ?? Testing (Testabilidade)
 
 ### Checklist
-- [ ] **Unit Tests**: Coverage â‰¥ 80%
+- [ ] **Unit Tests**: Coverage = 80%
 - [ ] **Test Pyramid**: Maioria unit, alguns integration, poucos E2E
 - [ ] **Fast tests**: Suite completa <10s (unit), <5min (integration)
-- [ ] **Isolated**: Testes independentes (ordem nÃ£o importa)
-- [ ] **DeterminÃ­sticos**: Sem flakiness, sempre mesmo resultado
-- [ ] **Readable**: Testes sÃ£o documentaÃ§Ã£o viva
+- [ ] **Isolated**: Testes independentes (ordem não importa)
+- [ ] **Determinísticos**: Sem flakiness, sempre mesmo resultado
+- [ ] **Readable**: Testes são documentação viva
 
 **Exemplo de Bom Teste**:
 ```typescript
@@ -265,7 +265,7 @@ describe('OrderService.calculateTotal', () => {
 
 ---
 
-## ğŸ”’ Security
+## ?? Security
 
 ### Checklist
 - [ ] **Input validation**: Sanitize/validate todos inputs
@@ -273,24 +273,24 @@ describe('OrderService.calculateTotal', () => {
 - [ ] **XSS Prevention**: Escape output, CSP headers
 - [ ] **Authentication**: Tokens seguros, sessions gerenciadas
 - [ ] **Secrets**: Nunca hardcoded, usar env vars ou Key Vault
-- [ ] **HTTPS**: Sempre TLS em produÃ§Ã£o
+- [ ] **HTTPS**: Sempre TLS em produção
 - [ ] **Dependencies**: Audit regular (npm audit, Snyk)
 
 ---
 
-## âš¡ Performance
+## ? Performance
 
 ### Checklist
 - [ ] **N+1 Queries**: Evitar loops com queries
 - [ ] **Caching**: Dados caros/frequentes em cache
-- [ ] **Lazy Loading**: Carregar apenas quando necessÃ¡rio
-- [ ] **Pagination**: NÃ£o retornar datasets gigantes
+- [ ] **Lazy Loading**: Carregar apenas quando necessário
+- [ ] **Pagination**: Não retornar datasets gigantes
 - [ ] **Indexes**: Database queries otimizadas
 - [ ] **Profiling**: Identificar bottlenecks (APM tools)
 
 ---
 
-## ğŸ“Š Scoring System
+## ?? Scoring System
 
 **Pontos por categoria**:
 - Meaningful Names: /10
@@ -304,17 +304,17 @@ describe('OrderService.calculateTotal', () => {
 
 **Total: /80**
 
-**InterpretaÃ§Ã£o**:
-- **70-80**: âœ… Production-Ready Code
-- **50-69**: ğŸŸ¡ Bom, melhorias menores
-- **30-49**: ğŸŸ  Precisa refactoring
-- **0-29**: ğŸ”´ NÃ£o mergeÃ¡vel
+**Interpretação**:
+- **70-80**: ? Production-Ready Code
+- **50-69**: ?? Bom, melhorias menores
+- **30-49**: ?? Precisa refactoring
+- **0-29**: ?? Não mergeável
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Metodologia Avanade
+## ?? Integração com Metodologia Avanade
 
-- **PrÃ©-requisito**: CÃ³digo implementado
+- **Pré-requisito**: Código implementado
 - **Uso**: Code review, DoD validation
 - **Complementa**: ${AVANADE_TASK_CODE_REVIEW}, ${AVANADE_TASK_TEST_COVERAGE}
-- **MemÃ³ria**: Atualizar ${AVANADE_MEMORY_DEV_TIAGO}
+- **Memória**: Atualizar ${AVANADE_MEMORY_DEV_TIAGO}

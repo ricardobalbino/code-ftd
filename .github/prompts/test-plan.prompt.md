@@ -1,13 +1,13 @@
-Ôªø> **‚ö†Ô∏è FTD EDUCA√á√ÉO - CONTEXTO OBRIGAT√ìRIO**
-> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `.avanade-method/docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
+> **?? FTD EDUCA«√O - CONTEXTO OBRIGAT”RIO**
+> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
 
 # ============================================================================
-# SE√á√ÉO 1: INFORMA√á√ïES GERAIS
+# SE«√O 1: INFORMA«’ES GERAIS
 # ============================================================================
 
 test_plan:
   metadata:
-    id: TP-[N√öMERO]
+    id: TP-[N⁄MERO]
     name: "[Nome Descritivo do Test Plan]"
     version: "1.0"
     status: "[Draft | In Review | Approved | In Execution | Completed]"
@@ -20,21 +20,21 @@ test_plan:
     
   scope:
     description: |
-      [Descreva o que ser√° testado neste plano. Seja espec√≠fico sobre features, 
-      componentes, e funcionalidades inclu√≠das.]
+      [Descreva o que ser· testado neste plano. Seja especÌfico sobre features, 
+      componentes, e funcionalidades incluÌdas.]
     
     features_in_scope:
       - feature: "[Nome da Feature 1]"
-        description: "[Descri√ß√£o breve]"
+        description: "[DescriÁ„o breve]"
         priority: "[High | Medium | Low]"
       
       - feature: "[Nome da Feature 2]"
-        description: "[Descri√ß√£o breve]"
+        description: "[DescriÁ„o breve]"
         priority: "[High | Medium | Low]"
     
     features_out_of_scope:
       - "[Feature/componente explicitamente FORA do escopo]"
-      - "[Outra funcionalidade n√£o testada neste ciclo]"
+      - "[Outra funcionalidade n„o testada neste ciclo]"
     
     environments:
       - name: "Development"
@@ -50,16 +50,16 @@ test_plan:
         database: "prod-db"
 
 # ============================================================================
-# SE√á√ÉO 2: OBJETIVOS E CRIT√âRIOS
+# SE«√O 2: OBJETIVOS E CRIT…RIOS
 # ============================================================================
 
   objectives:
     primary:
       - "[Objetivo principal do teste - ex: Validar funcionalidade de checkout]"
-      - "[Garantir performance aceit√°vel sob carga]"
+      - "[Garantir performance aceit·vel sob carga]"
     
     secondary:
-      - "[Objetivo secund√°rio - ex: Validar acessibilidade WCAG AA]"
+      - "[Objetivo secund·rio - ex: Validar acessibilidade WCAG AA]"
       - "[Verificar compatibilidade cross-browser]"
   
   success_criteria:
@@ -70,10 +70,10 @@ test_plan:
       target: ">=95% de testes passando"
       
     - criterion: "Critical Bugs"
-      target: "Zero bugs cr√≠ticos em produ√ß√£o"
+      target: "Zero bugs crÌticos em produÁ„o"
       
     - criterion: "Performance"
-      target: "Tempo de resposta <2s para 95% das requisi√ß√µes"
+      target: "Tempo de resposta <2s para 95% das requisiÁıes"
 
   exit_criteria:
     - "[Todos os test cases executados]"
@@ -83,13 +83,13 @@ test_plan:
     - "[Security scan completado sem vulnerabilidades High]"
 
 # ============================================================================
-# SE√á√ÉO 3: ESTRAT√âGIA DE TESTES
+# SE«√O 3: ESTRAT…GIA DE TESTES
 # ============================================================================
 
   test_strategy:
     test_levels:
       unit_testing:
-        description: "Testes de unidade para l√≥gica de neg√≥cio"
+        description: "Testes de unidade para lÛgica de negÛcio"
         coverage_target: "80%"
         responsibility: "Developers (Tiago)"
         tools:
@@ -98,7 +98,7 @@ test_plan:
         execution_frequency: "A cada commit (CI/CD)"
       
       integration_testing:
-        description: "Testes de integra√ß√£o entre componentes/servi√ßos"
+        description: "Testes de integraÁ„o entre componentes/serviÁos"
         coverage_target: "70%"
         responsibility: "QA Team (Carla)"
         tools:
@@ -116,7 +116,7 @@ test_plan:
         execution_frequency: "Daily automated + manual antes de release"
       
       acceptance_testing:
-        description: "Valida√ß√£o de AC (Acceptance Criteria) com PO"
+        description: "ValidaÁ„o de AC (Acceptance Criteria) com PO"
         coverage_target: "Todas as stories"
         responsibility: "PO (Paula) + QA (Carla)"
         tools:
@@ -126,12 +126,12 @@ test_plan:
     
     test_types:
       functional:
-        description: "Valida√ß√£o de requisitos funcionais"
+        description: "ValidaÁ„o de requisitos funcionais"
         priority: "High"
         automated: true
         
       regression:
-        description: "Garantir que novas mudan√ßas n√£o quebraram funcionalidades existentes"
+        description: "Garantir que novas mudanÁas n„o quebraram funcionalidades existentes"
         priority: "High"
         automated: true
         scope: "Full regression suite a cada release"
@@ -191,38 +191,38 @@ test_plan:
           - "Mobile (iPhone, Android phone)"
 
 # ============================================================================
-# SE√á√ÉO 4: TEST CASES
+# SE«√O 4: TEST CASES
 # ============================================================================
 
   test_cases:
     - id: "TC-001"
-      title: "[T√≠tulo do Test Case - ex: Login com credenciais v√°lidas]"
+      title: "[TÌtulo do Test Case - ex: Login com credenciais v·lidas]"
       priority: "[Critical | High | Medium | Low]"
       type: "[Functional | Regression | Performance | Security]"
       automated: true
       
       preconditions:
-        - "[Usu√°rio cadastrado no sistema]"
+        - "[Usu·rio cadastrado no sistema]"
         - "[Banco de dados populado com dados de teste]"
       
       test_steps:
         - step: 1
-          action: "Navegar para p√°gina de login"
-          expected_result: "P√°gina de login √© exibida com campos email e senha"
+          action: "Navegar para p·gina de login"
+          expected_result: "P·gina de login È exibida com campos email e senha"
         
         - step: 2
-          action: "Inserir email v√°lido: test@example.com"
-          expected_result: "Email √© aceito no campo"
+          action: "Inserir email v·lido: test@example.com"
+          expected_result: "Email È aceito no campo"
         
         - step: 3
-          action: "Inserir senha v√°lida: Password123!"
-          expected_result: "Senha √© aceita (mascarada)"
+          action: "Inserir senha v·lida: Password123!"
+          expected_result: "Senha È aceita (mascarada)"
         
         - step: 4
-          action: "Clicar no bot√£o 'Login'"
-          expected_result: "Usu√°rio √© redirecionado para dashboard"
+          action: "Clicar no bot„o 'Login'"
+          expected_result: "Usu·rio È redirecionado para dashboard"
       
-      expected_outcome: "Login bem-sucedido e usu√°rio autenticado"
+      expected_outcome: "Login bem-sucedido e usu·rio autenticado"
       
       test_data:
         - email: "test@example.com"
@@ -230,8 +230,8 @@ test_plan:
           expected: "success"
       
       postconditions:
-        - "[Usu√°rio est√° logado]"
-        - "[Session token √© criado]"
+        - "[Usu·rio est· logado]"
+        - "[Session token È criado]"
     
     # ---- Test Case 2 ----
     - id: "TC-002"
@@ -243,17 +243,17 @@ test_plan:
       test_steps:
         - step: 1
           action: "Navegar para login"
-          expected_result: "P√°gina de login exibida"
+          expected_result: "P·gina de login exibida"
         
         - step: 2
-          action: "Inserir email v√°lido + senha incorreta"
-          expected_result: "Erro: 'Credenciais inv√°lidas'"
+          action: "Inserir email v·lido + senha incorreta"
+          expected_result: "Erro: 'Credenciais inv·lidas'"
       
       expected_outcome: "Login falha com mensagem de erro apropriada"
     
     # ---- Test Case 3 - Performance ----
     - id: "TC-003"
-      title: "[Load test - 1000 usu√°rios simult√¢neos]"
+      title: "[Load test - 1000 usu·rios simult‚neos]"
       priority: "High"
       type: "Performance"
       automated: true
@@ -261,11 +261,11 @@ test_plan:
       test_steps:
         - step: 1
           action: "Configurar JMeter com 1000 threads"
-          expected_result: "Configura√ß√£o aplicada"
+          expected_result: "ConfiguraÁ„o aplicada"
         
         - step: 2
           action: "Executar teste de carga por 5 minutos"
-          expected_result: "Sistema responde a todas requisi√ß√µes"
+          expected_result: "Sistema responde a todas requisiÁıes"
       
       expected_outcome: |
         - Response time p95 < 2s
@@ -281,11 +281,11 @@ test_plan:
           target: ">1000 req/s"
 
 # ============================================================================
-# SE√á√ÉO 5: TEST DATA
+# SE«√O 5: TEST DATA
 # ============================================================================
 
   test_data:
-    description: "Massa de dados necess√°ria para execu√ß√£o dos testes"
+    description: "Massa de dados necess·ria para execuÁ„o dos testes"
     
     users:
       - username: "admin@test.com"
@@ -322,7 +322,7 @@ test_plan:
         location: "mocks/api-responses.json"
 
 # ============================================================================
-# SE√á√ÉO 6: CRONOGRAMA E RECURSOS
+# SE«√O 6: CRONOGRAMA E RECURSOS
 # ============================================================================
 
   schedule:
@@ -384,16 +384,16 @@ test_plan:
         url: "https://staging.example.com"
 
 # ============================================================================
-# SE√á√ÉO 7: RISCOS E MITIGA√á√ÉO
+# SE«√O 7: RISCOS E MITIGA«√O
 # ============================================================================
 
   risks:
-    - risk: "Test environment inst√°vel"
+    - risk: "Test environment inst·vel"
       probability: "Medium"
       impact: "High"
       mitigation: |
         - Dedicar ambiente staging exclusivo para QA
-        - Setup autom√°tico via Infrastructure-as-Code
+        - Setup autom·tico via Infrastructure-as-Code
         - Smoke tests antes de iniciar suite completa
       owner: "DevOps + Carla"
     
@@ -402,16 +402,16 @@ test_plan:
       impact: "Medium"
       mitigation: |
         - Data seeding scripts mantidos em repo
-        - Documenta√ß√£o de test data requirements
+        - DocumentaÁ„o de test data requirements
       owner: "Carla + Tiago"
     
     - risk: "Flaky tests (testes intermitentes)"
       probability: "High"
       impact: "Medium"
       mitigation: |
-        - Retry logic para testes UI (m√°x 2 retries)
+        - Retry logic para testes UI (m·x 2 retries)
         - Timeouts adequados
-        - Investiga√ß√£o e fix de testes flaky prioritariamente
+        - InvestigaÁ„o e fix de testes flaky prioritariamente
       owner: "QA Team"
     
     - risk: "Atraso na entrega de features para teste"
@@ -419,12 +419,12 @@ test_plan:
       impact: "High"
       mitigation: |
         - Buffer de 2 dias no cronograma
-        - Prioriza√ß√£o de test cases cr√≠ticos primeiro
-        - Comunica√ß√£o di√°ria com Scrum Master (Roberto)
+        - PriorizaÁ„o de test cases crÌticos primeiro
+        - ComunicaÁ„o di·ria com Scrum Master (Roberto)
       owner: "Roberto + Carla"
 
 # ============================================================================
-# SE√á√ÉO 8: DEFEITOS E M√âTRICAS
+# SE«√O 8: DEFEITOS E M…TRICAS
 # ============================================================================
 
   defect_management:
@@ -435,17 +435,17 @@ test_plan:
         sla_resolution: "24 hours"
       
       high:
-        description: "Funcionalidade principal quebrada, workaround dif√≠cil"
+        description: "Funcionalidade principal quebrada, workaround difÌcil"
         sla_response: "4 hours"
         sla_resolution: "48 hours"
       
       medium:
-        description: "Funcionalidade quebrada com workaround vi√°vel"
+        description: "Funcionalidade quebrada com workaround vi·vel"
         sla_response: "1 day"
         sla_resolution: "1 week"
       
       low:
-        description: "Defeitos cosm√©ticos, minor issues"
+        description: "Defeitos cosmÈticos, minor issues"
         sla_response: "3 days"
         sla_resolution: "Next sprint"
     
@@ -453,15 +453,15 @@ test_plan:
       - status: "New"
         description: "Defeito reportado"
       - status: "Assigned"
-        description: "Desenvolvedor atribu√≠do"
+        description: "Desenvolvedor atribuÌdo"
       - status: "In Progress"
-        description: "Corre√ß√£o em andamento"
+        description: "CorreÁ„o em andamento"
       - status: "Fixed"
-        description: "Corre√ß√£o implementada"
+        description: "CorreÁ„o implementada"
       - status: "Ready for Retest"
         description: "Deploy em ambiente de teste"
       - status: "Verified"
-        description: "QA validou corre√ß√£o"
+        description: "QA validou correÁ„o"
       - status: "Closed"
         description: "Defeito resolvido"
   
@@ -493,7 +493,7 @@ test_plan:
         tracking_frequency: "Daily"
 
 # ============================================================================
-# SE√á√ÉO 9: APROVA√á√ïES E SIGN-OFF
+# SE«√O 9: APROVA«’ES E SIGN-OFF
 # ============================================================================
 
   approvals:
@@ -501,22 +501,22 @@ test_plan:
       role: "Business Acceptance"
       status: "[Pending | Approved | Rejected]"
       date: "YYYY-MM-DD"
-      comments: "[Coment√°rios do aprovador]"
+      comments: "[Coment·rios do aprovador]"
     
     - approver: "Wilson Santos (Architect)"
       role: "Technical Review"
       status: "[Pending | Approved | Rejected]"
       date: "YYYY-MM-DD"
-      comments: "[Coment√°rios do aprovador]"
+      comments: "[Coment·rios do aprovador]"
     
     - approver: "Roberto Costa (Scrum Master)"
       role: "Process Compliance"
       status: "[Pending | Approved | Rejected]"
       date: "YYYY-MM-DD"
-      comments: "[Coment√°rios do aprovador]"
+      comments: "[Coment·rios do aprovador]"
 
 # ============================================================================
-# SE√á√ÉO 10: ANEXOS E REFER√äNCIAS
+# SE«√O 10: ANEXOS E REFER NCIAS
 # ============================================================================
 
   references:
@@ -562,8 +562,8 @@ template_metadata:
   usage_instructions: |
     1. Copie este template para um novo arquivo
     2. Substitua todos os placeholders [ENTRE COLCHETES]
-    3. Remova se√ß√µes n√£o aplic√°veis ao seu contexto
-    4. Adicione test cases espec√≠ficos do seu projeto
+    3. Remova seÁıes n„o aplic·veis ao seu contexto
+    4. Adicione test cases especÌficos do seu projeto
     5. Valide com ${AVANADE_TASK_ADVERSARIAL_REVIEW}
-    6. Obtenha aprova√ß√£o de stakeholders
+    6. Obtenha aprovaÁ„o de stakeholders
     7. Execute e atualize status regularmente

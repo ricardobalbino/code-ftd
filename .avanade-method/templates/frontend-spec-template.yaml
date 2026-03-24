@@ -1,12 +1,12 @@
-ï»¿---
+---
 
-## ğŸ“‹ Objetivo
+## ?? Objetivo
 
-Template para especificaÃ§Ã£o tÃ©cnica de componentes e features front-end. Documenta requisitos, design, interaÃ§Ãµes, estados e implementaÃ§Ã£o para garantir entrega consistente e de qualidade.
+Template para especificação técnica de componentes e features front-end. Documenta requisitos, design, interações, estados e implementação para garantir entrega consistente e de qualidade.
 
 ---
 
-## ğŸ“ Front-End Specification Template
+## ?? Front-End Specification Template
 
 ```yaml
 # Front-End Specification
@@ -26,22 +26,22 @@ created_at: "[YYYY-MM-DD]"
 
 ### 1.1 Purpose
 purpose: |
-  [Descrever o propÃ³sito deste componente/feature em 2-3 frases]
+  [Descrever o propósito deste componente/feature em 2-3 frases]
 
 ### 1.2 User Story Reference
 user_story:
   id: "[Story ID]"
-  statement: "Como [usuÃ¡rio], quero [aÃ§Ã£o], para que [benefÃ­cio]"
+  statement: "Como [usuário], quero [ação], para que [benefício]"
 
 ### 1.3 Scope
 scope:
   included:
-    - "[Funcionalidade incluÃ­da]"
-    - "[Funcionalidade incluÃ­da]"
+    - "[Funcionalidade incluída]"
+    - "[Funcionalidade incluída]"
   excluded:
     - "[Funcionalidade fora do scope]"
   future_considerations:
-    - "[PossÃ­vel extensÃ£o futura]"
+    - "[Possível extensão futura]"
 
 ---
 
@@ -51,8 +51,8 @@ scope:
 design:
   figma_link: "[URL do design no Figma]"
   screenshots:
-    desktop: "[Link ou descriÃ§Ã£o]"
-    mobile: "[Link ou descriÃ§Ã£o]"
+    desktop: "[Link ou descrição]"
+    mobile: "[Link ou descrição]"
   design_system:
     framework: "[Fluent UI | Material | Custom]"
     reference: "${AVANADE_FLUENT_DESIGN_GUIDELINES}"
@@ -97,13 +97,13 @@ spacing:
 ### 3.1 Component Hierarchy
 component_tree: |
   <FeatureComponent>
-    â”œâ”€â”€ <Header />
-    â”œâ”€â”€ <MainContent>
-    â”‚   â”œâ”€â”€ <Sidebar />
-    â”‚   â””â”€â”€ <ContentArea>
-    â”‚       â”œâ”€â”€ <ComponentA />
-    â”‚       â””â”€â”€ <ComponentB />
-    â””â”€â”€ <Footer />
+    +-- <Header />
+    +-- <MainContent>
+    ¦   +-- <Sidebar />
+    ¦   +-- <ContentArea>
+    ¦       +-- <ComponentA />
+    ¦       +-- <ComponentB />
+    +-- <Footer />
 
 ### 3.2 Props Interface
 props:
@@ -111,7 +111,7 @@ props:
     type: "string | number | boolean | CustomType"
     required: true
     default: "[valor default se houver]"
-    description: "[DescriÃ§Ã£o do prop]"
+    description: "[Descrição do prop]"
     
   - name: "onAction"
     type: "(data: DataType) => void"
@@ -140,12 +140,12 @@ state:
 ### 4.1 User Interactions
 interactions:
   - trigger: "Button Click"
-    element: "[ID ou descriÃ§Ã£o]"
+    element: "[ID ou descrição]"
     action: "[O que acontece]"
     feedback: "[Feedback visual/auditivo]"
     
   - trigger: "Form Submit"
-    validation: "[Regras de validaÃ§Ã£o]"
+    validation: "[Regras de validação]"
     success: "[Comportamento no sucesso]"
     error: "[Comportamento no erro]"
 
@@ -176,14 +176,14 @@ animations:
 states:
   default:
     description: "Estado normal do componente"
-    visual: "[DescriÃ§Ã£o ou screenshot]"
+    visual: "[Descrição ou screenshot]"
     
   loading:
     description: "Aguardando dados"
     visual: "Skeleton loader / Spinner"
     
   empty:
-    description: "Nenhum dado disponÃ­vel"
+    description: "Nenhum dado disponível"
     visual: "Empty state illustration + CTA"
     
   error:
@@ -191,16 +191,16 @@ states:
     visual: "Error message + retry button"
     
   disabled:
-    description: "InteraÃ§Ã£o nÃ£o permitida"
+    description: "Interação não permitida"
     visual: "Opacity reduzida, cursor not-allowed"
 
 ### 5.2 Validation States (Forms)
 validation_states:
-  pristine: "Campo nÃ£o tocado"
+  pristine: "Campo não tocado"
   touched: "Campo foi focado"
-  valid: "Valor vÃ¡lido - borda verde/check"
-  invalid: "Valor invÃ¡lido - borda vermelha + mensagem"
-  validating: "ValidaÃ§Ã£o async em progresso"
+  valid: "Valor válido - borda verde/check"
+  invalid: "Valor inválido - borda vermelha + mensagem"
+  validating: "Validação async em progresso"
 
 ---
 
@@ -247,10 +247,10 @@ mock_data: |
 accessibility:
   level: "WCAG 2.1 AA"
   requirements:
-    - "[ ] Todos elementos interativos focÃ¡veis"
-    - "[ ] Contraste mÃ­nimo 4.5:1"
+    - "[ ] Todos elementos interativos focáveis"
+    - "[ ] Contraste mínimo 4.5:1"
     - "[ ] Labels associados a inputs"
-    - "[ ] ARIA labels onde necessÃ¡rio"
+    - "[ ] ARIA labels onde necessário"
     - "[ ] Screen reader testado"
   
   aria_attributes:
@@ -337,7 +337,7 @@ code_example: |
 
 ### 10.3 Known Limitations
 limitations:
-  - "[LimitaÃ§Ã£o conhecida e workaround]"
+  - "[Limitação conhecida e workaround]"
 
 ---
 
@@ -358,7 +358,7 @@ delivery_checklist:
 
 ---
 
-## ğŸ”— Relacionamentos
+## ?? Relacionamentos
 
 - **Design System**: ${AVANADE_FLUENT_DESIGN_GUIDELINES}
 - **Wireframe Template**: ${AVANADE_WIREFRAME_TEMPLATE}

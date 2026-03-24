@@ -1,47 +1,47 @@
-Ôªø### Code Quality Patterns
-_Padr√µes de c√≥digo que funcionam bem_
+### Code Quality Patterns
+_Padrıes de cÛdigo que funcionam bem_
 
 **Exemplo**:
 ```yaml
 - pattern: "SOLID Principles"
   S_single_responsibility:
-    example: "UserService ‚Üí UserAuthService + UserProfileService (separados)"
-    benefit: "Classes focadas, f√°ceis de testar"
+    example: "UserService ? UserAuthService + UserProfileService (separados)"
+    benefit: "Classes focadas, f·ceis de testar"
   O_open_closed:
-    example: "Strategy pattern para payment methods (extens√≠vel sem modificar existente)"
+    example: "Strategy pattern para payment methods (extensÌvel sem modificar existente)"
     benefit: "Adicionar PayPal sem modificar CreditCardPayment"
   L_liskov_substitution:
-    example: "Bird ‚Üí FlyingBird, Penguin (Penguin n√£o herda fly())"
-    benefit: "Hierarquias corretas, sem m√©todos vazios"
+    example: "Bird ? FlyingBird, Penguin (Penguin n„o herda fly())"
+    benefit: "Hierarquias corretas, sem mÈtodos vazios"
   I_interface_segregation:
-    example: "IReadable, IWritable separados (n√£o IRepository gigante)"
+    example: "IReadable, IWritable separados (n„o IRepository gigante)"
     benefit: "Clients dependem apenas do que usam"
   D_dependency_inversion:
-    example: "Controller ‚Üí IUserService (interface), n√£o UserService (concreto)"
+    example: "Controller ? IUserService (interface), n„o UserService (concreto)"
     benefit: "Testability (mock IUserService), loose coupling"
   
 - pattern: "DRY (Don't Repeat Yourself)"
-  anti_pattern: "Copy-paste code (duplica√ß√£o)"
+  anti_pattern: "Copy-paste code (duplicaÁ„o)"
   refactoring: "Extract method, extract class, inheritance/composition"
-  caveat: "N√£o over-DRY (abstra√ß√µes prematuras ‚Üí complexidade)"
-  rule_of_thumb: "3 duplica√ß√µes ‚Üí refactor (rule of three)"
+  caveat: "N„o over-DRY (abstraÁıes prematuras ? complexidade)"
+  rule_of_thumb: "3 duplicaÁıes ? refactor (rule of three)"
   
 - pattern: "YAGNI (You Aren't Gonna Need It)"
-  principle: "N√£o implementar features 'por acaso' (apenas quando needed)"
-  example: "N√£o criar abstra√ß√£o gen√©rica antes de ter 2+ casos de uso"
-  benefit: "C√≥digo mais simples, menos over-engineering"
+  principle: "N„o implementar features 'por acaso' (apenas quando needed)"
+  example: "N„o criar abstraÁ„o genÈrica antes de ter 2+ casos de uso"
+  benefit: "CÛdigo mais simples, menos over-engineering"
   balance: "YAGNI para features, mas plan for extensibility (SOLID-O)"
 ```
 
 ---
 
 ### Design Patterns Aplicados
-_Padr√µes GoF e outros_
+_Padrıes GoF e outros_
 
 **Exemplo**:
 ```yaml
 - pattern: "Repository Pattern"
-  use_case: "Data access layer (abstra√ß√£o de DB)"
+  use_case: "Data access layer (abstraÁ„o de DB)"
   implementation:
     interface: "IUserRepository { GetById(), Save(), Delete() }"
     concrete: "SqlUserRepository, MongoUserRepository"
@@ -49,21 +49,21 @@ _Padr√µes GoF e outros_
   projects_used: 15
   
 - pattern: "Factory Pattern"
-  use_case: "Cria√ß√£o de objetos complexos (payment processors)"
-  implementation: "PaymentFactory.Create('creditcard') ‚Üí CreditCardProcessor"
-  benefit: "Centraliza l√≥gica de cria√ß√£o, extens√≠vel (adicionar novos tipos)"
+  use_case: "CriaÁ„o de objetos complexos (payment processors)"
+  implementation: "PaymentFactory.Create('creditcard') ? CreditCardProcessor"
+  benefit: "Centraliza lÛgica de criaÁ„o, extensÌvel (adicionar novos tipos)"
   projects_used: 8
   
 - pattern: "Observer Pattern (Event-driven)"
-  use_case: "Notifica√ß√µes (order placed ‚Üí send email, update inventory)"
+  use_case: "NotificaÁıes (order placed ? send email, update inventory)"
   implementation:
     - "Event: OrderPlacedEvent"
     - "Handlers: EmailNotificationHandler, InventoryUpdateHandler"
-  benefit: "Decoupling (order service n√£o conhece email/inventory)"
+  benefit: "Decoupling (order service n„o conhece email/inventory)"
   projects_used: 12
   
 - pattern: "Strategy Pattern"
-  use_case: "Algoritmos intercambi√°veis (sorting, pricing)"
+  use_case: "Algoritmos intercambi·veis (sorting, pricing)"
   implementation:
     - "ISortStrategy { Sort(List<T>) }"
     - "Concrete: BubbleSort, QuickSort, MergeSort"
@@ -80,14 +80,14 @@ _Padr√µes GoF e outros_
 ---
 
 ### Refactoring Techniques Validadas
-_T√©cnicas de refactoring eficazes_
+_TÈcnicas de refactoring eficazes_
 
 **Exemplo**:
 ```yaml
 - technique: "Extract Method"
-  before: "M√©todo de 100 linhas (faz muitas coisas)"
-  after: "5 m√©todos de 20 linhas cada (nomes descritivos)"
-  benefit: "Readability +80%, testability (unit test por m√©todo)"
+  before: "MÈtodo de 100 linhas (faz muitas coisas)"
+  after: "5 mÈtodos de 20 linhas cada (nomes descritivos)"
+  benefit: "Readability +80%, testability (unit test por mÈtodo)"
   ide_support: "Visual Studio, VS Code (Extract Method refactoring)"
   
 - technique: "Replace Conditional with Polymorphism"
@@ -98,7 +98,7 @@ _T√©cnicas de refactoring eficazes_
   after: |
     IPaymentProcessor processor = PaymentFactory.Create(type);
     processor.Process();
-  benefit: "Extens√≠vel (adicionar tipo sem modificar if/else), SOLID-O"
+  benefit: "ExtensÌvel (adicionar tipo sem modificar if/else), SOLID-O"
   
 - technique: "Introduce Parameter Object"
   before: "CreateUser(string name, string email, int age, string address, ...)" # 8 params
@@ -114,64 +114,64 @@ _T√©cnicas de refactoring eficazes_
 ---
 
 ### Performance Optimization Patterns
-_Otimiza√ß√µes validadas_
+_OtimizaÁıes validadas_
 
 **Exemplo**:
 ```yaml
 - optimization: "Caching (Redis)"
   scenario: "User profile lido 1000x/min, muda 1x/dia"
   implementation:
-    - "Cache.Get('user:123') ‚Üí hit 99%, miss 1%"
+    - "Cache.Get('user:123') ? hit 99%, miss 1%"
     - "TTL: 24h (expira e re-fetch de DB)"
-  impact: "DB load -99%, API response time 200ms ‚Üí 15ms"
+  impact: "DB load -99%, API response time 200ms ? 15ms"
   caveat: "Cache invalidation complexo (clear on update)"
   
 - optimization: "Database Indexing"
   scenario: "Query lenta: SELECT * FROM Orders WHERE UserId = X"
   implementation: "CREATE INDEX idx_orders_userid ON Orders(UserId)"
-  impact: "Query time 2s ‚Üí 50ms (40x faster)"
-  caveat: "√çndices custam espa√ßo e lentid√£o em writes (tradeoff)"
+  impact: "Query time 2s ? 50ms (40x faster)"
+  caveat: "Õndices custam espaÁo e lentid„o em writes (tradeoff)"
   
 - optimization: "Async/Await (non-blocking I/O)"
-  scenario: "API call externa bloqueia thread (s√≠ncrono)"
+  scenario: "API call externa bloqueia thread (sÌncrono)"
   implementation: "await httpClient.GetAsync(url) # non-blocking"
   impact: "Throughput +300% (threads liberadas para outros requests)"
-  caveat: "N√£o usar async para CPU-bound (apenas I/O-bound)"
+  caveat: "N„o usar async para CPU-bound (apenas I/O-bound)"
   
-- optimization: "Lazy Loading (defer work at√© necess√°rio)"
+- optimization: "Lazy Loading (defer work atÈ necess·rio)"
   scenario: "Carregar relacionamentos de entidade apenas se usado"
-  implementation: "User.Orders (lazy) ‚Üí load apenas se .Orders acessado"
+  implementation: "User.Orders (lazy) ? load apenas se .Orders acessado"
   impact: "Initial load time -60%"
   caveat: "N+1 query problem (cuidado em loops)"
   
 - optimization: "Pagination (limit data transfer)"
-  scenario: "Endpoint retorna 10k records ‚Üí slow, high bandwidth"
+  scenario: "Endpoint retorna 10k records ? slow, high bandwidth"
   implementation: "GET /users?page=1&pageSize=50"
-  impact: "Response time 5s ‚Üí 200ms, bandwidth -99%"
+  impact: "Response time 5s ? 200ms, bandwidth -99%"
 ```
 
 ---
 
-## üêõ Debugging Strategies
+## ?? Debugging Strategies
 
 ### Debugging Techniques Eficazes
-_Abordagens sistem√°ticas de debugging_
+_Abordagens sistem·ticas de debugging_
 
 **Exemplo**:
 ```yaml
 - technique: "Binary Search Debugging (git bisect)"
-  scenario: "Bug introduzido em algum commit dos √∫ltimos 50"
+  scenario: "Bug introduzido em algum commit dos ˙ltimos 50"
   process:
     1. "git bisect start"
     2. "git bisect bad (current commit com bug)"
     3. "git bisect good (commit antigo sem bug)"
-    4. "Test commit do meio ‚Üí mark good/bad"
-    5. "Repeat at√© encontrar commit culpado"
-  benefit: "Find bug-introducing commit em log(N) steps (n√£o N)"
+    4. "Test commit do meio ? mark good/bad"
+    5. "Repeat atÈ encontrar commit culpado"
+  benefit: "Find bug-introducing commit em log(N) steps (n„o N)"
   
 - technique: "Rubber Duck Debugging"
-  process: "Explicar c√≥digo/problema em voz alta (ou para pato de borracha)"
-  benefit: "70% das vezes, solu√ß√£o aparece ao explicar (for√ßa racioc√≠nio estruturado)"
+  process: "Explicar cÛdigo/problema em voz alta (ou para pato de borracha)"
+  benefit: "70% das vezes, soluÁ„o aparece ao explicar (forÁa raciocÌnio estruturado)"
   effectiveness: "Alta (baixo custo, alta taxa de sucesso)"
   
 - technique: "Breakpoint + Watch Variables"
@@ -181,45 +181,45 @@ _Abordagens sistem√°ticas de debugging_
     2. "Run em debug mode"
     3. "Watch variables (inspecionar estado)"
     4. "Step over/into para seguir fluxo"
-  benefit: "Visualizar estado runtime (n√£o apenas logs)"
+  benefit: "Visualizar estado runtime (n„o apenas logs)"
   
-- technique: "Logging Estrat√©gico"
+- technique: "Logging EstratÈgico"
   anti_pattern: "Console.WriteLine() em todo lugar"
   pattern: "Structured logging (Serilog, log levels)"
   example: |
     _logger.LogInformation("User {UserId} logged in", userId);
     _logger.LogWarning("API timeout after {Elapsed}ms", elapsed);
-  benefit: "Logs agreg√°veis (Application Insights), filtr√°veis por level"
+  benefit: "Logs agreg·veis (Application Insights), filtr·veis por level"
   
 - technique: "Divide and Conquer (isolar problema)"
   process:
     1. "Reproduzir bug minimalmente (smallest failing test case)"
-    2. "Comment out metade do c√≥digo ‚Üí still fails?"
-    3. "Narrow down at√© isolar linha problem√°tica"
+    2. "Comment out metade do cÛdigo ? still fails?"
+    3. "Narrow down atÈ isolar linha problem·tica"
   benefit: "Reduz search space exponencialmente"
 ```
 
 ---
 
 ### Common Error Patterns & Fixes
-_Erros recorrentes e solu√ß√µes_
+_Erros recorrentes e soluÁıes_
 
 **Exemplo**:
 ```yaml
 - error: "NullReferenceException (C#) / TypeError (JS)"
-  root_cause: "Vari√°vel null/undefined n√£o validada"
+  root_cause: "Vari·vel null/undefined n„o validada"
   fix:
     - "Guard clause: if (user == null) throw ArgumentNullException"
     - "Null-conditional operator: user?.Name (retorna null se user null)"
     - "Nullable reference types (C# 8+): string? (explicit nullable)"
   prevention: "Static analysis (Roslyn analyzers), code review"
   
-- error: "Memory Leak (aplica√ß√£o consume RAM crescentemente)"
-  root_cause: "Event handlers n√£o desregistrados, refer√™ncias circulares"
+- error: "Memory Leak (aplicaÁ„o consume RAM crescentemente)"
+  root_cause: "Event handlers n„o desregistrados, referÍncias circulares"
   fix:
     - "Dispose pattern (IDisposable, using statements)"
-    - "Weak references para event listeners (se aplic√°vel)"
-    - "Memory profiler (dotMemory, Chrome DevTools) ‚Üí identify leak"
+    - "Weak references para event listeners (se aplic·vel)"
+    - "Memory profiler (dotMemory, Chrome DevTools) ? identify leak"
   prevention: "Code review (check Dispose calls), automated memory tests"
   
 - error: "Deadlock (threads bloqueadas mutuamente)"
@@ -240,7 +240,7 @@ _Erros recorrentes e solu√ß√µes_
 
 ---
 
-## üèóÔ∏è Architecture & Tech Stack Decisions
+## ??? Architecture & Tech Stack Decisions
 
 ### Tech Stack Preferences
 _Tecnologias validadas em projetos_
@@ -274,11 +274,11 @@ _Tecnologias validadas em projetos_
     - "Migrations (schema versioning)"
     - "Performance adequada (lazy/eager loading control)"
   alternatives:
-    - "Dapper: Usado para performance cr√≠tica (micro-ORM, mais controle)"
+    - "Dapper: Usado para performance crÌtica (micro-ORM, mais controle)"
   
 - category: "Testing"
   preferred: "xUnit (unit), Playwright (E2E)"
-  rationale: "Padr√£o .NET (xUnit), Playwright multi-browser + auto-wait"
+  rationale: "Padr„o .NET (xUnit), Playwright multi-browser + auto-wait"
   
 - category: "API Design"
   preferred: "REST (OpenAPI/Swagger)"
@@ -303,39 +303,39 @@ _Itens que Tiago valida em PRs_
 - category: "Code Quality"
   checks:
     - "SOLID principles respeitados"
-    - "Nomes descritivos (sem vari√°veis x, y, temp)"
-    - "M√©todos < 20 linhas (exceto casos justificados)"
-    - "DRY (sem duplica√ß√£o excessiva)"
+    - "Nomes descritivos (sem vari·veis x, y, temp)"
+    - "MÈtodos < 20 linhas (exceto casos justificados)"
+    - "DRY (sem duplicaÁ„o excessiva)"
   
 - category: "Testing"
   checks:
     - "Unit tests escritos (coverage >80%)"
     - "Tests passando (CI green)"
-    - "Integration tests se aplic√°vel (API endpoints)"
+    - "Integration tests se aplic·vel (API endpoints)"
   
 - category: "Performance"
   checks:
     - "Queries otimizadas (sem N+1)"
-    - "Caching considerado (se aplic√°vel)"
+    - "Caching considerado (se aplic·vel)"
     - "Async/await para I/O-bound operations"
   
 - category: "Security"
   checks:
-    - "Input validation (n√£o confiar em user input)"
+    - "Input validation (n„o confiar em user input)"
     - "SQL injection prevented (parameterized queries)"
-    - "Secrets n√£o hardcoded (use environment variables)"
+    - "Secrets n„o hardcoded (use environment variables)"
     - "Authentication/authorization corretos"
   
 - category: "Documentation"
   checks:
     - "XML comments para public APIs (C#)"
-    - "README updated (se mudan√ßas em setup)"
-    - "ADR criado (se decis√£o arquitetural - Wilson)"
+    - "README updated (se mudanÁas em setup)"
+    - "ADR criado (se decis„o arquitetural - Wilson)"
 ```
 
 ---
 
-## üîÑ CI/CD & DevOps Practices
+## ?? CI/CD & DevOps Practices
 
 ### CI/CD Pipeline Configuration
 _Setup de pipelines que funciona_
@@ -374,10 +374,10 @@ _Setup de pipelines que funciona_
   failure_action: "Rollback deployment"
   
 - pipeline_stage: "Deploy to Production"
-  trigger: "Manual approval (Paula PO + Jo√£o PM)"
+  trigger: "Manual approval (Paula PO + Jo„o PM)"
   tasks:
     - "Blue/green deployment (zero-downtime)"
-    - "Swap slots (Staging ‚Üí Production)"
+    - "Swap slots (Staging ? Production)"
     - "Monitor for 30min (error rate, latency)"
   failure_action: "Auto-rollback if errors > 0.5%"
 ```
@@ -392,9 +392,9 @@ _Gerenciamento de infra_
 - tool: "Terraform (Azure provider)"
   use_case: "Provisionar Azure resources (App Service, SQL Database, Redis)"
   benefits:
-    - "Versionado (git) ‚Üí audit√°vel"
-    - "Reproduz√≠vel (mesma infra em dev/staging/prod)"
-    - "Declarativo (define estado desejado, n√£o steps)"
+    - "Versionado (git) ? audit·vel"
+    - "ReproduzÌvel (mesma infra em dev/staging/prod)"
+    - "Declarativo (define estado desejado, n„o steps)"
   example:
     resource: "azurerm_app_service"
     config: |
@@ -407,13 +407,13 @@ _Gerenciamento de infra_
   
 - practice: "Environment Parity (dev/staging/prod similares)"
   implementation: "Terraform workspaces (dev, staging, prod)"
-  benefit: "Bugs de infra detectados early (n√£o apenas em prod)"
+  benefit: "Bugs de infra detectados early (n„o apenas em prod)"
   caveat: "Custo (3 ambientes), mas ROI positivo (menos outages)"
 ```
 
 ---
 
-## üß† Learning & Skill Development
+## ?? Learning & Skill Development
 
 ### Technologies to Learn (Roadmap)
 _Skills prioritizadas_
@@ -427,21 +427,21 @@ _Skills prioritizadas_
   timeline: "Q1 2024"
   
 - skill: "Domain-Driven Design (DDD)"
-  priority: "M√©dia-Alta"
+  priority: "MÈdia-Alta"
   rationale: "Projetos complexos (bounded contexts, ubiquitous language)"
   learning_path: "DDD Eric Evans (livro) + workshop Wilson (Architect)"
   timeline: "Q2 2024"
   
 - skill: "Rust (systems programming)"
-  priority: "Baixa-M√©dia"
-  rationale: "Performance cr√≠tica (n√£o mainstream ainda em Avanade)"
+  priority: "Baixa-MÈdia"
+  rationale: "Performance crÌtica (n„o mainstream ainda em Avanade)"
   learning_path: "The Rust Book + side project"
   timeline: "Q3-Q4 2024 (se tempo)"
 ```
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 
 ### Artifacts Relacionados:
 - Clean Code Task: `${AVANADE_TASK_CLEAN_CODE}`
@@ -460,31 +460,31 @@ po: ${AVANADE_MEMORY_PO_PAULA}
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de implementar feature:
-1. Consultar **Design Patterns** ‚Üí escolher pattern adequado
-2. Revisar **Tech Stack Preferences** ‚Üí tecnologias validadas
-3. Consultar **Code Quality Patterns** ‚Üí SOLID, DRY, YAGNI
+### ? ANTES de implementar feature:
+1. Consultar **Design Patterns** ? escolher pattern adequado
+2. Revisar **Tech Stack Preferences** ? tecnologias validadas
+3. Consultar **Code Quality Patterns** ? SOLID, DRY, YAGNI
 
-### ‚úÖ DURANTE desenvolvimento:
-1. Aplicar **Refactoring Techniques** ‚Üí melhorar c√≥digo continuamente
-2. Considerar **Performance Optimization** ‚Üí se aplic√°vel
-3. Seguir **Code Review Checklist** ‚Üí auto-review antes de PR
+### ? DURANTE desenvolvimento:
+1. Aplicar **Refactoring Techniques** ? melhorar cÛdigo continuamente
+2. Considerar **Performance Optimization** ? se aplic·vel
+3. Seguir **Code Review Checklist** ? auto-review antes de PR
 
-### ‚úÖ QUANDO debugar:
-1. Usar **Debugging Techniques** ‚Üí abordagem sistem√°tica
-2. Consultar **Common Error Patterns** ‚Üí solu√ß√µes conhecidas
-3. Documentar novos bugs ‚Üí atualizar mem√≥ria
+### ? QUANDO debugar:
+1. Usar **Debugging Techniques** ? abordagem sistem·tica
+2. Consultar **Common Error Patterns** ? soluÁıes conhecidas
+3. Documentar novos bugs ? atualizar memÛria
 
-### ‚úÖ AP√ìS code review:
-1. **Atualizar mem√≥ria** com novos patterns aprendidos
-2. Documentar **Lessons Learned** ‚Üí erros evitados
-3. Compartilhar conhecimento ‚Üí pair programming, tech talks
+### ? AP”S code review:
+1. **Atualizar memÛria** com novos patterns aprendidos
+2. Documentar **Lessons Learned** ? erros evitados
+3. Compartilhar conhecimento ? pair programming, tech talks
 
 ---
 
-## üè¢ D365 CE Development Context - FTD Educa√ß√£o
+## ?? D365 CE Development Context - FTD EducaÁ„o
 
 ### Stack D365 Ativo
 ```yaml
@@ -499,32 +499,32 @@ testing: "FakeXrmEasy + xUnit (plugins), Jest (PCF), Postman/Newman (APIs)"
 ```
 
 ### Ambiente Real FTD
-- **9 solutions** segmentadas por tipo de componente (numeradas com ordem de depend√™ncia)
+- **9 solutions** segmentadas por tipo de componente (numeradas com ordem de dependÍncia)
 - **Repo**: FTD Dynamics (branch `dev` = source of truth, feature branches)
 - **Pipeline**: Azure DevOps (Dev=manual plugins, OAT/Prod=pipeline, Prod requer GMUD via SMAX)
-- **Plugins**: poucos, bug rate muito baixo ap√≥s 1.5 ano de reestrutura√ß√£o
-- **JS Web Resources**: em refatora√ß√£o (assessment pr√©vio), ambos base class (Late Binding) e legado
-- **Power Automates**: cr√≠ticos em revis√£o (especialmente fluxo de aprova√ß√£o - muito extenso)
-- **Azure Functions**: c√°lculos de proposta comercial, renova√ß√£o autom√°tica
-- **Batch updates**: projetos console para atualiza√ß√£o em massa (executados em VM de infra)
-- **Key Vault**: usado para Azure Functions (N√ÉO para Power Automate - usa environment variables)
-- **Usu√°rio de servi√ßo**: ftdmaxflow (conex√µes e propriet√°rio de flows)
+- **Plugins**: poucos, bug rate muito baixo apÛs 1.5 ano de reestruturaÁ„o
+- **JS Web Resources**: em refatoraÁ„o (assessment prÈvio), ambos base class (Late Binding) e legado
+- **Power Automates**: crÌticos em revis„o (especialmente fluxo de aprovaÁ„o - muito extenso)
+- **Azure Functions**: c·lculos de proposta comercial, renovaÁ„o autom·tica
+- **Batch updates**: projetos console para atualizaÁ„o em massa (executados em VM de infra)
+- **Key Vault**: usado para Azure Functions (N√O para Power Automate - usa environment variables)
+- **Usu·rio de serviÁo**: ftdmaxflow (conexıes e propriet·rio de flows)
 
 ### Simulador Comercial (Foco Principal)
 - **Power Pages** (frontend) + CRM (motor)
 - Cache client-side heavy (minimizar roundtrips Dataverse)
-- C√°lculos real-time em frontend (JavaScript/PowerFX)
-- Valida√ß√£o backend: Azure Functions
-- **D√©bounce**: ‚â§50 produtos ‚Üí plugin s√≠ncrono; >50 ‚Üí Azure Function
-- MVP: adi√ß√£o individual de produtos (deadline 31/mar/2026)
+- C·lculos real-time em frontend (JavaScript/PowerFX)
+- ValidaÁ„o backend: Azure Functions
+- **DÈbounce**: =50 produtos ? plugin sÌncrono; >50 ? Azure Function
+- MVP: adiÁ„o individual de produtos (deadline 31/mar/2026)
 
-### Integra√ß√µes Ativas
-- **TOTVS/Datasul**: ETLs bidirecionais (contas sync 1x/dia √†s 6h, c√≥digo ERP)
-- **ISA**: cadastro de produto (ISA ‚Üî TOTVS ‚Üî CRM - a redesenhar)
-- **Adobe Sign**: plugin "Adobe Agreement" (em migra√ß√£o de tecnologia)
-- **Tabela de log**: tabela gen√©rica para qualquer integra√ß√£o
-- **Tabela de fluxos gerenciais**: URLs de flows recursivos (matriz de servi√ßos)
-- Consumo apenas: time CRM recebe endpoints do time de integra√ß√£o (Thiago Veiga)
+### IntegraÁıes Ativas
+- **TOTVS/Datasul**: ETLs bidirecionais (contas sync 1x/dia ‡s 6h, cÛdigo ERP)
+- **ISA**: cadastro de produto (ISA ? TOTVS ? CRM - a redesenhar)
+- **Adobe Sign**: plugin "Adobe Agreement" (em migraÁ„o de tecnologia)
+- **Tabela de log**: tabela genÈrica para qualquer integraÁ„o
+- **Tabela de fluxos gerenciais**: URLs de flows recursivos (matriz de serviÁos)
+- Consumo apenas: time CRM recebe endpoints do time de integraÁ„o (Thiago Veiga)
 - Sistemas externos consultam CRM via OData/FetchXML (sem custom Actions expostas)
 
 ### D365 Artifacts
@@ -533,14 +533,14 @@ testing: "FakeXrmEasy + xUnit (plugins), Jest (PCF), Postman/Newman (APIs)"
 - Dev Workflow (Integration): `d365-integration.workflow.md`
 - Standards: `d365-development-standards.md`
 - Code Review Checklist: `d365-code-review-checklist.md`
-- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT√ìRIA)
+- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT”RIA)
 
 ### Critical Rules D365 FTD
 - NUNCA async/await em plugins Dataverse
 - NUNCA ColumnSet(true) - sempre especificar colunas
 - SEMPRE depth check > 1
 - SEMPRE ITracingService para logs
-- SEMPRE FakeXrmEasy para testes (‚â• 80% coverage)
+- SEMPRE FakeXrmEasy para testes (= 80% coverage)
 - Secrets em Key Vault (nunca appsettings)
 - Plugin execution < 2s (especialmente no pico nov-jan)
 - Power Pages: minimizar consultas ao Dataverse (cache heavy)

@@ -1,13 +1,13 @@
-Ôªø> **‚ö†Ô∏è FTD EDUCA√á√ÉO - CONTEXTO OBRIGAT√ìRIO**
-> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `.avanade-method/docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
+> **?? FTD EDUCA«√O - CONTEXTO OBRIGAT”RIO**
+> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
 
 # ============================================================================
-# SE√á√ÉO 1: INFORMA√á√ïES GERAIS DO WIREFRAME
+# SE«√O 1: INFORMA«’ES GERAIS DO WIREFRAME
 # ============================================================================
 
 wireframe:
   metadata:
-    id: "WF-[N√öMERO]"
+    id: "WF-[N⁄MERO]"
     name: "[Nome da Tela/Fluxo - ex: Login Screen, Dashboard]"
     version: "1.0"
     status: "[Draft | In Review | Approved | In Development]"
@@ -24,46 +24,46 @@ wireframe:
       - "[Figma | Sketch | Adobe XD | Balsamiq]"
     
   context:
-    user_story_reference: "[US-XXX: Como [persona], quero [a√ß√£o] para [benef√≠cio]]"
+    user_story_reference: "[US-XXX: Como [persona], quero [aÁ„o] para [benefÌcio]]"
     epic_reference: "[EPIC-XXX: Nome do Epic]"
     user_persona: "[Nome da Persona Principal - ex: Ana, Gerente de Vendas]"
     use_case: |
-      [Descri√ß√£o do caso de uso:
-      O usu√°rio precisa fazer login no sistema para acessar funcionalidades
-      protegidas. O fluxo deve ser simples e suportar autentica√ß√£o social.]
+      [DescriÁ„o do caso de uso:
+      O usu·rio precisa fazer login no sistema para acessar funcionalidades
+      protegidas. O fluxo deve ser simples e suportar autenticaÁ„o social.]
 
 # ============================================================================
-# SE√á√ÉO 2: USER FLOW
+# SE«√O 2: USER FLOW
 # ============================================================================
 
   user_flow:
-    description: "Jornada do usu√°rio atrav√©s das telas"
+    description: "Jornada do usu·rio atravÈs das telas"
     
     steps:
       - step: 1
         screen: "Landing Page"
-        action: "Usu√°rio clica em 'Login'"
+        action: "Usu·rio clica em 'Login'"
         next_screen: "Login Screen (WF-001)"
       
       - step: 2
         screen: "Login Screen"
-        action: "Usu√°rio insere credenciais e clica 'Entrar'"
+        action: "Usu·rio insere credenciais e clica 'Entrar'"
         next_screen: "Dashboard (WF-002)"
         alternative_flow:
-          - condition: "Credenciais inv√°lidas"
+          - condition: "Credenciais inv·lidas"
             next_screen: "Login Screen (erro exibido)"
           - condition: "Primeiro acesso"
             next_screen: "Onboarding Wizard (WF-003)"
       
       - step: 3
         screen: "Dashboard"
-        action: "Usu√°rio visualiza overview de dados"
-        next_screen: "[M√∫ltiplas op√ß√µes de navega√ß√£o]"
+        action: "Usu·rio visualiza overview de dados"
+        next_screen: "[M˙ltiplas opÁıes de navegaÁ„o]"
     
     flow_diagram_link: "[URL do Figma/Miro com diagrama visual do fluxo]"
 
 # ============================================================================
-# SE√á√ÉO 3: LAYOUT E ESTRUTURA
+# SE«√O 3: LAYOUT E ESTRUTURA
 # ============================================================================
 
   layout:
@@ -116,7 +116,7 @@ wireframe:
           - "Links de suporte"
 
 # ============================================================================
-# SE√á√ÉO 4: COMPONENTES E ELEMENTOS
+# SE«√O 4: COMPONENTES E ELEMENTOS
 # ============================================================================
 
   components:
@@ -133,7 +133,7 @@ wireframe:
         padding: "32px"
       
       elements:
-        - element: "T√≠tulo"
+        - element: "TÌtulo"
           type: "Text (Heading 1)"
           fluent_component: "Text - variant='xLarge'"
           content: "Bem-vindo de volta"
@@ -142,7 +142,7 @@ wireframe:
             font_weight: "600"
             color: "neutralPrimary"
         
-        - element: "Subt√≠tulo"
+        - element: "SubtÌtulo"
           type: "Text (Body)"
           fluent_component: "Text - variant='medium'"
           content: "Entre com suas credenciais"
@@ -159,7 +159,7 @@ wireframe:
             placeholder: "seu.email@exemplo.com"
             required: true
             type: "email"
-            error_message: "Por favor, insira um email v√°lido"
+            error_message: "Por favor, insira um email v·lido"
             validation: "email format"
             autocomplete: "email"
           
@@ -181,7 +181,7 @@ wireframe:
             autocomplete: "current-password"
           
           interactions:
-            - action: "Click no √≠cone de olho"
+            - action: "Click no Ìcone de olho"
               behavior: "Alternar visibilidade da senha (text/password)"
         
         - element: "Checkbox 'Lembrar-me'"
@@ -199,7 +199,7 @@ wireframe:
             href: "/forgot-password"
             style: "underline on hover"
         
-        - element: "Bot√£o Login"
+        - element: "Bot„o Login"
           type: "Button - Primary"
           fluent_component: "PrimaryButton"
           properties:
@@ -217,7 +217,7 @@ wireframe:
           
           interactions:
             - action: "Click"
-              behavior: "Validar form ‚Üí API call ‚Üí Loading state ‚Üí Redirect ou erro"
+              behavior: "Validar form ? API call ? Loading state ? Redirect ou erro"
         
         - element: "Divider"
           type: "Separator"
@@ -226,7 +226,7 @@ wireframe:
             text: "ou"
             margin: "24px 0"
         
-        - element: "Bot√£o Login Social - Google"
+        - element: "Bot„o Login Social - Google"
           type: "Button - Default"
           fluent_component: "DefaultButton"
           properties:
@@ -240,7 +240,7 @@ wireframe:
         
         - element: "Link 'Criar conta'"
           type: "Text + Link"
-          content: "N√£o tem uma conta? <Link>Cadastre-se</Link>"
+          content: "N„o tem uma conta? <Link>Cadastre-se</Link>"
           fluent_component: "Text + Link"
 
     # ---- Componente 2: Header ----
@@ -265,7 +265,7 @@ wireframe:
             - label: "Projetos"
               href: "/projects"
               icon: "FabricFolder"
-            - label: "Relat√≥rios"
+            - label: "RelatÛrios"
               href: "/reports"
               icon: "BarChartVertical"
         
@@ -289,7 +289,7 @@ wireframe:
             - label: "Meu Perfil"
               icon: "Contact"
               href: "/profile"
-            - label: "Configura√ß√µes"
+            - label: "ConfiguraÁıes"
               icon: "Settings"
               href: "/settings"
             - label: "Sair"
@@ -297,17 +297,17 @@ wireframe:
               action: "Logout"
 
 # ============================================================================
-# SE√á√ÉO 5: INTERA√á√ïES E COMPORTAMENTOS
+# SE«√O 5: INTERA«’ES E COMPORTAMENTOS
 # ============================================================================
 
   interactions:
     - interaction: "Login Success"
-      trigger: "Formul√°rio v√°lido + API retorna sucesso"
+      trigger: "Formul·rio v·lido + API retorna sucesso"
       behavior: |
-        1. Bot√£o entra em loading state (spinner)
+        1. Bot„o entra em loading state (spinner)
         2. API call (POST /api/auth/login)
-        3. Sucesso: Salvar token ‚Üí Redirect /dashboard
-        4. Anima√ß√£o de transi√ß√£o (fade out ‚Üí fade in)
+        3. Sucesso: Salvar token ? Redirect /dashboard
+        4. AnimaÁ„o de transiÁ„o (fade out ? fade in)
       animation:
         type: "Fade transition"
         duration: "300ms"
@@ -318,7 +318,7 @@ wireframe:
       behavior: |
         1. Exibir MessageBar (tipo error) no topo do form
         2. Mensagem: "Email ou senha incorretos. Tente novamente."
-        3. Bot√£o volta ao estado normal
+        3. Bot„o volta ao estado normal
         4. Focar no campo de email
       animation:
         type: "Shake animation no form"
@@ -329,10 +329,10 @@ wireframe:
       behavior: "Navegar para /forgot-password (nova tela WF-004)"
     
     - interaction: "Social Login - Google"
-      trigger: "Click em bot√£o Google"
+      trigger: "Click em bot„o Google"
       behavior: |
         1. Abrir popup OAuth do Google
-        2. Usu√°rio autoriza
+        2. Usu·rio autoriza
         3. Callback com token
         4. Redirect para dashboard
     
@@ -340,25 +340,25 @@ wireframe:
       trigger: "Viewport < 768px"
       behavior: |
         - Form ocupa 100% da largura (padding 16px)
-        - Bot√µes sociais empilham verticalmente
+        - Botıes sociais empilham verticalmente
         - Header colapsa em menu hamburger
         - Logo reduz tamanho
 
 # ============================================================================
-# SE√á√ÉO 6: ESTADOS E VARIA√á√ïES
+# SE«√O 6: ESTADOS E VARIA«’ES
 # ============================================================================
 
   states:
     - state: "Empty State"
-      description: "Quando n√£o h√° dados para exibir"
+      description: "Quando n„o h· dados para exibir"
       components:
-        - "√çcone ilustrativo (large)"
-        - "T√≠tulo: 'Nenhum item encontrado'"
-        - "Subt√≠tulo: 'Comece adicionando seu primeiro item'"
+        - "Õcone ilustrativo (large)"
+        - "TÌtulo: 'Nenhum item encontrado'"
+        - "SubtÌtulo: 'Comece adicionando seu primeiro item'"
         - "CTA Button: 'Adicionar Item'"
     
     - state: "Loading State"
-      description: "Enquanto dados s√£o carregados"
+      description: "Enquanto dados s„o carregados"
       components:
         - "Skeleton screens (shimmer effect)"
         - "Spinner central (para carregamento inicial)"
@@ -369,17 +369,17 @@ wireframe:
       components:
         - "MessageBar - tipo error"
         - "Mensagem descritiva do erro"
-        - "Bot√£o 'Tentar novamente'"
+        - "Bot„o 'Tentar novamente'"
     
     - state: "Success State"
-      description: "Ap√≥s a√ß√£o bem-sucedida"
+      description: "ApÛs aÁ„o bem-sucedida"
       components:
         - "MessageBar - tipo success"
-        - "Mensagem: 'Opera√ß√£o realizada com sucesso'"
-        - "Auto-dismiss ap√≥s 5 segundos"
+        - "Mensagem: 'OperaÁ„o realizada com sucesso'"
+        - "Auto-dismiss apÛs 5 segundos"
 
 # ============================================================================
-# SE√á√ÉO 7: DESIGN TOKENS (FLUENT DESIGN SYSTEM)
+# SE«√O 7: DESIGN TOKENS (FLUENT DESIGN SYSTEM)
 # ============================================================================
 
   design_tokens:
@@ -393,7 +393,7 @@ wireframe:
       
       neutral:
         neutralPrimary: "#323130"        # Texto principal
-        neutralSecondary: "#605E5C"      # Texto secund√°rio
+        neutralSecondary: "#605E5C"      # Texto secund·rio
         neutralTertiary: "#A19F9D"       # Texto desabilitado
         neutralLight: "#EDEBE9"          # Bordas
         neutralLighter: "#F3F2F1"        # Backgrounds sutis
@@ -449,7 +449,7 @@ wireframe:
       large: "8px"
 
 # ============================================================================
-# SE√á√ÉO 8: ACESSIBILIDADE (WCAG 2.1)
+# SE«√O 8: ACESSIBILIDADE (WCAG 2.1)
 # ============================================================================
 
   accessibility:
@@ -459,27 +459,27 @@ wireframe:
       - requirement: "Contrast Ratio"
         standard: "WCAG 2.1 - 1.4.3"
         implementation: |
-          - Texto normal: m√≠nimo 4.5:1
-          - Texto grande (18pt+): m√≠nimo 3:1
-          - Componentes UI: m√≠nimo 3:1
+          - Texto normal: mÌnimo 4.5:1
+          - Texto grande (18pt+): mÌnimo 3:1
+          - Componentes UI: mÌnimo 3:1
         validation_tool: "axe DevTools, WAVE"
       
       - requirement: "Keyboard Navigation"
         standard: "WCAG 2.1 - 2.1.1"
         implementation: |
-          - Tab order l√≥gico (top-to-bottom, left-to-right)
-          - Todos elementos interativos acess√≠veis via teclado
+          - Tab order lÛgico (top-to-bottom, left-to-right)
+          - Todos elementos interativos acessÌveis via teclado
           - Esc fecha modals/dropdowns
-          - Enter/Space ativam bot√µes
+          - Enter/Space ativam botıes
           - Setas navegam em listas/menus
         focus_indicators: "Borda azul 2px, offset 2px"
       
       - requirement: "Screen Reader Support"
         standard: "WCAG 2.1 - 1.3.1, 4.1.2"
         implementation: |
-          - ARIA labels em √≠cones sem texto
+          - ARIA labels em Ìcones sem texto
           - role attributes apropriados
-          - aria-live para notifica√ß√µes din√¢micas
+          - aria-live para notificaÁıes din‚micas
           - alt text em imagens informativas
           - Landmarks (header, main, nav, footer)
         testing: "NVDA, JAWS, VoiceOver"
@@ -494,19 +494,19 @@ wireframe:
       
       - requirement: "Responsive Text"
         standard: "WCAG 2.1 - 1.4.4"
-        implementation: "Texto escal√°vel at√© 200% sem perda de funcionalidade"
+        implementation: "Texto escal·vel atÈ 200% sem perda de funcionalidade"
     
     testing_checklist:
       - "[ ] Contrast checker passed"
       - "[ ] Keyboard navigation testado"
       - "[ ] Screen reader testado (NVDA/JAWS)"
-      - "[ ] Focus indicators vis√≠veis"
+      - "[ ] Focus indicators visÌveis"
       - "[ ] ARIA labels corretos"
-      - "[ ] Forms acess√≠veis"
+      - "[ ] Forms acessÌveis"
       - "[ ] Zoom 200% funcional"
 
 # ============================================================================
-# SE√á√ÉO 9: RESPONSIVIDADE
+# SE«√O 9: RESPONSIVIDADE
 # ============================================================================
 
   responsive_design:
@@ -520,59 +520,59 @@ wireframe:
         changes:
           - "Navigation: Hamburger menu"
           - "Form: Full width (padding 16px)"
-          - "Bot√µes: Stack verticalmente"
+          - "Botıes: Stack verticalmente"
           - "Typography: Reduzir H1 para 24px"
           - "Grid: 4 colunas"
           - "Header: Logo menor, search colapsado"
       
       - breakpoint: "tablet"
         changes:
-          - "Navigation: Horizontal vis√≠vel (collapsed)"
+          - "Navigation: Horizontal visÌvel (collapsed)"
           - "Form: Max-width 500px, centered"
           - "Grid: 8 colunas"
       
       - breakpoint: "desktop"
         changes:
-          - "Full navigation vis√≠vel"
+          - "Full navigation visÌvel"
           - "Form: Max-width 400px"
           - "Grid: 12 colunas"
           - "Hover states ativos"
 
 # ============================================================================
-# SE√á√ÉO 10: ANOTA√á√ïES E ESPECIFICA√á√ïES
+# SE«√O 10: ANOTA«’ES E ESPECIFICA«’ES
 # ============================================================================
 
   annotations:
     - component: "Login Button"
       note: |
-        IMPORTANTE: Desabilitar bot√£o quando campos obrigat√≥rios vazios.
+        IMPORTANTE: Desabilitar bot„o quando campos obrigatÛrios vazios.
         Loading state deve exibir spinner + texto 'Entrando...'
-        Considerar throttling (debounce) para evitar m√∫ltiplos cliques.
+        Considerar throttling (debounce) para evitar m˙ltiplos cliques.
     
     - component: "Password Field"
       note: |
-        Implementar valida√ß√£o de for√ßa de senha no cadastro (n√£o no login).
+        Implementar validaÁ„o de forÁa de senha no cadastro (n„o no login).
         Toggle de visibilidade deve ter aria-label 'Mostrar senha'/'Ocultar senha'.
     
     - component: "Social Login"
       note: |
-        Popup OAuth - implementar verifica√ß√£o se popup foi bloqueado.
-        Fallback: redirecionar para p√°gina OAuth em vez de popup.
+        Popup OAuth - implementar verificaÁ„o se popup foi bloqueado.
+        Fallback: redirecionar para p·gina OAuth em vez de popup.
     
     - component: "Error Messages"
       note: |
-        Nunca expor se email existe ou n√£o (security).
-        Mensagem gen√©rica: 'Email ou senha incorretos'.
+        Nunca expor se email existe ou n„o (security).
+        Mensagem genÈrica: 'Email ou senha incorretos'.
 
 # ============================================================================
-# SE√á√ÉO 11: ASSETS E RECURSOS
+# SE«√O 11: ASSETS E RECURSOS
 # ============================================================================
 
   assets:
     icons:
       - name: "SignIn"
         source: "Fluent UI Icons"
-        usage: "Bot√£o de login"
+        usage: "Bot„o de login"
       
       - name: "Eye / EyeOff"
         source: "Fluent UI Icons"
@@ -583,7 +583,7 @@ wireframe:
         format: "SVG"
         path: "/assets/logo.svg"
         alt_text: "Logo da Empresa"
-        responsive: "Vers√£o mobile: logo icon apenas (sem texto)"
+        responsive: "Vers„o mobile: logo icon apenas (sem texto)"
     
     illustrations:
       - name: "Empty State Illustration"
@@ -592,29 +592,29 @@ wireframe:
         usage: "Empty states"
 
 # ============================================================================
-# SE√á√ÉO 12: DESENVOLVIMENTO E HANDOFF
+# SE«√O 12: DESENVOLVIMENTO E HANDOFF
 # ============================================================================
 
   development_notes:
-    figma_link: "[URL do arquivo Figma com prot√≥tipo interativo]"
+    figma_link: "[URL do arquivo Figma com protÛtipo interativo]"
     
     specifications_export:
-      - "Design tokens ‚Üí JSON/CSS variables"
-      - "Component specs ‚Üí Storybook documentation"
-      - "Redlines/spacing ‚Üí Figma Inspect ou Zeplin"
+      - "Design tokens ? JSON/CSS variables"
+      - "Component specs ? Storybook documentation"
+      - "Redlines/spacing ? Figma Inspect ou Zeplin"
     
     implementation_priority:
       - priority: "P0 - Must Have"
         components:
-          - "Login form b√°sico (email + senha)"
-          - "Valida√ß√£o de campos"
+          - "Login form b·sico (email + senha)"
+          - "ValidaÁ„o de campos"
           - "Error handling"
       
       - priority: "P1 - Should Have"
         components:
           - "Login social (Google)"
           - "Lembrar-me (checkbox)"
-          - "Anima√ß√µes suaves"
+          - "AnimaÁıes suaves"
       
       - priority: "P2 - Nice to Have"
         components:
@@ -622,17 +622,17 @@ wireframe:
           - "Biometria (mobile)"
     
     testing_scenarios:
-      - "[ ] Login com credenciais v√°lidas ‚Üí Success"
-      - "[ ] Login com senha incorreta ‚Üí Error message"
-      - "[ ] Login com email inv√°lido ‚Üí Validation error"
-      - "[ ] Campos vazios ‚Üí Bot√£o desabilitado"
-      - "[ ] Keyboard navigation ‚Üí Tab order correto"
-      - "[ ] Screen reader ‚Üí An√∫ncios corretos"
-      - "[ ] Mobile responsive ‚Üí Layout adaptado"
-      - "[ ] Social login ‚Üí OAuth flow"
+      - "[ ] Login com credenciais v·lidas ? Success"
+      - "[ ] Login com senha incorreta ? Error message"
+      - "[ ] Login com email inv·lido ? Validation error"
+      - "[ ] Campos vazios ? Bot„o desabilitado"
+      - "[ ] Keyboard navigation ? Tab order correto"
+      - "[ ] Screen reader ? An˙ncios corretos"
+      - "[ ] Mobile responsive ? Layout adaptado"
+      - "[ ] Social login ? OAuth flow"
 
 # ============================================================================
-# SE√á√ÉO 13: VALIDA√á√ÉO E APROVA√á√ÉO
+# SE«√O 13: VALIDA«√O E APROVA«√O
 # ============================================================================
 
   validation:
@@ -648,18 +648,18 @@ wireframe:
     stakeholder_approval:
       - approver: "Paula (Product Owner)"
         status: "[Pending | Approved | Changes Requested]"
-        feedback: "[Coment√°rios]"
+        feedback: "[Coment·rios]"
       
       - approver: "Tiago (Developer)"
         status: "[Pending | Approved | Changes Requested]"
-        feedback: "[Viabilidade t√©cnica validada]"
+        feedback: "[Viabilidade tÈcnica validada]"
       
       - approver: "Carla (QA)"
         status: "[Pending | Approved | Changes Requested]"
         feedback: "[Testabilidade validada]"
 
 # ============================================================================
-# SE√á√ÉO 14: INTEGRA√á√ÉO COM ARTEFATOS
+# SE«√O 14: INTEGRA«√O COM ARTEFATOS
 # ============================================================================
 
   related_artifacts:
@@ -673,7 +673,7 @@ wireframe:
       usage: "Garantir compliance com WCAG 2.1 AA"
     
     - artifact: "${AVANADE_FLUENT_DESIGN_GUIDELINES_MD}"
-      usage: "Refer√™ncia para componentes e design tokens Fluent"
+      usage: "ReferÍncia para componentes e design tokens Fluent"
     
     - artifact: "${AVANADE_STORY_TEMPLATE_YAML}"
       usage: "User story que motivou este wireframe"
@@ -695,10 +695,10 @@ template_metadata:
   usage_instructions: |
     1. Copie este template para um novo arquivo
     2. Substitua todos os placeholders [ENTRE COLCHETES]
-    3. Adicione componentes espec√≠ficos da sua tela
-    4. Especifique todas as intera√ß√µes e estados
-    5. Documente design tokens (cores, tipografia, espa√ßamento)
+    3. Adicione componentes especÌficos da sua tela
+    4. Especifique todas as interaÁıes e estados
+    5. Documente design tokens (cores, tipografia, espaÁamento)
     6. Valide acessibilidade com ${AVANADE_TASK_ACCESSIBILITY_WCAG}
     7. Exporte para ferramenta visual (Figma) para prototipagem
-    8. Obtenha aprova√ß√£o de stakeholders
-    9. Fa√ßa handoff para desenvolvimento com specs completas
+    8. Obtenha aprovaÁ„o de stakeholders
+    9. FaÁa handoff para desenvolvimento com specs completas

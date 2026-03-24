@@ -238,4 +238,4 @@ O Simulador permite ao consultor **construir, simular, comparar e refinar propos
 
 ---
 
-*Referências: [especificacao-simulador-notion.md](../.avanade-method/docs/especificacao-simulador-notion.md) | [discovery-simulador-comercial.md](../docs/discovery/discovery-simulador-comercial.md)*
+*Referências: [especificacao-simulador-notion.md](../docs/especificacao-simulador-notion.md) | [discovery-simulador-comercial.md](../docs/discovery/discovery-simulador-comercial.md)*

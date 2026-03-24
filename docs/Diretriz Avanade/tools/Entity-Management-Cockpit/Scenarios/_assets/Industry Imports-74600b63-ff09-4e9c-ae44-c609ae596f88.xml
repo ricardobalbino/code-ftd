@@ -1,0 +1,308 @@
+<configuration>
+
+ <!--Export/Import of Accounts using Industries and Industry Products--> 
+	<entity name="account" sheet="Account" key="accountid" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" type="guid" column="1" />			 
+			<column name="ava_industryid" column="9" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+			<!--<column name="ava_industryproductid" column="4" type="guid" refentity="ava_industryproduct" refkey="ava_industryproductid" />-->
+			 <!--<column name="ava_industry_en" column="7" />--> 
+		</columns>
+	</entity>
+	
+	<!-- Relate of ava_AccountAndIndustryConnection using Account and Industry (Branches) -->
+	<entity name="ava_AccountAndIndustryConnection" sheet="Account" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" column="1"  refentity="account" refkey="accountid"  />			
+			<column name="ava_industryid" column="9"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+	
+	<!-- Relate of ava_AccountAndIndustryConnection using Account and Industry (Branches2) -->
+	<entity name="ava_AccountAndIndustryConnection" sheet="Account2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" column="1"  refentity="account" refkey="accountid"  />			
+			<column name="ava_industryid" column="10"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+  <!-- Relate of ava_AccountAndIndustryConnection using Account and Industry (Branches3) -->
+	<entity name="ava_AccountAndIndustryConnection" sheet="Account2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" column="1"  refentity="account" refkey="accountid"  />			
+			<column name="ava_industryid" column="11"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+  
+    <!-- Relate of ava_AccountAndIndustryConnection using Account and Industry (Branches4) -->
+	<entity name="ava_AccountAndIndustryConnection" sheet="Account2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" column="1"  refentity="account" refkey="accountid"  />			
+			<column name="ava_industryid" column="12"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+  
+  <!-- Relate of ava_AccountAndIndustryConnection using Account and Industry (Branches5) -->
+	<entity name="ava_AccountAndIndustryConnection" sheet="Account2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="accountid" column="1"  refentity="account" refkey="accountid"  />			
+			<column name="ava_industryid" column="13"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+  
+ 
+  
+<!-- ###################################################################################################### -->
+  
+   <!--Export/Import of Leads using Industries and Industry Products--> 
+	<entity name="lead" sheet="Lead" key="leadid" keycolumn="1" startrow="2">
+		<columns>
+			<column name="leadid" type="guid" column="1" />			 
+			<column name="ava_industryid" column="6" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+		</columns>
+	</entity>
+	
+  <!-- Relate of ava_LeadAndIndustryConnection using Lead and Industry (Branches) -->
+	<entity name="ava_LeadAndIndustryConnection" sheet="Lead" keycolumn="1" startrow="2">
+		<columns>
+			<column name="leadid" column="1"  refentity="lead" refkey="leadid"  />			
+			<column name="ava_industryid" column="6"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+  
+  <!-- Relate of ava_LeadAndIndustryConnection using Lead and Industry (Branches2) -->
+	<entity name="ava_LeadAndIndustryConnection" sheet="Lead" keycolumn="1" startrow="2">
+		<columns>
+			<column name="leadid" column="1"  refentity="lead" refkey="leadid"  />			
+			<column name="ava_industryid" column="7"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+
+  <!-- Relate of ava_LeadAndIndustryConnection using Lead and Industry (Branches3) -->
+	<entity name="ava_LeadAndIndustryConnection" sheet="Lead" keycolumn="1" startrow="2">
+		<columns>
+			<column name="leadid" column="1"  refentity="lead" refkey="leadid"  />			
+			<column name="ava_industryid" column="8"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>
+	
+	
+	
+	
+	
+<!-- ###################################################################################################### -->
+   
+   <!--Export/Import of Quotes using Industries and Industry Products--> 
+	<entity name="quote" sheet="Quote" key="quoteid" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" type="guid" column="1" />			 
+			<column name="ava_industryid" column="8" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+			<!--<column name="ava_industryproductid" column="4" type="guid" refentity="ava_industryproduct" refkey="ava_industryproductid" />-->
+			 <!--<column name="ava_industry_en" column="7" />--> 
+		</columns>
+	</entity>
+	
+  <!-- Relate of ava_QuoteAndIndustryConnection using Quote and Industry (Branches) -->
+	<entity name="ava_QuoteAndIndustryConnection" sheet="Quote" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" column="1"  refentity="quote" refkey="quoteid"  />			
+			<column name="ava_industryid" column="8"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	  <!-- Relate of ava_QuoteAndIndustryConnection using Quote and Industry (Branches2) -->
+	<entity name="ava_QuoteAndIndustryConnection" sheet="Quote" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" column="1"  refentity="quote" refkey="quoteid"  />			
+			<column name="ava_industryid" column="9"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	  <!-- Relate of ava_QuoteAndIndustryConnection using Quote and Industry (Branches3) -->
+	<entity name="ava_QuoteAndIndustryConnection" sheet="Quote" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" column="1"  refentity="quote" refkey="quoteid"  />			
+			<column name="ava_industryid" column="10"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	  <!-- Relate of ava_QuoteAndIndustryConnection using Quote and Industry (Branches4) -->
+	<entity name="ava_QuoteAndIndustryConnection" sheet="Quote" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" column="1"  refentity="quote" refkey="quoteid"  />			
+			<column name="ava_industryid" column="11"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	  <!-- Relate of ava_QuoteAndIndustryConnection using Quote and Industry (Branches5) -->
+	<entity name="ava_QuoteAndIndustryConnection" sheet="Quote" keycolumn="1" startrow="2">
+		<columns>
+			<column name="quoteid" column="1"  refentity="quote" refkey="quoteid"  />			
+			<column name="ava_industryid" column="12"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+		
+		
+		
+		
+	
+<!-- ###################################################################################################### -->
+   
+   <!--Export/Import of Opportunities from Leads using Industries and Industry Products--> 
+	<entity name="opportunity" sheet="OpportunityOfLeads" key="ava_autonumber" keycolumn="3" startrow="2">
+		<columns>
+			<column name="ava_autonumber" column="3" />			 
+			<column name="ava_industryid" column="11" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+			<!--<column name="ava_industryproductid" column="4" type="guid" refentity="ava_industryproduct" refkey="ava_industryproductid" />-->
+			 <!--<column name="ava_industry_en" column="7" />--> 
+		</columns>
+	</entity>
+	
+  <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Leads and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfLeads" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="11"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Leads and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfLeads2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="12"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Leads and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfLeads2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="13"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Leads and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfLeads2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="14"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Leads and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfLeads2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="15"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	
+	
+	<!-- ###################################################################################################### -->
+   
+   <!--Export/Import of Opportunities from Quotes using Industries and Industry Products--> 
+	<entity name="opportunity" sheet="OpportunityOfQuotes" key="ava_autonumber" keycolumn="3" startrow="2">
+		<columns>
+			<column name="ava_autonumber" column="3" />			 
+			<column name="ava_industryid" column="10" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+			<!--<column name="ava_industryproductid" column="4" type="guid" refentity="ava_industryproduct" refkey="ava_industryproductid" />-->
+			 <!--<column name="ava_industry_en" column="7" />--> 
+		</columns>
+	</entity>
+	
+  <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfQuotes" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="10"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfQuotes2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="11"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfQuotes2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="12"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfQuotes2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="13"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OpportunityAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OpportunityAndIndustryConnection" sheet="OpportunityOfQuotes2" keycolumn="3" startrow="2">
+		<columns>
+			<column name="opportunityid" column="3"  refentity="opportunity" refkey="ava_autonumber"  />			
+			<column name="ava_industryid" column="14"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	
+	
+	<!-- ###################################################################################################### -->
+   
+   <!--Export/Import of Orders from Quotes using Industries and Industry Products--> 
+	<entity name="salesorder" sheet="OrderOfQuotes" key="salesorderid" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" type="guid" column="1" />			 
+			<column name="ava_industryid" column="8" type="guid" refentity="ava_industry" refkey="ava_industry_en" />
+			<!--<column name="ava_industryproductid" column="4" type="guid" refentity="ava_industryproduct" refkey="ava_industryproductid" />-->
+			 <!--<column name="ava_industry_en" column="7" />--> 
+		</columns>
+	</entity>
+	
+  <!-- Relate of ava_OrderAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OrderAndIndustryConnection" sheet="OrderOfQuotes" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" column="1"  refentity="salesorder" refkey="salesorderid"  />			
+			<column name="ava_industryid" column="8"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OrderAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OrderAndIndustryConnection" sheet="OrderOfQuotes2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" column="1"  refentity="salesorder" refkey="salesorderid"  />			
+			<column name="ava_industryid" column="9"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OrderAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OrderAndIndustryConnection" sheet="OrderOfQuotes2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" column="1"  refentity="salesorder" refkey="salesorderid"  />			
+			<column name="ava_industryid" column="10"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OrderAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OrderAndIndustryConnection" sheet="OrderOfQuotes2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" column="1"  refentity="salesorder" refkey="salesorderid"  />			
+			<column name="ava_industryid" column="11"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+	 <!-- Relate of ava_OrderAndIndustryConnection using Opportunites from Quotes and Industry (Branches) -->
+	<entity name="ava_OrderAndIndustryConnection" sheet="OrderOfQuotes2" keycolumn="1" startrow="2">
+		<columns>
+			<column name="salesorderid" column="1"  refentity="salesorder" refkey="salesorderid"  />			
+			<column name="ava_industryid" column="12"  refentity="ava_industry" refkey="ava_industry_en" />		
+		</columns>
+	</entity>	
+	
+</configuration>

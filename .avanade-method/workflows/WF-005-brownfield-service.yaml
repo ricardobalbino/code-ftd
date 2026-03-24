@@ -1,4 +1,4 @@
-﻿```yaml
+```yaml
 workflow:
   id: brownfield-service-workflow-v2
   name: Brownfield Service Enhancement

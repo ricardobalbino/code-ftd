@@ -1,51 +1,51 @@
-Ôªø## üìã O que √© este Artefato?
+## ?? O que È este Artefato?
 
-Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de todos workflows dispon√≠veis no sistema com mapeamento para agentes, fases do m√©todo, e artefatos relacionados.
+Este È o **manifest de workflows Avanade Method v6** - cat·logo completo de todos workflows disponÌveis no sistema com mapeamento para agentes, fases do mÈtodo, e artefatos relacionados.
 
 **Source**: `_avanade-method/_config/workflow-manifest.csv` + `_avanade-method/bmm/module-help.csv`
 
 ---
 
-## üéØ Workflows Avanade Method v6 (25 Total)
+## ?? Workflows Avanade Method v6 (25 Total)
 
-### üìä CORE WORKFLOWS (2)
+### ?? CORE WORKFLOWS (2)
 
 #### 1. brainstorming
 - **Path**: `_avanade-method/core/workflows/brainstorming/workflow.md`
 - **Command**: `avanade-method-brainstorming`
 - **Agent**: Maria Analyst
 - **Fase**: Anytime (principalmente Phase 1)
-- **Descri√ß√£o**: Facilita sess√µes de brainstorming com t√©cnicas criativas (SCAMPER, Six Thinking Hats, Mind Mapping)
-- **Output**: Sess√£o de brainstorming documentada
-- **Guia**: (Criar AVANADE_WORKFLOW_GUIDE_BRAINSTORMING se necess√°rio)
+- **DescriÁ„o**: Facilita sessıes de brainstorming com tÈcnicas criativas (SCAMPER, Six Thinking Hats, Mind Mapping)
+- **Output**: Sess„o de brainstorming documentada
+- **Guia**: (Criar AVANADE_WORKFLOW_GUIDE_BRAINSTORMING se necess·rio)
 
 #### 2. party-mode
 - **Path**: `_avanade-method/core/workflows/party-mode/workflow.md`
-- **Command**: `#party [t√≥pico]`
+- **Command**: `#party [tÛpico]`
 - **Agent**: Supervisor (orquestra 2-4 agentes)
 - **Fase**: Anytime
-- **Descri√ß√£o**: Discuss√£o colaborativa multi-agente com cross-talk natural
-- **Output**: Transcri√ß√£o de discuss√£o multi-perspectiva
+- **DescriÁ„o**: Discuss„o colaborativa multi-agente com cross-talk natural
+- **Output**: TranscriÁ„o de discuss„o multi-perspectiva
 - **Guia**: `${AVANADE_PARTY_MODE_GUIDE}`
 
 ---
 
-### üìä PHASE 1: DISCOVERY & AN√ÅLISE (3)
+### ?? PHASE 1: DISCOVERY & AN¡LISE (3)
 
 #### 3. create-product-brief
 - **Path**: `_avanade-method/bmm/workflows/1-analysis/create-product-brief/workflow.md`
 - **Command**: `avanade-method-bmm-create-brief`
 - **Agent**: Maria Analyst
-- **Descri√ß√£o**: Cria product brief colaborativo atrav√©s de discovery passo-a-passo
+- **DescriÁ„o**: Cria product brief colaborativo atravÈs de discovery passo-a-passo
 - **Steps**: 6 steps (init, vision, users, metrics, scope, complete)
 - **Output**: `{planning_artifacts}/product-brief.md`
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_BRIEF}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_BRIEF}` (criar se necess·rio)
 
 #### 4. research (Market Research)
 - **Path**: `_avanade-method/bmm/workflows/1-analysis/research/workflow.md`
 - **Command**: `avanade-method-bmm-research` (research_type=market)
 - **Agent**: Maria Analyst
-- **Descri√ß√£o**: An√°lise de mercado, competitive landscape, customer needs e trends
+- **DescriÁ„o**: An·lise de mercado, competitive landscape, customer needs e trends
 - **Steps**: 6 steps market-specific
 - **Output**: `{planning_artifacts}/research-market.md`
 
@@ -53,7 +53,7 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 - **Path**: `_avanade-method/bmm/workflows/1-analysis/research/workflow.md`
 - **Command**: `avanade-method-bmm-research` (research_type=domain)
 - **Agent**: Maria Analyst
-- **Descri√ß√£o**: Industry domain deep dive, subject matter expertise, terminologia
+- **DescriÁ„o**: Industry domain deep dive, subject matter expertise, terminologia
 - **Steps**: 6 steps domain-specific
 - **Output**: `{planning_artifacts}/research-domain.md`
 
@@ -61,34 +61,34 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 - **Path**: `_avanade-method/bmm/workflows/1-analysis/research/workflow.md`
 - **Command**: `avanade-method-bmm-research` (research_type=technical)
 - **Agent**: Maria Analyst
-- **Descri√ß√£o**: Technical feasibility, architecture options, implementation approaches
+- **DescriÁ„o**: Technical feasibility, architecture options, implementation approaches
 - **Steps**: 6 steps technical-specific
 - **Output**: `{planning_artifacts}/research-technical.md`
 
 ---
 
-### üìã PHASE 2: PLANNING (2 workflows, 6 modes)
+### ?? PHASE 2: PLANNING (2 workflows, 6 modes)
 
 #### 7. create-prd (CREATE mode)
 - **Path**: `_avanade-method/bmm/workflows/2-plan-workflows/create-prd/workflow.md`
 - **Command**: `avanade-method-bmm-create-prd`
-- **Agent**: Jo√£o PM
-- **Descri√ß√£o**: Cria√ß√£o guiada de novo PRD (12 steps)
+- **Agent**: Jo„o PM
+- **DescriÁ„o**: CriaÁ„o guiada de novo PRD (12 steps)
 - **Steps**: 12 steps (init, discovery, success, journeys, domain, innovation, project-type, scoping, functional, nonfunctional, polish, complete)
 - **Output**: `{planning_artifacts}/prd-{project_name}.md`
 - **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_PRD}`
 
 #### 8. create-prd (VALIDATE mode)
 - **Command**: `avanade-method-bmm-validate-prd`
-- **Agent**: Jo√£o PM
-- **Descri√ß√£o**: Valida√ß√£o adversarial de PRD existente (13 checks)
+- **Agent**: Jo„o PM
+- **DescriÁ„o**: ValidaÁ„o adversarial de PRD existente (13 checks)
 - **Steps**: 13 validation dimensions
 - **Output**: `{planning_artifacts}/prd-validation-report.md`
 
 #### 9. create-prd (EDIT mode)
 - **Command**: `avanade-method-bmm-edit-prd`
-- **Agent**: Jo√£o PM
-- **Descri√ß√£o**: Edi√ß√£o inteligente de PRD com detec√ß√£o de formato
+- **Agent**: Jo„o PM
+- **DescriÁ„o**: EdiÁ„o inteligente de PRD com detecÁ„o de formato
 - **Steps**: 5 steps (discovery, review, edit, complete)
 - **Output**: Updated PRD
 
@@ -96,26 +96,26 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 - **Path**: `_avanade-method/bmm/workflows/2-plan-workflows/create-ux-design/workflow.md`
 - **Command**: `avanade-method-bmm-create-ux-design`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Planning de UX patterns, look and feel, user journeys
+- **DescriÁ„o**: Planning de UX patterns, look and feel, user journeys
 - **Steps**: 14 steps (init, discovery, core-experience, emotional-response, inspiration, design-system, defining-experience, visual-foundation, design-directions, user-journeys, component-strategy, ux-patterns, responsive-accessibility, complete)
 - **Output**: `{planning_artifacts}/ux-design.md`
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_UX}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_UX}` (criar se necess·rio)
 
 #### 11. create-ux-design (VALIDATE mode)
 - **Command**: `avanade-method-bmm-validate-ux-design`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Valida UX design deliverables
+- **DescriÁ„o**: Valida UX design deliverables
 - **Output**: `{planning_artifacts}/ux-validation-report.md`
 
 ---
 
-### üèóÔ∏è PHASE 3: SOLUTIONING (6 workflows)
+### ??? PHASE 3: SOLUTIONING (6 workflows)
 
 #### 12. create-architecture (CREATE mode)
 - **Path**: `_avanade-method/bmm/workflows/3-solutioning/create-architecture/workflow.md`
 - **Command**: `avanade-method-bmm-create-architecture`
 - **Agent**: Wilson Architect
-- **Descri√ß√£o**: Facilita√ß√£o colaborativa de decis√µes arquiteturais (8 steps)
+- **DescriÁ„o**: FacilitaÁ„o colaborativa de decisıes arquiteturais (8 steps)
 - **Steps**: 8 steps (init, context, starter, decisions, patterns, structure, validation, complete)
 - **Output**: `{planning_artifacts}/architecture.md`
 - **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_ARCHITECTURE}`
@@ -123,37 +123,37 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 #### 13. create-architecture (VALIDATE mode)
 - **Command**: `avanade-method-bmm-validate-architecture`
 - **Agent**: Wilson Architect
-- **Descri√ß√£o**: Valida architecture completeness
+- **DescriÁ„o**: Valida architecture completeness
 - **Output**: `{planning_artifacts}/architecture-validation-report.md`
 
 #### 14. create-epics-and-stories
 - **Path**: `_avanade-method/bmm/workflows/3-solutioning/create-epics-and-stories/workflow.md`
 - **Command**: `avanade-method-bmm-create-epics-and-stories`
-- **Agent**: Jo√£o PM + Roberto SM
-- **Descri√ß√£o**: Transforma PRD + Architecture em epics e stories implementation-ready
+- **Agent**: Jo„o PM + Roberto SM
+- **DescriÁ„o**: Transforma PRD + Architecture em epics e stories implementation-ready
 - **Prerequisites**: PRD + Architecture (UX recomendado se UI)
 - **Steps**: 4 steps (validate-prerequisites, design-epics, create-stories, final-validation)
 - **Output**: `{planning_artifacts}/epics.md` + `{planning_artifacts}/stories/`
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_EPICS_STORIES}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CREATE_EPICS_STORIES}` (criar se necess·rio)
 
 #### 15. check-implementation-readiness
 - **Path**: `_avanade-method/bmm/workflows/3-solutioning/check-implementation-readiness/workflow.md`
 - **Command**: `avanade-method-bmm-check-readiness`
 - **Agent**: Maria Analyst (adversarial review)
-- **Descri√ß√£o**: Valida PRD + Architecture + Epics/Stories para completeness e alignment ANTES de implementa√ß√£o
+- **DescriÁ„o**: Valida PRD + Architecture + Epics/Stories para completeness e alignment ANTES de implementaÁ„o
 - **Steps**: 6 steps (document-discovery, prd-analysis, epic-coverage-validation, ux-alignment, epic-quality-review, final-assessment)
 - **Output**: `{planning_artifacts}/readiness-report.md`
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CHECK_READINESS}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CHECK_READINESS}` (criar se necess·rio)
 
 ---
 
-### üíª PHASE 4: IMPLEMENTATION (8 workflows)
+### ?? PHASE 4: IMPLEMENTATION (8 workflows)
 
 #### 16. sprint-planning
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/sprint-planning/workflow.yaml`
 - **Command**: `avanade-method-bmm-sprint-planning`
 - **Agent**: Roberto SM
-- **Descri√ß√£o**: Gera e gerencia sprint-status.yaml tracking file
+- **DescriÁ„o**: Gera e gerencia sprint-status.yaml tracking file
 - **Output**: `{planning_artifacts}/sprint-status.yaml`
 - **Guia**: `${AVANADE_WORKFLOW_GUIDE_SPRINT_PLANNING}`
 
@@ -161,181 +161,181 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/sprint-status/workflow.yaml`
 - **Command**: `avanade-method-bmm-sprint-status`
 - **Agent**: Roberto SM
-- **Descri√ß√£o**: Summariza sprint-status.yaml, surface risks, route to next workflow
+- **DescriÁ„o**: Summariza sprint-status.yaml, surface risks, route to next workflow
 - **Output**: Console summary + routing recommendation
 
 #### 18. create-story
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/create-story/workflow.yaml`
 - **Command**: `avanade-method-bmm-create-story`
 - **Agent**: Roberto SM
-- **Descri√ß√£o**: Cria pr√≥xima user story do epic com enhanced context analysis
+- **DescriÁ„o**: Cria prÛxima user story do epic com enhanced context analysis
 - **Output**: `{planning_artifacts}/stories/ST-XXX.md`
 
 #### 19. dev-story
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/dev-story/workflow.yaml`
 - **Command**: `avanade-method-bmm-dev-story`
 - **Agent**: Tiago Dev
-- **Descri√ß√£o**: Executa story implementando tasks, escrevendo testes, validando contra acceptance criteria
+- **DescriÁ„o**: Executa story implementando tasks, escrevendo testes, validando contra acceptance criteria
 - **Output**: Code + tests + updated story file (status=completed)
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_DEV_STORY}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_DEV_STORY}` (criar se necess·rio)
 
 #### 20. code-review
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/code-review/workflow.yaml`
 - **Command**: `avanade-method-bmm-code-review`
 - **Agent**: Carla QA (adversarial review)
-- **Descri√ß√£o**: Adversarial Senior Developer code review (finds 3-10 issues SEMPRE)
+- **DescriÁ„o**: Adversarial Senior Developer code review (finds 3-10 issues SEMPRE)
 - **Output**: `{planning_artifacts}/code-review-ST-XXX.md` + auto-fix option
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CODE_REVIEW}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_CODE_REVIEW}` (criar se necess·rio)
 
 #### 21. retrospective
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/retrospective/workflow.yaml`
 - **Command**: `avanade-method-bmm-retrospective`
 - **Agent**: Roberto SM
-- **Descri√ß√£o**: Executa ap√≥s epic completion para review de success, learnings, next epic insights
+- **DescriÁ„o**: Executa apÛs epic completion para review de success, learnings, next epic insights
 - **Output**: `{planning_artifacts}/retrospective-EP-XXX.md`
 
 #### 22. correct-course
 - **Path**: `_avanade-method/bmm/workflows/4-implementation/correct-course/workflow.yaml`
 - **Command**: `avanade-method-bmm-correct-course`
 - **Agent**: Roberto SM
-- **Descri√ß√£o**: Navega mudan√ßas significativas durante sprint (pode recomendar update PRD, redo architecture, etc)
+- **DescriÁ„o**: Navega mudanÁas significativas durante sprint (pode recomendar update PRD, redo architecture, etc)
 - **Output**: `{planning_artifacts}/change-proposal.md`
 
 ---
 
-### ‚ö° QUICK-FLOW WORKFLOWS (2)
+### ? QUICK-FLOW WORKFLOWS (2)
 
 #### 23. quick-spec
 - **Path**: `_avanade-method/bmm/workflows/avanade-method-quick-flow/quick-spec/workflow.md`
 - **Command**: `avanade-method-bmm-quick-spec`
 - **Agent**: Barry Quick-Flow Solo Dev
-- **Descri√ß√£o**: Spec engineering conversacional - ask questions, investigate code, produce tech-spec
+- **DescriÁ„o**: Spec engineering conversacional - ask questions, investigate code, produce tech-spec
 - **Output**: `{planning_artifacts}/tech-spec-{task}.md`
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_QUICK_SPEC}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_QUICK_SPEC}` (criar se necess·rio)
 
 #### 24. quick-dev
 - **Path**: `_avanade-method/bmm/workflows/avanade-method-quick-flow/quick-dev/workflow.md`
 - **Command**: `avanade-method-bmm-quick-dev`
 - **Agent**: Barry Quick-Flow Solo Dev
-- **Descri√ß√£o**: Desenvolvimento r√°pido SEM planejamento extensivo - execute tech-specs OU direct instructions
+- **DescriÁ„o**: Desenvolvimento r·pido SEM planejamento extensivo - execute tech-specs OU direct instructions
 - **Output**: Code + tests (inline documentation)
 - **Guia**: `${AVANADE_WORKFLOW_GUIDE_QUICK_DEV}`
 
 ---
 
-### üìö DOCUMENTATION WORKFLOWS (2)
+### ?? DOCUMENTATION WORKFLOWS (2)
 
 #### 25. document-project
 - **Path**: `_avanade-method/bmm/workflows/document-project/workflow.yaml`
 - **Command**: `avanade-method-bmm-document-project`
 - **Agent**: Maria Analyst + Paige Tech Writer
-- **Descri√ß√£o**: Analisa e documenta brownfield projects (scanning codebase, architecture, patterns)
+- **DescriÁ„o**: Analisa e documenta brownfield projects (scanning codebase, architecture, patterns)
 - **Output**: `{project_knowledge}/` (comprehensive reference docs)
-- **Guia**: `${AVANADE_WORKFLOW_GUIDE_DOCUMENT_PROJECT}` (criar se necess√°rio)
+- **Guia**: `${AVANADE_WORKFLOW_GUIDE_DOCUMENT_PROJECT}` (criar se necess·rio)
 
 #### 26. generate-project-context
 - **Path**: `_avanade-method/bmm/workflows/generate-project-context/workflow.md`
 - **Command**: `avanade-method-bmm-generate-project-context`
 - **Agent**: Maria Analyst
-- **Descri√ß√£o**: Scan brownfield para gerar project-context.md LLM-optimized (critical rules, patterns, conventions)
+- **DescriÁ„o**: Scan brownfield para gerar project-context.md LLM-optimized (critical rules, patterns, conventions)
 - **Steps**: 3 steps (discover, generate, complete)
 - **Output**: `{output_folder}/project-context.md`
 
 ---
 
-### üé® EXCALIDRAW DIAGRAM WORKFLOWS (4)
+### ?? EXCALIDRAW DIAGRAM WORKFLOWS (4)
 
 #### 27. create-excalidraw-dataflow
 - **Path**: `_avanade-method/bmm/workflows/excalidraw-diagrams/create-dataflow/workflow.yaml`
 - **Command**: `avanade-method-bmm-create-excalidraw-dataflow`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Cria data flow diagrams (DFD) em Excalidraw format
+- **DescriÁ„o**: Cria data flow diagrams (DFD) em Excalidraw format
 - **Output**: `{planning_artifacts}/{name}-dataflow.excalidraw`
 
 #### 28. create-excalidraw-diagram
 - **Path**: `_avanade-method/bmm/workflows/excalidraw-diagrams/create-diagram/workflow.yaml`
 - **Command**: `avanade-method-bmm-create-excalidraw-diagram`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Cria system architecture, ERD, UML diagrams em Excalidraw
+- **DescriÁ„o**: Cria system architecture, ERD, UML diagrams em Excalidraw
 - **Output**: `{planning_artifacts}/{name}-diagram.excalidraw`
 
 #### 29. create-excalidraw-flowchart
 - **Path**: `_avanade-method/bmm/workflows/excalidraw-diagrams/create-flowchart/workflow.yaml`
 - **Command**: `avanade-method-bmm-create-excalidraw-flowchart`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Cria flowchart visualization (processes, pipelines, logic flows)
+- **DescriÁ„o**: Cria flowchart visualization (processes, pipelines, logic flows)
 - **Output**: `{planning_artifacts}/{name}-flowchart.excalidraw`
 
 #### 30. create-excalidraw-wireframe
 - **Path**: `_avanade-method/bmm/workflows/excalidraw-diagrams/create-wireframe/workflow.yaml`
 - **Command**: `avanade-method-bmm-create-excalidraw-wireframe`
 - **Agent**: Sofia UX
-- **Descri√ß√£o**: Cria website/app wireframes em Excalidraw
+- **DescriÁ„o**: Cria website/app wireframes em Excalidraw
 - **Output**: `{planning_artifacts}/{name}-wireframe.excalidraw`
 
 ---
 
-## üó∫Ô∏è WORKFLOW JOURNEY MAP
+## ??? WORKFLOW JOURNEY MAP
 
 ### Greenfield Project (New Feature/Product):
 
 ```
 1. create-product-brief (opcional mas recomendado)
-   ‚Üì
-2. research (market/domain/technical se necess√°rio)
-   ‚Üì
+   ?
+2. research (market/domain/technical se necess·rio)
+   ?
 3. create-prd (CREATE mode)
-   ‚Üì
+   ?
 4. create-prd (VALIDATE mode)
-   ‚Üì
+   ?
 5. create-ux-design (se UI existe)
-   ‚Üì
+   ?
 6. create-architecture
-   ‚Üì
+   ?
 7. create-epics-and-stories
-   ‚Üì
+   ?
 8. check-implementation-readiness (recomendado)
-   ‚Üì
+   ?
 9. sprint-planning
-   ‚Üì
+   ?
 10. LOOP {
-      create-story (se necess√°rio)
-      ‚Üí dev-story
-      ‚Üí code-review
-      ‚Üí retrospective (ap√≥s epic)
+      create-story (se necess·rio)
+      ? dev-story
+      ? code-review
+      ? retrospective (apÛs epic)
     }
-   ‚Üì
-11. Repeat loop at√© todos epics completos
+   ?
+11. Repeat loop atÈ todos epics completos
 ```
 
 ### Brownfield Project (Existing Codebase):
 
 ```
 1. document-project OU generate-project-context
-   ‚Üì
-2. Se mudan√ßa pequena:
-   quick-spec ‚Üí quick-dev
-   ‚Üì
-3. Se mudan√ßa grande:
-   Seguir greenfield flow (PRD ‚Üí Arch ‚Üí Stories)
+   ?
+2. Se mudanÁa pequena:
+   quick-spec ? quick-dev
+   ?
+3. Se mudanÁa grande:
+   Seguir greenfield flow (PRD ? Arch ? Stories)
 ```
 
 ### Quick Win / Bug Fix:
 
 ```
 1. quick-spec (opcional)
-   ‚Üì
+   ?
 2. quick-dev
 ```
 
 ---
 
-## üîó Agent-to-Workflow Mapping
+## ?? Agent-to-Workflow Mapping
 
 ### Maria Analyst
 - brainstorming, create-product-brief, research (all types), check-implementation-readiness, document-project, generate-project-context
 
-### Jo√£o PM (Product Manager)
+### Jo„o PM (Product Manager)
 - create-prd (all modes), create-epics-and-stories
 
 ### Wilson Architect
@@ -364,14 +364,14 @@ Este √© o **manifest de workflows Avanade Method v6** - cat√°logo completo de to
 
 ---
 
-## üìñ Related Artifacts
+## ?? Related Artifacts
 
 - **${AVANADE_WORKFLOW_GUIDE_CREATE_PRD}**: PRD workflow guide
 - **${AVANADE_WORKFLOW_GUIDE_CREATE_ARCHITECTURE}**: Architecture workflow guide
 - **${AVANADE_WORKFLOW_GUIDE_SPRINT_PLANNING}**: Sprint planning workflow guide
 - **${AVANADE_WORKFLOW_GUIDE_QUICK_DEV}**: Quick dev workflow guide
 - **${AVANADE_PARTY_MODE_GUIDE}**: Party mode collaboration guide
-- (Criar GUIDEs adicionais conforme necess√°rio para workflows faltantes)
+- (Criar GUIDEs adicionais conforme necess·rio para workflows faltantes)
 
 ---
 

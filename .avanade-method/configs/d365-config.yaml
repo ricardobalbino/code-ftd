@@ -362,7 +362,7 @@ performance:
 # DEVLOADALWAYSFILES - D365 context
 # ============================================================
 devLoadAlwaysFiles:
-  - .avanade-method/docs/ftd-knowledge-base.md
+  - docs/ftd-knowledge-base.md
   - docs/arquitetura/d365-data-model.md
   - docs/arquitetura/d365-solution-architecture.md
   - docs/arquitetura/d365-integration-landscape.md

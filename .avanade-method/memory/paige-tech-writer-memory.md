@@ -1,34 +1,34 @@
-ï»¿---
+---
 
-## ğŸ“‹ O que Ã© este Artefato?
+## ?? O que é este Artefato?
 
-Este Ã© o **sistema de memÃ³ria persistente** para Paige, Technical Writer da Avanade Method. Funciona como um repositÃ³rio vivo de:
-- **Documentation Standards**: PadrÃµes customizados do projeto
+Este é o **sistema de memória persistente** para Paige, Technical Writer da Avanade Method. Funciona como um repositório vivo de:
+- **Documentation Standards**: Padrões customizados do projeto
 - **Audience Personas**: Perfis de leitores e suas necessidades
-- **Diagram Patterns**: Templates reutilizÃ¡veis de diagramas
-- **Terminology Glossary**: Termos tÃ©cnicos aprovados
+- **Diagram Patterns**: Templates reutilizáveis de diagramas
+- **Terminology Glossary**: Termos técnicos aprovados
 - **Code Example Library**: Exemplos validados e testados
-- **Common Issues**: Problemas recorrentes e soluÃ§Ãµes
+- **Common Issues**: Problemas recorrentes e soluções
 
 ---
 
-## ğŸ¯ Quando Usar
+## ?? Quando Usar
 
-### ANTES de Criar DocumentaÃ§Ã£o:
-âœ… Consultar padrÃµes de documentaÃ§Ã£o estabelecidos  
-âœ… Verificar personas de audiÃªncia jÃ¡ definidas  
-âœ… Reutilizar diagramas/templates existentes  
-âœ… Usar terminologia consistente do glossÃ¡rio
+### ANTES de Criar Documentação:
+? Consultar padrões de documentação estabelecidos  
+? Verificar personas de audiência já definidas  
+? Reutilizar diagramas/templates existentes  
+? Usar terminologia consistente do glossário
 
-### APÃ“S Criar DocumentaÃ§Ã£o:
-âœ… Atualizar com novos patterns descobertos  
-âœ… Adicionar feedback de usuÃ¡rios/leitores  
-âœ… Arquivar code examples validados  
-âœ… Documentar common issues e soluÃ§Ãµes
+### APÓS Criar Documentação:
+? Atualizar com novos patterns descobertos  
+? Adicionar feedback de usuários/leitores  
+? Arquivar code examples validados  
+? Documentar common issues e soluções
 
 ---
 
-## ğŸ“ Estrutura da MemÃ³ria
+## ?? Estrutura da Memória
 
 ### 1. Documentation Standards
 
@@ -82,7 +82,7 @@ documentation_standards:
     branching: "docs/feature-name"
 ```
 
-**HistÃ³rico de AtualizaÃ§Ãµes:**
+**Histórico de Atualizações:**
 ```yaml
 updates:
   - date: "2025-02-03"
@@ -511,7 +511,7 @@ common_issues:
 
 ---
 
-## ğŸ”„ Automatic Metrics Tracking
+## ?? Automatic Metrics Tracking
 
 ```yaml
 metrics:
@@ -550,22 +550,22 @@ metrics:
 
 ---
 
-## ğŸ“– Como Usar Este Artefato
+## ?? Como Usar Este Artefato
 
 ### Para Paige (Tech Writer):
 
 **Antes de escrever**:
 1. Consultar **Documentation Standards** (Section 1)
 2. Identificar **Audience Persona** (Section 2)
-3. Reutilizar **Diagram Patterns** se aplicÃ¡vel (Section 3)
+3. Reutilizar **Diagram Patterns** se aplicável (Section 3)
 4. Verificar **Terminology** aprovada (Section 4)
 
 **Durante escrita**:
 1. Usar **Code Examples** validados (Section 5)
 2. Evitar **Common Issues** documentados (Section 6)
 
-**ApÃ³s publicaÃ§Ã£o**:
-1. Atualizar mÃ©tricas (Section 7)
+**Após publicação**:
+1. Atualizar métricas (Section 7)
 2. Adicionar novos patterns descobertos
 3. Documentar feedback de leitores
 
@@ -577,35 +577,35 @@ metrics:
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Outros Artefatos
+## ?? Integração com Outros Artefatos
 
-- **${AVANADE_DOC_STANDARDS_MD}**: ReferÃªncia completa de padrÃµes de documentaÃ§Ã£o
-- **${AVANADE_TASK_EDITORIAL_REVIEW_PROSE}**: Usa standards da Section 1 para validaÃ§Ã£o
+- **${AVANADE_DOC_STANDARDS_MD}**: Referência completa de padrões de documentação
+- **${AVANADE_TASK_EDITORIAL_REVIEW_PROSE}**: Usa standards da Section 1 para validação
 - **${AVANADE_TASK_EDITORIAL_REVIEW_STRUCTURE}**: Usa personas da Section 2 para contexto
 - **${AVANADE_MERMAID_LIBRARY_MD}**: Biblioteca expandida de diagramas (complementa Section 3)
 
 ---
 
-## ğŸ¢ D365 CE Documentation Context - FTD EducaÃ§Ã£o
+## ?? D365 CE Documentation Context - FTD Educação
 
-### DocumentaÃ§Ã£o Existente FTD
-- NÃƒO existe diagrama ER atualizado ("nunca foi feito" - Julio)
-- NÃƒO existe guia de arquitetura ou padrÃµes obrigatÃ³rios formais
-- Algumas features tÃªm PBIs com documentaÃ§Ã£o tÃ©cnica (B2B, PNLD)
-- EspecificaÃ§Ã£o do Simulador: ~70 pÃ¡ginas (Oscar)
-- Assessment de cÃ³digo legado: parcialmente documentado
+### Documentação Existente FTD
+- NÃO existe diagrama ER atualizado ("nunca foi feito" - Julio)
+- NÃO existe guia de arquitetura ou padrões obrigatórios formais
+- Algumas features têm PBIs com documentação técnica (B2B, PNLD)
+- Especificação do Simulador: ~70 páginas (Oscar)
+- Assessment de código legado: parcialmente documentado
 
-### DocumentaÃ§Ã£o a Criar (Prioridade)
-1. **Knowledge Base FTD**: `docs/ftd-knowledge-base.md` (âœ… JÃ CRIADA)
+### Documentação a Criar (Prioridade)
+1. **Knowledge Base FTD**: `docs/ftd-knowledge-base.md` (? JÁ CRIADA)
 2. **Diagrama ER Dataverse**: tabelas ftd_*, relacionamentos
-3. **Mapa de IntegraÃ§Ãµes**: CRM â†” TOTVS â†” ISA â†” Adobe Sign â†” Data Lake
-4. **GlossÃ¡rio FTD**: Safra, Lumisfera, Anja, Estabelecimento, Royalty, AlÃ§ada, etc.
-5. **Guia de Solutions**: 9 solutions, ordem de dependÃªncia, processo de deploy
+3. **Mapa de Integrações**: CRM ? TOTVS ? ISA ? Adobe Sign ? Data Lake
+4. **Glossário FTD**: Safra, Lumisfera, Anja, Estabelecimento, Royalty, Alçada, etc.
+5. **Guia de Solutions**: 9 solutions, ordem de dependência, processo de deploy
 6. **Guia de ALM**: Pipeline, GMUD/SMAX, ambientes, branching
-7. **Processo Comercial**: Fluxograma completo (Conta â†’ Contrato)
-8. **Security Matrix**: Roles Ã— Entities Ã— Permissions
+7. **Processo Comercial**: Fluxograma completo (Conta ? Contrato)
+8. **Security Matrix**: Roles × Entities × Permissions
 
-### GlossÃ¡rio FTD (Termos CrÃ­ticos)
+### Glossário FTD (Termos Críticos)
 | Termo | Significado |
 |-------|-------------|
 | Safra | Ano letivo/comercial |
@@ -613,12 +613,12 @@ metrics:
 | Spartan | App de vendas D365 |
 | Anja | Pessoa que cadastra proposta no lugar do consultor |
 | Estabelecimento | Filial FTD (28 no Brasil) |
-| Mantenedora | Rede/grupo que mantÃ©m escolas |
-| Royalty/Markup | % escola adiciona ao preÃ§o negociado |
-| AlÃ§ada | NÃ­vel de aprovaÃ§Ã£o |
-| GMUD | GestÃ£o de MudanÃ§a (deploy produÃ§Ã£o) |
-| Vulcano | Ferramenta externa de aprovaÃ§Ã£o (serÃ¡ eliminada) |
+| Mantenedora | Rede/grupo que mantém escolas |
+| Royalty/Markup | % escola adiciona ao preço negociado |
+| Alçada | Nível de aprovação |
+| GMUD | Gestão de Mudança (deploy produção) |
+| Vulcano | Ferramenta externa de aprovação (será eliminada) |
 | ISA | Sistema de cadastro de produto |
-| CÃ³digo Substituto | Link produto antigo â†’ novo entre safras |
+| Código Substituto | Link produto antigo ? novo entre safras |
 
 ---

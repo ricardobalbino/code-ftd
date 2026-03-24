@@ -1,32 +1,32 @@
-Ôªø---
+---
 
-## üìã O que √© este Artefato?
+## ?? O que È este Artefato?
 
-Este √© o **guia de refer√™ncia CommonMark** para criar Markdown v√°lido e port√°vel. CommonMark √© a especifica√ß√£o padr√£o de Markdown, garantindo que documentos renderizem consistentemente em qualquer plataforma.
+Este È o **guia de referÍncia CommonMark** para criar Markdown v·lido e port·vel. CommonMark È a especificaÁ„o padr„o de Markdown, garantindo que documentos renderizem consistentemente em qualquer plataforma.
 
 **Por que CommonMark?**
-- ‚úÖ **Portabilidade**: Funciona em GitHub, GitLab, VS Code, Docusaurus, etc.
-- ‚úÖ **Consist√™ncia**: Sintaxe bem definida (n√£o "flavors" contradit√≥rios)
-- ‚úÖ **Valida√ß√£o**: Linters podem verificar conformidade
-- ‚úÖ **Acessibilidade**: Sem√¢ntica clara para screen readers
+- ? **Portabilidade**: Funciona em GitHub, GitLab, VS Code, Docusaurus, etc.
+- ? **ConsistÍncia**: Sintaxe bem definida (n„o "flavors" contraditÛrios)
+- ? **ValidaÁ„o**: Linters podem verificar conformidade
+- ? **Acessibilidade**: Sem‚ntica clara para screen readers
 
 ---
 
-## üéØ Quando Usar
+## ?? Quando Usar
 
-### ‚úÖ USE para:
-- Toda documenta√ß√£o t√©cnica em Markdown
+### ? USE para:
+- Toda documentaÁ„o tÈcnica em Markdown
 - README files, guides, tutorials, API docs
 - GitHub/GitLab wikis e issues
 - Validar Markdown com linters (markdownlint)
 
-### ‚ùå N√ÉO USE para:
-- Plataformas com Markdown customizado (se precisa features n√£o-CommonMark)
+### ? N√O USE para:
+- Plataformas com Markdown customizado (se precisa features n„o-CommonMark)
 - Rich text editors (Google Docs, Word)
 
 ---
 
-## üìÑ COMMONMARK QUICK REFERENCE
+## ?? COMMONMARK QUICK REFERENCE
 
 ### 1. Headings (ATX Style)
 
@@ -39,9 +39,9 @@ Este √© o **guia de refer√™ncia CommonMark** para criar Markdown v√°lido e port√
 ###### Heading 6 (H6)
 
 RULES:
-- Espa√ßo ap√≥s # √© obrigat√≥rio: "# Title" (n√£o "#Title")
+- EspaÁo apÛs # È obrigatÛrio: "# Title" (n„o "#Title")
 - Apenas 1 H1 por documento
-- N√£o pular n√≠veis (H1 ‚Üí H2 ‚Üí H3, n√£o H1 ‚Üí H3)
+- N„o pular nÌveis (H1 ? H2 ? H3, n„o H1 ? H3)
 - Max depth: H4 (deeper = poor information architecture)
 ```
 
@@ -104,8 +104,8 @@ RULES:
 3. Third item
 
 RULES:
-- N√∫meros n√£o precisam ser sequenciais (1., 1., 1. funciona)
-- Mas RECOMENDADO: use n√∫meros corretos (1., 2., 3.)
+- N˙meros n„o precisam ser sequenciais (1., 1., 1. funciona)
+- Mas RECOMENDADO: use n˙meros corretos (1., 2., 3.)
 - 3 spaces para nesting (alinha com texto do item pai)
 ```
 
@@ -122,7 +122,7 @@ RULES:
 - [x] Checked task
 - [ ] Another task
 
-‚ö†Ô∏è N√ÉO √â CommonMark PURO (GitHub extension)
+?? N√O … CommonMark PURO (GitHub extension)
 Mas amplamente suportado
 ```
 
@@ -141,8 +141,8 @@ Mas amplamente suportado
 [Link with title](https://example.com "Hover title")
 
 RULES:
-- Texto descritivo (n√£o "click here")
-- URLs devem ser absolute ou relative v√°lidas
+- Texto descritivo (n„o "click here")
+- URLs devem ser absolute ou relative v·lidas
 ```
 
 **Rendered:**
@@ -156,8 +156,8 @@ RULES:
 [reference-id]: https://example.com "Optional title"
 
 USEFUL FOR:
-- M√∫ltiplos links para mesma URL
-- Manter texto limpo (refer√™ncias no fim do documento)
+- M˙ltiplos links para mesma URL
+- Manter texto limpo (referÍncias no fim do documento)
 ```
 
 **Rendered:**
@@ -172,7 +172,7 @@ USEFUL FOR:
 
 RULES:
 - Wrap URL/email em < >
-- Renderiza como clic√°vel automaticamente
+- Renderiza como clic·vel automaticamente
 ```
 
 **Rendered:**
@@ -187,8 +187,8 @@ RULES:
 ![Alt text](image.png "Optional title")
 
 RULES:
-- Alt text √© OBRIGAT√ìRIO para acessibilidade
-- Alt deve descrever imagem, n√£o apenas "image" ou "screenshot"
+- Alt text È OBRIGAT”RIO para acessibilidade
+- Alt deve descrever imagem, n„o apenas "image" ou "screenshot"
 - Prefer relative paths para images no mesmo repo
 ```
 
@@ -248,7 +248,7 @@ function hello(name) {
     Sem syntax highlighting
     Menos preferido que fenced blocks
 
-AVOID: Use fenced blocks (```) ao inv√©s de indented
+AVOID: Use fenced blocks (```) ao invÈs de indented
 ```
 
 ---
@@ -267,8 +267,8 @@ NESTING:
 >>> Level 3
 
 RULES:
-- Use > no in√≠cio de cada linha
-- Linha em branco (apenas >) para novo par√°grafo dentro de quote
+- Use > no inÌcio de cada linha
+- Linha em branco (apenas >) para novo par·grafo dentro de quote
 ```
 
 **Rendered:**
@@ -290,7 +290,7 @@ ___
 (3 ou mais underscores)
 
 BEST PRACTICE:
-- Use --- (mais vis√≠vel)
+- Use --- (mais visÌvel)
 - Linha em branco antes/depois
 ```
 
@@ -315,7 +315,7 @@ ALIGNMENT:
 | L2   | C2     | R2    |
 
 RULES:
-- Outer pipes (|) s√£o opcionais mas recomendados
+- Outer pipes (|) s„o opcionais mas recomendados
 - Alinhamento: :--- (left), :---: (center), ---: (right)
 - Cells podem conter inline Markdown (bold, italic, code, links)
 ```
@@ -327,23 +327,23 @@ RULES:
 | Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
 | Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
 
-‚ö†Ô∏è **N√ÉO √â CommonMark PURO** (GitHub/GitLab extension)
-Mas amplamente suportado em platforms de documenta√ß√£o
+?? **N√O … CommonMark PURO** (GitHub/GitLab extension)
+Mas amplamente suportado em platforms de documentaÁ„o
 
 ---
 
 ### 10. Line Breaks
 
 ```markdown
-M√©todo 1: Duas ou mais spaces no fim da linha  
-Pr√≥xima linha ser√° nova linha (hard break).
+MÈtodo 1: Duas ou mais spaces no fim da linha  
+PrÛxima linha ser· nova linha (hard break).
 
-M√©todo 2: Backslash no fim da linha\
-Pr√≥xima linha ser√° nova linha.
+MÈtodo 2: Backslash no fim da linha\
+PrÛxima linha ser· nova linha.
 
 BEST PRACTICE:
-- Use backslash \ (mais vis√≠vel)
-- Ou simplesmente deixe linha em branco para novo par√°grafo
+- Use backslash \ (mais visÌvel)
+- Ou simplesmente deixe linha em branco para novo par·grafo
 ```
 
 **Rendered:**
@@ -376,7 +376,7 @@ SPECIAL CHARS QUE PRECISAM ESCAPE:
 
 ---
 
-## üöÄ TEMPLATE COMPLETO DE DOCUMENTO
+## ?? TEMPLATE COMPLETO DE DOCUMENTO
 
 ```markdown
 # Document Title
@@ -490,17 +490,17 @@ def example_function(param):
 
 ---
 
-## ‚úÖ VALIDATION CHECKLIST
+## ? VALIDATION CHECKLIST
 
 ### CommonMark Compliance
 
-- [ ] **Headings**: ATX-style (#), espa√ßo ap√≥s #, n√£o pular n√≠veis
-- [ ] **Lists**: Consistente (- ou *, n√£o mixed), indenta√ß√£o correta
-- [ ] **Links**: Formato [text](url) v√°lido, URLs corretas
+- [ ] **Headings**: ATX-style (#), espaÁo apÛs #, n„o pular nÌveis
+- [ ] **Lists**: Consistente (- ou *, n„o mixed), indentaÁ„o correta
+- [ ] **Links**: Formato [text](url) v·lido, URLs corretas
 - [ ] **Images**: Alt text presente, formato ![alt](url)
 - [ ] **Code blocks**: Fenced (```) com language tag
-- [ ] **Emphasis**: Consistente (* ou _, n√£o mixed)
-- [ ] **Escaping**: Caracteres especiais escapados quando necess√°rio
+- [ ] **Emphasis**: Consistente (* ou _, n„o mixed)
+- [ ] **Escaping**: Caracteres especiais escapados quando necess·rio
 - [ ] **Line breaks**: Duas spaces ou \ para hard breaks
 
 ### Rendering Test
@@ -508,12 +508,12 @@ def example_function(param):
 - [ ] **Preview localmente**: VS Code, Markdown Preview
 - [ ] **Test em target platform**: GitHub, GitLab, Docusaurus
 - [ ] **Lint**: Run markdownlint ou similar
-- [ ] **Links funcionam**: Todos absolute e relative links v√°lidos
+- [ ] **Links funcionam**: Todos absolute e relative links v·lidos
 - [ ] **Images carregam**: Paths corretos, arquivos existem
 
 ---
 
-## üîß TOOLS & LINTERS
+## ?? TOOLS & LINTERS
 
 ### VS Code Extensions
 
@@ -561,24 +561,24 @@ markdownlint --fix **/*.md
 
 ---
 
-## üé® MARKDOWN FLAVORS COMPARISON
+## ?? MARKDOWN FLAVORS COMPARISON
 
 | Feature | CommonMark | GitHub | GitLab | Docusaurus |
 |---------|-----------|--------|--------|------------|
-| Tables | ‚ùå | ‚úÖ | ‚úÖ | ‚úÖ |
-| Task Lists | ‚ùå | ‚úÖ | ‚úÖ | ‚úÖ |
-| Strikethrough | ‚ùå | ‚úÖ (~~text~~) | ‚úÖ | ‚úÖ |
-| Autolinks | ‚úÖ | ‚úÖ | ‚úÖ | ‚úÖ |
-| Emoji | ‚ùå | ‚úÖ (:smile:) | ‚úÖ | ‚úÖ |
-| Footnotes | ‚ùå | ‚úÖ | ‚úÖ | ‚úÖ |
-| Mermaid | ‚ùå | ‚úÖ | ‚úÖ | ‚úÖ (plugin) |
-| Admonitions | ‚ùå | ‚ùå | ‚ùå | ‚úÖ (:::note) |
+| Tables | ? | ? | ? | ? |
+| Task Lists | ? | ? | ? | ? |
+| Strikethrough | ? | ? (~~text~~) | ? | ? |
+| Autolinks | ? | ? | ? | ? |
+| Emoji | ? | ? (:smile:) | ? | ? |
+| Footnotes | ? | ? | ? | ? |
+| Mermaid | ? | ? | ? | ? (plugin) |
+| Admonitions | ? | ? | ? | ? (:::note) |
 
 **Recommendation**: Stick to CommonMark + Tables (universally supported)
 
 ---
 
-## üìö ADVANCED PATTERNS
+## ?? ADVANCED PATTERNS
 
 ### Multi-Paragraph List Items
 
@@ -633,13 +633,13 @@ Another Term
 : Another definition
 : Multiple definitions for same term
 
-‚ö†Ô∏è N√ÉO SUPORTADO em todos platforms
-Use HTML <dl> se necess√°rio
+?? N√O SUPORTADO em todos platforms
+Use HTML <dl> se necess·rio
 ```
 
 ---
 
-## üîó Integra√ß√£o com Outros Artefatos
+## ?? IntegraÁ„o com Outros Artefatos
 
 - **${AVANADE_DOC_STANDARDS_MD}**: Usa CommonMark como base para formatting
 - **${AVANADE_MEMORY_TECH_WRITER_PAIGE}**: Code examples seguem CommonMark
@@ -648,7 +648,7 @@ Use HTML <dl> se necess√°rio
 
 ---
 
-## üìñ REFERENCES
+## ?? REFERENCES
 
 - **CommonMark Spec**: <https://commonmark.org/>
 - **CommonMark Tutorial**: <https://commonmark.org/help/>

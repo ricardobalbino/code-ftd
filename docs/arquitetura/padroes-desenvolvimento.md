@@ -4,7 +4,7 @@
 **Cliente**: FTD Educação S/A (Grupo Marista)  
 **Versão**: 1.0 | **Data**: 20/03/2026  
 **Referência completa**: `.github/instructions/avanade-bca-guidelines.instructions.md`  
-**Inventário BCA**: `.avanade-method/docs/diretriz-avanade-inventory.md` (197 docs)
+**Inventário BCA**: `docs/diretriz-avanade-inventory.md` (197 docs)
 
 ---
 
@@ -723,4 +723,4 @@ Ações necessárias:
 
 ---
 
-*Referências: `.github/instructions/avanade-bca-guidelines.instructions.md` | `.avanade-method/docs/diretriz-avanade-inventory.md` (197 docs BCA)*
+*Referências: `.github/instructions/avanade-bca-guidelines.instructions.md` | `docs/diretriz-avanade-inventory.md` (197 docs BCA)*

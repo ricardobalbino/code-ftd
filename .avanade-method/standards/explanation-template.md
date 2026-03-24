@@ -1,32 +1,32 @@
-﻿---
+---
 
-## 📋 O que é este Artefato?
+## ?? O que � este Artefato?
 
-Este é o **template para documentos explicativos** (conceptual docs) que respondem "Como funciona?" e "Por que?". Diferente de tutorials (passo-a-passo) ou references (lookup), explanations constroem compreensão profunda.
+Este � o **template para documentos explicativos** (conceptual docs) que respondem "Como funciona?" e "Por que?". Diferente de tutorials (passo-a-passo) ou references (lookup), explanations constroem compreens�o profunda.
 
-**Tipos de conteúdo:**
-- 🧠 **Conceptual**: O que é X? Como funciona?
-- 🎯 **Architectural**: Por que escolhemos Y? Quais trade-offs?
-- 📚 **Educational**: Entenda Z antes de usar
+**Tipos de conte�do:**
+- ?? **Conceptual**: O que � X? Como funciona?
+- ?? **Architectural**: Por que escolhemos Y? Quais trade-offs?
+- ?? **Educational**: Entenda Z antes de usar
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE Explanation Docs para:
+### ? USE Explanation Docs para:
 - Explicar conceitos complexos (OAuth, microservices, CAP theorem)
-- Documentar decisões arquiteturais (por que escolhemos X)
+- Documentar decis�es arquiteturais (por que escolhemos X)
 - Onboarding de novos desenvolvedores (background knowledge)
-- Responder "Por que fazemos assim?" (não apenas "Como fazer")
+- Responder "Por que fazemos assim?" (n�o apenas "Como fazer")
 
-### ❌ NÃO USE para:
+### ? N�O USE para:
 - Step-by-step tutorials (use tutorial template)
 - API reference (use reference template)
 - Quick how-tos (use guide template)
 
 ---
 
-## 📄 TEMPLATE COMPLETO
+## ?? TEMPLATE COMPLETO
 
 ```markdown
 # Understanding [Concept Name]
@@ -88,14 +88,14 @@ Example:
 [Describe the problem that existed before this concept/technology]
 
 **Before [Concept]:**
-- ❌ Problem 1
-- ❌ Problem 2
-- ❌ Problem 3
+- ? Problem 1
+- ? Problem 2
+- ? Problem 3
 
 **After [Concept]:**
-- ✅ Solution 1
-- ✅ Solution 2
-- ✅ Solution 3
+- ? Solution 1
+- ? Solution 2
+- ? Solution 3
 
 ### Business Value
 
@@ -158,8 +158,8 @@ Example:
 
 ### Misconception 1: [False Belief]
 
-❌ **Myth**: [Common false belief]  
-✅ **Reality**: [Actual truth]
+? **Myth**: [Common false belief]  
+? **Reality**: [Actual truth]
 
 **Why this matters**: [Consequences of misunderstanding]
 
@@ -173,14 +173,14 @@ Example:
 
 ### Ideal Use Cases
 
-✅ **Use [Concept] when:**
+? **Use [Concept] when:**
 1. [Scenario 1] - [Why it fits]
 2. [Scenario 2] - [Why it fits]
 3. [Scenario 3] - [Why it fits]
 
 ### When NOT to Use
 
-❌ **Avoid [Concept] when:**
+? **Avoid [Concept] when:**
 1. [Scenario 1] - [Why it doesn't fit]
 2. [Scenario 2] - [Better alternative]
 
@@ -206,10 +206,10 @@ Example:
 
 | Feature | [Concept] | [Alternative 1] | [Alternative 2] |
 |---------|-----------|-----------------|-----------------|
-| [Feature 1] | ✅ | ❌ | ⭕ |
-| [Feature 2] | ⭕ | ✅ | ❌ |
+| [Feature 1] | ? | ? | ? |
+| [Feature 2] | ? | ? | ? |
 
-Legend: ✅ Excellent | ⭕ Adequate | ❌ Poor
+Legend: ? Excellent | ? Adequate | ? Poor
 
 ---
 
@@ -290,7 +290,7 @@ Legend: ✅ Excellent | ⭕ Adequate | ❌ Poor
 
 ---
 
-## 📚 EXAMPLE: Filled Template
+## ?? EXAMPLE: Filled Template
 
 ### Example: Understanding Microservices Architecture
 
@@ -335,18 +335,18 @@ Microservices architecture breaks down large applications into smaller, independ
 Traditional monolithic applications become unwieldy as they grow:
 
 **Before Microservices (Monolith):**
-- ❌ Single codebase becomes massive (100k+ lines)
-- ❌ Small change requires full redeployment (risky)
-- ❌ Scaling entire app even if only one feature needs it (wasteful)
-- ❌ Technology lock-in (stuck with initial tech choices)
-- ❌ Team coordination nightmare (20+ devs in same codebase)
+- ? Single codebase becomes massive (100k+ lines)
+- ? Small change requires full redeployment (risky)
+- ? Scaling entire app even if only one feature needs it (wasteful)
+- ? Technology lock-in (stuck with initial tech choices)
+- ? Team coordination nightmare (20+ devs in same codebase)
 
 **After Microservices:**
-- ✅ Small, manageable codebases (5k-10k lines each)
-- ✅ Independent deployment (update one service without touching others)
-- ✅ Targeted scaling (scale only bottleneck services)
-- ✅ Technology freedom (use best tool for each job)
-- ✅ Team autonomy (each team owns specific services)
+- ? Small, manageable codebases (5k-10k lines each)
+- ? Independent deployment (update one service without touching others)
+- ? Targeted scaling (scale only bottleneck services)
+- ? Technology freedom (use best tool for each job)
+- ? Team autonomy (each team owns specific services)
 
 ### Business Value
 
@@ -415,15 +415,15 @@ flowchart TB
 
 ### Misconception 1: "Microservices = Small Code Files"
 
-❌ **Myth**: Breaking monolith into multiple files/modules makes it microservices  
-✅ **Reality**: Microservices require independent **deployment**, **data**, and **lifecycle**
+? **Myth**: Breaking monolith into multiple files/modules makes it microservices  
+? **Reality**: Microservices require independent **deployment**, **data**, and **lifecycle**
 
 **Why this matters**: If you can't deploy services independently, you have a distributed monolith (worst of both worlds).
 
 ### Misconception 2: "More Services = Better"
 
-❌ **Myth**: Maximum granularity is always better (100 microservices for small app)  
-✅ **Reality**: Too many services creates operational complexity (network latency, debugging, distributed transactions)
+? **Myth**: Maximum granularity is always better (100 microservices for small app)  
+? **Reality**: Too many services creates operational complexity (network latency, debugging, distributed transactions)
 
 **Why this matters**: Start with fewer, larger services. Split only when needed (team size, scaling, deployment independence).
 
@@ -433,14 +433,14 @@ flowchart TB
 
 ### Ideal Use Cases
 
-✅ **Use Microservices when:**
+? **Use Microservices when:**
 1. **Large teams** (>20 developers) - Enables team autonomy
 2. **Different scaling needs** - Some features need 10x more capacity
 3. **Technology diversity needed** - ML service in Python, API in Node.js
 
 ### When NOT to Use
 
-❌ **Avoid Microservices when:**
+? **Avoid Microservices when:**
 1. **Small team** (<5 devs) - Operational overhead outweighs benefits
 2. **Greenfield project** - Start monolith, extract services later (better alternative: modular monolith)
 3. **Tight coupling** - Services communicate excessively (distributed monolith)
@@ -508,7 +508,7 @@ flowchart TB
 
 ---
 
-## ✅ WRITING CHECKLIST
+## ? WRITING CHECKLIST
 
 ### Content Quality
 
@@ -534,11 +534,11 @@ flowchart TB
 
 ---
 
-## 🔗 Integração com Outros Artefatos
+## ?? Integra��o com Outros Artefatos
 
 - **${AVANADE_DOC_STANDARDS_MD}**: Segue writing style e formatting
-- **${AVANADE_MERMAID_LIBRARY_MD}**: Usa diagrams para explicações visuais
-- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: Markdown formatting válido
+- **${AVANADE_MERMAID_LIBRARY_MD}**: Usa diagrams para explica��es visuais
+- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: Markdown formatting v�lido
 - **${AVANADE_MEMORY_TECH_WRITER_PAIGE}**: Armazena explanation patterns
 
 ---

@@ -4,7 +4,7 @@ applyTo: "**/*.cs,**/*.ts,**/*.js,**/*.yaml,**/*.yml,**/*.xml,**/*.json,**/*.ps1
 
 # Avanade BCA (BizApps Core Accelerator) — Diretrizes de Desenvolvimento
 
-> Referência completa: `.avanade-method/docs/diretriz-avanade-inventory.md` (197 arquivos categorizados)
+> Referência completa: `docs/diretriz-avanade-inventory.md` (197 arquivos categorizados)
 > Fonte: `Diretriz Avanade/` (docs oficiais Avanade BCA v3)
 
 ---

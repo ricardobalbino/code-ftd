@@ -1,43 +1,43 @@
-﻿## 📋 O que é este Workflow?
+## ?? O que � este Workflow?
 
-O **sprint-planning** gera e gerencia o arquivo `sprint-status.yaml` que rastreia todos epics e stories através do ciclo de desenvolvimento (Phase 4 Implementation).
+O **sprint-planning** gera e gerencia o arquivo `sprint-status.yaml` que rastreia todos epics e stories atrav�s do ciclo de desenvolvimento (Phase 4 Implementation).
 
-**Função**: Central tracking system para desenvolvimento iterativo
+**Fun��o**: Central tracking system para desenvolvimento iterativo
 
 **Workflow Path**: `_avanade-method/bmm/workflows/4-implementation/sprint-planning/workflow.yaml`
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE sprint-planning para:
-- **Início de Phase 4**: Após PRD + Architecture + Epics/Stories completos
+### ? USE sprint-planning para:
+- **In�cio de Phase 4**: Ap�s PRD + Architecture + Epics/Stories completos
 - **Sprint tracking**: Gerenciar progresso de epics e stories
 - **Status updates**: Atualizar status conforme dev progride
 - **Risk identification**: Surfacing blockers, dependencies
 
-### ❌ NÃO USE para:
+### ? N�O USE para:
 - **Before Epics/Stories**: Precisa de epics.md file primeiro
 - **Ad-hoc tasks**: Use `quick-dev` para tarefas fora do plano
 - **Planning refinement**: Use `create-story` para criar stories individuais
 
 ---
 
-## ⚠️ STEP 0: Carregar Contexto FTD (OBRIGATÓRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT�RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` → `devLoadAlwaysFiles`
-2. Carregar docs mandatórios:
-   - `ftd-knowledge-base.md` (processos, integrações, glossário)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandat�rios:
+   - `ftd-knowledge-base.md` (processos, integra��es, gloss�rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Alçada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, Al�ada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## 🔄 WORKFLOW PROCESS
+## ?? WORKFLOW PROCESS
 
 ### Step 1: Extract Epics & Stories
 - **Input**: `{planning_artifacts}/epics.md` (from `create-epics-and-stories`)
@@ -121,7 +121,7 @@ sprint_summary:
 
 ---
 
-## 🔄 Status Updates
+## ?? Status Updates
 
 ### How to Update sprint-status.yaml:
 
@@ -148,31 +148,31 @@ deferred: Moved to future sprint
 
 ---
 
-## 🎓 Best Practices
+## ?? Best Practices
 
 ### DO:
-- ✅ Update sprint-status.yaml DAILY (accurate tracking)
-- ✅ Add risks as soon as identified (don't wait)
-- ✅ Review sprint-status before standup meetings
-- ✅ Use `sprint-status` workflow to get summary
-- ✅ Mark dependencies explicitly (prevents conflicts)
+- ? Update sprint-status.yaml DAILY (accurate tracking)
+- ? Add risks as soon as identified (don't wait)
+- ? Review sprint-status before standup meetings
+- ? Use `sprint-status` workflow to get summary
+- ? Mark dependencies explicitly (prevents conflicts)
 
 ### DON'T:
-- ❌ Manual edits without workflow (use `sprint-status` workflow for updates)
-- ❌ Ignore blocked stories (address blockers immediately)
-- ❌ Skip risk documentation (future you will thank you)
-- ❌ Forget to update after completing story
+- ? Manual edits without workflow (use `sprint-status` workflow for updates)
+- ? Ignore blocked stories (address blockers immediately)
+- ? Skip risk documentation (future you will thank you)
+- ? Forget to update after completing story
 
 ---
 
-## 🔗 Integration Points
+## ?? Integration Points
 
 ### Prerequisites (Before sprint-planning):
-- ✅ **Epics & Stories** (required): `create-epics-and-stories` workflow
-- ✅ **Implementation Readiness** (recommended): `check-implementation-readiness` workflow
+- ? **Epics & Stories** (required): `create-epics-and-stories` workflow
+- ? **Implementation Readiness** (recommended): `check-implementation-readiness` workflow
 
 ### Workflows that Update sprint-status.yaml:
-- **dev-story**: Marks stories as in-progress → completed
+- **dev-story**: Marks stories as in-progress ? completed
 - **code-review**: Adds in-review status
 - **correct-course**: Adds risks, may defer stories
 - **retrospective**: Analyzes completion, adds learnings
@@ -184,7 +184,7 @@ deferred: Moved to future sprint
 
 ---
 
-## 🚨 Common Pitfalls
+## ?? Common Pitfalls
 
 ### Pitfall 1: Stale Status
 **Problem**: sprint-status.yaml not updated for days  
@@ -203,7 +203,7 @@ deferred: Moved to future sprint
 
 ---
 
-## 📊 Sprint Metrics
+## ?? Sprint Metrics
 
 ### Calculated Automatically:
 
@@ -225,7 +225,7 @@ sprint_summary:
 
 ---
 
-## 🔗 Related Artifacts
+## ?? Related Artifacts
 
 - **${AVANADE_WORKFLOW_GUIDE_CREATE_EPICS_STORIES}**: Prerequisite workflow
 - **${AVANADE_WORKFLOW_GUIDE_DEV_STORY}**: Implements stories, updates status
@@ -234,7 +234,7 @@ sprint_summary:
 
 ---
 
-## 📖 References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/4-implementation/sprint-planning/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 19

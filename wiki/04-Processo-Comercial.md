@@ -222,4 +222,4 @@ Era: 1 proposta por canal → **Novo**: 1 proposta com múltiplos canais + sub-l
 
 ---
 
-*Referências: [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md) | [discovery-refinamento-processo-16mar.md](../docs/discovery/discovery-refinamento-processo-16mar.md)*
+*Referências: [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md) | [discovery-refinamento-processo-16mar.md](../docs/discovery/discovery-refinamento-processo-16mar.md)*

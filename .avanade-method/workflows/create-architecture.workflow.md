@@ -1,43 +1,43 @@
-﻿## 📋 O que é este Workflow?
+## ?? O que � este Workflow?
 
-O **create-architecture** é um workflow Avanade Method v6 conversacional que substitui templates por **facilitação inteligente**. Produz decisões arquiteturais focadas em **prevenir conflitos entre agentes AI** durante implementação.
+O **create-architecture** � um workflow Avanade Method v6 conversacional que substitui templates por **facilita��o inteligente**. Produz decis�es arquiteturais focadas em **prevenir conflitos entre agentes AI** durante implementa��o.
 
-**Filosofia**: Architecture-as-Conversation, não Architecture-as-Template
+**Filosofia**: Architecture-as-Conversation, n�o Architecture-as-Template
 
 **Workflow Path**: `_avanade-method/bmm/workflows/3-solutioning/create-architecture/workflow.md`
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE create-architecture para:
-- **Após PRD validado**: Architecture traduz WHAT (PRD) em HOW (technical decisions)
+### ? USE create-architecture para:
+- **Ap�s PRD validado**: Architecture traduz WHAT (PRD) em HOW (technical decisions)
 - **Complex systems**: Microservices, distributed systems, integrations
 - **Technology choices**: Database, framework, cloud provider decisions
 - **Agent-driven projects**: Decisions must be explicit (AI agents need clarity)
 
-### ❌ NÃO USE para:
+### ? N�O USE para:
 - **Before PRD**: Can't architect without requirements
 - **Simple scripts**: Overkill para utilities, one-off tasks (use `quick-dev`)
 - **Pure UI design**: Use `create-ux-design` workflow
 
 ---
 
-## ⚠️ STEP 0: Carregar Contexto FTD (OBRIGATÓRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT�RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` → `devLoadAlwaysFiles`
-2. Carregar docs mandatórios:
-   - `ftd-knowledge-base.md` (processos, integrações, glossário)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandat�rios:
+   - `ftd-knowledge-base.md` (processos, integra��es, gloss�rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Alçada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, Al�ada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## 🔄 WORKFLOW STEPS (8 total)
+## ?? WORKFLOW STEPS (8 total)
 
 ```yaml
 step-01-init: Initialize workflow, detect continuation
@@ -54,7 +54,7 @@ step-08-complete: Finalize and suggest next workflows
 
 ---
 
-## 📊 ARCHITECTURE OUTPUT FORMAT
+## ?? ARCHITECTURE OUTPUT FORMAT
 
 ### Avanade Architecture Document Structure:
 
@@ -105,32 +105,32 @@ step-08-complete: Finalize and suggest next workflows
 
 ```
 /
-├── src/
-│   ├── api/          # REST endpoints
-│   ├── services/     # Business logic
-│   ├── repositories/ # Data access
-│   ├── models/       # Data models
-│   └── utils/        # Helpers
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
-├── infrastructure/   # IaC (Terraform/CloudFormation)
-└── docs/
++-- src/
+�   +-- api/          # REST endpoints
+�   +-- services/     # Business logic
+�   +-- repositories/ # Data access
+�   +-- models/       # Data models
+�   +-- utils/        # Helpers
++-- tests/
+�   +-- unit/
+�   +-- integration/
+�   +-- e2e/
++-- infrastructure/   # IaC (Terraform/CloudFormation)
++-- docs/
 ```
 
 ## 6. Non-Functional Requirements Mapping
 
 **Performance** (from PRD NFR):
-- Target: <1s page load → CDN + Edge caching
-- Database queries <100ms → Indexed queries, connection pooling
+- Target: <1s page load ? CDN + Edge caching
+- Database queries <100ms ? Indexed queries, connection pooling
 
 **Security** (from PRD NFR):
-- JWT authentication → OAuth 2.0 with refresh tokens
-- Data encryption → TLS 1.3 in transit, AES-256 at rest
+- JWT authentication ? OAuth 2.0 with refresh tokens
+- Data encryption ? TLS 1.3 in transit, AES-256 at rest
 
 **Scalability** (from PRD NFR):
-- 10x growth in 12 months → Horizontal scaling (K8s), stateless services
+- 10x growth in 12 months ? Horizontal scaling (K8s), stateless services
 
 ## 7. Open Questions & Decisions Deferred
 - **Q1**: Caching strategy for export templates? (Redis vs in-memory)
@@ -141,29 +141,29 @@ step-08-complete: Finalize and suggest next workflows
 
 ---
 
-## 🎓 Best Practices
+## ?? Best Practices
 
 ### DO:
-- ✅ Start from PRD (requirements drive architecture)
-- ✅ Explicit tradeoffs (every decision has costs)
-- ✅ Agent-friendly (clear decisions, no ambiguity)
-- ✅ Defer non-critical decisions (avoid over-engineering)
-- ✅ Map NFRs to architecture (performance → caching, security → OAuth)
+- ? Start from PRD (requirements drive architecture)
+- ? Explicit tradeoffs (every decision has costs)
+- ? Agent-friendly (clear decisions, no ambiguity)
+- ? Defer non-critical decisions (avoid over-engineering)
+- ? Map NFRs to architecture (performance ? caching, security ? OAuth)
 
 ### DON'T:
-- ❌ Architecture before PRD (no requirements = guesswork)
-- ❌ Technology resume-driven design ("let's use Kubernetes because cool")
-- ❌ Implicit decisions (agents will make conflicting assumptions)
-- ❌ Over-specification (don't design every microservice upfront)
+- ? Architecture before PRD (no requirements = guesswork)
+- ? Technology resume-driven design ("let's use Kubernetes because cool")
+- ? Implicit decisions (agents will make conflicting assumptions)
+- ? Over-specification (don't design every microservice upfront)
 
 ---
 
-## 🔗 Integration Points
+## ?? Integration Points
 
 ### Prerequisites (Before Architecture):
-- ✅ **PRD Validated** (required): `create-prd` workflow → VALIDATE mode passed
-- ✅ **UX Design** (recommended if UI): `create-ux-design` workflow
-- ⚠️ **Implementation Readiness Check** (optional): `check-implementation-readiness` workflow
+- ? **PRD Validated** (required): `create-prd` workflow ? VALIDATE mode passed
+- ? **UX Design** (recommended if UI): `create-ux-design` workflow
+- ?? **Implementation Readiness Check** (optional): `check-implementation-readiness` workflow
 
 ### Next Steps (After Architecture):
 1. **Epics & Stories** (required): `create-epics-and-stories` workflow
@@ -172,7 +172,7 @@ step-08-complete: Finalize and suggest next workflows
 
 ---
 
-## 🚨 Common Pitfalls
+## ?? Common Pitfalls
 
 ### Pitfall 1: Architecture Without PRD
 **Problem**: Designing solution without understanding requirements  
@@ -196,16 +196,16 @@ step-08-complete: Finalize and suggest next workflows
 
 ---
 
-## 📖 Example Decision (Good vs Bad)
+## ?? Example Decision (Good vs Bad)
 
-### ❌ BAD Decision:
+### ? BAD Decision:
 ```markdown
 ### Decision: Database
 We will use PostgreSQL.
 ```
 (No context, no rationale, no alternatives, no tradeoffs)
 
-### ✅ GOOD Decision:
+### ? GOOD Decision:
 ```markdown
 ### Decision 1: Primary Database
 
@@ -225,10 +225,10 @@ We will use PostgreSQL.
 - Cost predictable (RDS pricing vs DynamoDB write-heavy costs)
 
 **Tradeoffs**:
-- ❌ Scaling: Vertical scaling limits (acceptable for <1M users in MVP)
-- ❌ Schema changes: Migrations required (acceptable - schema stable)
-- ✅ Consistency: Strong ACID (critical for financial exports)
-- ✅ Tooling: Rich ecosystem (ORMs, admin tools, backups)
+- ? Scaling: Vertical scaling limits (acceptable for <1M users in MVP)
+- ? Schema changes: Migrations required (acceptable - schema stable)
+- ? Consistency: Strong ACID (critical for financial exports)
+- ? Tooling: Rich ecosystem (ORMs, admin tools, backups)
 
 **Implementation Notes**:
 - Use connection pooling (PgBouncer) for concurrency
@@ -238,7 +238,7 @@ We will use PostgreSQL.
 
 ---
 
-## 🔗 Related Artifacts
+## ?? Related Artifacts
 
 - **${AVANADE_ARCHITECTURE_TEMPLATE}**: Architecture template structure
 - **${AVANADE_MEMORY_ARCHITECT_WILSON}**: Historical architecture patterns
@@ -247,7 +247,7 @@ We will use PostgreSQL.
 
 ---
 
-## 📖 References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/3-solutioning/create-architecture/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 12
