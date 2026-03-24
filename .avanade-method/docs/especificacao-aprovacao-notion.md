@@ -49,7 +49,9 @@ Esta dinâmica gera gargalos significativos. Os gestores e diretores não possue
 
 # Objetivo e Valor para o Negócio (TO-BE)
 
-O objetivo é automatizar 100% do fluxo de aprovações comerciais dentro do CRM, implementando um motor de alçadas dinâmico que avalie instantaneamente o impacto da proposta e direcione para os aprovadores corretos.
+O objetivo é automatizar 100% do fluxo de aprovações comerciais dentro do CRM, estendendo o motor de alçadas existente (níveis 1-5) para contemplar 7 níveis, adicionando Superintendência (6) e Presidência (7), para que o sistema avalie instantaneamente o impacto da proposta e direcione para os aprovadores corretos em todas as alçadas.
+
+**Nota técnica**: O motor de alçadas e fluxo de aprovação já existem e funcionam nos níveis 1-5. Esta especificação reflete a extensão para níveis 6-7, sem refatoração do comportamento existente.
 
 Com o redesenho desta jornada, o sistema Vulcano será completamente eliminado do fluxo de aprovações de propostas. A funcionalidade transformará o CRM num orquestrador ativo e centralizado da governança comercial. A interface de aprovação será dentro do Simulador Comercial, com interface moderna e mobile, permitindo que a liderança bata o martelo com segurança, baseada em informações compiladas para responder as principais perguntas de cada alçada de aprovação.
 
@@ -74,9 +76,15 @@ Após a entrega de todo o escopo desta funcionalidade, espera-se:
 
 Ao centralizar todas aprovações no CRM precisamos configurar novas alçadas de aprovação e realizar o onboarding de novos usuários.
 
-### Definição das Alçadas
+### Status Atual e Escopo de Entrega
 
-Descrição dos novos níveis de aprovação e Cargos responsáveis pela aprovação. Os níveis descritos abaixo são os atuais.
+- **Níveis 1-4**: Já implementados e funcionais no CRM
+- **Nível 5**: Modelado mas não utilizado (validar uso)
+- **Níveis 6-7**: **NOVOS** — precisam ser configurados
+
+### Definição das Alçadas (Estrutura Completa 1-7)
+
+Descrição dos níveis de aprovação e cargos responsáveis.
 
 - **Nível 1** → A submissão do Consultor é suficiente;
 - **Nível 2** → Aprovação do Nível 1 + a do Coordenador e Gerente é necessária;
