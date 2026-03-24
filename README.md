@@ -1,4 +1,4 @@
-# avanade.code — FTD Educação | Dynamics 365 CE
+# Avanade.code — FTD Educação | Dynamics 365 CE
 
 > **Projeto de Modernização CRM** — Avanade × FTD Educação (Grupo Marista)
 > Plataforma: Microsoft Dynamics 365 CE Online + Power Pages + Azure Functions
