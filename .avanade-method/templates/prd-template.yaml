@@ -1,41 +1,41 @@
-Ôªø---
+---
 
-## üìã O que √© este Artefato?
+## ?? O que È este Artefato?
 
-Este √© o **template oficial** para cria√ß√£o de Product Requirements Documents (PRDs) na Avanade Method. Fornece estrutura YAML completa para documentar:
-- **Contexto de Neg√≥cio**: Problema, oportunidade, alinhamento estrat√©gico
-- **Requisitos Funcionais/N√£o-Funcionais**: Detalhamento t√©cnico e UX
-- **M√©tricas de Sucesso**: KPIs mensur√°veis e crit√©rios de aceita√ß√£o
-- **Stakeholders e Depend√™ncias**: Comunica√ß√£o e coordena√ß√£o
+Este È o **template oficial** para criaÁ„o de Product Requirements Documents (PRDs) na Avanade Method. Fornece estrutura YAML completa para documentar:
+- **Contexto de NegÛcio**: Problema, oportunidade, alinhamento estratÈgico
+- **Requisitos Funcionais/N„o-Funcionais**: Detalhamento tÈcnico e UX
+- **MÈtricas de Sucesso**: KPIs mensur·veis e critÈrios de aceitaÁ„o
+- **Stakeholders e DependÍncias**: ComunicaÁ„o e coordenaÁ„o
 - **Roadmap e Fases**: Planejamento de entrega
 
 ---
 
-## üéØ Quando Usar
+## ?? Quando Usar
 
-### ‚úÖ USE para:
+### ? USE para:
 - Novos features ou produtos (greenfield)
-- Mudan√ßas significativas em features existentes
+- MudanÁas significativas em features existentes
 - Iniciativas que requerem alinhamento multi-equipes
 - Projetos com investimento substancial (>1 sprint)
-- Comunica√ß√£o com stakeholders executivos
+- ComunicaÁ„o com stakeholders executivos
 
-### ‚ùå N√ÉO USE para:
+### ? N√O USE para:
 - Bug fixes simples (use issue tracker)
-- Refactoring t√©cnico interno (use ADR)
-- Prot√≥tipos/experimentos r√°pidos (use discovery doc)
-- Mudan√ßas triviais de UI (<1 dia de trabalho)
+- Refactoring tÈcnico interno (use ADR)
+- ProtÛtipos/experimentos r·pidos (use discovery doc)
+- MudanÁas triviais de UI (<1 dia de trabalho)
 
 ---
 
-## üìÑ Template YAML Completo
+## ?? Template YAML Completo
 
 ```yaml
 # ====================================
 # PRODUCT REQUIREMENTS DOCUMENT (PRD)
 # ====================================
 # Version: 1.0 (Avanade Method v6)
-# Template Owner: Jo√£o PM
+# Template Owner: Jo„o PM
 # Last Updated: 2025-02-03
 
 metadata:
@@ -57,32 +57,32 @@ metadata:
 # ====================================
 # 1. EXECUTIVE SUMMARY
 # ====================================
-# TL;DR para stakeholders executivos (m√°x 3 par√°grafos)
+# TL;DR para stakeholders executivos (m·x 3 par·grafos)
 
 executive_summary:
   problem_statement: |
     [Qual problema estamos resolvendo? Para quem?]
-    Exemplo: "Usu√°rios enterprise gastam 2h/dia exportando dados manualmente,
+    Exemplo: "Usu·rios enterprise gastam 2h/dia exportando dados manualmente,
     resultando em 40% de erros humanos e perda de produtividade."
   
   proposed_solution: |
     [Como vamos resolver? Qual abordagem?]
-    Exemplo: "Sistema de exporta√ß√£o automatizada com agendamento, valida√ß√£o
-    integrada e templates customiz√°veis, reduzindo tempo para 15min/dia."
+    Exemplo: "Sistema de exportaÁ„o automatizada com agendamento, validaÁ„o
+    integrada e templates customiz·veis, reduzindo tempo para 15min/dia."
   
   expected_impact: |
-    [Qual benef√≠cio? M√©tricas quantific√°veis]
-    Exemplo: "Redu√ß√£o de 87% no tempo de exporta√ß√£o, elimina√ß√£o de 90% dos
+    [Qual benefÌcio? MÈtricas quantific·veis]
+    Exemplo: "ReduÁ„o de 87% no tempo de exportaÁ„o, eliminaÁ„o de 90% dos
     erros, ROI positivo em 4 meses ($120k savings/ano)."
   
   strategic_alignment:
     company_okrs:
       - okr_id: "OKR-2025-Q1-03"
-        objective: "Aumentar efici√™ncia operacional enterprise em 30%"
-        key_result: "KR2: Reduzir tempo m√©dio de tarefas manuais em 50%"
+        objective: "Aumentar eficiÍncia operacional enterprise em 30%"
+        key_result: "KR2: Reduzir tempo mÈdio de tarefas manuais em 50%"
     
     product_roadmap:
-      theme: "[Tema Estrat√©gico - ex: Automation & Efficiency]"
+      theme: "[Tema EstratÈgico - ex: Automation & Efficiency]"
       quarter: "Q1 2025"
       priority: "P0 | P1 | P2"
 
@@ -93,8 +93,8 @@ executive_summary:
 context:
   business_context:
     market_opportunity: |
-      [Oportunidade de mercado, competi√ß√£o, timing]
-      - Tamanho do mercado endere√ß√°vel (TAM/SAM/SOM)
+      [Oportunidade de mercado, competiÁ„o, timing]
+      - Tamanho do mercado endereÁ·vel (TAM/SAM/SOM)
       - Posicionamento competitivo
       - Janela de oportunidade (por que agora?)
     
@@ -102,17 +102,17 @@ context:
       - persona: "[Nome da Persona - ex: Enterprise Data Analyst]"
         pain_points:
           - "Processos manuais consomem 40% do dia de trabalho"
-          - "Falta de automa√ß√£o causa erros cr√≠ticos"
-          - "Ferramentas atuais s√£o complexas e limitadas"
+          - "Falta de automaÁ„o causa erros crÌticos"
+          - "Ferramentas atuais s„o complexas e limitadas"
         goals:
           - "Automatizar tarefas repetitivas"
-          - "Garantir precis√£o de dados cr√≠ticos"
+          - "Garantir precis„o de dados crÌticos"
           - "Integrar com ferramentas existentes (Excel, PowerBI)"
         research_sources:
           - type: "User Interviews"
             date: "2025-01-15"
             sample_size: 12
-            key_finding: "80% relatam frustra√ß√£o com exporta√ß√£o manual"
+            key_finding: "80% relatam frustraÁ„o com exportaÁ„o manual"
           - type: "Analytics Data"
             date: "2025-01-20"
             metric: "Average export time: 1.8h per user/day"
@@ -121,7 +121,7 @@ context:
     current_state: |
       [Estado atual do sistema/arquitetura]
       - Sistema legado: Manual CSV exports via UI
-      - Limita√ß√µes: Single-threaded, no validation, no scheduling
+      - LimitaÁıes: Single-threaded, no validation, no scheduling
       - Technical debt: Monolithic export service (10k LOC)
     
     constraints:
@@ -150,12 +150,12 @@ context:
 
 goals:
   primary_goal: |
-    [Objetivo principal mensur√°vel]
-    Exemplo: "Reduzir tempo m√©dio de exporta√ß√£o de dados de 1.8h para 15min
-    com 95% de precis√£o at√© fim de Q1 2025."
+    [Objetivo principal mensur·vel]
+    Exemplo: "Reduzir tempo mÈdio de exportaÁ„o de dados de 1.8h para 15min
+    com 95% de precis„o atÈ fim de Q1 2025."
   
   secondary_goals:
-    - "Aumentar satisfa√ß√£o de usu√°rios enterprise (NPS) de 45 para 70"
+    - "Aumentar satisfaÁ„o de usu·rios enterprise (NPS) de 45 para 70"
     - "Reduzir tickets de suporte relacionados a exports em 60%"
     - "Habilitar self-service para 90% dos casos de uso"
 
@@ -182,25 +182,25 @@ success_metrics:
     - metric: "Cost Savings"
       baseline: "$0"
       target: "$120k/year"
-      measurement: "Labor hours saved √ó average salary"
+      measurement: "Labor hours saved ◊ average salary"
       tracking: "Finance dashboard"
   
   acceptance_criteria:
     must_have:
-      - "‚úÖ Exports complete in <30s for datasets up to 100k rows"
-      - "‚úÖ Validation accuracy >95% (automated tests)"
-      - "‚úÖ Schedule exports for recurring reports (daily/weekly/monthly)"
-      - "‚úÖ Support 5 export formats (CSV, Excel, JSON, Parquet, PDF)"
-      - "‚úÖ GDPR-compliant data masking for PII fields"
+      - "? Exports complete in <30s for datasets up to 100k rows"
+      - "? Validation accuracy >95% (automated tests)"
+      - "? Schedule exports for recurring reports (daily/weekly/monthly)"
+      - "? Support 5 export formats (CSV, Excel, JSON, Parquet, PDF)"
+      - "? GDPR-compliant data masking for PII fields"
     
     should_have:
-      - "‚≠ï Custom templates for frequently used export configs"
-      - "‚≠ï Email notifications on export completion"
-      - "‚≠ï Retry mechanism for failed exports (3 attempts)"
+      - "? Custom templates for frequently used export configs"
+      - "? Email notifications on export completion"
+      - "? Retry mechanism for failed exports (3 attempts)"
     
     could_have:
-      - "üîµ API endpoints for programmatic export triggering"
-      - "üîµ Export history with version control (30-day retention)"
+      - "?? API endpoints for programmatic export triggering"
+      - "?? Export history with version control (30-day retention)"
 
 # ====================================
 # 4. USER STORIES & REQUIREMENTS
@@ -253,8 +253,8 @@ functional_requirements:
     - id: "FR-001"
       feature: "Automated Export Scheduler"
       description: |
-        Permite usu√°rios agendar exports recorrentes (daily, weekly, monthly)
-        com configura√ß√£o de hor√°rio, formato e filtros customiz√°veis.
+        Permite usu·rios agendar exports recorrentes (daily, weekly, monthly)
+        com configuraÁ„o de hor·rio, formato e filtros customiz·veis.
       priority: "P0"
       complexity: "High"
       dependencies: ["Celery Beat", "PostgreSQL", "Email Service"]
@@ -263,7 +263,7 @@ functional_requirements:
       feature: "Multi-Format Export Engine"
       description: |
         Suporta 5 formatos de export (CSV, Excel, JSON, Parquet, PDF) com
-        convers√£o autom√°tica e valida√ß√£o de schema.
+        convers„o autom·tica e validaÁ„o de schema.
       priority: "P0"
       complexity: "Medium"
       dependencies: ["Pandas", "OpenPyXL", "ReportLab"]
@@ -272,16 +272,16 @@ functional_requirements:
       feature: "Data Validation Layer"
       description: |
         Valida dados exportados contra schema esperado, detecta missing values,
-        outliers e inconsist√™ncias antes de finalizar export.
+        outliers e inconsistÍncias antes de finalizar export.
       priority: "P0"
       complexity: "Medium"
       dependencies: ["Great Expectations", "Data Warehouse Schema"]
 
 non_functional_requirements:
   performance:
-    - "Exports at√© 100k rows completam em <30s (p95)"
-    - "Sistema suporta 100 concurrent exports sem degrada√ß√£o"
-    - "Export scheduling tem lat√™ncia <5s para setup"
+    - "Exports atÈ 100k rows completam em <30s (p95)"
+    - "Sistema suporta 100 concurrent exports sem degradaÁ„o"
+    - "Export scheduling tem latÍncia <5s para setup"
   
   scalability:
     - "Arquitetura suporta 10x crescimento de volume (1M rows)"
@@ -289,7 +289,7 @@ non_functional_requirements:
   
   security:
     - "GDPR compliance: PII masking, audit logs, data retention policies"
-    - "RBAC: Usu√°rios s√≥ exportam dados que t√™m permiss√£o de visualizar"
+    - "RBAC: Usu·rios sÛ exportam dados que tÍm permiss„o de visualizar"
     - "Encryption at rest (AES-256) e in transit (TLS 1.3)"
   
   reliability:
@@ -299,8 +299,8 @@ non_functional_requirements:
   
   usability:
     - "Onboarding wizard para primeiro export (<5min)"
-    - "Template library com 10 casos de uso comuns pr√©-configurados"
-    - "In-app help tooltips para cada configura√ß√£o"
+    - "Template library com 10 casos de uso comuns prÈ-configurados"
+    - "In-app help tooltips para cada configuraÁ„o"
 
 # ====================================
 # 5. DESIGN & USER EXPERIENCE
@@ -342,17 +342,17 @@ design:
             Export Engine->>Data Warehouse: Fetch data
             Data Warehouse-->>Export Engine: Dataset (100k rows)
             Export Engine->>Validation: Validate schema
-            Validation-->>Export Engine: ‚úÖ Valid
+            Validation-->>Export Engine: ? Valid
             Export Engine->>S3: Upload CSV file
             S3-->>User: Email with download link
         ```
   
   accessibility:
     - "WCAG 2.1 Level AA compliance"
-    - "Keyboard navigation: Tab order l√≥gico, atalhos (Ctrl+E para export)"
+    - "Keyboard navigation: Tab order lÛgico, atalhos (Ctrl+E para export)"
     - "Screen reader support: ARIA labels em todos inputs"
-    - "Color contrast ratio: 4.5:1 m√≠nimo para texto"
-    - "Focus indicators vis√≠veis em todos elementos interativos"
+    - "Color contrast ratio: 4.5:1 mÌnimo para texto"
+    - "Focus indicators visÌveis em todos elementos interativos"
 
 # ====================================
 # 6. TECHNICAL ARCHITECTURE
@@ -389,16 +389,16 @@ architecture:
   components:
     - name: "Export API Gateway"
       technology: "FastAPI (Python 3.11)"
-      responsibility: "REST API para CRUD de exports, autentica√ß√£o, rate limiting"
+      responsibility: "REST API para CRUD de exports, autenticaÁ„o, rate limiting"
       endpoints:
         - "POST /exports/schedule - Agendar export"
         - "GET /exports/{id} - Status de export"
-        - "GET /exports/history - Hist√≥rico de exports"
+        - "GET /exports/history - HistÛrico de exports"
         - "DELETE /exports/{id} - Cancelar export agendado"
     
     - name: "Celery Beat Scheduler"
       technology: "Celery 5.x + Redis"
-      responsibility: "Orquestra√ß√£o de exports agendados (cron jobs)"
+      responsibility: "OrquestraÁ„o de exports agendados (cron jobs)"
       configuration: |
         CELERY_BEAT_SCHEDULE = {
             'daily-exports': {
@@ -409,12 +409,12 @@ architecture:
     
     - name: "Export Workers Pool"
       technology: "Celery Workers (autoscaling 10-50 workers)"
-      responsibility: "Execu√ß√£o paralela de exports, convers√£o de formatos"
-      scaling_policy: "CPU > 70% ‚Üí scale up, CPU < 30% ‚Üí scale down"
+      responsibility: "ExecuÁ„o paralela de exports, convers„o de formatos"
+      scaling_policy: "CPU > 70% ? scale up, CPU < 30% ? scale down"
     
     - name: "Validation Service"
       technology: "Great Expectations + Pandas"
-      responsibility: "Valida√ß√£o de schema, missing values, outliers"
+      responsibility: "ValidaÁ„o de schema, missing values, outliers"
       validation_rules: |
         expectations = [
             "expect_column_values_to_not_be_null(column='user_id')",
@@ -466,11 +466,11 @@ security:
   
   authorization:
     - "RBAC model: Roles = [Viewer, Exporter, Admin]"
-    - "Row-level security: Users s√≥ exportam dados de seu tenant"
-    - "Export scopes validados contra permiss√µes do usu√°rio"
+    - "Row-level security: Users sÛ exportam dados de seu tenant"
+    - "Export scopes validados contra permissıes do usu·rio"
   
   data_protection:
-    - "PII masking autom√°tico (email, phone, SSN)"
+    - "PII masking autom·tico (email, phone, SSN)"
     - "Encryption at rest: AES-256 (S3 server-side)"
     - "Encryption in transit: TLS 1.3"
     - "Audit logs: Todas exports logadas com user_id, timestamp, dataset"
@@ -478,15 +478,15 @@ security:
   compliance:
     - framework: "GDPR"
       requirements:
-        - "Right to be forgotten: Exports deletados ap√≥s 30 dias"
+        - "Right to be forgotten: Exports deletados apÛs 30 dias"
         - "Data minimization: Apenas colunas solicitadas exportadas"
-        - "Consent tracking: Usu√°rio confirma export antes de executar"
+        - "Consent tracking: Usu·rio confirma export antes de executar"
     
     - framework: "SOC 2 Type II"
       requirements:
         - "Access controls documented e auditados"
         - "Change management: PRD aprovado antes de desenvolvimento"
-        - "Incident response: Alertas autom√°ticos para export failures"
+        - "Incident response: Alertas autom·ticos para export failures"
 
 # ====================================
 # 8. RISKS & MITIGATION
@@ -511,20 +511,20 @@ risks:
       - Fail-safe: Bloquear export se PII detectado sem masking rule
     owner: "Compliance Officer + Engineering"
   
-  - risk: "Usu√°rios confusos com UI complexa"
+  - risk: "Usu·rios confusos com UI complexa"
     likelihood: "Medium"
     impact: "Medium"
     mitigation: |
       - Onboarding wizard com tooltips contextuais
-      - Template library com casos de uso pr√©-configurados
-      - User testing com 5 usu√°rios antes de launch
+      - Template library com casos de uso prÈ-configurados
+      - User testing com 5 usu·rios antes de launch
     owner: "UX Designer"
   
-  - risk: "Depend√™ncia de Data Warehouse (SPoF)"
+  - risk: "DependÍncia de Data Warehouse (SPoF)"
     likelihood: "Low"
     impact: "High"
     mitigation: |
-      - Fallback para cached datasets (1h stale data aceit√°vel)
+      - Fallback para cached datasets (1h stale data aceit·vel)
       - Circuit breaker: Disable exports se DWH down >5min
       - SLA agreement com Data team (99.9% uptime)
     owner: "DevOps + Data Team"
@@ -539,10 +539,10 @@ roadmap:
       quarter: "Q1 2025"
       goal: "Launch core export functionality para early adopters"
       deliverables:
-        - "‚úÖ CSV/Excel export formats"
-        - "‚úÖ Basic scheduling (daily only)"
-        - "‚úÖ Email notifications"
-        - "‚úÖ PII masking for common fields"
+        - "? CSV/Excel export formats"
+        - "? Basic scheduling (daily only)"
+        - "? Email notifications"
+        - "? PII masking for common fields"
       success_criteria: "10 enterprise users using feature weekly"
       team: "2 backend devs, 1 frontend dev, 1 QA"
     
@@ -550,10 +550,10 @@ roadmap:
       quarter: "Q1 2025"
       goal: "Expand to all export formats e advanced features"
       deliverables:
-        - "‚≠ï JSON/Parquet/PDF formats"
-        - "‚≠ï Weekly/monthly schedules"
-        - "‚≠ï Export templates library"
-        - "‚≠ï Retry mechanism"
+        - "? JSON/Parquet/PDF formats"
+        - "? Weekly/monthly schedules"
+        - "? Export templates library"
+        - "? Retry mechanism"
       success_criteria: "60% adoption rate, <5% error rate"
       team: "1 backend dev, 1 frontend dev, 1 QA"
     
@@ -561,9 +561,9 @@ roadmap:
       quarter: "Q2 2025"
       goal: "Enterprise features e API access"
       deliverables:
-        - "üîµ API endpoints para programmatic access"
-        - "üîµ Export history com version control"
-        - "üîµ Advanced filters (SQL-like queries)"
+        - "?? API endpoints para programmatic access"
+        - "?? Export history com version control"
+        - "?? Advanced filters (SQL-like queries)"
       success_criteria: "5 enterprise customers using API"
       team: "1 backend dev, 1 DevOps"
   
@@ -700,21 +700,21 @@ open_questions:
     deadline: "2025-02-08"
     impact: "High - pode alterar arquitetura (streaming vs batch)"
   
-  - question: "Email notifications s√£o suficientes ou precisamos in-app notifications tamb√©m?"
+  - question: "Email notifications s„o suficientes ou precisamos in-app notifications tambÈm?"
     owner: "UX Designer"
     deadline: "2025-02-12"
     impact: "Low - pode ser Phase 2 feature"
 
 assumptions:
-  - assumption: "Data Warehouse pode lidar com 100 concurrent queries sem degrada√ß√£o"
+  - assumption: "Data Warehouse pode lidar com 100 concurrent queries sem degradaÁ„o"
     validation: "Load testing por Data Team antes de 2025-02-15"
     risk_if_wrong: "Precisaremos rate limiting ou queue system"
   
-  - assumption: "Usu√°rios preferem email notifications vs in-app"
+  - assumption: "Usu·rios preferem email notifications vs in-app"
     validation: "User research survey enviado 2025-02-05"
-    risk_if_wrong: "Baixa engagement se usu√°rios perderem emails"
+    risk_if_wrong: "Baixa engagement se usu·rios perderem emails"
   
-  - assumption: "CSV/Excel s√£o formatos mais usados (80% dos casos)"
+  - assumption: "CSV/Excel s„o formatos mais usados (80% dos casos)"
     validation: "Analytics de export manual atual"
     risk_if_wrong: "Priorizamos formatos errados em MVP"
 
@@ -725,13 +725,13 @@ assumptions:
 appendix:
   glossary:
     - term: "PII (Personally Identifiable Information)"
-      definition: "Dados que identificam indiv√≠duo (email, SSN, phone, endere√ßo)"
+      definition: "Dados que identificam indivÌduo (email, SSN, phone, endereÁo)"
     
     - term: "RBAC (Role-Based Access Control)"
-      definition: "Sistema de permiss√µes baseado em roles/fun√ß√µes do usu√°rio"
+      definition: "Sistema de permissıes baseado em roles/funÁıes do usu·rio"
     
     - term: "Dead Letter Queue"
-      definition: "Fila para mensagens/tarefas que falharam ap√≥s retry attempts"
+      definition: "Fila para mensagens/tarefas que falharam apÛs retry attempts"
   
   references:
     - title: "Great Expectations Documentation"
@@ -764,50 +764,50 @@ appendix:
 
 ---
 
-## üîç Como Usar Este Template
+## ?? Como Usar Este Template
 
-### Para Jo√£o PM (Product Manager):
+### Para Jo„o PM (Product Manager):
 
 **1. Iniciar novo PRD:**
 ```python
 # Copiar template YAML completo
 # Substituir placeholders [Nome do Feature/Produto] com contexto real
-# Preencher se√ß√µes progressivamente (n√£o precisa ser linear)
+# Preencher seÁıes progressivamente (n„o precisa ser linear)
 ```
 
-**2. Se√ß√µes obrigat√≥rias (MVP):**
-- ‚úÖ `metadata` - Identifica√ß√£o e ownership
-- ‚úÖ `executive_summary` - TL;DR para stakeholders
-- ‚úÖ `goals.success_metrics` - KPIs mensur√°veis
-- ‚úÖ `user_stories` - Pelo menos 3-5 user stories core
-- ‚úÖ `roadmap.phases` - Timeline de entrega
+**2. SeÁıes obrigatÛrias (MVP):**
+- ? `metadata` - IdentificaÁ„o e ownership
+- ? `executive_summary` - TL;DR para stakeholders
+- ? `goals.success_metrics` - KPIs mensur·veis
+- ? `user_stories` - Pelo menos 3-5 user stories core
+- ? `roadmap.phases` - Timeline de entrega
 
-**3. Se√ß√µes opcionais (podem ser iterativas):**
-- ‚≠ï `architecture` - Pode ser high-level inicialmente
-- ‚≠ï `design.wireframes` - Pode come√ßar com sketches
-- ‚≠ï `open_questions` - Adicionar conforme surgem
+**3. SeÁıes opcionais (podem ser iterativas):**
+- ? `architecture` - Pode ser high-level inicialmente
+- ? `design.wireframes` - Pode comeÁar com sketches
+- ? `open_questions` - Adicionar conforme surgem
 
-**4. Valida√ß√£o antes de compartilhar:**
+**4. ValidaÁ„o antes de compartilhar:**
 ```yaml
 checklist:
-  - "‚úÖ Problema claramente definido no executive_summary?"
-  - "‚úÖ Pelo menos 3 KPIs mensur√°veis em success_metrics?"
-  - "‚úÖ User stories t√™m acceptance criteria espec√≠ficos?"
-  - "‚úÖ Risks identificados com mitigation plans?"
-  - "‚úÖ Stakeholders e approvers listados?"
-  - "‚úÖ Timeline realista no roadmap?"
+  - "? Problema claramente definido no executive_summary?"
+  - "? Pelo menos 3 KPIs mensur·veis em success_metrics?"
+  - "? User stories tÍm acceptance criteria especÌficos?"
+  - "? Risks identificados com mitigation plans?"
+  - "? Stakeholders e approvers listados?"
+  - "? Timeline realista no roadmap?"
 ```
 
 ### Para outros agentes:
 
-- **Developers**: Se√ß√µes `architecture`, `functional_requirements`, `technical_context`
-- **UX Designers**: Se√ß√µes `design`, `user_stories`, `accessibility`
-- **QA**: Se√ß√µes `acceptance_criteria`, `non_functional_requirements`
-- **DevOps**: Se√ß√µes `architecture.components`, `dependencies`
+- **Developers**: SeÁıes `architecture`, `functional_requirements`, `technical_context`
+- **UX Designers**: SeÁıes `design`, `user_stories`, `accessibility`
+- **QA**: SeÁıes `acceptance_criteria`, `non_functional_requirements`
+- **DevOps**: SeÁıes `architecture.components`, `dependencies`
 
 ---
 
-## üìä Exemplo de PRD Preenchido (Resumido)
+## ?? Exemplo de PRD Preenchido (Resumido)
 
 ```yaml
 metadata:
@@ -816,24 +816,24 @@ metadata:
   version: "1.0"
   status: "In Review"
   owner:
-    name: "Jo√£o Silva"
+    name: "Jo„o Silva"
     email: "joao.silva@example.com"
 
 executive_summary:
   problem_statement: |
-    Usu√°rios enterprise gastam 2h/dia exportando dados manualmente,
+    Usu·rios enterprise gastam 2h/dia exportando dados manualmente,
     resultando em 40% de erros humanos e $150k/ano em custos operacionais.
   
   proposed_solution: |
-    Sistema automatizado de exports com scheduling, valida√ß√£o integrada
+    Sistema automatizado de exports com scheduling, validaÁ„o integrada
     e suporte a 5 formatos (CSV, Excel, JSON, Parquet, PDF).
   
   expected_impact: |
-    Redu√ß√£o de 87% no tempo de exporta√ß√£o, elimina√ß√£o de 90% dos erros,
+    ReduÁ„o de 87% no tempo de exportaÁ„o, eliminaÁ„o de 90% dos erros,
     ROI positivo em 4 meses ($120k savings/ano).
 
 goals:
-  primary_goal: "Reduzir tempo m√©dio de exporta√ß√£o de 1.8h para 15min com 95% de precis√£o at√© fim de Q1 2025"
+  primary_goal: "Reduzir tempo mÈdio de exportaÁ„o de 1.8h para 15min com 95% de precis„o atÈ fim de Q1 2025"
   
   success_metrics:
     kpis:
@@ -845,18 +845,18 @@ roadmap:
   phases:
     - phase: "Phase 1 - MVP (4 weeks)"
       deliverables:
-        - "‚úÖ CSV/Excel export formats"
-        - "‚úÖ Daily scheduling"
-        - "‚úÖ Email notifications"
+        - "? CSV/Excel export formats"
+        - "? Daily scheduling"
+        - "? Email notifications"
 ```
 
 ---
 
-## üîó Integra√ß√£o com Outros Artefatos
+## ?? IntegraÁ„o com Outros Artefatos
 
 - **${AVANADE_PM_CHECKLIST_MD}**: Usar checklist para validar PRD antes de approval
 - **${AVANADE_DISCOVERY_TEMPLATE_YAML}**: Discovery doc alimenta contexto do PRD
 - **${AVANADE_TASK_RICE_PRIORITIZATION}**: Usar RICE para priorizar user stories
-- **${AVANADE_MEMORY_PM_JOAO}**: Armazenar PRDs aprovados para refer√™ncia futura
+- **${AVANADE_MEMORY_PM_JOAO}**: Armazenar PRDs aprovados para referÍncia futura
 
 ---

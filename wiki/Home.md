@@ -49,8 +49,8 @@ Power Pages (Simulador) → Dataverse Web API → D365 CE → Azure Functions �
 
 ## 🔗 Documentação Relacionada
 
-- **Especificação Completa do Simulador**: `.avanade-method/docs/especificacao-simulador-notion.md`
-- **Knowledge Base FTD**: `.avanade-method/docs/ftd-knowledge-base.md`
+- **Especificação Completa do Simulador**: `docs/especificacao-simulador-notion.md`
+- **Knowledge Base FTD**: `docs/ftd-knowledge-base.md`
 - **BCA Guidelines**: `.github/instructions/avanade-bca-guidelines.instructions.md`
 - **D365 Config**: `.avanade-method/configs/d365-config.yaml`
 - **Docs Arquitetura**: `docs/arquitetura/`

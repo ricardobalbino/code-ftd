@@ -107,4 +107,4 @@
 
 ---
 
-*Referências: [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md) | [README.md](../README.md)*
+*Referências: [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md) | [README.md](../README.md)*

@@ -1,27 +1,27 @@
-﻿## 📋 O que é este Artefato?
+## ?? O que � este Artefato?
 
-Esta é a **task de validação de acessibilidade** para garantir que documentação seja utilizável por todos, incluindo pessoas com deficiências visuais, auditivas, motoras ou cognitivas.
+Esta � a **task de valida��o de acessibilidade** para garantir que documenta��o seja utiliz�vel por todos, incluindo pessoas com defici�ncias visuais, auditivas, motoras ou cognitivas.
 
 **Compliance target**: WCAG 2.1 Level AA
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE para:
-- Validar documentação antes de publicação
-- Revisar documentação existente (quarterly audit)
+### ? USE para:
+- Validar documenta��o antes de publica��o
+- Revisar documenta��o existente (quarterly audit)
 - Onboarding de novos technical writers
 - Responder a compliance requirements (legal, enterprise contracts)
 
-### ❌ NÃO É:
+### ? N�O �:
 - Code accessibility (ARIA, semantic HTML em apps)
-- PDF accessibility (diferentes padrões)
+- PDF accessibility (diferentes padr�es)
 - Video/multimedia accessibility (requires captions, transcripts)
 
 ---
 
-## ✅ ACCESSIBILITY CHECKLIST
+## ? ACCESSIBILITY CHECKLIST
 
 ### 1. TEXT & READABILITY
 
@@ -63,10 +63,10 @@ Esta é a **task de validação de acessibilidade** para garantir que documenta�
 
 **Example**:
 ```
-❌ BAD (Grade 14):
+? BAD (Grade 14):
 "The utilization of asynchronous methodologies facilitates non-blocking operations."
 
-✅ GOOD (Grade 9):
+? GOOD (Grade 9):
 "Async methods let your code run without waiting for results."
 ```
 
@@ -77,7 +77,7 @@ Esta é a **task de validação de acessibilidade** para garantir que documenta�
 #### 2.1 Semantic Heading Hierarchy
 
 - [ ] **Only ONE H1** per document
-- [ ] **No skipped levels** - H1 → H2 → H3 (NOT H1 → H3)
+- [ ] **No skipped levels** - H1 ? H2 ? H3 (NOT H1 ? H3)
 - [ ] **Headings describe content** - "How to Install" not "Section 3"
 - [ ] **Consistent capitalization** - Sentence case or Title Case (pick one)
 
@@ -85,13 +85,13 @@ Esta é a **task de validação de acessibilidade** para garantir que documenta�
 
 **Test**:
 ```markdown
-✅ GOOD:
+? GOOD:
 # Main Title (H1)
 ## Section 1 (H2)
 ### Subsection 1.1 (H3)
 ## Section 2 (H2)
 
-❌ BAD:
+? BAD:
 # Main Title (H1)
 #### Subsection (H4) - SKIPPED H2 and H3!
 ```
@@ -121,11 +121,11 @@ Esta é a **task de validação de acessibilidade** para garantir que documenta�
 
 **Examples**:
 ```markdown
-❌ BAD:
+? BAD:
 Click [here](https://example.com) for more info.
 Visit https://example.com for docs.
 
-✅ GOOD:
+? GOOD:
 Read the [authentication guide](https://example.com/auth) for setup instructions.
 See [API reference documentation](https://example.com/api) for endpoint details.
 ```
@@ -140,9 +140,9 @@ See [API reference documentation](https://example.com/api) for endpoint details.
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 - [User Guide (PDF, 2MB)](./guide.pdf)
-- [GitHub Repository (external)](https://github.com/example) ↗
+- [GitHub Repository (external)](https://github.com/example) ?
 ```
 
 ---
@@ -160,12 +160,12 @@ See [API reference documentation](https://example.com/api) for endpoint details.
 
 **Examples**:
 ```markdown
-❌ BAD:
+? BAD:
 ![](screenshot.png)
 ![image](dashboard.png)
 ![Login screen](login.png)
 
-✅ GOOD:
+? GOOD:
 ![Screenshot of the login form with username, password fields, and a blue "Sign In" button](login.png)
 ![Architecture diagram showing client connecting to API gateway, which routes to microservices](architecture.png)
 ```
@@ -201,14 +201,14 @@ The following diagram shows the authentication flow:
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 ![](decorative-banner.png)  <!-- Empty alt for decorative -->
 
-⚠️ WARNING (icon-only):
+?? WARNING (icon-only):
 ![Warning icon] This action is irreversible
 
-✅ BETTER:
-⚠️ **Warning**: This action is irreversible
+? BETTER:
+?? **Warning**: This action is irreversible
 ```
 
 ---
@@ -228,11 +228,11 @@ The following diagram shows the authentication flow:
 
 **Examples**:
 ```
-✅ GOOD:
+? GOOD:
 - Black text (#000) on white background (#FFF) = 21:1
 - Dark gray (#333) on white (#FFF) = 12.6:1
 
-❌ BAD:
+? BAD:
 - Light gray (#AAA) on white (#FFF) = 2.3:1 (fails)
 - Yellow (#FFFF00) on white (#FFF) = 1.1:1 (fails badly)
 ```
@@ -249,12 +249,12 @@ The following diagram shows the authentication flow:
 
 **Examples**:
 ```markdown
-❌ BAD:
+? BAD:
 Red text indicates errors, green indicates success.
 
-✅ GOOD:
-❌ Error: Invalid input
-✅ Success: Saved successfully
+? GOOD:
+? Error: Invalid input
+? Success: Saved successfully
 
 (Uses emoji/symbols + color)
 ```
@@ -274,7 +274,7 @@ Red text indicates errors, green indicates success.
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 **Table 1: HTTP Status Codes**
 
 | Code | Name | Description |
@@ -282,7 +282,7 @@ Red text indicates errors, green indicates success.
 | 200 | OK | Request successful |
 | 404 | Not Found | Resource doesn't exist |
 
-❌ BAD (too wide):
+? BAD (too wide):
 | Code | Name | Category | When Used | Example | Caching | Body | Notes |
 ```
 
@@ -322,12 +322,12 @@ Use description list:
 
 **Examples**:
 ```markdown
-✅ GOOD (parallel structure):
+? GOOD (parallel structure):
 1. Download the installer
 2. Run the setup wizard
 3. Configure your settings
 
-❌ BAD (not parallel):
+? BAD (not parallel):
 1. Download the installer
 2. You should run the setup wizard
 3. Configuration of settings
@@ -348,7 +348,7 @@ Use description list:
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 The following code authenticates a user:
 
 ```python
@@ -360,7 +360,7 @@ def authenticate(username, password):
     return None  # Invalid credentials
 ```
 
-❌ BAD (no context, no comments):
+? BAD (no context, no comments):
 ```python
 def authenticate(username, password):
     user = db.query(User).filter_by(username=username).first()
@@ -402,15 +402,15 @@ def authenticate(username, password):
 #### 10.1 Gender-Neutral Terms
 
 - [ ] **Use "they" instead of "he/she"**
-- [ ] **Avoid gendered terms** - "guys" → "team", "folks"
-- [ ] **Job titles neutral** - "chairman" → "chairperson"
+- [ ] **Avoid gendered terms** - "guys" ? "team", "folks"
+- [ ] **Job titles neutral** - "chairman" ? "chairperson"
 
 **Examples**:
 ```markdown
-❌ BAD:
+? BAD:
 When a user logs in, he sees his dashboard.
 
-✅ GOOD:
+? GOOD:
 When users log in, they see their dashboard.
 When a user logs in, they see their dashboard.
 ```
@@ -419,7 +419,7 @@ When a user logs in, they see their dashboard.
 
 #### 10.2 Ableist Language
 
-- [ ] **Avoid ableist metaphors** - "sanity check" → "validation"
+- [ ] **Avoid ableist metaphors** - "sanity check" ? "validation"
 - [ ] **No "crippled", "dumb"** - Even for technical issues
 - [ ] **Person-first language** - "users with disabilities" not "disabled users"
 
@@ -441,16 +441,16 @@ When a user logs in, they see their dashboard.
 
 **Examples**:
 ```markdown
-❌ BAD (idiom):
+? BAD (idiom):
 "This feature is a slam dunk for productivity."
 
-✅ GOOD:
+? GOOD:
 "This feature significantly improves productivity."
 ```
 
 ---
 
-## 🔍 TESTING PROCESS
+## ?? TESTING PROCESS
 
 ### Automated Testing
 
@@ -519,7 +519,7 @@ Checks:
 
 ---
 
-## 📊 ACCESSIBILITY SCORECARD
+## ?? ACCESSIBILITY SCORECARD
 
 Use this to grade documentation:
 
@@ -571,7 +571,7 @@ categories:
     score: [0-10]
 
 total_score:
-  calculation: "sum(category.score × category.weight)"
+  calculation: "sum(category.score � category.weight)"
   threshold:
     wcag_aa_compliant: ">90%"
     needs_work: "70-90%"
@@ -580,11 +580,11 @@ total_score:
 
 ---
 
-## 🔗 Integração com Outros Artefatos
+## ?? Integra��o com Outros Artefatos
 
-- **${AVANADE_DOC_STANDARDS_MD}**: Acessibilidade é parte de doc standards
+- **${AVANADE_DOC_STANDARDS_MD}**: Acessibilidade � parte de doc standards
 - **${AVANADE_TASK_EDITORIAL_REVIEW_STRUCTURE}**: Valida estrutura (headings, lists)
-- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: Markdown semântico = acessível
+- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: Markdown sem�ntico = acess�vel
 - **${AVANADE_MEMORY_TECH_WRITER_PAIGE}**: Armazena accessibility learnings
 
 ---

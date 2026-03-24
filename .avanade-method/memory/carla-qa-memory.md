@@ -1,13 +1,13 @@
-Ôªø### Test Automation Patterns
-_Estrat√©gias de automa√ß√£o que funcionam_
+### Test Automation Patterns
+_EstratÈgias de automaÁ„o que funcionam_
 
 **Exemplo**:
 ```yaml
 - pattern: "Test Pyramid (70% unit, 20% integration, 10% E2E)"
   rationale:
-    - "Unit tests: r√°pidos (ms), feedback imediato"
+    - "Unit tests: r·pidos (ms), feedback imediato"
     - "Integration: validam contratos entre componentes"
-    - "E2E: user flows cr√≠ticos (happy paths)"
+    - "E2E: user flows crÌticos (happy paths)"
   implementation:
     unit: "Jest (JavaScript) ou xUnit (C#)"
     integration: "Testcontainers (DBs), WireMock (APIs)"
@@ -15,17 +15,17 @@ _Estrat√©gias de automa√ß√£o que funcionam_
   metrics:
     - "Execution time: <5min (unit), <15min (integration), <30min (E2E)"
     - "Coverage: >80% unit, >60% integration"
-  anti_pattern_avoided: "Inverted pyramid (muitos E2E ‚Üí lento, flaky)"
+  anti_pattern_avoided: "Inverted pyramid (muitos E2E ? lento, flaky)"
   
 - pattern: "Shift-Left Testing (QA desde Sprint 1)"
   activities:
     - "Carla participa de Planning (valida testabilidade de stories)"
     - "Acceptance criteria co-criados (Carla + Paula + Roberto)"
-    - "Test automation em paralelo com dev (n√£o ap√≥s)"
+    - "Test automation em paralelo com dev (n„o apÛs)"
   benefits:
-    - "Bugs descobertos early (custo 10x menor que em produ√ß√£o)"
-    - "Definition of Done inclui testes (n√£o depois)"
-  metrics: "Bugs em produ√ß√£o -60% (shift-left adotado)"
+    - "Bugs descobertos early (custo 10x menor que em produÁ„o)"
+    - "Definition of Done inclui testes (n„o depois)"
+  metrics: "Bugs em produÁ„o -60% (shift-left adotado)"
   
 - pattern: "BDD (Behavior-Driven Development)"
   tool: "Cucumber, SpecFlow"
@@ -36,10 +36,10 @@ _Estrat√©gias de automa√ß√£o que funcionam_
       When user enters valid credentials
       Then user is redirected to dashboard
   benefits:
-    - "Testes leg√≠veis por stakeholders (n√£o apenas devs)"
+    - "Testes legÌveis por stakeholders (n„o apenas devs)"
     - "Living documentation (specs = tests)"
-  cons: "Overhead de manuten√ß√£o (Gherkin syntax)"
-  best_for: "Projetos com stakeholders t√©cnicos envolvidos"
+  cons: "Overhead de manutenÁ„o (Gherkin syntax)"
+  best_for: "Projetos com stakeholders tÈcnicos envolvidos"
 ```
 
 ---
@@ -54,35 +54,35 @@ _Como garantir cobertura adequada_
   measurement: "SonarQube, Coveralls"
   interpretation:
     - ">90%: Excelente (mas watch for false security)"
-    - "70-80%: Adequado (foco em cr√≠ticos)"
+    - "70-80%: Adequado (foco em crÌticos)"
     - "<70%: Insuficiente (riscos altos)"
-  caveat: "Coverage N√ÉO garante qualidade (pode testar c√≥digo mas n√£o casos edge)"
+  caveat: "Coverage N√O garante qualidade (pode testar cÛdigo mas n„o casos edge)"
   
 - metric: "Mutation Testing (quality of tests)"
   tool: "Stryker.NET, PIT (Java)"
-  concept: "Introduz bugs propositais ‚Üí testes devem detectar"
+  concept: "Introduz bugs propositais ? testes devem detectar"
   example:
     original_code: "if (age >= 18)"
     mutation: "if (age > 18)"
     expectation: "Testes devem FALHAR (detectar bug introduzido)"
-  benefit: "Valida que testes s√£o eficazes (n√£o apenas executam c√≥digo)"
+  benefit: "Valida que testes s„o eficazes (n„o apenas executam cÛdigo)"
   
 - pattern: "Risk-Based Testing (priorizarabertura por risco)"
   high_priority:
     - "Payment processing (financial impact)"
     - "Authentication/Authorization (security)"
-    - "Data migrations (irrevers√≠vel se erro)"
+    - "Data migrations (irreversÌvel se erro)"
   medium_priority:
-    - "Reporting features (UX impact, n√£o cr√≠tico)"
+    - "Reporting features (UX impact, n„o crÌtico)"
   low_priority:
-    - "UI cosmetics (cor de bot√£o, etc)"
+    - "UI cosmetics (cor de bot„o, etc)"
   benefit: "ROI de testing otimizado (foco onde bugs custam mais)"
 ```
 
 ---
 
 ### Bug Triage & Management
-_Processo de gest√£o de bugs_
+_Processo de gest„o de bugs_
 
 **Exemplo**:
 ```yaml
@@ -92,27 +92,27 @@ _Processo de gest√£o de bugs_
     sla: "Fix em <4h (hotfix imediato)"
     example: "SQL injection vulnerability, payment processing down"
   high:
-    definition: "Funcionalidade core quebrada, workaround dif√≠cil"
-    sla: "Fix em <24h (pr√≥ximo deploy)"
-    example: "Login n√£o funciona (50% dos usu√°rios afetados)"
+    definition: "Funcionalidade core quebrada, workaround difÌcil"
+    sla: "Fix em <24h (prÛximo deploy)"
+    example: "Login n„o funciona (50% dos usu·rios afetados)"
   medium:
-    definition: "Funcionalidade secund√°ria quebrada, workaround existe"
-    sla: "Fix em pr√≥xima sprint"
+    definition: "Funcionalidade secund·ria quebrada, workaround existe"
+    sla: "Fix em prÛxima sprint"
     example: "Export to PDF falha (workaround: export to CSV)"
   low:
-    definition: "Cosm√©tico, edge case raro"
+    definition: "CosmÈtico, edge case raro"
     sla: "Backlog (fix quando capacity)"
-    example: "Tooltip truncado em resolu√ß√µes < 1024px"
+    example: "Tooltip truncado em resoluÁıes < 1024px"
   
-- priority_matrix: "Severity √ó Frequency"
+- priority_matrix: "Severity ◊ Frequency"
   high_priority: "Critical severity OU High severity + High frequency"
   medium_priority: "Medium severity + Medium frequency"
   low_priority: "Low severity OU Rare occurrence"
   
 - bug_lifecycle:
   1. "New: Bug reportado (Carla ou user)"
-  2. "Triaged: Severity/priority atribu√≠dos (Carla + Paula)"
-  3. "Assigned: Developer atribu√≠do (Tiago)"
+  2. "Triaged: Severity/priority atribuÌdos (Carla + Paula)"
+  3. "Assigned: Developer atribuÌdo (Tiago)"
   4. "In Progress: Dev trabalhando"
   5. "Fixed: Code committed, deployed to staging"
   6. "Verified: Carla valida fix (regression test)"
@@ -122,7 +122,7 @@ _Processo de gest√£o de bugs_
 ---
 
 ### Quality Gates Configuration
-_Gates obrigat√≥rios antes de releases_
+_Gates obrigatÛrios antes de releases_
 
 **Exemplo**:
 ```yaml
@@ -133,7 +133,7 @@ _Gates obrigat√≥rios antes de releases_
     - "Security scan (OWASP: 0 high/critical vulns)"
   manual_checks:
     - "Code review approved (Tiago ou senior dev)"
-  sla: "Blocker - merge bloqueado at√© passar"
+  sla: "Blocker - merge bloqueado atÈ passar"
   
 - gate: "Pre-Staging Deployment"
   automated_checks:
@@ -142,7 +142,7 @@ _Gates obrigat√≥rios antes de releases_
     - "Performance benchmarks (P95 < 200ms)"
   manual_checks:
     - "Smoke tests (Carla): critical paths funcionam"
-  sla: "Blocker - deploy bloqueado at√© passar"
+  sla: "Blocker - deploy bloqueado atÈ passar"
   
 - gate: "Pre-Production Release"
   automated_checks:
@@ -153,8 +153,8 @@ _Gates obrigat√≥rios antes de releases_
     - "UAT sign-off (Paula + stakeholders)"
     - "Release notes reviewed (communications team)"
     - "Rollback plan documented"
-  sla: "Blocker - deploy bloqueado at√© passar"
-  approval: "Paula (PO) + Jo√£o (PM) aprovam formalmente"
+  sla: "Blocker - deploy bloqueado atÈ passar"
+  approval: "Paula (PO) + Jo„o (PM) aprovam formalmente"
   
 - gate: "Post-Production Monitoring (24h Hypercare)"
   checks:
@@ -166,7 +166,7 @@ _Gates obrigat√≥rios antes de releases_
 
 ---
 
-## üêõ Bug Patterns & Root Causes
+## ?? Bug Patterns & Root Causes
 
 ### Recurring Bug Patterns
 _Bugs que aparecem frequentemente e root causes_
@@ -175,46 +175,46 @@ _Bugs que aparecem frequentemente e root causes_
 ```yaml
 - bug_pattern: "Null Reference Exceptions"
   frequency: "Alta (30% dos bugs)"
-  root_cause: "Valida√ß√£o de input insuficiente, null checks faltando"
+  root_cause: "ValidaÁ„o de input insuficiente, null checks faltando"
   prevention:
     - "Static analysis (null safety checks - C# nullable reference types)"
     - "Defensive programming (guard clauses)"
     - "Code review checklist item: 'Null checks in place?'"
-  impact: "Redu√ß√£o 30% ‚Üí 10% ap√≥s mitigations"
+  impact: "ReduÁ„o 30% ? 10% apÛs mitigations"
   
 - bug_pattern: "Race Conditions (concurrency bugs)"
-  frequency: "M√©dia (15% dos bugs em sistemas distribu√≠dos)"
+  frequency: "MÈdia (15% dos bugs em sistemas distribuÌdos)"
   root_cause: "Shared state, locks inadequados, async/await misuse"
   prevention:
     - "Immutable data structures (evitar shared mutable state)"
     - "Proper locking (ReaderWriterLock, semaphores)"
-    - "Load testing early (exp√µe race conditions)"
-  detection: "Dif√≠cil (flaky tests, intermittent failures)"
-  impact: "Redu√ß√£o via code reviews focadas + load testing"
+    - "Load testing early (expıe race conditions)"
+  detection: "DifÌcil (flaky tests, intermittent failures)"
+  impact: "ReduÁ„o via code reviews focadas + load testing"
   
 - bug_pattern: "SQL Injection (security)"
   frequency: "Baixa (5% mas CRITICAL severity)"
-  root_cause: "Concatena√ß√£o de strings em queries (n√£o parameterizado)"
+  root_cause: "ConcatenaÁ„o de strings em queries (n„o parameterizado)"
   prevention:
-    - "ORMs (Entity Framework, Hibernate) ‚Üí parameteriza√ß√£o autom√°tica"
+    - "ORMs (Entity Framework, Hibernate) ? parameterizaÁ„o autom·tica"
     - "Code review checklist: 'SQL queries parameterizadas?'"
     - "SAST tools (Static Application Security Testing)"
-  impact: "Zero SQL injections ap√≥s SAST enforcement"
+  impact: "Zero SQL injections apÛs SAST enforcement"
   
 - bug_pattern: "UI Rendering Issues (mobile/browser inconsistencies)"
-  frequency: "M√©dia (20% dos bugs UX)"
+  frequency: "MÈdia (20% dos bugs UX)"
   root_cause: "Browser compatibility, responsive design edge cases"
   prevention:
     - "Cross-browser testing (Playwright em Chrome/Firefox/Safari)"
-    - "Responsive testing (Browserstack: m√∫ltiplos devices)"
-    - "Design system (Fluent UI) ‚Üí consistent components"
-  impact: "Redu√ß√£o 20% ‚Üí 8% ap√≥s design system adoption"
+    - "Responsive testing (Browserstack: m˙ltiplos devices)"
+    - "Design system (Fluent UI) ? consistent components"
+  impact: "ReduÁ„o 20% ? 8% apÛs design system adoption"
 ```
 
 ---
 
 ### Flaky Tests Management
-_Como lidar com testes inst√°veis_
+_Como lidar com testes inst·veis_
 
 **Exemplo**:
 ```yaml
@@ -223,34 +223,34 @@ _Como lidar com testes inst√°veis_
   fix:
     - "Explicit waits (waitForElement) em vez de sleep(5000)"
     - "Retry logic (Playwright: expect().toBeVisible({timeout: 10000}))"
-  prevention: "Code review: evitar sleeps, usar waits expl√≠citos"
+  prevention: "Code review: evitar sleeps, usar waits explÌcitos"
   
-- cause: "Test order dependency (tests n√£o isolados)"
-  symptom: "Test A passa sozinho, falha se executado ap√≥s Test B"
+- cause: "Test order dependency (tests n„o isolados)"
+  symptom: "Test A passa sozinho, falha se executado apÛs Test B"
   fix:
     - "Setup/teardown adequados (limpar DB, reset state)"
-    - "Testes independentes (cada test cria pr√≥prios dados)"
-  prevention: "Run tests em ordem aleat√≥ria (detecta dependencies)"
+    - "Testes independentes (cada test cria prÛprios dados)"
+  prevention: "Run tests em ordem aleatÛria (detecta dependencies)"
   
 - cause: "External dependencies (APIs de terceiros)"
-  symptom: "Test falha quando API externa est√° down"
+  symptom: "Test falha quando API externa est· down"
   fix:
     - "Mocking/stubbing (WireMock, Mockito)"
-    - "Contract testing (Pact) ‚Üí valida contratos, n√£o implementa√ß√£o"
-  prevention: "Testes n√£o devem depender de servi√ßos externos (exceto E2E em staging)"
+    - "Contract testing (Pact) ? valida contratos, n„o implementaÁ„o"
+  prevention: "Testes n„o devem depender de serviÁos externos (exceto E2E em staging)"
   
 - policy: "Flaky Test Budget"
   rule: "Max 2% flaky tests tolerados (98% success rate em CI)"
-  action_if_exceeded: "Quarantine flaky tests (disable) at√© fixados"
+  action_if_exceeded: "Quarantine flaky tests (disable) atÈ fixados"
   owner: "Carla identifica, Tiago fixa"
 ```
 
 ---
 
-## üìä Test Metrics & KPIs
+## ?? Test Metrics & KPIs
 
 ### Testing Effectiveness Metrics
-_M√©tricas que Carla monitora_
+_MÈtricas que Carla monitora_
 
 **Exemplo**:
 ```yaml
@@ -258,40 +258,40 @@ _M√©tricas que Carla monitora_
   formula: "Bugs found in QA / Total bugs (QA + Production)"
   target: ">90%"
   current: "87%"
-  interpretation: "87% dos bugs encontrados antes de produ√ß√£o (bom, mas pode melhorar)"
+  interpretation: "87% dos bugs encontrados antes de produÁ„o (bom, mas pode melhorar)"
   action: "Increase exploratory testing, improve test coverage"
   
 - metric: "Defect Removal Efficiency (DRE)"
   formula: "Bugs fixed / Bugs reported"
   target: ">95%"
   current: "92%"
-  interpretation: "8% dos bugs reportados n√£o s√£o fixados (backlog creep)"
+  interpretation: "8% dos bugs reportados n„o s„o fixados (backlog creep)"
   action: "Bug triage rigoroso (fechar won't-fix explicitamente)"
   
 - metric: "Mean Time to Detect (MTTD)"
-  measurement: "Tempo m√©dio entre bug introduzido (commit) e detectado"
+  measurement: "Tempo mÈdio entre bug introduzido (commit) e detectado"
   target: "<24h"
   current: "36h"
   interpretation: "Bugs demoram 1.5 dias para serem detectados"
   action: "CI/CD mais frequente, automated tests em cada PR"
   
 - metric: "Mean Time to Resolve (MTTR)"
-  measurement: "Tempo m√©dio entre bug detectado e fixado"
+  measurement: "Tempo mÈdio entre bug detectado e fixado"
   target: "<48h (para high/critical)"
   current: "40h"
   interpretation: "Dentro do target (good)"
   
 - metric: "Test Execution Time"
   measurement: "Tempo total de test suite (CI/CD pipeline)"
-  target: "<15min (para feedback r√°pido)"
+  target: "<15min (para feedback r·pido)"
   current: "22min"
-  interpretation: "Pipeline lento ‚Üí devs n√£o rodam testes localmente"
-  action: "Otimizar testes lentos, paraleliza√ß√£o"
+  interpretation: "Pipeline lento ? devs n„o rodam testes localmente"
+  action: "Otimizar testes lentos, paralelizaÁ„o"
 ```
 
 ---
 
-## üõ†Ô∏è Testing Tools & Technologies
+## ??? Testing Tools & Technologies
 
 ### Tool Stack Preferences
 _Ferramentas validadas_
@@ -300,7 +300,7 @@ _Ferramentas validadas_
 ```yaml
 - category: "Unit Testing"
   tool: "Jest (JavaScript), xUnit (C#), JUnit (Java)"
-  rationale: "Padr√£o da ind√∫stria, bem suportado"
+  rationale: "Padr„o da ind˙stria, bem suportado"
   
 - category: "E2E Testing"
   tool: "Playwright (preferido), Cypress (alternativo)"
@@ -329,7 +329,7 @@ _Ferramentas validadas_
 
 ---
 
-## üîÑ Continuous Testing in CI/CD
+## ?? Continuous Testing in CI/CD
 
 ### CI/CD Pipeline Integration
 _Como testes integram no pipeline_
@@ -369,40 +369,40 @@ _Como testes integram no pipeline_
 
 ---
 
-## üéØ Exploratory Testing Insights
+## ?? Exploratory Testing Insights
 
 ### Exploratory Testing Charters
-_Sess√µes de teste explorat√≥rio estruturadas_
+_Sessıes de teste exploratÛrio estruturadas_
 
 **Exemplo**:
 ```yaml
 - charter: "Explore payment flow for edge cases"
   duration: "60 minutos (timeboxed)"
   focus_areas:
-    - "M√∫ltiplos cart√µes (adicionar, remover, trocar default)"
-    - "Pagamentos falhados (cart√£o recusado, timeout)"
-    - "Concurrency (2 pagamentos simult√¢neos)"
+    - "M˙ltiplos cartıes (adicionar, remover, trocar default)"
+    - "Pagamentos falhados (cart„o recusado, timeout)"
+    - "Concurrency (2 pagamentos simult‚neos)"
   bugs_found: 3
   findings:
-    - "Bug: Timeout de pagamento n√£o mostra mensagem clara ao usu√°rio"
-    - "UX issue: Remover cart√£o n√£o pede confirma√ß√£o (risky)"
+    - "Bug: Timeout de pagamento n„o mostra mensagem clara ao usu·rio"
+    - "UX issue: Remover cart„o n„o pede confirmaÁ„o (risky)"
     - "Bug: Concurrent payments causam race condition"
   
 - charter: "Explore mobile responsiveness (iOS Safari)"
   duration: "45 minutos"
   focus_areas:
-    - "Formul√°rios (keyboard overlap, input focus)"
+    - "Formul·rios (keyboard overlap, input focus)"
     - "Navigation (gestures, back button)"
     - "Performance (scroll lag, animations)"
   bugs_found: 2
   findings:
-    - "Bug: Keyboard sobrep√µe bot√£o Submit (n√£o scrollable)"
+    - "Bug: Keyboard sobrepıe bot„o Submit (n„o scrollable)"
     - "Performance: Scroll lag em listas longas (>100 items)"
 ```
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 
 ### Artifacts Relacionados:
 - Clean Code Task: `${AVANADE_TASK_CLEAN_CODE}`
@@ -421,66 +421,66 @@ po: ${AVANADE_MEMORY_PO_PAULA}
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de Sprint Planning:
-1. Consultar **Test Automation Patterns** ‚Üí estrat√©gia de testes para sprint
-2. Revisar **Quality Gates** ‚Üí garantir compliance
-3. Consultar **Bug Patterns** ‚Üí preven√ß√£o proativa
+### ? ANTES de Sprint Planning:
+1. Consultar **Test Automation Patterns** ? estratÈgia de testes para sprint
+2. Revisar **Quality Gates** ? garantir compliance
+3. Consultar **Bug Patterns** ? prevenÁ„o proativa
 
-### ‚úÖ DURANTE Sprint:
-1. Aplicar **Test Coverage Strategies** ‚Üí adequada cobertura
-2. Usar **Flaky Tests Management** ‚Üí estabilizar testes
-3. Executar **Exploratory Testing Charters** ‚Üí descobrir edge cases
+### ? DURANTE Sprint:
+1. Aplicar **Test Coverage Strategies** ? adequada cobertura
+2. Usar **Flaky Tests Management** ? estabilizar testes
+3. Executar **Exploratory Testing Charters** ? descobrir edge cases
 
-### ‚úÖ ANTES de Release:
-1. Validar **Quality Gates** ‚Üí todos passaram
-2. Revisar **Test Metrics** ‚Üí quality indicators saud√°veis
-3. Executar **Exploratory Testing** ‚Üí valida√ß√£o final
+### ? ANTES de Release:
+1. Validar **Quality Gates** ? todos passaram
+2. Revisar **Test Metrics** ? quality indicators saud·veis
+3. Executar **Exploratory Testing** ? validaÁ„o final
 
-### ‚úÖ AP√ìS Bugs em Produ√ß√£o:
-1. **Root Cause Analysis** ‚Üí documentar em Bug Patterns
-2. **Atualizar mem√≥ria** ‚Üí prevention strategies
-3. **Refinar Quality Gates** ‚Üí prevenir recorr√™ncia
+### ? AP”S Bugs em ProduÁ„o:
+1. **Root Cause Analysis** ? documentar em Bug Patterns
+2. **Atualizar memÛria** ? prevention strategies
+3. **Refinar Quality Gates** ? prevenir recorrÍncia
 
 ---
 
-## üè¢ D365 CE QA Context - FTD Educa√ß√£o
+## ?? D365 CE QA Context - FTD EducaÁ„o
 
 ### Estado Atual de Qualidade FTD
-- Bug rate **muito baixo** ap√≥s 1.5 ano de reestrutura√ß√£o (2 bugs/m√™s recente)
-- Refatora√ß√£o em andamento: Power Automate, JS web resources, plugins
-- Assessment de c√≥digo legado parcialmente conclu√≠do
-- **Dataverse em n√≠vel cr√≠tico de armazenamento**
+- Bug rate **muito baixo** apÛs 1.5 ano de reestruturaÁ„o (2 bugs/mÍs recente)
+- RefatoraÁ„o em andamento: Power Automate, JS web resources, plugins
+- Assessment de cÛdigo legado parcialmente concluÌdo
+- **Dataverse em nÌvel crÌtico de armazenamento**
 
-### √Åreas de Risco - Foco de QA
-1. **Simulador Power Pages**: c√°lculos frontend vs backend (devem bater)
-2. **D√©bounce**: plugin sync (‚â§50 produtos) vs Azure Function (>50) - testar boundary
+### ¡reas de Risco - Foco de QA
+1. **Simulador Power Pages**: c·lculos frontend vs backend (devem bater)
+2. **DÈbounce**: plugin sync (=50 produtos) vs Azure Function (>50) - testar boundary
 3. **Pico sazonal (nov-jan)**: ~5.000 contratos/dia - performance under load
-4. **50+ templates Word**: valida√ß√£o de cada tipo de contrato/aditivo
-5. **Fluxo de aprova√ß√£o**: 4 n√≠veis de al√ßada com regras complexas
-6. **Integra√ß√£o TOTVS**: sync de contas/CNPJ - dados n√£o devem divergir
+4. **50+ templates Word**: validaÁ„o de cada tipo de contrato/aditivo
+5. **Fluxo de aprovaÁ„o**: 4 nÌveis de alÁada com regras complexas
+6. **IntegraÁ„o TOTVS**: sync de contas/CNPJ - dados n„o devem divergir
 7. **Tabela de produtos**: filtros devem excluir produtos de outras escolas
-8. **Multi-canal**: mesma proposta vendida por v√°rios canais
+8. **Multi-canal**: mesma proposta vendida por v·rios canais
 
 ### Processo de Bug Atual FTD
-- Story bugs ‚Üí DevOps (vinculado √† user story)
-- Produ√ß√£o bugs ‚Üí N1 (sustenta√ß√£o portal externo) ‚Üí triagem ‚Üí se necess√°rio, bug no DevOps
+- Story bugs ? DevOps (vinculado ‡ user story)
+- ProduÁ„o bugs ? N1 (sustentaÁ„o portal externo) ? triagem ? se necess·rio, bug no DevOps
 
-### Cen√°rios de Teste Cr√≠ticos FTD
+### Cen·rios de Teste CrÌticos FTD
 - Proposta com 200 produtos (stress test de performance)
-- Revis√£o de proposta at√© 27 vezes (integridade de dados)
-- Copiar proposta anterior com c√≥digo substituto + reajuste IPCA
-- Aprova√ß√£o passando por todos 4 n√≠veis
-- Produto personalizado vis√≠vel apenas para escola espec√≠fica
-- Valida√ß√£o CNPJ duplicado na cria√ß√£o de conta
-- Matriz de servi√ßos (15 min de processamento - timeout handling)
+- Revis„o de proposta atÈ 27 vezes (integridade de dados)
+- Copiar proposta anterior com cÛdigo substituto + reajuste IPCA
+- AprovaÁ„o passando por todos 4 nÌveis
+- Produto personalizado visÌvel apenas para escola especÌfica
+- ValidaÁ„o CNPJ duplicado na criaÁ„o de conta
+- Matriz de serviÁos (15 min de processamento - timeout handling)
 
 ### D365 Quality Gates
 - Solution Checker: 0 critical, 0 high
-- Plugin unit tests: FakeXrmEasy ‚â• 80% coverage
-- Power Pages: c√°lculos frontend = c√°lculos backend
+- Plugin unit tests: FakeXrmEasy = 80% coverage
+- Power Pages: c·lculos frontend = c·lculos backend
 - Plugin execution < 2s (mesmo no pico sazonal)
-- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT√ìRIA)
+- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT”RIA)
 
 ---

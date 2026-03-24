@@ -69,8 +69,8 @@ project:
 
 # ═══ SEÇÃO: MANDATORY READING ═══
 devLoadAlwaysFiles:
-  - .avanade-method/docs/{projeto}-knowledge-base.md
-  - .avanade-method/docs/discovery/{projeto}-discovery.md
+  - docs/{projeto}-knowledge-base.md
+  - docs/discovery/{projeto}-discovery.md
   - .avanade-method/configs/d365-config.yaml           # se D365
   - .github/instructions/avanade-bca-guidelines.instructions.md  # se D365
   # + adicionar qualquer spec principal do projeto
@@ -92,8 +92,8 @@ devStoryLocation: docs/stories  # onde ficam as stories
 ```markdown
 ## Contexto do Projeto: [NOME DO CLIENTE]
 **LEITURA OBRIGATÓRIA antes de qualquer tarefa:**
-- `.avanade-method/docs/{projeto}-knowledge-base.md` - [descrição]
-- `.avanade-method/docs/discovery/{projeto}-discovery.md` - [descrição]
+- `docs/{projeto}-knowledge-base.md` - [descrição]
+- `docs/discovery/{projeto}-discovery.md` - [descrição]
 - [+ specs do projeto]
 - [+ config D365 se aplicável]
 - [+ diretrizes BCA se D365]
@@ -356,8 +356,8 @@ Documentação → Paige (Tech Writer)
 2. `.github/copilot-instructions.md` — docs mandatórios
 3. `.github/instructions/{projeto}-context.instructions.md` — **CRIAR**
 4. `.avanade-method/configs/d365-config.yaml` — se D365
-5. `.avanade-method/docs/{projeto}-knowledge-base.md` — **CRIAR**
-6. `.avanade-method/docs/discovery/{projeto}-discovery.md` — **CRIAR**
+5. `docs/{projeto}-knowledge-base.md` — **CRIAR**
+6. `docs/discovery/{projeto}-discovery.md` — **CRIAR**
 
 ### "Preciso adicionar padrões de desenvolvimento"
 1. `.github/instructions/avanade-bca-guidelines.instructions.md` — **CRIAR**
@@ -367,13 +367,13 @@ Documentação → Paige (Tech Writer)
 5. `.avanade-method/config.yaml` → `devLoadAlwaysFiles` — adicionar guidelines
 
 ### "Preciso gerar stories/PRD a partir de uma transcrição"
-1. Coloque a transcrição em `.avanade-method/docs/transcriçao/`
+1. Coloque a transcrição em `docs/transcriçao/`
 2. Peça à Maria para atualizar discovery/knowledge-base
 3. Peça à Paula para gerar stories (referencia specs + discovery)
 4. Peça ao João para gerar PRD (referencia specs + stories)
 
 ### "Preciso adicionar uma nova spec do cliente"
-1. Salve em `.avanade-method/docs/especificacao-{nome}.md`
+1. Salve em `docs/especificacao-{nome}.md`
 2. Adicione ao `devLoadAlwaysFiles` em `config.yaml`
 3. Adicione à lista de docs mandatórios em `copilot-instructions.md`
 4. Adicione à lista em `{projeto}-context.instructions.md`
@@ -403,14 +403,14 @@ Documentação → Paige (Tech Writer)
 |---------|-----------|-----------|
 | `.github/instructions/ftd-context.instructions.md` | Supervisor | Contexto global com `applyTo: "**"` |
 | `.github/instructions/avanade-bca-guidelines.instructions.md` | Supervisor | 180 linhas de regras BCA condensadas |
-| `.avanade-method/docs/ftd-knowledge-base.md` | Maria | ~350 linhas de processos, integrações, glossário |
-| `.avanade-method/docs/discovery/ftd-discovery.md` | Maria | Discovery com fit-gap, 16 seções |
-| `.avanade-method/docs/especificacao-simulador-notion.md` | Supervisor | Spec do Simulador extraída do Notion (~500 linhas) |
-| `.avanade-method/docs/especificacao-aprovacao-notion.md` | Supervisor | Spec de Aprovação extraída do Notion |
-| `.avanade-method/docs/diretriz-avanade-inventory.md` | Subagent | Inventário de 197 docs BCA categorizados |
-| `.avanade-method/docs/roadmap/ftd-roadmap-sugestao.md` | Supervisor | Roadmap 6 fases, 41 itens |
-| `.avanade-method/docs/stories/ftd-stories-refinamento.md` | Paula | 6 épicos, 22 stories, 104 tasks |
-| `.avanade-method/docs/prd/prd-refinamento-processo.md` | João | PRD D365 completo com 13 seções |
+| `docs/ftd-knowledge-base.md` | Maria | ~350 linhas de processos, integrações, glossário |
+| `docs/discovery/ftd-discovery.md` | Maria | Discovery com fit-gap, 16 seções |
+| `docs/especificacao-simulador-notion.md` | Supervisor | Spec do Simulador extraída do Notion (~500 linhas) |
+| `docs/especificacao-aprovacao-notion.md` | Supervisor | Spec de Aprovação extraída do Notion |
+| `docs/diretriz-avanade-inventory.md` | Subagent | Inventário de 197 docs BCA categorizados |
+| `docs/roadmap/ftd-roadmap-sugestao.md` | Supervisor | Roadmap 6 fases, 41 itens |
+| `docs/stories/ftd-stories-refinamento.md` | Paula | 6 épicos, 22 stories, 104 tasks |
+| `docs/prd/prd-refinamento-processo.md` | João | PRD D365 completo com 13 seções |
 
 ### Arquivos ALTERADOS (existentes):
 | Arquivo | O que mudou |

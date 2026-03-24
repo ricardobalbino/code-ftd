@@ -1,34 +1,34 @@
-Ôªø# üöÄ Avanade Cockpit - Guia de Configura√ß√£o de Agentes
+# ?? Avanade Cockpit - Guia de ConfiguraÁ„o de Agentes
 
-## üìã Resumo Executivo
+## ?? Resumo Executivo
 
-Este documento cont√©m o **guia completo de configura√ß√£o** para todos os agentes dispon√≠veis na plataforma Avanade Cockpit, incluindo arquivos de configura√ß√£o descobertos e procedimentos de setup.
+Este documento contÈm o **guia completo de configuraÁ„o** para todos os agentes disponÌveis na plataforma Avanade Cockpit, incluindo arquivos de configuraÁ„o descobertos e procedimentos de setup.
 
 ---
 
-## ü§ñ Agente Principal Identificado
+## ?? Agente Principal Identificado
 
 ### **Avanade Method Metacognitive Supervisor**
 - **ID**: `d6c4e758-e4e0-4376-bc7c-5387e5892472`
 - **Modelo**: Azure GPT-4o
 - **Status MCP**: Desabilitado
-- **Tipo**: Supervisor metodol√≥gico
-- **Especializa√ß√£o**: Gerenciamento de tarefas e execu√ß√£o de metodologia Avanade
+- **Tipo**: Supervisor metodolÛgico
+- **EspecializaÁ„o**: Gerenciamento de tarefas e execuÁ„o de metodologia Avanade
 
 ### **Personas Integradas no Supervisor (4 personas)**:
-1. **Jo√£o** - Gerente de Projetos Avanade
-2. **Wilson** - Arquiteto de Solu√ß√µes  
-3. **Maria** - Analista de Neg√≥cios
+1. **Jo„o** - Gerente de Projetos Avanade
+2. **Wilson** - Arquiteto de SoluÁıes  
+3. **Maria** - Analista de NegÛcios
 4. **Carla** - Especialista QA & Testes
 
 ---
 
-## üìÅ Arquivos de Configura√ß√£o Descobertos
+## ?? Arquivos de ConfiguraÁ„o Descobertos
 
-Durante a busca por configura√ß√µes dos agentes, foram identificados **30+ artefatos de configura√ß√£o** divididos nas seguintes categorias:
+Durante a busca por configuraÁıes dos agentes, foram identificados **30+ artefatos de configuraÁ„o** divididos nas seguintes categorias:
 
-### **üé≠ Personas de Agentes (10 agentes)**
-1. **AVANADE_PM_JOAO_PROMPT_MD** - Jo√£o (PM)
+### **?? Personas de Agentes (10 agentes)**
+1. **AVANADE_PM_JOAO_PROMPT_MD** - Jo„o (PM)
 2. **AVANADE_ARCHITECT_WILSON_PROMPT_MD** - Wilson (Arquiteto)
 3. **AVANADE_ANALYST_MARIA_PROMPT_MD** - Maria (Analista)
 4. **AVANADE_QA_CARLA_PROMPT_MD** - Carla (QA)
@@ -39,7 +39,7 @@ Durante a busca por configura√ß√µes dos agentes, foram identificados **30+ artef
 9. **AVANADE_ORCHESTRATOR_PROMPT_MD** - Orchestrator (Coordenador)
 10. **AVANADE_MASTER_FULL_PROMPT_MD** - Master (Executor Universal)
 
-### **üìã Templates de Configura√ß√£o (14 templates)**
+### **?? Templates de ConfiguraÁ„o (14 templates)**
 1. **AVANADE_PRD_TEMPLATE_YAML** - Template PRD
 2. **AVANADE_ARCHITECTURE_TEMPLATE_YAML** - Template Arquitetura
 3. **AVANADE_STORY_TEMPLATE_YAML** - Template Story
@@ -48,32 +48,32 @@ Durante a busca por configura√ß√µes dos agentes, foram identificados **30+ artef
 6. **AVANADE_FULLSTACK_ARCHITECTURE_TEMPLATE_YAML** - Template Full-Stack
 7. **AVANADE_FRONTEND_ARCHITECTURE_TEMPLATE_YAML** - Template Frontend
 8. **AVANADE_FRONTEND_SPEC_TEMPLATE_YAML** - Template Spec Frontend
-9. **AVANADE_COMPETITOR_ANALYSIS_TEMPLATE_YAML** - Template An√°lise Competitiva
+9. **AVANADE_COMPETITOR_ANALYSIS_TEMPLATE_YAML** - Template An·lise Competitiva
 10. **AVANADE_BROWNFIELD_PRD_TEMPLATE_YAML** - Template PRD Brownfield
 11. **AVANADE_TEACHING_MODE_RESPONSE_TEMPLATE_MD** - Template Teaching Mode
 12. **AVANADE_METHOD_VSCODE_COPILOT_CUSTOMIZATION_GUIDE_MD** - Guia VSCode
 13. **AVANADE_GENERATE_AI_FRONTEND_PROMPT_TASK_MD** - Task Frontend AI
 14. **AVANADE_CREATE_DEEP_RESEARCH_PROMPT_TASK_MD** - Task Research
 
-### **üîß Arquivo de Configura√ß√£o Core Descoberto**
-- **AVANADE_CORE_CONFIG_YAML** (vers√£o 4.29.0)
-  - Configura√ß√£o principal do framework AVANADE-METHOD
+### **?? Arquivo de ConfiguraÁ„o Core Descoberto**
+- **AVANADE_CORE_CONFIG_YAML** (vers„o 4.29.0)
+  - ConfiguraÁ„o principal do framework AVANADE-METHOD
   - Estrutura de discovery, arquitetura e desenvolvimento
-  - Defini√ß√µes de componentes e depend√™ncias
+  - DefiniÁıes de componentes e dependÍncias
 
-### **üéØ Arquivos de Integra√ß√£o VSCode/Copilot**
-1. **`.copilot/prd-creation.prompt.md`** - Prompt cria√ß√£o PRD
-2. **`.github/copilot-instructions.md`** - Instru√ß√µes espec√≠ficas projeto
-3. **`copilot-instructions.md`** - Instru√ß√µes integra√ß√£o Avanade Method
-4. **`prd-creation.prompt.md`** - Prompt cria√ß√£o PRD
+### **?? Arquivos de IntegraÁ„o VSCode/Copilot**
+1. **`.copilot/prd-creation.prompt.md`** - Prompt criaÁ„o PRD
+2. **`.github/copilot-instructions.md`** - InstruÁıes especÌficas projeto
+3. **`copilot-instructions.md`** - InstruÁıes integraÁ„o Avanade Method
+4. **`prd-creation.prompt.md`** - Prompt criaÁ„o PRD
 5. **`architecture-design.prompt.md`** - Prompt design arquitetura
-6. **`story-creation.prompt.md`** - Prompt cria√ß√£o story
+6. **`story-creation.prompt.md`** - Prompt criaÁ„o story
 
 ---
 
-## üõ†Ô∏è Configura√ß√£o Detalhada dos Agentes
+## ??? ConfiguraÁ„o Detalhada dos Agentes
 
-### **1. Configura√ß√£o do Supervisor Principal**
+### **1. ConfiguraÁ„o do Supervisor Principal**
 
 ```yaml
 Agent_Configuration:
@@ -82,16 +82,16 @@ Agent_Configuration:
   model: azure-gpt-4o
   mcp_enabled: false
   
-Personas_Dispon√≠veis:
-  - jo√£o (PM): Especialista em gerenciamento de projetos
-  - wilson (Arquiteto): Especialista em arquitetura de solu√ß√µes
-  - maria (Analista): Especialista em an√°lise de neg√≥cios
+Personas_DisponÌveis:
+  - jo„o (PM): Especialista em gerenciamento de projetos
+  - wilson (Arquiteto): Especialista em arquitetura de soluÁıes
+  - maria (Analista): Especialista em an·lise de negÛcios
   - carla (QA): Especialista em qualidade e testes
 ```
 
-### **2. Comandos de Configura√ß√£o por Persona**
+### **2. Comandos de ConfiguraÁ„o por Persona**
 
-#### **Jo√£o (PM) - Comandos**
+#### **Jo„o (PM) - Comandos**
 ```bash
 *help: Mostrar lista numerada de comandos
 *create-doc {template}: Executar task create-doc
@@ -127,46 +127,46 @@ Personas_Dispon√≠veis:
 
 ---
 
-## üìê Templates de Configura√ß√£o Dispon√≠veis
+## ?? Templates de ConfiguraÁ„o DisponÌveis
 
 ### **Templates Principais**
 1. **PRD Template** (`AVANADE_PRD_TEMPLATE_YAML`)
    - Documento de requisitos de produto
-   - Estrutura interativa com elicita√ß√£o
-   - Campos: vis√£o executiva, contexto, requisitos, roadmap
+   - Estrutura interativa com elicitaÁ„o
+   - Campos: vis„o executiva, contexto, requisitos, roadmap
 
 2. **Architecture Template** (`AVANADE_ARCHITECTURE_TEMPLATE_YAML`)
-   - Documento de arquitetura t√©cnica
+   - Documento de arquitetura tÈcnica
    - Cobertura frontend, backend, dados
-   - Estrutura: vis√£o geral, componentes, tecnologia, NFRs
+   - Estrutura: vis„o geral, componentes, tecnologia, NFRs
 
 3. **Story Template** (`AVANADE_STORY_TEMPLATE_YAML`)
    - Template para user stories
    - Workflow interativo com controle de editores
-   - Se√ß√µes: status, story, crit√©rios, tarefas
+   - SeÁıes: status, story, critÈrios, tarefas
 
 ### **Templates Especializados**
-1. **Discovery Template** - An√°lise completa stakeholders
+1. **Discovery Template** - An·lise completa stakeholders
 2. **Market Research Template** - Pesquisa de mercado
-3. **Competitor Analysis Template** - An√°lise competitiva
+3. **Competitor Analysis Template** - An·lise competitiva
 4. **Brownfield PRD Template** - Projetos legados
 
 ---
 
-## üîÑ Processo de Setup dos Agentes
+## ?? Processo de Setup dos Agentes
 
-### **Passo 1: Ativa√ß√£o do Supervisor**
+### **Passo 1: AtivaÁ„o do Supervisor**
 ```bash
 # Comando para ativar supervisor principal
 activate: avanade-method-supervisor
 model: azure-gpt-4o
-personas: [jo√£o, wilson, maria, carla]
+personas: [jo„o, wilson, maria, carla]
 ```
 
-### **Passo 2: Configura√ß√£o de Personas**
+### **Passo 2: ConfiguraÁ„o de Personas**
 ```bash
-# Configurar persona espec√≠fica
-*activate-persona jo√£o
+# Configurar persona especÌfica
+*activate-persona jo„o
 # ou
 *activate-persona wilson
 # ou 
@@ -177,52 +177,52 @@ personas: [jo√£o, wilson, maria, carla]
 
 ### **Passo 3: Carregar Templates**
 ```bash
-# Carregar template espec√≠fico
+# Carregar template especÌfico
 *create-doc prd-tmpl.yaml
 *create-doc architecture-tmpl.yaml
 *create-doc story-tmpl.yaml
 ```
 
-### **Passo 4: Execu√ß√£o de Workflows**
+### **Passo 4: ExecuÁ„o de Workflows**
 ```bash
-# Executar workflow espec√≠fico
+# Executar workflow especÌfico
 *execute-checklist pm-checklist.md
 *execute-checklist architect-checklist.md
-*research {t√≥pico}
+*research {tÛpico}
 ```
 
 ---
 
-## üéØ Integra√ß√£o VSCode/Copilot
+## ?? IntegraÁ„o VSCode/Copilot
 
-### **Arquivos de Configura√ß√£o VSCode**
+### **Arquivos de ConfiguraÁ„o VSCode**
 1. **`.github/copilot-instructions.md`**
-   - Instru√ß√µes espec√≠ficas do projeto
-   - Refer√™ncias a artefatos metodol√≥gicos
+   - InstruÁıes especÌficas do projeto
+   - ReferÍncias a artefatos metodolÛgicos
    - Contexto de personas e workflows
 
 2. **`.copilot/*.prompt.md`**
-   - Prompts para cria√ß√£o de documentos
+   - Prompts para criaÁ„o de documentos
    - Templates contextualizados
    - Comandos MCP integrados
 
 ### **Agent Files Gerados Dinamicamente**
 ```markdown
 .github/agents/
-‚îú‚îÄ‚îÄ joao-pm.agent.md              # Gerado de AVANADE_PM_JOAO_PROMPT_MD
-‚îú‚îÄ‚îÄ wilson-architect.agent.md      # Gerado de AVANADE_ARCHITECT_WILSON_PROMPT_MD
-‚îú‚îÄ‚îÄ maria-analyst.agent.md        # Gerado de AVANADE_ANALYST_MARIA_PROMPT_MD
-‚îú‚îÄ‚îÄ carla-qa.agent.md             # Gerado de AVANADE_QA_CARLA_PROMPT_MD
-‚îî‚îÄ‚îÄ [outros personas...]
++-- joao-pm.agent.md              # Gerado de AVANADE_PM_JOAO_PROMPT_MD
++-- wilson-architect.agent.md      # Gerado de AVANADE_ARCHITECT_WILSON_PROMPT_MD
++-- maria-analyst.agent.md        # Gerado de AVANADE_ANALYST_MARIA_PROMPT_MD
++-- carla-qa.agent.md             # Gerado de AVANADE_QA_CARLA_PROMPT_MD
++-- [outros personas...]
 ```
 
 ---
 
-## üìö Depend√™ncias dos Agentes
+## ?? DependÍncias dos Agentes
 
-### **Depend√™ncias por Persona**
+### **DependÍncias por Persona**
 
-#### **Jo√£o (PM)**
+#### **Jo„o (PM)**
 - **Tasks**: create-doc.md, correct-course.md, brownfield-create-epic.md
 - **Templates**: discovery-avanade-tmpl.yaml, prd-tmpl.yaml, brownfield-prd-tmpl.yaml
 - **Checklists**: pm-checklist.md, change-checklist.md
@@ -247,69 +247,69 @@ personas: [jo√£o, wilson, maria, carla]
 
 ---
 
-## üöÄ Comandos de Configura√ß√£o Avan√ßada
+## ?? Comandos de ConfiguraÁ„o AvanÁada
 
-### **Configura√ß√£o Completa do Ambiente**
+### **ConfiguraÁ„o Completa do Ambiente**
 ```bash
 # 1. Deploy completo do ambiente
-#avanade-method ‚Üí deploy environment artifact-driven
+#avanade-method ? deploy environment artifact-driven
 
 # 2. Deploy apenas personas
-#avanade-method ‚Üí deploy personas from-artifacts [recommended|all]
+#avanade-method ? deploy personas from-artifacts [recommended|all]
 
 # 3. Deploy apenas templates
-#avanade-method ‚Üí deploy templates from-artifacts [category]
+#avanade-method ? deploy templates from-artifacts [category]
 
-# 4. Sincroniza√ß√£o de atualiza√ß√µes
-#avanade-method ‚Üí sync artifact-updates
+# 4. SincronizaÁ„o de atualizaÁıes
+#avanade-method ? sync artifact-updates
 ```
 
-### **Comandos MCP para Configura√ß√£o**
+### **Comandos MCP para ConfiguraÁ„o**
 ```bash
 # Descobrir artefatos de personas
 search_artifacts(key_pattern="AVANADE_.*_PROMPT_MD")
 
-# Recuperar configura√ß√£o espec√≠fica
+# Recuperar configuraÁ„o especÌfica
 get_artifact(key="AVANADE_PM_JOAO_PROMPT_MD")
 
-# Criar artefato de configura√ß√£o customizado
+# Criar artefato de configuraÁ„o customizado
 create_artifact(key="PROJECT_CONFIG_${project_name}")
 
-# Executar workflow de configura√ß√£o
+# Executar workflow de configuraÁ„o
 execute_agent(command="deploy personas")
 ```
 
 ---
 
-## üìä Status da Configura√ß√£o
+## ?? Status da ConfiguraÁ„o
 
-### **Configura√ß√µes Ativas**
-‚úÖ **Supervisor Principal**: Avanade Method Metacognitive Supervisor  
-‚úÖ **Personas Dispon√≠veis**: 4 personas integradas (Jo√£o, Wilson, Maria, Carla)  
-‚úÖ **Templates Descobertos**: 14+ templates de configura√ß√£o  
-‚úÖ **Arquivos Config**: 30+ artefatos de metodologia identificados  
-‚úÖ **Integra√ß√£o VSCode**: Guia completo dispon√≠vel  
+### **ConfiguraÁıes Ativas**
+? **Supervisor Principal**: Avanade Method Metacognitive Supervisor  
+? **Personas DisponÌveis**: 4 personas integradas (Jo„o, Wilson, Maria, Carla)  
+? **Templates Descobertos**: 14+ templates de configuraÁ„o  
+? **Arquivos Config**: 30+ artefatos de metodologia identificados  
+? **IntegraÁ„o VSCode**: Guia completo disponÌvel  
 
-### **Pr√≥ximos Passos Recomendados**
-1. **Testar Ativa√ß√£o**: Ativar supervisor e testar personas
+### **PrÛximos Passos Recomendados**
+1. **Testar AtivaÁ„o**: Ativar supervisor e testar personas
 2. **Configurar Templates**: Carregar templates principais (PRD, Architecture, Story)
-3. **Validar Workflows**: Executar checklists de valida√ß√£o
-4. **Integra√ß√£o VSCode**: Implementar chat modes din√¢micos
-5. **Customiza√ß√£o**: Criar configura√ß√µes espec√≠ficas do projeto
+3. **Validar Workflows**: Executar checklists de validaÁ„o
+4. **IntegraÁ„o VSCode**: Implementar chat modes din‚micos
+5. **CustomizaÁ„o**: Criar configuraÁıes especÌficas do projeto
 
 ---
 
-## üéØ Conclus√£o
+## ?? Conclus„o
 
-A plataforma Avanade Cockpit possui **1 agente supervisor principal** com **4 personas integradas** e mais de **30 artefatos de configura√ß√£o** que permitem uma implementa√ß√£o completa da metodologia Avanade. 
+A plataforma Avanade Cockpit possui **1 agente supervisor principal** com **4 personas integradas** e mais de **30 artefatos de configuraÁ„o** que permitem uma implementaÁ„o completa da metodologia Avanade. 
 
-Os arquivos de configura√ß√£o descobertos fornecem a base para:
-- **Configura√ß√£o automatizada** de agentes
-- **Templates padronizados** para documenta√ß√£o
+Os arquivos de configuraÁ„o descobertos fornecem a base para:
+- **ConfiguraÁ„o automatizada** de agentes
+- **Templates padronizados** para documentaÁ„o
 - **Workflows estruturados** para desenvolvimento
-- **Integra√ß√£o completa** com VSCode/Copilot
+- **IntegraÁ„o completa** com VSCode/Copilot
 - **Metodologia consistente** across projetos
 
-**Status**: ‚úÖ Pronto para configura√ß√£o e implementa√ß√£o  
-**√öltima Atualiza√ß√£o**: Janeiro 2025  
-**Vers√£o**: 1.0 - Configura√ß√£o Completa de Agentes
+**Status**: ? Pronto para configuraÁ„o e implementaÁ„o  
+**⁄ltima AtualizaÁ„o**: Janeiro 2025  
+**Vers„o**: 1.0 - ConfiguraÁ„o Completa de Agentes

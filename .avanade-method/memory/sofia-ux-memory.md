@@ -1,5 +1,5 @@
-Ôªø### Design System Patterns
-_Componentes e padr√µes reutiliz√°veis_
+### Design System Patterns
+_Componentes e padrıes reutiliz·veis_
 
 **Exemplo**:
 ```yaml
@@ -10,13 +10,13 @@ _Componentes e padr√µes reutiliz√°veis_
     - "Navigation (Nav, Breadcrumb, Pivot)"
     - "Feedback (MessageBar, Dialog, ProgressIndicator)"
   benefits:
-    - "Consist√™ncia visual (todo app usa mesmos components)"
+    - "ConsistÍncia visual (todo app usa mesmos components)"
     - "Acessibilidade built-in (WCAG AA compliance)"
     - "Development speed (Tiago reutiliza components)"
   customization: "Theming (cores brand, typography)"
   documentation: "Storybook (catalog de components com exemplos)"
   
-- pattern: "Atomic Design (Atoms ‚Üí Molecules ‚Üí Organisms)"
+- pattern: "Atomic Design (Atoms ? Molecules ? Organisms)"
   atoms: "Button, Input, Label (building blocks)"
   molecules: "SearchBar (Input + Button), FormField (Label + Input + Error)"
   organisms: "Header (Logo + Nav + SearchBar), Card (Image + Title + Description)"
@@ -29,93 +29,93 @@ _Componentes e padr√µes reutiliz√°veis_
     - "Tablet: 768-1023px"
     - "Desktop: 1024px+"
   approach: "Design mobile primeiro, progressive enhancement"
-  rationale: "62% do tr√°fego √© mobile (analytics)"
+  rationale: "62% do tr·fego È mobile (analytics)"
   testing: "Browserstack, Chrome DevTools (device emulation)"
 ```
 
 ---
 
 ### User Research Insights
-_Descobertas de pesquisa com usu√°rios_
+_Descobertas de pesquisa com usu·rios_
 
 **Exemplo**:
 ```yaml
 - research_method: "Usability Testing (moderated)"
-  participants: "5 usu√°rios (persona: Sarah, Gerente de Vendas)"
+  participants: "5 usu·rios (persona: Sarah, Gerente de Vendas)"
   task: "Cadastrar novo cliente no CRM"
   findings:
-    - "100% dos usu√°rios clicaram em 'Save' antes de preencher campos obrigat√≥rios (erro UX)"
-    - "80% n√£o viram mensagem de erro (posicionada no topo, fora do viewport)"
-    - "60% tentaram usar Ctrl+F para buscar cliente (search box n√£o √≥bvia)"
+    - "100% dos usu·rios clicaram em 'Save' antes de preencher campos obrigatÛrios (erro UX)"
+    - "80% n„o viram mensagem de erro (posicionada no topo, fora do viewport)"
+    - "60% tentaram usar Ctrl+F para buscar cliente (search box n„o Ûbvia)"
   actions:
-    - "Disable 'Save' button at√© campos obrigat√≥rios preenchidos"
-    - "Mostrar erros inline (pr√≥ximo ao campo, n√£o topo)"
+    - "Disable 'Save' button atÈ campos obrigatÛrios preenchidos"
+    - "Mostrar erros inline (prÛximo ao campo, n„o topo)"
     - "Search box mais proeminente (hero position)"
-  impact: "Task completion time 3min ‚Üí 1min (-66%)"
+  impact: "Task completion time 3min ? 1min (-66%)"
   
 - research_method: "A/B Testing (quantitative)"
-  hypothesis: "Bot√£o CTA verde converte mais que azul"
+  hypothesis: "Bot„o CTA verde converte mais que azul"
   variants:
-    control: "Bot√£o azul (brand color)"
-    variant_a: "Bot√£o verde (high contrast)"
+    control: "Bot„o azul (brand color)"
+    variant_a: "Bot„o verde (high contrast)"
   sample_size: "10k visitors (5k cada variante)"
   results:
     control: "Conversion rate 5.2%"
     variant_a: "Conversion rate 6.8% (+30%)"
   decision: "Ship variant A (green button)"
-  learning: "Contrast > brand consistency (quando conversion cr√≠tica)"
+  learning: "Contrast > brand consistency (quando conversion crÌtica)"
   
 - research_method: "Heatmaps & Session Recordings (Hotjar)"
   page: "Homepage"
   findings:
-    - "80% scroll at√© hero section apenas (conte√∫do abaixo ignorado)"
-    - "20% clicaram em imagem (esperando link, mas n√£o era clic√°vel)"
-    - "Exit rate alto (40%) no formul√°rio de signup (campo 'Company Tax ID' confuso)"
+    - "80% scroll atÈ hero section apenas (conte˙do abaixo ignorado)"
+    - "20% clicaram em imagem (esperando link, mas n„o era clic·vel)"
+    - "Exit rate alto (40%) no formul·rio de signup (campo 'Company Tax ID' confuso)"
   actions:
-    - "Above-the-fold optimization (conte√∫do cr√≠tico no hero)"
-    - "Fazer imagens clic√°veis (link para product page)"
-    - "Simplificar signup (Tax ID opcional, n√£o obrigat√≥rio)"
-  impact: "Bounce rate 55% ‚Üí 40%, signup completion +25%"
+    - "Above-the-fold optimization (conte˙do crÌtico no hero)"
+    - "Fazer imagens clic·veis (link para product page)"
+    - "Simplificar signup (Tax ID opcional, n„o obrigatÛrio)"
+  impact: "Bounce rate 55% ? 40%, signup completion +25%"
 ```
 
 ---
 
 ### Accessibility (WCAG) Compliance
-_Padr√µes de acessibilidade validados_
+_Padrıes de acessibilidade validados_
 
 **Exemplo**:
 ```yaml
 - wcag_level: "AA (target)"
   criteria_checklist:
     perceivable:
-      - "Contrast ratio ‚â•4.5:1 (texto normal) ‚â•3:1 (texto grande)" # ‚úÖ
-      - "Alt text para imagens" # ‚úÖ
-      - "Captions para v√≠deos" # ‚úÖ
+      - "Contrast ratio =4.5:1 (texto normal) =3:1 (texto grande)" # ?
+      - "Alt text para imagens" # ?
+      - "Captions para vÌdeos" # ?
     operable:
-      - "Navega√ß√£o via teclado (Tab, Enter, Esc)" # ‚úÖ
-      - "Skip links (pular para conte√∫do principal)" # ‚úÖ
-      - "Focus vis√≠vel (outline em elementos focados)" # ‚úÖ
+      - "NavegaÁ„o via teclado (Tab, Enter, Esc)" # ?
+      - "Skip links (pular para conte˙do principal)" # ?
+      - "Focus visÌvel (outline em elementos focados)" # ?
     understandable:
-      - "Labels claros em formul√°rios" # ‚úÖ
-      - "Mensagens de erro descritivas" # ‚úÖ
-      - "Linguagem simples (evitar jarg√£o)" # ‚úÖ
+      - "Labels claros em formul·rios" # ?
+      - "Mensagens de erro descritivas" # ?
+      - "Linguagem simples (evitar jarg„o)" # ?
     robust:
-      - "HTML sem√¢ntico (<header>, <nav>, <main>)" # ‚úÖ
-      - "ARIA labels onde necess√°rio (role, aria-label)" # ‚úÖ
+      - "HTML sem‚ntico (<header>, <nav>, <main>)" # ?
+      - "ARIA labels onde necess·rio (role, aria-label)" # ?
   
 - tool: "axe DevTools (Chrome extension)"
-  usage: "Scan de cada p√°gina antes de ship"
+  usage: "Scan de cada p·gina antes de ship"
   findings_example:
-    - "‚ùå Link sem texto descritivo ('Clique aqui' ‚Üí 'Saiba mais sobre produto')"
-    - "‚ùå Formul√°rio sem labels associados (<label for='email'>)"
-    - "‚ö†Ô∏è Contrast ratio 3.8:1 (abaixo do 4.5:1 requerido)"
+    - "? Link sem texto descritivo ('Clique aqui' ? 'Saiba mais sobre produto')"
+    - "? Formul·rio sem labels associados (<label for='email'>)"
+    - "?? Contrast ratio 3.8:1 (abaixo do 4.5:1 requerido)"
   fix: "Corrigir antes de merge (blocker em code review)"
   
 - assistive_tech_testing:
   - "NVDA (screen reader Windows) - testado por Sofia mensalmente"
   - "VoiceOver (screen reader macOS) - testado por Sofia mensalmente"
   - "Keyboard-only navigation - testado em cada feature"
-  impact: "Accessibility compliant ‚Üí WCAG AA certification (requirement para govt contracts)"
+  impact: "Accessibility compliant ? WCAG AA certification (requirement para govt contracts)"
 ```
 
 ---
@@ -138,7 +138,7 @@ _Componentes customizados documentados_
   accessibility:
     - "Sortable headers (keyboard: Enter to sort)"
     - "Screen reader announces row count"
-    - "Aria-labels em a√ß√µes (edit, delete)"
+    - "Aria-labels em aÁıes (edit, delete)"
   figma_link: "https://figma.com/file/components/datatable"
   storybook_link: "http://localhost:6006/?path=/story/datatable"
   
@@ -156,13 +156,13 @@ _Componentes customizados documentados_
   accessibility:
     - "Focus trap (Tab navega apenas dentro do modal)"
     - "Esc fecha modal"
-    - "Focus retorna ao elemento que abriu (ap√≥s fechar)"
+    - "Focus retorna ao elemento que abriu (apÛs fechar)"
   figma_link: "https://figma.com/file/components/modal"
 ```
 
 ---
 
-## üéØ User Personas & Journeys
+## ?? User Personas & Journeys
 
 ### User Personas Recorrentes
 _Personas validadas com research_
@@ -177,29 +177,29 @@ _Personas validadas com research_
   goals:
     - "Fechar vendas rapidamente"
     - "Acessar dados de clientes on-the-go"
-    - "Gerar relat√≥rios para apresentar a diretoria"
+    - "Gerar relatÛrios para apresentar a diretoria"
   pain_points:
-    - "Sistema atual lento em mobile (frustra√ß√£o)"
-    - "Dados desatualizados (sincroniza√ß√£o ruim)"
-    - "Relat√≥rios dif√≠ceis de customizar"
-  tech_savviness: "M√©dia-Alta (smartphone power user, mas resiste a novos softwares)"
+    - "Sistema atual lento em mobile (frustraÁ„o)"
+    - "Dados desatualizados (sincronizaÁ„o ruim)"
+    - "RelatÛrios difÌceis de customizar"
+  tech_savviness: "MÈdia-Alta (smartphone power user, mas resiste a novos softwares)"
   quote: "'Preciso de um sistema que simplesmente funcione, sem me fazer pensar'"
   projects_referenced: 8
   
 - persona: "Carlos, CFO"
   demographics:
     - "45-60 anos"
-    - "Uso espor√°dico de software (assistente faz data entry)"
-    - "Desktop prim√°rio (Excel power user)"
+    - "Uso espor·dico de software (assistente faz data entry)"
+    - "Desktop prim·rio (Excel power user)"
   goals:
     - "Visualizar KPIs financeiros rapidamente"
-    - "Export para Excel (an√°lise adicional)"
+    - "Export para Excel (an·lise adicional)"
     - "Compliance/audit trail (rastreabilidade)"
   pain_points:
     - "Dashboards complexos (quer simplicidade)"
-    - "Falta de drill-down (quer detalhes sem abrir m√∫ltiplas telas)"
-  tech_savviness: "Baixa (n√£o navega bem em interfaces complexas)"
-  quote: "'Mostre-me os n√∫meros que importam, n√£o me fa√ßa procurar'"
+    - "Falta de drill-down (quer detalhes sem abrir m˙ltiplas telas)"
+  tech_savviness: "Baixa (n„o navega bem em interfaces complexas)"
+  quote: "'Mostre-me os n˙meros que importam, n„o me faÁa procurar'"
   projects_referenced: 5
 ```
 
@@ -215,43 +215,43 @@ _Jornadas mapeadas_
   stages:
     1_signup:
       actions: "Cria conta via email"
-      thoughts: "Espero que seja r√°pido, odeio formul√°rios longos"
-      emotions: "üòê Neutra (ceticismo inicial)"
-      touchpoints: "Landing page ‚Üí Signup form"
-      pain_points: "Formul√°rio pede Tax ID (n√£o sei de cabe√ßa)"
+      thoughts: "Espero que seja r·pido, odeio formul·rios longos"
+      emotions: "?? Neutra (ceticismo inicial)"
+      touchpoints: "Landing page ? Signup form"
+      pain_points: "Formul·rio pede Tax ID (n„o sei de cabeÁa)"
       opportunities: "Simplificar signup (Tax ID opcional)"
     
     2_onboarding:
       actions: "Tutorial interativo (5 tooltips)"
       thoughts: "Parece intuitivo, gosto do tour guiado"
-      emotions: "üòä Positiva (first win - adicionou primeiro cliente)"
-      touchpoints: "Dashboard ‚Üí Interactive tour"
-      pain_points: "Tour longo demais (pula ap√≥s 3 steps)"
-      opportunities: "Onboarding progressivo (n√£o tudo de uma vez)"
+      emotions: "?? Positiva (first win - adicionou primeiro cliente)"
+      touchpoints: "Dashboard ? Interactive tour"
+      pain_points: "Tour longo demais (pula apÛs 3 steps)"
+      opportunities: "Onboarding progressivo (n„o tudo de uma vez)"
     
     3_daily_use:
       actions: "Adiciona clientes, atualiza pipeline"
-      thoughts: "R√°pido em mobile, melhor que sistema anterior"
-      emotions: "üòÉ Satisfeita (adoption)"
+      thoughts: "R·pido em mobile, melhor que sistema anterior"
+      emotions: "?? Satisfeita (adoption)"
       touchpoints: "Mobile app (80% do tempo)"
-      pain_points: "Busca √†s vezes lenta (>3s)"
+      pain_points: "Busca ‡s vezes lenta (>3s)"
       opportunities: "Otimizar busca (indexing, caching)"
     
     4_reporting:
-      actions: "Gera relat√≥rio de vendas (mensal)"
+      actions: "Gera relatÛrio de vendas (mensal)"
       thoughts: "Export to Excel funcionou, perfeito"
-      emotions: "üòç Encantada (delight moment)"
-      touchpoints: "Reports ‚Üí Export to Excel"
+      emotions: "?? Encantada (delight moment)"
+      touchpoints: "Reports ? Export to Excel"
       pain_points: "Nenhum (funcionalidade matadora)"
-      opportunities: "Adicionar templates de relat√≥rios pr√©-configurados"
+      opportunities: "Adicionar templates de relatÛrios prÈ-configurados"
   
   overall_sentiment: "Positivo (NPS 9/10)"
-  retention_risk: "Baixo (usu√°ria ativa di√°ria)"
+  retention_risk: "Baixo (usu·ria ativa di·ria)"
 ```
 
 ---
 
-## üñºÔ∏è Wireframing & Prototyping
+## ??? Wireframing & Prototyping
 
 ### Low-Fi to Hi-Fi Progression
 _Processo de design iterativo_
@@ -260,22 +260,22 @@ _Processo de design iterativo_
 ```yaml
 - stage_1: "Sketches (papel e caneta)"
   duration: "30min - 1h"
-  purpose: "Idea√ß√£o r√°pida (m√∫ltiplas variantes)"
+  purpose: "IdeaÁ„o r·pida (m˙ltiplas variantes)"
   artifact: "Foto de sketches (Figma import)"
   validation: "Team review (Paula PO, Maria Analyst)"
   
 - stage_2: "Low-Fi Wireframes (Figma)"
   duration: "2-4h"
-  purpose: "Estrutura de conte√∫do, fluxos de navega√ß√£o"
+  purpose: "Estrutura de conte˙do, fluxos de navegaÁ„o"
   fidelity: "Grayscale, placeholders (lorem ipsum, boxes)"
-  validation: "Usability test com 3 usu√°rios (paper prototypes)"
+  validation: "Usability test com 3 usu·rios (paper prototypes)"
   iterations: "2-3 rounds (baseado em feedback)"
   
-- stage_3: "Mid-Fi Wireframes (com conte√∫do real)"
+- stage_3: "Mid-Fi Wireframes (com conte˙do real)"
   duration: "1-2 dias"
-  purpose: "Validar copy, hierarquia de informa√ß√£o"
-  fidelity: "Conte√∫do real, grayscale, spacing definido"
-  validation: "Stakeholder review (Paula + Jo√£o PM)"
+  purpose: "Validar copy, hierarquia de informaÁ„o"
+  fidelity: "Conte˙do real, grayscale, spacing definido"
+  validation: "Stakeholder review (Paula + Jo„o PM)"
   
 - stage_4: "Hi-Fi Mockups (design visual)"
   duration: "2-3 dias"
@@ -287,8 +287,8 @@ _Processo de design iterativo_
   duration: "1-2 dias"
   purpose: "Simular fluxos (user testing)"
   interactions: "Click-through, hover states, transitions"
-  validation: "Usability testing (5 usu√°rios, moderated)"
-  handoff: "Design to dev (Figma ‚Üí code by Tiago)"
+  validation: "Usability testing (5 usu·rios, moderated)"
+  handoff: "Design to dev (Figma ? code by Tiago)"
 ```
 
 ---
@@ -319,20 +319,20 @@ _Como Sofia entrega designs para Tiago_
     - "Edge cases (long text, empty states, error states)"
   
 - collaboration: "Design review meeting (Sofia + Tiago)"
-  frequency: "In√≠cio de cada sprint"
+  frequency: "InÌcio de cada sprint"
   agenda:
     - "Sofia: Walkthrough de designs (15min)"
-    - "Tiago: Perguntas t√©cnicas (feasibility)"
+    - "Tiago: Perguntas tÈcnicas (feasibility)"
     - "Ambos: Clarify edge cases, animations, interactions"
   output: "Alignment (evita rework durante dev)"
 ```
 
 ---
 
-## üé® Visual Design Principles
+## ?? Visual Design Principles
 
 ### Color Theory Applications
-_Uso estrat√©gico de cores_
+_Uso estratÈgico de cores_
 
 **Exemplo**:
 ```yaml
@@ -340,24 +340,24 @@ _Uso estrat√©gico de cores_
   primary_60: "Neutral (branco, cinza claro) - backgrounds"
   secondary_30: "Brand color (azul) - headers, accents"
   accent_10: "High contrast (verde, vermelho) - CTAs, alerts"
-  benefit: "Visual hierarchy clara, n√£o overwhelming"
+  benefit: "Visual hierarchy clara, n„o overwhelming"
   
 - principle: "Color Psychology"
-  blue: "Confian√ßa, profissionalismo (usado em brand)"
-  green: "Sucesso, positivo (confirma√ß√µes, CTAs positivos)"
-  red: "Urg√™ncia, erro (alerts, delete actions)"
-  yellow: "Aten√ß√£o, warning (avisos n√£o cr√≠ticos)"
+  blue: "ConfianÁa, profissionalismo (usado em brand)"
+  green: "Sucesso, positivo (confirmaÁıes, CTAs positivos)"
+  red: "UrgÍncia, erro (alerts, delete actions)"
+  yellow: "AtenÁ„o, warning (avisos n„o crÌticos)"
   
 - principle: "Accessibility (color blindness)"
-  rule: "Nunca depender APENAS de cor (adicionar √≠cones/texto)"
-  example: "Sucesso = verde + ‚úì √≠cone, Erro = vermelho + ‚úó √≠cone"
+  rule: "Nunca depender APENAS de cor (adicionar Ìcones/texto)"
+  example: "Sucesso = verde + ? Ìcone, Erro = vermelho + ? Ìcone"
   testing: "Color blindness simulator (Figma plugin)"
 ```
 
 ---
 
 ### Typography Hierarchy
-_Sistema tipogr√°fico_
+_Sistema tipogr·fico_
 
 **Exemplo**:
 ```yaml
@@ -378,12 +378,12 @@ _Sistema tipogr√°fico_
   - "Line height: 1.5 (body text)"
   - "Line length: 50-75 chars (optimal readability)"
   - "Paragraph spacing: 1.5em (breathing room)"
-  - "Contrast: ‚â•4.5:1 (WCAG AA)"
+  - "Contrast: =4.5:1 (WCAG AA)"
 ```
 
 ---
 
-## üîÑ Iterative Design Process
+## ?? Iterative Design Process
 
 ### Design Critique & Feedback
 _Como Sofia recebe e incorpora feedback_
@@ -395,36 +395,36 @@ _Como Sofia recebe e incorpora feedback_
   format:
     1. "Sofia apresenta designs (5-10min)"
     2. "Silent review (todos anotam feedback - 3min)"
-    3. "Discuss√£o estruturada (30min)"
+    3. "Discuss„o estruturada (30min)"
   feedback_categories:
-    functional: "Fluxo faz sentido? A√ß√µes claras?"
-    usability: "Usu√°rio consegue completar task?"
+    functional: "Fluxo faz sentido? AÁıes claras?"
+    usability: "Usu·rio consegue completar task?"
     aesthetic: "Visual apelativo? Brand-aligned?"
     technical: "Feasible? Performance concerns?"
   
 - feedback_incorporation:
   high_priority: "Functional issues (blocker - refazer design)"
-  medium_priority: "Usability improvements (iterar pr√≥xima vers√£o)"
+  medium_priority: "Usability improvements (iterar prÛxima vers„o)"
   low_priority: "Aesthetic preferences (considerar se alinhado)"
   reject: "Feedback fora do escopo ou contradiz user research"
   
 - example_feedback:
   paula_po: "Adicionar filtro por data (business requirement)"
-  action: "‚úÖ Incorporado (high priority - functional)"
+  action: "? Incorporado (high priority - functional)"
   
-  tiago_dev: "Anima√ß√£o complexa demais (performance concern)"
-  action: "‚úÖ Simplificado (high priority - technical)"
+  tiago_dev: "AnimaÁ„o complexa demais (performance concern)"
+  action: "? Simplificado (high priority - technical)"
   
-  maria_analyst: "Bot√£o verde pode confundir (n√£o √© a√ß√£o positiva)"
-  action: "üü° A/B test (medium priority - validar com data)"
+  maria_analyst: "Bot„o verde pode confundir (n„o È aÁ„o positiva)"
+  action: "?? A/B test (medium priority - validar com data)"
   
-  personal_preference: "Prefiro fonte sans-serif (opini√£o)"
-  action: "‚ùå Reject (design system usa Segoe UI)"
+  personal_preference: "Prefiro fonte sans-serif (opini„o)"
+  action: "? Reject (design system usa Segoe UI)"
 ```
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 
 ### Artifacts Relacionados:
 - UX Checklist: `${AVANADE_TASK_UX_CHECKLIST}`
@@ -442,65 +442,65 @@ qa: ${AVANADE_MEMORY_QA_CARLA}
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de design:
-1. Consultar **User Personas** ‚Üí entender usu√°rio-alvo
-2. Revisar **User Research Insights** ‚Üí evitar erros passados
-3. Consultar **Design System Patterns** ‚Üí reutilizar components
+### ? ANTES de design:
+1. Consultar **User Personas** ? entender usu·rio-alvo
+2. Revisar **User Research Insights** ? evitar erros passados
+3. Consultar **Design System Patterns** ? reutilizar components
 
-### ‚úÖ DURANTE design:
-1. Aplicar **Visual Design Principles** ‚Üí hierarquia, cores, tipografia
-2. Seguir **Low-Fi to Hi-Fi Progression** ‚Üí validar early, iterar
-3. Validar **Accessibility Compliance** ‚Üí WCAG AA checklist
+### ? DURANTE design:
+1. Aplicar **Visual Design Principles** ? hierarquia, cores, tipografia
+2. Seguir **Low-Fi to Hi-Fi Progression** ? validar early, iterar
+3. Validar **Accessibility Compliance** ? WCAG AA checklist
 
-### ‚úÖ PARA handoff:
-1. Usar **Design Handoff Process** ‚Üí assets, specs, documentation
-2. Colaborar com Tiago ‚Üí alignment t√©cnico
-3. Documentar **Edge Cases** ‚Üí evitar rework
+### ? PARA handoff:
+1. Usar **Design Handoff Process** ? assets, specs, documentation
+2. Colaborar com Tiago ? alignment tÈcnico
+3. Documentar **Edge Cases** ? evitar rework
 
-### ‚úÖ AP√ìS user testing:
-1. **Atualizar mem√≥ria** com novos insights
-2. Documentar **User Journey Maps** ‚Üí flows validados
-3. Incorporar **Feedback** ‚Üí continuous improvement
+### ? AP”S user testing:
+1. **Atualizar memÛria** com novos insights
+2. Documentar **User Journey Maps** ? flows validados
+3. Incorporar **Feedback** ? continuous improvement
 
 ---
 
-## üè¢ D365 CE UX Context - FTD Educa√ß√£o
+## ?? D365 CE UX Context - FTD EducaÁ„o
 
 ### Aplicativos FTD
-| App | Tipo | P√∫blico |
+| App | Tipo | P˙blico |
 |-----|------|--------|
 | **Spartan** | Model-driven | Consultores comerciais |
-| **PNLD** | Model-driven | √Årea p√∫blica (funcionalidades diferentes) |
+| **PNLD** | Model-driven | ¡rea p˙blica (funcionalidades diferentes) |
 | **Hub SAC** | Model-driven | CRC (atendimentos) |
 | **Simulador Comercial** | Power Pages | Consultores (frontend novo) |
-| **√Årea do Cliente** | Canvas App | Escolas (squad separada) |
+| **¡rea do Cliente** | Canvas App | Escolas (squad separada) |
 
 ### UX do Simulador Comercial (Foco Principal)
-- **Problema original**: Consultor leva at√© 3 HORAS para 1 proposta (200 produtos √ó 3 cliques)
-- **Solu√ß√£o**: Power Pages com adi√ß√£o em lote (de 200 cliques para ~5)
-- **Valida√ß√£o UX**: Prototipos validados com coordenadores, anjas, time UX FTD (grava√ß√µes de sess√µes)
-- **Identity visual**: J√° definida (identidade FTD aplicada)
+- **Problema original**: Consultor leva atÈ 3 HORAS para 1 proposta (200 produtos ◊ 3 cliques)
+- **SoluÁ„o**: Power Pages com adiÁ„o em lote (de 200 cliques para ~5)
+- **ValidaÁ„o UX**: Prototipos validados com coordenadores, anjas, time UX FTD (gravaÁıes de sessıes)
+- **Identity visual**: J· definida (identidade FTD aplicada)
 - **Mobile**: Responsivo (consultores usam tablet na escola)
-- **Princ√≠pios**: Cache heavy (sem loading repetitivo), c√°lculos real-time, totalizadores sempre vis√≠veis
-- **Resumo financeiro side-by-side**: Perspectiva FTD (dedu√ß√µes) vs Perspectiva Escola (investimentos)
+- **PrincÌpios**: Cache heavy (sem loading repetitivo), c·lculos real-time, totalizadores sempre visÌveis
+- **Resumo financeiro side-by-side**: Perspectiva FTD (deduÁıes) vs Perspectiva Escola (investimentos)
 
-### Padr√µes de Form FTD
+### Padrıes de Form FTD
 - Campos reorganizados: mover taxa admin e modalidade entrega para etapas posteriores
 - Funil de oportunidade: navegabilidade ruim (precisa melhoria)
-- Bot√µes customizados: validar servi√ßos, gerar grade mestre
+- Botıes customizados: validar serviÁos, gerar grade mestre
 - 50+ templates Word (precisa modularizar)
-- Status flow: Rascunho ‚Üí Ativo/Em Aprova√ß√£o ‚Üí Aprovado / Perdido / Cancelado
+- Status flow: Rascunho ? Ativo/Em AprovaÁ„o ? Aprovado / Perdido / Cancelado
 
 ### Personas FTD Reais
 - **Consultor Comercial**: negocia com escolas, cria propostas (dor: 3h por proposta)
 - **Anja**: cadastra proposta no lugar do consultor (quando consultor recusa)
-- **Coordenador/Gerente**: aprova propostas (n√≠veis 2-3)
-- **Diretor Adjunto/Comercial**: aprova propostas (n√≠veis 3-4)
+- **Coordenador/Gerente**: aprova propostas (nÌveis 2-3)
+- **Diretor Adjunto/Comercial**: aprova propostas (nÌveis 3-4)
 - **Equipe Administrativa**: monta contratos manualmente (50+ templates)
-- **Consultor PNLD**: app separado, n√£o pode criar contas
+- **Consultor PNLD**: app separado, n„o pode criar contas
 
-### Knowledge Base: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT√ìRIA)
+### Knowledge Base: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT”RIA)
 
 ---

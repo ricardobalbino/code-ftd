@@ -1,84 +1,84 @@
-Ôªø---
+---
 
-## üìã O que √© este Artefato?
+## ?? O que È este Artefato?
 
-Este √© o **checklist de valida√ß√£o** para garantir qualidade e completude de documenta√ß√£o de produto na Avanade Method. Cobre:
-- ‚úÖ **PRD Quality Gates**: Valida√ß√£o antes de approval
-- ‚úÖ **Discovery Completeness**: Perguntas estrat√©gicas respondidas
-- ‚úÖ **Stakeholder Alignment**: Sign-offs necess√°rios obtidos
-- ‚úÖ **Technical Feasibility**: Viabilidade t√©cnica validada
-- ‚úÖ **Business Value**: ROI e m√©tricas definidas
+Este È o **checklist de validaÁ„o** para garantir qualidade e completude de documentaÁ„o de produto na Avanade Method. Cobre:
+- ? **PRD Quality Gates**: ValidaÁ„o antes de approval
+- ? **Discovery Completeness**: Perguntas estratÈgicas respondidas
+- ? **Stakeholder Alignment**: Sign-offs necess·rios obtidos
+- ? **Technical Feasibility**: Viabilidade tÈcnica validada
+- ? **Business Value**: ROI e mÈtricas definidas
 
 ---
 
-## üéØ Quando Usar
+## ?? Quando Usar
 
-### ‚úÖ USE para:
+### ? USE para:
 - Antes de compartilhar PRD para review
 - Antes de solicitar approval de stakeholders
 - Antes de iniciar desenvolvimento (Definition of Ready)
-- Ap√≥s mudan√ßas significativas no scope
-- Como gate para transi√ß√£o entre fases (Discovery ‚Üí Planning ‚Üí Execution)
+- ApÛs mudanÁas significativas no scope
+- Como gate para transiÁ„o entre fases (Discovery ? Planning ? Execution)
 
-### ‚ùå N√ÉO USE para:
+### ? N√O USE para:
 - Bugs simples (use issue tracker checklist)
-- Refactoring t√©cnico (use ADR checklist)
-- Experimentos/prot√≥tipos (valida√ß√£o leve)
+- Refactoring tÈcnico (use ADR checklist)
+- Experimentos/protÛtipos (validaÁ„o leve)
 
 ---
 
-## ‚úÖ CHECKLIST COMPLETO
+## ? CHECKLIST COMPLETO
 
 ### 1. DISCOVERY PHASE - Contexto e Problema
 
 #### 1.1 Problem Definition
 - [ ] **Problema claramente articulado** - Qual dor estamos resolvendo?
-- [ ] **Impacto quantificado** - M√©tricas atuais documentadas (tempo desperdi√ßado, custos, erros)?
-- [ ] **P√∫blico-alvo identificado** - Para quem estamos resolvendo? Qual persona?
-- [ ] **Urg√™ncia justificada** - Por que resolver isso agora? Qual o custo de n√£o fazer?
-- [ ] **Competi√ß√£o analisada** - Como concorrentes resolvem isso? O que podemos aprender?
+- [ ] **Impacto quantificado** - MÈtricas atuais documentadas (tempo desperdiÁado, custos, erros)?
+- [ ] **P˙blico-alvo identificado** - Para quem estamos resolvendo? Qual persona?
+- [ ] **UrgÍncia justificada** - Por que resolver isso agora? Qual o custo de n„o fazer?
+- [ ] **CompetiÁ„o analisada** - Como concorrentes resolvem isso? O que podemos aprender?
 
-**Exemplo de valida√ß√£o:**
+**Exemplo de validaÁ„o:**
 ```
-‚ùå VAGO: "Usu√°rios t√™m dificuldade com exports"
-‚úÖ ESPEC√çFICO: "Usu√°rios enterprise gastam 1.8h/dia em exports manuais, resultando em 40% error rate e $150k/ano em custos operacionais (fonte: Analytics Q4 2024)"
+? VAGO: "Usu·rios tÍm dificuldade com exports"
+? ESPECÕFICO: "Usu·rios enterprise gastam 1.8h/dia em exports manuais, resultando em 40% error rate e $150k/ano em custos operacionais (fonte: Analytics Q4 2024)"
 ```
 
 #### 1.2 User Research
-- [ ] **Pesquisa com usu√°rios realizada** - Pelo menos 5 entrevistas ou survey com 50+ respostas?
-- [ ] **Pain points documentados** - Lista de frustra√ß√µes validadas com quotes dos usu√°rios?
-- [ ] **Current workarounds identificados** - Como usu√°rios resolvem hoje? Por que √© inadequado?
-- [ ] **User personas criadas** - Pelo menos 1 persona prim√°ria com goals, frustrations, context?
-- [ ] **Jobs-to-be-Done definidos** - Qual "job" o usu√°rio est√° "hiring" nosso produto para fazer?
+- [ ] **Pesquisa com usu·rios realizada** - Pelo menos 5 entrevistas ou survey com 50+ respostas?
+- [ ] **Pain points documentados** - Lista de frustraÁıes validadas com quotes dos usu·rios?
+- [ ] **Current workarounds identificados** - Como usu·rios resolvem hoje? Por que È inadequado?
+- [ ] **User personas criadas** - Pelo menos 1 persona prim·ria com goals, frustrations, context?
+- [ ] **Jobs-to-be-Done definidos** - Qual "job" o usu·rio est· "hiring" nosso produto para fazer?
 
 **Red flags:**
 ```
-üö© "Achamos que usu√°rios querem X" (sem pesquisa)
-üö© "O CEO disse que √© importante" (stakeholder opinion ‚â† user need)
-üö© "Competidor Y tem esse feature" (copy sem valida√ß√£o)
+?? "Achamos que usu·rios querem X" (sem pesquisa)
+?? "O CEO disse que È importante" (stakeholder opinion ? user need)
+?? "Competidor Y tem esse feature" (copy sem validaÁ„o)
 ```
 
 #### 1.3 Strategic Alignment
 - [ ] **OKRs da empresa mapeados** - Feature alinha com qual OKR? Qual Key Result?
 - [ ] **Roadmap do produto** - Feature encaixa em qual theme/initiative?
-- [ ] **Prioriza√ß√£o justificada** - Por que P0 vs P1? RICE score calculado?
-- [ ] **Trade-offs considerados** - O que N√ÉO faremos para fazer isso?
+- [ ] **PriorizaÁ„o justificada** - Por que P0 vs P1? RICE score calculado?
+- [ ] **Trade-offs considerados** - O que N√O faremos para fazer isso?
 
 **RICE Scoring:**
 ```yaml
-reach: [Quantos usu√°rios impacta por quarter?]
+reach: [Quantos usu·rios impacta por quarter?]
 impact: [1=Minimal, 2=Low, 3=Medium, 5=High, 8=Massive]
 confidence: [% de certeza - 50%, 80%, 100%]
 effort: [Person-months estimado]
 
-RICE Score = (Reach √ó Impact √ó Confidence) / Effort
+RICE Score = (Reach ◊ Impact ◊ Confidence) / Effort
 
 Exemplo:
 reach: 500 users/quarter
 impact: 5 (High)
 confidence: 80%
 effort: 2 person-months
-RICE = (500 √ó 5 √ó 0.8) / 2 = 1000 ‚Üí Alta prioridade
+RICE = (500 ◊ 5 ◊ 0.8) / 2 = 1000 ? Alta prioridade
 ```
 
 ---
@@ -87,37 +87,37 @@ RICE = (500 √ó 5 √ó 0.8) / 2 = 1000 ‚Üí Alta prioridade
 
 #### 2.1 Executive Summary
 - [ ] **TL;DR presente** - Executivo consegue entender em <3min?
-- [ ] **Problem statement conciso** - 1-2 par√°grafos m√°ximo?
-- [ ] **Solu√ß√£o proposta clara** - Qual abordagem em high-level?
-- [ ] **Expected impact quantificado** - M√©tricas de sucesso espec√≠ficas?
-- [ ] **Strategic alignment expl√≠cito** - OKRs referenciados diretamente?
+- [ ] **Problem statement conciso** - 1-2 par·grafos m·ximo?
+- [ ] **SoluÁ„o proposta clara** - Qual abordagem em high-level?
+- [ ] **Expected impact quantificado** - MÈtricas de sucesso especÌficas?
+- [ ] **Strategic alignment explÌcito** - OKRs referenciados diretamente?
 
-**Template de valida√ß√£o:**
+**Template de validaÁ„o:**
 ```
 Problema: [1 sentence]
 Para quem: [1 sentence]
-Solu√ß√£o: [2 sentences]
+SoluÁ„o: [2 sentences]
 Impacto: [3 metrics com targets]
 Timing: [Por que agora - 1 sentence]
 ```
 
 #### 2.2 Goals & Success Metrics
 - [ ] **Primary goal SMART** - Specific, Measurable, Achievable, Relevant, Time-bound?
-- [ ] **3-5 KPIs definidos** - M√©tricas mensur√°veis e rastre√°veis?
-- [ ] **Baselines documentadas** - Estado atual de cada m√©trica conhecido?
-- [ ] **Targets realistas** - Metas baseadas em benchmarks/an√°lise?
+- [ ] **3-5 KPIs definidos** - MÈtricas mensur·veis e rastre·veis?
+- [ ] **Baselines documentadas** - Estado atual de cada mÈtrica conhecido?
+- [ ] **Targets realistas** - Metas baseadas em benchmarks/an·lise?
 - [ ] **Tracking method especificado** - Como/onde mediremos? (dashboard, tool)
 
 **Exemplo de KPI bem definido:**
 ```yaml
-‚úÖ GOOD:
+? GOOD:
 metric: "Time to Export (TTE)"
 baseline: "1.8 hours (average, Q4 2024 data)"
 target: "15 minutes (p95, by end of Q1 2025)"
 measurement: "Datadog dashboard - Export Analytics"
 tracking_frequency: "Daily"
 
-‚ùå BAD:
+? BAD:
 metric: "Make exports faster"
 target: "Improve significantly"
 measurement: "TBD"
@@ -125,14 +125,14 @@ measurement: "TBD"
 
 #### 2.3 User Stories & Requirements
 - [ ] **Pelo menos 5 user stories** - Cobertura suficiente do feature?
-- [ ] **Acceptance criteria espec√≠ficos** - Cada story tem Given-When-Then?
+- [ ] **Acceptance criteria especÌficos** - Cada story tem Given-When-Then?
 - [ ] **Story points estimados** - Complexidade quantificada (1, 2, 3, 5, 8, 13)?
-- [ ] **Prioriza√ß√£o clara** - P0 (must-have) vs P1 (should-have) vs P2 (could-have)?
-- [ ] **Technical notes inclu√≠das** - Dependencies, tech choices, constraints?
+- [ ] **PriorizaÁ„o clara** - P0 (must-have) vs P1 (should-have) vs P2 (could-have)?
+- [ ] **Technical notes incluÌdas** - Dependencies, tech choices, constraints?
 
 **User Story Quality Check:**
 ```
-‚úÖ GOOD:
+? GOOD:
 "As a Data Analyst, I want to schedule daily exports
 so I don't manually trigger them every morning"
 
@@ -145,13 +145,13 @@ Story Points: 8
 Priority: P0
 Technical Notes: Use Celery Beat for scheduling, PostgreSQL for storage
 
-‚ùå BAD:
+? BAD:
 "User wants to schedule exports"
 (Sem persona, sem reasoning, sem acceptance criteria, sem estimativa)
 ```
 
 #### 2.4 Non-Functional Requirements
-- [ ] **Performance targets** - Lat√™ncia, throughput, response time definidos?
+- [ ] **Performance targets** - LatÍncia, throughput, response time definidos?
 - [ ] **Scalability requirements** - Crescimento esperado (users, data, load)?
 - [ ] **Security & compliance** - GDPR, SOC2, encryption requirements?
 - [ ] **Reliability SLAs** - Uptime, error rate, retry policies?
@@ -160,30 +160,30 @@ Technical Notes: Use Celery Beat for scheduling, PostgreSQL for storage
 **Checklist NFRs:**
 ```
 Performance:
-- [ ] Lat√™ncia m√°xima especificada (ex: p95 < 200ms)
-- [ ] Throughput m√≠nimo (ex: 1000 req/s)
-- [ ] Tamanho m√°ximo de payload (ex: 10MB)
+- [ ] LatÍncia m·xima especificada (ex: p95 < 200ms)
+- [ ] Throughput mÌnimo (ex: 1000 req/s)
+- [ ] Tamanho m·ximo de payload (ex: 10MB)
 
 Scalability:
-- [ ] Usu√°rios concorrentes suportados (ex: 10k MAU)
+- [ ] Usu·rios concorrentes suportados (ex: 10k MAU)
 - [ ] Crescimento projetado (ex: 3x em 12 meses)
-- [ ] Horizontal scaling poss√≠vel?
+- [ ] Horizontal scaling possÌvel?
 
 Security:
-- [ ] Autentica√ß√£o method (OAuth, JWT, API keys)
-- [ ] Autoriza√ß√£o model (RBAC, ABAC)
+- [ ] AutenticaÁ„o method (OAuth, JWT, API keys)
+- [ ] AutorizaÁ„o model (RBAC, ABAC)
 - [ ] Encryption (at rest, in transit)
 - [ ] Compliance frameworks (GDPR, HIPAA, SOC2)
 ```
 
 ---
 
-### 3. DESIGN & UX - Experi√™ncia do Usu√°rio
+### 3. DESIGN & UX - ExperiÍncia do Usu·rio
 
 #### 3.1 Wireframes & Mockups
 - [ ] **Wireframes de todas screens principais** - Pelo menos low-fidelity?
 - [ ] **User flows documentados** - Happy path e edge cases?
-- [ ] **Figma/design tool links** - Designs acess√≠veis para toda equipe?
+- [ ] **Figma/design tool links** - Designs acessÌveis para toda equipe?
 - [ ] **Design review realizado** - UX designer aprovou?
 - [ ] **Responsive design considerado** - Mobile, tablet, desktop?
 
@@ -202,20 +202,20 @@ Edge Cases:
 
 #### 3.2 Accessibility
 - [ ] **WCAG 2.1 Level AA compliance** - Color contrast, keyboard nav, screen reader?
-- [ ] **Keyboard navigation testada** - Tab order l√≥gico, atalhos √∫teis?
+- [ ] **Keyboard navigation testada** - Tab order lÛgico, atalhos ˙teis?
 - [ ] **ARIA labels em inputs** - Screen readers funcionam?
-- [ ] **Color n√£o √© √∫nica forma de informa√ß√£o** - √çcones/texto suplementam cores?
+- [ ] **Color n„o È ˙nica forma de informaÁ„o** - Õcones/texto suplementam cores?
 
 ---
 
-### 4. TECHNICAL ARCHITECTURE - Viabilidade T√©cnica
+### 4. TECHNICAL ARCHITECTURE - Viabilidade TÈcnica
 
 #### 4.1 Architecture Review
 - [ ] **High-level diagram presente** - Componentes principais identificados?
 - [ ] **Technology stack definido** - Linguagens, frameworks, databases?
 - [ ] **Data models especificados** - Schemas de banco, entities?
 - [ ] **API contracts documentados** - Endpoints, request/response formats?
-- [ ] **Engineering Lead aprovou** - Arquitetura √© vi√°vel?
+- [ ] **Engineering Lead aprovou** - Arquitetura È vi·vel?
 
 **Architecture Checklist:**
 ```
@@ -223,22 +223,22 @@ Components:
 - [ ] Frontend stack escolhido (React, Vue, Angular)?
 - [ ] Backend framework (FastAPI, Django, Spring)?
 - [ ] Database(s) (PostgreSQL, MongoDB, Redis)?
-- [ ] Message queue se necess√°rio (Celery, RabbitMQ)?
+- [ ] Message queue se necess·rio (Celery, RabbitMQ)?
 - [ ] File storage (S3, Azure Blob, local)?
 
 Scalability:
-- [ ] Stateless design? (horizontal scaling f√°cil)
+- [ ] Stateless design? (horizontal scaling f·cil)
 - [ ] Caching strategy? (Redis, Memcached)
 - [ ] Load balancing? (NGINX, ALB)
 - [ ] Database sharding/replication considerado?
 ```
 
 #### 4.2 Dependencies & Integrations
-- [ ] **Depend√™ncias internas mapeadas** - Outros servi√ßos/times envolvidos?
-- [ ] **Depend√™ncias externas** - Third-party APIs, vendors?
-- [ ] **SLAs validados** - Depend√™ncias t√™m uptime/performance aceit√°vel?
-- [ ] **Fallback strategies** - O que fazemos se depend√™ncia cair?
-- [ ] **Contacts documentados** - Email/Slack de owners de cada depend√™ncia?
+- [ ] **DependÍncias internas mapeadas** - Outros serviÁos/times envolvidos?
+- [ ] **DependÍncias externas** - Third-party APIs, vendors?
+- [ ] **SLAs validados** - DependÍncias tÍm uptime/performance aceit·vel?
+- [ ] **Fallback strategies** - O que fazemos se dependÍncia cair?
+- [ ] **Contacts documentados** - Email/Slack de owners de cada dependÍncia?
 
 **Dependency Risk Assessment:**
 ```yaml
@@ -259,28 +259,28 @@ contact: "vendor-support@thirdparty.com"
 
 ---
 
-### 5. RISKS & MITIGATION - Gest√£o de Incertezas
+### 5. RISKS & MITIGATION - Gest„o de Incertezas
 
 #### 5.1 Risk Identification
 - [ ] **Pelo menos 5 risks identificados** - Technical, business, operational?
 - [ ] **Likelihood scored** - Low/Medium/High para cada risk?
 - [ ] **Impact scored** - Low/Medium/High/Critical?
-- [ ] **Mitigation plans** - A√ß√µes concretas para cada risk?
-- [ ] **Risk owners atribu√≠dos** - Quem monitora cada risk?
+- [ ] **Mitigation plans** - AÁıes concretas para cada risk?
+- [ ] **Risk owners atribuÌdos** - Quem monitora cada risk?
 
 **Risk Matrix:**
 ```
-         Impact ‚Üí
+         Impact ?
     Low    Med    High   Critical
-L   ‚úÖ     ‚ö†Ô∏è     ‚ö†Ô∏è     üö®
-M   ‚ö†Ô∏è     ‚ö†Ô∏è     üö®     üö®
-H   ‚ö†Ô∏è     üö®     üö®     üõë
+L   ?     ??     ??     ??
+M   ??     ??     ??     ??
+H   ??     ??     ??     ??
 
 Legend:
-‚úÖ Accept risk (monitor)
-‚ö†Ô∏è Mitigate (plan B)
-üö® Mitigate + escalate (active management)
-üõë Block until resolved (unacceptable)
+? Accept risk (monitor)
+?? Mitigate (plan B)
+?? Mitigate + escalate (active management)
+?? Block until resolved (unacceptable)
 ```
 
 **Risk Template:**
@@ -288,7 +288,7 @@ Legend:
 risk: "Performance degradation com datasets >100k rows"
 likelihood: "Medium"
 impact: "High"
-score: "üö® High Priority"
+score: "?? High Priority"
 mitigation: |
   - Implementar pagination (chunks de 50k rows)
   - Streaming exports para datasets grandes
@@ -299,9 +299,9 @@ status: "In Progress"
 
 #### 5.2 Open Questions
 - [ ] **Todas open questions documentadas** - Incertezas capturadas?
-- [ ] **Owners atribu√≠dos** - Quem vai responder cada pergunta?
+- [ ] **Owners atribuÌdos** - Quem vai responder cada pergunta?
 - [ ] **Deadlines definidos** - Quando precisamos de resposta?
-- [ ] **Impact assessment** - O que acontece se resposta mudar decis√£o?
+- [ ] **Impact assessment** - O que acontece se resposta mudar decis„o?
 
 **Open Question Template:**
 ```yaml
@@ -309,44 +309,44 @@ question: "Qual retention policy para exports? 30 dias suficiente?"
 owner: "Compliance Officer"
 deadline: "2025-02-10"
 impact: "Medium - afeta storage costs ($500/month) e GDPR compliance"
-blocker: false  # Podemos come√ßar dev enquanto isso √© resolvido?
+blocker: false  # Podemos comeÁar dev enquanto isso È resolvido?
 ```
 
 ---
 
-### 6. ROADMAP & DELIVERY - Plano de Execu√ß√£o
+### 6. ROADMAP & DELIVERY - Plano de ExecuÁ„o
 
 #### 6.1 Phased Rollout
-- [ ] **MVP claramente definido** - Qual subset de features √© suficiente para launch?
+- [ ] **MVP claramente definido** - Qual subset de features È suficiente para launch?
 - [ ] **Fases posteriores planejadas** - Phase 2, 3 com objectives claros?
 - [ ] **Success criteria por fase** - Como sabemos se fase foi bem-sucedida?
 - [ ] **Timeline realista** - Estimativas validadas com Engineering?
-- [ ] **Team capacity confirmada** - Recursos dispon√≠veis para timeline proposto?
+- [ ] **Team capacity confirmada** - Recursos disponÌveis para timeline proposto?
 
 **MVP Checklist:**
 ```
-‚úÖ Must-Have (MVP blocker):
+? Must-Have (MVP blocker):
 - [ ] Core user story #1 implementada
 - [ ] Core user story #2 implementada
-- [ ] Autentica√ß√£o funcional
+- [ ] AutenticaÁ„o funcional
 - [ ] Performance targets atingidos (p95)
 - [ ] Security audit passou
 
-‚≠ï Should-Have (Phase 2):
+? Should-Have (Phase 2):
 - [ ] Advanced features
-- [ ] Optimiza√ß√µes de UX
+- [ ] OptimizaÁıes de UX
 - [ ] Analytics integrado
 
-üîµ Could-Have (Phase 3):
+?? Could-Have (Phase 3):
 - [ ] Nice-to-have features
-- [ ] API p√∫blica
+- [ ] API p˙blica
 ```
 
 #### 6.2 Milestones & Gates
 - [ ] **Milestones definidos** - 4-6 checkpoints ao longo do projeto?
-- [ ] **Quality gates** - Crit√©rios de passagem para cada milestone?
+- [ ] **Quality gates** - CritÈrios de passagem para cada milestone?
 - [ ] **Gate owners identificados** - Quem aprova cada gate?
-- [ ] **Gantt chart ou timeline** - Visualiza√ß√£o do plano?
+- [ ] **Gantt chart ou timeline** - VisualizaÁ„o do plano?
 
 **Milestone Template:**
 ```yaml
@@ -363,18 +363,18 @@ status: "Not Started"
 
 ---
 
-### 7. STAKEHOLDER ALIGNMENT - Comunica√ß√£o e Aprova√ß√µes
+### 7. STAKEHOLDER ALIGNMENT - ComunicaÁ„o e AprovaÁıes
 
 #### 7.1 Stakeholder Identification
 - [ ] **Primary stakeholders listados** - Quem tem poder de veto?
-- [ ] **Secondary stakeholders** - Quem ser√° impactado mas n√£o aprova?
-- [ ] **Responsibilities claras** - Quem faz o qu√™?
-- [ ] **Communication plan** - Frequ√™ncia e formato de updates?
+- [ ] **Secondary stakeholders** - Quem ser· impactado mas n„o aprova?
+- [ ] **Responsibilities claras** - Quem faz o quÍ?
+- [ ] **Communication plan** - FrequÍncia e formato de updates?
 - [ ] **Escalation path** - Quem resolve deadlocks?
 
 **RACI Matrix Example:**
 ```
-Activity            Jo√£o PM   Eng Lead   UX    Compliance   Exec
+Activity            Jo„o PM   Eng Lead   UX    Compliance   Exec
 PRD Creation        R         C          C     I            I
 Design Review       A         C          R     I            I
 Architecture        C         R          I     C            I
@@ -383,15 +383,15 @@ Final Approval      A         C          C     C            R
 
 R = Responsible (faz o trabalho)
 A = Accountable (aprova)
-C = Consulted (input necess√°rio)
+C = Consulted (input necess·rio)
 I = Informed (mantido no loop)
 ```
 
 #### 7.2 Sign-offs & Approvals
-- [ ] **PRD approval checklist** - Quem precisa aprovar antes de dev come√ßar?
+- [ ] **PRD approval checklist** - Quem precisa aprovar antes de dev comeÁar?
 - [ ] **Design sign-off obtido** - UX designer aprovou wireframes?
 - [ ] **Technical feasibility confirmada** - Engineering Lead aprovou arquitetura?
-- [ ] **Compliance sign-off** - Se aplic√°vel (GDPR, SOC2, HIPAA)?
+- [ ] **Compliance sign-off** - Se aplic·vel (GDPR, SOC2, HIPAA)?
 - [ ] **Executive sponsor confirmado** - Budget e recursos aprovados?
 
 **Approval Tracking:**
@@ -399,19 +399,19 @@ I = Informed (mantido no loop)
 approvals:
   - approver: "VP of Product"
     role: "Executive Sponsor"
-    status: "‚úÖ Approved"
+    status: "? Approved"
     date: "2025-02-10"
     comments: "Strong business case, proceed with MVP"
   
   - approver: "Engineering Lead"
     role: "Technical Feasibility"
-    status: "‚è≥ Pending"
+    status: "? Pending"
     date: null
     comments: "Reviewing architecture, feedback by 2025-02-12"
   
   - approver: "Compliance Officer"
     role: "Security & Compliance"
-    status: "‚ùå Rejected"
+    status: "? Rejected"
     date: "2025-02-11"
     comments: "PII masking needs stronger validation - see notes"
     blockers:
@@ -424,11 +424,11 @@ approvals:
 ### 8. DEFINITION OF READY - Pronto para Desenvolvimento
 
 #### 8.1 Engineering Handoff
-- [ ] **All P0 user stories t√™m acceptance criteria** - Engineers sabem o que construir?
-- [ ] **Technical spikes conclu√≠dos** - Incertezas t√©cnicas resolvidas?
-- [ ] **Dependencies dispon√≠veis** - APIs, services, dados necess√°rios prontos?
-- [ ] **Designs finalizados** - N√£o h√° TBDs em wireframes?
-- [ ] **Test data dispon√≠vel** - Engineers podem testar localmente?
+- [ ] **All P0 user stories tÍm acceptance criteria** - Engineers sabem o que construir?
+- [ ] **Technical spikes concluÌdos** - Incertezas tÈcnicas resolvidas?
+- [ ] **Dependencies disponÌveis** - APIs, services, dados necess·rios prontos?
+- [ ] **Designs finalizados** - N„o h· TBDs em wireframes?
+- [ ] **Test data disponÌvel** - Engineers podem testar localmente?
 
 **DoR Checklist:**
 ```
@@ -453,19 +453,19 @@ Support:
 
 #### 8.2 QA Readiness
 - [ ] **Test plan criado** - Casos de teste mapeados?
-- [ ] **Test data preparado** - Datasets para QA dispon√≠veis?
+- [ ] **Test data preparado** - Datasets para QA disponÌveis?
 - [ ] **Performance benchmarks** - Como QA valida SLAs?
 - [ ] **Accessibility testing plan** - WCAG checklist para QA?
 
 ---
 
-### 9. COMMUNICATION PLAN - Transpar√™ncia e Updates
+### 9. COMMUNICATION PLAN - TransparÍncia e Updates
 
 #### 9.1 Regular Updates
 - [ ] **Weekly updates agendados** - Standup, Slack, email?
-- [ ] **Status dashboard** - KPIs vis√≠veis em tempo real?
+- [ ] **Status dashboard** - KPIs visÌveis em tempo real?
 - [ ] **Risk register atualizado** - Risks/issues tracked publicamente?
-- [ ] **Changelog mantido** - Mudan√ßas de scope documentadas?
+- [ ] **Changelog mantido** - MudanÁas de scope documentadas?
 
 **Communication Cadence:**
 ```yaml
@@ -491,76 +491,76 @@ monthly:
 ```
 
 #### 9.2 Retrospectives
-- [ ] **Retrospective agendada p√≥s-launch** - Lessons learned capturados?
-- [ ] **Feedback loop com usu√°rios** - Como coletamos feedback p√≥s-GA?
+- [ ] **Retrospective agendada pÛs-launch** - Lessons learned capturados?
+- [ ] **Feedback loop com usu·rios** - Como coletamos feedback pÛs-GA?
 - [ ] **Iteration plan** - Como ajustamos roadmap baseado em learnings?
 
 ---
 
-## üö¶ APPROVAL GATES
+## ?? APPROVAL GATES
 
 ### Gate 1: PRD Approval (Before Development)
 ```yaml
 required_approvals:
-  - "‚úÖ VP Product (business case)"
-  - "‚úÖ Engineering Lead (technical feasibility)"
-  - "‚úÖ UX Designer (design sign-off)"
-  - "‚úÖ Compliance (if applicable)"
+  - "? VP Product (business case)"
+  - "? Engineering Lead (technical feasibility)"
+  - "? UX Designer (design sign-off)"
+  - "? Compliance (if applicable)"
 
 checklist_completion: "95%"  # Algumas open questions OK, mas <5%
 
-status: "üü¢ APPROVED TO PROCEED"
+status: "?? APPROVED TO PROCEED"
 ```
 
 ### Gate 2: Design Review (Before Implementation)
 ```yaml
 required_approvals:
-  - "‚úÖ UX Designer (wireframes final)"
-  - "‚úÖ Accessibility review (WCAG audit)"
-  - "‚úÖ Engineering (design feasibility)"
+  - "? UX Designer (wireframes final)"
+  - "? Accessibility review (WCAG audit)"
+  - "? Engineering (design feasibility)"
 
 deliverables:
   - "Figma links com all screens"
   - "User flows documentados"
   - "Component library atualizado"
 
-status: "üü¢ APPROVED TO BUILD"
+status: "?? APPROVED TO BUILD"
 ```
 
 ### Gate 3: Architecture Review (Before Coding)
 ```yaml
 required_approvals:
-  - "‚úÖ Engineering Lead (architecture)"
-  - "‚úÖ DevOps (infrastructure feasibility)"
-  - "‚úÖ Security team (threat model)"
+  - "? Engineering Lead (architecture)"
+  - "? DevOps (infrastructure feasibility)"
+  - "? Security team (threat model)"
 
 deliverables:
   - "Architecture diagram (C4 model)"
   - "Data models (SQL schemas)"
   - "API contracts (OpenAPI spec)"
 
-status: "üü¢ APPROVED TO CODE"
+status: "?? APPROVED TO CODE"
 ```
 
 ### Gate 4: Pre-Launch Review (Before GA)
 ```yaml
 required_approvals:
-  - "‚úÖ QA (all tests passed)"
-  - "‚úÖ Security (pen test passed)"
-  - "‚úÖ Performance (load test passed)"
-  - "‚úÖ Product (UAT approved)"
+  - "? QA (all tests passed)"
+  - "? Security (pen test passed)"
+  - "? Performance (load test passed)"
+  - "? Product (UAT approved)"
 
 metrics_validation:
   - "Error rate <5% for 5 days straight"
   - "p95 latency meets SLA"
   - "10 beta users successfully onboarded"
 
-status: "üü¢ APPROVED TO LAUNCH"
+status: "?? APPROVED TO LAUNCH"
 ```
 
 ---
 
-## üìä SCORECARD - Auto-Avalia√ß√£o
+## ?? SCORECARD - Auto-AvaliaÁ„o
 
 Use este scorecard para avaliar qualidade do seu PRD:
 
@@ -597,7 +597,7 @@ categories:
     questions: 8
 
 total_score:
-  calculation: "sum(category.score √ó category.weight)"
+  calculation: "sum(category.score ◊ category.weight)"
   threshold:
     excellent: ">90% - Ready for approval"
     good: "75-90% - Minor gaps, addressable"
@@ -605,25 +605,25 @@ total_score:
     not_ready: "<60% - Major gaps, restart discovery"
 ```
 
-**Exemplo de c√°lculo:**
+**Exemplo de c·lculo:**
 ```
-Discovery: 8/10 √ó 20% = 1.6
-Documentation: 9/10 √ó 25% = 2.25
-Design/UX: 7/10 √ó 15% = 1.05
-Technical: 9/10 √ó 20% = 1.8
-Risk Mgmt: 6/10 √ó 10% = 0.6
-Delivery: 8/10 √ó 10% = 0.8
+Discovery: 8/10 ◊ 20% = 1.6
+Documentation: 9/10 ◊ 25% = 2.25
+Design/UX: 7/10 ◊ 15% = 1.05
+Technical: 9/10 ◊ 20% = 1.8
+Risk Mgmt: 6/10 ◊ 10% = 0.6
+Delivery: 8/10 ◊ 10% = 0.8
 
-Total Score: 8.1/10 = 81% ‚Üí GOOD (ready for approval com minor gaps)
+Total Score: 8.1/10 = 81% ? GOOD (ready for approval com minor gaps)
 ```
 
 ---
 
-## üîó Integra√ß√£o com Outros Artefatos
+## ?? IntegraÁ„o com Outros Artefatos
 
 - **${AVANADE_PRD_TEMPLATE_YAML}**: Template de PRD a ser validado com este checklist
-- **${AVANADE_TASK_RICE_PRIORITIZATION}**: M√©todo de prioriza√ß√£o para "Strategic Alignment"
-- **${AVANADE_DISCOVERY_TEMPLATE_YAML}**: Discovery doc alimenta se√ß√£o "Context & Background"
+- **${AVANADE_TASK_RICE_PRIORITIZATION}**: MÈtodo de priorizaÁ„o para "Strategic Alignment"
+- **${AVANADE_DISCOVERY_TEMPLATE_YAML}**: Discovery doc alimenta seÁ„o "Context & Background"
 - **${AVANADE_MEMORY_PM_JOAO}**: Armazena PRDs aprovados que passaram por checklist
 
 ---

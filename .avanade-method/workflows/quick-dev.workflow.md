@@ -1,16 +1,16 @@
-﻿## 📋 O que é este Workflow?
+## ?? O que � este Workflow?
 
-O **quick-dev** é um workflow Avanade Method v6 para desenvolvimento rápido SEM o planejamento completo (PRD → Architecture → Stories). Ideal para quick wins, utilities, bug fixes.
+O **quick-dev** � um workflow Avanade Method v6 para desenvolvimento r�pido SEM o planejamento completo (PRD ? Architecture ? Stories). Ideal para quick wins, utilities, bug fixes.
 
-**Filosofia**: Fast execution quando planejamento completo é overkill
+**Filosofia**: Fast execution quando planejamento completo � overkill
 
 **Workflow Path**: `_avanade-method/bmm/workflows/avanade-method-quick-flow/quick-dev/workflow.md`
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE quick-dev para:
+### ? USE quick-dev para:
 - **One-off tasks**: Scripts, utilities, tools
 - **Bug fixes**: Simple corrections (not architectural changes)
 - **Brownfield additions**: Add feature to well-established patterns
@@ -18,29 +18,29 @@ O **quick-dev** é um workflow Avanade Method v6 para desenvolvimento rápido SE
 - **Prototypes**: Exploratory code, proof-of-concepts
 - **User complaints**: "Don't want extensive planning"
 
-### ❌ NÃO USE para:
-- **Complex features**: >3 days dev time → use full Avanade Method flow (PRD → Arch → Stories)
-- **Architectural changes**: Database migration, new microservice → use `create-architecture`
-- **New products**: Greenfield projects → use full Avanade Method flow
-- **Regulatory/compliance**: High-risk features → use full planning
+### ? N�O USE para:
+- **Complex features**: >3 days dev time ? use full Avanade Method flow (PRD ? Arch ? Stories)
+- **Architectural changes**: Database migration, new microservice ? use `create-architecture`
+- **New products**: Greenfield projects ? use full Avanade Method flow
+- **Regulatory/compliance**: High-risk features ? use full planning
 
 ---
 
-## ⚠️ STEP 0: Carregar Contexto FTD (OBRIGATÓRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT�RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` → `devLoadAlwaysFiles`
-2. Carregar docs mandatórios:
-   - `ftd-knowledge-base.md` (processos, integrações, glossário)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandat�rios:
+   - `ftd-knowledge-base.md` (processos, integra��es, gloss�rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Alçada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, Al�ada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## 🔄 WORKFLOW MODES
+## ?? WORKFLOW MODES
 
 ### Mode 1: Execute Tech Spec
 
@@ -54,7 +54,7 @@ O **quick-dev** é um workflow Avanade Method v6 para desenvolvimento rápido SE
 **Example**:
 ```
 User: "Implementar tech-spec-add-dark-mode.md"
-→ quick-dev executes spec
+? quick-dev executes spec
 ```
 
 ---
@@ -71,7 +71,7 @@ User: "Implementar tech-spec-add-dark-mode.md"
 **Example**:
 ```
 User: "Adicionar logging em todos endpoints da API"
-→ quick-dev adds logging without full planning
+? quick-dev adds logging without full planning
 ```
 
 ---
@@ -88,14 +88,14 @@ User: "Adicionar logging em todos endpoints da API"
 **Example**:
 ```
 User: "Preciso de export CSV"
-→ quick-dev asks: "Qual formato? Quais dados? Where saved?"
-→ Creates mini-spec
-→ Implements
+? quick-dev asks: "Qual formato? Quais dados? Where saved?"
+? Creates mini-spec
+? Implements
 ```
 
 ---
 
-## 📊 Quick-Dev Process
+## ?? Quick-Dev Process
 
 ```mermaid
 flowchart LR
@@ -116,7 +116,7 @@ flowchart LR
 
 ---
 
-## 🎓 Best Practices
+## ?? Best Practices
 
 ### When to Choose quick-dev vs Full Avanade Method:
 
@@ -130,20 +130,20 @@ flowchart LR
 | **Documentation** | Inline comments | PRD + Architecture + Stories |
 
 ### DO:
-- ✅ Use quick-dev for utilities, scripts, bug fixes
-- ✅ Add tests even in quick-dev (quality doesn't skip)
-- ✅ Document code with comments (future you will thank you)
-- ✅ Escalate to full Avanade Method if complexity grows
+- ? Use quick-dev for utilities, scripts, bug fixes
+- ? Add tests even in quick-dev (quality doesn't skip)
+- ? Document code with comments (future you will thank you)
+- ? Escalate to full Avanade Method if complexity grows
 
 ### DON'T:
-- ❌ Skip tests ("it's quick" ≠ "skip quality")
-- ❌ Use quick-dev for architectural changes
-- ❌ Ignore code review (still get peer review)
-- ❌ Skip documentation (at least README update)
+- ? Skip tests ("it's quick" ? "skip quality")
+- ? Use quick-dev for architectural changes
+- ? Ignore code review (still get peer review)
+- ? Skip documentation (at least README update)
 
 ---
 
-## 🚨 When to STOP quick-dev and Switch to Full Avanade Method
+## ?? When to STOP quick-dev and Switch to Full Avanade Method
 
 ### Red Flags (Escalate to Full Avanade Method):
 
@@ -151,22 +151,22 @@ flowchart LR
 2. **Architectural Impact**: Database schema change, new microservice needed
 3. **Multi-Team**: Need coordination with other teams
 4. **Regulatory**: Compliance, security, legal implications
-5. **Time Estimate Growth**: "1 hour" → "3 days" → STOP, plan properly
+5. **Time Estimate Growth**: "1 hour" ? "3 days" ? STOP, plan properly
 
 **Escalation Path**:
 ```
-quick-dev → "This is more complex than expected"
-→ Pause quick-dev
-→ Create Product Brief (if greenfield)
-→ Create PRD
-→ Create Architecture
-→ Create Stories
-→ dev-story workflow (proper implementation)
+quick-dev ? "This is more complex than expected"
+? Pause quick-dev
+? Create Product Brief (if greenfield)
+? Create PRD
+? Create Architecture
+? Create Stories
+? dev-story workflow (proper implementation)
 ```
 
 ---
 
-## 📖 Examples
+## ?? Examples
 
 ### Example 1: Quick Utility Script
 
@@ -217,7 +217,7 @@ if __name__ == "__main__":
 
 ### Example 2: Bug Fix
 
-**Request**: "Endpoint /api/users retorna 500 quando email é null"
+**Request**: "Endpoint /api/users retorna 500 quando email � null"
 
 **quick-dev Process**:
 ```javascript
@@ -280,7 +280,7 @@ describe('GET /api/users', () => {
 
 ---
 
-## 🔗 Integration Points
+## ?? Integration Points
 
 ### When to Use quick-dev in Avanade Method Flow:
 
@@ -297,7 +297,7 @@ describe('GET /api/users', () => {
 
 ---
 
-## 🔗 Related Artifacts
+## ?? Related Artifacts
 
 - **${AVANADE_WORKFLOW_GUIDE_QUICK_SPEC}**: Create tech-spec for quick-dev
 - **${AVANADE_WORKFLOW_GUIDE_DEV_STORY}**: Full story implementation (compare)
@@ -305,7 +305,7 @@ describe('GET /api/users', () => {
 
 ---
 
-## 📖 References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/avanade-method-quick-flow/quick-dev/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 21

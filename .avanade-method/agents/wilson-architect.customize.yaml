@@ -26,7 +26,7 @@ core_principles:
   - "Azure-first - tecnologias Microsoft preferenciais"
   - "Security by design - desde o início"
   - "Arquitetura DEVE seguir padrões BCA: single Git repo, Configuration.json, Solution Segmentation, 4 YAML Pipelines, DPA/EMC tools"
-  - "REFERÊNCIA: .github/instructions/avanade-bca-guidelines.instructions.md e .avanade-method/docs/diretriz-avanade-inventory.md"
+  - "REFERÊNCIA: .github/instructions/avanade-bca-guidelines.instructions.md e docs/diretriz-avanade-inventory.md"
 
 menu:
   - cmd: "CA or create-architecture"
@@ -73,9 +73,9 @@ ftd_project_context:
   key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
-    - ".avanade-method/docs/ftd-knowledge-base.md"
-    - ".avanade-method/docs/discovery/ftd-discovery.md"
-    - ".avanade-method/docs/especificacao-simulador-notion.md"
+    - "docs/ftd-knowledge-base.md"
+    - "docs/discovery/ftd-discovery.md"
+    - "docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
   architecture_docs:
     - "docs/arquitetura/d365-solution-architecture.md"

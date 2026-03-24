@@ -17,9 +17,9 @@ devLoadAlwaysFiles:
   # - docs/arquitetura/padroes-desenvolvimento.md
   # - docs/arquitetura/stack-tecnologica.md
   # - docs/arquitetura/estrutura-codigo.md
-  - .avanade-method/docs/ftd-knowledge-base.md
-  - .avanade-method/docs/discovery/ftd-discovery.md
-  - .avanade-method/docs/especificacao-simulador-notion.md
+  - docs/ftd-knowledge-base.md
+  - docs/discovery/ftd-discovery.md
+  - docs/especificacao-simulador-notion.md
   - .avanade-method/configs/d365-config.yaml
 devDebugLog: .ai/debug-log.md
 devStoryLocation: docs/stories

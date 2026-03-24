@@ -1,39 +1,39 @@
-﻿---
+---
 
-## 📋 O que é este Artefato?
+## ?? O que � este Artefato?
 
-Este é o **guia definitivo de padrões de documentação** para criar docs consistentes, acessíveis e úteis. Cobre:
-- ✍️ **Writing Style**: Tom, voz, perspectiva, linguagem
-- 📐 **Formatting**: Markdown, headings, code blocks, lists
-- ♿ **Accessibility**: WCAG compliance, inclusive language
-- 🎯 **Content Types**: Guides, tutorials, references, API docs
-- ✅ **Quality Gates**: Checklists e validação
+Este � o **guia definitivo de padr�es de documenta��o** para criar docs consistentes, acess�veis e �teis. Cobre:
+- ?? **Writing Style**: Tom, voz, perspectiva, linguagem
+- ?? **Formatting**: Markdown, headings, code blocks, lists
+- ? **Accessibility**: WCAG compliance, inclusive language
+- ?? **Content Types**: Guides, tutorials, references, API docs
+- ? **Quality Gates**: Checklists e valida��o
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE para:
-- Criar qualquer documentação técnica (guides, tutorials, API docs)
-- Revisar documentação existente (editorial review)
+### ? USE para:
+- Criar qualquer documenta��o t�cnica (guides, tutorials, API docs)
+- Revisar documenta��o existente (editorial review)
 - Onboarding de novos technical writers
 - Definir Definition of Done para documentation tasks
 
-### ❌ NÃO USE para:
-- Documentação interna de código (code comments - use language-specific guides)
+### ? N�O USE para:
+- Documenta��o interna de c�digo (code comments - use language-specific guides)
 - PRDs/specs (use AVANADE_PRD_TEMPLATE_YAML)
 - Marketing content (diferente audience/tone)
 
 ---
 
-## ✍️ SECTION 1: WRITING STYLE
+## ?? SECTION 1: WRITING STYLE
 
 ### 1.1 Voice & Tone
 
 **Voice** (consistente sempre):
-- **Professional**: Confiável, preciso, bem-informado
-- **Friendly**: Acolhedor, não intimidante
-- **Clear**: Direto ao ponto, sem jargão desnecessário
+- **Professional**: Confi�vel, preciso, bem-informado
+- **Friendly**: Acolhedor, n�o intimidante
+- **Clear**: Direto ao ponto, sem jarg�o desnecess�rio
 
 **Tone** (adapta ao contexto):
 
@@ -42,17 +42,17 @@ Este é o **guia definitivo de padrões de documentação** para criar docs cons
 | **Tutorial** | Encouraging, patient | "Let's walk through this step-by-step..." |
 | **Reference** | Neutral, factual | "The `connect()` method accepts..." |
 | **Troubleshooting** | Empathetic, solution-focused | "If you're seeing this error, try..." |
-| **Warning** | Serious, direct | "⚠️ This action is irreversible." |
+| **Warning** | Serious, direct | "?? This action is irreversible." |
 
 **Examples:**
 ```markdown
-✅ GOOD (Friendly Professional):
+? GOOD (Friendly Professional):
 "Welcome! This guide will help you set up authentication in under 10 minutes."
 
-❌ BAD (Too casual):
+? BAD (Too casual):
 "Hey there! Let's get this auth thing sorted, yeah?"
 
-❌ BAD (Too formal):
+? BAD (Too formal):
 "This document shall herein provide instructions for the establishment of authentication protocols."
 ```
 
@@ -62,41 +62,41 @@ Este é o **guia definitivo de padrões de documentação** para criar docs cons
 
 #### Active Voice (Preferred)
 ```markdown
-✅ GOOD: "Click the Save button to save your changes."
-❌ BAD: "Your changes can be saved by clicking the Save button."
+? GOOD: "Click the Save button to save your changes."
+? BAD: "Your changes can be saved by clicking the Save button."
 
-✅ GOOD: "The system validates the input before processing."
-❌ BAD: "The input is validated by the system before it is processed."
+? GOOD: "The system validates the input before processing."
+? BAD: "The input is validated by the system before it is processed."
 ```
 
 #### Present Tense (Preferred)
 ```markdown
-✅ GOOD: "When you click Save, the system validates the data."
-❌ BAD: "When you click Save, the system will validate the data."
+? GOOD: "When you click Save, the system validates the data."
+? BAD: "When you click Save, the system will validate the data."
 
-Exception: Future tense OK para consequências futuras
-✅ ACCEPTABLE: "After deployment, users will see the new interface."
+Exception: Future tense OK para consequ�ncias futuras
+? ACCEPTABLE: "After deployment, users will see the new interface."
 ```
 
 #### Second Person ("You")
 ```markdown
-✅ GOOD: "You can configure the settings in the dashboard."
-❌ BAD: "One can configure the settings..." (too formal)
-❌ BAD: "We configure the settings..." (confusing - who is "we"?)
+? GOOD: "You can configure the settings in the dashboard."
+? BAD: "One can configure the settings..." (too formal)
+? BAD: "We configure the settings..." (confusing - who is "we"?)
 
-Exception: Use "we" para ações do sistema/product team
-✅ ACCEPTABLE: "We recommend using HTTPS in production."
+Exception: Use "we" para a��es do sistema/product team
+? ACCEPTABLE: "We recommend using HTTPS in production."
 ```
 
 #### Parallel Structure
 ```markdown
-✅ GOOD:
+? GOOD:
 To install the package:
 1. Download the installer
 2. Run the setup wizard
 3. Configure your settings
 
-❌ BAD:
+? BAD:
 To install the package:
 1. Download the installer
 2. You should run the setup wizard
@@ -119,25 +119,25 @@ To install the package:
 
 #### Be Specific
 ```markdown
-✅ GOOD: "The API returns a 404 error if the resource doesn't exist."
-❌ BAD: "The API might return an error in some cases."
+? GOOD: "The API returns a 404 error if the resource doesn't exist."
+? BAD: "The API might return an error in some cases."
 
-✅ GOOD: "Processing takes 2-5 seconds for files under 10MB."
-❌ BAD: "Processing is usually fast."
+? GOOD: "Processing takes 2-5 seconds for files under 10MB."
+? BAD: "Processing is usually fast."
 ```
 
 #### Avoid Jargon (Unless Necessary)
 ```markdown
-✅ GOOD: "The system checks the data before saving it (validation)."
-❌ BAD: "The system performs idempotent validation leveraging schema contracts."
+? GOOD: "The system checks the data before saving it (validation)."
+? BAD: "The system performs idempotent validation leveraging schema contracts."
 
 When jargon is necessary:
-✅ GOOD: "The API uses OAuth 2.0 for authentication (a secure industry-standard protocol)."
+? GOOD: "The API uses OAuth 2.0 for authentication (a secure industry-standard protocol)."
 ```
 
 ---
 
-## 📐 SECTION 2: FORMATTING STANDARDS
+## ?? SECTION 2: FORMATTING STANDARDS
 
 ### 2.1 Markdown Basics
 
@@ -152,7 +152,7 @@ When jargon is necessary:
 #### Minor Heading (H4 - use sparingly)
 
 RULES:
-- Never skip levels (H1 → H3 without H2)
+- Never skip levels (H1 ? H3 without H2)
 - Max depth: H4 (deeper = poor structure)
 - Use sentence case ("How to configure" not "How To Configure")
 ```
@@ -163,11 +163,11 @@ RULES:
 *Italic* - Slight emphasis, first use of new terms
 `Code` - Commands, code elements, file names
 
-✅ GOOD: "Click the **Save** button to save changes."
-✅ GOOD: "The *validation* process checks data integrity."
-✅ GOOD: "Run `npm install` to install dependencies."
+? GOOD: "Click the **Save** button to save changes."
+? GOOD: "The *validation* process checks data integrity."
+? GOOD: "Run `npm install` to install dependencies."
 
-❌ BAD: "Click the *save* button to **save** changes." (inconsistent)
+? BAD: "Click the *save* button to **save** changes." (inconsistent)
 ```
 
 ---
@@ -176,13 +176,13 @@ RULES:
 
 #### Always Specify Language
 ```markdown
-✅ GOOD:
+? GOOD:
 ```python
 def hello(name):
     return f"Hello, {name}!"
 ```
 
-❌ BAD (no language tag):
+? BAD (no language tag):
 ```
 def hello(name):
     return f"Hello, {name}!"
@@ -191,7 +191,7 @@ def hello(name):
 
 #### Line Length (80 characters max)
 ```markdown
-✅ GOOD:
+? GOOD:
 ```python
 # Short, readable lines
 result = calculate_total(
@@ -201,7 +201,7 @@ result = calculate_total(
 )
 ```
 
-❌ BAD (too long):
+? BAD (too long):
 ```python
 result = calculate_total(subtotal=100, tax_rate=0.08, discount=10, shipping=5, handling=2)
 ```
@@ -209,7 +209,7 @@ result = calculate_total(subtotal=100, tax_rate=0.08, discount=10, shipping=5, h
 
 #### Include Comments for Non-Obvious Code
 ```markdown
-✅ GOOD:
+? GOOD:
 ```javascript
 // Retry failed requests up to 3 times with exponential backoff
 const maxRetries = 3;
@@ -222,7 +222,7 @@ for (let i = 0; i < maxRetries; i++) {
 }
 ```
 
-❌ BAD (no explanation):
+? BAD (no explanation):
 ```javascript
 const maxRetries = 3;
 for (let i = 0; i < maxRetries; i++) {
@@ -241,13 +241,13 @@ for (let i = 0; i < maxRetries; i++) {
 
 #### Unordered Lists (Use `-` not `*`)
 ```markdown
-✅ GOOD:
+? GOOD:
 - First item
 - Second item
   - Nested item (2 spaces indent)
 - Third item
 
-❌ BAD (inconsistent bullets):
+? BAD (inconsistent bullets):
 * First item
 - Second item
 + Third item
@@ -255,13 +255,13 @@ for (let i = 0; i < maxRetries; i++) {
 
 #### Ordered Lists (Sequential Steps)
 ```markdown
-✅ GOOD (parallel structure):
+? GOOD (parallel structure):
 1. Download the installer
 2. Run the setup wizard
 3. Configure your settings
 4. Start the application
 
-❌ BAD (not parallel):
+? BAD (not parallel):
 1. Download the installer
 2. You should run the setup wizard
 3. Settings configuration
@@ -285,21 +285,21 @@ Ordered (sequence matters):
 
 #### Descriptive Link Text
 ```markdown
-✅ GOOD: "See the [authentication guide](auth.md) for setup instructions."
-❌ BAD: "Click [here](auth.md) for more info."
+? GOOD: "See the [authentication guide](auth.md) for setup instructions."
+? BAD: "Click [here](auth.md) for more info."
 
-✅ GOOD: "Learn more about [OAuth 2.0](https://oauth.net/2/)."
-❌ BAD: "Learn more at https://oauth.net/2/"
+? GOOD: "Learn more about [OAuth 2.0](https://oauth.net/2/)."
+? BAD: "Learn more at https://oauth.net/2/"
 ```
 
 #### Relative vs Absolute Paths
 ```markdown
 Internal links (same repo):
-✅ GOOD: [Setup Guide](./setup.md)
-❌ BAD: [Setup Guide](https://example.com/docs/setup.md)
+? GOOD: [Setup Guide](./setup.md)
+? BAD: [Setup Guide](https://example.com/docs/setup.md)
 
 External links:
-✅ GOOD: [GitHub Docs](https://docs.github.com)
+? GOOD: [GitHub Docs](https://docs.github.com)
 ```
 
 ---
@@ -308,26 +308,26 @@ External links:
 
 #### Alt Text (Always!)
 ```markdown
-✅ GOOD:
+? GOOD:
 ![Screenshot of the login form with username and password fields](./images/login-form.png)
 
-❌ BAD (no alt text):
+? BAD (no alt text):
 ![](./images/login-form.png)
 
-❌ BAD (not descriptive):
+? BAD (not descriptive):
 ![image](./images/login-form.png)
 ```
 
 #### Image File Naming
 ```markdown
-✅ GOOD: dashboard-analytics-view.png
-❌ BAD: Screenshot 2025-02-03.png
-❌ BAD: IMG_1234.png
+? GOOD: dashboard-analytics-view.png
+? BAD: Screenshot 2025-02-03.png
+? BAD: IMG_1234.png
 ```
 
 #### Prefer Diagrams Over Screenshots
 ```markdown
-✅ BEST (Mermaid - text-based, editable):
+? BEST (Mermaid - text-based, editable):
 ```mermaid
 graph LR
     A[User] --> B[API Gateway]
@@ -335,7 +335,7 @@ graph LR
     C --> D[Database]
 ```
 
-⭕ ACCEPTABLE (Screenshot - use only if Mermaid não adequado):
+? ACCEPTABLE (Screenshot - use only if Mermaid n�o adequado):
 ![Architecture diagram showing user flow](./images/architecture.png)
 
 WHY? Mermaid is:
@@ -350,14 +350,14 @@ WHY? Mermaid is:
 
 #### Use for Structured Data
 ```markdown
-✅ GOOD:
+? GOOD:
 | HTTP Method | Endpoint | Description |
 |-------------|----------|-------------|
 | GET | /users | List all users |
 | POST | /users | Create new user |
 | DELETE | /users/:id | Delete user |
 
-❌ BAD (should be table):
+? BAD (should be table):
 GET /users - List all users
 POST /users - Create new user
 DELETE /users/:id - Delete user
@@ -365,13 +365,13 @@ DELETE /users/:id - Delete user
 
 #### Keep Tables Simple
 ```markdown
-✅ GOOD (3-4 columns max):
+? GOOD (3-4 columns max):
 | Name | Type | Required |
 |------|------|----------|
 | email | string | Yes |
 | age | integer | No |
 
-❌ BAD (too many columns - hard to read):
+? BAD (too many columns - hard to read):
 | Name | Type | Required | Default | Min | Max | Pattern | Example |
 |------|------|----------|---------|-----|-----|---------|---------|
 | ... (8 columns is too much) ...
@@ -381,27 +381,27 @@ SOLUTION: Split into multiple tables or use description list
 
 ---
 
-## ♿ SECTION 3: ACCESSIBILITY
+## ? SECTION 3: ACCESSIBILITY
 
 ### 3.1 WCAG 2.1 Level AA Compliance
 
 #### Color Contrast (4.5:1 minimum for text)
 ```markdown
-✅ GOOD: Dark text (#333) on light background (#FFF)
-❌ BAD: Light gray text (#AAA) on white background (#FFF)
+? GOOD: Dark text (#333) on light background (#FFF)
+? BAD: Light gray text (#AAA) on white background (#FFF)
 
 Test contrast: https://webaim.org/resources/contrastchecker/
 ```
 
 #### Semantic HTML (Use Headings Correctly)
 ```markdown
-✅ GOOD:
+? GOOD:
 # Main Title (H1)
 ## Section 1 (H2)
 ### Subsection 1.1 (H3)
 ## Section 2 (H2)
 
-❌ BAD:
+? BAD:
 # Main Title (H1)
 #### Subsection (H4 - skipped H2 and H3!)
 ```
@@ -440,7 +440,7 @@ For interactive docs (web):
 
 ---
 
-## 🎯 SECTION 4: CONTENT TYPES
+## ?? SECTION 4: CONTENT TYPES
 
 ### 4.1 Tutorials (Step-by-Step)
 
@@ -602,7 +602,7 @@ Links to related docs.
 
 ---
 
-## ✅ SECTION 5: QUALITY GATES
+## ? SECTION 5: QUALITY GATES
 
 ### 5.1 Pre-Publication Checklist
 
@@ -616,7 +616,7 @@ Links to related docs.
 
 #### Formatting
 - [ ] **H1 heading (only one)**
-- [ ] **No skipped heading levels** (H1 → H2 → H3, not H1 → H3)
+- [ ] **No skipped heading levels** (H1 ? H2 ? H3, not H1 ? H3)
 - [ ] **Code blocks have language tags** (```python, not ```)
 - [ ] **Lists use consistent bullets** (all `-` or all `1.`)
 - [ ] **Links have descriptive text** (not "click here")
@@ -625,7 +625,7 @@ Links to related docs.
 #### Accessibility
 - [ ] **Color contrast 4.5:1 minimum** (test with tool)
 - [ ] **Inclusive language** (no master/slave, sanity check, guys)
-- [ ] **Semantic headings** (H1 → H2 → H3 hierarchy)
+- [ ] **Semantic headings** (H1 ? H2 ? H3 hierarchy)
 
 #### Completeness
 - [ ] **All placeholders replaced** (no [TODO], [TBD])
@@ -641,7 +641,7 @@ Use **${AVANADE_TASK_EDITORIAL_REVIEW_PROSE}** para prose review e **${AVANADE_T
 
 ---
 
-## 📚 SECTION 6: DOCUMENT TEMPLATES
+## ?? SECTION 6: DOCUMENT TEMPLATES
 
 ### Template: Tutorial
 ```markdown
@@ -738,12 +738,12 @@ curl -X GET https://api.example.com/v1/resource/123 \
 
 ---
 
-## 🔗 Integração com Outros Artefatos
+## ?? Integra��o com Outros Artefatos
 
 - **${AVANADE_MEMORY_TECH_WRITER_PAIGE}**: Armazena project-specific docs standards
 - **${AVANADE_TASK_EDITORIAL_REVIEW_PROSE}**: Valida prose contra estes standards
 - **${AVANADE_TASK_EDITORIAL_REVIEW_STRUCTURE}**: Valida estrutura contra templates
-- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: CommonMark spec para Markdown válido
-- **${AVANADE_MERMAID_LIBRARY_MD}**: Diagram patterns para documentação visual
+- **${AVANADE_COMMONMARK_TEMPLATE_MD}**: CommonMark spec para Markdown v�lido
+- **${AVANADE_MERMAID_LIBRARY_MD}**: Diagram patterns para documenta��o visual
 
 ---

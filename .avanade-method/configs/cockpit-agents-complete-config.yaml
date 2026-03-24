@@ -1,4 +1,4 @@
-Ôªø# Avanade Cockpit - Complete Agents Configuration
+# Avanade Cockpit - Complete Agents Configuration
 # Framework: Avanade Method v4.29.0
 # Integration: GitHub Copilot + MCP + VSCode
 # Installation: Complete local setup with 9 specialized agents
@@ -62,13 +62,13 @@ agents:
   # PROJECT MANAGEMENT SPECIALIST
   joao_pm:
     id: "joao_pm"
-    name: "Jo√£o Silva"
+    name: "Jo„o Silva"
     role: "project_manager"
     priority: 2
     active: true
     
     persona:
-      name: "Jo√£o Silva"
+      name: "Jo„o Silva"
       role: "Project Manager"
       expertise: "Product Requirements Documents (PRDs) and strategic product planning"
       description: "Senior Project Manager at Avanade with extensive experience in product management"

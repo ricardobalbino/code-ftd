@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+<!-- User -->
+  <entity name="systemuser" sheet="UserRoles" key="domainname" keycolumn="1" startrow="3">
+    <columns>
+      <column name="domainname" column="1" />
+	  <!-- Column 2 and 3 is for Information Only -->
+      <column name="businessunitid" column="4" refentity="businessunit" refkey="name" />
+	  <!-- Column 5 is for Information Only -->
+	  <column name="ava_customattribute" column="6" />
+	  <!-- Column 7 to 9 is for Update Process -->
+	  <!-- Column 10 to 13 is for Organization Role Mapping -->
+      <!-- Below is the Security Role assignment -->
+      <column name="securityrole1" column="14" type="securityrole" typeextension="Base User" />
+      <column name="securityrole2" column="15" type="securityrole" typeextension="Customer Service Representative" />
+	  <column name="securityrole3" column="16" type="securityrole" typeextension="Field Service Dispatcher" />
+	  <column name="securityrole4" column="17" type="securityrole" typeextension="Field Service Resource" />
+	  <column name="securityrole5" column="18" type="securityrole" typeextension="Key User" />
+      <!-- Below is the Field Security Profile assignment -->
+	  <column name="fieldsecurityprofile1" column="20" type="fieldsecurityprofile" typeextension="Field Service - Dispatcher" />
+	  <column name="fieldsecurityprofile2" column="21" type="fieldsecurityprofile" typeextension="Field Service - Resource" />
+	  <column name="fieldsecurityprofile3" column="22" type="fieldsecurityprofile" typeextension="Key User" />
+      <!-- Below is the Security Group Team assignment -->
+      <column name="team1" column="24" type="team" />
+      <column name="team2" column="25" type="team" />
+    </columns>
+  </entity>
+  
+</configuration>

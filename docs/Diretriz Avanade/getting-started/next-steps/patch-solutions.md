@@ -1,0 +1,3 @@
+# Patch Solutions
+
+Once managed solutions get too big, deployment time will degrade and unless Microsoft will improve those (similar to Azure Bicep for example), extension concepts like usage of patch solutions are needed. Full automation support for patch solutions will come in the next version but it is already possible to address this topic with the existing modularity and some tweaks (basically create patch solutions manually and define them in Configurations.json and as long as the version of the main solution is not increased any more, those will be ignored and only patch solutions will be imported which will be faster than importing the whole solution).

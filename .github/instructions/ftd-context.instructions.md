@@ -9,12 +9,12 @@ applyTo: "**"
 **Tipo**: Brownfield — customizações múltiplas em ambiente existente
 
 ## Docs Mandatórios (ler antes de qualquer tarefa)
-- `.avanade-method/docs/ftd-knowledge-base.md` — Knowledge base completo
-- `.avanade-method/docs/discovery/ftd-discovery.md` — Discovery com fit-gap
-- `.avanade-method/docs/especificacao-simulador-notion.md` — Spec do Simulador (501 linhas)
+- `docs/ftd-knowledge-base.md` — Knowledge base completo
+- `docs/discovery/ftd-discovery.md` — Discovery com fit-gap
+- `docs/especificacao-simulador-notion.md` — Spec do Simulador (501 linhas)
 - `.avanade-method/configs/d365-config.yaml` — Config D365 com dados reais
 - `.github/instructions/avanade-bca-guidelines.instructions.md` — Diretrizes BCA (padrões de dev Avanade)
-- `.avanade-method/docs/diretriz-avanade-inventory.md` — Inventário completo 197 docs BCA (referência detalhada)
+- `docs/diretriz-avanade-inventory.md` — Inventário completo 197 docs BCA (referência detalhada)
 
 ## Contexto Chave
 - **Simulador Comercial**: Power Pages + CRM backend, MVP deadline 31/Mar/2026

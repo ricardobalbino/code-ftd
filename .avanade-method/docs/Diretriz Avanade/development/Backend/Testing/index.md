@@ -1,3 +1,0 @@
-# Testing
-
-No content yet. Check back again soon...

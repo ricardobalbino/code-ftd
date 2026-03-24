@@ -1,5 +1,5 @@
-Ôªø### Sprint Patterns & Velocity
-_Padr√µes de sprints que funcionam_
+### Sprint Patterns & Velocity
+_Padrıes de sprints que funcionam_
 
 **Exemplo**:
 ```yaml
@@ -7,9 +7,9 @@ _Padr√µes de sprints que funcionam_
   team_size: "5-7 pessoas (devs + QA)"
   avg_velocity: "22-28 story points"
   pros:
-    - "Ritmo sustent√°vel"
-    - "Feedback loop r√°pido"
-    - "Planning n√£o muito longo (2-3h)"
+    - "Ritmo sustent·vel"
+    - "Feedback loop r·pido"
+    - "Planning n„o muito longo (2-3h)"
   cons:
     - "Overhead de ceremonies (20% do tempo)"
   best_for: "Maioria dos projetos (sweet spot)"
@@ -18,8 +18,8 @@ _Padr√µes de sprints que funcionam_
   team_size: "3-4 pessoas"
   avg_velocity: "12-15 story points"
   pros:
-    - "Feedback ultra-r√°pido"
-    - "Adapta√ß√£o √°gil a mudan√ßas"
+    - "Feedback ultra-r·pido"
+    - "AdaptaÁ„o ·gil a mudanÁas"
   cons:
     - "Overhead ceremonies alto (30% do tempo)"
     - "Stories precisam ser bem pequenas"
@@ -33,31 +33,31 @@ _Padr√µes de sprints que funcionam_
     - "Mais tempo para features complexas"
   cons:
     - "Feedback loop lento"
-    - "Risco de drift (muito tempo sem valida√ß√£o)"
+    - "Risco de drift (muito tempo sem validaÁ„o)"
   best_for: "Regulated industries, waterfall-hybrid"
 ```
 
 ---
 
 ### Ceremony Optimization Patterns
-_Otimiza√ß√µes de ceremonies que funcionaram_
+_OtimizaÁıes de ceremonies que funcionaram_
 
 **Exemplo**:
 ```yaml
 - ceremony: "Sprint Planning"
   standard_duration: "4h (2-week sprint)"
   optimization:
-    - "Pre-refinement obrigat√≥rio (PBIs j√° estimados)"
-    - "Timeboxing: 5min por story (timer vis√≠vel)"
-    - "Parking lot para discuss√µes t√©cnicas profundas"
-  optimized_duration: "2h (50% redu√ß√£o)"
+    - "Pre-refinement obrigatÛrio (PBIs j· estimados)"
+    - "Timeboxing: 5min por story (timer visÌvel)"
+    - "Parking lot para discussıes tÈcnicas profundas"
+  optimized_duration: "2h (50% reduÁ„o)"
   impact: "Team morale +15% (menos meetings), quality mantida"
   
 - ceremony: "Daily Standup"
   standard_duration: "15min"
   optimization:
     - "Async updates (Slack) + sync apenas se blockers"
-    - "Walk the board (foco em stories, n√£o pessoas)"
+    - "Walk the board (foco em stories, n„o pessoas)"
     - "Timeboxing: 1min por pessoa max"
   optimized_duration: "5-10min (ou async)"
   impact: "Time savings 50h/sprint (team de 7 pessoas)"
@@ -65,9 +65,9 @@ _Otimiza√ß√µes de ceremonies que funcionaram_
 - ceremony: "Sprint Review"
   standard_duration: "1h"
   optimization:
-    - "Demo pr√©-gravada (stakeholders assistem antes)"
+    - "Demo prÈ-gravada (stakeholders assistem antes)"
     - "Review meeting = Q&A + feedback apenas"
-    - "Showcases bi-weekly (n√£o toda sprint)"
+    - "Showcases bi-weekly (n„o toda sprint)"
   optimized_duration: "30min"
   impact: "Stakeholder engagement +30% (respect their time)"
   
@@ -75,16 +75,16 @@ _Otimiza√ß√µes de ceremonies que funcionaram_
   standard_duration: "1.5h"
   optimization:
     - "Anonymous feedback pre-collected (Google Forms)"
-    - "Dot voting para priorizar discuss√µes"
+    - "Dot voting para priorizar discussıes"
     - "Action items MAX 3 (foco > quantidade)"
   optimized_duration: "1h"
-  impact: "Action item completion rate 60% ‚Üí 85%"
+  impact: "Action item completion rate 60% ? 85%"
 ```
 
 ---
 
 ### Backlog Refinement Strategies
-_T√©cnicas de refinement eficazes_
+_TÈcnicas de refinement eficazes_
 
 **Exemplo**:
 ```yaml
@@ -92,16 +92,16 @@ _T√©cnicas de refinement eficazes_
   description: "15min/dia durante sprint (vs 2h session semanal)"
   pros:
     - "Menos disruptivo (pequenos chunks)"
-    - "Contexto fresco (discuss√µes mais focadas)"
+    - "Contexto fresco (discussıes mais focadas)"
   cons:
-    - "Requer disciplina (f√°cil de pular)"
-  effectiveness: "M√©dia-Alta"
+    - "Requer disciplina (f·cil de pular)"
+  effectiveness: "MÈdia-Alta"
   best_for: "Times co-localizados, disciplinados"
   
 - technique: "Refinement Sprints"
   description: "1 sprint de refinement a cada 4 sprints de dev"
   pros:
-    - "Backlog super refinado (ready para m√∫ltiplas sprints)"
+    - "Backlog super refinado (ready para m˙ltiplas sprints)"
     - "Discovery profundo (Maria + Paula + Roberto)"
   cons:
     - "Velocity zero durante refinement sprint"
@@ -109,90 +109,90 @@ _T√©cnicas de refinement eficazes_
   best_for: "Fixed-price, regulated industries"
   
 - technique: "Just-in-Time Refinement"
-  description: "Refinar apenas top 3-5 PBIs (pr√≥xima sprint)"
+  description: "Refinar apenas top 3-5 PBIs (prÛxima sprint)"
   pros:
-    - "M√≠nimo waste (n√£o refinar o que pode mudar)"
-    - "Flexibilidade alta (pivots f√°ceis)"
+    - "MÌnimo waste (n„o refinar o que pode mudar)"
+    - "Flexibilidade alta (pivots f·ceis)"
   cons:
-    - "Risco de PBIs n√£o prontos para Planning"
-  effectiveness: "M√©dia"
+    - "Risco de PBIs n„o prontos para Planning"
+  effectiveness: "MÈdia"
   best_for: "Startups, produtos early-stage"
 ```
 
 ---
 
 ### Estimation Techniques Validadas
-_M√©todos de estimativa que funcionam_
+_MÈtodos de estimativa que funcionam_
 
 **Exemplo**:
 ```yaml
 - technique: "Planning Poker (Modified Fibonacci)"
   sequence: "1, 2, 3, 5, 8, 13, 20, 40, 100"
   pros:
-    - "Consenso de time (n√£o top-down)"
-    - "Discuss√£o de assumptions (quando discord√¢ncia grande)"
+    - "Consenso de time (n„o top-down)"
+    - "Discuss„o de assumptions (quando discord‚ncia grande)"
   cons:
     - "Demorado (5-10min por story)"
-  accuracy: "¬±30% (m√©dio prazo)"
+  accuracy: "±30% (mÈdio prazo)"
   best_for: "Teams maduros, estimativa de sprints"
   
 - technique: "T-Shirt Sizing (XS/S/M/L/XL)"
   pros:
-    - "R√°pido (1-2min por story)"
-    - "√ötil para epics/features (high-level)"
+    - "R·pido (1-2min por story)"
+    - "⁄til para epics/features (high-level)"
   cons:
     - "Menos preciso que Planning Poker"
-  accuracy: "¬±50%"
-  best_for: "Roadmap planning, portfolio management (Jo√£o PM)"
+  accuracy: "±50%"
+  best_for: "Roadmap planning, portfolio management (Jo„o PM)"
   
 - technique: "No Estimates (Cycle Time)"
   pros:
     - "Zero overhead de estimativa"
     - "Focus em flow (throughput metrics)"
   cons:
-    - "Dif√≠cil para fixed-price projects (cliente quer estimates)"
-  accuracy: "N/A (forecasting via cycle time hist√≥rico)"
+    - "DifÌcil para fixed-price projects (cliente quer estimates)"
+  accuracy: "N/A (forecasting via cycle time histÛrico)"
   best_for: "Kanban, continuous delivery, retainer contracts"
 ```
 
 ---
 
-## üöß Impediment Management
+## ?? Impediment Management
 
 ### Common Impediments & Resolutions
-_Blockers recorrentes e como remov√™-los_
+_Blockers recorrentes e como removÍ-los_
 
 **Exemplo**:
 ```yaml
-- impediment: "Dependency em time externo (API n√£o pronta)"
+- impediment: "Dependency em time externo (API n„o pronta)"
   frequency: "Alta (40% das sprints)"
   resolution_pattern:
     - "Mock/Stub API (contract-first development)"
-    - "Escalation para Jo√£o (PM) se delay > 3 dias"
-    - "Parallel work (front-end avan√ßa com mock)"
+    - "Escalation para Jo„o (PM) se delay > 3 dias"
+    - "Parallel work (front-end avanÁa com mock)"
   avg_resolution_time: "2 dias"
   prevention: "Dependency mapping no Planning, early engagement"
   
 - impediment: "Unclear requirements (PBI volta para refinement)"
-  frequency: "M√©dia (25% das sprints)"
+  frequency: "MÈdia (25% das sprints)"
   resolution_pattern:
     - "Emergency refinement session (Roberto + Maria + Paula)"
     - "Acceptance criteria re-written com exemplos"
     - "Spike se technical uncertainty"
   avg_resolution_time: "1 dia"
-  prevention: "Definition of Ready obrigat√≥rio (checklist)"
+  prevention: "Definition of Ready obrigatÛrio (checklist)"
   
 - impediment: "Technical blocker (bug de infra, ambiente down)"
-  frequency: "M√©dia (20% das sprints)"
+  frequency: "MÈdia (20% das sprints)"
   resolution_pattern:
     - "DevOps/Infra escalation imediata"
-    - "Workaround tempor√°rio se poss√≠vel"
+    - "Workaround tempor·rio se possÌvel"
     - "Swap stories (time trabalha em outras tasks)"
   avg_resolution_time: "4h - 1 dia"
   prevention: "Infra-as-code, monitoring proativo"
   
-- impediment: "Team member ausente (doen√ßa, f√©rias)"
-  frequency: "M√©dia (15% das sprints)"
+- impediment: "Team member ausente (doenÁa, fÈrias)"
+  frequency: "MÈdia (15% das sprints)"
   resolution_pattern:
     - "Pair programming (knowledge sharing preventivo)"
     - "Replan sprint (reduzir commitment)"
@@ -204,29 +204,29 @@ _Blockers recorrentes e como remov√™-los_
 ---
 
 ### Escalation Patterns
-_Quando e como escalar para Jo√£o (PM) ou sponsor_
+_Quando e como escalar para Jo„o (PM) ou sponsor_
 
 **Exemplo**:
 ```yaml
-- escalation_trigger: "Blocker > 3 dias sem resolu√ß√£o"
-  escalation_path: "Roberto ‚Üí Jo√£o (PM) ‚Üí Sponsor (se needed)"
+- escalation_trigger: "Blocker > 3 dias sem resoluÁ„o"
+  escalation_path: "Roberto ? Jo„o (PM) ? Sponsor (se needed)"
   communication: "Slack DM + formal email (paper trail)"
   
 - escalation_trigger: "Scope creep (stakeholder request direct para dev)"
-  escalation_path: "Roberto ‚Üí Paula (PO) ‚Üí Jo√£o (PM)"
+  escalation_path: "Roberto ? Paula (PO) ? Jo„o (PM)"
   communication: "Educar stakeholder sobre change control process"
   
-- escalation_trigger: "Team conflict n√£o resolvido em retro"
-  escalation_path: "Roberto ‚Üí Jo√£o (PM) + HR (se necess√°rio)"
-  communication: "1-on-1s primeiro, escalation se n√£o resolver"
+- escalation_trigger: "Team conflict n„o resolvido em retro"
+  escalation_path: "Roberto ? Jo„o (PM) + HR (se necess·rio)"
+  communication: "1-on-1s primeiro, escalation se n„o resolver"
 ```
 
 ---
 
-## üìä Metrics & Team Health
+## ?? Metrics & Team Health
 
 ### Velocity Tracking Insights
-_Padr√µes de velocity e o que indicam_
+_Padrıes de velocity e o que indicam_
 
 **Exemplo**:
 ```yaml
@@ -234,15 +234,15 @@ _Padr√µes de velocity e o que indicam_
   interpretation: "Team learning, processo melhorando"
   action: "Manter o curso, documentar learnings"
   
-- pattern: "Velocity vol√°til (altos e baixos)"
+- pattern: "Velocity vol·til (altos e baixos)"
   interpretation: "Estimativas inconsistentes OU workload irregular"
   action: "Review estimation process, stabilize backlog"
   
 - pattern: "Velocity decrescente (downward trend)"
-  interpretation: "‚ö†Ô∏è RED FLAG - burnout, technical debt, ou impediments"
+  interpretation: "?? RED FLAG - burnout, technical debt, ou impediments"
   action: "Emergency retrospective, identify root cause"
   
-- pattern: "Velocity est√°vel mas baixa (< team potential)"
+- pattern: "Velocity est·vel mas baixa (< team potential)"
   interpretation: "Ceremonies overhead alto OU team sub-utilized"
   action: "Optimize ceremonies, check for blockers silenciosos"
 ```
@@ -250,27 +250,27 @@ _Padr√µes de velocity e o que indicam_
 ---
 
 ### Team Morale Indicators
-_Sinais de que time est√° feliz/unhappy_
+_Sinais de que time est· feliz/unhappy_
 
 **Exemplo**:
 ```yaml
-- green_flag: "Daily standup animada (piadas, colabora√ß√£o)"
+- green_flag: "Daily standup animada (piadas, colaboraÁ„o)"
   action: "Continue doing what you're doing"
   
-- green_flag: "Retros com feedback construtivo (n√£o apenas complaints)"
+- green_flag: "Retros com feedback construtivo (n„o apenas complaints)"
   action: "Psychological safety alta - maintain"
   
-- yellow_flag: "Standup ap√°tica (respostas rob√≥ticas)"
+- yellow_flag: "Standup ap·tica (respostas robÛticas)"
   action: "1-on-1s com team, investigar causas"
   
-- yellow_flag: "Velocity est√°vel mas sil√™ncio em ceremonies"
-  action: "Team pode estar funcionando mas n√£o engajada - check wellbeing"
+- yellow_flag: "Velocity est·vel mas silÍncio em ceremonies"
+  action: "Team pode estar funcionando mas n„o engajada - check wellbeing"
   
 - red_flag: "Absences aumentando (sick days, late starts)"
-  action: "‚ö†Ô∏è Burnout warning - workload review urgente"
+  action: "?? Burnout warning - workload review urgente"
   
 - red_flag: "Retros sem action items (apathy)"
-  action: "‚ö†Ô∏è Team gave up on improvement - reset culture"
+  action: "?? Team gave up on improvement - reset culture"
 ```
 
 ---
@@ -285,7 +285,7 @@ _Como DoD evoluiu ao longo de projetos_
     - "Code committed to main branch"
     - "Manual testing passed"
     - "Deployed to dev environment"
-  problems: "Bugs escapando para produ√ß√£o (50% bug rate)"
+  problems: "Bugs escapando para produÁ„o (50% bug rate)"
   
 - version: "v2.0 (improved)"
   criteria:
@@ -307,39 +307,39 @@ _Como DoD evoluiu ao longo de projetos_
 
 ---
 
-## üéØ Facilitation Techniques
+## ?? Facilitation Techniques
 
 ### Retrospective Formats que Funcionam
-_Varia√ß√µes de retro para evitar monotonia_
+_VariaÁıes de retro para evitar monotonia_
 
 **Exemplo**:
 ```yaml
 - format: "Start/Stop/Continue (classic)"
-  description: "3 colunas - o que come√ßar, parar, continuar fazendo"
-  pros: "Simples, estruturado, a√ß√£o-orientado"
-  cons: "Pode ficar repetitivo (usar 1x por m√™s max)"
+  description: "3 colunas - o que comeÁar, parar, continuar fazendo"
+  pros: "Simples, estruturado, aÁ„o-orientado"
+  cons: "Pode ficar repetitivo (usar 1x por mÍs max)"
   best_for: "Teams novos, retros iniciais"
   
 - format: "Sailboat (visual metaphor)"
-  description: "Ilha (goal), vento (helps), √¢ncora (impediments), rochas (risks)"
-  pros: "Visual, engaja pessoas n√£o-verbais"
-  cons: "Requer prepara√ß√£o (desenho)"
+  description: "Ilha (goal), vento (helps), ‚ncora (impediments), rochas (risks)"
+  pros: "Visual, engaja pessoas n„o-verbais"
+  cons: "Requer preparaÁ„o (desenho)"
   best_for: "Teams remotos (Miro/Mural), brainstorming"
   
 - format: "Mad/Sad/Glad"
   description: "Emocional - o que deixou time mad, sad, glad"
   pros: "Foco em sentimentos (psychological safety)"
   cons: "Pode ficar negativo (facilitar bem)"
-  best_for: "Sprints dif√≠ceis (high stress), team conflicts"
+  best_for: "Sprints difÌceis (high stress), team conflicts"
   
 - format: "Timeline Retrospective"
   description: "Linha do tempo da sprint - eventos key + sentimentos"
   pros: "Contextual, identifica patterns ao longo do tempo"
   cons: "Demorado (90min+)"
-  best_for: "Retrospectives de release (n√£o sprint)"
+  best_for: "Retrospectives de release (n„o sprint)"
   
 - format: "Lean Coffee"
-  description: "Team prop√µe t√≥picos, vota, discute (timeboxed)"
+  description: "Team propıe tÛpicos, vota, discute (timeboxed)"
   pros: "Democratic, foco no que time quer discutir"
   cons: "Pode perder foco (facilitar bem)"
   best_for: "Teams maduros, self-organizing"
@@ -357,28 +357,28 @@ _Como facilitar conflitos em ceremonies_
     - "Cada um explica rationale (2min each)"
     - "Identify assumptions divergentes"
     - "Time vote novamente (geralmente converge)"
-    - "Se n√£o convergir: escolher maior (conservative) OU spike"
-  outcome: "Consenso alcan√ßado 85% das vezes"
+    - "Se n„o convergir: escolher maior (conservative) OU spike"
+  outcome: "Consenso alcanÁado 85% das vezes"
   
 - conflict_type: "Priority clash (devs querem refactoring, Paula quer features)"
   facilitation:
     - "Quantify technical debt (Tiago: impacto em velocity)"
     - "Quantify business value (Paula: revenue/users)"
     - "Negociar ratio (e.g., 80% features, 20% tech debt)"
-  outcome: "Compromise alcan√ßado 90% das vezes"
+  outcome: "Compromise alcanÁado 90% das vezes"
   
 - conflict_type: "Personal conflict (2 team members)"
   facilitation:
     - "1-on-1s separados (escutar ambos os lados)"
     - "Facilitated conversation (Roberto mediador)"
-    - "Focus em behaviors, n√£o pessoas (non-violent communication)"
-    - "Escalate para Jo√£o (PM) se n√£o resolver"
+    - "Focus em behaviors, n„o pessoas (non-violent communication)"
+    - "Escalate para Jo„o (PM) se n„o resolver"
   outcome: "Resolvido 70% das vezes sem escalation"
 ```
 
 ---
 
-## üîÑ Process Improvement Learnings
+## ?? Process Improvement Learnings
 
 ### Process Anti-Patterns Evitados
 _Processos ruins que abandonamos_
@@ -386,17 +386,17 @@ _Processos ruins que abandonamos_
 **Exemplo**:
 ```yaml
 - anti_pattern: "Scrum Master como Project Manager"
-  problem: "Roberto vira gargalo (single point of failure), time n√£o self-organizing"
-  solution: "Roberto facilitador apenas - time owns process, Jo√£o (PM) owns delivery"
+  problem: "Roberto vira gargalo (single point of failure), time n„o self-organizing"
+  solution: "Roberto facilitador apenas - time owns process, Jo„o (PM) owns delivery"
   impact: "Team autonomy +50%, Roberto bandwidth liberated"
   
 - anti_pattern: "Story points = hours (1 SP = 1 hour)"
   problem: "Estimativas vistas como commitment (pressure), velocity manipulation"
-  solution: "Story points abstratos (relative sizing), sem convers√£o para horas"
+  solution: "Story points abstratos (relative sizing), sem convers„o para horas"
   impact: "Estimativas mais honestas, menos gaming"
   
 - anti_pattern: "Daily Standup = status report para SM"
-  problem: "Time fala para Roberto (n√£o entre si), standup vira micro-management"
+  problem: "Time fala para Roberto (n„o entre si), standup vira micro-management"
   solution: "Walk the board (focus em stories), time coordena entre si"
   impact: "Collaboration +40%, standup duration -50%"
 ```
@@ -419,7 +419,7 @@ _Ajustes de processo para times remotos_
 - ceremony: "Daily Standup (hybrid)"
   tools: "Slack (async) + Zoom (sync opcional)"
   adjustments:
-    - "Async updates obrigat√≥rias (Slack thread)"
+    - "Async updates obrigatÛrias (Slack thread)"
     - "Sync apenas se blockers (opt-in)"
     - "Recording para time members em outros timezones"
   effectiveness: "Alta (flexibilidade +80%)"
@@ -429,12 +429,12 @@ _Ajustes de processo para times remotos_
     - "Virtual coffee breaks (Donut bot Slack)"
     - "Retrospectives com icebreakers"
     - "Quarterly off-sites (in-person)"
-  impact: "Team cohesion mantida (NPS n√£o caiu)"
+  impact: "Team cohesion mantida (NPS n„o caiu)"
 ```
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 
 ### Artifacts Relacionados:
 - Retrospective Facilitation: `${AVANADE_TASK_RETROSPECTIVE_FACILITATION}`
@@ -455,61 +455,61 @@ qa: ${AVANADE_MEMORY_QA_CARLA}
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de Sprint Planning:
-1. Consultar **Sprint Patterns** ‚Üí escolher sprint length adequado
-2. Revisar **Backlog Refinement Strategies** ‚Üí garantir PBIs prontos
-3. Consultar **Estimation Techniques** ‚Üí escolher m√©todo apropriado
+### ? ANTES de Sprint Planning:
+1. Consultar **Sprint Patterns** ? escolher sprint length adequado
+2. Revisar **Backlog Refinement Strategies** ? garantir PBIs prontos
+3. Consultar **Estimation Techniques** ? escolher mÈtodo apropriado
 
-### ‚úÖ DURANTE Sprint:
-1. Aplicar **Ceremony Optimization Patterns** ‚Üí meetings eficientes
-2. Usar **Impediment Management** ‚Üí resolver blockers rapidamente
-3. Monitorar **Team Morale Indicators** ‚Üí early warning de problemas
+### ? DURANTE Sprint:
+1. Aplicar **Ceremony Optimization Patterns** ? meetings eficientes
+2. Usar **Impediment Management** ? resolver blockers rapidamente
+3. Monitorar **Team Morale Indicators** ? early warning de problemas
 
-### ‚úÖ EM Retrospectives:
-1. Escolher **Retrospective Formats** ‚Üí evitar monotonia
-2. Aplicar **Conflict Facilitation** ‚Üí resolver diverg√™ncias construtivamente
-3. Evitar **Process Anti-Patterns** ‚Üí melhoria cont√≠nua
+### ? EM Retrospectives:
+1. Escolher **Retrospective Formats** ? evitar monotonia
+2. Aplicar **Conflict Facilitation** ? resolver divergÍncias construtivamente
+3. Evitar **Process Anti-Patterns** ? melhoria contÌnua
 
-### ‚úÖ AP√ìS Sprint:
-1. **Atualizar mem√≥ria** com novos learnings
-2. Documentar **Velocity Tracking** ‚Üí trends e interpreta√ß√µes
-3. Atualizar **DoD Evolution** ‚Üí se mudan√ßas no processo
+### ? AP”S Sprint:
+1. **Atualizar memÛria** com novos learnings
+2. Documentar **Velocity Tracking** ? trends e interpretaÁıes
+3. Atualizar **DoD Evolution** ? se mudanÁas no processo
 
 ---
 
-## üè¢ D365 CE Sprint Context - FTD Educa√ß√£o
+## ?? D365 CE Sprint Context - FTD EducaÁ„o
 
-### Cerim√¥nias FTD (Reais)
-| Dia | Reuni√£o | Participantes |
+### CerimÙnias FTD (Reais)
+| Dia | Reuni„o | Participantes |
 |-----|---------|---------------|
 | Segunda | Squad trabalho (10:30) | Dev + UX + Oscar + Kevellin + Fabi |
-| Ter√ßa | Neg√≥cio | √Årea de neg√≥cio + Oscar |
+| TerÁa | NegÛcio | ¡rea de negÛcio + Oscar |
 | Quinta | Tecnologia | Arquitetos + Oscar + Medella + Jovanello |
 
 ### Times Concorrentes
-- **Squad CRM** (Julio): melhorias + sustenta√ß√£o (time pequeno)
-- **Squad √Årea do Cliente**: Canvas App + mesmas tabelas Dataverse (squad link para coordenar)
-- **Time de Integra√ß√£o** (Thiago Veiga): constr√≥i endpoints
-- **Avanade**: assumindo Onda 1 p√≥s-MVP
-- **Pipeline concorrido** com outras √°reas da FTD
+- **Squad CRM** (Julio): melhorias + sustentaÁ„o (time pequeno)
+- **Squad ¡rea do Cliente**: Canvas App + mesmas tabelas Dataverse (squad link para coordenar)
+- **Time de IntegraÁ„o** (Thiago Veiga): constrÛi endpoints
+- **Avanade**: assumindo Onda 1 pÛs-MVP
+- **Pipeline concorrido** com outras ·reas da FTD
 
-### Impedimentos T√≠picos FTD
-- Pipeline ocupado por outras √°reas (fila para deploy)
-- Ambientes QA e RC ainda n√£o configurados no pipeline
-- Repo desacoplado dos PBIs (migra√ß√£o em andamento)
-- Depend√™ncia de infra para VM de batch updates
-- Depend√™ncia de Giselle para abertura de GMUD/SMAX
-- Coexist√™ncia de 2 times no mesmo ambiente D365
-- Dataverse em n√≠vel cr√≠tico de armazenamento
-- Depend√™ncia de Oscar para regras de neg√≥cio (ele participa ativamente)
+### Impedimentos TÌpicos FTD
+- Pipeline ocupado por outras ·reas (fila para deploy)
+- Ambientes QA e RC ainda n„o configurados no pipeline
+- Repo desacoplado dos PBIs (migraÁ„o em andamento)
+- DependÍncia de infra para VM de batch updates
+- DependÍncia de Giselle para abertura de GMUD/SMAX
+- CoexistÍncia de 2 times no mesmo ambiente D365
+- Dataverse em nÌvel crÌtico de armazenamento
+- DependÍncia de Oscar para regras de negÛcio (ele participa ativamente)
 
 ### Sprint Considerations FTD
-- D√©bitos t√©cnicos atacados APENAS quando sobra capacidade ("n√£o planejados")
-- Coordenar com Squad √Årea do Cliente para mudan√ßas em tabelas compartilhadas
-- Plugin deploy manual para Dev (pipeline s√≥ para OAT/Prod)
-- GMUD para Produ√ß√£o requer antecipa√ß√£o (recurso infra)
+- DÈbitos tÈcnicos atacados APENAS quando sobra capacidade ("n„o planejados")
+- Coordenar com Squad ¡rea do Cliente para mudanÁas em tabelas compartilhadas
+- Plugin deploy manual para Dev (pipeline sÛ para OAT/Prod)
+- GMUD para ProduÁ„o requer antecipaÁ„o (recurso infra)
 - **Knowledge Base**: `docs/ftd-knowledge-base.md`
 
 ---

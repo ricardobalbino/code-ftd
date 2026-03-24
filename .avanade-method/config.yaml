@@ -26,9 +26,9 @@ project:
 # MANDATORY READING - Loaded by ALL agents
 # ============================================================
 devLoadAlwaysFiles:
-  - .avanade-method/docs/ftd-knowledge-base.md
-  - .avanade-method/docs/discovery/ftd-discovery.md
-  - .avanade-method/docs/especificacao-simulador-notion.md
+  - docs/ftd-knowledge-base.md
+  - docs/discovery/ftd-discovery.md
+  - docs/especificacao-simulador-notion.md
   - .avanade-method/configs/d365-config.yaml
   - .github/instructions/avanade-bca-guidelines.instructions.md
   - docs/arquitetura/d365-solution-architecture.md

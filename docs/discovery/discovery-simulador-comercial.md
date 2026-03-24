@@ -3,7 +3,7 @@
 **Projeto**: FTD Educação — Transformação CX  
 **Data**: 18/Mar/2026  
 **Fontes**: Especificação Notion (Oscar de Rooij), transcrições onboarding 09-10/Mar, refinamento 16-17/Mar  
-**Spec completa**: `.avanade-method/docs/especificacao-simulador-notion.md`
+**Spec completa**: `docs/especificacao-simulador-notion.md`
 
 ---
 

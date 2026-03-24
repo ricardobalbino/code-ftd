@@ -1,5 +1,5 @@
-Ôªø### Design Patterns Validados
-_Padr√µes arquiteturais que funcionaram bem_
+### Design Patterns Validados
+_Padrıes arquiteturais que funcionaram bem_
 
 **Exemplo**:
 ```yaml
@@ -12,26 +12,26 @@ _Padr√µes arquiteturais que funcionaram bem_
   cons:
     - Complexidade aumentada
     - Eventual consistency
-  recommendation: "Usar apenas se auditoria/compliance √© requisito cr√≠tico"
+  recommendation: "Usar apenas se auditoria/compliance È requisito crÌtico"
   projects: ["FinanceHub", "ComplianceTracker"]
   
 - pattern: "API Gateway + Microservices"
-  context: "E-commerce com m√∫ltiplos canais (web, mobile, partners)"
+  context: "E-commerce com m˙ltiplos canais (web, mobile, partners)"
   pros:
     - Escalabilidade granular
-    - Tecnologias heterog√™neas
+    - Tecnologias heterogÍneas
     - Deployment independente
   cons:
     - Overhead operacional (monitoring, orchestration)
     - Distributed transactions complexas
-  recommendation: "Adequado para teams >15 devs, m√∫ltiplos produtos"
+  recommendation: "Adequado para teams >15 devs, m˙ltiplos produtos"
   projects: ["ShopOnline", "MarketplaceX"]
 ```
 
 ---
 
 ### ADRs (Architecture Decision Records)
-_Decis√µes arquiteturais documentadas_
+_Decisıes arquiteturais documentadas_
 
 **Exemplo**:
 ```yaml
@@ -43,25 +43,25 @@ _Decis√µes arquiteturais documentadas_
   decision: "Azure SQL Database (Elastic Pool)"
   rationale:
     - Dados relacionais estruturados
-    - ACID transactions necess√°rias (pedidos)
+    - ACID transactions necess·rias (pedidos)
     - Time tem expertise em SQL
     - Custo 40% menor que Cosmos DB para workload esperado
   consequences:
     - Single-region deployment inicialmente
-    - Escalabilidade vertical at√© 80k RPM (Elastic Pool)
+    - Escalabilidade vertical atÈ 80k RPM (Elastic Pool)
     - Fallback: Sharding se ultrapassar 80k RPM
   alternatives_considered:
     - Cosmos DB: Rejected (overkill para workload, custo alto)
-    - PostgreSQL: Rejected (prefer√™ncia Azure-native)
+    - PostgreSQL: Rejected (preferÍncia Azure-native)
   
 - adr_id: "ADR-002"
-  title: "Autentica√ß√£o via Azure AD B2C"
+  title: "AutenticaÁ„o via Azure AD B2C"
   date: "2024-02-01"
   status: "Aceito"
-  context: "Portal cliente com 50k usu√°rios externos"
+  context: "Portal cliente com 50k usu·rios externos"
   decision: "Azure AD B2C com social login (Google, Facebook)"
   rationale:
-    - Managed service (menos manuten√ß√£o)
+    - Managed service (menos manutenÁ„o)
     - MFA nativo
     - Compliance (LGPD/GDPR built-in)
     - Social login reduz friction (signup)
@@ -70,7 +70,7 @@ _Decis√µes arquiteturais documentadas_
     - Custo: R$ 0,015/MAU (Monthly Active User)
   alternatives_considered:
     - Auth0: Rejected (custo 3x maior)
-    - Custom solution: Rejected (security risk, manuten√ß√£o alta)
+    - Custom solution: Rejected (security risk, manutenÁ„o alta)
 ```
 
 ---
@@ -106,7 +106,7 @@ _Tecnologias avaliadas e escolhas_
   rationale: "Relational data, ACID, managed service"
   alternatives:
     - Cosmos DB: Para scenarios de global distribution
-    - PostgreSQL: Quando open-source √© mandat√≥rio
+    - PostgreSQL: Quando open-source È mandatÛrio
 ```
 
 ---
@@ -124,7 +124,7 @@ _Benchmarks de arquiteturas testadas_
     - Nginx: "Latency P95 = 12ms, throughput = 10.2k RPS"
     - Envoy: "Latency P95 = 18ms, throughput = 10k RPS"
   decision: "Azure APIM escolhido (features > raw performance)"
-  notes: "Nginx mais r√°pido mas falta policy management, analytics built-in"
+  notes: "Nginx mais r·pido mas falta policy management, analytics built-in"
   
 - scenario: "Caching Strategy"
   date: "2024-02-05"
@@ -132,25 +132,25 @@ _Benchmarks de arquiteturas testadas_
     - In-memory (no cache): "Response time 250ms"
     - Redis cache: "Response time 15ms (94% improvement)"
     - CDN (Azure Front Door): "Response time 8ms (97% improvement)"
-  decision: "Redis para API data, CDN para assets est√°ticos"
+  decision: "Redis para API data, CDN para assets est·ticos"
 ```
 
 ---
 
 ### Anti-Patterns Evitados
-_Decis√µes ruins evitadas (learnings)_
+_Decisıes ruins evitadas (learnings)_
 
 **Exemplo**:
 ```yaml
 - anti_pattern: "Microservices Prematurely"
   context: "Projeto pequeno (3 devs, 1 produto)"
-  problem: "Overhead de orchestration > benef√≠cios"
-  lesson: "Come√ßar monolito modular, extrair microservices quando necess√°rio"
-  threshold: "Considerar microservices com time >10 devs ou m√∫ltiplos produtos"
+  problem: "Overhead de orchestration > benefÌcios"
+  lesson: "ComeÁar monolito modular, extrair microservices quando necess·rio"
+  threshold: "Considerar microservices com time >10 devs ou m˙ltiplos produtos"
   
 - anti_pattern: "Over-engineering Security"
   context: "Internal tool, zero external access"
-  problem: "Investido 3 sprints em security desnecess√°ria"
+  problem: "Investido 3 sprints em security desnecess·ria"
   lesson: "Security proporcional ao risco (threat modeling first)"
   
 - anti_pattern: "NoSQL para Relational Data"
@@ -162,12 +162,12 @@ _Decis√µes ruins evitadas (learnings)_
 ---
 
 ### Cloud Patterns (Azure-Specific)
-_Padr√µes testados na Azure_
+_Padrıes testados na Azure_
 
 **Exemplo**:
 ```yaml
 - pattern: "Strangler Fig (Legacy Migration)"
-  context: "Migra√ß√£o gradual on-prem ‚Üí Azure"
+  context: "MigraÁ„o gradual on-prem ? Azure"
   implementation:
     - Azure API Management como facade
     - Rotear requests para novo sistema gradualmente (feature flags)
@@ -176,12 +176,12 @@ _Padr√µes testados na Azure_
   projects: ["LegacyMigrationX"]
   
 - pattern: "Circuit Breaker"
-  context: "Microservices com depend√™ncias externas"
+  context: "Microservices com dependÍncias externas"
   implementation:
     - Polly library (.NET)
-    - Fallback para cache ou response padr√£o
+    - Fallback para cache ou response padr„o
   success_rate: "Alta"
-  notes: "Preven√ß√£o de cascading failures"
+  notes: "PrevenÁ„o de cascading failures"
 ```
 
 ---
@@ -191,14 +191,14 @@ _Aprendizados sobre escalabilidade_
 
 **Exemplo**:
 ```yaml
-- insight: "Database √© sempre o gargalo"
-  evidence: "80% dos projetos com performance issues ‚Üí queries n√£o otimizadas"
+- insight: "Database È sempre o gargalo"
+  evidence: "80% dos projetos com performance issues ? queries n„o otimizadas"
   solutions:
-    - Indexa√ß√£o adequada (composite indexes)
+    - IndexaÁ„o adequada (composite indexes)
     - Read replicas para queries pesadas
     - Caching agressivo (Redis)
   
-- insight: "Stateless √© chave para horizontal scaling"
+- insight: "Stateless È chave para horizontal scaling"
   evidence: "Projetos com session in-memory falharam ao escalar"
   solutions:
     - Externalizar state (Redis, database)
@@ -207,33 +207,33 @@ _Aprendizados sobre escalabilidade_
 
 ---
 
-## üîí Security Decisions
-_Decis√µes de seguran√ßa documentadas_
+## ?? Security Decisions
+_Decisıes de seguranÁa documentadas_
 
 **Exemplo**:
 ```yaml
 - decision: "Azure Key Vault para secrets"
   date: "2024-01-20"
-  rationale: "Centralizar secrets, rotation autom√°tica, audit logs"
+  rationale: "Centralizar secrets, rotation autom·tica, audit logs"
   cost: "R$ 0,15/secret/month (baixo)"
   alternative_rejected: "Env vars hardcoded (risk de leak)"
   
 - decision: "Managed Identity para Azure services"
   date: "2024-02-10"
-  rationale: "Zero secrets no c√≥digo, auth autom√°tica entre services"
-  example: "App Service ‚Üí SQL Database (managed identity, sem connection string)"
+  rationale: "Zero secrets no cÛdigo, auth autom·tica entre services"
+  example: "App Service ? SQL Database (managed identity, sem connection string)"
 ```
 
 ---
 
-## üìä Cost Optimization Learnings
-_Otimiza√ß√µes de custo aplicadas_
+## ?? Cost Optimization Learnings
+_OtimizaÁıes de custo aplicadas_
 
 **Exemplo**:
 ```yaml
 - optimization: "Reserved Instances (VMs)"
   savings: "65% (1-year commitment)"
-  context: "Production workloads est√°veis"
+  context: "Production workloads est·veis"
   
 - optimization: "Auto-shutdown Dev/Test environments"
   savings: "R$ 8k/month"
@@ -241,12 +241,12 @@ _Otimiza√ß√µes de custo aplicadas_
   
 - optimization: "Blob Storage Lifecycle Management"
   savings: "40% storage costs"
-  implementation: "Hot ‚Üí Cool (30 days) ‚Üí Archive (90 days)"
+  implementation: "Hot ? Cool (30 days) ? Archive (90 days)"
 ```
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 _Links para artefatos relacionados_
 
 - Architecture Template: `${AVANADE_ARCHITECTURE_TEMPLATE}`
@@ -256,59 +256,59 @@ _Links para artefatos relacionados_
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de criar arquitetura:
-1. Consultar **Design Patterns** ‚Üí reutilizar patterns validados
-2. Revisar **ADRs** ‚Üí evitar decis√µes ruins passadas
-3. Checar **Tech Stack Preferences** ‚Üí escolhas consistentes
-4. Analisar **Anti-Patterns** ‚Üí n√£o repetir erros
+### ? ANTES de criar arquitetura:
+1. Consultar **Design Patterns** ? reutilizar patterns validados
+2. Revisar **ADRs** ? evitar decisıes ruins passadas
+3. Checar **Tech Stack Preferences** ? escolhas consistentes
+4. Analisar **Anti-Patterns** ? n„o repetir erros
 
-### ‚úÖ DURANTE design:
-1. Documentar **decis√µes cr√≠ticas** como ADRs
+### ? DURANTE design:
+1. Documentar **decisıes crÌticas** como ADRs
 2. Validar contra **Performance Benchmarks**
 3. Aplicar **Cloud Patterns** adequados
 4. Considerar **Cost Optimization** upfront
 
-### ‚úÖ AP√ìS implementa√ß√£o:
-1. **Atualizar mem√≥ria** com novos patterns/decisions
+### ? AP”S implementaÁ„o:
+1. **Atualizar memÛria** com novos patterns/decisions
 2. Documentar **Benchmarks** reais (vs estimados)
 3. Registrar **Lessons Learned**
 4. Atualizar **Tech Stack Preferences** se tecnologia nova validada
 
 ---
 
-## üè¢ D365 CE Architecture Context - FTD Educa√ß√£o
+## ?? D365 CE Architecture Context - FTD EducaÁ„o
 
-### Decis√µes Arquiteturais J√Å TOMADAS
-1. **Simulador Comercial**: Power Pages (frontend) + CRM (motor) - N√ÉO Canvas App, N√ÉO Custom Page
-   - Motivo: responsividade mobile+desktop, liberdade de layout, √∫nico codebase, licen√ßa inclusa (Entra ID)
-2. **C√°lculos**: Frontend real-time (JS/PowerFX) + valida√ß√£o backend Azure Functions
-   - D√©bounce: ‚â§50 produtos ‚Üí plugin sync; >50 ‚Üí Azure Function
-3. **Integra√ß√µes**: Time CRM consome endpoints (time Thiago Veiga constr√≥i)
-   - Sem API Management padr√£o
-   - Simples ‚Üí Power Automate; Complexo ‚Üí Azure Function
-4. **Repo**: Feature branches de `dev` (master n√£o usado para deploy)
-5. **Solu√ß√µes**: 9 solutions numeradas por tipo de componente
+### Decisıes Arquiteturais J¡ TOMADAS
+1. **Simulador Comercial**: Power Pages (frontend) + CRM (motor) - N√O Canvas App, N√O Custom Page
+   - Motivo: responsividade mobile+desktop, liberdade de layout, ˙nico codebase, licenÁa inclusa (Entra ID)
+2. **C·lculos**: Frontend real-time (JS/PowerFX) + validaÁ„o backend Azure Functions
+   - DÈbounce: =50 produtos ? plugin sync; >50 ? Azure Function
+3. **IntegraÁıes**: Time CRM consome endpoints (time Thiago Veiga constrÛi)
+   - Sem API Management padr„o
+   - Simples ? Power Automate; Complexo ? Azure Function
+4. **Repo**: Feature branches de `dev` (master n„o usado para deploy)
+5. **SoluÁıes**: 9 solutions numeradas por tipo de componente
 
 ### Problemas Arquiteturais a Resolver
-- **Tabela de produtos polu√≠da**: 1.283 linhas (deveria ser 15) - precisa separa√ß√£o prateleira vs customizado vs personalizado
-- **12+ tabelas de pre√ßo**: workaround de visibilidade, n√£o pricing ‚Üí redesenhar para tabela √∫nica
-- **Campos duplicados Oportunidade ‚Üî Proposta**: oportunidade ser√° "ressignificada"
-- **1 proposta por canal de venda ‚Üí 1 proposta multi-canal**: mudan√ßa conceitual
-- **Cadastro de contas**: sem owner da informa√ß√£o (CRM vs TOTVS race condition)
-- **Contratos**: 50+ templates Word ‚Üí modularizar com jur√≠dico
-- **Vulcano**: eliminar aprova√ß√£o externa duplicada
-- **Security roles**: n√£o equalizadas entre ambientes
-- **Dataverse em n√≠vel cr√≠tico de armazenamento**
+- **Tabela de produtos poluÌda**: 1.283 linhas (deveria ser 15) - precisa separaÁ„o prateleira vs customizado vs personalizado
+- **12+ tabelas de preÁo**: workaround de visibilidade, n„o pricing ? redesenhar para tabela ˙nica
+- **Campos duplicados Oportunidade ? Proposta**: oportunidade ser· "ressignificada"
+- **1 proposta por canal de venda ? 1 proposta multi-canal**: mudanÁa conceitual
+- **Cadastro de contas**: sem owner da informaÁ„o (CRM vs TOTVS race condition)
+- **Contratos**: 50+ templates Word ? modularizar com jurÌdico
+- **Vulcano**: eliminar aprovaÁ„o externa duplicada
+- **Security roles**: n„o equalizadas entre ambientes
+- **Dataverse em nÌvel crÌtico de armazenamento**
 
-### Landscape de Integra√ß√£o
+### Landscape de IntegraÁ„o
 ```
-CRM D365 ‚Üî TOTVS/Datasul (ETLs bidirecionais, sync contas 1x/dia 6h)
-CRM D365 ‚Üî ISA (cadastro de produto - a redesenhar)
-CRM D365 ‚Üí Adobe Sign (plugin Adobe Agreement - migrando)
-CRM D365 ‚Üí Data Lake (ETLs + events)
-CRM D365 ‚Üî √Årea do Cliente (Canvas App, mesmas tabelas Dataverse, squad separada)
+CRM D365 ? TOTVS/Datasul (ETLs bidirecionais, sync contas 1x/dia 6h)
+CRM D365 ? ISA (cadastro de produto - a redesenhar)
+CRM D365 ? Adobe Sign (plugin Adobe Agreement - migrando)
+CRM D365 ? Data Lake (ETLs + events)
+CRM D365 ? ¡rea do Cliente (Canvas App, mesmas tabelas Dataverse, squad separada)
 Monitoring: Datadog (APM) + Grafana (dashboards) + App Insights (AF telemetry)
 ```
 
@@ -316,14 +316,14 @@ Monitoring: Datadog (APM) + Grafana (dashboards) + App Insights (AF telemetry)
 | Env | Pipeline | Status |
 |-----|----------|--------|
 | Dev | Manual (plugins) | Ativo |
-| OAT | Autom√°tico | Ativo |
-| Prod | Autom√°tico + GMUD/SMAX | Ativo |
-| QA | N√£o configurado | Criado |
-| Release Candidate | N√£o configurado | Criado |
+| OAT | Autom·tico | Ativo |
+| Prod | Autom·tico + GMUD/SMAX | Ativo |
+| QA | N„o configurado | Criado |
+| Release Candidate | N„o configurado | Criado |
 
 ### Architecture Artifacts
 - Template: `d365-architecture-template.md`
 - Config: `d365-config.yaml`
-- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT√ìRIA)
+- **Knowledge Base**: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT”RIA)
 
 ---

@@ -25,7 +25,7 @@ core_principles:
   - "Automação primeiro - testes manuais são último recurso"
   - "Qualidade é responsabilidade de todos - mas QA é guardião"
   - "VALIDAR conformidade com BCA Avanade: Plugin<T>→Service→Repository, [PluginRegistration], Early Bound, Contract/Controller, Shift-Left, Code Review Checklist BCA"
-  - "REFERÊNCIA: .github/instructions/avanade-bca-guidelines.instructions.md e .avanade-method/docs/diretriz-avanade-inventory.md"
+  - "REFERÊNCIA: .github/instructions/avanade-bca-guidelines.instructions.md e docs/diretriz-avanade-inventory.md"
 
 menu:
   - cmd: "TS or test-story"
@@ -70,9 +70,9 @@ ftd_project_context:
   stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
   key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   mandatory_docs:
-    - ".avanade-method/docs/ftd-knowledge-base.md"
-    - ".avanade-method/docs/discovery/ftd-discovery.md"
-    - ".avanade-method/docs/especificacao-simulador-notion.md"
+    - "docs/ftd-knowledge-base.md"
+    - "docs/discovery/ftd-discovery.md"
+    - "docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
   architecture_docs:
     - "docs/arquitetura/d365-solution-architecture.md"

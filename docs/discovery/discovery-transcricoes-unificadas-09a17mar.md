@@ -3,7 +3,7 @@
 **Projeto**: FTD Educação — Transformação CX  
 **Data de compilação**: 18/Mar/2026  
 **Total de reuniões**: 7 sessões + 1 documento PBS  
-**Fontes**: `.avanade-method/docs/transcriçao/` (7 arquivos ~587KB total)
+**Fontes**: `docs/transcriçao/` (7 arquivos ~587KB total)
 
 ---
 

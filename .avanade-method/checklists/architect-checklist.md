@@ -1,12 +1,12 @@
-﻿---
+---
 
-## 📋 Objetivo
+## ?? Objetivo
 
-Checklist mestre para Arquitetos de Software. Consolida todas as validações, considerações e melhores práticas para garantir decisões arquiteturais sólidas e bem documentadas.
+Checklist mestre para Arquitetos de Software. Consolida todas as valida��es, considera��es e melhores pr�ticas para garantir decis�es arquiteturais s�lidas e bem documentadas.
 
 ---
 
-## 🔍 Checklist de Arquitetura
+## ?? Checklist de Arquitetura
 
 ### 1. Requirements Clarity
 
@@ -15,7 +15,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
   - Acceptance criteria claros
   - Edge cases identificados
 
-- [ ] **Requisitos não-funcionais definidos?**
+- [ ] **Requisitos n�o-funcionais definidos?**
   - Performance (latency, throughput)
   - Scalability (users, data volume)
   - Availability (uptime target)
@@ -41,7 +41,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
   - Responsibilities clear
   - Communication patterns documented
 
-- [ ] **Component diagrams para containers críticos?** (C4 Level 3)
+- [ ] **Component diagrams para containers cr�ticos?** (C4 Level 3)
   - Key components identified
   - Interfaces defined
   - Dependencies mapped
@@ -66,12 +66,12 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
   - Pros/cons documented
   - Decision rationale clear
 
-- [ ] **ADRs criados para decisões importantes?**
+- [ ] **ADRs criados para decis�es importantes?**
   - Template: ${AVANADE_ADR_TEMPLATE}
   - Context documented
   - Consequences understood
 
-- [ ] **Proof of Concept para riscos técnicos?**
+- [ ] **Proof of Concept para riscos t�cnicos?**
   - Unknown technologies validated
   - Integration feasibility confirmed
   - Performance assumptions tested
@@ -159,7 +159,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
   - Versioning strategy
   - Error handling standards
 
-- [ ] **Event-driven patterns se aplicável?**
+- [ ] **Event-driven patterns se aplic�vel?**
   - Event schema defined
   - Eventual consistency handled
   - Ordering guarantees clear
@@ -189,7 +189,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
   - Escalation paths
   - On-call procedures
 
-- [ ] **Distributed tracing se aplicável?**
+- [ ] **Distributed tracing se aplic�vel?**
   - Tracing technology chosen
   - Span propagation
   - Sampling strategy
@@ -239,7 +239,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
 
 ---
 
-## 📊 Architecture Review Checklist
+## ?? Architecture Review Checklist
 
 | Aspecto | Score (1-5) | Notas |
 |---------|-------------|-------|
@@ -252,37 +252,37 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
 | Documentation | | |
 | **Average** | | |
 
-**Threshold para aprovação**: ≥ 4.0
+**Threshold para aprova��o**: = 4.0
 
 ---
 
-## 🎯 Architecture Decision Record (ADR) Quick Template
+## ?? Architecture Decision Record (ADR) Quick Template
 
 ```markdown
-# ADR-XXX: [Título]
+# ADR-XXX: [T�tulo]
 
 ## Status
 [Proposed | Accepted | Deprecated | Superseded]
 
 ## Context
-[Contexto que motivou a decisão]
+[Contexto que motivou a decis�o]
 
 ## Decision
-[A decisão tomada]
+[A decis�o tomada]
 
 ## Consequences
-[Consequências positivas e negativas]
+[Consequ�ncias positivas e negativas]
 ```
 
 **Full template**: ${AVANADE_ADR_TEMPLATE}
 
 ---
 
-## 📅 Cadência de Atividades
+## ?? Cad�ncia de Atividades
 
 ### Por Sprint
-- [ ] Review de decisões arquiteturais
-- [ ] Atualização de ADRs se necessário
+- [ ] Review de decis�es arquiteturais
+- [ ] Atualiza��o de ADRs se necess�rio
 - [ ] Tech debt assessment
 
 ### Por Release
@@ -297,7 +297,7 @@ Checklist mestre para Arquitetos de Software. Consolida todas as validações, c
 
 ---
 
-## 🔗 Relacionamentos
+## ?? Relacionamentos
 
 - **Templates**:
   - ${AVANADE_ARCHITECTURE_TEMPLATE}

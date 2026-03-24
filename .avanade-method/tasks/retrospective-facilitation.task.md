@@ -1,8 +1,8 @@
-ï»¿## Objetivo
-Facilitar retrospectiva de sprint estruturada para identificar melhorias contÃ­nuas.
+## Objetivo
+Facilitar retrospectiva de sprint estruturada para identificar melhorias contínuas.
 
 
-## ğŸ”„ Formato: 5 Fases (Agile Retrospectives)
+## ?? Formato: 5 Fases (Agile Retrospectives)
 
 ### Fase 1: Set the Stage (5-10 min)
 **Objetivo**: Criar ambiente seguro e engajado
@@ -13,27 +13,27 @@ Facilitar retrospectiva de sprint estruturada para identificar melhorias contÃ­n
 - [ ] **Foco**: Definir objetivo da retro (ex: "melhorar qualidade")
 
 **Prime Directive**:
-> "Independente do que descobrirmos, entendemos e acreditamos que todos fizeram o melhor trabalho possÃ­vel, dado o que sabiam no momento, suas habilidades, recursos disponÃ­veis e a situaÃ§Ã£o."
+> "Independente do que descobrirmos, entendemos e acreditamos que todos fizeram o melhor trabalho possível, dado o que sabiam no momento, suas habilidades, recursos disponíveis e a situação."
 
-**Icebreaker RÃ¡pido** (opcional):
-- Emoji do sprint ğŸ˜ŠğŸ˜ğŸ˜
+**Icebreaker Rápido** (opcional):
+- Emoji do sprint ??????
 - Nota 1-5 para sprint
 - Palavra-chave do sprint
 
 ---
 
 ### Fase 2: Gather Data (10-15 min)
-**Objetivo**: Coletar fatos e percepÃ§Ãµes
+**Objetivo**: Coletar fatos e percepções
 
-**TÃ©cnicas**:
+**Técnicas**:
 
-#### ğŸŒŸ Timeline
+#### ?? Timeline
 Criar linha do tempo visual do sprint:
 ```
-Segunda | TerÃ§a | Quarta | Quinta | Sexta
-   ğŸ˜Š       ğŸ˜      ğŸ˜       ğŸ˜Š      ğŸ˜Š
-   â†“        â†“       â†“        â†“       â†“
-Deploy  Planning Bug CrÃ­tico Fix   Review
+Segunda | Terça | Quarta | Quinta | Sexta
+   ??       ??      ??       ??      ??
+   ?        ?       ?        ?       ?
+Deploy  Planning Bug Crítico Fix   Review
 ```
 
 **Como fazer**:
@@ -42,7 +42,7 @@ Deploy  Planning Bug CrÃ­tico Fix   Review
 3. Marcar com emoji (positivo/negativo/neutro)
 4. Agrupar eventos similares
 
-#### ğŸ“Š MÃ©tricas do Sprint
+#### ?? Métricas do Sprint
 Apresentar dados objetivos:
 - **Velocity**: Pontos planejados vs entregues
 - **Quality**: Bugs encontrados, code review time
@@ -50,53 +50,53 @@ Apresentar dados objetivos:
 - **Happiness**: Mood tracking, team satisfaction
 
 **Template**:
-| MÃ©trica | Planejado | Realizado | âˆ† |
+| Métrica | Planejado | Realizado | ? |
 |---------|-----------|-----------|---|
 | Story Points | 40 | 35 | -12% |
-| Bugs ProduÃ§Ã£o | <5 | 8 | +60% âš ï¸ |
-| Code Review Time | <24h | 18h | âœ… |
+| Bugs Produção | <5 | 8 | +60% ?? |
+| Code Review Time | <24h | 18h | ? |
 
 ---
 
 ### Fase 3: Generate Insights (15-20 min)
-**Objetivo**: Identificar padrÃµes e causas raiz
+**Objetivo**: Identificar padrões e causas raiz
 
-**TÃ©cnicas**:
+**Técnicas**:
 
-#### ğŸ” 5 Whys
+#### ?? 5 Whys
 Para problemas recorrentes:
 ```
-Problema: Bugs em produÃ§Ã£o aumentaram
-1. Por quÃª? â†’ Testes insuficientes
-2. Por quÃª? â†’ PressÃ£o de tempo na sprint
-3. Por quÃª? â†’ Overcommitment no planning
-4. Por quÃª? â†’ NÃ£o consideramos tempo de teste
-5. Por quÃª? â†’ Definition of Done nÃ£o inclui teste manual
-âœ“ Causa raiz: DoD incompleta
+Problema: Bugs em produção aumentaram
+1. Por quê? ? Testes insuficientes
+2. Por quê? ? Pressão de tempo na sprint
+3. Por quê? ? Overcommitment no planning
+4. Por quê? ? Não consideramos tempo de teste
+5. Por quê? ? Definition of Done não inclui teste manual
+? Causa raiz: DoD incompleta
 ```
 
-#### ğŸ“‹ CategorizaÃ§Ã£o (What Went Well / What to Improve)
+#### ?? Categorização (What Went Well / What to Improve)
 Quadrante simples:
 ```
-âœ… O QUE FOI BEM           | ğŸ”§ O QUE MELHORAR
+? O QUE FOI BEM           | ?? O QUE MELHORAR
 ---------------------------+---------------------------
-- Deploy sem downtime      | - Bugs em produÃ§Ã£o (+60%)
-- Code review rÃ¡pido       | - Overcommitment no planning
-- ComunicaÃ§Ã£o melhorou     | - DocumentaÃ§Ã£o atrasada
+- Deploy sem downtime      | - Bugs em produção (+60%)
+- Code review rápido       | - Overcommitment no planning
+- Comunicação melhorou     | - Documentação atrasada
 ```
 
-#### ğŸ¯ Starfish (Keep/More/Less/Start/Stop)
+#### ?? Starfish (Keep/More/Less/Start/Stop)
 Mais granular que WWW/WTI:
 ```
-â­ KEEP (continuar)       | ğŸ†• START (comeÃ§ar)
+? KEEP (continuar)       | ?? START (começar)
 - Daily stand-ups          | - Test automation
 - Pair programming         | - Refinement mid-sprint
                            |
-â• MORE (fazer mais)       | â– LESS (fazer menos)
+? MORE (fazer mais)       | ? LESS (fazer menos)
 - Code reviews             | - Multitasking
-- Documentation            | - ReuniÃµes longas
+- Documentation            | - Reuniões longas
                            |
-ğŸ›‘ STOP (parar)
+?? STOP (parar)
 - Deploy sexta-feira
 - Aceitar stories sem AC
 ```
@@ -104,31 +104,31 @@ Mais granular que WWW/WTI:
 ---
 
 ### Fase 4: Decide What to Do (10-15 min)
-**Objetivo**: Definir aÃ§Ãµes concretas e acionÃ¡veis
+**Objetivo**: Definir ações concretas e acionáveis
 
-**CritÃ©rios para AÃ§Ãµes**:
-- [ ] **SMART**: EspecÃ­fica, MensurÃ¡vel, AcionÃ¡vel, Relevante, Temporal
-- [ ] **Owner**: Pessoa responsÃ¡vel por executar
-- [ ] **Deadline**: Quando serÃ¡ implementada
+**Critérios para Ações**:
+- [ ] **SMART**: Específica, Mensurável, Acionável, Relevante, Temporal
+- [ ] **Owner**: Pessoa responsável por executar
+- [ ] **Deadline**: Quando será implementada
 - [ ] **Success Criteria**: Como saberemos que funcionou
 
-**Template de AÃ§Ã£o**:
+**Template de Ação**:
 ```
-âŒ Ruim: "Melhorar qualidade"
-âœ… Bom:
-  AÃ§Ã£o: Adicionar step de teste manual no DoD
+? Ruim: "Melhorar qualidade"
+? Bom:
+  Ação: Adicionar step de teste manual no DoD
   Owner: Roberto (SM)
-  Deadline: PrÃ³ximo sprint planning
+  Deadline: Próximo sprint planning
   Success: 100% stories testadas antes de demo
 ```
 
-**PriorizaÃ§Ã£o** (votar em top 2-3 aÃ§Ãµes):
-- Cada pessoa vota (dots) nas aÃ§Ãµes mais impactantes
-- Focar em **2-3 aÃ§Ãµes mÃ¡ximo** por sprint (evita sobrecarga)
-- Ignorar aÃ§Ãµes com 0 votos
+**Priorização** (votar em top 2-3 ações):
+- Cada pessoa vota (dots) nas ações mais impactantes
+- Focar em **2-3 ações máximo** por sprint (evita sobrecarga)
+- Ignorar ações com 0 votos
 
-**Exemplos de AÃ§Ãµes**:
-| AÃ§Ã£o | Owner | Deadline | Success Criteria |
+**Exemplos de Ações**:
+| Ação | Owner | Deadline | Success Criteria |
 |------|-------|----------|------------------|
 | Adicionar teste manual no DoD | Roberto | Sprint 11 Planning | 100% stories testadas antes demo |
 | Criar template de PR com checklist | Tiago | Semana 1 Sprint 11 | PRs usam template |
@@ -140,104 +140,104 @@ Mais granular que WWW/WTI:
 **Objetivo**: Encerrar com energia positiva
 
 **Atividades**:
-- [ ] **Recap**: Revisar aÃ§Ãµes decididas (ler em voz alta)
-- [ ] **Appreciations**: Agradecer contribuiÃ§Ãµes especÃ­ficas
+- [ ] **Recap**: Revisar ações decididas (ler em voz alta)
+- [ ] **Appreciations**: Agradecer contribuições específicas
 - [ ] **Check-out**: Roda final (1 palavra: como se sentem agora?)
 
 **Appreciations** (opcional mas poderoso):
 ```
-"Quero agradecer [pessoa] por [aÃ§Ã£o especÃ­fica]"
+"Quero agradecer [pessoa] por [ação específica]"
 
 Exemplos:
 - "Maria, obrigado por pair programming ontem quando eu travei no bug"
-- "Tiago, cÃ³digo review detalhado me ajudou a aprender muito"
+- "Tiago, código review detalhado me ajudou a aprender muito"
 ```
 
 ---
 
-## ğŸ“Š MÃ©tricas de Sucesso da Retro
+## ?? Métricas de Sucesso da Retro
 
 ### Quantitativas
-- **AÃ§Ãµes completadas**: % de aÃ§Ãµes da retro anterior concluÃ­das
-- **RecorrÃªncia de problemas**: Mesmo problema aparece >2 sprints?
+- **Ações completadas**: % de ações da retro anterior concluídas
+- **Recorrência de problemas**: Mesmo problema aparece >2 sprints?
 - **Participation rate**: % do time que participou ativamente
 
 ### Qualitativas
 - **Psychological safety**: Time se sente seguro para falar?
-- **Actionability**: AÃ§Ãµes sÃ£o concretas ou vagas?
-- **Follow-through**: AÃ§Ãµes sÃ£o revisadas na prÃ³xima retro?
+- **Actionability**: Ações são concretas ou vagas?
+- **Follow-through**: Ações são revisadas na próxima retro?
 
 ---
 
-## ğŸ¯ VariaÃ§Ãµes de Formato
+## ?? Variações de Formato
 
-### ğŸš€ Speed Retro (30 min)
+### ?? Speed Retro (30 min)
 Para sprints curtos ou times experientes:
 1. Set Stage (5 min)
 2. WWW + WTI (10 min)
-3. Dot voting + aÃ§Ãµes (10 min)
+3. Dot voting + ações (10 min)
 4. Close (5 min)
 
-### ğŸŒŸ Celebration Retro
-ApÃ³s release grande ou milestone:
+### ?? Celebration Retro
+Após release grande ou milestone:
 - Foco 80% em WWW (celebrar)
 - 20% em learnings
-- Sem pressÃ£o por aÃ§Ãµes
+- Sem pressão por ações
 
-### ğŸ”§ Problem-Solving Retro
-Para problema especÃ­fico recorrente:
+### ?? Problem-Solving Retro
+Para problema específico recorrente:
 - Fishbone diagram (Ishikawa)
 - Root cause analysis profundo
-- AÃ§Ãµes corretivas priorizadas
+- Ações corretivas priorizadas
 
 ---
 
-## ğŸ§  Dicas de FacilitaÃ§Ã£o
+## ?? Dicas de Facilitação
 
-### DO âœ…
+### DO ?
 - **Timeboxing rigoroso**: Respeite os tempos
-- **Vozes equilibradas**: Todos participam (usar tÃ©cnicas silenciosas tipo post-its)
-- **Foco em aprendizado**: NÃ£o buscar culpados
-- **AÃ§Ãµes concretas**: SMART, nÃ£o vagas
-- **Tracking**: Revisar aÃ§Ãµes da retro anterior
+- **Vozes equilibradas**: Todos participam (usar técnicas silenciosas tipo post-its)
+- **Foco em aprendizado**: Não buscar culpados
+- **Ações concretas**: SMART, não vagas
+- **Tracking**: Revisar ações da retro anterior
 
-### DON'T âŒ
-- **NÃ£o deixar pessoas dominarem**: Equilibrar participaÃ§Ã£o
-- **NÃ£o buscar culpados**: "Quem causou o bug?" â†’ âŒ
-- **NÃ£o ignorar elefante na sala**: Se problema Ã© Ã³bvio, endereÃ§ar
-- **NÃ£o sobrecarregar com aÃ§Ãµes**: Max 2-3 aÃ§Ãµes
-- **NÃ£o esquecer de revisar**: AÃ§Ãµes nÃ£o revisadas = desperdÃ­cio
+### DON'T ?
+- **Não deixar pessoas dominarem**: Equilibrar participação
+- **Não buscar culpados**: "Quem causou o bug?" ? ?
+- **Não ignorar elefante na sala**: Se problema é óbvio, endereçar
+- **Não sobrecarregar com ações**: Max 2-3 ações
+- **Não esquecer de revisar**: Ações não revisadas = desperdício
 
 ---
 
-## ğŸ“‹ Checklist de PreparaÃ§Ã£o (SM)
+## ?? Checklist de Preparação (SM)
 
 **Antes da Retro**:
 - [ ] Agendar retro (timebox 60-90 min)
-- [ ] Preparar mÃ©tricas do sprint (velocity, bugs, etc.)
-- [ ] Revisar aÃ§Ãµes da retro anterior
-- [ ] Escolher formato/tÃ©cnica (Timeline, Starfish, etc.)
-- [ ] Preparar ferramenta (Miro, Mural, lousa fÃ­sica)
+- [ ] Preparar métricas do sprint (velocity, bugs, etc.)
+- [ ] Revisar ações da retro anterior
+- [ ] Escolher formato/técnica (Timeline, Starfish, etc.)
+- [ ] Preparar ferramenta (Miro, Mural, lousa física)
 
 **Durante a Retro**:
-- [ ] ComeÃ§ar pontualmente
+- [ ] Começar pontualmente
 - [ ] Timebox cada fase
-- [ ] Facilitar (nÃ£o dominar)
-- [ ] Garantir participaÃ§Ã£o balanceada
-- [ ] Documentar aÃ§Ãµes
+- [ ] Facilitar (não dominar)
+- [ ] Garantir participação balanceada
+- [ ] Documentar ações
 
 **Depois da Retro**:
-- [ ] Compartilhar aÃ§Ãµes com time (Slack, email)
-- [ ] Adicionar aÃ§Ãµes no board (Jira, Azure Boards)
+- [ ] Compartilhar ações com time (Slack, email)
+- [ ] Adicionar ações no board (Jira, Azure Boards)
 - [ ] Acompanhar progresso durante sprint
-- [ ] Revisar na prÃ³xima retro
+- [ ] Revisar na próxima retro
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Metodologia Avanade
+## ?? Integração com Metodologia Avanade
 
-- **FrequÃªncia**: Final de cada sprint (obrigatÃ³rio)
+- **Frequência**: Final de cada sprint (obrigatório)
 - **Participants**: Todo time Scrum (Dev, PO, SM)
-- **Output**: 2-3 aÃ§Ãµes SMART
-- **Tracking**: ${AVANADE_MEMORY_SM_ROBERTO} (aÃ§Ãµes e learnings)
+- **Output**: 2-3 ações SMART
+- **Tracking**: ${AVANADE_MEMORY_SM_ROBERTO} (ações e learnings)
 - **Complementa**: Sprint Review (foco em produto) vs Retro (foco em processo)

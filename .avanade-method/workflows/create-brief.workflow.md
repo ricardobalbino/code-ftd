@@ -1,119 +1,119 @@
-Ôªø## üìã O que √© este Workflow?
+## ?? O que È este Workflow?
 
-O **create-product-brief** √© um workflow Avanade Method v6 de discovery colaborativo que cria um product brief atrav√©s de facilita√ß√£o passo-a-passo. √â o **kick-off opcional do Phase 1-Discovery** - uma alternativa mais leve que come√ßar direto no PRD.
+O **create-product-brief** È um workflow Avanade Method v6 de discovery colaborativo que cria um product brief atravÈs de facilitaÁ„o passo-a-passo. … o **kick-off opcional do Phase 1-Discovery** - uma alternativa mais leve que comeÁar direto no PRD.
 
-**Filosofia**: "Collaborative discovery antes de commitment - validar vis√£o antes de PRD completo"
+**Filosofia**: "Collaborative discovery antes de commitment - validar vis„o antes de PRD completo"
 
 ---
 
-## üéØ Quando Usar?
+## ?? Quando Usar?
 
-### ‚úÖ Use create-product-brief quando:
-- **Greenfield project** com vis√£o ainda nebulosa (precisa discovery antes de PRD)
-- **Stakeholder alignment** necess√°rio ANTES de PRD detalhado
-- **Quick validation** de ideia (brief = 2-3 p√°ginas, PRD = 10-20 p√°ginas)
+### ? Use create-product-brief quando:
+- **Greenfield project** com vis„o ainda nebulosa (precisa discovery antes de PRD)
+- **Stakeholder alignment** necess·rio ANTES de PRD detalhado
+- **Quick validation** de ideia (brief = 2-3 p·ginas, PRD = 10-20 p·ginas)
 - **Kickoff meeting** estruturado com stakeholders
-- **Budget approval** precisa de documento conciso de vis√£o
+- **Budget approval** precisa de documento conciso de vis„o
 - **Multiple options** sendo consideradas (brief compara alternativas)
 
-### ‚ùå N√ÉO use quando:
-- Vis√£o j√° est√° clara e aprovada (v√° direto para PRD)
+### ? N√O use quando:
+- Vis„o j· est· clara e aprovada (v· direto para PRD)
 - Projeto urgente sem tempo para discovery (use quick-spec)
-- Brief j√° existe e est√° validado (v√° para PRD ou research)
+- Brief j· existe e est· validado (v· para PRD ou research)
 - Projeto muito simples (<1 semana, use quick-dev)
 
 ---
 
-## ‚ö†Ô∏è STEP 0: Carregar Contexto FTD (OBRIGAT√ìRIO)
+## ?? STEP 0: Carregar Contexto FTD (OBRIGAT”RIO)
 
 **Antes de iniciar qualquer step deste workflow:**
-1. Ler `.avanade-method/config.yaml` ‚Üí `devLoadAlwaysFiles`
-2. Carregar docs mandat√≥rios:
-   - `ftd-knowledge-base.md` (processos, integra√ß√µes, gloss√°rio)
+1. Ler `.avanade-method/config.yaml` ? `devLoadAlwaysFiles`
+2. Carregar docs mandatÛrios:
+   - `ftd-knowledge-base.md` (processos, integraÁıes, gloss·rio)
    - `ftd-discovery.md` (fit-gap, pain points)
    - `especificacao-simulador-notion.md` (spec do Simulador Comercial)
    - `d365-config.yaml` (ambientes, naming, stack)
-3. Usar terminologia FTD (Safra, Spartan, Al√ßada, etc.)
+3. Usar terminologia FTD (Safra, Spartan, AlÁada, etc.)
 4. Respeitar regras D365 CE + Power Pages + Azure Functions
 
 ---
 
-## üîÑ Workflow Process (6 Steps)
+## ?? Workflow Process (6 Steps)
 
 ### STEP 1: init
-**Objetivo**: Detectar continua√ß√£o ou novo brief
-**A√ß√µes**:
+**Objetivo**: Detectar continuaÁ„o ou novo brief
+**AÁıes**:
 - Perguntar: "Criar novo brief ou continuar existente?"
 - Se existente: Carregar `{planning_artifacts}/product-brief.md`
 - Se novo: Inicializar template vazio
-- Configurar contexto de facilita√ß√£o
+- Configurar contexto de facilitaÁ„o
 
 **Output**: Brief template ou brief existente carregado
 
 ---
 
 ### STEP 2: vision (Problem & Solution)
-**Objetivo**: Articular problema e solu√ß√£o de alto n√≠vel
+**Objetivo**: Articular problema e soluÁ„o de alto nÌvel
 **Descoberta Guiada**:
 ```yaml
 Perguntas Facilitadoras:
-1. "Qual problema espec√≠fico este produto resolve?" 
-   ‚Üí Dor real de usu√°rios/neg√≥cio, n√£o feature list
-2. "Para quem √© este problema?" 
-   ‚Üí User personas prim√°rias (n√£o "todos")
-3. "Qual a solu√ß√£o proposta (1-2 frases)?"
-   ‚Üí WHAT not HOW - "Automatizar exports" n√£o "Build API REST"
-4. "Qual o diferencial desta solu√ß√£o?"
-   ‚Üí O que faz melhor que alternativas atuais
+1. "Qual problema especÌfico este produto resolve?" 
+   ? Dor real de usu·rios/negÛcio, n„o feature list
+2. "Para quem È este problema?" 
+   ? User personas prim·rias (n„o "todos")
+3. "Qual a soluÁ„o proposta (1-2 frases)?"
+   ? WHAT not HOW - "Automatizar exports" n„o "Build API REST"
+4. "Qual o diferencial desta soluÁ„o?"
+   ? O que faz melhor que alternativas atuais
 5. "Por que resolver AGORA?"
-   ‚Üí Market timing, regulatory, competitive pressure
+   ? Market timing, regulatory, competitive pressure
 ```
 
-**Documenta√ß√£o**:
+**DocumentaÁ„o**:
 ```markdown
 ## Problem Statement
-[Problema espec√≠fico com contexto de neg√≥cio]
+[Problema especÌfico com contexto de negÛcio]
 
 ## Target Users
-[Personas prim√°rias - n√£o mais que 2-3]
+[Personas prim·rias - n„o mais que 2-3]
 
 ## Proposed Solution
-[Descri√ß√£o high-level da solu√ß√£o - 2-3 par√°grafos]
+[DescriÁ„o high-level da soluÁ„o - 2-3 par·grafos]
 
 ## Value Proposition
-[Por que esta solu√ß√£o? Diferencial competitivo?]
+[Por que esta soluÁ„o? Diferencial competitivo?]
 
 ## Why Now?
 [Urgency drivers - market, regulatory, competitive]
 ```
 
-**Valida√ß√£o**: Problem Statement claro? Target Users espec√≠ficos? Solution WHAT not HOW?
+**ValidaÁ„o**: Problem Statement claro? Target Users especÌficos? Solution WHAT not HOW?
 
 ---
 
 ### STEP 3: users (User Segments & Journeys)
-**Objetivo**: Definir user segments e suas jornadas de alto n√≠vel
+**Objetivo**: Definir user segments e suas jornadas de alto nÌvel
 **Descoberta Guiada**:
 ```yaml
 Perguntas Facilitadoras:
-1. "Quais s√£o os user segments principais?"
-   ‚Üí Segmentar por comportamento/necessidades, n√£o demografia
+1. "Quais s„o os user segments principais?"
+   ? Segmentar por comportamento/necessidades, n„o demografia
 2. "Para cada segment, qual o workflow atual (as-is)?"
-   ‚Üí Pain points, manual steps, frustrations
+   ? Pain points, manual steps, frustrations
 3. "Qual a jornada ideal (to-be) com este produto?"
-   ‚Üí High-level user journey, n√£o detailed UI flows
-4. "Quais s√£o os key touchpoints?"
-   ‚Üí Onde usu√°rio interage com produto
+   ? High-level user journey, n„o detailed UI flows
+4. "Quais s„o os key touchpoints?"
+   ? Onde usu·rio interage com produto
 ```
 
-**Documenta√ß√£o**:
+**DocumentaÁ„o**:
 ```markdown
 ## User Segments
 
 ### Segment 1: [Nome]
-- **Characteristics**: [Quem s√£o, role, context]
-- **Current Pain Points**: [3-5 frustra√ß√µes espec√≠ficas]
-- **Goals with Product**: [O que querem alcan√ßar]
+- **Characteristics**: [Quem s„o, role, context]
+- **Current Pain Points**: [3-5 frustraÁıes especÌficas]
+- **Goals with Product**: [O que querem alcanÁar]
 
 ### Segment 2: [Nome]
 ...
@@ -134,26 +134,26 @@ Perguntas Facilitadoras:
 **Benefits**: [Time saved, error reduction, ease]
 ```
 
-**Valida√ß√£o**: User segments claros? Pain points espec√≠ficos? Journeys focam em outcomes n√£o features?
+**ValidaÁ„o**: User segments claros? Pain points especÌficos? Journeys focam em outcomes n„o features?
 
 ---
 
 ### STEP 4: metrics (Success Criteria)
-**Objetivo**: Definir m√©tricas de sucesso mensur√°veis
+**Objetivo**: Definir mÈtricas de sucesso mensur·veis
 **Descoberta Guiada**:
 ```yaml
 Perguntas Facilitadoras:
 1. "Como saberemos que este produto teve sucesso?"
-   ‚Üí M√©tricas de neg√≥cio, n√£o vanity metrics
+   ? MÈtricas de negÛcio, n„o vanity metrics
 2. "Quais KPIs existem hoje (baseline)?"
-   ‚Üí Estabelecer linha de base para compara√ß√£o
+   ? Estabelecer linha de base para comparaÁ„o
 3. "Qual a meta realista em 3-6 meses?"
-   ‚Üí Targets espec√≠ficos e alcan√ß√°veis
-4. "Quais m√©tricas de ado√ß√£o rastreamos?"
-   ‚Üí User engagement, retention, satisfaction
+   ? Targets especÌficos e alcanÁ·veis
+4. "Quais mÈtricas de adoÁ„o rastreamos?"
+   ? User engagement, retention, satisfaction
 ```
 
-**Documenta√ß√£o**:
+**DocumentaÁ„o**:
 ```markdown
 ## Success Metrics
 
@@ -169,7 +169,7 @@ Perguntas Facilitadoras:
   - Measurement: Error logs analysis
 
 ### User Adoption
-- **Active Users**: [Target ap√≥s 3 meses]
+- **Active Users**: [Target apÛs 3 meses]
 - **User Satisfaction**: [NPS ou CSAT target]
 - **Feature Adoption**: [% de users usando feature core]
 
@@ -178,7 +178,7 @@ Perguntas Facilitadoras:
 - **Reliability**: [Error rates, availability]
 ```
 
-**Valida√ß√£o**: M√©tricas mensur√°veis? Baselines definidos? Targets realistas?
+**ValidaÁ„o**: MÈtricas mensur·veis? Baselines definidos? Targets realistas?
 
 ---
 
@@ -187,17 +187,17 @@ Perguntas Facilitadoras:
 **Descoberta Guiada**:
 ```yaml
 Perguntas Facilitadoras:
-1. "Quais s√£o as capabilities core (MVP)?"
-   ‚Üí 3-5 capabilities essenciais, n√£o feature list completa
-2. "O que est√° OUT OF SCOPE explicitamente?"
-   ‚Üí Evitar scope creep - ser claro sobre limites
+1. "Quais s„o as capabilities core (MVP)?"
+   ? 3-5 capabilities essenciais, n„o feature list completa
+2. "O que est· OUT OF SCOPE explicitamente?"
+   ? Evitar scope creep - ser claro sobre limites
 3. "Quais constraints conhecidos?"
-   ‚Üí Tech stack, budget, timeline, regulatory, integrations
+   ? Tech stack, budget, timeline, regulatory, integrations
 4. "Quais dependencies de outros sistemas?"
-   ‚Üí Integra√ß√µes requeridas, APIs externas
+   ? IntegraÁıes requeridas, APIs externas
 ```
 
-**Documenta√ß√£o**:
+**DocumentaÁ„o**:
 ```markdown
 ## High-Level Scope
 
@@ -208,8 +208,8 @@ Perguntas Facilitadoras:
 ...
 
 ### Explicitly Out of Scope
-- [Feature/capability exclu√≠da - ex: "Real-time streaming exports"]
-- [Feature/capability exclu√≠da - ex: "Custom report builder UI"]
+- [Feature/capability excluÌda - ex: "Real-time streaming exports"]
+- [Feature/capability excluÌda - ex: "Custom report builder UI"]
 
 ## Constraints
 
@@ -228,22 +228,22 @@ Perguntas Facilitadoras:
 - Expertise gaps: [Skills needed but missing]
 ```
 
-**Valida√ß√£o**: MVP capabilities claros? Out-of-scope expl√≠cito? Constraints documentados?
+**ValidaÁ„o**: MVP capabilities claros? Out-of-scope explÌcito? Constraints documentados?
 
 ---
 
 ### STEP 6: complete (Finalize & Next Steps)
-**Objetivo**: Finalizar brief e sugerir pr√≥ximos workflows
-**A√ß√µes**:
-1. **Review Completeness**: Todas se√ß√µes preenchidas?
-2. **Executive Summary**: Gerar resumo de 1 par√°grafo do brief
+**Objetivo**: Finalizar brief e sugerir prÛximos workflows
+**AÁıes**:
+1. **Review Completeness**: Todas seÁıes preenchidas?
+2. **Executive Summary**: Gerar resumo de 1 par·grafo do brief
 3. **Save Brief**: Salvar `{planning_artifacts}/product-brief.md`
 4. **Suggest Next Steps**:
    ```yaml
-   Pr√≥ximos Workflows Recomendados:
-   - research (se domain/market/tech unknowns) ‚Üí avanade-method-bmm-research
-   - create-prd (transformar brief em PRD detalhado) ‚Üí avanade-method-bmm-create-prd
-   - brainstorming (se precisar explorar solu√ß√µes alternativas) ‚Üí avanade-method-brainstorming
+   PrÛximos Workflows Recomendados:
+   - research (se domain/market/tech unknowns) ? avanade-method-bmm-research
+   - create-prd (transformar brief em PRD detalhado) ? avanade-method-bmm-create-prd
+   - brainstorming (se precisar explorar soluÁıes alternativas) ? avanade-method-brainstorming
    ```
 
 **Output Final**:
@@ -251,7 +251,7 @@ Perguntas Facilitadoras:
 # Product Brief: [Nome do Produto]
 
 ## Executive Summary
-[1 par√°grafo condensando problem, solution, value, metrics]
+[1 par·grafo condensando problem, solution, value, metrics]
 
 ## Problem Statement
 ...
@@ -277,11 +277,11 @@ Perguntas Facilitadoras:
 **Next Steps**: [Workflows sugeridos]
 ```
 
-**Valida√ß√£o Final**: Brief completo? Executive summary claro? Next steps sugeridos?
+**ValidaÁ„o Final**: Brief completo? Executive summary claro? Next steps sugeridos?
 
 ---
 
-## üìä OUTPUT FORMAT
+## ?? OUTPUT FORMAT
 
 ### Product Brief Structure (Template)
 
@@ -295,7 +295,7 @@ Perguntas Facilitadoras:
 ---
 
 ## Executive Summary
-[1-2 par√°grafos: problema, solu√ß√£o, valor, timeline]
+[1-2 par·grafos: problema, soluÁ„o, valor, timeline]
 
 ---
 
@@ -304,7 +304,7 @@ Perguntas Facilitadoras:
 [Business/market context]
 
 ### Problem
-[Problema espec√≠fico que resolve]
+[Problema especÌfico que resolve]
 
 ### Impact
 [Impacto atual do problema - costs, time, errors, frustration]
@@ -324,7 +324,7 @@ Perguntas Facilitadoras:
 
 ## Proposed Solution
 ### Overview
-[High-level solution description - 2-3 par√°grafos]
+[High-level solution description - 2-3 par·grafos]
 
 ### Value Proposition
 [Why this solution? Diferencial vs alternativas]
@@ -347,8 +347,8 @@ Perguntas Facilitadoras:
 ## Success Metrics
 
 ### Business Impact
-- **Metric 1**: [Name] - Baseline: [X] ‚Üí Target: [Y]
-- **Metric 2**: [Name] - Baseline: [X] ‚Üí Target: [Y]
+- **Metric 1**: [Name] - Baseline: [X] ? Target: [Y]
+- **Metric 2**: [Name] - Baseline: [X] ? Target: [Y]
 
 ### User Adoption
 - Active Users: [Target]
@@ -394,113 +394,113 @@ Perguntas Facilitadoras:
 
 ---
 
-## üîó Integration Points
+## ?? Integration Points
 
 ### Prerequisites (Optional):
-- **brainstorming** (se precisa explorar solu√ß√µes) ‚Üí Pode alimentar "Proposed Solution"
-- **Stakeholder interviews** (informal) ‚Üí Inputs para problem/users/metrics
+- **brainstorming** (se precisa explorar soluÁıes) ? Pode alimentar "Proposed Solution"
+- **Stakeholder interviews** (informal) ? Inputs para problem/users/metrics
 
 ### Next Steps (Recommended):
-1. **research** (se existem unknowns) ‚Üí `avanade-method-bmm-research` (market/domain/technical)
-   - Use quando: Market n√£o validado, domain novo, tech feasibility incerta
-2. **create-prd** (transformar brief em PRD) ‚Üí `avanade-method-bmm-create-prd`
+1. **research** (se existem unknowns) ? `avanade-method-bmm-research` (market/domain/technical)
+   - Use quando: Market n„o validado, domain novo, tech feasibility incerta
+2. **create-prd** (transformar brief em PRD) ? `avanade-method-bmm-create-prd`
    - Use quando: Brief aprovado, ready para requirements detalhados
-3. **brainstorming** (se solu√ß√µes alternativas) ‚Üí `avanade-method-brainstorming`
-   - Use quando: Proposed Solution precisa explora√ß√£o criativa
+3. **brainstorming** (se soluÁıes alternativas) ? `avanade-method-brainstorming`
+   - Use quando: Proposed Solution precisa exploraÁ„o criativa
 
 ### Artifact Dependencies:
-- **Input artifacts**: Nenhum (in√≠cio do discovery)
+- **Input artifacts**: Nenhum (inÌcio do discovery)
 - **Output artifacts**: `product-brief.md`
 - **Used by**: create-prd (pode referenciar brief como contexto)
 
 ---
 
-## ‚úÖ Best Practices
+## ? Best Practices
 
 ### DO:
-- ‚úÖ **Focus em problema primeiro** - Entender dor ANTES de solu√ß√£o
-- ‚úÖ **M√©tricas mensur√°veis** - Baselines + targets espec√≠ficos
-- ‚úÖ **User segments espec√≠ficos** - "Financial Analysts em mid-size companies" n√£o "everyone"
-- ‚úÖ **Out-of-scope expl√≠cito** - Previne scope creep posteriormente
-- ‚úÖ **Constraints realistas** - Budget, timeline, tech stack desde in√≠cio
-- ‚úÖ **Keep it concise** - Brief = 2-4 p√°ginas, n√£o 20 p√°ginas
-- ‚úÖ **Stakeholder validation** - Review brief com stakeholders antes de PRD
+- ? **Focus em problema primeiro** - Entender dor ANTES de soluÁ„o
+- ? **MÈtricas mensur·veis** - Baselines + targets especÌficos
+- ? **User segments especÌficos** - "Financial Analysts em mid-size companies" n„o "everyone"
+- ? **Out-of-scope explÌcito** - Previne scope creep posteriormente
+- ? **Constraints realistas** - Budget, timeline, tech stack desde inÌcio
+- ? **Keep it concise** - Brief = 2-4 p·ginas, n„o 20 p·ginas
+- ? **Stakeholder validation** - Review brief com stakeholders antes de PRD
 
 ### DON'T:
-- ‚ùå **N√£o liste features** - Brief √© sobre problema/valor, n√£o feature list
-- ‚ùå **N√£o seja vago** - "Melhorar experi√™ncia" ‚Üí espec√≠fico "Reduzir tempo de export de 1.8h para 15min"
-- ‚ùå **N√£o pule m√©tricas** - "Success" sem n√∫meros = imposs√≠vel medir
-- ‚ùå **N√£o ignore constraints** - Tech debt, budget, timeline s√£o realidades
-- ‚ùå **N√£o fa√ßa brief virar PRD** - Se est√° >5 p√°ginas, est√° detalhado demais
-- ‚ùå **N√£o ignore out-of-scope** - Scope creep come√ßa aqui
+- ? **N„o liste features** - Brief È sobre problema/valor, n„o feature list
+- ? **N„o seja vago** - "Melhorar experiÍncia" ? especÌfico "Reduzir tempo de export de 1.8h para 15min"
+- ? **N„o pule mÈtricas** - "Success" sem n˙meros = impossÌvel medir
+- ? **N„o ignore constraints** - Tech debt, budget, timeline s„o realidades
+- ? **N„o faÁa brief virar PRD** - Se est· >5 p·ginas, est· detalhado demais
+- ? **N„o ignore out-of-scope** - Scope creep comeÁa aqui
 
 ---
 
-## üö® Common Pitfalls
+## ?? Common Pitfalls
 
 ### Pitfall 1: **Brief Turns Into PRD**
-**Sintoma**: Brief com 15+ p√°ginas, functional requirements detalhados  
-**Problema**: Brief perdeu prop√≥sito - deve ser conciso para alignment  
-**Solu√ß√£o**: Limitar a 2-4 p√°ginas. Detalhes v√£o no PRD posteriormente
+**Sintoma**: Brief com 15+ p·ginas, functional requirements detalhados  
+**Problema**: Brief perdeu propÛsito - deve ser conciso para alignment  
+**SoluÁ„o**: Limitar a 2-4 p·ginas. Detalhes v„o no PRD posteriormente
 
 ### Pitfall 2: **Vague Success Metrics**
-**Sintoma**: "Melhorar satisfa√ß√£o", "Aumentar efici√™ncia" sem n√∫meros  
-**Problema**: Imposs√≠vel medir success sem baselines e targets  
-**Solu√ß√£o**: SEMPRE: Baseline atual + Target espec√≠fico + Como medir
+**Sintoma**: "Melhorar satisfaÁ„o", "Aumentar eficiÍncia" sem n˙meros  
+**Problema**: ImpossÌvel medir success sem baselines e targets  
+**SoluÁ„o**: SEMPRE: Baseline atual + Target especÌfico + Como medir
 
 ### Pitfall 3: **Solution Without Problem**
 **Sintoma**: Brief foca em features ("Queremos AI chatbot") sem articular problema  
-**Problema**: Solu√ß√£o pode n√£o resolver dor real  
-**Solu√ß√£o**: Come√ßar SEMPRE com "Qual problema?" ANTES de "Qual solu√ß√£o?"
+**Problema**: SoluÁ„o pode n„o resolver dor real  
+**SoluÁ„o**: ComeÁar SEMPRE com "Qual problema?" ANTES de "Qual soluÁ„o?"
 
 ### Pitfall 4: **No Out-of-Scope**
-**Sintoma**: Brief s√≥ lista o que est√° IN scope  
-**Problema**: Scope creep inevit√°vel - stakeholders assumem features n√£o documentadas  
-**Solu√ß√£o**: Se√ß√£o OUT-OF-SCOPE expl√≠cita - "N√£o faremos X, Y, Z"
+**Sintoma**: Brief sÛ lista o que est· IN scope  
+**Problema**: Scope creep inevit·vel - stakeholders assumem features n„o documentadas  
+**SoluÁ„o**: SeÁ„o OUT-OF-SCOPE explÌcita - "N„o faremos X, Y, Z"
 
 ### Pitfall 5: **Ignoring Constraints**
 **Sintoma**: Brief otimista sem mencionar budget, timeline, tech constraints  
 **Problema**: PRD/Architecture depois descobrem impossibilidades  
-**Solu√ß√£o**: Constraints upfront - budget, tech stack, timeline, regulatory
+**SoluÁ„o**: Constraints upfront - budget, tech stack, timeline, regulatory
 
 ---
 
-## üí° Examples
+## ?? Examples
 
 ### Example 1: Good Problem Statement
 
-**GOOD** ‚úÖ:
+**GOOD** ?:
 ```markdown
 ## Problem Statement
 
 ### Context
 Financial analysts em mid-size companies (50-500 employees) precisam gerar 
-relat√≥rios mensais consolidando dados de m√∫ltiplas fontes (ERP, CRM, Excel).
+relatÛrios mensais consolidando dados de m˙ltiplas fontes (ERP, CRM, Excel).
 
 ### Problem
-Processo atual √© 100% manual:
+Processo atual È 100% manual:
 - 1.8 horas/dia por analista copiando dados entre sistemas
-- 40% dos exports cont√™m erros (copy/paste mistakes, formulas quebradas)
-- Reports atrasam 2-3 dias ap√≥s fim do m√™s (impacta decis√µes de neg√≥cio)
+- 40% dos exports contÍm erros (copy/paste mistakes, formulas quebradas)
+- Reports atrasam 2-3 dias apÛs fim do mÍs (impacta decisıes de negÛcio)
 
 ### Impact
-- **Time Cost**: 1.8h √ó 20 dias √ó $45/hour = $1,620/m√™s por analista
-- **Error Cost**: Decis√µes baseadas em dados errados, retrabalho, perda de credibilidade
-- **Opportunity Cost**: Analistas gastam tempo em tarefa manual vs an√°lise estrat√©gica
+- **Time Cost**: 1.8h ◊ 20 dias ◊ $45/hour = $1,620/mÍs por analista
+- **Error Cost**: Decisıes baseadas em dados errados, retrabalho, perda de credibilidade
+- **Opportunity Cost**: Analistas gastam tempo em tarefa manual vs an·lise estratÈgica
 ```
 
-**BAD** ‚ùå:
+**BAD** ?:
 ```markdown
 ## Problem Statement
 Users want better reports. Current process is slow and error-prone.
 ```
-**Por que BAD**: Vago ("better reports"), sem contexto de quem s√£o users, sem quantifica√ß√£o de "slow" ou "error-prone", sem business impact.
+**Por que BAD**: Vago ("better reports"), sem contexto de quem s„o users, sem quantificaÁ„o de "slow" ou "error-prone", sem business impact.
 
 ---
 
 ### Example 2: Good Success Metrics
 
-**GOOD** ‚úÖ:
+**GOOD** ?:
 ```markdown
 ## Success Metrics
 
@@ -509,7 +509,7 @@ Users want better reports. Current process is slow and error-prone.
   - Baseline: 1.8h/day manual export process
   - Target: <15min automated process
   - Measurement: Time tracking logs before/after
-  - ROI: $1,620/month √ó 12 months = $19,440/year per analyst
+  - ROI: $1,620/month ◊ 12 months = $19,440/year per analyst
 
 - **Error Reduction**:
   - Baseline: 40% de exports com erros
@@ -523,50 +523,50 @@ Users want better reports. Current process is slow and error-prone.
 - **Feature Adoption**: >90% usando scheduled exports (core feature)
 ```
 
-**BAD** ‚ùå:
+**BAD** ?:
 ```markdown
 ## Success Metrics
 - Improve user satisfaction
 - Make process faster
 - Reduce errors
 ```
-**Por que BAD**: Sem baselines, sem targets num√©ricos, sem como medir. "Faster" √© 10% ou 90%? "Reduce errors" de quanto para quanto?
+**Por que BAD**: Sem baselines, sem targets numÈricos, sem como medir. "Faster" È 10% ou 90%? "Reduce errors" de quanto para quanto?
 
 ---
 
-## üîç Troubleshooting
+## ?? Troubleshooting
 
-### Issue: Brief ficou muito longo (>5 p√°ginas)
+### Issue: Brief ficou muito longo (>5 p·ginas)
 **Sintoma**: Brief detalhando functional requirements, user stories, wireframes  
-**Solu√ß√£o**: Mover detalhes para PRD. Brief deve ter:
-- Problem (1 p√°gina)
-- Solution high-level (1 p√°gina)
-- Metrics + Scope + Constraints (1-2 p√°ginas)
+**SoluÁ„o**: Mover detalhes para PRD. Brief deve ter:
+- Problem (1 p·gina)
+- Solution high-level (1 p·gina)
+- Metrics + Scope + Constraints (1-2 p·ginas)
 
-### Issue: Stakeholders querem features espec√≠ficas no brief
+### Issue: Stakeholders querem features especÌficas no brief
 **Sintoma**: "Adicionar chatbot, mobile app, analytics dashboard" no brief  
-**Solu√ß√£o**: Brief documenta CAPABILITIES, n√£o features:
-- ‚ùå "Chatbot with NLP"
-- ‚úÖ "Self-service support capability"
-Features espec√≠ficas v√£o no PRD
+**SoluÁ„o**: Brief documenta CAPABILITIES, n„o features:
+- ? "Chatbot with NLP"
+- ? "Self-service support capability"
+Features especÌficas v„o no PRD
 
-### Issue: M√©tricas de success n√£o est√£o dispon√≠veis
-**Sintoma**: "N√£o temos baseline de quanto tempo leva hoje"  
-**Solu√ß√£o**: 
+### Issue: MÈtricas de success n„o est„o disponÌveis
+**Sintoma**: "N„o temos baseline de quanto tempo leva hoje"  
+**SoluÁ„o**: 
 1. Estimar com SMEs ("Financial analysts estimam 1-2h/dia")
 2. Documentar como estimativa: "Baseline (estimated): ~1.5h/day"
 3. Adicionar em Constraints: "Need to establish proper metrics tracking"
 
-### Issue: Brief aprovado mas vis√£o mudou
-**Sintoma**: Durante PRD, stakeholders mudaram dire√ß√£o  
-**Solu√ß√£o**: Re-run create-product-brief workflow em EDIT mode:
+### Issue: Brief aprovado mas vis„o mudou
+**Sintoma**: Durante PRD, stakeholders mudaram direÁ„o  
+**SoluÁ„o**: Re-run create-product-brief workflow em EDIT mode:
 - Carregar brief existente
-- Atualizar se√ß√µes que mudaram
+- Atualizar seÁıes que mudaram
 - Marcar como "v2" e documentar changes
 
 ---
 
-## üìñ References
+## ?? References
 
 - **Avanade Method Workflow Path**: `_avanade-method/bmm/workflows/1-analysis/create-product-brief/`
 - **Workflow Manifest Entry**: `workflow-manifest.csv` line 3

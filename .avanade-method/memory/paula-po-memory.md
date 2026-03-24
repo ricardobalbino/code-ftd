@@ -1,16 +1,16 @@
-Ôªø### Value Prioritization Patterns
-_Frameworks de prioriza√ß√£o validados_
+### Value Prioritization Patterns
+_Frameworks de priorizaÁ„o validados_
 
 **Exemplo**:
 ```yaml
-- framework: "RICE Score (Reach √ó Impact √ó Confidence / Effort)"
+- framework: "RICE Score (Reach ◊ Impact ◊ Confidence / Effort)"
   example:
     feature_a:
       reach: 10000  # users affected
       impact: 3     # 0=minimal, 1=low, 2=medium, 3=high
       confidence: 80%
       effort: 13    # story points
-      rice_score: 1846  # (10000 √ó 3 √ó 0.8) / 13
+      rice_score: 1846  # (10000 ◊ 3 ◊ 0.8) / 13
     feature_b:
       reach: 2000
       impact: 3
@@ -36,16 +36,16 @@ _Frameworks de prioriza√ß√£o validados_
     wont_have:
       - "Mobile app (future release)"
   pros: "Simples, stakeholders entendem facilmente"
-  cons: "Subjetivo (tudo vira 'Must' se n√£o facilitar bem)"
+  cons: "Subjetivo (tudo vira 'Must' se n„o facilitar bem)"
   best_for: "Fixed-scope projects, MVP definition"
   
 - framework: "Kano Model (Basic/Performance/Delight)"
   example:
-    basic: "Sistema deve ser r√°pido (< 2s load time)" # Absence = dissatisfaction
-    performance: "Mais features de relat√≥rios" # More = better
+    basic: "Sistema deve ser r·pido (< 2s load time)" # Absence = dissatisfaction
+    performance: "Mais features de relatÛrios" # More = better
     delight: "Smart suggestions baseadas em ML" # Unexpected wow
   decision: "Basicos primeiro, depois performance, delight opcional"
-  pros: "Foco em user satisfaction, n√£o apenas features"
+  pros: "Foco em user satisfaction, n„o apenas features"
   cons: "Requer research (surveys, user testing)"
   best_for: "Consumer products, competitive markets"
 ```
@@ -53,7 +53,7 @@ _Frameworks de prioriza√ß√£o validados_
 ---
 
 ### Backlog Grooming Insights
-_Estrat√©gias eficazes de manuten√ß√£o de backlog_
+_EstratÈgias eficazes de manutenÁ„o de backlog_
 
 **Exemplo**:
 ```yaml
@@ -66,9 +66,9 @@ _Estrat√©gias eficazes de manuten√ß√£o de backlog_
       - "Guest checkout"
       - "Multiple payment methods"
     stories:
-      - "Como usu√°rio, quero salvar meu cart√£o..."
+      - "Como usu·rio, quero salvar meu cart„o..."
       - "Como guest, quero comprar sem criar conta..."
-  benefit: "Roadmap communication (Jo√£o PM) + team execution (Roberto SM)"
+  benefit: "Roadmap communication (Jo„o PM) + team execution (Roberto SM)"
   
 - practice: "Backlog grooming cadence: bi-weekly"
   activities:
@@ -77,7 +77,7 @@ _Estrat√©gias eficazes de manuten√ß√£o de backlog_
     - "Archive/delete stale items (>6 months old)"
   participants: "Paula (PO) + Roberto (SM) + Tiago (Dev) + Maria (Analyst se needed)"
   duration: "90 minutos"
-  impact: "Planning meetings -50% duration (PBIs j√° prontos)"
+  impact: "Planning meetings -50% duration (PBIs j· prontos)"
   
 - practice: "User Story Splitting (quando PBI > 8 SP)"
   techniques:
@@ -91,7 +91,7 @@ _Estrat√©gias eficazes de manuten√ß√£o de backlog_
 ---
 
 ### Stakeholder Management Patterns
-_Estrat√©gias de gest√£o de expectativas_
+_EstratÈgias de gest„o de expectativas_
 
 **Exemplo**:
 ```yaml
@@ -102,7 +102,7 @@ _Estrat√©gias de gest√£o de expectativas_
     - "Product roadmap (3-6 months)"
     - "OKRs progress (Objectives & Key Results)"
     - "Business metrics dashboard (revenue, users, NPS)"
-  pitfall_avoided: "Status updates t√©cnicos detalhados ‚Üí bore executives"
+  pitfall_avoided: "Status updates tÈcnicos detalhados ? bore executives"
   success_pattern: "Business value storytelling - 'Feature X increased retention 15%'"
   
 - stakeholder_type: "End Users (Beta testers)"
@@ -112,7 +112,7 @@ _Estrat√©gias de gest√£o de expectativas_
     - "Clickable prototypes (Sofia UX)"
     - "Beta releases (staging environment)"
     - "Feedback surveys (Google Forms)"
-  pitfall_avoided: "Aceitar todo feedback sem filtro ‚Üí feature creep"
+  pitfall_avoided: "Aceitar todo feedback sem filtro ? feature creep"
   success_pattern: "Validar feedback com data (analytics) antes de priorizar"
   
 - stakeholder_type: "Internal Teams (Sales, Support)"
@@ -122,53 +122,53 @@ _Estrat√©gias de gest√£o de expectativas_
     - "Release notes"
     - "Training materials (for sales enablement)"
     - "FAQs (for support team)"
-  pitfall_avoided: "Surpresas em production ‚Üí unprepared teams"
-  success_pattern: "Involve early (discovery phase) ‚Üí they sell/support better"
+  pitfall_avoided: "Surpresas em production ? unprepared teams"
+  success_pattern: "Involve early (discovery phase) ? they sell/support better"
 ```
 
 ---
 
 ### User Story Quality Patterns
-_Caracter√≠sticas de boas user stories_
+_CaracterÌsticas de boas user stories_
 
 **Exemplo**:
 ```yaml
 - pattern: "INVEST Criteria (Good Story)"
-  independent: "N√£o depende de outras stories para ser deployada"
-  negotiable: "Detalhes de implementa√ß√£o flex√≠veis (converse com dev)"
-  valuable: "Entrega valor ao usu√°rio/neg√≥cio (n√£o apenas tarefa t√©cnica)"
-  estimable: "Time consegue estimar esfor√ßo (se n√£o: refinar ou spike)"
+  independent: "N„o depende de outras stories para ser deployada"
+  negotiable: "Detalhes de implementaÁ„o flexÌveis (converse com dev)"
+  valuable: "Entrega valor ao usu·rio/negÛcio (n„o apenas tarefa tÈcnica)"
+  estimable: "Time consegue estimar esforÁo (se n„o: refinar ou spike)"
   small: "Cabe em 1 sprint (<= 8 SP idealmente)"
   testable: "Acceptance criteria claros, QA consegue validar"
   
-- anti_pattern: "Technical Task disfar√ßada de User Story"
-  bad_example: "Como desenvolvedor, quero refatorar o m√≥dulo de autentica√ß√£o..."
-  problem: "N√£o entrega valor direto ao usu√°rio"
-  fix: "Como usu√°rio, quero login mais r√°pido (<2s) para acessar sistema rapidamente"
-  lesson: "Frame em termos de user value, n√£o tarefa t√©cnica"
+- anti_pattern: "Technical Task disfarÁada de User Story"
+  bad_example: "Como desenvolvedor, quero refatorar o mÛdulo de autenticaÁ„o..."
+  problem: "N„o entrega valor direto ao usu·rio"
+  fix: "Como usu·rio, quero login mais r·pido (<2s) para acessar sistema rapidamente"
+  lesson: "Frame em termos de user value, n„o tarefa tÈcnica"
   
 - pattern: "Acceptance Criteria SMART"
-  specific: "Sistema deve enviar email em at√© 5 minutos ap√≥s a√ß√£o"
-  measurable: "QA pode validar (n√£o vago como 'sistema deve ser r√°pido')"
-  achievable: "Tecnicamente poss√≠vel com stack atual"
+  specific: "Sistema deve enviar email em atÈ 5 minutos apÛs aÁ„o"
+  measurable: "QA pode validar (n„o vago como 'sistema deve ser r·pido')"
+  achievable: "Tecnicamente possÌvel com stack atual"
   relevant: "Alinhado com objetivo da story"
   testable: "Carla (QA) consegue escrever test case"
   
   example:
-    story: "Como usu√°rio, quero recuperar senha via email"
+    story: "Como usu·rio, quero recuperar senha via email"
     acceptance_criteria:
-      - "Email enviado em at√© 5min ap√≥s request"
+      - "Email enviado em atÈ 5min apÛs request"
       - "Link de reset expira em 24h"
-      - "Usu√°rio consegue criar nova senha (min 8 chars, 1 n√∫mero)"
-      - "Email cont√©m branding da empresa (logo, cores)"
+      - "Usu·rio consegue criar nova senha (min 8 chars, 1 n˙mero)"
+      - "Email contÈm branding da empresa (logo, cores)"
 ```
 
 ---
 
-## üìä Product Metrics & Analytics
+## ?? Product Metrics & Analytics
 
 ### Key Product Metrics Tracked
-_M√©tricas que Paula monitora para decis√µes_
+_MÈtricas que Paula monitora para decisıes_
 
 **Exemplo**:
 ```yaml
@@ -220,12 +220,12 @@ _M√©tricas que Paula monitora para decis√µes_
 ---
 
 ### A/B Testing Insights
-_Experimentos que informaram decis√µes de produto_
+_Experimentos que informaram decisıes de produto_
 
 **Exemplo**:
 ```yaml
 - experiment: "Onboarding flow (5 steps vs 2 steps)"
-  hypothesis: "Shorter onboarding ‚Üí higher completion rate"
+  hypothesis: "Shorter onboarding ? higher completion rate"
   variants:
     control: "5 steps (email, name, company, role, preferences)"
     variant_a: "2 steps (email, password - resto opcional)"
@@ -237,7 +237,7 @@ _Experimentos que informaram decis√µes de produto_
   learning: "Reduce friction em signup, collect data progressively"
   
 - experiment: "Pricing page (3 tiers vs 4 tiers)"
-  hypothesis: "Mais op√ß√µes ‚Üí mais convers√µes (choice paradox test)"
+  hypothesis: "Mais opÁıes ? mais conversıes (choice paradox test)"
   variants:
     control: "3 tiers (Basic R$49, Pro R$99, Enterprise custom)"
     variant_a: "4 tiers (Basic, Plus R$79, Pro, Enterprise)"
@@ -245,8 +245,8 @@ _Experimentos que informaram decis√µes de produto_
   results:
     control: "8% conversion"
     variant_a: "6% conversion (-25%)"
-  decision: "Keep control - menos op√ß√µes √© melhor (paradox of choice confirmed)"
-  learning: "3 tiers √© sweet spot, 4+ confunde usu√°rios"
+  decision: "Keep control - menos opÁıes È melhor (paradox of choice confirmed)"
+  learning: "3 tiers È sweet spot, 4+ confunde usu·rios"
 ```
 
 ---
@@ -261,8 +261,8 @@ _Learnings de features shipped_
   effort: "5 story points (Tiago + Sofia)"
   impact:
     - "User satisfaction +10% (NPS survey)"
-    - "Session duration +15% (less eye strain ‚Üí longer usage)"
-    - "App Store rating 4.2 ‚Üí 4.5"
+    - "Session duration +15% (less eye strain ? longer usage)"
+    - "App Store rating 4.2 ? 4.5"
   learning: "Low effort, high impact - listen to vocal users"
   
 - feature: "Advanced Search Filters (FAILURE)"
@@ -270,7 +270,7 @@ _Learnings de features shipped_
   effort: "34 story points (1 sprint completo)"
   impact:
     - "Usage: 2% of users (98% never touched)"
-    - "Complexity added ‚Üí other features delayed"
+    - "Complexity added ? other features delayed"
   learning: "Validate assumptions BEFORE building - data > opinions"
   action: "Deprecate feature, simplify UI (remove clutter)"
   
@@ -286,7 +286,7 @@ _Learnings de features shipped_
 
 ---
 
-## üéØ Roadmap Planning Insights
+## ?? Roadmap Planning Insights
 
 ### Roadmap Horizon Strategies
 _Como estruturar roadmap temporal_
@@ -296,12 +296,12 @@ _Como estruturar roadmap temporal_
 - horizon: "Now (Current Sprint)"
   detail_level: "Stories (INVEST, estimadas)"
   commitment: "100% (committed sprint backlog)"
-  change_tolerance: "Baixa (apenas emerg√™ncias)"
+  change_tolerance: "Baixa (apenas emergÍncias)"
   
 - horizon: "Next (1-2 sprints)"
   detail_level: "Features (refined PBIs)"
   commitment: "80% (high confidence)"
-  change_tolerance: "M√©dia (reprioritize se needed)"
+  change_tolerance: "MÈdia (reprioritize se needed)"
   
 - horizon: "Later (3-6 months)"
   detail_level: "Epics (high-level themes)"
@@ -311,7 +311,7 @@ _Como estruturar roadmap temporal_
   
 - horizon: "Future (6+ months)"
   detail_level: "Vision (strategic bets)"
-  commitment: "20% (explorat√≥rio)"
+  commitment: "20% (exploratÛrio)"
   change_tolerance: "Muito alta"
   example: "AI-powered recommendations, blockchain integration"
 ```
@@ -319,7 +319,7 @@ _Como estruturar roadmap temporal_
 ---
 
 ### OKR Integration with Backlog
-_Como OKRs informam prioriza√ß√£o_
+_Como OKRs informam priorizaÁ„o_
 
 **Exemplo**:
 ```yaml
@@ -338,34 +338,34 @@ _Como OKRs informam prioriza√ß√£o_
     medium_priority:
       - "Gamification (kr2)"
     deprioritized:
-      - "New acquisition features (n√£o alinhado com OKR Q1)"
+      - "New acquisition features (n„o alinhado com OKR Q1)"
   
   result:
-    - kr1: "‚úÖ 2.8% churn (exceeded)"
-    - kr2: "üü° 0.38 DAU/MAU (missed slightly)"
-    - kr3: "‚úÖ NPS 47 (exceeded)"
-  learning: "OKRs focused backlog ‚Üí clear wins, some misses acceptable"
+    - kr1: "? 2.8% churn (exceeded)"
+    - kr2: "?? 0.38 DAU/MAU (missed slightly)"
+    - kr3: "? NPS 47 (exceeded)"
+  learning: "OKRs focused backlog ? clear wins, some misses acceptable"
 ```
 
 ---
 
-## ü§ù Cross-Functional Collaboration
+## ?? Cross-Functional Collaboration
 
 ### Collaboration with Maria (Analyst)
 _Patterns de trabalho conjunto_
 
 **Exemplo**:
 ```yaml
-- workflow: "Discovery ‚Üí PRD"
+- workflow: "Discovery ? PRD"
   steps:
     1. "Paula define business problem/opportunity"
     2. "Maria executes Discovery Protocol (user research)"
     3. "Paula + Maria co-create PRD (business value + user needs)"
   artifact: "${AVANADE_PRD_TEMPLATE_YAML}"
-  benefit: "PRDs com user validation, n√£o apenas assumptions"
+  benefit: "PRDs com user validation, n„o apenas assumptions"
   
 - anti_pattern_avoided: "Paula escreve PRD sozinha (sem user validation)"
-  problem: "Build wrong thing (n√£o valida com usu√°rios)"
+  problem: "Build wrong thing (n„o valida com usu·rios)"
   fix: "Maria sempre envolvida em discovery antes de PRD"
 ```
 
@@ -376,20 +376,20 @@ _Design + Product partnership_
 
 **Exemplo**:
 ```yaml
-- workflow: "Wireframes ‚Üí PRD iteration"
+- workflow: "Wireframes ? PRD iteration"
   steps:
     1. "Paula compartilha user stories draft"
-    2. "Sofia cria low-fi wireframes (valida√ß√£o visual)"
-    3. "Paula + Sofia validam com usu√°rios (usability testing)"
+    2. "Sofia cria low-fi wireframes (validaÁ„o visual)"
+    3. "Paula + Sofia validam com usu·rios (usability testing)"
     4. "Paula refina stories baseado em feedback"
   artifact: "Figma prototypes + ${AVANADE_PRD_TEMPLATE_YAML}"
-  benefit: "UX validation antes de dev ‚Üí menos rework"
+  benefit: "UX validation antes de dev ? menos rework"
   
 - pattern: "Design Sprints (1 semana)"
   when: "New features complexas ou incertas"
   participants: "Paula + Sofia + Maria + 2-3 stakeholders"
   output: "Validated prototype + PRD"
-  effectiveness: "Alta (economiza 2-3 sprints de dev se feature n√£o validar)"
+  effectiveness: "Alta (economiza 2-3 sprints de dev se feature n„o validar)"
 ```
 
 ---
@@ -417,7 +417,7 @@ _PO + SM partnership_
 
 ---
 
-## üîó Cross-References
+## ?? Cross-References
 
 ### Artifacts Relacionados:
 - PRD Template: `${AVANADE_PRD_TEMPLATE_YAML}`
@@ -436,72 +436,72 @@ pm: ${AVANADE_MEMORY_PM_JOAO}
 
 ---
 
-## üìå Como Usar Esta Mem√≥ria
+## ?? Como Usar Esta MemÛria
 
-### ‚úÖ ANTES de planejar features:
-1. Consultar **Value Prioritization Patterns** ‚Üí framework adequado ao contexto
-2. Revisar **Product Metrics** ‚Üí decis√µes data-driven
-3. Consultar **Feature Success/Failure** ‚Üí evitar erros passados
+### ? ANTES de planejar features:
+1. Consultar **Value Prioritization Patterns** ? framework adequado ao contexto
+2. Revisar **Product Metrics** ? decisıes data-driven
+3. Consultar **Feature Success/Failure** ? evitar erros passados
 
-### ‚úÖ DURANTE backlog management:
-1. Aplicar **User Story Quality Patterns** ‚Üí INVEST compliance
-2. Usar **Backlog Grooming Insights** ‚Üí manter backlog saud√°vel
-3. Aplicar **Stakeholder Management** ‚Üí expectativas alinhadas
+### ? DURANTE backlog management:
+1. Aplicar **User Story Quality Patterns** ? INVEST compliance
+2. Usar **Backlog Grooming Insights** ? manter backlog saud·vel
+3. Aplicar **Stakeholder Management** ? expectativas alinhadas
 
-### ‚úÖ PARA roadmap planning:
-1. Usar **Roadmap Horizon Strategies** ‚Üí n√≠vel de detalhe apropriado
-2. Integrar **OKRs** ‚Üí alignment estrat√©gico
-3. Considerar **A/B Testing Insights** ‚Üí validate assumptions
+### ? PARA roadmap planning:
+1. Usar **Roadmap Horizon Strategies** ? nÌvel de detalhe apropriado
+2. Integrar **OKRs** ? alignment estratÈgico
+3. Considerar **A/B Testing Insights** ? validate assumptions
 
-### ‚úÖ AP√ìS features shipped:
-1. **Atualizar mem√≥ria** com metrics de impacto
-2. Documentar **Feature Post-Mortems** ‚Üí learning loop
-3. Atualizar **Product Metrics** ‚Üí track progress
+### ? AP”S features shipped:
+1. **Atualizar memÛria** com metrics de impacto
+2. Documentar **Feature Post-Mortems** ? learning loop
+3. Atualizar **Product Metrics** ? track progress
 
 ---
 
-## üè¢ D365 CE PO Context - FTD Educa√ß√£o
+## ?? D365 CE PO Context - FTD EducaÁ„o
 
 ### Processo Comercial FTD (Jornada Completa)
-Conta ‚Üí Contato (Rep. Legal) ‚Üí Oportunidade ‚Üí Produtos ‚Üí Proposta (6 etapas) ‚Üí Aprova√ß√£o (4 al√ßadas) ‚Üí Contrato ‚Üí Adobe Sign ‚Üí TOTVS
+Conta ? Contato (Rep. Legal) ? Oportunidade ? Produtos ? Proposta (6 etapas) ? AprovaÁ„o (4 alÁadas) ? Contrato ? Adobe Sign ? TOTVS
 
 ### 6 Etapas do Simulador Comercial
-1. Dados da Proposta (cliente, s√≥cio, tipo, safra, vig√™ncia, alunado)
-2. Produtos e Servi√ßos (grid, adi√ß√£o individual/lote, totalizadores real-time)
-3. Benef√≠cios, Doa√ß√µes, Patroc√≠nios, Adiantamento
-4. Configura√ß√£o de Vendas/Canais (FTD com Voc√™, Venda Direta, Smart POS, etc.)
-5. Matriz de Servi√ßos (em revis√£o)
-6. An√°lise e Aprova√ß√£o (big numbers, comparativo ano anterior, al√ßadas visuais)
+1. Dados da Proposta (cliente, sÛcio, tipo, safra, vigÍncia, alunado)
+2. Produtos e ServiÁos (grid, adiÁ„o individual/lote, totalizadores real-time)
+3. BenefÌcios, DoaÁıes, PatrocÌnios, Adiantamento
+4. ConfiguraÁ„o de Vendas/Canais (FTD com VocÍ, Venda Direta, Smart POS, etc.)
+5. Matriz de ServiÁos (em revis„o)
+6. An·lise e AprovaÁ„o (big numbers, comparativo ano anterior, alÁadas visuais)
 
-### Linhas de Neg√≥cio e Regras
-| Linha | Majora√ß√£o | Lote | Especificidade |
+### Linhas de NegÛcio e Regras
+| Linha | MajoraÁ„o | Lote | Especificidade |
 |-------|-----------|------|----------------|
-| Sistema de Ensino | ‚úÖ | ‚úÖ | Cole√ß√µes (Trilhas ~15 materiais) |
-| Did√°tico | ‚ùå | ‚úÖ | - |
-| Bil√≠ngue | ‚úÖ | ‚úÖ | - |
-| Literatura | ‚ùå | ‚ùå | Produtos individuais |
-| Espanhol | ‚úÖ | ‚úÖ | - |
+| Sistema de Ensino | ? | ? | ColeÁıes (Trilhas ~15 materiais) |
+| Did·tico | ? | ? | - |
+| BilÌngue | ? | ? | - |
+| Literatura | ? | ? | Produtos individuais |
+| Espanhol | ? | ? | - |
 
 ### Tipos de Produto
-- Prateleira (cat√°logo padr√£o)
-- Customizado Compartilhado (leve: tirar cap√≠tulo)
+- Prateleira (cat·logo padr„o)
+- Customizado Compartilhado (leve: tirar capÌtulo)
 - Personalizado (pesado: capa, mascote - vinculado a escola)
-- Grade (ensino m√©dio, escola espec√≠fica)
+- Grade (ensino mÈdio, escola especÌfica)
 
 ### Epic Patterns FTD
-1. **Simulador Comercial** - Power Pages (Onda 1 p√≥s-MVP: Avanade)
-2. **Faxina de Dados** - Produtos, tabelas de pre√ßo, contas CNPJ
-3. **Integra√ß√£o Cadastro Produto** (ISA ‚Üî TOTVS ‚Üî CRM)
-4. **Aprova√ß√£o de Propostas** - eliminar Vulcano, novas regras
-5. **Benef√≠cios/Doa√ß√µes/Patroc√≠nios** - Etapa 3 do simulador
+1. **Simulador Comercial** - Power Pages (Onda 1 pÛs-MVP: Avanade)
+2. **Faxina de Dados** - Produtos, tabelas de preÁo, contas CNPJ
+3. **IntegraÁ„o Cadastro Produto** (ISA ? TOTVS ? CRM)
+4. **AprovaÁ„o de Propostas** - eliminar Vulcano, novas regras
+5. **BenefÌcios/DoaÁıes/PatrocÌnios** - Etapa 3 do simulador
 6. **Canais de Venda Unificados** - 1 proposta multi-canal
-7. **Higieniza√ß√£o de Base** - CNPJ CRM‚ÜîTOTVS, security roles
+7. **HigienizaÁ„o de Base** - CNPJ CRM?TOTVS, security roles
 
 ### Roadmap
-- **MVP (31/mar/2026)**: Adi√ß√£o individual de produtos (time FTD)
-- **Onda 1 p√≥s-MVP (~ago/2026)**: Lote, copiar proposta, benef√≠cios, aprova√ß√£o (Avanade)
-- **P√≥s-Venda**: Comissionamento, intelig√™ncia comercial
+- **MVP (31/mar/2026)**: AdiÁ„o individual de produtos (time FTD)
+- **Onda 1 pÛs-MVP (~ago/2026)**: Lote, copiar proposta, benefÌcios, aprovaÁ„o (Avanade)
+- **PÛs-Venda**: Comissionamento, inteligÍncia comercial
 
-### Knowledge Base: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT√ìRIA)
+### Knowledge Base: `docs/ftd-knowledge-base.md` (LEITURA OBRIGAT”RIA)
 
 ---

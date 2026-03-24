@@ -1,12 +1,12 @@
-Ôªø---
+---
 
-## üìã Objetivo
+## ?? Objetivo
 
-Template padronizado para documenta√ß√£o de Discovery. Captura insights de pesquisa, an√°lise de stakeholders, contexto de neg√≥cio e requisitos iniciais para projetos e features.
+Template padronizado para documentaÁ„o de Discovery. Captura insights de pesquisa, an·lise de stakeholders, contexto de negÛcio e requisitos iniciais para projetos e features.
 
 ---
 
-## üìù Discovery Document Template
+## ?? Discovery Document Template
 
 ```yaml
 # Discovery Document
@@ -33,7 +33,7 @@ stakeholders:
 
 ### 1.1 Purpose
 purpose: |
-  [Resumo executivo do prop√≥sito deste discovery em 2-3 par√°grafos.
+  [Resumo executivo do propÛsito deste discovery em 2-3 par·grafos.
    O que estamos tentando descobrir/validar?]
 
 ### 1.2 Background
@@ -44,11 +44,11 @@ background: |
 ### 1.3 Key Findings Summary
 key_findings:
   - finding: "[Finding principal 1]"
-    impact: "[Alto/M√©dio/Baixo]"
+    impact: "[Alto/MÈdio/Baixo]"
   - finding: "[Finding principal 2]"
-    impact: "[Alto/M√©dio/Baixo]"
+    impact: "[Alto/MÈdio/Baixo]"
   - finding: "[Finding principal 3]"
-    impact: "[Alto/M√©dio/Baixo]"
+    impact: "[Alto/MÈdio/Baixo]"
 
 ---
 
@@ -60,16 +60,16 @@ objectives:
     - "[Objetivo principal 1]"
     - "[Objetivo principal 2]"
   secondary:
-    - "[Objetivo secund√°rio 1]"
+    - "[Objetivo secund·rio 1]"
     
 ### 2.2 Scope Definition
 scope:
   in_scope:
-    - "[√Årea/t√≥pico inclu√≠do]"
-    - "[√Årea/t√≥pico inclu√≠do]"
+    - "[¡rea/tÛpico incluÌdo]"
+    - "[¡rea/tÛpico incluÌdo]"
   out_of_scope:
-    - "[√Årea/t√≥pico exclu√≠do]"
-    - "[√Årea/t√≥pico exclu√≠do]"
+    - "[¡rea/tÛpico excluÌdo]"
+    - "[¡rea/tÛpico excluÌdo]"
   assumptions:
     - "[Assumption 1]"
     - "[Assumption 2]"
@@ -77,11 +77,11 @@ scope:
 ### 2.3 Research Questions
 research_questions:
   - question: "[Pergunta de pesquisa 1]"
-    priority: "[Alta/M√©dia/Baixa]"
+    priority: "[Alta/MÈdia/Baixa]"
     answered: false
     answer: ""
   - question: "[Pergunta de pesquisa 2]"
-    priority: "[Alta/M√©dia/Baixa]"
+    priority: "[Alta/MÈdia/Baixa]"
     answered: false
     answer: ""
 
@@ -94,18 +94,18 @@ stakeholder_map:
   decision_makers:
     - name: "[Nome]"
       role: "[Cargo]"
-      influence: "[Alto/M√©dio/Baixo]"
-      interest: "[Alto/M√©dio/Baixo]"
-      concerns: "[Principais preocupa√ß√µes]"
+      influence: "[Alto/MÈdio/Baixo]"
+      interest: "[Alto/MÈdio/Baixo]"
+      concerns: "[Principais preocupaÁıes]"
       
   key_influencers:
     - name: "[Nome]"
       role: "[Cargo]"
-      influence: "[Alto/M√©dio/Baixo]"
-      interest: "[Alto/M√©dio/Baixo]"
+      influence: "[Alto/MÈdio/Baixo]"
+      interest: "[Alto/MÈdio/Baixo]"
       
   end_users:
-    - persona: "[Tipo de usu√°rio]"
+    - persona: "[Tipo de usu·rio]"
       count: "[Estimativa de quantidade]"
       needs: "[Principais necessidades]"
       pain_points: "[Pontos de dor]"
@@ -119,7 +119,7 @@ interviews:
       - "[Insight 1]"
       - "[Insight 2]"
     quotes:
-      - "[Cita√ß√£o relevante]"
+      - "[CitaÁ„o relevante]"
 
 ---
 
@@ -128,7 +128,7 @@ interviews:
 ### 4.1 As-Is Process
 current_process:
   description: |
-    [Descri√ß√£o do processo atual]
+    [DescriÁ„o do processo atual]
   
   pain_points:
     - "[Pain point 1]"
@@ -138,13 +138,13 @@ current_process:
     - "[Workaround usado atualmente]"
     
   metrics:
-    - metric: "[M√©trica atual]"
+    - metric: "[MÈtrica atual]"
       value: "[Valor]"
       source: "[Fonte do dado]"
 
 ### 4.2 Existing Solutions
 existing_solutions:
-  - name: "[Solu√ß√£o existente]"
+  - name: "[SoluÁ„o existente]"
     type: "[Interno/Externo/Competidor]"
     pros:
       - "[Vantagem 1]"
@@ -156,14 +156,14 @@ existing_solutions:
 technical_context:
   current_systems:
     - name: "[Sistema]"
-      purpose: "[Para que √© usado]"
-      integration_needed: "[Sim/N√£o]"
+      purpose: "[Para que È usado]"
+      integration_needed: "[Sim/N„o]"
       
   constraints:
-    - "[Restri√ß√£o t√©cnica]"
+    - "[RestriÁ„o tÈcnica]"
     
   opportunities:
-    - "[Oportunidade t√©cnica]"
+    - "[Oportunidade tÈcnica]"
 
 ---
 
@@ -171,28 +171,28 @@ technical_context:
 
 ### 5.1 Business Drivers
 business_drivers:
-  - driver: "[Driver de neg√≥cio]"
-    urgency: "[Alta/M√©dia/Baixa]"
-    impact: "[Descri√ß√£o do impacto]"
+  - driver: "[Driver de negÛcio]"
+    urgency: "[Alta/MÈdia/Baixa]"
+    impact: "[DescriÁ„o do impacto]"
 
 ### 5.2 Success Criteria
 success_criteria:
-  - criterion: "[Crit√©rio de sucesso]"
+  - criterion: "[CritÈrio de sucesso]"
     measurement: "[Como medir]"
     target: "[Meta]"
     timeframe: "[Prazo]"
 
 ### 5.3 Constraints & Risks
 constraints:
-  budget: "[Budget dispon√≠vel ou limita√ß√£o]"
+  budget: "[Budget disponÌvel ou limitaÁ„o]"
   timeline: "[Prazo ou deadline]"
-  resources: "[Limita√ß√µes de recursos]"
+  resources: "[LimitaÁıes de recursos]"
   
 risks:
   - risk: "[Risco identificado]"
-    probability: "[Alta/M√©dia/Baixa]"
-    impact: "[Alto/M√©dio/Baixo]"
-    mitigation: "[Estrat√©gia de mitiga√ß√£o]"
+    probability: "[Alta/MÈdia/Baixa]"
+    impact: "[Alto/MÈdio/Baixo]"
+    mitigation: "[EstratÈgia de mitigaÁ„o]"
 
 ---
 
@@ -203,21 +203,21 @@ personas:
   - name: "[Nome da Persona]"
     type: "[Primary/Secondary]"
     demographics: |
-      [Idade, cargo, experi√™ncia t√©cnica, etc.]
+      [Idade, cargo, experiÍncia tÈcnica, etc.]
     goals:
       - "[Goal 1]"
       - "[Goal 2]"
     frustrations:
-      - "[Frustra√ß√£o 1]"
-      - "[Frustra√ß√£o 2]"
-    quote: "[Cita√ß√£o representativa]"
+      - "[FrustraÁ„o 1]"
+      - "[FrustraÁ„o 2]"
+    quote: "[CitaÁ„o representativa]"
 
 ### 6.2 User Journey
 user_journey:
-  scenario: "[Cen√°rio principal]"
+  scenario: "[Cen·rio principal]"
   stages:
-    - stage: "[Nome do est√°gio]"
-      user_actions: "[O que usu√°rio faz]"
+    - stage: "[Nome do est·gio]"
+      user_actions: "[O que usu·rio faz]"
       touchpoints: "[Pontos de contato]"
       emotions: "[Como se sente]"
       pain_points: "[Pontos de dor]"
@@ -225,8 +225,8 @@ user_journey:
 
 ### 6.3 Jobs To Be Done
 jobs_to_be_done:
-  - job: "When [situa√ß√£o], I want to [motiva√ß√£o], so I can [resultado]"
-    priority: "[Alta/M√©dia/Baixa]"
+  - job: "When [situaÁ„o], I want to [motivaÁ„o], so I can [resultado]"
+    priority: "[Alta/MÈdia/Baixa]"
     current_solution: "[Como resolve hoje]"
     satisfaction: "[1-5]"
 
@@ -239,11 +239,11 @@ competitors:
   - name: "[Competidor]"
     type: "[Direto/Indireto]"
     strengths:
-      - "[For√ßa 1]"
+      - "[ForÁa 1]"
     weaknesses:
       - "[Fraqueza 1]"
     differentiators: "[O que os diferencia]"
-    market_position: "[Posi√ß√£o no mercado]"
+    market_position: "[PosiÁ„o no mercado]"
 
 ### 7.2 Feature Comparison
 feature_comparison:
@@ -260,7 +260,7 @@ functional_requirements:
   must_have:
     - id: "FR-001"
       description: "[Requisito funcional]"
-      rationale: "[Por que √© necess√°rio]"
+      rationale: "[Por que È necess·rio]"
       source: "[Stakeholder/Research]"
       
   should_have:
@@ -276,7 +276,7 @@ non_functional_requirements:
   performance:
     - "[Requisito de performance]"
   security:
-    - "[Requisito de seguran√ßa]"
+    - "[Requisito de seguranÁa]"
   usability:
     - "[Requisito de usabilidade]"
   scalability:
@@ -296,23 +296,23 @@ integration_requirements:
 
 ### 9.1 Strategic Recommendations
 recommendations:
-  - recommendation: "[Recomenda√ß√£o]"
-    priority: "[Alta/M√©dia/Baixa]"
-    effort: "[Alto/M√©dio/Baixo]"
-    impact: "[Alto/M√©dio/Baixo]"
+  - recommendation: "[RecomendaÁ„o]"
+    priority: "[Alta/MÈdia/Baixa]"
+    effort: "[Alto/MÈdio/Baixo]"
+    impact: "[Alto/MÈdio/Baixo]"
     rationale: "[Justificativa]"
 
 ### 9.2 Proposed Solution Direction
 solution_direction: |
-  [Dire√ß√£o proposta para a solu√ß√£o baseada nos findings.
-   N√£o √© detalhamento t√©cnico, mas orienta√ß√£o estrat√©gica.]
+  [DireÁ„o proposta para a soluÁ„o baseada nos findings.
+   N„o È detalhamento tÈcnico, mas orientaÁ„o estratÈgica.]
 
 ### 9.3 Next Steps
 next_steps:
-  - action: "[Pr√≥ximo passo]"
-    owner: "[Respons√°vel]"
+  - action: "[PrÛximo passo]"
+    owner: "[Respons·vel]"
     deadline: "[Prazo]"
-    dependencies: "[Depend√™ncias]"
+    dependencies: "[DependÍncias]"
 
 ---
 
@@ -322,22 +322,22 @@ next_steps:
 artifacts:
   - name: "[Nome do artefato]"
     type: "[Interview transcript/Survey results/etc]"
-    location: "[Link ou refer√™ncia]"
+    location: "[Link ou referÍncia]"
 
 ### 10.2 Glossary
 glossary:
   - term: "[Termo]"
-    definition: "[Defini√ß√£o]"
+    definition: "[DefiniÁ„o]"
 
 ### 10.3 References
 references:
-  - "[Refer√™ncia 1]"
-  - "[Refer√™ncia 2]"
+  - "[ReferÍncia 1]"
+  - "[ReferÍncia 2]"
 ```
 
 ---
 
-## üìä Discovery Process Flow
+## ?? Discovery Process Flow
 
 ```mermaid
 graph LR
@@ -355,9 +355,9 @@ graph LR
 
 ---
 
-## üîó Relacionamentos
+## ?? Relacionamentos
 
 - **Alimenta**: ${AVANADE_PRD_TEMPLATE_YAML}, ${AVANADE_ARCHITECTURE_TEMPLATE}
 - **Usado por**: ${AVANADE_MEMORY_ANALYST_MARIA}
-- **Valida√ß√£o**: ${AVANADE_TASK_METHODOLOGY_COMPLIANCE}
+- **ValidaÁ„o**: ${AVANADE_TASK_METHODOLOGY_COMPLIANCE}
 - **Workflow**: Analysis Phase workflows

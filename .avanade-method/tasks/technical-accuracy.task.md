@@ -1,27 +1,27 @@
-﻿## 📋 O que é este Artefato?
+## ?? O que � este Artefato?
 
-Esta é a **task de validação técnica** para garantir que documentação não apenas está bem escrita, mas também é **tecnicamente correta**. Documentação bonita mas errada é pior que não ter documentação.
+Esta � a **task de valida��o t�cnica** para garantir que documenta��o n�o apenas est� bem escrita, mas tamb�m � **tecnicamente correta**. Documenta��o bonita mas errada � pior que n�o ter documenta��o.
 
-**Objetivo**: Zero bugs em documentação publicada
+**Objetivo**: Zero bugs em documenta��o publicada
 
 ---
 
-## 🎯 Quando Usar
+## ?? Quando Usar
 
-### ✅ USE para:
-- Validar documentação antes de publicação
-- Revisar docs após mudanças de código/arquitetura
+### ? USE para:
+- Validar documenta��o antes de publica��o
+- Revisar docs ap�s mudan�as de c�digo/arquitetura
 - Onboarding review (novo tech writer testa docs)
-- Quarterly audits de documentação existente
+- Quarterly audits de documenta��o existente
 
-### ❌ NÃO É:
-- Code review (isso é responsabilidade de engenheiros)
-- QA testing (isso testa produto, não docs)
-- Marketing review (isso valida messaging, não accuracy)
+### ? N�O �:
+- Code review (isso � responsabilidade de engenheiros)
+- QA testing (isso testa produto, n�o docs)
+- Marketing review (isso valida messaging, n�o accuracy)
 
 ---
 
-## ✅ TECHNICAL ACCURACY CHECKLIST
+## ? TECHNICAL ACCURACY CHECKLIST
 
 ### 1. CODE EXAMPLES
 
@@ -52,7 +52,7 @@ python example.py
 
 **Example**:
 ````markdown
-✅ GOOD:
+? GOOD:
 **Prerequisites**: Python 3.9+, `requests` library
 
 Install dependencies:
@@ -68,7 +68,7 @@ response = requests.get('https://api.example.com/users')
 print(response.json())  # Output: [{'id': 1, 'name': 'Alice'}, ...]
 ```
 
-❌ BAD (dependencies missing, output not shown):
+? BAD (dependencies missing, output not shown):
 ```python
 response = requests.get('https://api.example.com/users')
 print(response.json())
@@ -86,7 +86,7 @@ print(response.json())
 
 **Example**:
 ````markdown
-✅ GOOD (complete, working):
+? GOOD (complete, working):
 ```python
 import os
 from openai import OpenAI
@@ -104,7 +104,7 @@ except Exception as e:
     print(f"Error: {e}")
 ```
 
-❌ BAD (incomplete, no error handling, placeholder):
+? BAD (incomplete, no error handling, placeholder):
 ```python
 client = OpenAI(api_key="<your-key-here>")
 response = client.chat.completions.create(...)
@@ -122,7 +122,7 @@ print(response)
 
 **Example**:
 ````markdown
-✅ GOOD:
+? GOOD:
 ```python
 print(calculate_total(100, 0.08, 10))
 ```
@@ -159,7 +159,7 @@ curl -X GET https://api.example.com/users \
 
 **Example**:
 ````markdown
-✅ GOOD (tested, accurate):
+? GOOD (tested, accurate):
 ### GET /users/:id
 
 **Headers:**
@@ -183,7 +183,7 @@ Authorization: Bearer {token}
 }
 ```
 
-❌ BAD (not tested, guessed):
+? BAD (not tested, guessed):
 ### GET /users/:id
 
 Returns user object.
@@ -200,14 +200,14 @@ Returns user object.
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
 | page | integer | No | 1 | Page number (min: 1, max: 1000) |
 | limit | integer | No | 20 | Items per page (min: 1, max: 100) |
 | status | string | No | "active" | Filter by status. Values: "active", "inactive" |
 
-❌ BAD:
+? BAD:
 | Parameter | Description |
 |-----------|-------------|
 | page | Page number |
@@ -237,7 +237,7 @@ Before publishing architecture diagram:
 
 **Example**:
 ````markdown
-✅ GOOD (reviewed, dated):
+? GOOD (reviewed, dated):
 **Figure 1: Microservices Architecture (Last reviewed: 2025-02-03)**
 
 ```mermaid
@@ -250,7 +250,7 @@ flowchart LR
 
 *Reviewed by: Wilson Souza (Tech Lead)*
 
-❌ BAD (no review, vague):
+? BAD (no review, vague):
 ```mermaid
 flowchart LR
     Frontend --> Backend
@@ -269,10 +269,10 @@ flowchart LR
 
 **Example**:
 ```markdown
-✅ GOOD (precise, cited):
+? GOOD (precise, cited):
 **JWT (JSON Web Token)** is a compact, URL-safe token format defined in [RFC 7519](https://datatracker.ietf.org/doc/html/rfc7519). It consists of three Base64URL-encoded parts separated by dots: header, payload, and signature.
 
-❌ BAD (imprecise):
+? BAD (imprecise):
 **JWT** is a secure token used for authentication. It's encrypted and contains user data.
 
 (Wrong: JWTs are signed, not encrypted by default. "User data" is vague.)
@@ -293,7 +293,7 @@ flowchart LR
 
 **Example**:
 ````markdown
-✅ GOOD:
+? GOOD:
 **Compatibility:**
 - Python 3.9 - 3.11 (3.12 not yet tested)
 - Django 4.2 LTS (support until April 2026)
@@ -303,9 +303,9 @@ flowchart LR
 - `authenticate()` now returns `User` object (previously returned `dict`)
 - `login_required` decorator removed (use `@login_required` from `django.contrib.auth`)
 
-See [Migration Guide v1→v2](./migration-v1-v2.md) for details.
+See [Migration Guide v1?v2](./migration-v1-v2.md) for details.
 
-❌ BAD:
+? BAD:
 Works with Python and Django. Use latest versions.
 ````
 
@@ -314,7 +314,7 @@ Works with Python and Django. Use latest versions.
 #### 4.2 API Versioning
 
 - [ ] **API version in all examples** - `/v1/users` not `/users`
-- [ ] **Deprecated endpoints marked** - "⚠️ Deprecated in v2, removed in v3"
+- [ ] **Deprecated endpoints marked** - "?? Deprecated in v2, removed in v3"
 - [ ] **Sunset dates provided** - "API v1 sunset: Dec 31, 2025"
 
 ---
@@ -339,7 +339,7 @@ docker run -it ubuntu:22.04 /bin/bash
 
 **Example**:
 ````markdown
-✅ GOOD (tested, complete):
+? GOOD (tested, complete):
 ## Prerequisites
 
 **Required:**
@@ -378,10 +378,10 @@ Server running at http://localhost:3000
 ```
 
 **Troubleshooting:**
-- **Error: "EACCES: permission denied"** → Run `sudo npm install -g npm@latest`
-- **Port 3000 already in use** → Change port in `.env` file: `PORT=3001`
+- **Error: "EACCES: permission denied"** ? Run `sudo npm install -g npm@latest`
+- **Port 3000 already in use** ? Change port in `.env` file: `PORT=3001`
 
-❌ BAD (incomplete, not tested):
+? BAD (incomplete, not tested):
 ## Setup
 Install Node and run `npm install`. Start with `npm start`.
 ````
@@ -397,7 +397,7 @@ Install Node and run `npm install`. Start with `npm start`.
 
 **Example**:
 ````markdown
-✅ GOOD:
+? GOOD:
 **Configuration (.env file):**
 
 ```bash
@@ -414,7 +414,7 @@ NODE_ENV=development
 LOG_LEVEL=info
 ```
 
-❌ BAD:
+? BAD:
 Create a `.env` file with your database URL and JWT secret.
 ````
 
@@ -432,7 +432,7 @@ Create a `.env` file with your database URL and JWT secret.
 
 **Example**:
 ````markdown
-✅ GOOD:
+? GOOD:
 ## Common Errors
 
 ### Error: "ECONNREFUSED 127.0.0.1:5432"
@@ -467,7 +467,7 @@ Error: connect ECONNREFUSED 127.0.0.1:5432
 
 **Prevention:** Add PostgreSQL to system startup services.
 
-❌ BAD:
+? BAD:
 ### Database Connection Error
 Make sure your database is running.
 ````
@@ -496,11 +496,11 @@ markdown-link-check docs/**/*.md
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 - [OAuth 2.0 Spec (RFC 6749)](https://datatracker.ietf.org/doc/html/rfc6749)
 - [PostgreSQL Official Docs](https://www.postgresql.org/docs/14/)
 
-❌ BAD:
+? BAD:
 - [OAuth Tutorial](https://random-blog.com/oauth-tutorial-2018)
   (Unstable, may disappear)
 ```
@@ -524,10 +524,10 @@ markdown-link-check docs/**/*.md
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 According to the [Stack Overflow Developer Survey 2024](https://survey.stackoverflow.co/2024), Python is the 3rd most popular programming language, used by 48.2% of respondents.
 
-❌ BAD:
+? BAD:
 Python is the most popular language.
 (Unsupported, vague)
 ```
@@ -553,15 +553,15 @@ Every product release:
 
 **Example**:
 ```markdown
-✅ GOOD:
+? GOOD:
 **Figure 2: API Keys Configuration (v2.5.0)**
 ![Screenshot showing the API Keys page with "Generate New Key" button highlighted](api-keys-v2.5.0.png)
 
 To generate a new API key:
-1. Navigate to **Settings** → **Security** → **API Keys**
+1. Navigate to **Settings** ? **Security** ? **API Keys**
 2. Click **Generate New Key**
 
-❌ BAD:
+? BAD:
 ![API Keys page](old-screenshot.png)
 Click the button to create a key.
 (Screenshot is outdated, button name unclear)
@@ -569,7 +569,7 @@ Click the button to create a key.
 
 ---
 
-## 🔍 REVIEW PROCESS
+## ?? REVIEW PROCESS
 
 ### Pre-Publication Review
 
@@ -609,7 +609,7 @@ Every 3 months:
 
 ---
 
-## 📊 TECHNICAL ACCURACY SCORECARD
+## ?? TECHNICAL ACCURACY SCORECARD
 
 ```yaml
 categories:
@@ -659,7 +659,7 @@ categories:
     score: [0-10]
 
 total_score:
-  calculation: "sum(category.score × category.weight)"
+  calculation: "sum(category.score � category.weight)"
   threshold:
     production_ready: ">95%"
     needs_revision: "85-95%"
@@ -670,9 +670,9 @@ total_score:
 
 ---
 
-## 🔗 Integração com Outros Artefatos
+## ?? Integra��o com Outros Artefatos
 
-- **${AVANADE_DOC_STANDARDS_MD}**: Technical accuracy é parte de quality standards
+- **${AVANADE_DOC_STANDARDS_MD}**: Technical accuracy � parte de quality standards
 - **${AVANADE_TASK_EDITORIAL_REVIEW_PROSE}**: Prose review complementa technical review
 - **${AVANADE_TASK_DOC_ACCESSIBILITY}**: Accessibility + Technical Accuracy = Complete review
 - **${AVANADE_MEMORY_TECH_WRITER_PAIGE}**: Armazena code examples testados (Section 5)

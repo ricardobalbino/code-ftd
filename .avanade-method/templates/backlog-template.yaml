@@ -1,12 +1,12 @@
-Ôªø---
+---
 
-## üìã Objetivo
+## ?? Objetivo
 
-Template padronizado para estrutura√ß√£o e documenta√ß√£o de Product Backlog. Define formato para Epics, Features e User Stories, al√©m de crit√©rios de prioriza√ß√£o e organiza√ß√£o.
+Template padronizado para estruturaÁ„o e documentaÁ„o de Product Backlog. Define formato para Epics, Features e User Stories, alÈm de critÈrios de priorizaÁ„o e organizaÁ„o.
 
 ---
 
-## üìù Backlog Structure Template
+## ?? Backlog Structure Template
 
 ```yaml
 # Product Backlog
@@ -26,7 +26,7 @@ ready_items: 0
 
 ### 1.1 Product Vision
 vision: |
-  [Declara√ß√£o de vis√£o do produto em 2-3 frases]
+  [DeclaraÁ„o de vis„o do produto em 2-3 frases]
 
 ### 1.2 Current Release Goal
 release_goal:
@@ -50,28 +50,28 @@ metrics:
 ### Epic Template
 epics:
   - id: "EPIC-001"
-    title: "[T√≠tulo do Epic]"
+    title: "[TÌtulo do Epic]"
     status: "[Draft | Defined | In Progress | Done]"
     priority: "[Must Have | Should Have | Could Have | Won't Have]"
-    business_value: "[Alto | M√©dio | Baixo]"
+    business_value: "[Alto | MÈdio | Baixo]"
     
     description: |
-      [Descri√ß√£o do Epic em 2-3 par√°grafos]
+      [DescriÁ„o do Epic em 2-3 par·grafos]
     
-    business_driver: "[Driver de neg√≥cio que justifica]"
+    business_driver: "[Driver de negÛcio que justifica]"
     success_metrics:
-      - metric: "[M√©trica]"
+      - metric: "[MÈtrica]"
         target: "[Meta]"
     
     features:
       - id: "FEAT-001"
-        title: "[T√≠tulo da Feature]"
+        title: "[TÌtulo da Feature]"
         
     acceptance_criteria:
-      - "[Crit√©rio de aceita√ß√£o do Epic]"
+      - "[CritÈrio de aceitaÁ„o do Epic]"
       
     dependencies:
-      - "[Depend√™ncia externa ou de outro Epic]"
+      - "[DependÍncia externa ou de outro Epic]"
       
     estimated_effort: "[T-shirt size: XS|S|M|L|XL|XXL]"
     target_release: "[Release name]"
@@ -83,30 +83,30 @@ epics:
 ### Feature Template
 features:
   - id: "FEAT-001"
-    title: "[T√≠tulo da Feature]"
+    title: "[TÌtulo da Feature]"
     epic_id: "EPIC-001"
     status: "[Draft | Defined | In Progress | Done]"
     priority: "[Must Have | Should Have | Could Have]"
     
     description: |
-      [Descri√ß√£o da feature]
+      [DescriÁ„o da feature]
     
     value_statement: |
-      Como [tipo de usu√°rio],
+      Como [tipo de usu·rio],
       quero [capacidade],
-      para que [benef√≠cio].
+      para que [benefÌcio].
     
     stories:
       - id: "STORY-001"
-        title: "[T√≠tulo da Story]"
+        title: "[TÌtulo da Story]"
         points: 0
         
     acceptance_criteria:
-      - "[Crit√©rio de aceita√ß√£o]"
+      - "[CritÈrio de aceitaÁ„o]"
       
     ux_required: true
     technical_notes: |
-      [Notas t√©cnicas relevantes]
+      [Notas tÈcnicas relevantes]
 
 ---
 
@@ -115,7 +115,7 @@ features:
 ### Story Template (Reference: ${AVANADE_STORY_TEMPLATE_YAML})
 stories:
   - id: "STORY-001"
-    title: "[T√≠tulo conciso]"
+    title: "[TÌtulo conciso]"
     feature_id: "FEAT-001"
     epic_id: "EPIC-001"
     
@@ -124,9 +124,9 @@ stories:
     priority: "[Must | Should | Could | Won't]"
     
     # Story Statement
-    as_a: "[Tipo de usu√°rio]"
+    as_a: "[Tipo de usu·rio]"
     i_want: "[Funcionalidade]"
-    so_that: "[Benef√≠cio]"
+    so_that: "[BenefÌcio]"
     
     # Sizing
     story_points: "[1|2|3|5|8|13]"
@@ -135,7 +135,7 @@ stories:
     # Readiness
     acceptance_criteria:
       - given: "[Contexto]"
-        when: "[A√ß√£o]"
+        when: "[AÁ„o]"
         then: "[Resultado]"
     
     ready_checklist:
@@ -211,15 +211,15 @@ refinement_log:
     items_refined:
       - "[STORY-ID]"
     decisions:
-      - "[Decis√£o tomada]"
+      - "[Decis„o tomada]"
     action_items:
-      - "[A√ß√£o pendente]"
+      - "[AÁ„o pendente]"
 
 ### 6.2 Stories Needing Refinement
 needs_refinement:
   - id: "[STORY-ID]"
     reason: "[Por que precisa refinamento]"
-    blocker: "[O que est√° impedindo]"
+    blocker: "[O que est· impedindo]"
 
 ---
 
@@ -228,11 +228,11 @@ needs_refinement:
 ### Technical Debt Items
 tech_debt:
   - id: "DEBT-001"
-    title: "[T√≠tulo]"
-    description: "[Descri√ß√£o do d√©bito]"
-    impact: "[Impacto se n√£o resolver]"
-    effort: "[Esfor√ßo para resolver]"
-    priority: "[Alta|M√©dia|Baixa]"
+    title: "[TÌtulo]"
+    description: "[DescriÁ„o do dÈbito]"
+    impact: "[Impacto se n„o resolver]"
+    effort: "[EsforÁo para resolver]"
+    priority: "[Alta|MÈdia|Baixa]"
     related_stories: 
       - "[STORY-ID]"
 
@@ -243,26 +243,26 @@ tech_debt:
 ### Active Blockers
 blockers:
   - id: "BLOCK-001"
-    description: "[Descri√ß√£o]"
+    description: "[DescriÁ„o]"
     affected_items:
       - "[STORY-ID]"
-    owner: "[Respons√°vel]"
+    owner: "[Respons·vel]"
     status: "[Active | Resolved]"
     resolution: ""
 
 ### Risks
 risks:
   - id: "RISK-001"
-    description: "[Descri√ß√£o do risco]"
-    probability: "[Alta|M√©dia|Baixa]"
-    impact: "[Alto|M√©dio|Baixo]"
-    mitigation: "[Estrat√©gia]"
-    owner: "[Respons√°vel]"
+    description: "[DescriÁ„o do risco]"
+    probability: "[Alta|MÈdia|Baixa]"
+    impact: "[Alto|MÈdio|Baixo]"
+    mitigation: "[EstratÈgia]"
+    owner: "[Respons·vel]"
 ```
 
 ---
 
-## üìä Backlog Prioritization (RICE Score Reference)
+## ?? Backlog Prioritization (RICE Score Reference)
 
 | Story ID | Reach | Impact | Confidence | Effort | RICE Score |
 |----------|-------|--------|------------|--------|------------|
@@ -272,7 +272,7 @@ risks:
 
 ---
 
-## ‚úÖ Backlog Health Checklist
+## ? Backlog Health Checklist
 
 - [ ] Top 10 stories are Ready for Sprint
 - [ ] All stories have acceptance criteria
@@ -284,9 +284,9 @@ risks:
 
 ---
 
-## üîó Relacionamentos
+## ?? Relacionamentos
 
 - **Story Template**: ${AVANADE_STORY_TEMPLATE_YAML}
-- **Prioriza√ß√£o**: ${AVANADE_TASK_RICE_PRIORITIZATION}
-- **Valida√ß√£o**: ${AVANADE_TASK_INVEST_VALIDATION}
+- **PriorizaÁ„o**: ${AVANADE_TASK_RICE_PRIORITIZATION}
+- **ValidaÁ„o**: ${AVANADE_TASK_INVEST_VALIDATION}
 - **Usado por**: ${AVANADE_MEMORY_PO_PAULA}, ${AVANADE_MEMORY_SM_ROBERTO}

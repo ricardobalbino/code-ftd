@@ -63,9 +63,9 @@ ftd_project_context:
   stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
   key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   mandatory_docs:
-    - ".avanade-method/docs/ftd-knowledge-base.md"
-    - ".avanade-method/docs/discovery/ftd-discovery.md"
-    - ".avanade-method/docs/especificacao-simulador-notion.md"
+    - "docs/ftd-knowledge-base.md"
+    - "docs/discovery/ftd-discovery.md"
+    - "docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
   architecture_docs:
     - "docs/arquitetura/d365-solution-architecture.md"

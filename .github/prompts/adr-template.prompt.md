@@ -1,41 +1,41 @@
-ï»¿---
+---
 ---
 
-> **âš ï¸ FTD EDUCAÃ‡ÃƒO - CONTEXTO OBRIGATÃ“RIO**
-> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `.avanade-method/docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
+> **?? FTD EDUCAÇÃO - CONTEXTO OBRIGATÓRIO**
+> Antes de executar, ler: `ftd-knowledge-base.md`, `ftd-discovery.md`, `especificacao-simulador-notion.md`, `d365-config.yaml` em `docs/` e `.avanade-method/configs/`. Projeto: D365 CE + Power Pages + Azure Functions + TOTVS/Datasul.
 
-## ğŸ“‹ O que Ã© este Artefato?
+## ?? O que é este Artefato?
 
-Este template fornece uma estrutura padronizada para documentar decisÃµes arquiteturais importantes. ADRs sÃ£o documentos imutÃ¡veis que registram:
+Este template fornece uma estrutura padronizada para documentar decisões arquiteturais importantes. ADRs são documentos imutáveis que registram:
 - **O que** foi decidido
-- **Por que** essa decisÃ£o foi tomada
-- **Quando** a decisÃ£o foi feita
+- **Por que** essa decisão foi tomada
+- **Quando** a decisão foi feita
 - **Quais alternativas** foram consideradas
 - **Quais trade-offs** foram aceitos
 
 ---
 
-## ğŸ¯ Quando Usar
+## ?? Quando Usar
 
 Use este template quando:
-- âœ… Tomar uma decisÃ£o arquitetural significativa (tecnologia, padrÃ£o, infraestrutura)
-- âœ… Escolher entre mÃºltiplas opÃ§Ãµes tÃ©cnicas com trade-offs claros
-- âœ… Definir padrÃµes que impactam mÃºltiplos componentes/times
-- âœ… Documentar escolhas que afetam NFRs (performance, seguranÃ§a, escalabilidade)
-- âœ… Reverter ou substituir uma decisÃ£o arquitetural anterior
+- ? Tomar uma decisão arquitetural significativa (tecnologia, padrão, infraestrutura)
+- ? Escolher entre múltiplas opções técnicas com trade-offs claros
+- ? Definir padrões que impactam múltiplos componentes/times
+- ? Documentar escolhas que afetam NFRs (performance, segurança, escalabilidade)
+- ? Reverter ou substituir uma decisão arquitetural anterior
 
-**NÃ£o use** para decisÃµes triviais ou de implementaÃ§Ã£o de baixo nÃ­vel.
+**Não use** para decisões triviais ou de implementação de baixo nível.
 
 ---
 
-## ğŸ“– Estrutura do Template
+## ?? Estrutura do Template
 
-### ADR-[NÃšMERO]: [TÃTULO DA DECISÃƒO]
+### ADR-[NÚMERO]: [TÍTULO DA DECISÃO]
 
 ```markdown
-# ADR-[NÃšMERO]: [TÃ­tulo Conciso da DecisÃ£o]
+# ADR-[NÚMERO]: [Título Conciso da Decisão]
 
-**Status**: [Proposto | Aceito | Rejeitado | Depreciado | SubstituÃ­do por ADR-XXX]  
+**Status**: [Proposto | Aceito | Rejeitado | Depreciado | Substituído por ADR-XXX]  
 **Data**: YYYY-MM-DD  
 **Autor(es)**: [Nome(s) do(s) Arquiteto(s)]  
 **Stakeholders**: [Times/pessoas impactados]  
@@ -43,131 +43,131 @@ Use este template quando:
 
 ---
 
-## ğŸ“Œ Contexto
+## ?? Contexto
 
-[Descreva o contexto que motivou esta decisÃ£o. O que estÃ¡ acontecendo? Por que precisamos decidir agora?]
+[Descreva o contexto que motivou esta decisão. O que está acontecendo? Por que precisamos decidir agora?]
 
 **Fatores contextuais**:
-- Requisitos de negÃ³cio relevantes
-- Constraints tÃ©cnicos existentes
-- Deadlines ou dependÃªncias
+- Requisitos de negócio relevantes
+- Constraints técnicos existentes
+- Deadlines ou dependências
 - Estado atual da arquitetura
 
 ---
 
-## ğŸ¯ DecisÃ£o
+## ?? Decisão
 
-**DecisÃ£o**: [Uma frase clara do que foi decidido]
+**Decisão**: [Uma frase clara do que foi decidido]
 
-[Descreva a decisÃ£o em detalhes: o que serÃ¡ implementado, como funcionarÃ¡, quais tecnologias/padrÃµes serÃ£o usados]
+[Descreva a decisão em detalhes: o que será implementado, como funcionará, quais tecnologias/padrões serão usados]
 
 ---
 
-## ğŸ” Alternativas Consideradas
+## ?? Alternativas Consideradas
 
-### OpÃ§Ã£o 1: [Nome da OpÃ§Ã£o]
-**DescriÃ§Ã£o**: [Como funcionaria]
-**PrÃ³s**:
-- âœ… [Vantagem 1]
-- âœ… [Vantagem 2]
+### Opção 1: [Nome da Opção]
+**Descrição**: [Como funcionaria]
+**Prós**:
+- ? [Vantagem 1]
+- ? [Vantagem 2]
 
 **Contras**:
-- âŒ [Desvantagem 1]
-- âŒ [Desvantagem 2]
+- ? [Desvantagem 1]
+- ? [Desvantagem 2]
 
 ---
 
-### OpÃ§Ã£o 2: [Nome da OpÃ§Ã£o]
-**DescriÃ§Ã£o**: [Como funcionaria]
-**PrÃ³s**:
-- âœ… [Vantagem 1]
-- âœ… [Vantagem 2]
+### Opção 2: [Nome da Opção]
+**Descrição**: [Como funcionaria]
+**Prós**:
+- ? [Vantagem 1]
+- ? [Vantagem 2]
 
 **Contras**:
-- âŒ [Desvantagem 1]
-- âŒ [Desvantagem 2]
+- ? [Desvantagem 1]
+- ? [Desvantagem 2]
 
 ---
 
-### OpÃ§Ã£o 3: [Nome da OpÃ§Ã£o] (Escolhida)
-**DescriÃ§Ã£o**: [Como funcionaria]
-**PrÃ³s**:
-- âœ… [Vantagem 1]
-- âœ… [Vantagem 2]
+### Opção 3: [Nome da Opção] (Escolhida)
+**Descrição**: [Como funcionaria]
+**Prós**:
+- ? [Vantagem 1]
+- ? [Vantagem 2]
 
 **Contras**:
-- âŒ [Desvantagem 1]
-- âŒ [Desvantagem 2]
+- ? [Desvantagem 1]
+- ? [Desvantagem 2]
 
 ---
 
-## âš–ï¸ AnÃ¡lise de Trade-offs
+## ?? Análise de Trade-offs
 
-| CritÃ©rio | OpÃ§Ã£o 1 | OpÃ§Ã£o 2 | OpÃ§Ã£o 3 (Escolhida) |
+| Critério | Opção 1 | Opção 2 | Opção 3 (Escolhida) |
 |----------|---------|---------|---------------------|
-| Performance | â­â­â­ | â­â­ | â­â­â­â­ |
-| Scalability | â­â­ | â­â­â­â­ | â­â­â­ |
-| Cost | ğŸ’°ğŸ’°ğŸ’° | ğŸ’° | ğŸ’°ğŸ’° |
-| Complexity | ğŸ”§ğŸ”§ | ğŸ”§ğŸ”§ğŸ”§ğŸ”§ | ğŸ”§ğŸ”§ğŸ”§ |
-| Time to Market | ğŸš€ğŸš€ | ğŸš€ğŸš€ğŸš€ğŸš€ | ğŸš€ğŸš€ğŸš€ |
-| Maintainability | â­â­â­ | â­â­ | â­â­â­â­ |
+| Performance | ??? | ?? | ???? |
+| Scalability | ?? | ???? | ??? |
+| Cost | ?????? | ?? | ???? |
+| Complexity | ???? | ???????? | ?????? |
+| Time to Market | ???? | ???????? | ?????? |
+| Maintainability | ??? | ?? | ???? |
 
 ---
 
-## ğŸ’¡ Justificativa
+## ?? Justificativa
 
-[Explique POR QUE a opÃ§Ã£o escolhida Ã© a melhor dado o contexto. Quais fatores foram mais importantes?]
+[Explique POR QUE a opção escolhida é a melhor dado o contexto. Quais fatores foram mais importantes?]
 
 **Fatores decisivos**:
-1. [RazÃ£o principal #1]
-2. [RazÃ£o principal #2]
-3. [RazÃ£o principal #3]
+1. [Razão principal #1]
+2. [Razão principal #2]
+3. [Razão principal #3]
 
 ---
 
-## ğŸ“Š ConsequÃªncias
+## ?? Consequências
 
 ### Positivas
-- âœ… [BenefÃ­cio esperado 1]
-- âœ… [BenefÃ­cio esperado 2]
-- âœ… [BenefÃ­cio esperado 3]
+- ? [Benefício esperado 1]
+- ? [Benefício esperado 2]
+- ? [Benefício esperado 3]
 
 ### Negativas (Trade-offs Aceitos)
-- âš ï¸ [Trade-off 1 - como mitigar]
-- âš ï¸ [Trade-off 2 - como mitigar]
+- ?? [Trade-off 1 - como mitigar]
+- ?? [Trade-off 2 - como mitigar]
 
 ### Riscos
-- ğŸš¨ **[Risco 1]**: [Como mitigar]
-- ğŸš¨ **[Risco 2]**: [Como mitigar]
+- ?? **[Risco 1]**: [Como mitigar]
+- ?? **[Risco 2]**: [Como mitigar]
 
 ---
 
-## ğŸ—ï¸ ImplementaÃ§Ã£o
+## ??? Implementação
 
 ### Componentes Impactados
-- [Componente/serviÃ§o 1]
-- [Componente/serviÃ§o 2]
+- [Componente/serviço 1]
+- [Componente/serviço 2]
 
-### MudanÃ§as NecessÃ¡rias
-1. [MudanÃ§a tÃ©cnica 1]
-2. [MudanÃ§a tÃ©cnica 2]
-3. [MudanÃ§a de processo/documentaÃ§Ã£o]
+### Mudanças Necessárias
+1. [Mudança técnica 1]
+2. [Mudança técnica 2]
+3. [Mudança de processo/documentação]
 
-### EsforÃ§o Estimado
+### Esforço Estimado
 - **Desenvolvimento**: [X days/sprints]
 - **Testing**: [X days]
 - **Deployment**: [X days]
 
 ---
 
-## ğŸ“‹ Checklist de ValidaÃ§Ã£o
+## ?? Checklist de Validação
 
 Antes de aprovar este ADR, verificar:
 - [ ] Contexto claramente explicado
 - [ ] Pelo menos 2-3 alternativas consideradas
 - [ ] Trade-offs documentados e aceitos
-- [ ] ConsequÃªncias (positivas e negativas) identificadas
-- [ ] Riscos mapeados com planos de mitigaÃ§Ã£o
+- [ ] Consequências (positivas e negativas) identificadas
+- [ ] Riscos mapeados com planos de mitigação
 - [ ] Stakeholders consultados
 - [ ] Alinhamento com NFRs do projeto
 - [ ] Impacto em custo avaliado
@@ -175,24 +175,24 @@ Antes de aprovar este ADR, verificar:
 
 ---
 
-## ğŸ”— ReferÃªncias
+## ?? Referências
 
 - [Link para requisitos relevantes]
 - [Link para diagramas de arquitetura]
-- [DocumentaÃ§Ã£o tÃ©cnica de tecnologias escolhidas]
+- [Documentação técnica de tecnologias escolhidas]
 - [Benchmarks ou proofs-of-concept]
 - [ADRs relacionados]
 
 ---
 
-## ğŸ“ Notas Adicionais
+## ?? Notas Adicionais
 
-[Qualquer informaÃ§Ã£o adicional relevante, como limitaÃ§Ãµes conhecidas, planos futuros de revisÃ£o, etc.]
+[Qualquer informação adicional relevante, como limitações conhecidas, planos futuros de revisão, etc.]
 ```
 
 ---
 
-## ğŸ’¡ Exemplos de ADRs
+## ?? Exemplos de ADRs
 
 ### Exemplo 1: ADR-001 - Escolha de Database
 
@@ -207,92 +207,92 @@ Antes de aprovar este ADR, verificar:
 
 ---
 
-## ğŸ“Œ Contexto
+## ?? Contexto
 
 O sistema de gerenciamento de pedidos precisa de um banco de dados relacional para armazenar:
 - Cadastro de clientes e produtos
-- HistÃ³rico de pedidos e transaÃ§Ãµes
+- Histórico de pedidos e transações
 - Relacionamentos complexos entre entidades
 
 **Fatores contextuais**:
-- Volume esperado: 1M de transaÃ§Ãµes/mÃªs
+- Volume esperado: 1M de transações/mês
 - Necessidade de ACID compliance
-- Time jÃ¡ tem experiÃªncia com SQL
-- Budget limitado (preferÃªncia por open-source)
+- Time já tem experiência com SQL
+- Budget limitado (preferência por open-source)
 
 ---
 
-## ğŸ¯ DecisÃ£o
+## ?? Decisão
 
-**DecisÃ£o**: Utilizaremos PostgreSQL 15+ como database principal do sistema.
+**Decisão**: Utilizaremos PostgreSQL 15+ como database principal do sistema.
 
 Implementaremos PostgreSQL com:
 - Connection pooling (PgBouncer)
 - Read replicas para queries de leitura intensiva
-- Backup automatizado diÃ¡rio
-- Partitioning para tabelas de histÃ³rico
+- Backup automatizado diário
+- Partitioning para tabelas de histórico
 
 ---
 
-## ğŸ” Alternativas Consideradas
+## ?? Alternativas Consideradas
 
-### OpÃ§Ã£o 1: MySQL 8.0
-**PrÃ³s**:
-- âœ… Time tem mais experiÃªncia
-- âœ… Comunidade maior
+### Opção 1: MySQL 8.0
+**Prós**:
+- ? Time tem mais experiência
+- ? Comunidade maior
 
 **Contras**:
-- âŒ JSON support inferior ao PostgreSQL
-- âŒ Window functions menos robustas
+- ? JSON support inferior ao PostgreSQL
+- ? Window functions menos robustas
 
 ---
 
-### OpÃ§Ã£o 2: SQL Server
-**PrÃ³s**:
-- âœ… IntegraÃ§Ã£o nativa com stack Microsoft
-- âœ… Ferramentas empresariais robustas
+### Opção 2: SQL Server
+**Prós**:
+- ? Integração nativa com stack Microsoft
+- ? Ferramentas empresariais robustas
 
 **Contras**:
-- âŒ Custo de licenciamento alto
-- âŒ Lock-in com Microsoft
+- ? Custo de licenciamento alto
+- ? Lock-in com Microsoft
 
 ---
 
-### OpÃ§Ã£o 3: PostgreSQL (Escolhida)
-**PrÃ³s**:
-- âœ… Open-source (zero custo de licenÃ§a)
-- âœ… JSON/JSONB support excelente
-- âœ… Window functions completas
-- âœ… ExtensÃµes (PostGIS, pg_stat_statements)
+### Opção 3: PostgreSQL (Escolhida)
+**Prós**:
+- ? Open-source (zero custo de licença)
+- ? JSON/JSONB support excelente
+- ? Window functions completas
+- ? Extensões (PostGIS, pg_stat_statements)
 
 **Contras**:
-- âŒ Curva de aprendizado para alguns membros do time
-- âŒ Menos ferramentas GUI comparado a MySQL
+- ? Curva de aprendizado para alguns membros do time
+- ? Menos ferramentas GUI comparado a MySQL
 
 ---
 
-## ğŸ’¡ Justificativa
+## ?? Justificativa
 
 PostgreSQL foi escolhido por:
 1. **Custo**: Open-source elimina licenciamento
-2. **Features**: JSON support serÃ¡ crÃ­tico para integraÃ§Ã£o com APIs externas
+2. **Features**: JSON support será crítico para integração com APIs externas
 3. **Performance**: Benchmarks mostraram 20% melhor performance em queries complexas
 4. **Comunidade**: Ativa e em crescimento, com bom suporte
 
 ---
 
-## ğŸ“Š ConsequÃªncias
+## ?? Consequências
 
 ### Positivas
-- âœ… Economia de $15k/ano em licenÃ§as
-- âœ… Flexibilidade com JSON data
-- âœ… Performance otimizada para analytics
+- ? Economia de $15k/ano em licenças
+- ? Flexibilidade com JSON data
+- ? Performance otimizada para analytics
 
 ### Negativas (Trade-offs Aceitos)
-- âš ï¸ 2 membros do time precisarÃ£o de 1 semana de treinamento
+- ?? 2 membros do time precisarão de 1 semana de treinamento
 
 ### Riscos
-- ğŸš¨ **Expertise inicial limitada**: Mitigado com treinamento e documentaÃ§Ã£o interna
+- ?? **Expertise inicial limitada**: Mitigado com treinamento e documentação interna
 ```
 
 ---
@@ -300,58 +300,58 @@ PostgreSQL foi escolhido por:
 ### Exemplo 2: ADR-002 - Microservices vs Monolith
 
 ```markdown
-# ADR-002: Arquitetura MonolÃ­tica Modular para MVP
+# ADR-002: Arquitetura Monolítica Modular para MVP
 
 **Status**: Aceito  
 **Data**: 2025-02-01  
-**DecisÃ£o**: Iniciaremos com monolito modular, com plano de evoluÃ§Ã£o para microservices.
+**Decisão**: Iniciaremos com monolito modular, com plano de evolução para microservices.
 
 **Justificativa**:
 - Time pequeno (5 devs)
-- Time-to-market crÃ­tico (4 meses)
-- DomÃ­nio ainda sendo descoberto
-- Infraestrutura de microservices adiciona complexidade desnecessÃ¡ria no MVP
+- Time-to-market crítico (4 meses)
+- Domínio ainda sendo descoberto
+- Infraestrutura de microservices adiciona complexidade desnecessária no MVP
 
-**Plano de EvoluÃ§Ã£o**:
-ApÃ³s 6 meses de produÃ§Ã£o, reavaliaremos para potencial migraÃ§Ã£o de mÃ³dulos especÃ­ficos (pagamentos, notificaÃ§Ãµes) para microservices baseado em:
-- Volume de trÃ¡fego por mÃ³dulo
+**Plano de Evolução**:
+Após 6 meses de produção, reavaliaremos para potencial migração de módulos específicos (pagamentos, notificações) para microservices baseado em:
+- Volume de tráfego por módulo
 - Necessidade de escala independente
-- Maturidade do domÃ­nio
+- Maturidade do domínio
 ```
 
 ---
 
-## âœ… Boas PrÃ¡ticas
+## ? Boas Práticas
 
-### NumeraÃ§Ã£o
-- Use numeraÃ§Ã£o sequencial: ADR-001, ADR-002, etc.
-- Mantenha registro em `docs/adr/` no repositÃ³rio
-- Crie Ã­ndice em `docs/adr/README.md`
+### Numeração
+- Use numeração sequencial: ADR-001, ADR-002, etc.
+- Mantenha registro em `docs/adr/` no repositório
+- Crie índice em `docs/adr/README.md`
 
 ### Escrita
-- âœ… Seja conciso mas completo
-- âœ… Use linguagem objetiva (evite jargÃ£o excessivo)
-- âœ… Documente o CONTEXTO (nÃ£o sÃ³ a decisÃ£o)
-- âœ… Sempre liste alternativas consideradas
-- âœ… Seja honesto sobre trade-offs
+- ? Seja conciso mas completo
+- ? Use linguagem objetiva (evite jargão excessivo)
+- ? Documente o CONTEXTO (não só a decisão)
+- ? Sempre liste alternativas consideradas
+- ? Seja honesto sobre trade-offs
 
 ### Processo
-- âœ… ADRs sÃ£o **imutÃ¡veis** - nÃ£o delete ou edite apÃ³s aprovaÃ§Ã£o
-- âœ… Se decisÃ£o mudar, crie novo ADR e marque o antigo como "SubstituÃ­do por ADR-XXX"
-- âœ… Revise ADRs em arquiteture review meetings
-- âœ… Use pull requests para revisar ADRs antes de aprovar
+- ? ADRs são **imutáveis** - não delete ou edite após aprovação
+- ? Se decisão mudar, crie novo ADR e marque o antigo como "Substituído por ADR-XXX"
+- ? Revise ADRs em arquiteture review meetings
+- ? Use pull requests para revisar ADRs antes de aprovar
 
 ---
 
-## ğŸ”— IntegraÃ§Ã£o com Outros Artefatos
+## ?? Integração com Outros Artefatos
 
-- **${AVANADE_ARCHITECTURE_TEMPLATE}**: ADRs detalham decisÃµes mencionadas na arquitetura
-- **${AVANADE_MEMORY_ARCHITECT_WILSON}**: ADRs alimentam a memÃ³ria com decisÃµes histÃ³ricas
-- **${AVANADE_TASK_ARCHITECTURE_QUALITY}**: ADRs sÃ£o validados com este checklist
+- **${AVANADE_ARCHITECTURE_TEMPLATE}**: ADRs detalham decisões mencionadas na arquitetura
+- **${AVANADE_MEMORY_ARCHITECT_WILSON}**: ADRs alimentam a memória com decisões históricas
+- **${AVANADE_TASK_ARCHITECTURE_QUALITY}**: ADRs são validados com este checklist
 
 ---
 
-## ğŸ“š ReferÃªncias
+## ?? Referências
 
 - [Documenting Architecture Decisions - Michael Nygard](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
 - [ADR GitHub Organization](https://adr.github.io/)

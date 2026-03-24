@@ -90,4 +90,4 @@
 
 ---
 
-*Referências: [ftd-knowledge-base.md](../.avanade-method/docs/ftd-knowledge-base.md)*
+*Referências: [ftd-knowledge-base.md](../docs/ftd-knowledge-base.md)*

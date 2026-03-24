@@ -1,21 +1,21 @@
-Ôªø## Objetivo
+## Objetivo
 Processo estruturado para diagnosticar e corrigir bugs eficientemente.
 
 ---
 
-## üêõ Debugging Workflow
+## ?? Debugging Workflow
 
 ### 1. Reproduce (Reproduzir)
-**Crit√©rio**: Confirmar bug √© real e reproduz√≠vel
+**CritÈrio**: Confirmar bug È real e reproduzÌvel
 
 **Checklist**:
-- [ ] **Consist√™ncia**: Consegue reproduzir 100% das vezes?
+- [ ] **ConsistÍncia**: Consegue reproduzir 100% das vezes?
 - [ ] **Steps**: Documentar passos exatos (Given/When/Then)
-- [ ] **Environment**: Dev, Staging, Produ√ß√£o? Vers√£o do app?
-- [ ] **Data**: Massa de dados espec√≠fica causa o bug?
-- [ ] **User/Permissions**: Bug ocorre para todos usu√°rios ou role espec√≠fico?
+- [ ] **Environment**: Dev, Staging, ProduÁ„o? Vers„o do app?
+- [ ] **Data**: Massa de dados especÌfica causa o bug?
+- [ ] **User/Permissions**: Bug ocorre para todos usu·rios ou role especÌfico?
 
-**Template de Reprodu√ß√£o**:
+**Template de ReproduÁ„o**:
 ```
 BUG: Login falha com erro 500
 
@@ -35,26 +35,26 @@ ACTUAL: Erro 500 "Internal Server Error"
 FREQUENCY: 10/10 tentativas
 ```
 
-**Se n√£o consegue reproduzir**:
-- ‚ùå **N√£o √© bug** ‚Üí pode ser ambiente espec√≠fico, cache, etc.
-- üîç **Coletar mais dados**: Logs, screenshot, video, network trace
+**Se n„o consegue reproduzir**:
+- ? **N„o È bug** ? pode ser ambiente especÌfico, cache, etc.
+- ?? **Coletar mais dados**: Logs, screenshot, video, network trace
 
 ---
 
 ### 2. Isolate (Isolar)
-**Crit√©rio**: Identificar componente/m√≥dulo/fun√ß√£o com problema
+**CritÈrio**: Identificar componente/mÛdulo/funÁ„o com problema
 
-**T√©cnicas**:
+**TÈcnicas**:
 
-#### üî¨ Binary Search (Bisection)
-Dividir e conquistar - desabilitar metade do c√≥digo at√© isolar:
+#### ?? Binary Search (Bisection)
+Dividir e conquistar - desabilitar metade do cÛdigo atÈ isolar:
 ```
-Sistema com 10 m√≥dulos ‚Üí testar com 5 desabilitados
-  ‚Üí Bug ainda ocorre ‚Üí problema est√° nos 5 ativos
-    ‚Üí Desabilitar 2-3 desses ‚Üí repetir at√© isolar 1 m√≥dulo
+Sistema com 10 mÛdulos ? testar com 5 desabilitados
+  ? Bug ainda ocorre ? problema est· nos 5 ativos
+    ? Desabilitar 2-3 desses ? repetir atÈ isolar 1 mÛdulo
 ```
 
-#### üì¶ Component Isolation
+#### ?? Component Isolation
 Testar componente isoladamente:
 ```
 // Teste isolado do componente suspeito
@@ -62,43 +62,43 @@ const result = suspectFunction(testInput);
 console.log(result); // Comportamento esperado?
 ```
 
-#### üß™ Hypothesis Testing
-Formular hip√≥teses e testar:
+#### ?? Hypothesis Testing
+Formular hipÛteses e testar:
 ```
-Hip√≥tese 1: "Bug est√° no backend (API)"
+HipÛtese 1: "Bug est· no backend (API)"
   Teste: Chamar API diretamente via Postman
-  Resultado: API retorna 500 ‚Üí ‚úÖ Confirmada
+  Resultado: API retorna 500 ? ? Confirmada
 
-Hip√≥tese 2: "Bug est√° no database query"
+HipÛtese 2: "Bug est· no database query"
   Teste: Executar query diretamente no SQL
-  Resultado: Query retorna dados corretos ‚Üí ‚ùå Refutada
+  Resultado: Query retorna dados corretos ? ? Refutada
 ```
 
-**Output desta fase**: Arquivo/fun√ß√£o/linha suspeita
+**Output desta fase**: Arquivo/funÁ„o/linha suspeita
 
 ---
 
 ### 3. Analyze (Analisar)
-**Crit√©rio**: Entender **por que** bug est√° acontecendo
+**CritÈrio**: Entender **por que** bug est· acontecendo
 
 **Ferramentas**:
 
-#### üìã Stack Trace
+#### ?? Stack Trace
 Ler erro de baixo para cima (call stack):
 ```
 Error: Cannot read property 'name' of undefined
-  at getUserName (user.service.ts:45)    ‚Üê origem do erro
-  at processUser (user.controller.ts:23) ‚Üê chamou getUserName
-  at handleRequest (app.ts:12)          ‚Üê chamou processUser
+  at getUserName (user.service.ts:45)    ? origem do erro
+  at processUser (user.controller.ts:23) ? chamou getUserName
+  at handleRequest (app.ts:12)          ? chamou processUser
 ```
 
-**Foco**: Primeira linha do **seu c√≥digo** (n√£o de libs)
+**Foco**: Primeira linha do **seu cÛdigo** (n„o de libs)
 
-#### üîç Debugger (Breakpoints)
-Pausar execu√ß√£o e inspecionar estado:
+#### ?? Debugger (Breakpoints)
+Pausar execuÁ„o e inspecionar estado:
 ```typescript
 function calculateDiscount(user: User, order: Order) {
-  debugger; // ‚Üê c√≥digo pausa aqui
+  debugger; // ? cÛdigo pausa aqui
   
   const discount = user.isPremium ? 0.2 : 0;
   const total = order.total * (1 - discount);
@@ -108,12 +108,12 @@ function calculateDiscount(user: User, order: Order) {
 ```
 
 **Inspecionar**:
-- Valores de vari√°veis (`user`, `order`, `discount`)
-- Call stack (quem chamou esta fun√ß√£o)
-- Watch expressions (condi√ß√µes customizadas)
+- Valores de vari·veis (`user`, `order`, `discount`)
+- Call stack (quem chamou esta funÁ„o)
+- Watch expressions (condiÁıes customizadas)
 
-#### üìä Logging Estrat√©gico
-Adicionar logs tempor√°rios para rastrear fluxo:
+#### ?? Logging EstratÈgico
+Adicionar logs tempor·rios para rastrear fluxo:
 ```typescript
 function processOrder(order: Order) {
   console.log('[DEBUG] processOrder START', { orderId: order.id });
@@ -128,13 +128,13 @@ function processOrder(order: Order) {
 }
 ```
 
-**Boas pr√°ticas**:
-- Prefix: `[DEBUG]`, `[TRACE]` para f√°cil remo√ß√£o
-- Dados relevantes: IDs, estados, valores cr√≠ticos
-- Remover ap√≥s fix (n√£o commitar logs de debug)
+**Boas pr·ticas**:
+- Prefix: `[DEBUG]`, `[TRACE]` para f·cil remoÁ„o
+- Dados relevantes: IDs, estados, valores crÌticos
+- Remover apÛs fix (n„o commitar logs de debug)
 
-#### üî¨ Network Inspector
-Para bugs de API/integra√ß√£o:
+#### ?? Network Inspector
+Para bugs de API/integraÁ„o:
 ```
 Request:
   POST /api/orders
@@ -143,59 +143,59 @@ Request:
 
 Response:
   Status: 500
-  Body: { error: "User not found" } ‚Üê aha! userId inv√°lido
+  Body: { error: "User not found" } ? aha! userId inv·lido
 ```
 
 ---
 
-### 4. Hypothesis (Hip√≥tese)
-**Crit√©rio**: Teorizar causa raiz baseado em an√°lise
+### 4. Hypothesis (HipÛtese)
+**CritÈrio**: Teorizar causa raiz baseado em an·lise
 
-**Template de Hip√≥tese**:
+**Template de HipÛtese**:
 ```
-HIP√ìTESE: [Descri√ß√£o concisa da causa raiz]
-EVID√äNCIA: [Dados que suportam hip√≥tese]
-TESTE: [Como validar hip√≥tese]
+HIP”TESE: [DescriÁ„o concisa da causa raiz]
+EVID NCIA: [Dados que suportam hipÛtese]
+TESTE: [Como validar hipÛtese]
 ```
 
 **Exemplo**:
 ```
-HIP√ìTESE: User.isPremium est√° undefined causando c√°lculo errado
-EVID√äNCIA: 
+HIP”TESE: User.isPremium est· undefined causando c·lculo errado
+EVID NCIA: 
   - Stack trace aponta para user.isPremium
   - Logs mostram user = { id: 42, name: "John" } (sem isPremium)
   - Database schema mostra coluna "isPremium" foi adicionada recentemente
 TESTE: 
   - Adicionar default value na migration
-  - Ou adicionar fallback no c√≥digo: user.isPremium ?? false
+  - Ou adicionar fallback no cÛdigo: user.isPremium ?? false
 ```
 
 ---
 
 ### 5. Fix (Corrigir)
-**Crit√©rio**: Implementar corre√ß√£o m√≠nima e test√°vel
+**CritÈrio**: Implementar correÁ„o mÌnima e test·vel
 
-**Princ√≠pios**:
-- [ ] **Minimal change**: Menor altera√ß√£o que resolve o problema
-- [ ] **Root cause**: Corrige causa raiz, n√£o sintoma
-- [ ] **Backward compatible**: N√£o quebra c√≥digo existente
+**PrincÌpios**:
+- [ ] **Minimal change**: Menor alteraÁ„o que resolve o problema
+- [ ] **Root cause**: Corrige causa raiz, n„o sintoma
+- [ ] **Backward compatible**: N„o quebra cÛdigo existente
 - [ ] **Tested**: Teste automatizado valida fix
 
 **Exemplo de Fix**:
 ```typescript
 // ANTES (bug):
 function calculateDiscount(user: User) {
-  return user.isPremium ? 0.2 : 0; // ‚ùå crash se isPremium undefined
+  return user.isPremium ? 0.2 : 0; // ? crash se isPremium undefined
 }
 
 // DEPOIS (fix):
 function calculateDiscount(user: User) {
-  return user.isPremium === true ? 0.2 : 0; // ‚úÖ safe
+  return user.isPremium === true ? 0.2 : 0; // ? safe
 }
 
-// OU com fallback expl√≠cito:
+// OU com fallback explÌcito:
 function calculateDiscount(user: User) {
-  const isPremium = user.isPremium ?? false; // ‚úÖ default value
+  const isPremium = user.isPremium ?? false; // ? default value
   return isPremium ? 0.2 : 0;
 }
 ```
@@ -203,11 +203,11 @@ function calculateDiscount(user: User) {
 ---
 
 ### 6. Test (Testar)
-**Crit√©rio**: Validar fix e prevenir regress√£o
+**CritÈrio**: Validar fix e prevenir regress„o
 
 **Checklist**:
-- [ ] **Bug original**: Reprodu√ß√£o original agora funciona?
-- [ ] **Edge cases**: Outros cen√°rios relacionados ainda funcionam?
+- [ ] **Bug original**: ReproduÁ„o original agora funciona?
+- [ ] **Edge cases**: Outros cen·rios relacionados ainda funcionam?
 - [ ] **Regression test**: Teste automatizado adicionado
 - [ ] **Code review**: Outra pessoa validou fix
 
@@ -219,7 +219,7 @@ describe('calculateDiscount', () => {
     
     const discount = calculateDiscount(user);
     
-    expect(discount).toBe(0); // ‚úÖ n√£o crashea
+    expect(discount).toBe(0); // ? n„o crashea
   });
 
   it('should return 0.2 when user.isPremium is true', () => {
@@ -235,22 +235,22 @@ describe('calculateDiscount', () => {
 ---
 
 ### 7. Document (Documentar)
-**Crit√©rio**: Registrar bug, causa raiz, e solu√ß√£o para aprendizado
+**CritÈrio**: Registrar bug, causa raiz, e soluÁ„o para aprendizado
 
 **Template de Bug Report**:
 ```markdown
-## BUG-123: Login falha com erro 500 para novos usu√°rios
+## BUG-123: Login falha com erro 500 para novos usu·rios
 
-### Descri√ß√£o
-Usu√°rios criados ap√≥s 2024-01-15 n√£o conseguem fazer login.
+### DescriÁ„o
+Usu·rios criados apÛs 2024-01-15 n„o conseguem fazer login.
 
 ### Root Cause
-Migration adicionou coluna `isPremium` mas n√£o populou 
-usu√°rios existentes (NULL). C√≥digo assumia boolean.
+Migration adicionou coluna `isPremium` mas n„o populou 
+usu·rios existentes (NULL). CÛdigo assumia boolean.
 
 ### Fix
 - Adicionado default value `false` na migration
-- C√≥digo agora faz fallback: `user.isPremium ?? false`
+- CÛdigo agora faz fallback: `user.isPremium ?? false`
 - Regression test adicionado
 
 ### Prevention
@@ -264,52 +264,52 @@ usu√°rios existentes (NULL). C√≥digo assumia boolean.
 ```
 
 **Onde documentar**:
-- **Commit message**: Detalhado (n√£o s√≥ "fix bug")
+- **Commit message**: Detalhado (n„o sÛ "fix bug")
 - **PR description**: Root cause + fix + tests
 - **Wiki/Knowledge Base**: Bugs complexos/recorrentes
-- **Memory**: ${AVANADE_MEMORY_DEV_TIAGO} (padr√µes de bugs)
+- **Memory**: ${AVANADE_MEMORY_DEV_TIAGO} (padrıes de bugs)
 
 ---
 
-## üéØ Debugging Anti-Patterns (Evitar)
+## ?? Debugging Anti-Patterns (Evitar)
 
-### ‚ùå Random Changes ("Shotgun Debugging")
-Mudar c√≥digo aleatoriamente esperando que bug desapare√ßa.
+### ? Random Changes ("Shotgun Debugging")
+Mudar cÛdigo aleatoriamente esperando que bug desapareÁa.
 
-**Problema**: N√£o entende causa raiz, pode introduzir novos bugs.
+**Problema**: N„o entende causa raiz, pode introduzir novos bugs.
 
-**Solu√ß√£o**: Seguir workflow sistem√°tico (Reproduce ‚Üí Isolate ‚Üí Analyze)
-
----
-
-### ‚ùå Console.log Everywhere
-Poluir c√≥digo com centenas de logs.
-
-**Problema**: Dificulta leitura, pode gerar noise em produ√ß√£o.
-
-**Solu√ß√£o**: Usar debugger (breakpoints) ou logging estrat√©gico tempor√°rio.
+**SoluÁ„o**: Seguir workflow sistem·tico (Reproduce ? Isolate ? Analyze)
 
 ---
 
-### ‚ùå Cargo Cult Fixes
-Copiar solu√ß√£o do StackOverflow sem entender.
+### ? Console.log Everywhere
+Poluir cÛdigo com centenas de logs.
 
-**Problema**: Fix funciona mas voc√™ n√£o sabe por qu√™, pode quebrar depois.
+**Problema**: Dificulta leitura, pode gerar noise em produÁ„o.
 
-**Solu√ß√£o**: Entender **por que** solu√ß√£o funciona antes de aplicar.
+**SoluÁ„o**: Usar debugger (breakpoints) ou logging estratÈgico tempor·rio.
 
 ---
 
-### ‚ùå Quick & Dirty Patch
-Adicionar if/else para esconder sintoma ao inv√©s de corrigir causa raiz.
+### ? Cargo Cult Fixes
+Copiar soluÁ„o do StackOverflow sem entender.
+
+**Problema**: Fix funciona mas vocÍ n„o sabe por quÍ, pode quebrar depois.
+
+**SoluÁ„o**: Entender **por que** soluÁ„o funciona antes de aplicar.
+
+---
+
+### ? Quick & Dirty Patch
+Adicionar if/else para esconder sintoma ao invÈs de corrigir causa raiz.
 
 **Problema**: Bug pode reaparecer em outro contexto.
 
-**Solu√ß√£o**: Identificar e corrigir causa raiz.
+**SoluÁ„o**: Identificar e corrigir causa raiz.
 
 ---
 
-## üîß Ferramentas por Categoria
+## ?? Ferramentas por Categoria
 
 ### Frontend (Browser)
 - **Chrome DevTools**: Breakpoints, network, console
@@ -333,21 +333,21 @@ Adicionar if/else para esconder sintoma ao inv√©s de corrigir causa raiz.
 
 ---
 
-## üìã Debugging Checklist (Quick Reference)
+## ?? Debugging Checklist (Quick Reference)
 
-- [ ] **Reproduce**: Bug √© consistente? Steps documentados?
-- [ ] **Isolate**: Qual componente/fun√ß√£o est√° quebrando?
-- [ ] **Analyze**: Por que est√° quebrando? (stack trace, debugger, logs)
-- [ ] **Hypothesis**: Qual √© a causa raiz?
-- [ ] **Fix**: Corre√ß√£o m√≠nima que resolve root cause
+- [ ] **Reproduce**: Bug È consistente? Steps documentados?
+- [ ] **Isolate**: Qual componente/funÁ„o est· quebrando?
+- [ ] **Analyze**: Por que est· quebrando? (stack trace, debugger, logs)
+- [ ] **Hypothesis**: Qual È a causa raiz?
+- [ ] **Fix**: CorreÁ„o mÌnima que resolve root cause
 - [ ] **Test**: Regression test adicionado, fix validado
-- [ ] **Document**: Root cause e solu√ß√£o documentados
+- [ ] **Document**: Root cause e soluÁ„o documentados
 
 ---
 
-## üîó Integra√ß√£o com Metodologia Avanade
+## ?? IntegraÁ„o com Metodologia Avanade
 
 - **Trigger**: Bug reportado (Jira, PagerDuty, user feedback)
 - **Output**: Fix + Regression test + Documentation
 - **Quality**: ${AVANADE_TASK_CODE_REVIEW}, ${AVANADE_TASK_TEST_COVERAGE}
-- **Mem√≥ria**: ${AVANADE_MEMORY_DEV_TIAGO} (patterns de bugs, root causes)
+- **MemÛria**: ${AVANADE_MEMORY_DEV_TIAGO} (patterns de bugs, root causes)
