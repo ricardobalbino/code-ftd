@@ -58,18 +58,60 @@ dependencies:
     - adr-template.md
 
 memories:
-  memory_file: "wilson-architect.memory.md"
+  memory_file: "wilson-architect-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions (.NET 8 Isolated), Azure Service Bus, Azure Event Grid, Azure Key Vault, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  adrs_aceitos:
+    - "ADR-001: Power Pages (não Canvas App) para Simulador Comercial"
+    - "ADR-002: Entra ID (não Azure AD B2C) para autenticação Power Pages internos"
+    - "ADR-003: Débounce ≤50 produtos Plugin Sync | >50 Azure Function async"
+    - "ADR-004: Cache heavy client-side JS para mínimo roundtrips Dataverse"
+    - "ADR-005: CRM como source of truth para contas (vs TOTVS)"
+    - "ADR-006: Azure Service Bus para integração assíncrona D365↔TOTVS"
+    - "ADR-007: Eliminar Vulcano — migrar aprovação para Power Automate nativo"
+  adrs_pendentes:
+    - "ADR-008: Azure API Management — avaliar para Onda 1 (sem APIM hoje)"
+    - "ADR-009: Adobe Sign → nova plataforma de assinatura (em avaliação)"
+    - "ADR-010: Infrastructure as Code (Bicep) para recursos Azure"
+  solution_strategy:
+    solutions: 9
+    deploy_order: "FTDCore → FTDDataModel → FTDSales/FTDService → FTDPlugins → FTDIntegration → FTDControls → FTDClientExtensions → FTDSiteMap"
+    publisher: "ftd (prefixo ftd_ obrigatório)"
+  architectural_risks:
+    - "R1 (CRÍTICO): Dataverse storage já passou do limite — bloqueia novas tabelas"
+    - "R2 (ALTO): Produtos não limpos a tempo para lote (1.283 vs 15 esperados)"
+    - "R3 (MÉDIO): Limite conexões FTDMaxFlow — investigar Managed Identity"
+    - "R4 (MÉDIO): QA e RC environments não configurados — bloqueia Onda 1"
+    - "R5 (MÉDIO): Regras de alçada indefinidas — motor pode ser entregue antes das regras"
+  specialist_focus:
+    - "TODO ADR deve ser formalizado usando .avanade-method/templates/adr-template.md"
+    - "C4 Model para todos os diagramas (Context → Container → Component)"
+    - "Qualquer nova integração: avaliar Service Bus vs Event Grid vs HTTP direto"
+    - "Sizing de performance: pico Nov-Jan = 5.000 contratos/dia = ~5-10x volume normal"
+    - "Security by design: Managed Identity > App Registration > Client Secret"
+    - "Sem API Management hoje — documentar como risco arquitetural ativo"
+    - "Novas tabelas Dataverse: verificar storage disponível ANTES de propor"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler TODOS os architecture_docs ANTES de qualquer decisão técnica. Os ADRs aceitos são imutáveis — qualquer revisão requer novo ADR com justificativa explícita."

@@ -139,7 +139,7 @@ commercial_process:
     - { name: "Espanhol", majoracao: true, lote: true }
     - { name: "Literatura", majoracao: false, lote: false }
     - { name: "APE", majoracao: false, lote: true }
-  approval_levels: 4  # consultor, coordenador+gerente, +diretor adjunto, +diretor comercial
+  approval_levels: 7  # Refinado Mar/2026: Consultor, Coordenador, Gerente Filial, Gerente Regional, DG, Superintendente, Presidente
   product_types:
     - "Prateleira (catálogo padrão)"
     - "Customizado Compartilhado (alteração leve, qualquer escola)"
@@ -310,8 +310,22 @@ quality_gates:
     require_manifest_validation: true
 
 # ============================================================
-# ALM PIPELINE
+# GOVERNANCE & COMPLIANCE - FTD SPECIFIC
 # ============================================================
+governance:
+  dataverse_storage:
+    status: "CRITICAL"
+    restriction_rule: "PROIBIDO sugerir armazenamento de arquivos/anexos diretamente no Dataverse (Notes/Attachments)."
+    mandatory_alternative: "SEMPRE propor integração com SharePoint Online ou Azure Blob Storage para documentos FTD."
+    logging_rule: "Logs de integração devem ser limpos após 30 dias ou movidos para o Azure Log Analytics."
+  security:
+    isolation_pattern: "Visibilidade baseada em Filial (Business Unit)."
+    consultant_access: "Apenas suas contas (carteirização)."
+    manager_access: "Contas da filial inteira."
+    data_privacy: "Contatos devem ter visibilidade restrita (Pendente implementação)."
+  secrets_management:
+    mandatory_vault: "Azure Key Vault para Azure Functions e Integrações."
+    prohibited: "Valores sensíveis em codigo-fonte ou variáveis de ambiente sem criptografia."
 alm:
   pipeline_type: "Azure DevOps"
   stages:

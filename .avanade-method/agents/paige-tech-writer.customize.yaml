@@ -52,18 +52,45 @@ dependencies:
     - explanation-template.md
 
 memories:
-  memory_file: "paige-techwriter.memory.md"
+  memory_file: "paige-tech-writer-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  glossary_ftd:
+    safra: "Ano letivo/comercial (ex: Safra 26 = 2026)"
+    spartan: "App principal de vendas no D365"
+    anja: "Pessoa que cadastra proposta no lugar do consultor"
+    alcada: "Nível de aprovação necessário para proposta (1-4)"
+    gmud: "Gestão de Mudança — processo obrigatório para deploy em PROD"
+    vulcano: "Ferramenta externa de aprovação — SERÁ ELIMINADA"
+    lumisfera: "E-commerce FTD (Adobe Commerce)"
+    royalty: "% que escola adiciona ao preço negociado (fica com escola)"
+  specialist_focus:
+    - "Documentar em pt-BR (comunicação do projeto é pt-BR)"
+    - "Usar glossário FTD para termos específicos do negócio"
+    - "Referenciar entidades D365 com notação técnica: ftd_proposta, Account, Opportunity"
+    - "Documentar arquitetura de 9 soluções (FTDCore, FTDSales, FTDPlugins, etc.)"
+    - "Runbooks devem incluir: GMUD process, pipeline steps, rollback procedures"
+    - "ADRs para todas as decisões arquiteturais já tomadas (7 identificadas)"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios E architecture_docs para precisão técnica. Usar glossário FTD em toda documentação. Documentos em pt-BR."

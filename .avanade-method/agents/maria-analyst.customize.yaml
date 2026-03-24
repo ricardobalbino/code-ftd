@@ -52,18 +52,38 @@ dependencies:
     - discovery-template.yaml
 
 memories:
-  memory_file: "maria-analyst.memory.md"
+  memory_file: "maria-analyst-memory.md"
 
 # ============================================================
 # FTD EDUCAÇÃO - Contexto do Projeto (OBRIGATÓRIO)
 # ============================================================
 ftd_project_context:
   client: "FTD Educação S/A (Grupo Marista)"
+  group: "Grupo Marista"
   type: brownfield
+  industry: "Educação / Editora / Distribuição de Livros Didáticos"
   platform: "D365 CE Online + Power Pages + Azure Functions"
+  stack: "D365 CE (Sales, CS), Power Pages, Azure Functions, Azure Service Bus, TOTVS/Datasul, ISA, Adobe Sign, Lumisfera"
+  key_project: "Simulador Comercial (Power Pages) — MVP deadline 31/Mar/2026"
+  pain_point: "Consultor leva até 3h para criar 1 proposta (200 produtos × 3 cliques)"
   mandatory_docs:
     - ".avanade-method/docs/ftd-knowledge-base.md"
     - ".avanade-method/docs/discovery/ftd-discovery.md"
     - ".avanade-method/docs/especificacao-simulador-notion.md"
     - ".avanade-method/configs/d365-config.yaml"
-  rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+    - "docs/discovery/discovery-simulador-comercial.md"
+    - "docs/discovery/discovery-aprovacao-propostas.md"
+  architecture_docs:
+    - "docs/arquitetura/d365-solution-architecture.md"
+    - "docs/arquitetura/d365-data-model.md"
+    - "docs/arquitetura/d365-integration-landscape.md"
+    - "docs/arquitetura/padroes-desenvolvimento.md"
+    - "docs/arquitetura/stack-tecnologica.md"
+  specialist_focus:
+    - "Mapear processos AS-IS (jornada: Conta→Contato→Oportunidade→Proposta→Aprovação→Contrato)"
+    - "Identificar gaps nos 20 pain points documentados no discovery"
+    - "Elicitar requisitos sempre considerando brownfield D365 existente"
+    - "Conhecer os 404 consultores como usuários primários do Simulador"
+    - "Considerar pico sazonal Nov-Jan (~5.000 contratos/dia) em todos os requisitos"
+  base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
+  rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de gerar qualquer artefato. Contexto FTD é essencial para análise precisa."

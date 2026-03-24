@@ -142,19 +142,21 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos da Oportunidade →
 - **Patrocínios**: investimentos em dinheiro na escola (laptops, fachada, jardim)
 - **Parcelamento na loja**: afeta nível de alçada
 
-### 3.9 Alçadas de Aprovação (4 níveis)
-| Nível | Aprovador |
-|-------|-----------|
-| 1 | Consultor (auto-aprovação) |
-| 2 | Coordenador + Gerente |
-| 3 | + Diretor Adjunto |
-| 4 | + Diretor Comercial (Quintela) |
+### 3.9 Alçadas de Aprovação (7 níveis - Refinamento 16/Mar)
+| Nível | Aprovador | Critério (Cumulativo) |
+|-------|-----------|-----------------------|
+| 1 | Consultor | Auto-aprovação (dentro da política) |
+| 2 | Coordenador | Descontos nível 1 |
+| 3 | Gerente Filial | Descontos nível 2 / Estornos |
+| 4 | Gerente Regional | Descontos nível 3 |
+| 5 | Diretor Adjunto (DG) | Patrocínios / Adiantamentos altos |
+| 6 | Diretor Superintendente | Casos críticos / Royalties |
+| 7 | Presidente | Alçadas máximas (Grupo Marista) |
 
-- Regras baseadas em: % royalty, % adiantamento, % patrocínio, taxa admin, adiantamento bruto, royalty bruto, parcelamento
-- **PROBLEMA**: Regras atuais mal definidas → tudo cai para nível 4 (Quintela)
-- Regras sendo revistas pela equipe comercial (junto com projeto pricing + rentabilidade)
-- **Vulcano**: ferramenta externa usada para segunda aprovação → SERÁ ELIMINADA
-- Processo atual: comercial aprova no CRM → admin monta PDF (print CRM + TOTVS) → sobe no Vulcano → aprova de novo
+- **Motor de Aprovação**: Independente das regras de alçada (pode ser entregue antes).
+- **Regras de alçada**: Sendo revistas pela Mônica (Comercial).
+- **Lógica de resubmissão**: Se totalizadores de preço não mudaram, pula níveis e vai direto para quem recusou.
+- **Vulcano**: Será totalmente eliminado (aprovação 100% interna D365).
 
 ### 3.10 Contratos e Adobe Sign
 - Proposta aprovada → contrato gerado
@@ -239,28 +241,31 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos da Oportunidade →
 - Escola visualiza proposta, faz comentários, recusa com motivo
 - Histórico de versões da proposta
 
-### Consumo de Integrações
-- Time de integração (Thiago Veiga) constrói endpoints
-- Squad CRM apenas CONSOME (recebe endpoint, faz chamada)
-- Sem API Management padrão
-- Decisão: Power Automate (simples) ou Azure Function (complexo)
-- Externo consulta CRM via OData ou FetchXML (sem custom Actions expostas)
-- **Actions no Dynamics**: existem, disparam Power Automates internamente, mas NÃO são expostas para consumo externo
-- **Tabelas de suporte reutilizáveis**:
-  - `Tabela de logs de integração`: genérica, qualquer integração pode usar para registrar execuções
-  - `Tabela de fluxos gerenciais`: URLs de child flows para matriz de serviços (específica, não reutilizável)
-- **Atenção**: limite de conexões por usuário de serviço (FTDMaxFlow) para child flows — risco identificado, a verificar
+### 5.1 Detalhamento Lumisfera (E-commerce)
+Adobe Commerce com 4 frentes:
+1. **Lumisfera Aberto**: Venda B2C pura (Amazon model). Não passa pelo CRM.
+2. **Lumisfera Vende Escola**: Venda B2C vinculada a escola. Alinhada com Proposta CRM (modelo "FTD com Você").
+3. **Lumisfera B2B – Funcionário/Representante**: Venda interna.
+4. **Lumisfera B2B – Livreiros**: NOVO. Substituirá o "Pede Livreiro". Livreiros terão Conta e Proposta no CRM.
+
+### 5.2 Modelo de Venda: Livreiro (Parceiro)
+- Migração do sistema legado para CRM.
+- 3 cenários: Independente, Parceiro de 1 Escola, Parceiro de Múltiplas Escolas.
+- Objetivo: Eliminar o gap de visibilidade comercial dos livreiros.
 
 ---
 
 ## 6. PROBLEMAS CONHECIDOS / DÉBITOS TÉCNICOS
 
 ### Críticos
-- ⚠️ **Dataverse em nível crítico de armazenamento** (já passou do limite)
-- ⚠️ **Tabela de produtos poluída** (1.283 retornados onde deveria ser 15)
-- ⚠️ **12+ tabelas de preço** (workaround para visibilidade, não pricing)
-- ⚠️ **Campos duplicados** Oportunidade ↔ Proposta (dados desatualizados)
-- ⚠️ **50+ templates Word** para contratos (manutenção insustentável)
+- ⚠️ **Dataverse em nível crítico** (já passou do limite de storage)
+- ⚠️ **Tabela de produtos poluída** (1.283 registros vs 15 esperados) — falta flag de Produto Prateleira vs Customizado
+- ⚠️ **Desalinhamento Taxonômico**: ISA (Família SKU) ≠ TOTVS (Família Comercial) ≠ CRM (Linha Negócio)
+- ⚠️ **Categorização de Contas**: campo `tipo_instituicao` mistura conceitos (Confessional, KA, Rede S)
+- ⚠️ **Higienização**: 101.000 contas precisam de limpeza (recorte 2025-2026)
+- ⚠️ **Oportunidades desvinculadas**: dados históricos sem vínculo com Proposta, impede BI
+- ⚠️ **Contrato manual**: ~50 templates Word/PDF sem modularização
+- ⚠️ **Alçadas**: Atualmente muitas propostas travam no Nível 4 por regras mal parametrizadas
 
 ### Importantes
 - Security roles não equalizadas entre ambientes (roadmap de consolidação)
@@ -376,3 +381,29 @@ Conta → Contato (Rep. Legal) → Oportunidade → Produtos da Oportunidade →
 | **Farmer** | Consultor que mantém contas existentes |
 | **Smart POS** | Terminal de pagamento para plantão de vendas |
 | **Código Substituto** | Link entre produto antigo e novo (entre safras) |
+
+---
+
+## 11. CONTEXTO DE MERCADO E NOTÍCIAS RECENTES (2025-2026)
+
+### 11.1 Projeções e Volume
+- **Safra 2026**: Previsão de mais de **500.000 pedidos** de materiais didáticos e literatura.
+- **Transformação Digital**: Faturamento alvo de R$ 3 bilhões até 2030 (Expectativa 2025: R$ 1,5 bilhão).
+- **IA e Automação**: Foco massivo em IA generativa para eficiência no atendimento ao cliente (Volta às Aulas 2026).
+
+### 11.2 Ecossistema Digital & Edtechs
+A FTD Educação atua como um ecossistema integrado que inclui:
+- **iônica**: Ambiente digital principal de aprendizagem.
+- **Pontue**: Inteligência Artificial para correção de redações (adquirida pela FTD).
+- **Estuda.com**: Plataforma de avaliação e simulados (participação minoritária).
+- **Diário Escola**: Sistema de gestão e comunicação escolar (parceiro estratégico).
+- **Quantbot**: Projeto Azure/Microsoft de robótica e programação gamificada.
+
+### 11.3 Premiações e Certificações
+- **Selo Top Employer 2025**: Reconhecida pela excelência em RH e gestão de pessoas.
+- **Top 50 Globais**: Reconhecida mundialmente entre as maiores editoras pela Publishers Weekly.
+- **Compliance BNCC**: 100% dos materiais alinhados à Base Nacional Comum Curricular.
+
+---
+*Gerado com base em: Knowledge Base FTD, Transcrições 2026 e Dados Públicos (Microsoft Case, PublishNews).*
+
