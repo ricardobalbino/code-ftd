@@ -298,16 +298,16 @@ Adobe Commerce com 4 frentes:
 | **Karina** | Apoio em higienização de dados |
 | **Claudia** | Comercial (desde época do Danilo) |
 
-### Avanade
+### Time FTD CRM
 | Pessoa | Papel |
 |--------|-------|
-| **Danilo Macedo** | Tech Lead Avanade (conhece FTD desde 2022) |
-| **João Carlos Figueirôa** | Arquiteto |
-| **Camila Moraes** | Analyst/PM |
-| **Rodrigo Silva** | Architect |
-| **Marcio Jovanello** | Manager Avanade |
-| **Fabiana Bacini** |Scrum Master / PM |
-| **Tercio** | Gestão de acessos |
+| **Julio Cesar** | Tech Lead CRM |
+| **Fernando Filho** | Arquiteto Power Pages (Simulador) |
+| **Kevellin** | UX/Dev Power Pages |
+| **Rodrigo Leal** | Developer (Power Pages/Frontend) |
+| **João Castilho** | Developer (Power Pages/Frontend) |
+| **Oscar de Rooij** | PO / Business Analyst |
+| **Eduardo** | Consultor Funcional |
 
 ### Cerimônias
 | Dia | Reunião | Participantes |
@@ -370,7 +370,11 @@ Adobe Commerce com 4 frentes:
 | **Mantenedora** | Rede/grupo que mantém escolas (ex: Marista) |
 | **Royalty/Markup** | % que escola adiciona ao preço negociado (fica com escola) |
 | **Grade** | Produto customizado para ensino médio de escola específica |
-| **Alçada** | Nível de aprovação necessário para proposta |
+| **Alçada** | Nível de aprovação necessário para proposta (1-7) |
+| **Aditivo Estratégico** | Renovação de vigência (ex: +3 anos) com grandes ajustes |
+| **Aditivo de Manutenção** | Ajuste pontual de preços ou prazos básicos |
+| **Doação de Transição** | Modelo de 90% de desconto via cupom Lumisfera (substitui doação 100%) |
+| **Concessão** | Benefícios, doações ou patrocínios que reduzem a margem da FTD |
 | **GMUD** | Gestão de Mudança - processo de deploy para produção |
 | **SMAX** | Sistema de abertura de GMUDs |
 | **Vulcano** | Ferramenta externa de aprovação (será eliminada) |
@@ -378,6 +382,14 @@ Adobe Commerce com 4 frentes:
 | **PNLD** | Programa Nacional do Livro Didático (governo) |
 | **IPCA** | Índice de reajuste anual dos preços |
 | **Hunter** | Consultor que prospecta novas contas |
+| **Farmer** | Consultor que mantém contas existentes |
+| **EI** | Educação Infantil (Maternal e pré) |
+| **EFI** | Ensino Fundamental I (Anos Iniciais) |
+| **EFAF** | Ensino Fundamental II (Anos Finais) |
+| **EM** | Ensino Médio |
+| **SPA** | Single Page Application (Arquitetura do Simulador) |
+| **Liquid** | Engine de template do Power Pages |
+| **OData** | Web API nativa do Dynamics usada no Portal |
 | **Farmer** | Consultor que mantém contas existentes |
 | **Smart POS** | Terminal de pagamento para plantão de vendas |
 | **Código Substituto** | Link entre produto antigo e novo (entre safras) |

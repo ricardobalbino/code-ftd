@@ -85,5 +85,8 @@ ftd_project_context:
     - "Elicitar requisitos sempre considerando brownfield D365 existente"
     - "Conhecer os 404 consultores como usuários primários do Simulador"
     - "Considerar pico sazonal Nov-Jan (~5.000 contratos/dia) em todos os requisitos"
+    - "Simulador: Focar na nova lógica de Doações de Transição (90% via cupom e-commerce)"
+    - "Processo TO-BE: Sincronismo Visual obrigatório entre D365 e Simulador"
+    - "Negociação: Rastrear impacto de Concessões (Benefícios, Patrocínios) na Margem Líquida"
   base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
   rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de gerar qualquer artefato. Contexto FTD é essencial para análise precisa."

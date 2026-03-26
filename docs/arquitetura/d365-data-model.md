@@ -14,6 +14,7 @@ O Dataverse da FTD combina **entidades padrão D365 customizadas** com **entidad
 **Jornada**: `Account → Contact → Opportunity → Quote (Proposta) → Order → Invoice`
 
 Entidades customizadas complementam o modelo padrão para os processos específicos da FTD (simulador, benefícios, integrações ERP).
+O acesso a esses dados via **Power Pages (Simulador)** ocorre via Liquid (FetchXML para leitura inicial) e OData API (Web API para persistência via JavaScript).
 
 ---
 
@@ -93,7 +94,8 @@ Entidades customizadas complementam o modelo padrão para os processos específi
 | `ftd_status_proposta` | OptionSet | **A CRIAR**: Aberto / Ativo / Histórico |
 | `ftd_estagio_proposta` | OptionSet | **A CRIAR**: Rascunho → Em Negociação → Em Aprovação → Aprovada s/ assinatura → Aprovada e assinada |
 | `ftd_safra` | Integer | Ano-safra |
-| `ftd_tipo` | OptionSet | **A CRIAR**: Contrato Novo / Aditivo |
+| `ftd_tipo` | OptionSet | Contrato Novo / Aditivo |
+| `ftd_tipo_aditivo` | OptionSet | Estratégico, Pontual, Escopo, Manutenção, Encerramento |
 | `ftd_alunado_total` | Integer | Total de alunos (impacta cálculos) |
 | `ftd_taxa_admin` | Decimal | Taxa de administração |
 | `ftd_valor_total` | Currency | Valor total da proposta |

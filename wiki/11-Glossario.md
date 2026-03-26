@@ -18,7 +18,7 @@
 | **Produto Customizado Compartilhado** | Alteração leve (ex: retirar capítulo). Qualquer escola pode usar. |
 | **Produto Personalizado** | Alteração pesada (capa, mascote). Exclusivo para escola/mantenedora específica. |
 | **Código Substituto** | Vínculo entre produto antigo e novo entre safras (p.ex.: versão 2025 → versão 2026). |
-| **Série** | Segmento escolar: EI (Ed. Infantil), EFAI (Anos Iniciais), EFAF (Anos Finais), EM (Ensino Médio). |
+| **Série** | Segmento escolar: EI (Ed. Infantil), EFI (Anos Iniciais), EFAF (Anos Finais), EM (Ensino Médio). |
 | **Mantenedora** | Grupo/rede que administra escolas. Exemplo: Grupo Marista. |
 | **KA (Key Account)** | Conta estratégica — escola/rede de alto volume ou alta importância comercial. |
 | **Hunter** | Consultor que prospecta novas contas (escolas nunca atendidas). |
@@ -61,6 +61,9 @@
 | **ETL** | Extract, Transform, Load — processo de sincronização de dados entre sistemas. |
 | **Early Bound** | Geração de classes tipadas para entidades/campos Dataverse (preferível a Late Bound). |
 | **Late Bound** | Acesso a dados via strings (ex: `entity["fieldname"]`). Evitar no BCA. |
+| **SPA** | Single Page Application — arquitetura do Simulador Comercial em Power Pages. |
+| **Liquid** | Engine de template do Power Pages usada para carregar dados via FetchXML. |
+| **OData** | Web API de dados do Dynamics consumida via JavaScript no portal. |
 
 ---
 

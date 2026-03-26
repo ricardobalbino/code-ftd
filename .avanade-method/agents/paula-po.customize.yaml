@@ -89,6 +89,6 @@ ftd_project_context:
     - "Backlog priorizado: MVP 31/Mar primeiro, depois faxina de dados, depois Onda 1"
     - "Acceptance criteria devem citar entidades e campos D365 reais (ftd_proposta, etc.)"
     - "Stories de Dataverse Config são diferentes de Plugin Dev — categorizar corretamente"
-    - "Usuário primário: consultor comercial (404 usuários), mobile-first"
+    - "Usuário primário: consultor comercial (404 usuários), Foco Tablet/Notebook"
   base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
   rule: "SEMPRE ler docs mandatórios E architecture_docs ANTES de criar stories. Stories de D365 exigem contexto de dados model e solution strategy."

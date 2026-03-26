@@ -33,8 +33,8 @@
 - C# Plugins (poucos, bug rate baixo após 1.5 anos de refactoring)
 - JavaScript Web Resources (em refatoração)
 - Power Automate (fluxo de aprovação sendo refatorado)
-- Azure Functions (cálculos de proposta, renovação automática)
-- Power Pages (Simulador Comercial - em desenvolvimento)
+- Azure Functions (cálculos de proposta, renovação automática, **futuro back-end de salvamento do simulador**)
+- Power Pages (Simulador Comercial - SPA com cálculos in-memory JS)
 - TOTVS/Datasul (ERP), ISA (cadastro de produto)
 - Datadog + Grafana + Application Insights (monitoring)
 - Azure Key Vault (para Azure Functions)
@@ -139,6 +139,9 @@ Novo conceito detalhado no refinamento de 16/Mar:
 | 5 | Campos duplicados Oportunidade ↔ Proposta | 🟠 Alto | Oscar (onboarding) |
 | 6 | 50+ templates Word para contratos | 🟠 Alto | Oscar/Eduardo (usabilidade) |
 | 7 | Vulcano: aprovação duplicada | 🟡 Médio | Oscar (onboarding) |
+| 8 | Security roles não equalizadas no Power Pages (acesso global atual) | 🟡 Médio | Fernando Filho (Mar/26) |
+| 9 | Latência de cálculo no D365 (motivação do Simulador SPA) | 🔴 Crítico | Danilo/Fernando (Mar/26) |
+| 10 | Timeout no salvamento de +200 produtos via JavaScript frontal | 🟠 Alto | João Castilho (Mar/26) |
 | 8 | Security roles não equalizadas | 🟡 Médio | Julio (cenário atual) |
 | 9 | Cadastro duplo CRM/TOTVS sem owner | 🟡 Médio | Oscar/Jovanello (onboarding) |
 | 10 | Repo desacoplado dos PBIs | 🟡 Médio | Julio (cenário atual) |
@@ -203,6 +206,8 @@ Novo conceito detalhado no refinamento de 16/Mar:
 | Fase | Deadline | Responsável | Escopo |
 |------|----------|-------------|--------|
 | MVP Simulador | 31/mar/2026 | FTD | Adição individual de produtos (Power Pages) |
+| Sincronismo CRM | Mar/2026 | FTD + Avanade | Reorganização do formulário D365 para espelhar o Simulador |
+| Etapa 3 (Concessões)| Onda 1 | Avanade | Benefícios, Doações (90%), Patrocínios |
 | Fluxo de Aprovação | Próxima entrega | Avanade + FTD | Motor de aprovação (motor + sequência, independente de regras de alçada, Kevellin escrevendo stories) |
 | Onda 1 pós-MVP | ~ago/2026 | **Avanade** | Lote, copiar proposta, benefícios, faxina dados, migração Pede Livreiro |
 | Higienização + Categorização | Sem deadline definido | FTD + Avanade | 101K contas, recorte 2025-2026, tipo_instituição, CNPJ, deduplicação |

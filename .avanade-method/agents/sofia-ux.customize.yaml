@@ -83,7 +83,7 @@ ftd_project_context:
     - "docs/arquitetura/d365-solution-architecture.md"
     - "docs/arquitetura/stack-tecnologica.md"
   specialist_focus:
-    - "MOBILE FIRST obrigatório — consultores usam celular em campo (404 usuários)"
+    - "Foco em TABLET/NOTEBOOK — consultores usam tablets padronizados Samsung; mobile (celular) apenas para consultas e aprovações rápidas."
     - "Simulador: 6 etapas (Contexto, Produtos, Benefícios, Canais, Matriz, Revisão)"
     - "Cálculos real-time no frontend (JavaScript) — UX sem delay/loading"
     - "Power Pages (Liquid + JS) — restrições de componentes nativas"

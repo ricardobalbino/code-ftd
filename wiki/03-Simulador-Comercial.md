@@ -18,6 +18,7 @@ O **Simulador Comercial** é a principal entrega do projeto — uma **interface 
 | **Responsável CX** | Oscar de Rooij |
 | **Product Owner** | Kevellin |
 | **Responsável Tecnologia** | Fernando Costa Filho |
+| **Arquitetura Técnica** | SPA (Liquid + JS em memória + OData) |
 
 ---
 
@@ -48,10 +49,12 @@ O Simulador permite ao consultor **construir, simular, comparar e refinar propos
 
 | Requisito | Descrição |
 |-----------|-----------|
-| **Mobile First** | Consultores em trânsito — celular é ferramenta principal |
-| **Performance** | Campos dinâmicos com reação instantânea (sem roundtrips) |
-| **Disponibilidade Offline** | Leitura limitada offline (regiões com conectividade ruim) |
+| **Foco: Tablets/Note** | Consultores usam tablets padronizados Samsung ou notebooks. |
+| **Performance** | Cálculos 100% in-memory JS (elimina latência do Dynamics). |
+| **UX/UI** | Grid flexível agrupada por Nível de Ensino (EI, EFI, EFAF, EM). |
+| **Mobile (Phones)** | Uso apenas para consulta e aprovações rápidas (impraticável para edição). |
 | **Campos Dinâmicos** | Recálculo automático ao mudar qualquer parâmetro |
+| **Sincronismo Dynamics** | O formulário no CRM deve espelhar as abas do Simulador (Paralelismo). |
 
 ---
 
@@ -150,10 +153,12 @@ O Simulador permite ao consultor **construir, simular, comparar e refinar propos
 
 | Tipo | Descrição | Impacto na Alçada |
 |------|-----------|-------------------|
-| **Benefícios** | Cupons filhos de professores (20-40% desconto) | Sim |
-| **Doações** | Materiais doados (90% ou 100% desconto) | Sim |
-| **Patrocínios** | Investimentos em dinheiro na escola (laptops, fachada) | Sim (alta alçada) |
-| **Adiantamento** | Antecipação do royalty (fluxo de caixa) | Sim (alta alçada) |
+| **Benefícios** | Cupons Lumisfera para filhos de professores (20-40%) | Sim |
+| **Doações (90%)** | "Doação de Transição" via cupom (substitui doação direta de 100%) | Sim |
+| **Patrocínios** | Tecnologia, TVs, Laptops ou Infraestrutura na escola | Sim (alta alçada) |
+| **Adiantamento** | Antecipação de royalties (valor fixo inserido pelo consultor) | Sim (alta alçada) |
+
+> **Lógica de Concessões**: A Etapa 3 subtrai esses valores da receita bruta (Etapa 2) para calcular a **Margem Líquida**.
 
 > **Fora do escopo do MVP** — Onda 1 pós-MVP (~Agosto 2026)
 
