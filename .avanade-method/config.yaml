@@ -42,6 +42,7 @@ devLoadAlwaysFiles:
   - docs/arquitetura/d365-integration-landscape.md
   - docs/arquitetura/padroes-desenvolvimento.md
   - docs/arquitetura/stack-tecnologica.md
+  - docs/arquitetura/microsoft-reference-architecture.md
   # Referências de Segurança e Ferramentas
   - docs/analise-riscos-mwhesse-dataverse-mcp.md
 

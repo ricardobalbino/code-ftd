@@ -81,7 +81,8 @@ ftd_project_context:
   specialist_focus:
     - "PRDs devem sempre referenciar entidades D365 reais (ftd_proposta, Account, Opportunity)"
     - "Roadmap 11 ondas definido — sempre alinhar features ao PBS-Transformacao-CX"
-    - "MVP 31/Mar/2026: adição individual de produtos (Power Pages etapas 1+2)"
+    - "Foco do Produto: Desenvolvimento 100% otimizado para TABLET/NOTEBOOK. O uso mobile é secundário (apenas leitura)."
+    - "Negócio: Considerar a criação de features para Doações de Transição (90% via Lumisfera) e integrações de Concessões."
     - "Métricas de sucesso: 20 KPIs definidos (Growth, Cost Opt, Org. Effectiveness, Digital)"
     - "Considerar 9 soluções D365 no escopo de implantação de features"
   base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"

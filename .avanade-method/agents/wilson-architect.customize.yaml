@@ -105,6 +105,7 @@ ftd_project_context:
     - "R3 (MÉDIO): Limite conexões FTDMaxFlow — investigar Managed Identity"
     - "R4 (MÉDIO): QA e RC environments não configurados — bloqueia Onda 1"
     - "R5 (MÉDIO): Regras de alçada indefinidas — motor pode ser entregue antes das regras"
+    - "R6 (MÉDIO): Integração com e-commerce Lumisfera requerida para Doações de Transição (90%)"
   specialist_focus:
     - "TODO ADR deve ser formalizado usando .avanade-method/templates/adr-template.md"
     - "C4 Model para todos os diagramas (Context → Container → Component)"
@@ -113,5 +114,6 @@ ftd_project_context:
     - "Security by design: Managed Identity > App Registration > Client Secret"
     - "Sem API Management hoje — documentar como risco arquitetural ativo"
     - "Novas tabelas Dataverse: verificar storage disponível ANTES de propor"
+    - "Otimização Front-End: A arquitetura (SPA/Liquid) DEVE ser desenhada para foco em Tablet/Notebook."
   base_rule: "SEMPRE ler docs mandatórios ANTES de gerar qualquer artefato"
   rule: "SEMPRE ler TODOS os architecture_docs ANTES de qualquer decisão técnica. Os ADRs aceitos são imutáveis — qualquer revisão requer novo ADR com justificativa explícita."

@@ -80,7 +80,7 @@ _Personas que aparecem em múltiplos projetos_
 **Exemplo**:
 ```yaml
 - name: "Sarah, Gerente de Vendas"
-  demographics: "35-50 anos, uso diário de CRM, mobile-first"
+  demographics: "35-50 anos, uso diário de CRM, Tablet/Notebook-focus"
   goals:
     - Fechar vendas rapidamente
     - Acessar dados de clientes em movimento
@@ -107,7 +107,7 @@ _Premissas testadas e seus resultados_
 - assumption: "Mobile é prioridade (60% do tráfego)"
   test_method: "Analytics últimos 6 meses"
   result: "✅ CONFIRMADA - 62% mobile, 38% desktop"
-  impact: "Design mobile-first adotado"
+  impact: "Design Tablet/Notebook focado adotado (Simulador Comercial)"
 ```
 
 ---

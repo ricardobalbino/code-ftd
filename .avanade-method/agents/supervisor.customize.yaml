@@ -222,12 +222,14 @@ ftd_project_context:
     docs: "→ Paige Tech Writer (create-doc, runbook, ADR)"
   critical_blockers:
     - "Dataverse storage CRÍTICO — bloqueia criação de novas tabelas"
-    - "QA e RC environments não configurados"
+    - "QA e RC environments não configurados — bloqueia deploy automatizado"
+    - "Estratégia de Infraestrutura (IaC/Bicep) e Autenticação (Service Principal) para Azure Functions indefinida"
     - "Plugin deploy manual para DEV (considerar no sprint)"
     - "Regras de alçada ainda indefinidas (Mônica — area comercial)"
   specialist_focus:
     - "Rotear para persona correta baseado na fase do projeto (discovery→solutioning→implementation)"
     - "Ao orquestrar: SEMPRE informar a persona do contexto FTD antes de delegar"
+    - "Ao orquestrar: Sempre enfatize aos desenvolvedores e QAs o Foco em Tablet/Notebook e Azure Functions para lotes."
     - "9 soluções D365: verificar se mudança está na solution correta antes de aprovar impl."
     - "Pico sazonal Nov-Jan: sprints antes de nov devem focar em estabilidade, não features"
     - "Vulcano e Pede Livreiro serão eliminados — não criar novas integrações com eles"
