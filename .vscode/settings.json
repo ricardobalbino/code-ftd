@@ -5,11 +5,32 @@
 
   // Localizações dos arquivos instrução e prompts
   "chat.instructionsFilesLocations": {".github/instructions": true},
-  "chat.promptFilesLocations": {
-    ".github/prompts": true
-  },
+  "chat.promptFilesLocations": {".github/prompts": true},
+
+  // Comandos terminais auto-aprovados para fluxo D365/Power Platform
   "chat.tools.terminal.autoApprove": {
     "winget": true,
-    "Get-Command": true
+    "Get-Command": true,
+    "node": true,
+    "npm": true,
+    "git status": true,
+    "git log": true,
+    "git diff": true,
+    "git branch": true,
+    "pac solution list": true,
+    "pac auth list": true,
+    "pac env list": true,
+    "Get-ChildItem": true,
+    "Test-Path": true,
+    "Resolve-Path": true
+  },
+
+  // Associações de arquivos para syntax highlight
+  "files.associations": {
+    "*.agent.md": "markdown",
+    "*.instructions.md": "markdown",
+    "*.prompt.md": "markdown",
+    "*.customize.yaml": "yaml",
+    "*.workflow.md": "markdown"
   }
 }

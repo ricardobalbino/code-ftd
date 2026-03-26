@@ -1,0 +1,1212 @@
+Camila Kesia Moraes   0:11
+Prontinho.
+
+Oscar de Rooij   0:13
+Oh.
+
+Camila Kesia Moraes   0:14
+Que até apareceu.
+
+Oscar de Rooij   0:16
+Então aqui a gente vai falar da etapa, da etapa 121, 3 e 4, é isso?
+
+Camila Kesia Moraes   0:24
+Espera aí que eu estou abrindo.
+Miro. Qual? Pronto, estou enxergando.
+
+Oscar de Rooij   0:31
+Etapa 1, 3 e 4.
+
+Camila Kesia Moraes   0:35
+Hoje, tivemos o banho de loja do Power Pages.
+Eu não sei se dá tempo porque a gente teve das duas às três da parte técnica.
+e aqui tem a especificação que a gente deu uma olhadinha Então essa aqui você vai abordar especificação certo está falando a mesma coisa ele tá falando três
+
+Oscar de Rooij   0:54
+Desculpa, repete, por favor.
+
+Camila Kesia Moraes   0:56
+Então, a etapa do simulador comercial, que é a etapa 1, 3 e 4, certo?
+
+Oscar de Rooij   1:00
+Isso.
+
+Camila Kesia Moraes   1:02
+Isso, você vai ver a especificação em si.
+
+Oscar de Rooij   1:04
+É, eu tenho isso.
+
+Camila Kesia Moraes   1:05
+Perfeito, porque hoje mais cedo nós tivemos a parte técnica do Power Pages, então a gente vai conseguir já fazer um, não tão a fundo, mas dá para ver um Mendes nas coisas.
+
+Oscar de Rooij   1:13
+Sim, um match.
+Sim.
+É, bom, vamos lá.
+Então, aqui na especificação.
+Existe um pedaço da especificação, que é status e estágio de proposta, que a gente atualizou naquela nova documentação. Que aqui ele está com aquela versão antiga ainda. Então.
+
+Camila Kesia Moraes   1:36
+Okay.
+
+Oscar de Rooij   1:41
+Vai ter que ter um pouco de licença poética aí para poder só fazer os devidos ajustes mentais, tá bom? Mas isso não impacta a própria etapa 1.
+A etapa 1
+Ela, bom, você, eu preciso abrir o CRM aqui e mostrar as coisas também, não é?
+
+Camila Kesia Moraes   2:01
+Mas eu também estou abrindo. A gente pode até fazer ping pong.
+
+Oscar de Rooij   2:09
+Quando eu vou para a proposta, tem muita informação dentro da etapa um que não faz sentido estar na etapa um, coisas que deveriam estar mais para frente. Então eles estão reorganizando esse CRM, essa etapa um aqui, que seria a etapa um seria naturalmente.
+A primeira aba aqui do CRM, tá? E teria que pegar os outros campos e jogar para frente. O que não for da primeira aba, tem que ficar nas próximas abas. Basicamente, é isso. A etapa 2 é produtos na proposta, que é como eu incluo produtos ali dentro.
+A etapa 3, ela não existe aqui. Por quê? Porque ela não é feita no CRM da forma correta, não é feita numa forma como a comercial faz, como ela negocia. Por isso que ela tem o Excel. Uma das razões para ela ter o Excel.
+A etapa 4, ela é a da configuração dos canais de venda que hoje estão jogados aqui, por exemplo, modalidade de entrega primária, modalidade de entrega primária. Isso aqui é só para o e-commerce, para falar, vai ter frete, não vai ter frete, eu vou entregar como?
+Vou entregar no balcão da filial, vou entregar, dependendo do modelo de venda do meu canal de venda, eu vou escolher uma opção daqui. Então é a configuração logística, depende do meu canal de venda, depende do que eu vou usar para vender. Então isso também é uma outra etapa.
+Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alexandre Alex
+Mass.
+Vamos para a etapa um, tá? A etapa um é o contexto da negociação. A primeira etapa traz dados básicos relacionados à proposta. São eles que vinculam a proposta à conta, cliente e proposta anterior, se existir. Define quem são os destinatários da escola que participarão da negociação. Define o tipo de proposta, um contrato ou
+
+Camila Kesia Moraes   3:59
+Okay.
+
+Oscar de Rooij   4:01
+E de oliveira Glugovskis Santos de oliveira Glugovskis Santos de oliveira Glugovskis Santos de oliveira Glugovskis Santos de oliveira Glugovskis Santos de oliveira Glugovskis Santos de Oliveira G
+E o tipo do aditivo se aplicava. O consultor identifica o tipo da negociação. Esse daqui, na verdade, eu tirei, eu coloquei mais para frente. O consultor preenche o período letivo da escola que guiará esforços logísticos. O consultor define responsável pela assinatura do contrato. O consultor define o ano safra. O consultor define o alunado ali.
+
+Camila Kesia Moraes   4:32
+O.
+
+Oscar de Rooij   4:37
+da escola, tá? Qual que é o formulário?
+Se formular, ele é dividido em 4 seções: escola e contatos, tipo de negociação, informações da safra e alunado.
+Escola e contato é a conta que está relacionada, o destinatário da proposta, que é o contato ali que vai de fato participar dessa negociação. Esse destinatário da proposta a gente não está colocando como escopo dessa primeira entrega.
+Tá, é por quê? Porque precisa ter uma estrutura de Castilho o mais robusta no CRM e os consultores não cadastram contatos dentro do CRM. Então, por enquanto, a única pessoa que vai acessar, ela vai ser o proprietário da conta. Então eu vou até anotar aqui só para vocês.
+Terem essa informação, tá? É, não faz parte da Ana Ana Ana Ana Ana Ana Ana Ana Ana Ana Ana Ana O
+Depende dos consultores cadastrarem contatos com.
+
+Danilo Macedo   5:40
+Oi pessoal, boa tarde desculpa o Joao me ligou aqui Tavares ligação com ele até agora
+
+Oscar de Rooij   5:46
+Beleza, no.
+Então vou deixar anotado aqui, tá? Só para vocês poderem ter isso. É oportunidade.
+Deixa eu só ver se tem o campo proprietário da proposta, é o proprietário da proposta, ele está aqui no contrato, não é?
+Terminar de Jesus, responsável jurídico.
+Não, cadê o proprietário da Costa da Costa? Aprovação vigência, término.
+Castilho Santos Martinez San
+Ele era para estar aqui em algum lugar, gente. É um campo que já existe, tá? Não é requisito novo, é só para o documento estar mais.
+Mais adequado aqui, oh.
+Mas eu já estava com uma proposta aberta, não estava?
+Então aqui, eu vou em contrato, eu tenho esse aqui, representante legal da instituição. Basicamente, esse daqui é o único contato que é necessário hoje para o CRM. Ele é um contato, ele é cadastrado dentro da conta para ele ser vinculado aqui.
+Mas hoje ele é o único necessário. Ele é inclusive quem ganha acesso no portal do cliente. E aí, só para a gente não confundir as coisas, tá? A área do cliente é um portal, não é power pages, não é gerenciado por nós, tá dentro da área do Jovanello, mas.
+Não dentro da área Jovanello, não. Ele está com a Michelle, que é de uma outra área, tá? É a área do cliente, a escola loga para acessar ele e lá ela vai ver a proposta, tá aqui. O que vocês viram hoje foi Power Pages, certo? Que aí é o simulador, então só para não.
+Não confundir as coisas, tudo bem?
+
+João Carlos Figueirôa de Castilho   7:36
+o Oscar uma dúvida e aí eu sei que você é Luiza Paulo que a primeira etapa fica naturalmente na primeira sessão do formulário E aí a dúvida é a ideia é que seja reconfigurado o formulário do CRM para refletir
+
+Oscar de Rooij   7:37
+Jesus.
+
+João Carlos Figueirôa de Castilho   7:53
+Ir essas abas do simulador e eles fiquem com as mesmas sessões e os mesmos campos, para que, pelo menos visualmente, ele tenha a mesma experiência do simulador.
+
+Oscar de Rooij   8:04
+Sim, essa essa reorganização inicial, ela já busca um pouco disso, está? Ela já busca fazer isso.
+
+João Carlos Figueirôa de Castilho   8:05
+Santos.
+Tá, então a gente vai trabalhar em paralelo na criação do simulador e na reorganização visual do CRM para que reflita, tá?
+
+Oscar de Rooij   8:12
+Sim.
+
+Camila Kesia Moraes   8:15
+Okay.
+
+Oscar de Rooij   8:16
+Isso.
+Exatamente, não é porque a gente está fazendo o simulador que você entrar numa proposta do CRM, vai estar uma bagunça. Os 2, eles vão estar assim, sincronizados, tá?
+
+João Carlos Figueirôa de Castilho   8:24
+Não, sim.
+A dúvida também era se era algo que a gente ia fazer em paralelo, se a gente não CRM, a gente vai pensar depois do simulador e.
+
+Oscar de Rooij   8:33
+Não é paralelo, é paralelo, tanto é que hoje a entrega, a entrega que você vê lá no.
+
+João Carlos Figueirôa de Castilho   8:33
+Nice.
+
+Oscar de Rooij   8:41
+É, desculpa, é esse aqui, ó, essa tela aqui.
+Aqui ele está andando em paralelo, tá? Revisão dos campos, isso aqui é no CRM, e a nova interface é o portal. As coisas andam em paralelo, tá?
+
+João Carlos Figueirôa de Castilho   8:51
+Okay.
+Okay.
+
+Oscar de Rooij   8:57
+Beleza.
+
+Danilo Macedo   8:57
+Desculpa, eu cheguei depois, mas só para eu ficar na mesma página. Você está falando da parte ali da primeira guia com o texto da negociação, que é a primeira guia da proposta dentro do Dynamics. E aí você está falando de reorganização de Campos, remoção de Campos desnecessários.
+
+Oscar de Rooij   9:04
+Yes.
+Is.
+É a gente está falando, eu estou mostrando como é que é para ser o formulário do da proposta da nova tela da etapa 1 no simulador.
+
+Danilo Macedo   9:14
+Sim.
+
+Oscar de Rooij   9:22
+E aí, para falar disso, eu também estou referenciando ali um pouco de contexto, o que é que está no CRM, tá? Mas isso aqui é do novo simulador. O que a gente vai fazer? Por exemplo, conta destinatário, não existe oportunidade, isso daqui já está.
+na primeira aba do CRM. O tipo de negociação vai ter que estar na primeira aba do CRM. Informação de safra já está na primeira aba do CRM. Início das aulas e fim das aulas não está. Ele está aqui.
+
+Danilo Macedo   9:56
+Mm-hmm.
+
+Camila Kesia Moraes   10:03
+Santos.
+
+Oscar de Rooij   10:04
+aqui, entendeu?
+
+Danilo Macedo   10:05
+Jessica.
+
+Oscar de Rooij   10:06
+Então, assim, as coisas vão andar juntas, né? Não é para eu entrar no simulador etapa um e a aba um ali do CRM está separada, entendeu?
+
+Danilo Macedo   10:07
+Turn
+
+Oscar de Rooij   10:16
+É só para semanticamente, logicamente, para o consultor ficar mais fácil. Não só o consultor, que é o consultor. A gente vai querer que ele só use o simulador, mas tem muita gente da área administrativa que vai acessar só CRM.
+
+Danilo Macedo   10:17
+Tá. Tá okay.
+So.
+
+Oscar de Rooij   10:29
+E quando for ver proposta, ele vai ver no CRM, não vai ver no simulador.
+
+Danilo Macedo   10:31
+E.
+Mm-hmm.
+Então, assim, o que tiver de informação no na.
+No simulador é o que vai ter que ter no CRM também, não é para o CRM ter informações a mais.
+Que por exemplo, vamos dar uma em cima.
+
+Oscar de Rooij   10:46
+O CRM vai ter muita informação a mais, que são Campos ocultos, por exemplo, lá dentro do simulador.
+
+Camila Kesia Moraes   10:53
+Mhm.
+
+Oscar de Rooij   10:54
+Que no simulador, eu vou mostrar os campos para fazer a experiência dele ficar boa. No CRM, talvez eu tenha campos que tem que ficar escondidos, que são campos de controle, campos de conexão, campos de cálculo, campos de não sei o que. Então, talvez tenha sim. Vou dar um exemplo.
+
+Danilo Macedo   10:54
+Michelle.
+
+Oscar de Rooij   11:09
+É, não tem um bom exemplo.
+
+Danilo Macedo   11:14
+é que desse disso disso que você falou acho que não tem
+
+Oscar de Rooij   11:17
+Isso aqui tudo tem que aparecer, tá? Desses aqui, desses aqui que eu falei até agora, não tem nada que vai ficar diferente.
+
+Danilo Macedo   11:24
+Mas aí você vai, você vai especificar ou já tem a especificação de como tem que ficar no CRM ou não?
+Isso que pra mim é muito caro.
+
+Oscar de Rooij   11:30
+No.
+Não, para mim é assim, vou ser bem sincero, tá? Se está no simulador, está no seu Rangel.
+
+Danilo Macedo   11:38
+Mas o que tem que estar no CRM e não no simulador?
+
+Camila Kesia Moraes   11:39
+That.
+Eu entendi que é isso que ele não tem, que hoje a Camp
+
+Oscar de Rooij   11:45
+É isso que eu não é isso que eu não tenho. Quais Campos que estão no CRM que são usar? Porque assim tem muito campo de CRM que é para esconder.
+
+Camila Kesia Moraes   11:52
+Mm-hmm.
+
+Oscar de Rooij   11:53
+Porque eles são, não deveriam nem aparecer, tá? E isso a equipe já está fazendo, tá? As histórias disso já foram feitas. Eu aprovei as histórias, inclusive, e elas estão sendo feitas aqui.
+
+Danilo Macedo   12:01
+Okay.
+Ah tá, isso aí é de todos os campos. Não, beleza, então é uma coisa que a gente tem que estimar que a gente vai fazer, já está sendo feito.
+
+Oscar de Rooij   12:07
+Todos.
+Não, já está sendo feito.
+
+Danilo Macedo   12:11
+Ah beleza
+
+Oscar de Rooij   12:13
+O que vai sobrar para vocês é melhoria, ajuste pontual, é esse tipo de coisa.
+
+Danilo Macedo   12:17
+Santos.
+
+Camila Kesia Moraes   12:18
+É para a gente não levar um choque quando for eles partir de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B de B
+
+Danilo Macedo   12:19
+Tá bom.
+
+Camila Kesia Moraes   12:34
+E tem vários tipos de formulário, tá? Oscar aqui no dente sem.
+
+Oscar de Rooij   12:35
+Well
+Same, same.
+Tranquil.
+Beleza é assim, a lógica é assim, o simulador tem que estar no CRM e o CRM vai ter mais campos. Isso a gente sabe, tá? Para fazer os workflows funcionarem e tudo mais. A questão é, tem que aparecer para o consultor dentro do CRM.
+
+Camila Kesia Moraes   12:42
+Mhm.
+
+Danilo Macedo   12:48
+So.
+
+Oscar de Rooij   12:56
+Se não aparece no simulador.
+90% de chance de que não é para aparecer lá no CRM também, tá?
+
+Danilo Macedo   13:06
+tá bom E essa tela já foi feito o protótipo dela ou não que já já tá provado
+
+Oscar de Rooij   13:10
+Sim, na verdade, não é que foi feita. Ela está sendo feita agora, porque o time de OX fez ali o protótipo que gerou essa tela que vocês viram no PowerPages. Eles agora eles estavam fazendo o PDF de exportação. Eles estão fazendo agora a etapa um.
+
+Danilo Macedo   13:15
+Santos.
+
+Oscar de Rooij   13:25
+E a etapa 3 neste momento, a etapa 3 já foi feita, já está finalizada, a etapa 1 eles estão fazendo.
+
+Danilo Macedo   13:29
+Okay.
+So.
+Tá bom, a etapa é as outras etapas, outras telas que tem do do Simulador, algumas a gente vai ter que fazer protótipo de tela ou não, esse time já vai fazer todos, vão fazer todas.
+
+Oscar de Rooij   13:45
+Cara, eu entendo que quem vai fazer tudo é a nossa equipe, tá? Todas, inclusive para o resto do projeto, tá? Mas assim, é bom revalidar isso com o Jova e com o Medella.
+
+Danilo Macedo   13:48
+Tá bom.
+Tá bom?
+
+Oscar de Rooij   13:58
+Tá, eu vou até perguntar aqui pro.
+Predolim para a gente poder garantir isso, tá? Porque para mim tem que ser, tá? Tem que ser eles.
+
+Danilo Macedo   14:11
+Tá bom, é, eles já estão com histórico, né? Eu estou perguntando mais para a gente se organizar, tá? Porque na nossa proposta tem ali UX, que a gente ainda não trouxe porque não viu necessidade. Então, se não tiver, o que a gente coloca esforços mais no desenvolvimento, entendeu?
+do que o X mas não é a decisão aí é do jogo né
+
+Oscar de Rooij   14:30
+É isso aí, ele já deve ter sido contratado. Se estava incluso, foi contratado, certo? Como é que está no contrato de vocês?
+
+Danilo Macedo   14:38
+A gente colocou, não é que assim a gente colocou que tem esse perfil no.
+se como opcional, se precisar, entendeu?
+
+Oscar de Rooij   14:52
+Tá, eu vou deixar essa dúvida aqui pendurada, tá? É para ter certeza, está bom?
+
+Danilo Macedo   14:56
+So.
+That is.
+
+Oscar de Rooij   15:05
+Uh.
+Tá bom.
+Vamos seguir aqui então.
+Informações da safra, tipo de negociação, tipo de proposta, se é contrato ou aditivo, e se é novo, não tem. Então, assim, vocês vão ver os campos, vocês vão ver que não tem. Então, tipo de proposta, contrato aditivo, tipo de aditivo.
+Também não existe. Isso aqui são campos de valores que vocês têm que deixar prontos para serem alterados. A FTD não tem maturidade para definir toda essa parte de aditivos ainda. Esses aqui são os conhecidos. A gente vai poder mudar isso daqui.
+É uma estrutura que tem que estar flexível e eu sei que o CRM já é flexível, mas isso aqui ele vai encadear outros workflows de criação de contrato. A criação de contrato é um projeto que está sendo tocado em paralelo e que eles estão me chamando de vez em quando.
+Então, assim, em algum momento vai chegar alguma estrutura aqui para a gente, e aí eu espero e eu vou questionar e eu vou garantir que eu tenho esses tipos de aditivos que a gente tenha no CRM, uma estrutura para poder passar para a criação de contrato.
+Aquilo que deve ser automaticamente criado. Tá, mas por enquanto eu tenho esses aditivos aqui. Aditivo de Rooij o estratégica, aditivo pontual, ampliação de escopo, renovação de manutenção e termo de encerramento.
+Turnes.
+O que vale eu falar aqui? Ampliação de escopo é porque eu estou fazendo um aditivo, eu estou fazendo uma venda a mais. Eu tenho um produto a mais, uma linha de produto a mais que eu estou colocando dentro desse contrato. Renovação estratégica. Ele é um aditivo que eu estou aumentando a vigência do contrato de 3 anos. Está vencendo. Eu vou aumentar.
+Para mais 3, é o novo contrato, manutenção. Ele é um aditivo que eu estou simplesmente aumentando. Eu estou aumentando, reajustando os preços. Eu só estou fazendo isso praticamente. Termo de encerramento, eu estou encerrando.
+Aditivo pontual é onde a gente vai ter. Eu não gostei do foro. O foro é para ser São Paulo, não é para ser Ribeiro Preto. Então, coisas desse tipo pontual seria aqui. São coisas diversas que é aí que mora o risco. Aqui que mora a grande questão.
+Do que a gente vai precisar fazer, mas não dá para especificar nada agora, enquanto o projeto lá não avança. Mas a gente sabe que a gente vai precisar saber quais são os tipos de.
+Proposta e aditivo vai ter que ter algum tipo de classificação também.
+Faz sentido até aqui? Esses campos não existem, tá?
+proposta anterior tá ter o vínculo
+
+Danilo Macedo   17:51
+Tá bom.
+Provavelmente uma regrinha ali também, né? Só habilita o tipo de aditivo, seu tipo de propósito for auditivo, né?
+
+Oscar de Rooij   17:58
+Edna is up.
+
+Camila Kesia Moraes   18:03
+O.
+
+Oscar de Rooij   18:03
+Informações da safra, início das aulas, fim das aulas, início das aulas existe, fim das aulas não existe.
+Safra, ano numérico. Então, quando eu falo isso, tá essas coisas que não estão escritas aqui, é porque aqui não é história. A Kevellin, ela iria determinar o campo tal já existe, o campo tal é novo, etc. Entendeu? Ela entraria nesse detalhe. Lembrando que aqui é o to be, né?
+É a foto do objetivo fim, tá?
+Alunado, alunado é uma informação que hoje não existe, tá? Alunado, como é que é tratado hoje, tá? Alunado, basicamente, é uma quantidade. Eu vou na proposta, eu vou em produtos, eu vou incluir um produto.
+
+Camila Kesia Moraes   18:50
+Michelle Pereira.
+
+Oscar de Rooij   18:50
+Eu coloco quantidade alunado. Ele é manualmente inserido na quantidade. Para você obter o alunado da escola, você teria que fazer um agrupamento de produtos por série.
+E pegar um o valor único que está igual entre todos eles, ou pelo menos deveria estar igual, vai que não está igual, né?
+
+Danilo Macedo   19:15
+ou mais alto, né?
+
+Oscar de Rooij   19:17
+É, exato. Então assim, alunado é alunado, é quanto que a escola tem de alunos. E ao preencher isso para todas as séries, a gente vai usar isso no simulador para poder agilizar o trabalho dele de já colocar a quantidade de alunos com base no alunado, para ele não ter que ficar alterando a quantidade, para ele só.
+alterar a quantidade daquilo que é, por alguma exceção, que ele tem que fazer.
+
+Danilo Macedo   19:42
+Mas hoje já acontece isso, Oscar, ele já pega o que está lá na conta, de quantidade de alunado.
+
+Oscar de Rooij   19:48
+Não, não pega.
+E a conta não tem o alunado por série.
+
+Danilo Macedo   19:51
+And any.
+
+Oscar de Rooij   19:55
+É por série que eu preciso.
+Tradicional os produtos.
+
+Danilo Macedo   20:00
+Acho que tem por série.
+Forte Pereira.
+A per se.
+
+Oscar de Rooij   20:07
+É, tem por série. Não, isso aqui, olha, isso aqui é nível de ensino, não é série, tá? Cadê a série aqui?
+
+Danilo Macedo   20:08
+Tem por série.
+
+Oscar de Rooij   20:14
+Ano 2019.
+
+Danilo Macedo   20:14
+Não, mas tem é porque é porque assim, deixa eu desce para aquela tabela de baixo que eu te explico, é porque assim, no nível de ensino EFAFOA primeira grade desse nível de ensino.
+
+Camila Kesia Moraes   20:16
+Okay.
+
+Danilo Macedo   20:29
+Que que é esse número Simo EFAF?
+
+Oscar de Rooij   20:31
+Ele é ensino fundamental anos finais, da quinta à nona série.
+
+Danilo Macedo   20:34
+So.
+Então o primeira grade é quinto, o segunda grade é sexto, o terceiro grade é sétimo. Então eles são, cada nível de ensino tem até cinco grades. Então isso representa a série mesmo, entendeu? Esse cinquenta e dois quer dizer que é o quinto ano.
+O quinto ano tem 52 alunos e tem uma regra até que é assim, você tem, acho que 3 informações, se eu não me engano, de dados de Albuquerque. Um é do censo, aí na tabela de cima é o quê?
+Lista de adoção e ter a do consultor. Então ele pode ter as três informações, o que vem do senso já carrega automaticamente, esse adoção também carrega automaticamente com a coleta das listas e o consultor é o que ele foi ele que preencheu ele na mão.
+
+Oscar de Rooij   21:23
+Thank you.
+
+Danilo Macedo   21:23
+Aí na proposta, quando você vai inserir um produto, o sistema já vem e avalia. É o que é do quinto ano, então ele vem na conta e vê. Do Cabo, eu não lembro exatamente a ordem. Do consultório da preenchido? Não. Então vamos ver o do lista de redução. Está preenchido? Não. Então vamos ver se no censo tem, está preenchido.
+Tem, porque é uma prioridade de confiabilidade. Qual que é o dado mais confiável? E aí ele pega e lá na o quando ele está esperando um produto, automaticamente já coloca cinquenta e dois na quantidade. Aí o reajusta, né?
+
+Oscar de Rooij   21:53
+So.
+Então tem, só que essa informação ela não é fácil de ser inserida e aí não é tão bem utilizada, talvez algo nesse sentido. Mas verdade, está aqui. A questão é se ela é utilizada.
+Lara.
+
+Danilo Macedo   22:11
+Então, ela talvez a do Lima, não sei como que está o processo, mas porque a do do C P o deveria estar quase todos preenchidos da lista de adoção, se o processo está ocorrendo, vai estar preenchido. A do consultor, que é mais difícil, porque depende dele, né? Mas as outras.
+
+Oscar de Rooij   22:23
+And.
+O Do Cabo está aqui. Esse é o segundo que eu clico aleatoriamente e aparece, então deve estar. Mas a adoção não está e o do consultor não está. E a grande questão é a gente ter ali o do consultor.
+
+Danilo Macedo   22:28
+Michelle.
+
+Oscar de Rooij   22:43
+Porque é o do momento ali da proposta. A gente vai conseguir pegar informação para ele poder ter ali a quantidade de produtos. O da adoção deve ser o lista expressa, que é aquela análise que eles fazem antes e tudo mais. Então temos a informação.
+
+Danilo Macedo   22:53
+And that is suspense.
+
+Oscar de Rooij   22:58
+Só ela não é utilizada, né? Então a ela tem a estrutura para guardar, tem a estrutura para guardar, então teria que estar utilizar ela aqui, tá?
+
+Danilo Macedo   23:01
+É, tem estrutura, né? Para isso aí, tem estrutura, sim.
+Okay.
+
+Oscar de Rooij   23:11
+Porque aqui ela está dentro da proposta, então eu estou no simulador, eu vou preencher essa informação na interface do simulador e eu vou carregar isso lá na conta, porque a estrutura está na conta, mas a interface é a do simulador, porque é aqui que eu estou pegando essa informação.
+
+Danilo Macedo   23:21
+Hernandes.
+Three.
+
+Oscar de Rooij   23:27
+Tá.
+
+Danilo Macedo   23:28
+É lá, é aí como está no portal, você tem mais flexibilidade de Lima tela só ter informações de tabelas diferentes que no Dynamics você fica restrangível.
+
+Oscar de Rooij   23:31
+Is.
+Era uma das razões para a gente ter escolhido PowerPages, para a gente poder ter flexibilidade de criar coisas além do CRM. É conectar em outras plataformas, em outros BI, em outros dados e, além disso, o CRM. Foi por isso que ele está separado. Lembra que não é uma ferramenta de cadastro de proposta, é uma ferramenta de venda.
+
+Danilo Macedo   23:49
+Mm.
+
+Oscar de Rooij   23:54
+Para negociar, vender, upsell, etc. Então, esse aqui.
+
+Camila Kesia Moraes   23:56
+Okay.
+
+Danilo Macedo   23:59
+E aí é para ele preencher as quantidades por série, certo? Aí, tá, beleza. E já ajuda ele a depois quando ele for inserir os produtos, já pega daí e fica muito mais fácil.
+
+Camila Kesia Moraes   24:00
+Yes.
+
+Oscar de Rooij   24:03
+Isso sim, lembra do meu.
+Exatamente. Então eu tinha, que é a ideia que tinha Aparecida aqui, né? Eu estou aqui na minha, no meu simulador. Eu vou fazer o quê? Qual que é o alunado? No um ano, 5 no 2 anos, 10.
+
+Danilo Macedo   24:13
+There is.
+
+Camila Kesia Moraes   24:15
+O.
+
+Danilo Macedo   24:23
+Mm-hmm.
+Sim.
+
+Oscar de Rooij   24:26
+4, 322, 20 e 21 etc. Está é isso que ele tem que fazer, basicamente, está.
+
+Camila Kesia Moraes   24:28
+Michelle.
+
+Danilo Macedo   24:33
+Michelle Bone
+
+Oscar de Rooij   24:37
+E aí essa informação seria guardada ali no CRM do jeito que o dado está estruturado.
+
+Danilo Macedo   24:43
+Mhm.
+
+Oscar de Rooij   24:44
+Bom, metadados, ID proposta de revisão, status da proposta. Aqui tem o, eu vou até apagar aqui porque tem aqueles, a gente fez todos aqueles ajustes, né? Estágio da proposta, eu vou até ajustar aqui, razão do status.
+Que a gente já definiu naquela especificação.
+
+Camila Kesia Moraes   25:04
+Sim.
+
+Oscar de Rooij   25:06
+Responsável comercial data de criação criado por data de modificação modificado por não está aqui.
+Essa é a etapa 1, tá?
+A etapa 2 eu não vou passar, porque eles já estão desenvolvendo. Vai sobrar coisas, tá? Para vocês, tá?
+Preço de tabela tem toda uma tratativa diferente para sistema de ensino, que é uma grande dor ali para a equipe comercial. E isso foi passado há pouco tempo. Com a crise lá, o Alisson não consegue nem respirar.
+
+Camila Kesia Moraes   25:41
+Martinez.
+
+Oscar de Rooij   25:42
+Então ele passou isso aqui para a gente. Então, beleza, faz sentido. A gente só tem que pensar em como é que vamos resolver isso. Mas acho que a gente pode pular isso daqui por agora, porque isso vai entrar na especificação. A gente vai priorizar e a gente vai tocar isso juntos ali depois.
+Mas não precisa estimar agora, tá? É, acho que esse é o ponto.
+
+Danilo Macedo   26:01
+Santos.
+Não vai estar nessa parte, não tá? Essa parte de peso de tabela que você falou não tá especificado ainda, tá? Não tá pronto.
+
+Oscar de Rooij   26:09
+Tá, ele tá, tá especificado, não tá validado. Sexta-feira eu vou conversar com eles e eu vou validar. É isso, né? Mas é, o fato é que não é esperada essa estimativa ali no dia 10, então estima todo o resto. Aí as coisas vão aparecendo, a gente vai ter que tratar.
+
+Danilo Macedo   26:13
+That same.
+Okay.
+So.
+
+Oscar de Rooij   26:26
+Piloto vai acontecer, consultor vai falar que uma coisa funciona, outra não funciona. A gente vai ter que resolver. Então isso já é esperado. Essa era a preocupação da Kevellin, que eu super concordo enquanto o consultor não estiver feliz ali com a entrega que a gente fez.
+
+Danilo Macedo   26:34
+Sim.
+
+Oscar de Rooij   26:40
+De que adianta a gente ficar fazendo as coisas que vem depois?
+
+Camila Kesia Moraes   26:43
+Okay.
+
+Danilo Macedo   26:45
+E tem que botar para ele usar logo para já saber também o que tem que arrumar
+
+Oscar de Rooij   26:45
+É.
+Exato, tem que arrumar logo. A gente tem que dar velocidade, mostrar para eles que a gente está assim.
+
+Danilo Macedo   26:54
+Sim.
+
+Camila Kesia Moraes   26:54
+É, eu até perguntei para Kevellin aqui no paralelo sobre se eles estão deixando, criando um backlog já dessa visão ou se tem um Excel para poder a gente chegar o momento e confrontar do que precisa.
+
+Oscar de Rooij   27:01
+Tha
+Não, ela usa o DevOps ali. Aí vocês falaram pra ela parar de usar o DevOps, mas ela tá fazendo do mesmo jeito.
+
+Camila Kesia Moraes   27:10
+Eu parei de usar depops, como assim ela parou?
+
+Oscar de Rooij   27:11
+Não ela por causa, é por causa daquele daquele sisteminha que vocês vão usar. Aí não sei. Alguém falou para ela não colocar mais história lá de algum jeito. Ela está fazendo as histórias do mesmo jeito, tá? Mas pô, a questão é, ela tem um backlog e ela está fazendo.
+
+Camila Kesia Moraes   27:25
+eu tô sabendo agora
+
+Oscar de Rooij   27:27
+Ela está fazendo as coisas, ela não parou e ela não vai parar por causa de ferramenta. Ela está criando backlogs e já tem todas as coisas ali.
+
+Camila Kesia Moraes   27:28
+Me
+
+Danilo Macedo   27:31
+Okay.
+
+Camila Kesia Moraes   27:35
+Entendi.
+
+Danilo Macedo   27:35
+A gente falou para ela que as histórias que fossem direcionadas para gente, para ela colocar na estrutura nova. Mas ela está certa, se ela talvez nem sabe se é assim para gente ou não, mas ela tem que criar, não pode parar, tá certo.
+
+Oscar de Rooij   27:49
+And exact.
+Bom, etapa 3, essa daqui ela já está desenhada.
+E ela vai vir para vocês, né? Etapa 3, tá?
+Etapa 3, então a gente precisa ter uma conversa com o Rodrigo para ele apresentar para vocês. E eu tenho o ideal seria eu estar junto, a gente fazer tipo amanhã, alguma coisa assim.
+Tá, vai explicar benefícios Rodrigo Augusto Augusto Augusto Augusto Augusto Augusto Augusto Augusto Benefícios, doações, patrocínios e adiantamento. Deixa eu pedir aqui para o Rodrigo.
+
+Danilo Macedo   28:17
+Quem é o Rodrigo?
+A.
+So.
+
+Oscar de Rooij   28:31
+Pereira.
+Calma aí, deixa eu pegar aqui.
+The.
+Doações e patrocínios. Qual que é a ideia do benefício? Primeiro eu tenho aqui os dados básicos da escola, da negociação. Eu coloco os produtos e a lista de produtos ela vai ser compartilhada com todos os canais de venda. É todos os produtos que eu espero vender para essa escola.
+E todas as quantidades, com todas as condições comerciais de desconto ou de majoração. Tá aí, isso aqui vai definir quanto que eu vou receber.
+Quando eu vou para benefício, quanto que eu FTD vou ganhar de dinheiro com essa escola? Quando eu vou para a etapa 3, eu começo a fazer concessões. Eu começo a querer oferecer benefícios. Benefício é o quê? Dar desconto para a compra de material para pelos professores da escola. Tá?
+Doações, eu começo a doar material, além, não é um desconto, eu estou doando material, tá? Patrocínio, que aí é dar dinheiro mesmo, e adiantamento, que aí é do royalty, que ele vai, que ele está se comprometendo a vender. Eu vou adiantar um pedaço desse dinheiro.
+Essas são concessões. Isso me tira dinheiro. Eu vou ganhar, aí depois eu tiro uma parte, meu lucro vai ser menor, minha rentabilidade vai ser menor. Então, benefícios, doações, patrocínio e adiantamento são ferramentas de negociação que podem ser utilizadas pelos consultores a fim de fechar negócio.
+
+Camila Kesia Moraes   30:01
+Yep.
+
+Oscar de Rooij   30:16
+Por outro lado, reduzem a margem de lucro da FTD. Nessa etapa, o consultor lista todos esses benefícios e o simulador deixa claro o impacto dessas concessões na negociação.
+Benefícios são descontos para filhos de professores, normalmente oferecidos por meio de Carvalho de Jesus de Faria de Faria de Faria de Faria de Faria de Faria de Faria de Faria de Faria de Faria de Faria de Faria de F
+Acessa a Lumisfera e adquire com o uso desse cupom. É um cupom de e-commerce. Doações são materiais doados para a escola diretamente. Doações estão sendo descontinuadas.
+de 100% de desconto.
+
+Danilo Macedo   31:01
+Essa informação que Desculpa, terminei depois eu falei.
+
+Oscar de Rooij   31:01
+A nova.
+Pode falar.
+
+Danilo Macedo   31:11
+Eu já encontrei na proposta o patrocínio, mas eu não localizei as outras. Tem hoje na proposta de Benefícios do Alexandre, de Cassia de Cassia de Cassia de Cassia de Cassia de Cassia de Cassia.
+
+Oscar de Rooij   31:16
+O.
+Não, não tem, não tem.
+Adiantamento tem.
+Patrocínio é doações e benefícios não tem. Patrocínio e adiantamento tem.
+
+Danilo Macedo   31:32
+Aí o patrocínio é uma é um é uma lista de itens de Patrocínio que tem a quantidade e o valor unitário.
+
+Oscar de Rooij   31:36
+Is.
+Isso.
+
+Danilo Macedo   31:40
+Agora, adiantamento, eu não estou achando isso.
+
+Oscar de Rooij   31:41
+Adiantamento é um número.
+É um número, ele só dita um número.
+Todo o cálculo desse número, ele vem do próprio consultor.
+
+Danilo Macedo   31:54
+E aí só vai lá e põe o número eu não tô achando de que tá isso nessa informação aqui mas beleza
+
+Oscar de Rooij   31:59
+Uh, de Souza Santos Hold aqui.
+
+Danilo Macedo   32:02
+É um valor, não é uma porcentagem mesmo, é um valor, né?
+
+Oscar de Rooij   32:03
+É um é um valor, é um valor.
+É, se eu não me engano, ele fica aqui em condições comerciais, adiantamento aqui, oh, condições comerciais, adiantamento.
+
+Danilo Macedo   32:16
+Acho que tem alguma regra.
+
+Oscar de Rooij   32:18
+Ah, não, esse adiantamento, né? Você quer saber ou é adiantamento, né? Tá aqui.
+
+Danilo Macedo   32:21
+Não, exatamente, não. Então tem alguma regra que nessa proposta que eu abri, não mostra esse campo não.
+
+Oscar de Rooij   32:28
+Adiantamento não aparece.
+
+Danilo Macedo   32:31
+No.
+
+Oscar de Rooij   32:32
+Talvez seja um modelo de venda. Não, não é porque livreiro, por exemplo.
+
+Danilo Macedo   32:35
+Ah, pera aí, acho que eu já sei.
+
+Camila Kesia Moraes   32:36
+Para estar como rascunho em andamento, não é? Pereira não fechar.
+
+Danilo Macedo   32:39
+eu tô numa o meu formulário tá diferente do seu é porque
+
+Oscar de Rooij   32:44
+Eu estou numa proposta comercial.
+
+Danilo Macedo   32:47
+Caio minha visão eu consigo mudar, entendeu? Como o de Binha aqui. Mas nem dá opção desse propósito.
+
+Camila Kesia Moraes   32:52
+Mas ele está em produção. O Danilo, a gente está com acesso em breve. E aí ele está tudo bem, mas enfim.
+
+Danilo Macedo   32:57
+Mas tudo bem.
+
+Oscar de Rooij   32:59
+Tá aqui, condições comerciais, aqui é o adiantamento. Se eu boto 100, ele bota 100 reais aqui por extenso, né?
+
+Camila Kesia Moraes   33:02
+Case for Lara.
+
+Danilo Macedo   33:03
+Qual valor? Beleza.
+
+Oscar de Rooij   33:07
+Então esse aqui é o adiantamento.
+
+Danilo Macedo   33:11
+So.
+
+Oscar de Rooij   33:12
+E aí eu tenho, então, o patrocínio é o investimento direto na escola, seja em dinheiro ou em categorias específicas, como tecnologia, quadros digitais, TVs, notebook e infraestrutura, por exemplo, móveis. A doação tem sido uma prática da FTD que eles querem cortar.
+Tá, mas a doação ainda é um termo muito utilizado. A doação na prática, ela era o quê? A doação de material 100% de desconto. Isso tributariamente, todo o faturamento ali no Teixeira, ele era mais difícil. Sem falar que.
+Comercialmente não faz sentido. Aí o que eles estavam fazendo? Eles estão esse ano, eles estão migrando de doação de 100% para uma doação de transição, que é 90%. Só que 90% na prática, ele é um desconto.
+Tá, então, mas o nome doação vocês vão ver que continua aparecendo. É uma questão das pessoas se acostumarem com isso, porque a doação vai ser descontinuada. Tá escrito aqui.
+
+Danilo Macedo   34:10
+Mas aí, até essa doação de Cassia de Cassia de Cassia de Cassia de Cassia de Cassia
+
+Oscar de Rooij   34:14
+Não, a de 90%, ela entrou agora, vai entrar agora, vai entrar com a nossa, com o nosso projeto.
+
+Danilo Macedo   34:19
+Mas aí o vendedor está colocando 90% de desconto no produto, quando ele está incluindo o produto, né? É isso que ele está fazendo.
+
+Camila Kesia Moraes   34:21
+Michelle.
+
+Oscar de Rooij   34:25
+É um, é isso exatamente.
+
+Danilo Macedo   34:28
+Ele não está em algum lugar diferente igual o patrocínio.
+
+Oscar de Rooij   34:29
+Ele está criando um cupom de desconto de 90% que o professor vai usar lá no e-commerce.
+
+Danilo Macedo   34:34
+And.
+
+Oscar de Rooij   34:36
+É diferente de ele ir, de a gente pegar e faturar lá no totus, uma doação de Cassia, uma doação e mandar para a escola. Eu estou deixando na mão, ao invés de eu ficar com a responsabilidade de faturar isso com como uma doação e entregar para a escola.
+
+Danilo Macedo   34:36
+Tá bom.
+
+Camila Kesia Moraes   34:44
+Santos.
+
+Oscar de Rooij   34:52
+Eu estou criando com um código de cupom e mandando a escola ir lá no e-commerce comprar com esse cupom.
+
+Danilo Macedo   34:58
+Não, você vai no, eu tenho umas dúvidas, mas acho que no comportamento você vai mostrar já. Beleza. Aí isso é só terminologia.
+
+Oscar de Rooij   35:04
+Tavares.
+Isso, comportamento, livreiro, eu consegui eliminar esse modelo de negócio, modelo de venda, então vou tirar daqui. A etapa 3, ela deve apresentar o totalizador da etapa 2, todos os campos, só que agora com aí a gente teve algumas mudanças de nome. Ah, não, receita bruta, tá certo.
+E royalty potencial. É por isso que eu quero ter a.
+A interface aqui, porque fica mais fácil explicar para vocês.
+
+Danilo Macedo   35:33
+Fernando.
+
+Oscar de Rooij   35:35
+O que que é tudo isso?
+Uh, deixa eu ver se eu acho aqui rapidinho.
+Vocês têm acesso ao DevOps da Kevellin?
+
+Camila Kesia Moraes   35:47
+Forte de Sim, deixa eu ver aqui.
+
+Oscar de Rooij   35:49
+Que tá num wiki onde é que tá o wiki aqui
+
+Camila Kesia Moraes   35:54
+Ah, não tem mais não, troquei a máquina.
+
+Oscar de Rooij   35:57
+Weekie, OK.
+
+Camila Kesia Moraes   35:57
+E é isso eu tinha.
+
+Oscar de Rooij   35:59
+Alvarez, simulador, CRM, arquivos de Apoio, gestão de mudança, tutorial, perfis.
+
+Camila Kesia Moraes   36:06
+G
+
+Oscar de Rooij   36:07
+Documentos, comunicado, comunicado, entrega.
+Um.
+Caio, não está aqui.
+Não.
+
+Camila Kesia Moraes   36:25
+Michelle Santos Michelle.
+
+Oscar de Rooij   36:25
+Oscars.
+Protótipo oficial, OPA, será que eu achei?
+No.
+Nah, it's a Kevellin's Antiga.
+Okay.
+Right, it's like every someone cheer, so no, no that best answer aqui.
+É, mas a gente tem acesso ao do ao de produção, né?
+
+Camila Kesia Moraes   37:02
+Okay.
+
+Oscar de Rooij   37:03
+Moraes de produção, produção é mais fácil. Produção não, né? Desculpa, é teste.
+Uma das coisas que deve, não sei se o Fernando falou para você, mas é, essa tela demora para carregar, provavelmente aí eu estou chutando aqui. Deve ser porque está carregando todos os produtos, não é?
+
+Danilo Macedo   37:23
+É, exatamente.
+
+Oscar de Rooij   37:26
+Então a gente vai melhorar, vai ter que melhorar um pouco como é que a gente faz essas conexões.
+Mas assim.
+Algo tão simples quanto isso, assim, eu sei que tem muita tecnologia aqui em volta, tá? Mas assim, algo tão simples quanto isso vai resolver absurdamente a dor que os caras já tem hoje.
+
+Danilo Macedo   37:48
+Não, eu tenho certeza disso.
+
+Oscar de Rooij   37:49
+Aqui, oh.
+Esses totalizadores, tá? A parte de cima eu estou ganhando dinheiro, tá? Aqui eu estou ganhando dinheiro. Essa é a etapa 2, tá? Na etapa 3 eu estou perdendo dinheiro.
+Porque eu estou colocando aqui, eu estou tirando essas informações, eu estou tirando os benefícios, eu estou tirando doações e eu estou tirando patrocínio, porque é o que eu estou dando de dinheiro para a escola, que eu estou tirando aonde? Da própria contrato da escola. E aí eu tenho esse resultado.
+
+Camila Kesia Moraes   38:11
+Michelle.
+Michelle.
+Okay.
+
+Oscar de Rooij   38:20
+Tá na perspectiva da escola, tudo que eu estou perdendo aqui é bom para ela. Então, quando eu vou lá para o portal, para a área do cliente que ela vai ver, ela vai ver isso aqui. Aí ela vai ver aqui o total que ela está faturando no e-commerce dela, vai ter.
+
+Camila Kesia Moraes   38:32
+This.
+
+Oscar de Rooij   38:36
+Mendes a taxa de administração total de Cassia, vai ter o rock potencial de Bela. E aí tem o quanto que ela tá ganhando nessas outras coisas. E aí você tem um investimento total na escola. É isso que brilha o olho de Cassia. A etapa 3 é essa parte de Baixo.
+Tá bom?
+Então, aqui é isso que eu estou querendo dizer com esse pedaço, tá? Os descontos e doações são oferecidos por série, ou seja, o consultor não tem permissão de oferecer esses descontos, esses benefícios.
+de forma isolada, tá? Por exemplo, para um produto, as únicas possibilidades de desconto são um valor que ele tem liberdade de negociar, normalmente é 40%, mas ele pode mudar.
+A doação não é que é a de A doação de A de Cassia de Cassia vai ser descontinuada em algum momento A de Cassia onde que ela vai ser bloqueada pela aprovação? Então a aprovação, algum gerente vai falar assim, cara, já está descontinuando isso daqui.
+Volta lá com a escola e tenta tirar isso daqui, bota o desconto de Cassia o de Cassia o de Cassia, então ele vai ser um desincentivador, tá? Até o momento que ele é de Fato descontinuado e aí a gente corta fora esse desconto de Cassia doação de Cassia.
+
+Camila Kesia Moraes   39:48
+Yeah.
+
+Oscar de Rooij   39:56
+Turnes.
+Para cada série, para cada uma das opções, o consultor pode definir a quantidade de alunos que terão esses benefícios.
+Alçada de aprovação a apresentação e o cálculo das alçadas de aprovação apresentadas na etapa 3 devem continuar presentes na etapa 4, uma vez que algumas regras serão preenchidas na etapa 4. Tá?
+Funcionalidade propriamente dita, qual que é o grid? Grid de Benefícios. Aí aqui em produção eu não tenho essa tela pronta, não consigo mostrar, mas ela é basicamente isso aqui.
+Eu tenho as séries aqui, que são só as séries que tem na lista de produtos. Eu faço um filtro, só as séries que tem dado preenchidos, vai aparecer as séries aqui. Eu tenho três colunas. Eu tenho o desconto para o Filho de Funcionário, que ele vai poder definir o valor, por exemplo, 30% e aqui embaixo ele vai falar dois cupons aqui, um aqui e quatro aqui.
+Transição, que é o cupom de 90% de desconto. Ele vai botar um aqui, 3 aqui, 2 aqui. Doação 100%. Ele vai botar um aqui, um aqui, um aqui.
+Tá, então é assim que ele vai definir esses benefícios. Percebe que ele é por série, quantidade por série. Esses 2 aqui, eles vão gerar o quê? Cupons?
+E vai um cupom com o e-commerce. A gente vai mandar isso para o CRC e o CRC vai ter que criar esses cupons. Hoje toda essa criação vai ser manual. Então vai ter que ser alguma informação que o CRM vai ter. A gente pode criar um dash para isso. Por exemplo, lembra que a gente vai ter que criar dash para os usuários?
+Consumirem as informações do CRM? Então assim, ter um dash para por função é para isso. Então aqui eles vão poder acompanhar quantos cupons, por exemplo, ele tem para cada escola. A gente pode criar um dash para eles poderem consumir essa informação das propostas aprovadas.
+Lara.
+Doação, a mesma coisa, tá? O objetivo é lidar e-mails, porque hoje isso daqui cai num e-mail que alguém vai lá e vai criar esse cupom na mão, etc.
+
+Danilo Macedo   41:54
+Use, use Jessica.
+Bell
+O sistema não vai ter que ajudar o usuário a fazer nenhum cálculo do tipo.
+Sei lá, baseado na quantidade de itens daquela série, ou por exemplo, ele tá dando cupom para um produto para aquela série, não é para todos. O sistema não vai fazer essa diferenciação, ele vai falar o total é esse aqui sem ele ter que.
+
+Oscar de Rooij   42:28
+Ta falando, por exemplo, dar mais cupons do que alunos que ele tem?
+
+Danilo Macedo   42:31
+No.
+Por exemplo, para a série 2 anos, ele inseriu 5 produtos. Ele não vai. Ele não vai ter que falar assim, é qual que é o produto que eu estou dando desconto por tem um cupom?
+
+Oscar de Rooij   42:45
+Não é o que você está falando. É um bom ponto, tá? É o que é normal, tá? Eu tenho quando eu estou escolhendo 5 produtos para a mesma série, isso aí é uma coisa que chama kit, só que o kit.
+
+Danilo Macedo   42:52
+Michelle.
+
+Oscar de Rooij   42:59
+Ele tá aqui no CRM.
+Nomenclatura de kits.
+
+Camila Kesia Moraes   43:05
+O.
+
+Oscar de Rooij   43:05
+O que é um kit? Eu tive que fazer um desembaraço para entender isso daqui, tá? O kit é o seguinte, eu vou lá na minha listagem de produtos e eu vou criar.
+Os meus produtos, certo? Quando eu adiciono produtos aqui e eu vou fazer, por exemplo, por série um ano. E nesse série de um ano eu vou colocar. Por que está aparecendo 4 anos aqui se eu fiz o filtro de um ano? Não sei.
+Mas deixa isso para o pessoal de testes resolver, tá? Então, eu estou adicionando aqui produto de Ma
+Está vendo que a gente já faz o agrupamento pelo segmento?
+
+Danilo Macedo   43:44
+Mm.
+
+Oscar de Rooij   43:44
+O que é um kit? O kit nada mais é do que um bundle. É o que vai para o e-commerce. É o CRM falando seguinte, e-commerce, esses três livros aqui, eu quero eles agrupando.
+Peres para que lá no e-commerce a compra seja do bundle, não seja do livro individual. E quando a gente fala que ele vai ter um desconto na série, é um desconto de Carvalho, por exemplo, ele é um desconto.
+em todos os produtos daquela série, que no e-commerce, na prática, ele é um desconto de Oliveira de Bandle daquela série.
+
+Camila Kesia Moraes   44:35
+Santos.
+
+Danilo Macedo   44:35
+Na minha mesma série.
+
+Oscar de Rooij   44:38
+Pode ter?
+O cupom ele é na série.
+No e-commerce, tá? Então, por exemplo, lembra que na prática você está gerando um cupom, né? Então, quando ele for lá, então a primeira coisa que você pode ter na sua cabeça é que esse não é um problema seu, entre aspas. Por quê? Porque você está criando um cupom.
+Para a primeira série, o CRM está colocando o kit e digamos que alguém deixou algum livro de fora. Já aconteceu isso, tá? Então a sua pergunta é boa, vai ter um de fora? Quando for aparecer no CRM, vai aparecer para aquela série 2 produtos, um bundle e um soul.
+Estou.
+Quando o usuário vai, a família vai colocar esses dois produtos no carrinho e ele aplica o cupom, o cupom vai ser aplicado nos dois produtos.
+
+Camila Kesia Moraes   45:21
+Hello.
+
+Danilo Macedo   45:31
+Mas como que o CRM diferencia que é o esse Rita fora do kit?
+
+Camila Kesia Moraes   45:34
+Michelle.
+
+Oscar de Rooij   45:37
+Porque aqui ele não vai estar fora do kit. Aqui, quando você tiver o kit primeira série, ele vai estar, por exemplo, com esses dois aqui.
+Não vai estar com o terceiro, o kit é o que vai colocar esses dois aqui juntos.
+
+Danilo Macedo   45:52
+Entendi, então, na verdade, o vendedor forma os kits e não é um negócio automático.
+
+Oscar de Rooij   45:58
+Isso exatamente o que uma das coisas que eu especifiquei que você vai ver aqui embaixo é a formação automática dos kits, tá? Para agilizar, porque 99,9% o kit, ele é automático com todos os produtos da Severiano
+
+Danilo Macedo   45:59
+Mendes.
+
+Oscar de Rooij   46:13
+Aí, de novo, ele tem que fazer o quê? A exceção, se ele quiser tirar algum, ele tira, mas 99,9% é padrão.
+
+Danilo Macedo   46:13
+Mm.
+Geraldi.
+
+Oscar de Rooij   46:23
+Tá, mas isso está mais embaixo aqui, aí eu mostro pra você.
+
+Danilo Macedo   46:27
+da o kit ele tá na guia
+
+Oscar de Rooij   46:29
+Aqui, o grid está na guia de Barros 4.
+
+Danilo Macedo   46:34
+Não, não quero dizer no dynamics hoje, que eu só queria ver isso.
+
+Oscar de Rooij   46:36
+Ah tá, o kit ele tá hoje na primeira guia, condições comerciais.
+
+Danilo Macedo   46:40
+Ana Brasil.
+
+Oscar de Rooij   46:42
+É para você ver que não faz sentido a distribuição dos Campos aqui. Elas não seguem a jornada do da comercial.
+
+Camila Kesia Moraes   46:50
+A janela do usuário
+
+Danilo Macedo   46:51
+É, na ver é, mas ó, pelo que eu tô vendo aqui.
+o kit eu seleciono a série
+Dou um nome só, eu não escolho os quais produtos fazem parte do kit não, viu?
+
+Oscar de Rooij   47:04
+Não tem. E tem 2 kits, tá? Para ajudar, tá? Tá na história lá que eu lembro que a eu aprovei essa história é que é sempre é difícil de lembrar qual que é, onde que faz isso. Se você for ver aqui, olhando aqui na minha tela, vamos para os relacionados aqui.
+
+Danilo Macedo   47:19
+Mm.
+
+Oscar de Rooij   47:22
+Você tem Cadê kit?
+Kits, aqui, kits e nomenclatura de kits.
+
+Danilo Macedo   47:33
+Hmm.
+
+Oscar de Rooij   47:33
+Tem esses dois aqui.
+
+Camila Kesia Moraes   47:34
+Michelle.
+
+Oscar de Rooij   47:36
+Um deles, você junta os produtos, você cria um kit, eu tomo um teste aqui, criar, tem 2 botões, criar kit, inclusive está lá na história também para resolver esses botões aqui para diferenciar.
+É, sim, vamos lá.
+Data de royalties, campos obrigatórios devem ser preenchidos.
+Data de Oliveira, essa data de Rooij Teixeira, é uma data que a gente tem que remover.
+Porque ela não faz sentido ser necessária.
+
+Camila Kesia Moraes   48:08
+Jessica.
+Martinez.
+Thank you.
+
+Oscar de Rooij   48:17
+Isso está na reorganização de campos, tá? Já está com o pessoal lá.
+
+Camila Kesia Moraes   48:17
+Rangel.
+Mhm.
+
+Oscar de Rooij   48:22
+É kit sexta série.
+
+Camila Kesia Moraes   48:23
+Okay.
+
+Oscar de Rooij   48:28
+Eu boto aqui.
+
+Danilo Macedo   48:28
+Eu entendi, mas não deu deu um erro para mim.
+
+Oscar de Rooij   48:32
+Quantidade de produtos, eu acho que não é esse kit que eu cliquei, porque ele mostra os produtos que tem.
+Talvez seja esse aqui.
+
+Danilo Macedo   48:39
+Não, não, aí você tem que salvar, você vai ter que salvar e aí depois você inclui os produtos.
+
+Oscar de Rooij   48:45
+Ah, tá, tá bom, mas é isso assim, é uma experiência meio lamentável.
+
+Danilo Macedo   48:53
+Eles têm que fazer isso em todas as propostas.
+
+Oscar de Rooij   48:54
+Todas as séries, em todas as propostas, depois de clicar em 300 produtos que ele teve que adicionar individualmente cada um. Agora você entende porque demora 3 horas para ele fazer uma proposta, tá?
+
+Danilo Macedo   48:57
+Okay.
+Uh-huh.
+
+Camila Kesia Moraes   49:05
+Jesus.
+
+Danilo Macedo   49:05
+Sim.
+Certo, dá o control S ali. Eu não sei porque não está o botão salvar habilitado, só o salvar e fechar. Mas se fizer o control S.
+Aí ele salva.
+
+Camila Kesia Moraes   49:18
+Okay.
+
+Oscar de Rooij   49:18
+Aqui ele teria que carregar os produtos da série. É que talvez nessa proposta ele não tenha. Mas eu acho que ele já faz isso automático, tá? Ele já traz os produtos da série. E aí ele escolhe qual que ele tira e ele clica para salvar.
+
+Danilo Macedo   49:18
+Aí embaixo tem.
+Augusto está trazendo.
+
+Oscar de Rooij   49:33
+É, já está trazendo. Quando eles me mostraram, já estava trazendo. Mas assim, você entendeu. É um, é um B.O. É, eu vou ter que sair daqui 3 minutos, tá gente? Para poder passar. Até eu vou falar com o Rodrigo e com a Kevellin sobre a etapa.
+
+Danilo Macedo   49:37
+Bone
+Santos.
+
+Camila Kesia Moraes   49:45
+Felix Zan
+Michelle.
+
+Oscar de Rooij   49:50
+1 e a etapa 4, tá? Sobre ajustes que eu precisei capturar com a comercial nesses últimos dias, tá?
+Mas aí assim, só se vocês puderem. Aqui, etapa 3, então, eu estava em funcionalidade, grid de Benefícios, mostrei aqui o grid para vocês. As séries serão apresentadas devem ser apenas séries existentes, os campos em branco na imagem são exemplos blá blá, já falei.
+
+Camila Kesia Moraes   50:16
+Jesus.
+
+Danilo Macedo   50:18
+Yep.
+
+Oscar de Rooij   50:19
+Grid de Patrocínio, o grid de Patrocínio, ele vai ter uma mudança ali, continua sendo um grid, só que ele vai ter, deixa eu colocar, segurar isso aqui, ele vai ter o quê? Botão adicionar, tipo de Patrocínio, são esses o tipos.
+O valor e o total. Não tem quantidade, tá? A gente vai tirar a quantidade, não precisa mais da quantidade, tá? Então vai simplificar isso daí e vai ter um percentual da receita líquida, que aí é um cálculo, um valor somente leitura ali para saber qual que é o.
+
+Danilo Macedo   50:40
+Santos.
+
+Oscar de Rooij   50:51
+percentual dele.
+Então, o grid já está meio que estruturado, é tirar ali uma coluna e tipificar esses tipos de Patrocínio.
+Faz sentido isso aqui?
+
+Danilo Macedo   51:09
+Deixa eu ver, acho que o que diferencia do que tem hoje é o que você falou do valor, né?
+
+Oscar de Rooij   51:15
+É o quantidade, quantidade.
+
+Danilo Macedo   51:17
+quantidade quer dizer
+
+Oscar de Rooij   51:18
+É, só precisa tirar a quantidade e esse tipo patrocínio não existe, tem que tipificar.
+
+Danilo Macedo   51:28
+Então hoje tem, ele escreve o item, põe uma quantidade e põe o valor unitário.
+
+Oscar de Rooij   51:35
+Is.
+
+Danilo Macedo   51:36
+Tá, e aí vai ser vai ser tipo item valor.
+
+Oscar de Rooij   51:42
+É o item. Em teoria, você não precisa, está não. A equipe não precisa de um nome para isso, só quer saber o tipo e o valor. Só isso.
+
+Danilo Macedo   51:47
+Michelle Michelle Martinez.
+O Brasil, você não vai alterar a estrutura do que existe hoje, só alguns campos, tá bom?
+
+Oscar de Rooij   51:54
+Não, não vai, não vai, tá? Onde que muda alguma coisa? A forma de patrocinar, mas isso não está nesse escopo ainda, tá? Não está para a gente entregar agora. Existe ali algumas situações com escolas estatais.
+Que exige um patrocínio diferente, tá? É que onde eu não vou dar dinheiro para ela. Eu não posso legalmente dar dinheiro para ela, mas eu vou lá e eu compro uma TV para a sala de projeção dos alunos, tá? Então é uma outra operação.
+De patrocínio, tá? Então aqui, isso aqui não está maduro o suficiente para a gente poder especificar para você. Vou deixar vermelho para vocês entenderem quem está fora. Tudo bem?
+
+Danilo Macedo   52:46
+Tá bom.
+
+Oscar de Rooij   52:48
+E eu tenho que dar uma justificativa, um parágrafo livre ali para o consultor fazer isso, para ele poder explicar por que ele está querendo patrocinar essa escola.
+Tá.
+Eu vou passar rapidinho aqui no adiantamento. Qual que é a questão do adiantamento? Se tem markup, lembra da coluna markup lá no grid? Então eu estou majorando, eu estou pegando meu preço de tabela e eu estou colocando um preço acima, que é o preço que vai ser vendido ali para a família.
+Então, se tem isso, se o preço da família, o total família, que é o quanto eu vou vender na loja, e o preço negociado, que é o quanto eu vou receber, for diferente, um for maior que o outro, se tem markup, então
+
+Danilo Macedo   53:31
+Do total da proposta.
+Do total da proposta, não de algum produto, tá? Tá.
+
+Oscar de Rooij   53:35
+Do total da proposta, exatamente. Então ela é elegível a adiantamento, tá? Esse é um jeito simples de você encontrar. Você pode encontrar de outros jeitos, tá? Tipo, se o modelo de venda XPTO você consegue chegar se tem adiantamento ou não tem, tá?
+
+Danilo Macedo   53:43
+Sim.
+
+Oscar de Rooij   53:50
+Mas aqui você só vai ter adiantamento se você tiver de fato uma venda maior do que o preço negociado ali. Então aí você tem um toggle sim ou não para adiantamento. Aí esse sim, ele pode fazer de oliveira Glugovskis Glugovskis Gl
+Se ele botar o valor, calcula automaticamente o percentual. Se ele coloca o percentual, calcula automaticamente o valor. Então isso já está na UX, já está desenhado lá. E basicamente é isso. Ele pode fazer dos 2 lados essa experiência, tá?
+E os totalizadores, ele é o totalizador da perspectiva FTD, perspectiva escola, que já está desenvolvido, inclusive, tá? Então vocês não vão precisar estimar isso, porque ele já está desenvolvido. O que vocês vão ter que estimar é que vai ter que conectar com essa nova tela, né?
+A tela ela está ali, mas o layout ele já está desenvolvido.
+
+Danilo Macedo   54:41
+Ana é, vai ter que estimar que a gente vai mexer nos totalizadores ali da das da conta que tem que fazer.
+
+Oscar de Rooij   54:48
+É exato. Vai ter que mexer exatamente a conta vai ter que fazer, porque você vai ter essas informações ali na etapa 3, que não existe hoje. Você vai ter que fazer essas contas.
+
+Danilo Macedo   54:49
+Michelle.
+And is.
+
+Oscar de Rooij   54:58
+So.
+Não chegamos na etapa 4, mas aí a gente pode marcar uma continuação amanhã. Eu preciso pular lá para outra porque eles têm pouco tempo, tá? Se vocês querem participar lá ou não.
+
+Camila Kesia Moraes   55:07
+Mhm.
+
+Danilo Macedo   55:09
+Eu não consigo, se a Camila consegue, mas eu não vou conseguir.
+
+Camila Kesia Moraes   55:12
+Pode mandar, só vou no fazer uma pequena pausa, tá bom? Pode mandar.
+
+Oscar de Rooij   55:15
+Tá bom, então beleza gente, a gente vai se fala amanhã. Até mais, tchau tchau.

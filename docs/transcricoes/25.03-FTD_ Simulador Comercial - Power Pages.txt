@@ -1,0 +1,1503 @@
+Camila Kesia Moraes   0:12
+Listo pessoal para mim mostrou que está gravando agora todo mundo fechado
+
+Fernando Mauricio da Costa Filho   0:16
+Pronto.
+Beleza, quem vai estar apresentando sou eu. Eu não peço desculpa também. Eu não estava esperando estar apresentando nada hoje. Eu caí meio de paraquedas aqui, mas a gente já pode apresentar aqui algumas coisas para vocês.
+
+Camila Kesia Moraes   0:27
+Mhm.
+
+Fernando Mauricio da Costa Filho   0:33
+Tá só um segundo aqui.
+Se eu preparar aqui só umas telas, antes de lançar o compartilhar minha tela, só um minuto.
+
+Camila Kesia Moraes   0:41
+Eu vou, eu vou rever, está, Fernando, aproveitando que eu vou rever quais são as próximas e vou dar um pitch antes, está? Porque eu sei como é que é chegar na reunião, não está preparado. Pode deixar comigo que eu vou alinhar isso aqui.
+
+Fernando Mauricio da Costa Filho   0:54
+Tranquilo.
+Deixa eu só mesmo aqui pegar um uns exemplos e aí eu começo a compartilhar a tela.
+Bem, pronto, já tenho aqui então o que é que eu preciso.
+Vocês estiverem vendo minha tela, vocês me avisem, por favor.
+
+Danilo Macedo   3:31
+Belluco. Belluco.
+
+Fernando Mauricio da Costa Filho   3:33
+vendo? Boa. Então, pessoal, o que a gente tem aqui hoje é um portal single page, tá? Ele não tem uma estrutura, ele não tem nada além dessa página aqui, tá? No momento, a gente teve aí um prazo meio curto para desenvolver isso, então o que a gente
+
+Danilo Macedo   3:34
+Turn
+
+Fernando Mauricio da Costa Filho   3:52
+Acabou o dedo aqui na tela.
+ficou alguns sinais já de melhorias identificados.
+É, a gente está com uma performance legal dentro do.
+Do que é o portal e tudo mais. Mas eu vou apresentando, eu vou dizendo quais são aqui os pontos de melhoria que nós já temos identificados. É a nível primeiro de configuração do da parte de dados, de segurança e tudo mais. A gente vai precisar de fato.
+Fazer aqui um pente fino, porque a única coisa que eu fiz foi, eu dei as seguranças que eram necessárias para poder rodar. É o site, então.
+Tudo que foi aqui de permissão de tabela, eu coloquei todas as tabelas que eu precisava utilizar e dei acesso global a tudo, porque eu estava fazendo no escopo fechado. Isso aqui é uma questão de segurança que a gente vai precisar depois passar um pente fino para entender quais são de fato as tabelas são essas, mas quais de fato precisam só de leitura, quais são as que precisam de gravação, quais são as que precisam de criar.
+atualização e assim por diante. Tá? No momento está tudo concedido por uma questão de facilidade de manuseio ali. Eu não tenho que ficar voltando toda hora para poder ajustar uma permissão de tabela. Mesma coisa a nível. Deixa eu só abrir aqui, duplicar essa tela e aí.
+
+Danilo Macedo   5:04
+Fernando, com uma dúvida, isso você comentou agora está no plano aqui para vocês já ajustarem antes do do Livia, como que está aí ou não seria depois?
+
+Fernando Mauricio da Costa Filho   5:06
+Sim.
+Então, isso vai ser, no momento a gente não está com essa pretensão de fazer isso antes do Go Live, porque no momento o usuário não tem a possibilidade de fazer nada no simulador, além da edição de produtos, ele não consegue, porque não existe a funcionalidade mesmo. Então eu não tenho a preocupação de A ele vai criar uma série indevida,
+
+Danilo Macedo   5:33
+Mhm.
+
+Fernando Mauricio da Costa Filho   5:35
+Ou ele vai criar um produto devido? Não, porque ele não consegue. No momento, o simulador está limitado a ele conseguir apenas adicionar, remover e editar produtos. Então isso não é uma preocupação para a gente no momento, mas conforme a gente for montando as 4 etapas do simulador e deixar ele uma coisa autossuficiente.
+A gente vai precisar ter um controle de tipo, tem certas ações ali que eu não vou poder permitir ele fazer.
+Certo? Mas no momento é tranquilo. Deixa eu só abrir aqui o gerenciamento PowerPage para também mostrar aqui a questão da configuração da API.
+
+Danilo Macedo   6:03
+Come on.
+Mm.
+E deixa eu já tirar outra dúvida em questão de permissionamento, ele da forma que está aí, ele já ele está respeitando o direito, o que já está configurado no direito de acesso do perfil daquele usuário lá no dataverse?
+Por exemplo, eles não.
+
+Fernando Mauricio da Costa Filho   6:24
+Sim, isso aí.
+Isso aí tá numa questão do.
+Dentro aqui da proposta, a gente consegue clicar no botão simulador comercial e é esse botão. Esse botão ele já tem no enable rule dele. Ele verifica quais são os direitos de acesso, então ele só aparece para quem pode aparecer, tá?
+
+Danilo Macedo   6:33
+Michelle.
+
+Fernando Mauricio da Costa Filho   6:45
+E ele também só vai aparecer se a proposta estiver em rascunho em andamento. Se a proposta já estiver ativa em aprovado, ou seja, no estado só de leitura, ele não vai aparecer também, tá?
+
+Danilo Macedo   6:53
+Não, minha dúvida, isso aí você já foi bem pouco explicou isso também, mas minha dúvida em relação lá no Power Pages, por exemplo, os vendedores, eu sei que eles não têm permissão para editar um produto.
+O produto, não o produto da proposta ou criar um produto, apesar que assim ali em tela nem vai conseguir, do jeito que você fez ali, ele nem vai conseguir mesmo. Mas se tivesse essa possibilidade de alguma coisa desse tipo.
+
+Fernando Mauricio da Costa Filho   7:10
+Sad.
+Exatamente.
+
+Danilo Macedo   7:22
+De alguma outra tabela, não é? Ele já está respeitando o direito de acesso configurado no dataverse ou você tem que configurar isso lá também?
+
+Fernando Mauricio da Costa Filho   7:30
+Não, no momento não. A gente não configurou as web roles para respeitar essa questão. Danilo, no momento, é como eu disse, no portal.
+Se a gente adicionasse funcionalidades de criação de exclusão de produtos ou de outras tabelas, ele conseguiria fazer tudo. O portal é que no momento não tem outra funcionalidade aqui, anão ser ali manusear os produtos que já existe na proposta, adicionar e removê-los. Só isso. Então ele não consegue, mesmo que ele queira, quero criar uma proposta nova.
+
+Danilo Macedo   7:54
+O.
+
+Fernando Mauricio da Costa Filho   7:57
+Daqui ele não vai conseguir fazer isso no aumento, porque não existe essa funcionalidade.
+
+Danilo Macedo   7:59
+Santos.
+Tá bom, beleza.
+
+Fernando Mauricio da Costa Filho   8:02
+O.
+Então, no momento, como é que está funcionando para ele poder chegar nessa tela aqui? Ele vai clicar nesse botão do simulador comercial, que tem algumas regras de Enable Roo por trás, e na hora que ele clica, ele é redirecionado para o portal, tá?
+Ele demora ainda para carregar um pouco.
+Aqui a gente não se preocupou com esse carregamento primário, porque a gente parte do princípio que quando o portal tiver autossuficiente, ele vai estar. Ele já vai estar dentro do portal quando ele for para a página do produto. Aqui é mais uma gambiarra, por assim dizer, para que ele consiga acessar agora no momento.
+O portal, tá? Ele não vai ter esse botão aqui disponível para ele, uma vez que o simulador já esteja autossuficiente. Ele vai ter a URL do simulador, vai entrar, vai entrar com a conta dele e vai ver as propostas que ele pode manusear ali dentro. Isso aqui é só porque a gente só tem essa tela no momento, então.
+That's a question.
+Bem, e aí ele chegou nessa tela, ele vai ter aqui os produtos dele e aqui ele vai poder fazer o que o que for necessário ali para ele. O que é que ele tem aqui?
+Ele vai ter alguns outros botões, então ele vai ter aqui sim.
+
+Danilo Macedo   9:12
+Fernando.
+Desculpa, desculpa. Se você for explicar isso depois, não tem problema. Eu queria saber o que está acontecendo por trás, como esses dados vieram, como eles estão aí nessa sessão. Se você for explicar depois, não tem problema, segue sua.
+
+Fernando Mauricio da Costa Filho   9:15
+Sim, sem problema.
+Mhm.
+Bem, a gente tem, eu posso, eu posso apresentar agora que a gente tem 3 arquivos aqui dos produtos da proposta, tá? É basicamente o que eu preciso carregar antes que a tela carregue de fato, eu carrego via ind list.
+
+Danilo Macedo   9:30
+So.
+
+Fernando Mauricio da Costa Filho   9:42
+de Faria de Cassia e o Liquid. Então, eu faço as consultas que eu preciso com base no que é necessário, por isso, às vezes demora um pouco para carregar a tela. Mas isso aqui é o que é necessário. Tem coisas ainda que eu carrego em tela com Lins Load a partir de eventos que ele vai precisar fazer.
+Então, por exemplo, se você eu vim aqui, eu consigo editar a série do usuário, certo? Esse aqui não foi um bom exemplo, porque ele está até.
+Um ele não tem o cadastro está ruim de produtos. O ambiente de OT não está 100% ainda, mas deixa eu adicionar aqui um produto que tenha mais de uma série.
+That's so nice to key.
+Na hora que eu venho aqui, você viu aquele loadzinho, essas informações o que é que ele vai fazer? Ele vai pegar o ID da linha, vai consultar dentro do dentro do Dataverse para aquele produto específico daquela countDetail, ou seja, eu tenho um campo dentro da countDetail que é o product, para aquele product eu tenho uma outra tabela que se chama
+É, eu posso mostrar isso aqui também.
+Deixa eu abrir aqui o produto.
+Que fica mais fácil visualizar o que eu estou falando, mas pronto, a estrutura ela está feita nesses três componentes, então eu tenho um Liquid aqui que carrega para mim todos os fastes que eu preciso, tá? Depois eu tenho aqui o manuseio do próprio
+Do Brasil portal, então eu tenho os botões, as classes, está tudo dividido aqui com alguns comentários e tudo mais para ser para estar dividido de fato ser entendível de ler.
+Tenho todas as sections, sim, pode ficar montando.
+
+Danilo Macedo   11:21
+Então, quando carrega?
+Quando carrega a tela via Liquid, você já faz ali um faz a busca no data verse do das informações que já estão nesta proposta.
+
+Fernando Mauricio da Costa Filho   11:36
+Isso.
+
+Danilo Macedo   11:37
+Beleza. E também dos produtos, porque você abriu muito rápido ali os produtos, né? Tá.
+
+Fernando Mauricio da Costa Filho   11:40
+Exatamente.
+Exatamente, eu já.
+
+Danilo Macedo   11:43
+Então você busca usar a proposta e a tabela produtos inteira e não só ela, outras ali que estão relacionadas.
+
+Fernando Mauricio da Costa Filho   11:48
+Yes, exatamente.
+Eu busco também as do filtro, então tudo que é o filtro aqui eu também já estou buscando.
+
+Danilo Macedo   11:55
+A
+
+Fernando Mauricio da Costa Filho   11:56
+Por isso que a tela demora um pouco para carregar, mas depois que ela carrega tudo isso aqui se torna dinâmico. Então o usuário ele não tem tempo de carregamento para filtrar nada aqui. E aí ele pode sair fazendo todos os filtros dele. Ele não vai precisar esperar, que é uma dor do usuário hoje.
+
+Danilo Macedo   11:58
+Mm-hmm. Mm-hmm.
+Sim.
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   12:11
+O demorar que eu tentei fazer da forma mais otimizada possível é o entrar na página. Depois disso, ele tem todas as informações para manusear na palma da mão dele, sem ter que esperar nada. Então tudo vai acontecer em tela.
+
+Danilo Macedo   12:20
+Mm.
+Mm-hmm.
+É porque não fica salvando lá na base, recalculando.
+
+Fernando Mauricio da Costa Filho   12:24
+That.
+Exato, exatamente. Então a gente tem também, pode falar.
+
+Danilo Macedo   12:29
+So is it?
+E você fez algum, você fez algum teste para carregar essa tela com em alguma proposta que tenha muitos produtos, mais de Cassia de Cassia de Cassia de Cassia?
+
+Fernando Mauricio da Costa Filho   12:40
+A gente tem um cenário aqui na FTD, onde a gente, num cenário máximo de estresse, a gente tem uma proposta com 200 produtos, num cenário máximo assim. O cenário médio da FTD é 60, 70 produtos. E esse cenário eu entrei, fiz e deu tudo certo.
+
+Danilo Macedo   12:47
+Santos Santos Santos.
+
+Fernando Mauricio da Costa Filho   12:55
+Qual a qual foi a dor que a gente estava sentindo que aí eu tive que fazer um laser load? Foi justamente essa questão aqui, quanto mais produtos eu tinha, mais queries dessas eu tinha que fazer, porque o que é essa query? Eu tenho que entrar no produto da proposta comercial.
+Então eu tenho que entrar aqui no produto da proposta.
+Turn
+Uma vez que eu estou dentro desse produto da proposta, que é essa linha aqui.
+Uma vez que eu estou dentro dela, eu tenho que ir no produto.
+Dentro do produto, eu tenho que vir nessa tabela aqui, série por produto e eu tenho que ver quais são as séries disponíveis para eu apresentar para esse cara para não ter informação aqui indevida.
+
+Danilo Macedo   13:36
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   13:44
+Então, para cada linha que eu tinha, eu tinha vários e várias lógicas para poder chegar nessa informação. Então, o que foi que eu fiz? Não é sempre que o usuário vai entrar e já vai editar as séries. Então, eu botei um laseload para que ele só vá pegar essas informações uma vez que eu abri o drop down.
+
+Danilo Macedo   13:44
+And
+Michelle.
+
+Fernando Mauricio da Costa Filho   14:02
+Então, quando eu abro o drop-down, ele dá aquele círculozinho de carregando, faz a consulta, exato, faz a consulta e aí ele guarda essa informação no Ricardo para que, caso o usuário queira acessar de novo esse drop-down, ele não precise carregar novamente. Já está lá a informação.
+
+Danilo Macedo   14:06
+Thais a consulta.
+H.
+Martinez.
+Tá bom. E dos produtos, você também pega as tabelas, a tabela produto e também aquela tabela série versus produto, né? Já traz isso aí. Fernando.
+
+Fernando Mauricio da Costa Filho   14:19
+Tá bom?
+É, eu pego várias, eu pego várias aqui. Se você for ver no código, por que eu pego várias? Porque eu tenho os filtros e os filtros também são de fato o que tem dentro da base. Então eu vou na tabela de segmento, eu vou na tabela de linha de negócio, de coleções, de séries e de disciplinas.
+
+Danilo Macedo   14:36
+Okay.
+Okay.
+
+Fernando Mauricio da Costa Filho   14:45
+E todos esses filtros aqui são com base em produtos que existem aqui.
+
+Danilo Macedo   14:50
+Michelle.
+
+Fernando Mauricio da Costa Filho   14:50
+Então também tem essa lógica. É por isso que logo aqui na tela eu tenho 1, 2, 3, 4, 5 queries sendo feitas.
+
+Danilo Macedo   14:59
+That is.
+
+Fernando Mauricio da Costa Filho   15:00
+A primeira dela é a respeito da de qual é a lista de preços que eu vou me basear para trazer os produtos para minha tela. Então eu preciso buscar a lista de preços padrão do sistema e aí depois eu preciso buscar os produtos com base nessa lista de preço. Depois eu preciso buscar todos os meus filtros com base nesses produtos que existem.
+
+Danilo Macedo   15:09
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   15:18
+E eu ainda tenho que buscar as séries que eles pertencem com base também nesses produtos que existem. Eu tenho uma certa lógica, um sucesso de carregamento para se fazer para apresentar informação na tela. E se eu fosse fazer isso com laser load aqui,
+eu teria problema, porque o usuário teria que ficar aguardando a cada tentativa de filtro e a cada tentativa de informação que ele for tentar buscar. Então eu preferi deixar um pouco maior o carregamento de tela e deixar tudo dinâmico na tela dele do que deixar o carregamento de tela menor, ou seja, tirar esses fechos do carregamento.
+
+Danilo Macedo   15:37
+Okay.
+
+Fernando Mauricio da Costa Filho   15:50
+De tela e liberar a tela para ele logo, mas ele tem que ficar esperando loads quando ele estiver pesquisando e lidando com os produtos.
+That.
+
+Danilo Macedo   15:58
+Bell
+
+Fernando Mauricio da Costa Filho   16:00
+Deixa eu pegar aqui um outro exemplo.
+Michelle.
+Santos.
+This is my gosh, relish.
+Que a nossa base, a nossa base de dados a gente está pedindo já para a pessoa que está com a integração rodar a integração, porque nossa base de dados não está 100% como está no ambiente de produção. E aí a gente está com informações aqui que você pode explicar que a maioria dos produtos estão zerados.
+
+Danilo Macedo   16:11
+Michelle.
+Martinez.
+So.
+
+Fernando Mauricio da Costa Filho   16:27
+e eles não deveriam estar zerados mas pronto deixa eu adicionar esse daqui
+
+Danilo Macedo   16:31
+Mas eles estão zerados porque eles não estão na lista de preço ou porque eles estão mas o valor está zero.
+
+Fernando Mauricio da Costa Filho   16:36
+Eles estão zerados porque eles estão na lista de preço, mas estão integrados com o valor zero.
+
+Danilo Macedo   16:42
+Belluco.
+
+Fernando Mauricio da Costa Filho   16:42
+Lá na lista de preço a gente tem uma lógica para pegar o campo aqui certinho. Só não lembro qual é desses fats aqui, mas um deles está pegando, pode falar.
+
+Danilo Macedo   16:48
+Sit, but what's it?
+Não, desculpa, eu falei, desculpa, eu falei.
+
+Fernando Mauricio da Costa Filho   16:54
+Um deles aqui está pegando exatamente o valor que a gente está mostrando em tela. Então, um desses Felix aqui, ele vai lá no produto, vai lá na lista de preço e pega dentro da lista de preço. Tem outro relacionamento de lista de preço com o produto, onde vai ter o valor lá e é de lado que ele está pegando.
+
+Danilo Macedo   16:57
+Mm-hmm.
+E aí você já está filtrando também para mostrar só os produtos da lista de preço dessa proposta, né? Filho de Faria também.
+
+Fernando Mauricio da Costa Filho   17:16
+Só isso foi um acordado com a área de negócio que a gente só precisa mostrar os produtos da lista de preços padrão do sistema.
+
+Danilo Macedo   17:24
+Ah tá, ele não vai ter possibilidade aí de trocar a lista de preço.
+
+Fernando Mauricio da Costa Filho   17:28
+No momento, não é. A gente não está com essa intenção. Ou seja, o sistema só tem uma lista de preço padrão. O sistema só me permite ter uma que no momento é a livros ativos 2026. É essa daqui.
+
+Danilo Macedo   17:29
+Santos.
+Santos.
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   17:42
+Aparecida da lista de lista de preços padrão igual a Sim e é através dessa flag aqui que eu identifico quais são os produtos que eu tenho que buscar.
+
+Danilo Macedo   17:43
+Me.
+Fernando.
+
+Fernando Mauricio da Costa Filho   17:52
+Tá, então é basicamente isso.
+
+Danilo Macedo   17:52
+He down.
+aí se ele tiver que fazer alguma coisa porque ele tem que tem selecionar outra lista de preço aí ele faz por dentro aí tá bom tá bom não faz sentido é exceção né
+
+Fernando Mauricio da Costa Filho   18:04
+Exato, no momento ele vai fazer por dentro, tá?
+And.
+Exato, é exceção. Exatamente. Até porque a intenção da FTD é ter uma lista de preço única. É a intenção da FTD. Então a gente está caminhando para esse processo.
+
+Danilo Macedo   18:11
+Okay.
+Mm.
+Samir Samir Oscar followed.
+
+Fernando Mauricio da Costa Filho   18:22
+Então aqui em tela, o que é que eu tenho mais? Eu tenho essa tela de adicionar produtos e como eu mostrei, os filtros são completamente dinâmicos, então o que eu digitar aqui ele vai aparecer.
+Tá dentro aqui também eu vou ter o encontro de um produto que é com base nos produtos que eu tenho aqui, então ele vai me dando para quando eu tiver mais de 50 produtos, coisas do gênero, eu consegui identificar os produtos que eu tenho aqui. Se eu quiser filtrar só pela linha de negócio X, eu venho aqui, ele vai me trazer só essa linha de negócio.
+Se eu quiser filtrar por coleções específicas, ele vai me trazer só as coleções que eu estou selecionando. Então isso é para trabalhar com os produtos que eu já tenho na minha grid e esse aqui também funciona do mesmo jeito. Posso filtrar por qualquer coisa que ele vai me trazer linha de negócio, nome do produto, qualquer coisa que colocar aqui na barra de pesquisa, ele vai me trazer dessa grid.
+
+Danilo Macedo   19:08
+Mm.
+
+Fernando Mauricio da Costa Filho   19:08
+Tá, é o que é que eu mais tenho aqui? Eu tenho também a questão do cálculo, então quando eu aumento aqui, você pode perceber que os valores já alteraram também. Então se eu der desconto aqui, os valores aqui também vão alterando. Então tudo isso está ocorrendo dinamicamente.
+Então eu tenho um cálculo que está ocorrendo em tela via JavaScript e esse cálculo era a principal do usuário. Por que era a principal do usuário? Porque era esse cálculo aqui que demorava anos quando ele estava dentro do Dynamics para ocorrer.
+
+Danilo Macedo   19:30
+Mm.
+Okay.
+Okay.
+
+Fernando Mauricio da Costa Filho   19:36
+Certo? Então, era justamente aqui que o usuário sentia a dor. Esse markup aqui, ele não mexe na perspectiva dele, só mexe na perspectiva escola. Mas pronto. E aí, essa aqui é o grande entregável para eles, literalmente, eles não terem mais técnica.
+
+Danilo Macedo   19:40
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   19:52
+Tempo de carregamento quando eles estiverem abrindo é quando eles estiverem mexendo na proposta deles, certo? E nesse momento a gente está atendendo 100% disso. Eles não têm carregamento nenhum. Tudo que eles fizerem aqui vai ocorrer 100% em tempo real.
+
+Danilo Macedo   20:04
+Martinez.
+
+Fernando Mauricio da Costa Filho   20:07
+Então, esse é um ganho.
+Exatamente.
+Exatamente.
+
+Danilo Macedo   20:14
+Tha
+
+Fernando Mauricio da Costa Filho   20:15
+Eu tive que trabalhar muito com o Ricardo aqui porque se tornou essencial. Então, por exemplo, se eu adicionar um produto aqui, como você viu, eu não tenho carregamento. É porque de fato a base está muito ruim de Baixo.
+Nossa Senhora, meu Deus!
+Pronto, deixa eu ver se esse aqui é um bom exemplo. Se você ver aqui, ele tem várias séries que ele pode adicionar.
+Se eu adiciono aqui esse produto, eu não vou ter tempo de carregamento para ver essas mesmas séries, porque eu já trago ela no Ricardo.
+
+Danilo Macedo   20:46
+O.
+
+Fernando Mauricio da Costa Filho   20:51
+Então não precisa. Então isso também é outra coisa também que eu tive que fazer. Então assim, tudo foi pensado aqui para não ter carregamento.
+Certo? E aí ele faz todas as edições que ele quiser. A gente tem totalizadores aqui, então a gente teve que separar dentro da grid, a gente teve que separar pelos níveis de ensino. Então a gente tem EI, que é o ensino, aqui a Carvalho que vai poder me ajudar, mas é o maternal, é a educação infantil.
+
+Danilo Macedo   21:07
+Okay.
+Infantial.
+A educação infantil, né?
+
+Fernando Mauricio da Costa Filho   21:19
+Perfeito, esqueci o nome, mas é educação infantil. Pronto, o EI que é a educação infantil. A gente tem o EFI que é os anos iniciais, ensino fundamental anos iniciais. A gente tem o EFAF, que é o ensino fundamental anos finais e a gente tem o AEM que é o ensino médio. A gente tem esses 4 níveis de ensino, certo?
+
+Danilo Macedo   21:19
+Moreira.
+
+Fernando Mauricio da Costa Filho   21:35
+Então, a gente teve que separar na grid para poder identificar esses níveis de ensino. Então, os produtos estão agrupados, já está ocorrendo que quando você aciona um produto ou quando ele carrega a tela, ele já agrupa direitinho pelos níveis de ensino. E aí também eu tenho os totalizadores pelas séries desse nível de ensino.
+Então aqui eu tenho 2 produtos que são do terceiro ano, eu tenho o totalizador do terceiro ano. Aqui eu tenho, se eu botar aqui nono ano, eu vou ter o total do nono ano e assim por diante, tá?
+
+Danilo Macedo   21:59
+Michelle.
+Que no Dynamics é uma tabelinha separada, né? Não fica assim, organizadinho.
+
+Fernando Mauricio da Costa Filho   22:06
+Exato, a gente tem algum, a gente tem a tabela do nível de ensino e a gente tem a tabela das séries. Então, aqui nas configurações, nas configurações aqui eu tenho a tabela de nível de ensino e tenho a tabela de séries educacionais.
+
+Danilo Macedo   22:12
+Cesar.
+Aham eu quero dizer na proposta ele via uma gripe separada né esses valores totais se eu não me engano não nem ver não lembro agora mas ele não veio junto assim
+
+Fernando Mauricio da Costa Filho   22:23
+That.
+Na proposta, ele não conseguia, não, ele não conseguia ver, ele não tinha essa visualização. Também foi um dos ganhos principais para isso, tá? Isso aqui foi uma coisa que o cliente pediu muito, foi que ele tivesse essa visualização, porque ficava mais fácil para ele poder entender o que é que ele estava negociando ali por nível de ensino.
+
+Danilo Macedo   22:37
+Hernandes, okay.
+
+Rodrigo Farias Leal   22:49
+É o Fernando, aqui é Rodrigo, essa subgrid aí, ela existe no dynamics ou ela, tipo, é montada aí na página com no HTML ou montar todos esses botões ali em cima também, não encontra o produto, adicionar produto, ou ela é tipo uma subgrid que também existe lá no dynamics e aí você.
+
+Fernando Mauricio da Costa Filho   22:49
+So.
+See?
+
+Rodrigo Farias Leal   23:08
+Fizeram algum tipo de modificação aí no portal?
+
+Fernando Mauricio da Costa Filho   23:11
+Ela é 100% criada via código, Rodrigo, ela não existe no Dynamics, essa subgride, tá?
+
+Rodrigo Farias Leal   23:16
+Believe so.
+
+Fernando Mauricio da Costa Filho   23:19
+É, e aí a gente tem mais outras, sim, pode falar Daniel.
+
+Danilo Macedo   23:20
+É como tem a, só para complementar, como tem esse propósito de não ficar toda hora ali interagindo com o Dataverse, não está sendo usado, não faz sentido usar aqui os recursos ali de usar algum componente existente do Dataverse no Model Driven.
+
+Fernando Mauricio da Costa Filho   23:28
+Okay.
+
+Danilo Macedo   23:41
+Tipo, trazer um formato pronto, trazer uma grid. Não tem, não pode ser assim.
+
+Fernando Mauricio da Costa Filho   23:41
+Exatamente.
+É exatamente esse o essa foi essa questão.
+
+Rodrigo Farias Leal   23:44
+É essa é uma dúvida que eu tive também, tipo, não corre o risco de de repente o cara que tá montando a proposta aí, sei lá, não sei como é que tá o Dynamic Sousa, da Fonseca, chegar uma integração e vir com um dado novo de produto e já ter carregado aí no portal esse dado e ele de repente tá trabalhando com.
+Um produto que não tá refletindo o os valores reais lá no na.
+Da tabela, uma vez que ele vai ter carregado antes, sei lá, tipo no meio que ele começou a fazer a proposta.
+
+João Carlos Figueirôa de Castilho   24:14
+Quão dinâmicos são esses dados que ele guarda em cache, né? A preocupação é essa.
+
+Rodrigo Farias Leal   24:16
+É.
+Porque ele chegou lá no meio que ele tá fazendo, aí chegou uma integração lá no dynamics e mudou um dado lá de série, sei lá, não faço ideia, mas ele como ele tá carregando, tá trabalhando com tudo aí já carregado em cache, corre algum tipo desse risco dele tá trabalhando com.
+
+Danilo Macedo   24:28
+Sure.
+
+Rodrigo Farias Leal   24:36
+Algum dado defasado?
+
+Fernando Mauricio da Costa Filho   24:39
+Olha, Rodrigo, sendo muito sincero com você, a gente tem uma integração apenas de atualização de preço de produto e tudo mais, que é a integração que vem do Jessica. É uma integração controlada pelo Teixeira. Então o Teixeira faz essa atualização aqui na nossa base da lista de preço.
+Então, eles já estão, eles têm lá o código e atualiza a lista de preços com base nesse código. E essa integração, ela só roda basicamente de uma vez, porque o editorial lança para ela Teixeira a lista de preço, já com a lista de preços tabeladas e tudo mais. E a Teixeira de Cassia com base no que o editorial mandou.
+para para eles então assim é roda uma vez agora a Fernando pode ocorrer de Sei lá aí o editorial errou o cadastro do produto precisa mandar de novo e aí vai ter uma outra atualização da lista de preço o Cassia que a gente tá falando aqui ele é carregado interno então toda vez que eu der um control F5 ou coisa do gênero ele vai
+
+Danilo Macedo   25:22
+So.
+
+Fernando Mauricio da Costa Filho   25:34
+vai carregar novas informações aqui. Se na minha sessão atual, exato, ele faz a consulta de novo. Se na minha sessão atual, ou seja, nos minutos que eu estou trabalhando aqui nessa tela, houve uma integração e essa integração alterou valores e coisas do gênero, não vai refletir aqui.
+
+Rodrigo Farias Leal   25:36
+Aí ele faz a consulta de novo.
+
+Fernando Mauricio da Costa Filho   25:52
+Da mesma forma que não refletiria no Dynamics. Dynamics também eu não teria esse reflexo em tela. Esse reflexo só apareceria para mim se eu fizesse um refresh ou se eu atualizasse a tela do produto. E aqui é a mesma coisa.
+
+Danilo Macedo   26:05
+Mas assim, é muito difícil acontecer.
+
+Rodrigo Farias Leal   26:05
+E.
+
+Fernando Mauricio da Costa Filho   26:07
+A gente está falando de um cenário que é praticamente impossível de acontecer.
+
+Danilo Macedo   26:10
+Okay.
+Acho que roda a integração roda de madrugada. E outra coisa, 99% da mudança que acontece é uma vez no ano, né? Aí depois são coisas pontuais.
+
+Fernando Mauricio da Costa Filho   26:15
+Exatamente.
+Exatamente assim, a gente está falando de um cenário que é muito, muito impossível.
+
+Danilo Macedo   26:23
+Okay.
+
+João Carlos Figueirôa de Castilho   26:24
+Eu acho que é Val do.
+Eu acho que a gente não vai ter de fato problemas aqui em produto, é válido a gente ter esse questionamento talvez para outros processos aí da proposta e talvez algum outro tipo de dado que a gente vai manipular em outra etapa, talvez a gente tenha que se ligar nesse tipo de preocupação. Talvez para produto não, mas vamos manter esse questionamento.
+
+Danilo Macedo   26:40
+That.
+O.
+So.
+
+João Carlos Figueirôa de Castilho   26:46
+Aberto para outras etapas aí do portal.
+
+Danilo Macedo   26:48
+E você não vai dar isso aí, é verdade.
+
+João Carlos Figueirôa de Castilho   26:49
+And.
+
+Fernando Mauricio da Costa Filho   26:52
+Pronto. E aí, o que é que a gente tem mais aqui? A gente tem algumas outras funcionalidades, como a questão que a gente pode excluir em massa. Então a gente vem aqui excluir selecionados e aí a gente tem uma questão aqui para confirmar a exclusão, limpar a seleção desses produtos. A gente tem também a opção de tirar esse resumo financeiro daqui e aí a grid é expandida e tudo mais.
+E voltar também aquele para lá, como também deixar ela toda em tela para o usuário ter uma visualização melhor do que a que ele está vendo ali.
+And.
+
+João Carlos Figueirôa de Castilho   27:20
+Tudo é customizado via HTML.
+
+Fernando Mauricio da Costa Filho   27:23
+Sim, tudo aqui é HTML, CSS e JavaScript. Tudo, tudo, tudo, tudo. Pronto, basicamente, eu mostrei para vocês tudo que a gente tem de funcionalidade dentro dessa single page. Tem muita regra por trás. As funcionalidades que não estão disponíveis ainda.
+
+João Carlos Figueirôa de Castilho   27:24
+É tudo, tá?
+Santos.
+Beleza.
+O.
+One.
+
+Fernando Mauricio da Costa Filho   27:43
+Quando eu clico nela, ele vai sempre me dar essa mensagenzinha me falando que não tem essa funcionalidade ainda.
+
+João Carlos Figueirôa de Castilho   27:49
+Uma última dúvida, questão visual Fernando, é você já por seu MP talvez não, mas vocês já precisaram se preocupar com responsividade, isso numa browser de tablet e celular ou isso aí não chegou no escopo de vocês e Vai Ficar para depois?
+
+Fernando Mauricio da Costa Filho   27:52
+Sim.
+Então, tudo isso aqui, eu posso mostrar o CSS para vocês. Tudo isso aqui a gente está utilizando a tela, a tag do mídia para poder ser o mais responsivo e trabalhando sempre com a porcentagem, tá? Agora, então, assim, muita coisa aqui já é responsiva se eu botar no celular.
+
+João Carlos Figueirôa de Castilho   28:17
+Mhm.
+
+Fernando Mauricio da Costa Filho   28:22
+Mas tem coisas aqui que ainda não são. E o que é que não é Fernando? Essa grid, ela não é responsiva porque o que é que eu vou fazer com a grid no celular? O que é que a grid vai se transformar? Eu não tenho como carregar uma grid no celular.
+
+João Carlos Figueirôa de Castilho   28:22
+Mhm.
+
+Fernando Mauricio da Costa Filho   28:35
+Então ela vai se transformar no que essa decisão ainda não foi tomada?
+
+João Carlos Figueirôa de Castilho   28:39
+Santos.
+
+Fernando Mauricio da Costa Filho   28:39
+Alexandre ainda está sendo pensada no que essa grid vai se transformar. Então a grid e o resumo financeiro são coisas que ainda, o resumo financeiro até se comporta bem. Eu já testei no mobile e ele até se comporta bem na questão de encapsular e tudo mais. Mas quando ele está visível junto com a grid, ele perde a formatação, porque a grid não tem formatação.
+
+João Carlos Figueirôa de Castilho   28:43
+Entendi.
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   28:59
+Peres.
+
+João Carlos Figueirôa de Castilho   28:59
+Sim.
+
+Fernando Mauricio da Costa Filho   29:00
+That.
+
+João Carlos Figueirôa de Castilho   29:01
+E aí é aí talvez seja talvez a Kevellin sabe responder melhor, mas não sei se você sabe o uso do consultor na rua mesmo é mais é majoritário de computador, de tablet e de celular.
+
+Fernando Mauricio da Costa Filho   29:13
+A gente tem uma utilização mais em notebook e tablet, um tablet grande, tá? Então ele teria praticamente essa mesma tela aqui, porque eu botei para rodar justamente a mesma resolução do tablet que eles receberam. É um tablet padronizado da FTD.
+
+João Carlos Figueirôa de Castilho   29:13
+Vocês têm essa noção?
+A
+Mhm. Thank you.
+Thank you.
+
+Fernando Mauricio da Costa Filho   29:28
+Da Samsung, então assim, eu botei a mesma resolução e eles tinha exatamente essa mesma tela, porque é praticamente a tela de um notebook de um pequeno notebook.
+
+João Carlos Figueirôa de Castilho   29:36
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   29:37
+É, mas a preocupação deles maior quando eles estão na rua não é nossa, por assim dizer, não é do portal, não é do simulador comercial, é da área do cliente, porque quando eles estão na rua, eles estão lidando com o cliente.
+
+João Carlos Figueirôa de Castilho   29:49
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   29:50
+Certo, eles podem fazer a montagem da proposta, tudo mais, mas normalmente quando eles vão para um cliente, quando eles estão na rua e vão para o cliente, eles já vão com a proposta já entre aspas amarrada para mostrar para o cliente aquela proposta. Então eles vão pela.
+
+João Carlos Figueirôa de Castilho   30:02
+Tá, isso é uma informação importante que eu pensei que ele estava lá de cara a cara com o cliente adicionando produto, mas esse não é o fluxo normal, então.
+
+Fernando Mauricio da Costa Filho   30:04
+Exact.
+
+João Carlos Figueirôa de Castilho   30:16
+Thank you.
+
+Fernando Mauricio da Costa Filho   30:17
+O que a gente vê na maioria dos cenários é: a negociação não ocorre 100% ao vivo com o cliente. O que eles normalmente levam para o cliente é a proposta amarrada, mas às vezes pode ocorrer deles estarem lá e estarem modulando. Exatamente, estarem modulando a proposta. E aí eles levam o notebook para modular isso junto com o cliente.
+
+João Carlos Figueirôa de Castilho   30:27
+Faz um ajuste ou outro, né?
+Mhm.
+
+Fernando Mauricio da Costa Filho   30:35
+Mas na maioria das vezes eles vão levar já um PDF pronto, por isso que existe esse exportar para PDF aqui. Eles vão levar na maioria das vezes um PDF pronto ou eles vão liberar para o cliente visualizar dentro da área do cliente, que aí é uma outra área que não envolve o portal, que não envolve nem o CRM.
+
+João Carlos Figueirôa de Castilho   30:41
+Mm.
+
+Fernando Mauricio da Costa Filho   30:51
+A gente só expõe para eles os dados e eles consomem. É só isso.
+
+João Carlos Figueirôa de Castilho   30:51
+Thank you.
+E esse outro lugar puxa de CRM, não é nem uma integração direta, né?
+
+Fernando Mauricio da Costa Filho   30:58
+Sim, exato. Puxa do serrinho, exatamente.
+
+João Carlos Figueirôa de Castilho   31:01
+Tá.
+
+Danilo Macedo   31:02
+É, eu acho que o mobile, o plano de Sousa o Fernando falou, é praticável. Ele queria montar a proposta pelo celular. É muita informação ali. Um produto tem um, dois, três, quatro campos que ele pode preencher.
+
+Fernando Mauricio da Costa Filho   31:02
+Ap
+
+João Carlos Figueirôa de Castilho   31:13
+A.
+
+Danilo Macedo   31:18
+que ele pode alterar, mas todos tem que estar preenchidos, né? Então assim, é impraticável. Eu penso que para mobile, se for uma realmente uma necessidade, tem que ser uma outra versão de aplicativo, mostrando algumas informações, algo mais sintetizado, né?
+não não desse formato agora você falou que o tablet ele consegue usar assim né aí beleza e eles têm e eles têm o tablet então já resolve grande parte dessa questão aí e aí o smartphone fica para uma consulta
+
+Fernando Mauricio da Costa Filho   31:39
+Exato o Tavares ele tem essa mesma experiência no Tavares.
+Exatamente.
+
+João Carlos Figueirôa de Castilho   31:49
+Porque depende, dependendo assim.
+Isso é porque assim, a ideia é que a gente faça algo que dê para utilizar nas três plataformas. Mas se o uso é mínimo no celular, aí o nível de preocupação diminui, entendeu? A gente pode focar e pode se preocupar mais com um lado e menos com o outro. Então é importante saber.
+o nível de uso para cada plataforma deles. Mas deu para entender.
+
+Danilo Macedo   32:11
+Mhm.
+
+Fernando Mauricio da Costa Filho   32:11
+Isso, eu fiz o CSS pensando nessa preocupação, João. Então eu tive a preocupação de de deixar os elementos mais responsivos possíveis. Mas tem coisa que não dá para deixar responsivo. Eu deixei já isso em alerta com o Product Manager, que é o Oscar. Eu já falei para o Oscar, olha Oscar, tem coisa aqui na tela que não dá para carregar no celular.
+
+João Carlos Figueirôa de Castilho   32:15
+Tá maravilha.
+Sure.
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   32:28
+Como é que eu vou mostrar uma grid com 4 botões, 5 campos e não sei o que para o usuário mexer no celular? Não tem como eu mostrar isso. Então o que a gente vai fazer com essa grid? E aí está sendo discutido lá o que vai ser feito com essa grid, porque aí é uma questão de oliveira
+
+Danilo Macedo   32:34
+Sim.
+
+Fernando Mauricio da Costa Filho   32:43
+E se tira grid para quando for um celular, tira não sei o que, que aqui vai mostrar quando for um celular, tá? Mas pronto, isso aqui é o que a gente tem aqui. Então aqui ele pode adicionar vários produtos ao mesmo tempo. Se eu tentar adicionar o mesmo, ele vai me dar um errozinho em tela, tá?
+
+João Carlos Figueirôa de Castilho   32:50
+Perfect.
+
+Fernando Mauricio da Costa Filho   33:00
+Então, assim, ele tem essa essa responsividade, essa dinamicidade aqui de não carregar e funciona muito bem.
+
+Danilo Macedo   33:07
+Eu não entendi. Você falou o quê? Se você carregar é um errozinho, você falou, não entendi.
+
+Fernando Mauricio da Costa Filho   33:12
+Quando você, quando você, se você quiser adicionar um produto que já existe aqui na grid, ele não vai duplicar. Ele vai dar um erro aqui dizendo que esse produto já existe na grid abaixo. A mesma coisa que é o de remover, ele funciona muito bem, então se eu quiser remover aqui várias exclui selecionadas, ele vai excluir sem nenhum problema.
+
+Danilo Macedo   33:16
+Cassia de Cassia.
+Santos.
+And.
+
+Fernando Mauricio da Costa Filho   33:31
+É, se eu excluo todos também.
+Ele zera tudo, então não tenho mais linha de negócio, não tenho mais nada, ele zera tudo, é dinâmico mesmo. Agora, qual é a preocupação aqui de pontos de atenção? Como a gente teve um tempo muito curto para desenvolver
+Essa, esse negócio aqui, isso aqui tudo foi desenvolvido praticamente em 2 semanas e meia.
+Então a gente teve uma preocupação da performance em tela, mas teve uma outra preocupação que eu não consegui sanar pelo tempo curto, que é o salvar aqui eu estou fazendo com Promise All, estou fazendo via JavaScript e não deveria ser feito dessa forma.
+Porque? Por mais que o problema de Carvalho consiga fazer paralelismo e consiga salvar vários ao mesmo tempo, não é a melhor forma de eu fazer isso aqui. O que eu deveria ter feito aqui e é o que eu vou deixar já mapeado para vocês, para vocês terem em mente que isso vai ser uma situação de melhoria é.
+Eu preciso aqui ou ter uma Azure function para ser usada de oliveira Glugovskis de oliveira Glugovskis de oliveira Glugovskis de oliveira Glugovskis de oliveira Glugovskis de oliveira Glugovskis de o
+Fiquem à vontade, mas ao meu ver, as mais performáticas seriam essas 2, então meu botão de salvar aqui.
+
+João Carlos Figueirôa de Castilho   34:47
+É o que eu tinha mapeado até com o Danilo. Eu tinha até com o Danilo, que talvez fosse o caso de uso de um transacionar essas informações de via Giselle Service Bus, e aí um Azure Function Lose Service Bus é uma coisa nesse sentido, né? Mas era um negócio que eu ia te perguntar.
+
+Fernando Mauricio da Costa Filho   34:57
+Exact.
+Exato, vai ter que ser, vai ter que ser alguma coisa assim, porque no momento eu lido bem aqui com 5, 10 produtos, 20 produtos, eu tô lido bem, porque o Fonsecaw, ele faz ali paralelismo dele, demora um pouco, óbvio, não é tão performático quanto um Azure Function, não sei o quê, mas ali com 7 a 10 segundos ele consegue.
+transportar ali 20 a 30 produtos. Agora, quando eu tenho 100 produtos, ele vai demorar 1 minuto, 1 minuto e 10 e aí já deixa de ser interessante aqui para a tela. Mas é um ponto de melhoria que eu sei que eu iria demorar no desenvolvimento, porque isso precisa de muito teste, precisa de uma boa lógica de Back-end para desenvolver isso.
+
+João Carlos Figueirôa de Castilho   35:21
+Mm.
+
+Fernando Mauricio da Costa Filho   35:37
+Se de fato o JSON que está sendo enviado é o que a gente está esperando lá, se está com todas as informações, se vai fazer a lógica de só mandar o que está sendo alterado, se vai mandar todo o payload de cada conta de de Faria, toda a estrutura precisa ser pensada e a gente não teve tempo de pensar nisso, mas aí eu já deixo aqui uma piada para vocês que isso vai precisar ser feito.
+That.
+
+Danilo Macedo   35:57
+Ta bom, eu ia te pedir para você passar para gente um documento com os débitos técnicos. Você comentou um outro antes também, que era dos perfis, né? Acho que é isso das tabelas ali.
+
+Fernando Mauricio da Costa Filho   35:58
+So.
+Isso da gente da questão da segurança do portal. Isso eu acho que também pra dizer a verdade eu não acho que isso seja muito um débito técnico. Eu acho que é mais uma coisa que deveria ser implementada mais lá na frente Danilo, a questão de salvar produtos sim é o débito técnico.
+
+Danilo Macedo   36:11
+That's.
+
+Fernando Mauricio da Costa Filho   36:22
+Mas a questão do das tabelas e dos direitos de acesso aqui, eu acho que é uma coisa deveria ser mais implementada mais lá na frente, porque no momento você não tem outra tela além dessa, então eu não tenho preocupação de.
+
+João Carlos Figueirôa de Castilho   36:32
+Não estava no escopo de vocês, né?
+
+Fernando Mauricio da Costa Filho   36:35
+Exato, não tenho a preocupação de A perfil tal não pode acessar não sei o que. Não, porque essa preocupação eu vou ter principalmente na questão quando eu tiver aqui os níveis de aprovação. Então eu vou ter essa questão de manusear para quem vai aprovação, para quem vai não sei o que. Eu vou precisar ter essa preocupação. Eu vou precisar ter essa preocupação quando eu tiver aqui o recálculo por
+
+Danilo Macedo   36:37
+H.
+
+Fernando Mauricio da Costa Filho   36:54
+De administração, porque não é todo mundo que pode alterar a taxa de administração de uma proposta. Eu vou precisar aqui também ter essa esse cuidado. Quando eu for lidar com o campo na tela de conta de coisa do gênero, porque eu não posso, não posso deixar qualquer um ir lá e alterar a conta da proposta, que é a principal informação.
+Santos assim, são coisas que ainda não estão na tela, que ainda não estão no portal, que eu vou precisar ter um cuidado e trabalhar em cima de Rooij e tudo mais quando eu tiver essas informações na tela, mas no momento eu não tenho. Então assim, na minha visão, eu não considero que seja um depto técnico, eu considero que é uma coisa que vai ser implementada ainda.
+
+Danilo Macedo   37:16
+Mm.
+
+Fernando Mauricio da Costa Filho   37:27
+no futuro.
+Mas, de fato, o salvar é um débito técnico já identificado. Eu já falei internamente também e assim eu vou passar isso para vocês. Posso passar uma documentação? Enfim, isso aí é uma questão que de fato já está mapeado que vai precisar ser revisto.
+
+Danilo Macedo   37:43
+There is.
+
+Fernando Mauricio da Costa Filho   37:46
+Tá de resto, o que é que eu posso dizer para vocês? A gente tem também as configurações aqui de API. Eu não sei se vocês.
+Já trabalharam aqui com PowerPage dessa questão de oliveira Glugovskis e enable para trabalhar com as requisições de API dentro do Dataverse. A gente tem aqui já para a maioria das tabelas que a gente vai precisar trabalhar dentro da Costa, então é tranquilo isso.
+Óbvio, isso aqui pode ser também melhor performático se eu tirar esse asterisco e passar exatamente os Campos que eu estou trabalhando dentro dessas tabelas. Mas é mais uma vez, eu não fiz isso por questão de otimização do meu tempo, porque eu vou precisar do campo X, eu tenho que vir aqui de novo.
+
+João Carlos Figueirôa de Castilho   38:18
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   38:24
+Adicionar mais um campo e colocar. Acho que quando tiver uma versão final, talvez do simulador comercial, talvez seja mais fácil, uma vez que eu já sei todos os Campos que eu estou trabalhando, eu chegar aqui e atualizar isso para só liberar para mim os Campos que de fato eu estou trabalhando, tá?
+
+Danilo Macedo   38:39
+É porque aí provavelmente aquele carregamento inicial vai ser mais rápido.
+
+Fernando Mauricio da Costa Filho   38:43
+Exatamente. Não acho que o carregamento inicial, porque o carregamento inicial eu faço para o fetch, mas eu acho que os outros que eu faço em tempo de tela com o data é esse sim. Porque para o fetch, pelo Liquid, eu nem preciso dessa exposição aqui.
+
+Danilo Macedo   38:52
+Ah, tá.
+So.
+Yeah.
+
+Fernando Mauricio da Costa Filho   38:59
+Eu preciso dessa exposição quando eu consulto o Via Data e aí eu preciso dessa configuração aqui.
+
+João Carlos Figueirôa de Castilho   39:04
+Quais são os dados? Quais são os momentos naquela tela da Veiga e já tem casos de necessidade de data?
+
+Fernando Mauricio da Costa Filho   39:11
+Principalmente na questão das séries dos produtos, Joao, que eu mostrei ali que os produtos que já existem eu consigo alterar a série deles. Aquilo ali é via 100% ou data, ali é um JavaScript 100% ou data. Então, essa informação é considerada via data. Outro momento que normalmente está sendo utilizado, mas é o Da Silva Tavares da Si
+
+João Carlos Figueirôa de Castilho   39:14
+Santos.
+Ali é ali é no JavaScript, né?
+O.
+
+Fernando Mauricio da Costa Filho   39:30
+e rodar essas informações, de Bar, fazer Pedro, Post e de Lima dos produtos. Então, isso também já está, eu precisei configurar justamente para isso. Tá? Mas tirando esses dois momentos, acho
+
+João Carlos Figueirôa de Castilho   39:33
+Sim.
+Quando você está manuseando no Grid você fala que você faz o data para
+
+Fernando Mauricio da Costa Filho   39:49
+Isso, por exemplo, quando eu adiciono um produto aqui, deixa eu.
+
+João Carlos Figueirôa de Castilho   39:52
+Ele já adiciona na proposta lá no CRM.
+
+Fernando Mauricio da Costa Filho   39:55
+Não, não, não, isso aí não. Ele só vai adicionar, exato, ele resgata para ele, ele só vai adicionar, isso, ele só vai fazer qualquer coisa no CRM quando eu clicar em salvar.
+
+Rodrigo Farias Leal   39:57
+Ele resgata pra ele.
+Ele faz a consulta para mim.
+
+João Carlos Figueirôa de Castilho   40:06
+And.
+
+Fernando Mauricio da Costa Filho   40:07
+That.
+
+João Carlos Figueirôa de Castilho   40:08
+Your data.
+
+Rodrigo Farias Leal   40:08
+Aí, no caso, seria o gatilho para outra, para outra coisa.
+
+Fernando Mauricio da Costa Filho   40:12
+Exato, no momento está sendo feito via data. Esse input de dados, seja seja de Lima, seja update ou seja cliente, ele está fazendo via data quando eu clico aqui no salvar das contas de texto que eu estou adicionando e manuseando aqui.
+
+João Carlos Figueirôa de Castilho   40:13
+E
+
+Fernando Mauricio da Costa Filho   40:25
+Certo.
+Mas quando Mas o que eu estava a falar é, outra questão do Data é essas séries aqui. Isso aqui ele é carregado quando ele carrega em tela. Esse aqui já veio carregado bonitinho e tudo mais, porque eu adicionei esse produto, mas pode perceber que tem outros aqui.
+que se eu fizer, eu faço o momento da tela, ou seja, abrir a tela, é porque eu teria que pesquisar uma proposta aqui que tem mais produtos para mostrar para vocês. Mas é o a questão do eu abrir a tela, eu vou ter vários produtos aqui, eu tenho que no momento que essa, no momento que ele clicar,
+Quem expandir aqui eu vou fazer um Forte Tanto é que na primeira vez que o Danilo ele ficou carregando aqui um pouco e depois apareceu as opções
+Então isso aqui eu também estou utilizando a data, porque é um laser load que eu só vou fazer se o usuário de fato for utilizar aquela funcionalidade.
+Fig
+Tá, Kevin, você quer falar?
+
+Kevellin dos Santos Corrado   41:22
+Não, Filho, é uma dúvida só, é que estou pensando aqui, era uma dúvida minha, então quando ele clicar em salvar, os produtos vão ser carregados lá na aba dos produtos da proposta, porque essa aba foi pedida para ser ocultada.
+
+Fernando Mauricio da Costa Filho   41:35
+Isso.
+
+Kevellin dos Santos Corrado   41:38
+e deixar somente a adição do lote, então não faz sentido ocultar ela agora, né?
+
+Fernando Mauricio da Costa Filho   41:43
+Para dizer a verdade, assim, não é que eles vão aparecer lá naquele de Lima Kevin, vão aparecer se aquele estiver lá. Quando eu clico no salvar, é que os dados vão ser inputados no Dynamics, entendeu? Se eu não clicar no salvar, vai ficar aqui alterações não salvas e se eu não salvar, não vai nada para o Data Ward, não vai nada para o Dynamics.
+
+João Carlos Figueirôa de Castilho   41:48
+Okay.
+
+Fernando Mauricio da Costa Filho   41:59
+A partir do momento que eu salvo é quando eu estou me comunicando com o Dataverse, dizendo, olha, fiz essas modificações, adicionei os tais produtos e removi tais produtos. Aí ele vai e faz a comunicação com o Dataverse. Se eu não clicar em salvar, nada que eu fiz aqui vai ser refletido lá.
+
+João Carlos Figueirôa de Castilho   42:12
+Okay.
+
+Kevellin dos Santos Corrado   42:15
+Mas aí, por exemplo, se ele quiser voltar e ver os produtos que ele adicionou, ele vai entrar no simulador de novo ou ele teria que ver na proposta?
+
+Fernando Mauricio da Costa Filho   42:24
+Ele pode aqui mesmo, ele já vai conseguir ver essa tela, não vai mudar para ele. Ele clicando em salvar aqui.
+
+João Carlos Figueirôa de Castilho   42:28
+A alteração do salvar, ela guarda no banco de dados, aí visualmente você pode exibir isso da forma que você quiser. Pode ter um grid no dynamics, pode ter um grid aqui, então, independente da grid de aparecer o nome dynamics, ela enfim, a decisão, a decisão do.
+
+Kevellin dos Santos Corrado   42:30
+Sure.
+
+Fernando Mauricio da Costa Filho   42:33
+Exato.
+
+João Carlos Figueirôa de Castilho   42:43
+Do cliente de que forma ele vai querer ver, mas vai estar no banco de dados.
+
+Danilo Macedo   42:47
+É, já tem, né? No Dynamics, já tem a forma de visualizar.
+
+Fernando Mauricio da Costa Filho   42:47
+There's that.
+
+João Carlos Figueirôa de Castilho   42:49
+A.
+É porque ela fazendo que a forma de visualizar o dinâmico só para mudar, vai tirar o grid.
+
+Rodrigo Farias Leal   42:51
+That's it.
+
+Fernando Mauricio da Costa Filho   42:51
+Exatamente.
+
+Kevellin dos Santos Corrado   42:54
+Não é isso que eu estou querendo dizer, porque foi pedido para ocultar essa aba de produtos da proposta. Então, no Dynamics, ele não teria. Oi?
+
+João Carlos Figueirôa de Castilho   43:00
+Mas isso não faz o dado sumir, mas isso não faz o dado sumir.
+
+Fernando Mauricio da Costa Filho   43:05
+Exato, você só não vai mais conseguir visualizar porque você não tem como visualizar dentro agora do formulário, mas ele vai estar lá o dado.
+
+Kevellin dos Santos Corrado   43:05
+É, ele não faz sumir.
+
+João Carlos Figueirôa de Castilho   43:07
+É.
+Isso, ele vai estar lá no banco de dados.
+
+Kevellin dos Santos Corrado   43:12
+Uh-huh.
+
+Fernando Mauricio da Costa Filho   43:14
+Okay.
+
+Kevellin dos Santos Corrado   43:14
+Tá bom?
+
+Danilo Macedo   43:14
+Mas deixa eu só comentar uma coisa, você pode entrar numa proposta no dynamic, por favor Fernando, só para confirmar se eu entendi certo o que a Camila me falou, você diz que ocultaria essa guia aí.
+
+Fernando Mauricio da Costa Filho   43:17
+Mm.
+Ela tá falando que isso aqui vai sumir, ó.
+
+Kevellin dos Santos Corrado   43:25
+É isso que eu estou querendo falar para vocês, que isso aqui vai sumir.
+
+Danilo Macedo   43:26
+Seiji.
+Tá, mas tem a situação do que o Fernando falou que OK, depois vocês estão caminhando para ter uma lista de preços só, mas eu acho que é um caminho ainda um pouquinho longo para isso. Depende de muita coisa.
+Então ainda vai depender de, por exemplo, tem um quando tem um produto específico para uma escola, ele troca, ele troca a lista de preço para poder ver esse produto específico, certo?
+
+Kevellin dos Santos Corrado   44:02
+É, tem.
+
+Danilo Macedo   44:04
+Então se tirar, e ele não vai conseguir fazer isso pelo simulador, o simulador está fixo, a lista de preços padrão e aí, ou seja, é que eu acho que você não estava quando a gente falou disso aqui, mas essa exceção
+De se a gente se ele precisar alterar esse de preço, ele faria pelo Dynamics e não pelo portal, porque é uma exceção, entendeu? Então não poderia tirar essa guia, entendeu?
+
+Kevellin dos Santos Corrado   44:27
+Então.
+então e se deixar acessar guia somente com essa questão da lista de preço e ocultasse de produtos da proposta para baixo ou não mantém ela inteira manter ela inteira né tá
+
+Danilo Macedo   44:37
+não dá não pode mantém porque ele é porque ele tem que ele vai ter que adicionar um produto por aqui
+
+Kevellin dos Santos Corrado   44:45
+Tá bom.
+
+Danilo Macedo   44:45
+e vai ter que adicionar por aqui, porque se ele for lá no simulador, ele vai pegar esse preço padrão.
+
+Kevellin dos Santos Corrado   44:47
+Tavares.
+
+Fernando Mauricio da Costa Filho   44:48
+Se bem que.
+
+Kevellin dos Santos Corrado   44:49
+Santos.
+Não, beleza.
+
+Fernando Mauricio da Costa Filho   44:51
+Exato. Se bem que Kevin, a gente tem por mais que vai ser removido isso aqui, a gente tem essa funcionalidade aqui que busca através da lista de preço. Isso aqui não vai ser removido até onde eu sei.
+
+Kevellin dos Santos Corrado   44:54
+O.
+Essa é essa ficaria, é essa ficaria.
+
+Fernando Mauricio da Costa Filho   45:02
+Então ele pode adicionar ainda por aqui os produtos da lista de preços que ele desejar. Ele pode alterar aqui a lista de preços, vai recarregar essa view e aí ele trabalha aqui também sem nenhum problema, mesmo se remover esse produto da proposta, tá?
+
+Danilo Macedo   45:14
+Okay.
+
+Kevellin dos Santos Corrado   45:14
+Ah, então beleza.
+
+Danilo Macedo   45:16
+Mas por que? Por que que vocês? Por que que a ideia de ocultar ali o produto da proposta?
+
+Kevellin dos Santos Corrado   45:16
+Sure.
+
+Fernando Mauricio da Costa Filho   45:23
+Eu também não sei. Essa decisão aí veio da equipe de negócio.
+
+Kevellin dos Santos Corrado   45:24
+Aparecida na especificação pra ocultar.
+
+Danilo Macedo   45:27
+Eu, sinceramente, não ocultaria agora não.
+
+Kevellin dos Santos Corrado   45:30
+Aí por isso que eu estou perguntando para vocês, porque eu queria ver se eu estava entendendo, porque eu acho que não vai fazer sentido eu ocultar isso agora, então.
+
+Danilo Macedo   45:36
+Uh-huh.
+Até porque pode ser o seu backup. Deu algum problema no simulador, ele continua por aqui.
+
+Fernando Mauricio da Costa Filho   45:43
+Exatamente, exatamente.
+
+Kevellin dos Santos Corrado   45:45
+Tá bom gente, vou pedir para voltar isso aqui então, obrigada!
+
+Danilo Macedo   45:46
+Entendeu? Acho melhor
+
+Rodrigo Farias Leal   45:50
+Yeah.
+
+Danilo Macedo   45:50
+So, what should I mean?
+
+Fernando Mauricio da Costa Filho   45:50
+Other.
+
+Rodrigo Farias Leal   45:51
+Uma dúvida, será que seria viável utilizar um Power automate pra fazer esse insert de dados lá no Dynamics? Após nos salvar?
+
+Danilo Macedo   46:02
+Some of that.
+
+Fernando Mauricio da Costa Filho   46:04
+Eu acho que não, Rodrigo. Eu acho que é um processamento muito pesado para ficar dentro de Power Automate.
+
+Rodrigo Farias Leal   46:11
+Santos Michelle Pereira Pereira Bell
+
+Danilo Macedo   46:11
+Michelle.
+
+Fernando Mauricio da Costa Filho   46:11
+Imagina que, é principalmente a questão da performance, porque imagina num tempo de pico de safra que a gente tem aqui na FTD. A FTD ela funciona com safras, então chega ali mais ou menos em setembro, outubro, a FTD tá pegando fogo de propósito sendo criada.
+É fácil de 3000 propostas sendo criadas por dia. Então, se eu boto, vamos supor, num cenário muito otimista, dentro do período de safra, eu boto 100 propostas para paralelismo dentro do Power Automate, ele já vai sentar já.
+
+Rodrigo Farias Leal   46:27
+E?
+
+Fernando Mauricio da Costa Filho   46:42
+O Palauro Mate, porque a gente está falando de propostas que podem chegar até 200 produtos.
+Então, o Power Augusto de Brasil vai ter que fazer um foreach dentro dele, que vai processar cada proposta e cada processamento desse ainda vai disparar plugins de recálculo dentro do Dynamics.
+Então assim, eu acho que Power Automate não é a melhor opção aqui para salvar. Acho que de fato é ou uma Azure function ou uma Custom API para lidar com isso.
+
+Danilo Macedo   47:07
+O.
+É que o Rodrigo entrou um pouquinho depois. Ele não teve a visão de tanto quanto os dados do Brasil, então ele por isso que ele tá.
+
+Rodrigo Farias Leal   47:19
+Hey, I ainda no tenho.
+
+Fernando Mauricio da Costa Filho   47:20
+Ah, sim, sim, tranquilo, tranquilo.
+
+Danilo Macedo   47:22
+Mas é muito dado Rodrigo acho que não vai rolar não aí Fernando Chegamos na etapa final salvar é o que que você tá salvando eu sei que tem um plugin lá que ele faz todos os recálculos esse
+
+Fernando Mauricio da Costa Filho   47:24
+Tranquilo, Rodrigo.
+Sim.
+
+Danilo Macedo   47:39
+plugin roda ou não, já salva com todos os cálculos feitos. Como que é essa parte?
+
+Fernando Mauricio da Costa Filho   47:46
+Então, no momento eu estou salvando com todos os cálculos já feitos, mas o plugin mesmo assim ainda roda. Eu poderia já ter botado um bypass nisso, mas não botei, tá? Não foi feito dessa forma, porque a intenção da gente é ou refatorar esse plugin, porque pode ver que pode vir que surja propostas importadas, alguma coisa do gênero.
+
+Danilo Macedo   47:51
+Vanderlei Rangel, sim.
+
+Fernando Mauricio da Costa Filho   48:05
+E precisa existir uma validação no backend. Eu não posso deixar só no front. Vai que por algum motivo a internet do cara crasha, os cálculos não foram feitos, alguma coisa do tipo, ou o cara, sei lá, por outdated, chegou lá e foi fazer as coisas no Dynamics e aí não tem mais cálculo no Dynamics, só tem cálculo do simulador comercial.
+
+Danilo Macedo   48:09
+Michelle.
+Santos.
+
+Fernando Mauricio da Costa Filho   48:24
+Então, assim, eu não posso deixar só no front, mas eu preciso ter uma lógica para que também não duplique esses cálculos. Então, vai ter que ser pensado em alguma coisa em questão ali. Por isso que eu pensei na Asure Fonseca porque na Asure Fonseca é mais fácil de eu fazer bypass e plugin. Então, eu posso muito bem inserir ali meus plugins e fazer um bypass para ele não rodar plugin interno.
+Então fica mais fácil, entre aspas, de eu lidar com essa situação de duplicidade de cálculo, uma vez que os cálculos já estão sendo feitos 100% aqui. E hoje, na minha lógica, eu só mando para o dataverse o que foi alterado. Por exemplo, eu sei que linha de negócio não vai ser alterada, você que coleção não vai ser alterada.
+Eu sei que código do produto, nome do produto e algumas outras informações, preço de tabela não é alterado.
+E pode ser que muitas vezes nem a série seja alterada. Então eu só mando para o Dynamics de fato aquilo que sofreu alteração. Então, se algo sofrer alteração, se eu vier aqui e alterar o número.
+
+Danilo Macedo   49:14
+Você quer dizer na linha do produto? Você quer dizer naquela linha?
+
+Fernando Mauricio da Costa Filho   49:16
+Exato, na linha, exato, exatamente na linha da Costa e Teixeira. Pode perceber aqui que não é só visual que eu que eu coloco amarelinho aqui. Eu também marquei essa linha no código, falando que essa linha aqui.
+
+Rodrigo Farias Leal   49:28
+Era isso que eu ia perguntar, como é que a gente ia identificar esses caras?
+
+Fernando Mauricio da Costa Filho   49:32
+Exato, eu já marco isso no código, então toda vez que eu altero algum valor aqui no meu código, já está lá marcando uma tagzinha dizendo esse valor aqui foi modificado.
+
+Rodrigo Farias Leal   49:41
+Math.
+
+Fernando Mauricio da Costa Filho   49:42
+E aí, quando eu envio isso via JavaScript no momento, óbvio, pro Dataverse, ele monta o JSON que ele vai enviar, sabendo quais são os valores que foram modificados para cada linha.
+E aí, vocês, ao invés de mandarem para o vocês vão mandar para o que vocês quiserem, mas no momento está sendo feito dessa forma.
+
+Rodrigo Farias Leal   50:00
+Não, mas eu acho que já daria pra seguir isso.
+
+Danilo Macedo   50:01
+A.
+
+Rodrigo Farias Leal   50:05
+Isso me enquadram.
+
+Danilo Macedo   50:05
+E Fernando, vocês pensaram na possibilidade de reaproveitar o plugin? Quero dizer, ao invés de você mandar todos os totais, você enviaria as mudanças só no produto da proposta e aí o plugin faz o restante já, né?
+Eu não lembro exatamente tudo com alguém faz, tá?
+Ah, tá.
+
+Fernando Mauricio da Costa Filho   50:28
+do Coach de Tail, isso aqui que está aqui, exato, exato. Isso aqui que eu estou rodando aqui é informação para que ele saiba o consultor, o que é que está acontecendo, mas essas informações de resumo financeiro eu não envio via API, o que eu envio são só as.
+
+Danilo Macedo   50:29
+Ah, beleza, você está usando o plugin, então você está reaproveitando ele. Ah, perfeito, tá bom.
+Sim, tá bom.
+So.
+
+Fernando Mauricio da Costa Filho   50:43
+Coach de Tails. E aí o plugin da Costa de Tails faz lá depois dele, acumula e manda pra Costa. Isso dentro do plugin, tá?
+
+Danilo Macedo   50:49
+Michelle.
+A o plugin que você disse de BA bypass é porque tem o plugin dentro de produtos da proposta e tem um plugin em proposta, certo?
+
+Fernando Mauricio da Costa Filho   50:58
+Isso.
+Exatamente, exatamente. A gente está falando de dois plugins aqui.
+
+Danilo Macedo   51:01
+Tá aí seria dar o bypass no de produto de proposta. Essa é a ideia que você vai ver. E isso de proposta deixa rodar, tem que deixar.
+
+Fernando Mauricio da Costa Filho   51:06
+Exatamente, exatamente.
+Deixa rodar, porque senão a proposta não vai ser atualizada com os valores.
+
+Danilo Macedo   51:11
+So.
+Vanderlei de Sousa para eu explicar isso para o João e o Rodrigo.
+Aqui é o seguinte pessoal, quando clica para adicionar um produto, por favor, quando vai adicionar um produto da proposta, que é a área de cotação, né?
+É, tem várias informações aí que ele, por que é difícil? Tá vendo? Se ele vai incluir um produto, ele tem que obrigatoriamente selecionar uma série. Para selecionar uma série, ele tem que antes ter selecionado um nível de ensino.
+
+Rodrigo Farias Leal   51:38
+Mhm.
+Mhm.
+
+Fernando Mauricio da Costa Filho   51:42
+That's that.
+
+Danilo Macedo   51:43
+Aí tem outras informações aí, é classificação.
+
+Rodrigo Farias Leal   51:46
+E tudo vai filtrando, imagino, um vai filtrando outra coisa aí.
+
+Danilo Macedo   51:48
+E vai filtrando o outro, vai filtrando, aí tem algumas informações, só informação, tipo de Albuquerque, quantidade de alunos e tal e.
+
+Fernando Mauricio da Costa Filho   51:49
+Exato, é uma árvore aqui, isso aqui é uma árvore.
+
+Rodrigo Farias Leal   51:51
+Mm-hmm.
+Tá, isso não tá refletido, a lógica disso não tá refletido lá no portal.
+
+Fernando Mauricio da Costa Filho   52:02
+Isso aqui já tá.
+
+Danilo Macedo   52:03
+Não, tá, mas está feito de uma forma mais simplificada para o usuário.
+
+Fernando Mauricio da Costa Filho   52:04
+Só que de uma forma mais simplificada. Exatamente. É aí que entrou a questão de Oliveira e o X. É justamente aí, Rodrigo.
+
+Rodrigo Farias Leal   52:04
+Ta
+
+Danilo Macedo   52:08
+de Cassia Cassia Cassia Cassia e
+É aqui é.
+
+Rodrigo Farias Leal   52:14
+Mas, tipo, eu digo em nas regras, ele está respeitando essas regras aí de Cassia, de Cassia.
+
+Fernando Mauricio da Costa Filho   52:19
+Sim, exatamente. Tudo o que está aqui já está acontecendo no simulador.
+
+Danilo Macedo   52:24
+É só que de uma forma mais simples para o usuário por exemplo aqui ele selecionou o produto aí aqui filtra tá quais níveis de ensino que esse produto é faz parte aí só mostra esses aí depois que ele selecionar o nível de ensino
+
+Fernando Mauricio da Costa Filho   52:28
+Exact.
+Exatamente.
+
+Rodrigo Farias Leal   52:37
+Mm-hmm.
+
+Danilo Macedo   52:41
+Quais séries fazem parte desse nível de ensino e desse produto? Filho, tá mais simplificado para o usuário é muito melhor. Aí aqui, o que ele preenche igual lá, o desconto, o preço escola.
+
+Fernando Mauricio da Costa Filho   52:43
+Exatamente.
+Exatamente, é isso mesmo.
+A quantidade de alunos, o preço escola, o preço família.
+
+Danilo Macedo   52:57
+Quantidade de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de Albuquerque de
+
+Fernando Mauricio da Costa Filho   53:02
+Isso, a quantidade de produtos, exatamente.
+
+Rodrigo Farias Leal   53:04
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   53:09
+Costa Costa Santos.
+Okay.
+
+Danilo Macedo   53:14
+que vai fazer os cálculos dos totais aqui do produto da proposta. Esse é um plugin que vai rodar, certo Fernando, vai me corrigir. Depois, como teve alteração de um registro de produto da proposta, vai rodar um outro plugin
+
+Fernando Mauricio da Costa Filho   53:21
+Exact.
+É isso mesmo, é isso mesmo.
+
+Danilo Macedo   53:31
+que vai alterar os totais da proposta.
+
+Fernando Mauricio da Costa Filho   53:34
+Da proposta exatamente.
+
+Danilo Macedo   53:36
+entendeu E aí o
+
+Fernando Mauricio da Costa Filho   53:37
+Que altera o total da lista, altera esses campos aqui, praticamente receita bruta, receita líquida, exato.
+
+Danilo Macedo   53:42
+vários totais. Que ele pega somas ali das linhas e aí faz esses totais aqui. Alguns é nativos, porque a gente tem um campo nativo ou dois de produto da proposta, que ele já calcula automaticamente, mas tem outros que não são, daí a gente tem que fazer um plugin para calcular.
+
+Rodrigo Farias Leal   53:45
+Araujo.
+
+Fernando Mauricio da Costa Filho   53:51
+Exatamente.
+Exatamente.
+
+Danilo Macedo   54:04
+E aí o que o Fernando falou, quando ele pega e tá salvando um produto da proposta, está rodando o plugin de novo da de produto de proposta.
+E aí, automaticamente, depois roda o plugin de proposta.
+Mas aí tem um me fez pensar numa coisa, quando você.
+
+Fernando Mauricio da Costa Filho   54:19
+Exactly.
+
+João Carlos Figueirôa de Castilho   54:21
+Mas se cada vez que for adicionar um produto, esse plugin rodar em lote vai ser horrível, né? Alexandre precisa pensar na.
+
+Rodrigo Farias Leal   54:25
+É porque também vai passar.
+
+Danilo Macedo   54:26
+Peres.
+
+Fernando Mauricio da Costa Filho   54:26
+É justamente o é justamente o gargalo que a gente tem hoje, João, é a gente teve.
+
+João Carlos Figueirôa de Castilho   54:29
+É, eu acho que isso é um negócio para ser atacado, não?
+
+Fernando Mauricio da Costa Filho   54:33
+É, a gente teve um problema que foi justamente um erro de Lima Mendes por causa dos Santos que estavam estourando, porque tudo isso é síncrono.
+
+João Carlos Figueirôa de Castilho   54:40
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   54:40
+E aí a gente teve um problema no final de 2024 disso. E aí eu peguei tudo que era e aí eu fiz uma decisão que foi, eu fiz um de Bounce. Tudo que era abaixo de 50 produtos eu processava internamente, tudo que era acima de 50 produtos eu mudava para Azure Function.
+Então já existe uma Alexandre function cuidando disso para quando o cenário é acima de 50 produtos.
+O que eu estou falando aqui é, a gente precisa não duplicar o cálculo.
+
+Danilo Macedo   55:05
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   55:06
+Porque aí a gente perde performance. Então, assim, se eu já calculei no simulador comercial, eu não preciso que o plugin de cálculo do produto da proposta rode novamente. Eu só preciso que rode agora o cálculo da proposta comercial.
+
+João Carlos Figueirôa de Castilho   55:08
+Mhm.
+
+Danilo Macedo   55:20
+E o Fernando, one dúvida, Kesia Rangel Fernando.
+
+Rodrigo Farias Leal   55:22
+Messias de Castilho também não poderia passar lá pra o essa nova Azure Fonseca que a gente iria trabalhar.
+
+Fernando Mauricio da Costa Filho   55:27
+Poderia agora é uma questão de distribuição Rodrigo, aqui é uma questão de lógica de distribuição para saber qual vai ser o lugar que as coisas vão se encaixar melhor. A gente está refaturando praticamente todo o sistema de propósito, então agora a gente já sabe o que está embaixo do tapete e agora a gente precisa organizar o que está embaixo.
+
+Rodrigo Farias Leal   55:30
+Uh-huh.
+
+Danilo Macedo   55:32
+Okay.
+
+Rodrigo Farias Leal   55:35
+Moreira.
+
+Danilo Macedo   55:35
+And.
+
+Rodrigo Farias Leal   55:38
+Mhm.
+M
+
+Danilo Macedo   55:43
+E aí tem que pensar que eu acho que tem que ser um processamento ser feito em um lugar só. Se ele alterar pelo dynamico, se ele tornar pelo Paulo Paulo Paula Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando Fernando
+
+Fernando Mauricio da Costa Filho   55:57
+Exatamente, eu também concordo com isso.
+
+Danilo Macedo   56:01
+Turnes luca
+Se você altera um produto, roda o plugin de produto da proposta, aí roda o plugin de proposta. Se você, aí nesse caso, você vai alterar vários produtos de uma vez. Cada produto que você altera o plugin de proposta também é roda ou não?
+
+Fernando Mauricio da Costa Filho   56:21
+Não, o plugin de proposta, ele só roda em 2 cenários, tá? Ou eu alterei, porque vamos lá. A gente tem hoje 2 plugins que vão fazer esse processo. Um é o produto da proposta que vai, após o produto da proposta ser inserido, ele vai incrementar
+Os valores na proposta comercial a partir dele mesmo, então esse plugin de produto da proposta, ele vai precisar ver qual parte dele ainda vai ser utilizada.
+que é para o incrementar os totalizadores da proposta comercial e qual parte dele não vai ser mais utilizado, que é o de cálculo interno do próprio produto da proposta.
+
+Danilo Macedo   56:58
+Então o mesmo plugin altera os totais não é um plugin diferente?
+
+Fernando Mauricio da Costa Filho   57:01
+Exato. E aí o outro plugin da do da proposta comercial é um que pode causar duplicidade, que é esse plugin da proposta comercial. Ele só é disparado quando eu não altero ou a taxa de administração.
+Ou a lista de preço. Por quê? Porque esses dois fatores vai mudar os valores de todos os produtos da minha proposta comercial. E aí eu tenho dois plugins correndo ao invés de Sousa. Eu tenho os plugins que correm. Pode falar, Danilo.
+
+Danilo Macedo   57:18
+Santos.
+Thanks.
+Tá então eu falei
+Que eu tava falando errado eu falei que quando altera um produto da proposta roda o plugin de o da proposta eu de proposta mas não de Cassia não roda é então eu falei errado de Faria
+
+Fernando Mauricio da Costa Filho   57:37
+No de proposta não roda, é só o do produto da proposta. Ele tem 2 partes. Ele tem o do cálculo interno do próprio produto, que é a primeira parte do plugin. É um plugin um pouquinho grande. Ele roda ali a primeira parte dele, que é calculando internamente o próprio produto da proposta, e depois que ele assume os valores do produto da proposta, ele precisa incrementar esses valores dentro da proposta comercial.
+Com os valores atuais na proposta comercial.
+
+Danilo Macedo   58:00
+And it.
+
+Fernando Mauricio da Costa Filho   58:02
+Certo, o que vai rodar 2 vezes é quando eu altero dentro da proposta comercial da administração a lista de preço, porque aí eu altero isso, vai alterar todos os produtos da proposta e depois vai alterar de Lima os valores da proposta comercial. São 2 coisas que eu faço.
+
+Danilo Macedo   58:02
+Beleza, beleza.
+Thank you.
+Mm.
+Que hoje lá no portal não vai fazer isso, mas numa segunda fada, eu acho que na etapa 3, ele vai poder trocar a taxa de oliveira
+
+Fernando Mauricio da Costa Filho   58:25
+Vai exatamente. Ele vai poder tocar a taxa de administração. Exatamente. Aí nessa parte, vocês vão precisar rever esses 2 plugins, porque não pode existir isso de de de de de de de de de N
+
+Danilo Macedo   58:33
+That.
+Se vocês puderem continuar aí, o pessoal tiver dúvidas.
+Tá bom?
+
+Fernando Mauricio da Costa Filho   58:46
+Pode ficar à vontade assim, se também essa reunião não for suficiente, nada, qualquer coisa.
+
+Danilo Macedo   58:47
+Fernando, obrigado, Carlos.
+Muito boa explicação. É, não foi nenhum problema ser meio pego desprevenido e você conseguiu explicar bem para a gente. Muito bom, Lucas.
+
+João Carlos Figueirôa de Castilho   58:57
+He
+
+Fernando Mauricio da Costa Filho   58:58
+Cara, eu não sabia de nada assim.
+
+João Carlos Figueirôa de Castilho   58:59
+É o pai da criança, o pai, ninguém conhece e o pai da criança.
+
+Fernando Mauricio da Costa Filho   59:03
+Eu não sabia de nada. Eu entrei na reunião aqui e falei para Kevellin, Kevellin é importante eu estar nessa reunião? Aí ela falou, acho que não, você pode entrar e depois sair. Aí quando eu entro, a Camila fala que eu tenho que apresentar o Pereira Pereira. Aí eu falei, ah, legal.
+
+Danilo Macedo   59:15
+Okay.
+é mas a gente eu tinha pedido para sempre colocar no e-mail no invite com o objetivo da dos Santos objetivos justamente para isso aí eu não sei se para você não foi ou tá diferente o invite mas tava ali do Power Peres mesmo entendeu
+
+Fernando Mauricio da Costa Filho   59:25
+Mhm.
+
+Danilo Macedo   59:33
+que tem que se preparar dependendo do que for mas cara se não der certamente marcava depois não teria problema não
+
+Fernando Mauricio da Costa Filho   59:33
+Tranquilo? Não, sem problema nenhum.
+Sem problema nenhum. É que eu recebi esse invite. Eu tava com outra reunião aqui que era do Tercio.
+
+Danilo Macedo   59:40
+Teixeira de Lima.
+Nah.
+
+Fernando Mauricio da Costa Filho   59:47
+E esse invite do teste eu já recebi hoje de manhã e aí esse outro da Camila eu recebi hoje, 5 minutos antes da reunião.
+
+Danilo Macedo   59:47
+Uh-huh.
+Mm-hmm.
+
+Fernando Mauricio da Costa Filho   59:56
+de fato foi um pouquinho para mim em cima da hora mas não tem
+
+Danilo Macedo   59:59
+Beleza. Eu vou lá para outra, tá pessoal? Tchau, tchau. Valeu.
+
+Rodrigo Farias Leal   1:00:01
+Bom, nesse aspecto, nesse aspecto visual, o que é que precisou de fazer de configuração lá no próprio portal mesmo, além de de código daí de Cassia.
+
+Fernando Mauricio da Costa Filho   1:00:15
+A única coisa que eu tive que fazer no portal, Rodrigo, tirando as configurações da página via código, foi a parte do Header. Então, aqui dentro do Header eu fiz uma besteira, tá? Eu só alterei aqui dentro do cabeçalho qual era o ícone que iria aparecer, o nome e a cor.
+Para manter o mesmo design e também eu escondi o footer, então o footer também, se você ver, não está aparecendo. Por quê? Porque a gente não tem um footer definido ainda, tá? O Alexandre trabalhando nisso e a gente não sabe nem se faz sentido ter um footer, porque a gente está falando de um portal que vai ser interno para equipe interno. Normalmente footer tem informações de
+
+Rodrigo Farias Leal   1:00:39
+Sim.
+
+Fernando Mauricio da Costa Filho   1:00:51
+Fale conosco de coisas do gênero, que é para mais pessoas externas que ainda não têm tanto contato assim com a empresa. Então a gente não sabe se faz sentido ainda ou não trabalhar com o footer, mas foi só essa alteração que a gente fez a nível de Lima dentro do Power Page. Todo o resto é esses três arquivos aqui que você está vendo.
+
+Rodrigo Farias Leal   1:01:10
+E aí, cada inserção de consultas, etc, etc, algumas coisas tu mostrou lá que precisou fazer aquela configuraçãozinha lá de ir lá no portal e criar aquele aquela linha lá que vai dizer que o registro pode ser buscado com.
+
+Fernando Mauricio da Costa Filho   1:01:20
+Isso.
+
+Rodrigo Farias Leal   1:01:26
+Tiago Lima.
+
+Fernando Mauricio da Costa Filho   1:01:26
+Exatamente, exatamente isso aqui a gente faz para poder expor a tabela a API do Power Rangel. Então, aqui eu preciso tanto do do e o nome da nome lógico da tabela barra enabled para poder expor ela.
+E aí eu trabalhar com ela lá dentro e aí depois eu faço a barra fields para dizer quais são os campos que eu vou trabalhar dentro daquilo que eu estou expondo.
+
+Rodrigo Farias Leal   1:01:47
+Abre, abre uma dessa daí, o uma linha dessa, beleza.
+
+Fernando Mauricio da Costa Filho   1:01:59
+Certo? Aqui eu coloco o ebpi barra o nome lógico da tabela que eu vou trabalhar e um barra enabled. Esse aqui é para eu liberar a tabela. Se eu não colocar isso aqui, ele vai dar para mim o Romero 400 e Romero 404. Se eu tentar chegar aqui.
+
+Rodrigo Farias Leal   1:02:10
+Ele já nem vai conseguir consultar.
+
+Fernando Mauricio da Costa Filho   1:02:13
+Exact.
+
+Rodrigo Farias Leal   1:02:13
+Martinez.
+
+Fernando Mauricio da Costa Filho   1:02:15
+Tá? E aqui é o do aqui é o do dos cabos. Não tem muita diferença, não.
+E aí aqui eu coloco asterisco, porque aí é representando todos os campos, mas eu posso.
+
+Rodrigo Farias Leal   1:02:25
+Joao de Cassia Cassia.
+
+Fernando Mauricio da Costa Filho   1:02:28
+Eu posso ir destrinchando aqui, separando por vírgulas também os nomes lógicos dos Santos.
+
+Rodrigo Farias Leal   1:02:28
+Turnes.
+Awesome!
+
+Fernando Mauricio da Costa Filho   1:02:36
+Mais alguma dúvida?
+
+Rodrigo Farias Leal   1:02:39
+Agora não é sempre quando o cara vai mexer que conversa.
+
+Fernando Mauricio da Costa Filho   1:02:41
+É quando vocês botarem a mão, quando vocês botarem a mão, provavelmente vai surgir alguma coisa, mas aí também vocês têm livre acesso aqui para me chamar conforme necessário e fiquem tranquilos, tá?
+
+João Carlos Figueirôa de Castilho   1:02:52
+Turnes more.
+Mas foi esclarecedor. Eu te agradeço, Fernando. Eu acho que as informações foram foram bem passadas. Eu acho que tudo que a gente tinha pelo menos de dúvidas iniciais como o Rodrigo falou, não é? Depois que eu meter a mão que a gente for usar, vai surgir alguma coisa, mas obrigado pela tua disponibilidade, cara.
+
+Rodrigo Farias Leal   1:02:56
+Felipe. Felipe.
+
+Fernando Mauricio da Costa Filho   1:03:12
+Eu que agradeço também pela vontade de vocês, pessoal. A gente vai se falando aí qualquer coisa, estou à disposição. Tá bom? Grande abraço, pessoal. Tchau, tchau.
+
+João Carlos Figueirôa de Castilho   1:03:16
+Combinado, combinado. Valeu, doutor. Tchau, tchau.

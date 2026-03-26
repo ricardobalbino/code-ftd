@@ -24,6 +24,17 @@ O Avanade Method usa uma arquitetura de herança inspirada no BMAD, onde o **ava
 │   ├── sofia-ux.customize.yaml
 │   └── paige-tech-writer.customize.yaml
 │
+├── personas/                    # 📁 Definições YAML de personas (complementar)
+│   ├── carla-qa.yaml
+│   ├── joao-pm.yaml
+│   ├── maria-analyst.yaml
+│   ├── paige-tech-writer.yaml   # ← atualizado 2026-03-25
+│   ├── paula-po.yaml
+│   ├── roberto-sm.yaml
+│   ├── sofia-ux.yaml
+│   ├── tiago-dev.yaml
+│   └── wilson-architect.yaml
+│
 ├── workflows/
 ├── tasks/
 ├── checklists/

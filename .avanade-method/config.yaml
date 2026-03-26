@@ -2,11 +2,12 @@
 # Este arquivo é carregado automaticamente por TODOS os agentes na ativação
 # Ref: avanade-master.md step 2 → "{project-root}/.avanade-method/config.yaml"
 # Merge de base-config.yaml + core-config.yaml + referências FTD
+# Última atualização: 2026-03-25
 
 # ============================================================
 # USER & PROJECT
 # ============================================================
-version: 4.29.0
+version: 4.30.0
 user_name: "Usuário"
 communication_language: "pt-BR"
 output_folder: "docs"
@@ -26,16 +27,23 @@ project:
 # MANDATORY READING - Loaded by ALL agents
 # ============================================================
 devLoadAlwaysFiles:
+  # Core Knowledge Base
   - docs/ftd-knowledge-base.md
   - docs/discovery/ftd-discovery.md
+  # Especificações de Produto
   - docs/especificacao-simulador-notion.md
+  - docs/especificacao-aprovacao-notion.md
+  # Config D365 e Padrões
   - .avanade-method/configs/d365-config.yaml
   - .github/instructions/avanade-bca-guidelines.instructions.md
+  # Arquitetura
   - docs/arquitetura/d365-solution-architecture.md
   - docs/arquitetura/d365-data-model.md
   - docs/arquitetura/d365-integration-landscape.md
   - docs/arquitetura/padroes-desenvolvimento.md
   - docs/arquitetura/stack-tecnologica.md
+  # Referências de Segurança e Ferramentas
+  - docs/analise-riscos-mwhesse-dataverse-mcp.md
 
 # ============================================================
 # DISCOVERY & ARCHITECTURE LOCATIONS
